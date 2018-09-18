@@ -2,14 +2,14 @@ import React, { ReactNode } from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import { Helmet } from 'react-helmet';
 interface LayoutProps {
-    children: ReactNode;
+  children: ReactNode;
 }
 
 const Layout: React.SFC<LayoutProps> = ({ children }) => {
-    const siteName = "my Site name";
-    return (
+  const siteName = 'my Site name';
+  return (
         <div>
-            <StaticQuery 
+            <StaticQuery
                 query={ graphql `query HeaderQuery {
                     site { siteMetadata { name, title, description } }
                 }`}
@@ -24,10 +24,10 @@ const Layout: React.SFC<LayoutProps> = ({ children }) => {
                     </Helmet>
                 )}
             />
-            
+
             {children}
         </div>
-    )
-}
+    );
+};
 
 export default Layout;

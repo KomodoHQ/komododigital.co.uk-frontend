@@ -11,7 +11,8 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "./node_modules/eslint/bin/eslint.js ./src/**/*.tsx"
+    "lint": "tslint -c tslint.json 'src/**/*.tsx'",
+    "lint-fix": "tslint -c tslint.json 'src/**/*.tsx' --fix"
   },
   "repository": {
     "type": "git",
@@ -32,13 +33,9 @@
   },
   "homepage": "https://github.com/KomodoHQ/komododigital.co.uk-frontend#readme",
   "devDependencies": {
-    "eslint": "^5.6.0",
-    "eslint-config-airbnb": "^17.1.0",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-jsx-a11y": "^6.1.1",
-    "eslint-plugin-react": "^7.11.1",
     "prettier": "^1.14.2",
     "tslint": "^5.11.0",
+    "tslint-config-airbnb": "^5.11.0",
     "tslint-config-prettier": "^1.15.0",
     "typescript": "^3.0.3"
   },
