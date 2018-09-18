@@ -37,4 +37,6 @@ To see detailed documentation for the CLI commands, run in the terminal `gatsby 
 
 All project documentatino is in the `docs` folder.
 
+Gatsby documentation is available at `https://www.gatsbyjs.org/docs/`
+
 ## Happy Coding!
