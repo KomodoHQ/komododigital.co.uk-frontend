@@ -11,9 +11,9 @@ We have settled upon the following technology choices for the project.
  - Imagemin
  - Popmotion
 
-### Technology To Review / Research
+### Technology To Review / Research / Agree upon
 
  - Styled Components
  - Forms
  - Parcel JS
- - 
+ - Yarn
