@@ -59,3 +59,14 @@ typings/
 
 # next.js build output
 .next
+
+# Komodos Extras
+.DS_Store
+.cache
+.idea
+.rpt2_cache
+.vscode
+build
+compiled
+coverage
+dist

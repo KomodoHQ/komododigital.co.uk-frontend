@@ -1,0 +1,30 @@
+{
+  "name": "komododigital.co.uk-frontend",
+  "version": "3.0.0",
+  "description": "Komodo Digital's 2018 Website Refresh",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KomodoHQ/komododigital.co.uk-frontend.git"
+  },
+  "keywords": [
+    "react",
+    "reactjs",
+    "gatsbyjs",
+    "typescript",
+    "komodo",
+    "website"
+  ],
+  "author": "Komodo Digital, Ian Outterside <ian@komododigital.co.uk>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KomodoHQ/komododigital.co.uk-frontend/issues"
+  },
+  "homepage": "https://github.com/KomodoHQ/komododigital.co.uk-frontend#readme"
+}
