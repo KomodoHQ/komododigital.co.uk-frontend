@@ -10,7 +10,8 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "./node_modules/eslint/bin/eslint.js ./src/**/*.tsx"
   },
   "repository": {
     "type": "git",
