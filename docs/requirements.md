@@ -20,7 +20,7 @@ Below is a list of project requirements determined for the site. These are in no
  - Google Lighthouse score of 99
  - Sonarqube quality gate score of B
  - Jest tests for components with 80% coverage
- - Standards controlled using prettier and eslint
+ - Standards controlled using prettier and TSLint
  - Strong documentation inside the project
  - Integration tests - framework TBC
 
@@ -31,7 +31,7 @@ We have settled upon the following technology choices for the project.
  - GatsbyJS
  - Storybook
  - Jest
- - Prettier / eslint
+ - Prettier / TSLint
  - Reach Router
  - Imagemin
  - Popmotion

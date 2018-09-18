@@ -6,7 +6,7 @@ We have settled upon the following technology choices for the project.
  - TypeScript (This is optional as people wish to use it)
  - Storybook
  - Jest
- - Prettier / eslint
+ - Prettier / TSLint
  - Reach Router
  - Imagemin
  - Popmotion
