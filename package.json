@@ -26,5 +26,10 @@
   "bugs": {
     "url": "https://github.com/KomodoHQ/komododigital.co.uk-frontend/issues"
   },
-  "homepage": "https://github.com/KomodoHQ/komododigital.co.uk-frontend#readme"
+  "homepage": "https://github.com/KomodoHQ/komododigital.co.uk-frontend#readme",
+  "devDependencies": {
+    "tslint": "^5.11.0",
+    "typescript": "^3.0.3",
+    "tslint-config-prettier": "^1.15.0"
+  }
 }
