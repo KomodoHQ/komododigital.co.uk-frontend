@@ -5,7 +5,17 @@ This repo contains everything needed for our 2018 website refresh, written prima
 
 ## Quick Start
 
-Todo!
+1. Install the gatsby cli:
+
+```
+npm install --global gatsby-cli
+```
+
+2. Start a hot-reloading development environment accessible at `localhost:8000`
+
+```
+gatsby develop
+```
 
 ## Docs
 
