@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react';
 import { Helmet } from 'react-helmet';
 interface Props {
   children: ReactNode;
-  data: any;
+  data?: any;
 }
 
 const Layout: React.SFC<Props> = ({ data, children }) => {
