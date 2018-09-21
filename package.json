@@ -107,7 +107,8 @@
     "coverageReporters": [
       "json",
       "html",
-      "text"
+      "text",
+      "lcov"
     ],
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,ts,tsx}",
