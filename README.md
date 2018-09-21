@@ -35,7 +35,7 @@ To see detailed documentation for the CLI commands, run in the terminal `gatsby 
 
 ## Docs
 
-All project documentatino is in the `docs` folder.
+All project documentation is in the `docs` folder - or just check out `https://komodohq.github.io/komododigital.co.uk-frontend/`
 
 Gatsby documentation is available at `https://www.gatsbyjs.org/docs/`
 

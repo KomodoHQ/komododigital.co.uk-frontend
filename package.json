@@ -11,6 +11,7 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "test": "jest",
+    "test:watch": "jest --watchAll",
     "lint": "tslint -c tslint.json --project tsconfig.json 'src/**/*.{ts,tsx}'",
     "lint-fix": "tslint -c tslint.json --project tsconfig.json 'src/**/*.{ts,tsx}' --fix",
     "storybook": "start-storybook -p 9001 -c storybook"
@@ -96,6 +97,16 @@
     "testURL": "http://localhost",
     "setupFiles": [
       "<rootDir>/scripts/loadershim.js"
+    ],
+    "collectCoverage": true,
+    "coverageReporters": [
+      "json",
+      "html",
+      "text"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!**/node_modules/**"
     ]
   }
 }
