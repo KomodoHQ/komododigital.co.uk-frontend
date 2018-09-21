@@ -97,6 +97,16 @@
     "testURL": "http://localhost",
     "setupFiles": [
       "<rootDir>/scripts/loadershim.js"
+    ],
+    "collectCoverage": true,
+    "coverageReporters": [
+      "json",
+      "html",
+      "text"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!**/node_modules/**"
     ]
   }
 }
