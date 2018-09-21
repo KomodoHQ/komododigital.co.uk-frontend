@@ -73,6 +73,10 @@ Distribution state: Enabled.
 
 5. Once created, your site should now be available at the domain of choice.
 
+### AWS Lambda Configuration
+
+// TODO
+
 ## Codeship Deployment Creation / Configuration
 
 Follow the usual project creation steps on Codeship, until you're at the point of setting up the pipeline. Configure as below:
