@@ -1,4 +1,6 @@
+<p align="center">
 <img src="https://www.komododigital.co.uk/static/media/logo.50a4b652.svg" height="30" width="174" alt="Komodo Digital Website">
+</p>
 
 <p align="center">
   <img src="https://app.codeship.com/projects/62295840-9fe2-0136-a04e-7a2eabd72af5/status?branch=master">
