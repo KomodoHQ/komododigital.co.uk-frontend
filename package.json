@@ -12,7 +12,8 @@
     "develop": "gatsby develop",
     "test": "jest",
     "lint": "tslint -c tslint.json --project tsconfig.json 'src/**/*.{ts,tsx}'",
-    "lint-fix": "tslint -c tslint.json --project tsconfig.json 'src/**/*.{ts,tsx}' --fix"
+    "lint-fix": "tslint -c tslint.json --project tsconfig.json 'src/**/*.{ts,tsx}' --fix",
+    "storybook": "start-storybook -p 9001 -c storybook"
   },
   "repository": {
     "type": "git",
@@ -38,7 +39,12 @@
     "@babel/plugin-proposal-optional-chaining": "^7.0.0",
     "@babel/preset-env": "^7.1.0",
     "@babel/preset-react": "^7.0.0",
+    "@storybook/addon-actions": "^3.4.11",
+    "@storybook/addon-info": "^3.4.11",
+    "@storybook/cli": "^4.0.0-alpha.21",
+    "@storybook/react": "^4.0.0-alpha.21",
     "@types/jest": "^23.3.2",
+    "awesome-typescript-loader": "^5.2.1",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^23.6.0",
     "enzyme": "^3.6.0",
@@ -46,6 +52,7 @@
     "identity-obj-proxy": "^3.0.0",
     "jest": "^23.6.0",
     "prettier": "^1.14.2",
+    "react-docgen-typescript-webpack-plugin": "^1.1.0",
     "react-test-renderer": "^16.5.1",
     "ts-jest": "^23.1.4",
     "tslint": "^5.11.0",
