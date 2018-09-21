@@ -13,8 +13,8 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "test": "jest",
-    "test:watch": "jest --watchAll",
+    "test": "jest -u",
+    "test:watch": "jest -u --watchAll",
     "lint": "tslint -c tslint.json --project tsconfig.json 'src/**/*.{ts,tsx}'",
     "lint-fix": "tslint -c tslint.json --project tsconfig.json 'src/**/*.{ts,tsx}' --fix",
     "storybook": "start-storybook -p 9001 -c storybook"
