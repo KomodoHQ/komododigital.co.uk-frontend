@@ -1,14 +1,20 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { action } from '@storybook/addon-actions';
 import { withInfo } from '@storybook/addon-info';
+import Layout from '../../src/components/layout.tsx'
+import GatsbyData from '../../gatsby-config';
 
-storiesOf('Button', module)
-  .add('with text', withInfo(`
+storiesOf('Layout', module).add(
+  'with text',
+  withInfo(`
       description or documentation about my component, supports markdown
     
       ~~~js
       <Button>Click Here</Button>
       ~~~
     
-    `)(() => <span>Hello Button</span>))
+    `)(() => {
+      let data = { site: GatsbyData };
+      return <Layout data={data}/>
+    }),
+);
