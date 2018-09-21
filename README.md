@@ -1,7 +1,14 @@
 <img src="https://www.komododigital.co.uk/static/media/logo.50a4b652.svg" height="30" width="174" alt="Komodo Digital Website">
 
-<img src="https://app.codeship.com/projects/62295840-9fe2-0136-a04e-7a2eabd72af5/status?branch=master">
-<a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
+<p align="center">
+  <img src="https://app.codeship.com/projects/62295840-9fe2-0136-a04e-7a2eabd72af5/status?branch=master">
+  <a href="https://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT">
+  </a>
+  <a href="https://codecov.io/gh/KomodoHQ/komododigital.co.uk-frontend">
+    <img src="https://codecov.io/gh/KomodoHQ/komododigital.co.uk-frontend/branch/master/graph/badge.svg" />
+  </a>
+</p>
 
 ## Overview
 This repo contains everything needed for our 2018 website refresh, written primarily using React and Gatsby JS.
@@ -38,7 +45,7 @@ To see detailed documentation for the CLI commands, run in the terminal `gatsby 
 
 ## Docs
 
-All project documentation is in the `docs` folder - or just check out `https://komodohq.github.io/komododigital.co.uk-frontend/`
+All project documentation is in the `docs` folder - or just check out [https://komodohq.github.io/komododigital.co.uk-frontend/](https://komodohq.github.io/komododigital.co.uk-frontend/)
 
 Gatsby documentation is available at `https://www.gatsbyjs.org/docs/`
 
