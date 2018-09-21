@@ -6,6 +6,9 @@
   "directories": {
     "doc": "docs"
   },
+  "engines": {
+    "node": ">=8.0"
+  },
   "scripts": {
     "start": "gatsby develop",
     "build": "gatsby build",
