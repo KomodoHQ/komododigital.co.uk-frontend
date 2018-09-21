@@ -1,4 +1,4 @@
-## Technology
+# Technology
 
 We have settled upon the following technology choices for the project.
 
@@ -11,9 +11,16 @@ We have settled upon the following technology choices for the project.
  - Imagemin
  - Popmotion
 
-### Technology To Review / Research / Agree upon
+## Technology To Review / Research / Agree upon
 
  - Styled Components
  - Forms
- - Parcel JS
- - Yarn
+ - Browserstack testing
+ - PWA config
+ - CSP and SRI
+ - Google Hire integration
+ - Google Docs integration
+ - AWS API Gateway, Lambda and Codepush
+ - S3 Media and delivery
+ - Content Arrangement and sourcing
+ - Draft mode

@@ -1,4 +1,4 @@
-## Testing
+# Testing
 
 The project includes `jest` for testing.
 
