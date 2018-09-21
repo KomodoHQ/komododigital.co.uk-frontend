@@ -17,7 +17,8 @@
     "test:watch": "jest -u --watchAll",
     "lint": "tslint -c tslint.json --project tsconfig.json 'src/**/*.{ts,tsx}'",
     "lint-fix": "tslint -c tslint.json --project tsconfig.json 'src/**/*.{ts,tsx}' --fix",
-    "storybook": "start-storybook -p 9001 -c storybook"
+    "storybook": "start-storybook -p 9001 -c storybook",
+    "coverage": "codecov"
   },
   "repository": {
     "type": "git",
@@ -51,6 +52,7 @@
     "awesome-typescript-loader": "^5.2.1",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^23.6.0",
+    "codecov": "^3.1.0",
     "enzyme": "^3.6.0",
     "enzyme-adapter-react-16": "^1.5.0",
     "identity-obj-proxy": "^3.0.0",
