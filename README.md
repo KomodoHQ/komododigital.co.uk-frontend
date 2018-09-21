@@ -1,3 +1,5 @@
+<img src="https://www.komododigital.co.uk/static/media/logo.50a4b652.svg" height="30" width="174">
+
 # Komodo Digital Website
 
 ## Overview
