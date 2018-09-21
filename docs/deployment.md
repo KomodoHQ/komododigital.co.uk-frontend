@@ -77,6 +77,10 @@ Distribution state: Enabled.
 
 // TODO
 
+// US-east-1
+
+CacheControl lamdba
+
 ## Codeship Deployment Creation / Configuration
 
 Follow the usual project creation steps on Codeship, until you're at the point of setting up the pipeline. Configure as below:
