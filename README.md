@@ -1,5 +1,7 @@
 <img src="https://www.komododigital.co.uk/static/media/logo.50a4b652.svg" height="30" width="174" alt="Komodo Digital Website">
 
+<a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
+
 ## Overview
 This repo contains everything needed for our 2018 website refresh, written primarily using React and Gatsby JS.
 
