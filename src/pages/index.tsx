@@ -1,6 +1,6 @@
 import React from 'react';
 import rehypeReact from 'rehype-react';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 import Layout from '../components/layout';
 
 const renderAst = new rehypeReact({
@@ -12,6 +12,7 @@ export default (props) => {
     <Layout data={props.data}>
       <span>Hello World!</span>
       <div>{renderAst(props.data.allMarkdownRemark.edges[0].node.htmlAst)}</div>
+      <Link to={"blog-list"}>Blog</Link>
     </Layout>
   );
 };
