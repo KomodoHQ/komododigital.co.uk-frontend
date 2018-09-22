@@ -1,4 +1,6 @@
 import React, { ReactNode } from 'react';
+import moment from 'moment';
+
 interface Props {
   children: ReactNode;
   data: any;
@@ -8,10 +10,10 @@ const BlogSummaryView: React.SFC<Props> = ({ data, children }) => {
   return (
     <div>
       <div>
-        <img src="https://blog.komododigital.co.uk/content/uploads/2018/09/chuttersnap-309362-unsplash-2-640x400.jpg" />
+        <img src={data.imageSource} width="300" height="150" />
       </div>
-      <h1>5 Reasons Why I Finally Started Contributing To Open Source</h1>
-      <span>11th September 2018</span>
+      <h1>{data.title}</h1>
+      <span>{moment(data.date).format('DD MMMM YYYY')}</span>
     </div>
   );
 };

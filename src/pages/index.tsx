@@ -12,7 +12,7 @@ export default (props) => {
     <Layout data={props.data}>
       <span>Hello World!</span>
       <div>{renderAst(props.data.allMarkdownRemark.edges[0].node.htmlAst)}</div>
-      <Link to={"blog"}>Blog</Link>
+      <Link to={"blog-list"}>Blog</Link>
     </Layout>
   );
 };

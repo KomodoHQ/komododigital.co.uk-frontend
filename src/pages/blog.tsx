@@ -1,17 +1,14 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../components/layout';
+import CleanSourceURL from '../utils/clean-source-url';
 
 export default (props) => {
-  let html = props.data.allWordpressPost.edges[0].node.content;
-
-  html = html.replace(/(\/content\/uploads\/)/g, 'https://blog.komododigital.co.uk$1');
-
-  let imageSource = props.data.allWordpressPost.edges[0].node.featured_media.source_url;
-
-  imageSource = imageSource.replace(
-    /(\/content\/uploads\/)/g,
-    'https://blog.komododigital.co.uk$1',
+  const imageSource = CleanSourceURL(
+    props.data.allWordpressPost.edges[0].node.featured_media.source_url,
+  );
+  const html = CleanSourceURL(
+    props.data.allWordpressPost.edges[0].node.content,
   );
 
   return (
@@ -30,7 +27,7 @@ export default (props) => {
 };
 
 export const blogQuery = graphql`
-  query blogQuery {
+  query blogQuery($slug: String) {
     site {
       siteMetadata {
         name
@@ -38,12 +35,13 @@ export const blogQuery = graphql`
         description
       }
     }
-    allWordpressPost(limit: 1) {
+    allWordpressPost(limit: 1, filter: { slug: { eq: $slug } }) {
       edges {
         node {
           status
           slug
           title
+          date
           content
           featured_media {
             source_url
