@@ -42,7 +42,7 @@ const params = {
     CallerReference: reference,
     Paths: {
       Quantity: 1,
-      Items: ['/'],
+      Items: ['/*'],
     },
   },
 };
