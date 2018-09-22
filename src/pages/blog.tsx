@@ -4,12 +4,16 @@ import Layout from '../components/layout';
 import CleanSourceURL from '../utils/clean-source-url';
 
 export default (props) => {
-  const imageSource = CleanSourceURL(
-    props.data.allWordpressPost.edges[0].node.featured_media.source_url,
-  );
-  const html = CleanSourceURL(
-    props.data.allWordpressPost.edges[0].node.content,
-  );
+  const source_url = props.data.allWordpressPost.edges[0].node.featured_media
+    ? props.data.allWordpressPost.edges[0].node.featured_media.source_url
+    : null;
+  let imageSource = '';
+
+  if (source_url) {
+    imageSource = CleanSourceURL(source_url);
+  }
+
+  const html = CleanSourceURL(props.data.allWordpressPost.edges[0].node.content);
 
   return (
     <Layout data={props.data}>
