@@ -11,6 +11,11 @@ const moment = require('moment');
 
 // CloudFront requires a unique reference for every invalidation
 const reference = `${randomstring.generate(16)}-${moment().format('X')}`;
+
+// Codeship seems to inject a " " (space) character before env variables read directly into
+// AWS. As such, we take over the process, capturing the variables directly, ensuring they
+// are trimmed (so no whitespace around the outside). We then pass them
+// to the CloudFront object to authenticate with.
 const access_key_id = process.env.AWS_ACCESS_KEY_ID;
 const secret_access_key = process.env.AWS_SECRET_ACCESS_KEY;
 
