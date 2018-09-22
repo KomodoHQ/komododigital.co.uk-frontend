@@ -18,7 +18,8 @@
     "lint": "tslint -c tslint.json --project tsconfig.json 'src/**/*.{ts,tsx}'",
     "lint-fix": "tslint -c tslint.json --project tsconfig.json 'src/**/*.{ts,tsx}' --fix",
     "storybook": "start-storybook -p 9001 -c storybook",
-    "coverage": "codecov"
+    "coverage": "codecov",
+    "cloudfront-invalidate": "node scripts/cloudfront-invalidate.js"
   },
   "repository": {
     "type": "git",
@@ -50,6 +51,7 @@
     "@storybook/react": "^4.0.0-alpha.21",
     "@types/jest": "^23.3.2",
     "awesome-typescript-loader": "^5.2.1",
+    "aws-sdk": "^2.320.0",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^23.6.0",
     "codecov": "^3.1.0",
@@ -57,7 +59,9 @@
     "enzyme-adapter-react-16": "^1.5.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^23.6.0",
+    "moment": "^2.22.2",
     "prettier": "^1.14.2",
+    "randomstring": "^1.1.5",
     "react-docgen-typescript-webpack-plugin": "^1.1.0",
     "react-test-renderer": "^16.5.1",
     "ts-jest": "^23.1.4",

@@ -19,29 +19,35 @@ This repo contains everything needed for our 2018 website refresh, written prima
 
 1. Install the gatsby cli:
 
-```
-npm install --global gatsby-cli
-```
+  ```
+  npm install --global gatsby-cli
+  ```
 
-2. Start a hot-reloading development environment accessible at `localhost:8000`:
+2. Run a standard npm install:
 
-```
-gatsby develop
-```
+  ```
+  npm install
+  ```
 
-3. Edit the javascript pages in src/pages. Saved changes will live reload in the browser.
+3. Start a hot-reloading development environment accessible at `localhost:8000`:
 
-4. Perform an optimized production build for your site generating static HTML and per-route JavaScript code bundles:
+  ```
+  gatsby develop
+  ```
 
-```
-gatsby build
-```
+4. Edit the javascript pages in src/pages. Saved changes will live reload in the browser.
 
-5. Start a local webserver for testing:
+5. Perform an optimized production build for your site generating static HTML and per-route JavaScript code bundles:
 
-```
-gatsby serve
-```
+  ```
+  gatsby build
+  ```
+
+6. Start a local webserver for testing:
+
+  ```
+  gatsby serve
+  ```
 
 To see detailed documentation for the CLI commands, run in the terminal `gatsby --help` and for specific commands `gatsby COMMAND_NAME --help` e.g. `gatsby develop --help`.
 
