@@ -1,12 +1,20 @@
 import React from 'react';
+import rehypeReact from 'rehype-react';
 import { graphql } from 'gatsby';
 import Layout from '../components/layout';
 
-export default props => (
-  <Layout data={props.data}>
-    <span>Hello World! Updated once more</span>
-  </Layout>
-);
+const renderAst = new rehypeReact({
+  createElement: React.createElement,
+}).Compiler;
+
+export default (props) => {
+  return (
+    <Layout data={props.data}>
+      <span>Hello World!</span>
+      <div>{renderAst(props.data.allMarkdownRemark.edges[0].node.htmlAst)}</div>
+    </Layout>
+  );
+};
 
 export const pageQuery = graphql`
   query pageQuery {
@@ -15,6 +23,23 @@ export const pageQuery = graphql`
         name
         title
         description
+      }
+    }
+    allMarkdownRemark(filter: { frontmatter: { title: { eq: "Home Page" } } }) {
+      edges {
+        node {
+          timeToRead
+          htmlAst
+          frontmatter {
+            title
+          }
+          excerpt
+          wordCount {
+            paragraphs
+            sentences
+            words
+          }
+        }
       }
     }
   }
