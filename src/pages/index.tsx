@@ -4,7 +4,7 @@ import Layout from '../components/layout';
 
 export default props => (
   <Layout data={props.data}>
-    <span>Hello World!</span>
+    <span>Hello World! Updated</span>
   </Layout>
 );
 
