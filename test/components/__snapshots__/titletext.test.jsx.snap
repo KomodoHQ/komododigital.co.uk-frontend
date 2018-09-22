@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TitleText element is rendered 1`] = `
+<div>
+  <h1>
+    Komodo Digital
+  </h1>
+</div>
+`;
