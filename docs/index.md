@@ -10,6 +10,8 @@ This is the landing page for our documentation.
 
 [Technology](technology.md)
 
+[Infrastructure](infrastructure.md)
+
 [Development](development.md)
 
 [Testing](testing.md)
