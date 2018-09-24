@@ -10,6 +10,7 @@ We have settled upon the following technology choices for the project.
  - Reach Router
  - Imagemin
  - Popmotion
+ - AWS S3 hosting, CloudFront distribution, Lambda processing
 
 ## Technology To Review / Research / Agree upon
 
