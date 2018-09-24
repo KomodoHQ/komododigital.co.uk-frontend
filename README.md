@@ -57,4 +57,6 @@ All project documentation is in the `docs` folder - or just check out [https://k
 
 Gatsby documentation is available at `https://www.gatsbyjs.org/docs/`
 
+Most folders also have a `readme.md` to explain their purpose.
+
 ## Happy Coding!

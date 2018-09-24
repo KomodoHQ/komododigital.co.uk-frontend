@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`404 template is rendered 1`] = `
+<div>
+  <h1>
+    #404 Page Not Found
+  </h1>
+  <div>
+    <span>
+      Komodo Digital
+    </span>
+  </div>
+</div>
+`;

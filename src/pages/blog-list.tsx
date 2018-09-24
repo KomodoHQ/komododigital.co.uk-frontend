@@ -1,26 +1,21 @@
 import React from 'react';
-import { graphql, Link } from 'gatsby';
-import Layout from '../components/layout';
-import BlogSummaryView from '../components/blogsummaryview';
+import { graphql } from 'gatsby';
+import BlogList from '../templates/blog-list';
 import CleanSourceURL from '../utils/clean-source-url';
 
 export default (props) => {
-  const html = props.data.allWordpressPost.edges.map((edge) => {
-    const imageSource = CleanSourceURL(edge.node.featured_media.source_url);
+  const posts = props.data.allWordpressPost.edges.map((edge) => {
     const data = {
-      imageSource,
-      ...edge.node,
+      node: {
+        imageSource: CleanSourceURL(edge.node.featured_media.source_url),
+        ...edge.node,
+      },
     };
-    const slug = `blog/${edge.node.slug}`;
 
-    return <Link to={slug}><BlogSummaryView data={data} key={edge.slug} /></Link>;
+    return data;
   });
 
-  return (
-    <Layout data={props.data}>
-      <div>{html}</div>
-    </Layout>
-  );
+  return <BlogList posts={posts} {...props} />;
 };
 
 export const blogListQuery = graphql`

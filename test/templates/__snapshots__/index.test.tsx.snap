@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Blog template is rendered 1`] = `
+<div>
+  <span>
+    Hello World!
+  </span>
+  <div>
+    <span>
+      Komodo Digital
+    </span>
+  </div>
+  <a
+    href="/blog-list"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+  >
+    Blog
+  </a>
+</div>
+`;

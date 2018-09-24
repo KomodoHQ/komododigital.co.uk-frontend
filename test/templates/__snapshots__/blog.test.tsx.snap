@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Blog template is rendered 1`] = `
+<div>
+  <img />
+  <h1 />
+  <div
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "<p>Test</p>",
+      }
+    }
+  />
+</div>
+`;

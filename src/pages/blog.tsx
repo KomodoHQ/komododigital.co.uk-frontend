@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import Layout from '../components/layout';
 import CleanSourceURL from '../utils/clean-source-url';
+import Blog from '../templates/blog';
 
 export default (props) => {
   const source_url = props.data.allWordpressPost.edges[0].node.featured_media
@@ -15,19 +15,13 @@ export default (props) => {
 
   const html = CleanSourceURL(props.data.allWordpressPost.edges[0].node.content);
 
-  return (
-    <Layout data={props.data}>
-      <img src={imageSource} />
+  const hocProps = {
+    html,
+    imageSource,
+    ...props,
+  };
 
-      <h1>{props.data.allWordpressPost.edges[0].node.title}</h1>
-
-      <div
-        dangerouslySetInnerHTML={{
-          __html: html,
-        }}
-      />
-    </Layout>
-  );
+  return <Blog {...hocProps} />;
 };
 
 export const blogQuery = graphql`
