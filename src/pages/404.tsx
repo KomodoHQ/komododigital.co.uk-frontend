@@ -1,18 +1,15 @@
 import React from 'react';
-import rehypeReact from 'rehype-react';
 import { graphql } from 'gatsby';
-import Layout from '../components/layout';
+import FourOhFour from '../templates/404';
 
-const renderAst = new rehypeReact({
-  createElement: React.createElement,
-}).Compiler;
+export default (props) => {
+  const hocProps = {
+    htmlAst: props.data.allMarkdownRemark.edges[0].node.htmlAst,
+    ...props,
+  };
 
-export default props => (
-  <Layout data={props.data}>
-    <h1>#404 Page Not Found</h1>
-    <div>{renderAst(props.data.allMarkdownRemark.edges[0].node.htmlAst)}</div>
-  </Layout>
-);
+  return <FourOhFour {...hocProps} />;
+};
 
 export const fourOhFourQuery = graphql`
   query fourOhFourQuery {

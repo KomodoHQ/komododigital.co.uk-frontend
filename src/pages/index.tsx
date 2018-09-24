@@ -1,20 +1,14 @@
 import React from 'react';
-import rehypeReact from 'rehype-react';
-import { graphql, Link } from 'gatsby';
-import Layout from '../components/layout';
-
-const renderAst = new rehypeReact({
-  createElement: React.createElement,
-}).Compiler;
+import { graphql } from 'gatsby';
+import Index from '../templates/index';
 
 export default (props) => {
-  return (
-    <Layout data={props.data}>
-      <span>Hello World!</span>
-      <div>{renderAst(props.data.allMarkdownRemark.edges[0].node.htmlAst)}</div>
-      <Link to={"blog-list"}>Blog</Link>
-    </Layout>
-  );
+  const hocProps = {
+    htmlAst: props.data.allMarkdownRemark.edges[0].node.htmlAst,
+    ...props,
+  };
+
+  return <Index {...hocProps} />;
 };
 
 export const pageQuery = graphql`
