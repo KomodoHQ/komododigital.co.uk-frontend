@@ -2,7 +2,11 @@
 
 If you have followed the [infrastructure configuration steps](infrastructure.md), the the system is configured to automatically deploy using Codeship to AWS Cloudfront! 
 
-In order to trigger a deployment, the process is as follows:
+> TL/DR of below - just merge to `master` or `develop` and its automatic.
+
+## Details
+
+For a bit more detail - in order to trigger a deployment, the process is as follows:
 
 1. Open a Pull Request on Github from your feature branch.
 2. The system will either be in the process of testing, or have completed testing your feature branch - wait for it to complete.
