@@ -60,7 +60,6 @@ module.exports = {
           // htaccess_user: 'your-htaccess-username',
           // htaccess_pass: 'your-htaccess-password',
           // htaccess_sendImmediately: false,
-
           // If hostingWPCOM is true then you will need to communicate with wordpress.com API
           // in order to do that you need to create an app (of type Web) at https://developer.wordpress.com/apps/
           // then add your clientId, clientSecret, username, and password here
@@ -86,11 +85,23 @@ module.exports = {
         // See: https://github.com/isaacs/minimatch
         // Example:  `["/*/*/comments", "/yoast/**"]` will exclude routes ending in `comments` and
         // all routes that begin with `yoast` from fetch.
-        excludedRoutes: ['/*/*/comments', '/yoast/**', '/oembed/**', '/**/users/**', '/**/comments/**'],
+        excludedRoutes: [
+          '/*/*/comments',
+          '/yoast/**',
+          '/oembed/**',
+          '/**/users/**',
+          '/**/comments/**',
+        ],
         // use a custom normalizer which is applied after the built-in ones.
         normalizer: function({ entities }) {
           return entities;
         },
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-sentry',
+      options: {
+        dsn: 'https://314dbec933e44245ae35b28fcb15bc96@sentry.io/1289118'
       },
     },
   ],
