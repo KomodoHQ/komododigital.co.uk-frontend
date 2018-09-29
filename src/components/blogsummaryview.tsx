@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react';
 import moment from 'moment';
 
 interface Props {
-  children: ReactNode;
+  children?: ReactNode;
   data: any;
 }
 
