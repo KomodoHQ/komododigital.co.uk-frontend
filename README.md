@@ -21,13 +21,13 @@ This repo contains everything needed for our 2018 website refresh, written prima
 1. Install the gatsby cli:
 
   ```
-  npm install --global gatsby-cli
+  yarn global add gatsby-cli
   ```
 
 2. Run a standard npm install:
 
   ```
-  npm install
+  yarn
   ```
 
 3. Start a hot-reloading development environment accessible at `localhost:8000`:
