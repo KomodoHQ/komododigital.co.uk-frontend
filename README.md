@@ -18,33 +18,35 @@ This repo contains everything needed for our 2018 website refresh, written prima
 
 ## Quick Start
 
-1. Install the gatsby cli:
+1. Make sure you have [yarn installed](https://yarnpkg.com/lang/en/docs/install/).
+
+2. Install the gatsby cli:
 
   ```
   yarn global add gatsby-cli
   ```
 
-2. Run a standard npm install:
+3. Run a standard npm install:
 
   ```
   yarn
   ```
 
-3. Start a hot-reloading development environment accessible at `localhost:8000`:
+4. Start a hot-reloading development environment accessible at `localhost:8000`:
 
   ```
   yarn develop
   ```
 
-4. Edit the javascript pages in src/pages. Saved changes will live reload in the browser.
+5. Edit the javascript pages in src/pages. Saved changes will live reload in the browser.
 
-5. Perform an optimized production build for your site generating static HTML and per-route JavaScript code bundles:
+6. Perform an optimized production build for your site generating static HTML and per-route JavaScript code bundles:
 
   ```
   yarn build
   ```
 
-6. Start a local webserver for testing:
+7. Start a local webserver for testing:
 
   ```
   yarn serve
