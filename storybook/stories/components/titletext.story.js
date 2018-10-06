@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withInfo } from '@storybook/addon-info';
-import TitleText from '../../src/components/titletext'
+import TitleText from '../../../src/components/titletext'
 
 storiesOf('TitleText', module).add(
   'with text',

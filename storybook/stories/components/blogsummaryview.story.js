@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { withInfo } from '@storybook/addon-info';
-import BlogSummaryView from '../../src/components/blogsummaryview.tsx'
+import BlogSummaryView from '../../../src/components/blogsummaryview.tsx'
 
 const data = {
   title: 'Test Post',
