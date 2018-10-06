@@ -1,0 +1,25 @@
+.navigationBar {
+    width: 100vw;
+    padding: 5px 15px;
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+}
+
+.navigationBar > h1 {
+    flex: 1;
+}
+
+.navigationBar > ul {
+    list-style: none;
+    flex: 2;
+    display: flex;
+}
+
+.navigationBar > ul > li {
+    flex: 1;
+}
+
+.navigationBar > ul > li > a {
+    color: #ffffff;
+}

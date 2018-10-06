@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { withInfo } from '@storybook/addon-info';
-import BlogSummaryView from '../../src/components/blogsummaryview.tsx'
+import BlogSummaryView from '../../../src/components/blogsummaryview/'
 
 const data = {
   title: 'Test Post',
@@ -10,7 +10,7 @@ const data = {
   date: '1970/01/01 00:00:00'
 }
 
-storiesOf('BlogSummaryView', module).add(
+storiesOf('Blog Summary View', module).add(
   'with text',
   withInfo(`
       description or documentation about my component, supports markdown
