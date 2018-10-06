@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withInfo } from '@storybook/addon-info';
 
-import StandardItem from '../../../src/components/standarditem/'
+import StandardItem from '../../../src/components/standarditem'
 
 
 const story = storiesOf('Standard Item', module);

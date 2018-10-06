@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withInfo } from '@storybook/addon-info';
 
-import SeeMoreButton from '../../../src/components/seemorebutton/'
+import SeeMoreButton from '../../../src/components/seemorebutton'
 
 const story = storiesOf('See More Button', module);
 
