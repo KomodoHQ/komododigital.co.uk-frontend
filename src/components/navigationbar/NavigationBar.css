@@ -1,7 +1,6 @@
 .navigationBar {
     width: 100vw;
     padding: 5px 15px;
-    background-color: #000000;
     color: #ffffff;
     display: flex;
 }

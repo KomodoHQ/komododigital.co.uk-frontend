@@ -1,0 +1,15 @@
+.Metric {
+    padding: 20px;
+    border: 1px solid #dddddd;
+    background-color: #ffffff;
+}
+
+.Metric > span.number {
+    font-size: 2.0em;
+    color: green;
+}
+
+.Metric > span {
+    display: block;
+    color: green;
+}
