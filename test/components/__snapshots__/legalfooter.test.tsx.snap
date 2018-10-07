@@ -1,7 +1,33 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`LegalFooter element is rendered 1`] = `
-<div>
-  LegalFooter
-</div>
+<footer>
+  <div>
+    Komodo Digital Copyright © 2018
+    <a
+      aria-current="page"
+      href="/"
+      onClick={[Function]}
+    >
+      Privacy Policy
+    </a>
+    |
+    <a
+      aria-current="page"
+      href="/"
+      onClick={[Function]}
+    >
+      Terms and Conditions
+    </a>
+  </div>
+  <div>
+    Get in touch on:
+    <a
+      href="/tel:0191 228 6555"
+      onClick={[Function]}
+    >
+      0191 228 6555
+    </a>
+  </div>
+</footer>
 `;
