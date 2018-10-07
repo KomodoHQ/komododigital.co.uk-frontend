@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavigationBar element is rendered 1`] = `
+<div
+  className="navigationBar"
+>
+  <h1>
+    Komodo
+  </h1>
+  <ul>
+    <li>
+      <a
+        aria-current="page"
+        href="/"
+        onClick={[Function]}
+      >
+        About
+      </a>
+    </li>
+    <li>
+      <a
+        aria-current="page"
+        href="/"
+        onClick={[Function]}
+      >
+        Case Studies
+      </a>
+    </li>
+    <li>
+      <a
+        aria-current="page"
+        href="/"
+        onClick={[Function]}
+      >
+        Insights
+      </a>
+    </li>
+    <li>
+      <a
+        aria-current="page"
+        href="/"
+        onClick={[Function]}
+      >
+        Contact
+      </a>
+    </li>
+  </ul>
+</div>
+`;
