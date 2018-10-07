@@ -19,6 +19,7 @@ http.get('http://localhost:9000/sitemap.xml', (resp) => {
   			console.log(urlSplit)
   			urlArray[urlSplit[urlSplit.length-2]] = urlTemp
   		}
+  		shell.exec('mkdir report -p')
   		for  (i in urlArray) {
   			shell.exec('node node_modules/lighthouse/lighthouse-cli/index.js --output-path=./report/'+i+'.html --quiet --chrome-flags="--headless" '+urlArray[i])
   		}
