@@ -1,0 +1,23 @@
+.Testimonial > span {
+    font-weight: 900;
+}
+
+q {
+    quotes: "“" "”" "‘" "’";
+}
+
+.Testimonial > q:before {
+    content: open-quote;
+}
+
+.Testimonial > q:after {
+    content: close-quote;
+}
+
+.Testimonial > div {
+    display: inline-block;
+}
+
+.Testimonial > span.job, .Testimonial > span.company {
+    display: block;
+}
