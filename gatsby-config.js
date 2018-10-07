@@ -3,12 +3,39 @@ module.exports = {
     name: 'Komodo Digital',
     title: 'Web Design | App Development | Newcastle',
     description: 'Home of Komodo Digital',
+    siteUrl:'http://localhost:9000',
   },
   plugins: [
     `gatsby-plugin-typescript`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-offline`,
     `gatsby-transformer-remark`,
+      {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        output: `/sitemap.xml`,
+        // Exclude specific pages or groups of pages using glob parameters
+        // See: https://github.com/isaacs/minimatch
+        // The example below will exclude the single `path/to/page` and all routes beginning with `category`
+        exclude: ["/blog/*"],
+        query: `
+          {
+            site {
+              siteMetadata {
+                siteUrl
+              }
+            }
+   
+            allSitePage {
+              edges {
+                node {
+                  path
+                }
+              }
+            }
+        }`
+      }
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
