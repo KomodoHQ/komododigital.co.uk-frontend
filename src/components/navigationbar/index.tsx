@@ -19,7 +19,7 @@ const NavigationBar: React.SFC<Props> = ({ data }) => {
           <Link to="/">Case Studies</Link>
         </li>
         <li>
-          <Link to="/">Insights</Link>
+          <Link to={'blog-list'}>Insights</Link>
         </li>
         <li>
           <Link to="/">Contact</Link>

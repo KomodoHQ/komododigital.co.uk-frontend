@@ -4,10 +4,12 @@ interface Props {
   data: any;
 }
 
-const QuadGrid: React.SFC<Props> = ({ data }) => {
+const QuadGrid: React.SFC<Props> = ({ data, children }) => {
   return (
     <div>
         QuadGrid
+
+        {children}
     </div>
   );
 };

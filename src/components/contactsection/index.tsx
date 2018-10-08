@@ -4,10 +4,11 @@ interface Props {
   data: any;
 }
 
-const ContactSection: React.SFC<Props> = ({ data }) => {
+const ContactSection: React.SFC<Props> = ({ data, children }) => {
   return (
     <div>
         ContactSection
+        {children}
     </div>
   );
 };
