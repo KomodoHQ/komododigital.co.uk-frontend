@@ -14,6 +14,10 @@ This is the landing page for our documentation.
 
 [Development](development.md)
 
+[Components](components.md)
+
+[Containers](containers.md)
+
 [Testing](testing.md)
 
 [Deployment](deployment.md)
