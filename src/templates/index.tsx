@@ -3,7 +3,6 @@ import rehypeReact from 'rehype-react';
 import { Link } from 'gatsby';
 import Layout from '../components/layout';
 import Services from '../components/services';
-import CaseStudySection from '../components/casestudysection';
 import CaseStudy from '../components/casestudy';
 import QuadGrid from '../components/quadgrid';
 import GridItem from '../components/griditem';
@@ -37,11 +36,11 @@ export default (props) => {
           <GridItem />
         </Services>
       </ContentSection>
-      <CaseStudySection title="Case Studies">
+      <ContentSection title="Case Studies">
         <CaseStudy />
         <CaseStudy />
         <SeeMoreButton />
-      </CaseStudySection>
+      </ContentSection>
       <ContentSection title="Client Portfolio">
         <QuadGrid>
           <GridItem />
