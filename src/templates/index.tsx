@@ -2,7 +2,6 @@ import React from 'react';
 import rehypeReact from 'rehype-react';
 import { Link } from 'gatsby';
 import Layout from '../components/layout';
-import NavigationBar from '../components/navigationbar';
 import Services from '../components/services';
 import CaseStudySection from '../components/casestudysection';
 import CaseStudy from '../components/casestudy';
@@ -13,8 +12,6 @@ import BlogPost from '../components/blogpost';
 import SeeMoreButton from '../components/seemorebutton';
 import ContactSection from '../components/contactsection';
 import ContactForm from '../components/contactform';
-import Footer from '../components/footer';
-import LegalFooter from '../components/legalfooter';
 
 const renderAst = new rehypeReact({
   createElement: React.createElement,
@@ -23,7 +20,6 @@ const renderAst = new rehypeReact({
 export default (props) => {
   return (
     <Layout data={props.data}>
-      <NavigationBar />
       <div>
         <span>Subtitle</span>
         <ContentSection title="People Friendly Software" />
@@ -70,8 +66,6 @@ export default (props) => {
       <ContactSection>
         <ContactForm />
       </ContactSection>
-      <Footer />
-      <LegalFooter />
     </Layout>
   );
 };
