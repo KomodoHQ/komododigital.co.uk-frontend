@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://www.komododigital.co.uk/static/media/logo.50a4b652.svg" height="30" width="174" alt="Komodo Digital Website">
+<img src="https://www.komododigital.co.uk/static/media/logo.50a4b652.svg" height="30" width="174" alt="Komodo Website">
 </p>
 
 <p align="center">
@@ -61,3 +61,4 @@ Gatsby documentation is available at `https://www.gatsbyjs.org/docs/`
 Most folders also have a `readme.md` to explain their purpose.
 
 ## Happy Coding!
+
