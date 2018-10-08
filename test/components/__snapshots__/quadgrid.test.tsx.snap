@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`QuadGrid element is rendered 1`] = `
+<div>
+  QuadGrid
+</div>
+`;

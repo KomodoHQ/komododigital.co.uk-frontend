@@ -1,5 +1,5 @@
 import React from 'react';
-import BlogSummaryView from '../../src/components/blogsummaryview.tsx';
+import BlogSummaryView from '../../src/components/blogsummaryview';
 import renderer from 'react-test-renderer';
 
 test('BlogSummaryView element is rendered', () => {

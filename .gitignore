@@ -71,3 +71,4 @@ compiled
 coverage
 dist
 public
+package-lock.json
