@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import "./metric.css";
+import './metric.css';
 
 interface Props {
   data: any;

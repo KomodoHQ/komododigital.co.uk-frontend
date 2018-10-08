@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react';
 import './footer.css';
 
 interface Props {
-  data: any;
+  data?: any;
 }
 
 const Footer: React.SFC<Props> = ({ data }) => {

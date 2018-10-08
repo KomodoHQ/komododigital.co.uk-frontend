@@ -4,15 +4,9 @@ exports[`CaseStudy element is rendered 1`] = `
 <div>
   <img />
   <div>
-    <span>
-      Subtitle
-    </span>
-    <h2>
-      Title
-    </h2>
-    <p>
-      Description
-    </p>
+    <span />
+    <h2 />
+    <p />
     <a
       aria-current="page"
       href="/"

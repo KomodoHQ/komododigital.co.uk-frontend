@@ -4,7 +4,7 @@ import { Link } from '@reach/router';
 import './NavigationBar.css';
 
 interface Props {
-  data: any;
+  data?: any;
 }
 
 const NavigationBar: React.SFC<Props> = ({ data }) => {

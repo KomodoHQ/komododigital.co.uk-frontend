@@ -4,9 +4,15 @@ exports[`NavigationBar element is rendered 1`] = `
 <div
   className="navigationBar"
 >
-  <h1>
-    Komodo
-  </h1>
+  <a
+    aria-current="page"
+    href="/"
+    onClick={[Function]}
+  >
+    <h1>
+      Komodo
+    </h1>
+  </a>
   <ul>
     <li>
       <a
@@ -28,8 +34,7 @@ exports[`NavigationBar element is rendered 1`] = `
     </li>
     <li>
       <a
-        aria-current="page"
-        href="/"
+        href="/blog-list"
         onClick={[Function]}
       >
         Insights

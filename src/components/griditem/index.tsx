@@ -1,7 +1,8 @@
 import React, { ReactNode } from 'react';
 
 interface Props {
-  data: any;
+  data?: any;
+  title?: string;
 }
 
 const GridItem: React.SFC<Props> = ({ data, title, children }) => {
