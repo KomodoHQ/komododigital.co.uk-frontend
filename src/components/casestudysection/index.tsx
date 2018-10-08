@@ -4,14 +4,12 @@ interface Props {
   data: any;
 }
 
-const CaseStudySection: React.SFC<Props> = ({ data }) => {
+const CaseStudySection: React.SFC<Props> = ({ data, title, children}) => {
   return (
     <div>
-        <span>Subtitle</span>
-        <h2>Title</h2>
+        <h2>{title}</h2>
         <p>Content</p>
-        <p>Content</p>
-        <img />
+        {children}
     </div>
   );
 };
