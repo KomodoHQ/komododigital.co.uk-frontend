@@ -5,14 +5,14 @@ interface Props {
   data: any;
 }
 
-const CaseStudy: React.SFC<Props> = ({ data }) => {
+const CaseStudy: React.SFC<Props> = ({ data, subtitle, title, children }) => {
   return (
     <div>
         <img />
         <div>
-          <span>Subtitle</span>
-          <h2>Title</h2>
-          <p>Description</p>
+          <span>{subtitle}</span>
+          <h2>{title}</h2>
+          <p>{children}</p>
           <Link to="/">Read Case Study</Link>
         </div>
     </div>

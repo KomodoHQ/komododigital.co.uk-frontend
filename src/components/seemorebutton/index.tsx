@@ -4,10 +4,10 @@ interface Props {
   data: any;
 }
 
-const SeeMoreButton: React.SFC<Props> = ({ data }) => {
+const SeeMoreButton: React.SFC<Props> = ({ data, title }) => {
   return (
     <div>
-        SeeMoreButton
+        {title}
     </div>
   );
 };

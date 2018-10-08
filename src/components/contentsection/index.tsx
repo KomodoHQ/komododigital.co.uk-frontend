@@ -8,8 +8,7 @@ const ContentSection: React.SFC<Props> = ({ data, title = 'TITLE HERE', children
   return (
     <div>
         <h2>{title}</h2>
-        <div>Content</div>
-        {children}
+        <div>{children}</div>
     </div>
   );
 };
