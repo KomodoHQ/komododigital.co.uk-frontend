@@ -25,43 +25,48 @@ export default (props) => {
     <Layout data={props.data}>
       <NavigationBar />
       <div>
-        HEADER HERE
+        <span>Subtitle</span>
+        <ContentSection title="People Friendly Software" />
       </div>
-      <ContentSection />
-      <div>
-        IMAGE HERE
-      </div>
-      <ContentSection />
-      <Services>
-        <GridItem />
-        <GridItem />
-        <GridItem />
-        <GridItem />
-      </Services>
-      <CaseStudySection>
+      <ContentSection title="About Us">
+        <div>
+          IMAGE HERE
+        </div>
+      </ContentSection>
+      <ContentSection title="Approach">
+        <Services>
+          <GridItem />
+          <GridItem />
+          <GridItem />
+          <GridItem />
+        </Services>
+      </ContentSection>
+      <CaseStudySection title="Case Studies">
         <CaseStudy />
         <CaseStudy />
+        <SeeMoreButton />
       </CaseStudySection>
-      <SeeMoreButton />
-      <ContentSection />
-      <QuadGrid>
-        <GridItem />
-        <GridItem />
-        <GridItem />
-        <GridItem />
-        <GridItem />
-        <GridItem />
-        <GridItem />
-        <GridItem />
-        <GridItem />
-        <GridItem />
-        <GridItem />
-      </QuadGrid>
-      <ContentSection />
-      <BlogPost />
-      <BlogPost />
-      <BlogPost />
-      <SeeMoreButton />
+      <ContentSection title="Client Portfolio">
+        <QuadGrid>
+          <GridItem />
+          <GridItem />
+          <GridItem />
+          <GridItem />
+          <GridItem />
+          <GridItem />
+          <GridItem />
+          <GridItem />
+          <GridItem />
+          <GridItem />
+          <GridItem />
+        </QuadGrid>
+      </ContentSection>
+      <ContentSection title="Insights">
+        <BlogPost />
+        <BlogPost />
+        <BlogPost />
+        <SeeMoreButton />
+      </ContentSection>
       <ContactSection>
         <ContactForm />
       </ContactSection>
