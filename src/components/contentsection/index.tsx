@@ -7,7 +7,8 @@ interface Props {
 const ContentSection: React.SFC<Props> = ({ data }) => {
   return (
     <div>
-        ContentSection
+        <h2>Content section title</h2>
+        <div>Content</div>
     </div>
   );
 };

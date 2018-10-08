@@ -1,7 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Footer element is rendered 1`] = `
-<div>
-  Footer
-</div>
+<footer>
+  <div
+    className="komodo"
+  >
+    Komodo
+  </div>
+  <div
+    className="address"
+  >
+    Address
+  </div>
+  <div
+    className="sitemap"
+  >
+    Sitemap
+  </div>
+</footer>
 `;

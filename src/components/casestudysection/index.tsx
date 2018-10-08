@@ -7,7 +7,11 @@ interface Props {
 const CaseStudySection: React.SFC<Props> = ({ data }) => {
   return (
     <div>
-        CaseStudySection
+        <span>Subtitle</span>
+        <h2>Title</h2>
+        <p>Content</p>
+        <p>Content</p>
+        <img />
     </div>
   );
 };

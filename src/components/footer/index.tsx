@@ -1,4 +1,5 @@
 import React, { ReactNode } from 'react';
+import './footer.css';
 
 interface Props {
   data: any;
@@ -6,9 +7,11 @@ interface Props {
 
 const Footer: React.SFC<Props> = ({ data }) => {
   return (
-    <div>
-        Footer
-    </div>
+    <footer>
+        <div className="komodo">Komodo</div>
+        <div className="address">Address</div>
+        <div className="sitemap">Sitemap</div>
+    </footer>
   );
 };
 
