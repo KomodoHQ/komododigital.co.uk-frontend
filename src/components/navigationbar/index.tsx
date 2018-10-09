@@ -13,16 +13,16 @@ const NavigationBar: React.SFC<Props> = ({ data }) => {
       <Link to="/"><h1>Komodo</h1></Link>
       <ul>
         <li>
-          <Link to="/">About</Link>
+          <Link to={'about'}>About</Link>
         </li>
         <li>
-          <Link to="/">Case Studies</Link>
+          <Link to={'case-studies'}>Case Studies</Link>
         </li>
         <li>
           <Link to={'blog-list'}>Insights</Link>
         </li>
         <li>
-          <Link to="/">Contact</Link>
+          <Link to={'contact'}>Contact</Link>
         </li>
       </ul>
     </div>
