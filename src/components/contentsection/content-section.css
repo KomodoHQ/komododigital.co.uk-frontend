@@ -1,0 +1,23 @@
+.Content-Section {
+    font-family: "New Transport", Arial, Helvetica, sans-serif;
+    max-width: 86vw;
+}
+
+.Content-Section > span {
+    font-size: 16px;
+    text-transform: uppercase;
+    display: block;
+}
+
+.Content-Section > h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 74px;
+}
+
+.Content-Section > div {
+    font-size: 18px;
+    line-height: 30px;    
+}

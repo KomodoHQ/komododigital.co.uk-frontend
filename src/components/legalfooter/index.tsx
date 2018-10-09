@@ -10,11 +10,11 @@ const LegalFooter: React.SFC<Props> = ({ data }) => {
   return (
     <footer>
       <div>
-        Komodo Digital Copyright &copy; 2018
+        Komodo Digital Copyright &copy; 2018<br/>
         <Link to="/">Privacy Policy</Link>|<Link to="/">Terms and Conditions</Link>
       </div>
       <div>
-        Get in touch on:
+        Get in touch on:<br/>
         <Link to="tel:0191 228 6555">0191 228 6555</Link>
       </div>
     </footer>

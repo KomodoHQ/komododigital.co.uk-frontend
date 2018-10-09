@@ -1,13 +1,19 @@
 import React, { ReactNode } from 'react';
 
 interface Props {
-  data: any;
+  avatar: string,
+  name: string,
+  jobtitle: string,
+  email: string
 }
 
-const VCard: React.SFC<Props> = ({ data }) => {
+const VCard: React.SFC<Props> = ({ avatar, name, jobtitle, email }) => {
   return (
     <div>
-        VCard
+      <div>{avatar}</div>
+        <h1>{name}</h1>
+        <h2>{jobtitle}</h2>
+        <a href="mailto: {email}">{email}</a>
     </div>
   );
 };

@@ -1,14 +1,21 @@
 import React, { ReactNode } from 'react';
+import "./content-section.css";
 
 interface Props {
-  data?: any;
-  title: string;
+  title?: string
+  subtitle?: string
+  children: ReactNode
 }
 
-const ContentSection: React.SFC<Props> = ({ data, title = 'TITLE HERE', children }) => {
+const ContentSection: React.SFC<Props> = ({ title = 'TITLE HERE', subtitle=null, children }) => {
+
+  const subtitleEl = subtitle ? (<span>{subtitle}</span>) : null;
+  const titleEl = title ? (<h2>{title}</h2>) : null;
+
   return (
-    <div>
-        <h2>{title}</h2>
+    <div className="Content-Section">
+        {subtitleEl}
+        {titleEl}
         <div>{children}</div>
     </div>
   );
