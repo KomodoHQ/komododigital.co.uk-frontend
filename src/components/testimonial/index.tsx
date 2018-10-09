@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import "./testimonial.css"
+import './testimonial.css';
 
 interface Props {
   data: any;

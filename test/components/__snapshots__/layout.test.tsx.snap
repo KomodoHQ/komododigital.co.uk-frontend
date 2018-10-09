@@ -1,3 +1,102 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Layout element is rendered 1`] = `<div />`;
+exports[`Layout element is rendered 1`] = `
+<div>
+  <div
+    className="navigationBar"
+  >
+    <a
+      aria-current="page"
+      href="/"
+      onClick={[Function]}
+    >
+      <h1>
+        Komodo
+      </h1>
+    </a>
+    <ul>
+      <li>
+        <a
+          aria-current="page"
+          href="/"
+          onClick={[Function]}
+        >
+          About
+        </a>
+      </li>
+      <li>
+        <a
+          aria-current="page"
+          href="/"
+          onClick={[Function]}
+        >
+          Case Studies
+        </a>
+      </li>
+      <li>
+        <a
+          href="/blog-list"
+          onClick={[Function]}
+        >
+          Insights
+        </a>
+      </li>
+      <li>
+        <a
+          aria-current="page"
+          href="/"
+          onClick={[Function]}
+        >
+          Contact
+        </a>
+      </li>
+    </ul>
+  </div>
+  <footer>
+    <div
+      className="komodo"
+    >
+      Komodo
+    </div>
+    <div
+      className="address"
+    >
+      Address
+    </div>
+    <div
+      className="sitemap"
+    >
+      Sitemap
+    </div>
+  </footer>
+  <footer>
+    <div>
+      Komodo Digital Copyright © 2018
+      <a
+        aria-current="page"
+        href="/"
+        onClick={[Function]}
+      >
+        Privacy Policy
+      </a>
+      |
+      <a
+        aria-current="page"
+        href="/"
+        onClick={[Function]}
+      >
+        Terms and Conditions
+      </a>
+    </div>
+    <div>
+      Get in touch on:
+      <a
+        href="/tel:0191 228 6555"
+        onClick={[Function]}
+      >
+        0191 228 6555
+      </a>
+    </div>
+  </footer>
+</div>
+`;

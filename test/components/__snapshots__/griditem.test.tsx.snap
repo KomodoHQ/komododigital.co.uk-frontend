@@ -2,6 +2,10 @@
 
 exports[`GridItem element is rendered 1`] = `
 <div>
-  GridItem
+  <div>
+    IMAGE
+  </div>
+  <h3 />
+  <p />
 </div>
 `;

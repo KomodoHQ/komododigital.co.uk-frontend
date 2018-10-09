@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react';
 
 interface Props {
-  data: any;
+  data?: any;
 }
 
 const BlogPost: React.SFC<Props> = ({ data }) => {

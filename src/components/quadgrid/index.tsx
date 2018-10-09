@@ -1,13 +1,15 @@
 import React, { ReactNode } from 'react';
 
 interface Props {
-  data: any;
+  data?: any;
 }
 
-const QuadGrid: React.SFC<Props> = ({ data }) => {
+const QuadGrid: React.SFC<Props> = ({ data, children }) => {
   return (
     <div>
         QuadGrid
+
+        {children}
     </div>
   );
 };

@@ -4,13 +4,13 @@ import { Link } from '@reach/router';
 import './NavigationBar.css';
 
 interface Props {
-  data: any;
+  data?: any;
 }
 
 const NavigationBar: React.SFC<Props> = ({ data }) => {
   return (
     <div className="navigationBar">
-      <h1>Komodo</h1>
+      <Link to="/"><h1>Komodo</h1></Link>
       <ul>
         <li>
           <Link to="/">About</Link>
@@ -19,7 +19,7 @@ const NavigationBar: React.SFC<Props> = ({ data }) => {
           <Link to="/">Case Studies</Link>
         </li>
         <li>
-          <Link to="/">Insights</Link>
+          <Link to={'blog-list'}>Insights</Link>
         </li>
         <li>
           <Link to="/">Contact</Link>

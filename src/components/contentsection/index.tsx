@@ -1,14 +1,15 @@
 import React, { ReactNode } from 'react';
 
 interface Props {
-  data: any;
+  data?: any;
+  title: string;
 }
 
-const ContentSection: React.SFC<Props> = ({ data }) => {
+const ContentSection: React.SFC<Props> = ({ data, title = 'TITLE HERE', children }) => {
   return (
     <div>
-        <h2>Content section title</h2>
-        <div>Content</div>
+        <h2>{title}</h2>
+        <div>{children}</div>
     </div>
   );
 };
