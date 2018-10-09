@@ -10,7 +10,7 @@ const GridItem: React.SFC<Props> = ({ data, title, children }) => {
     <div>
         <div>IMAGE</div>
         <h3>{title}</h3>
-        <p>{children}</p>
+        {children}
     </div>
   );
 };

@@ -14,7 +14,7 @@ const CaseStudy: React.SFC<Props> = ({ data, subtitle, title, children }) => {
       <div>
         <span>{subtitle}</span>
         <h2>{title}</h2>
-        <p>{children}</p>
+        {children}
         <Link to="/">Read Case Study</Link>
       </div>
     </div>
