@@ -15,5 +15,5 @@ story.add(
       <Metric />
       ~~~
     
-    `)(() => <Metric />),
+    `)(() => <Metric value="100" metric="Metric result" description="Description" />),
 );

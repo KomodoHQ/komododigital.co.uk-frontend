@@ -3,15 +3,18 @@ import './metric.css';
 
 interface Props {
   data: any;
+  value: number,
+  metric: string,
+  description: string
 }
 
-const Metric: React.SFC<Props> = ({ data }) => {
+const Metric: React.SFC<Props> = ({ value, metric, description }) => {
   return (
     <div className="Metric">
-        <span className="number">Number</span>
-        <span>Metric / Result</span>
+        <span className="number">{value}</span>
+        <span>{metric}</span>
         <hr />
-        <p>Description</p>
+        <p>{description}</p>
     </div>
   );
 };
