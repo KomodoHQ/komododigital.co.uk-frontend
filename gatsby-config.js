@@ -5,7 +5,17 @@ module.exports = {
     description: 'Home of Komodo Digital',
   },
   plugins: [
-    `gatsby-plugin-typescript`,
+    { 
+      resolve: 'gatsby-plugin-typescript', 
+      options: { 
+        transpileOnly: true, // default 
+        compilerOptions: { 
+          target: 'esnext', 
+          experimentalDecorators: true, 
+          jsx: 'react', 
+        }, 
+      } 
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-offline`,
     `gatsby-transformer-remark`,
