@@ -2,6 +2,7 @@ import React from 'react';
 import rehypeReact from 'rehype-react';
 import { Link } from 'gatsby';
 import Layout from '../components/layout';
+import Metric from '../components/metric';
 import Services from '../components/services';
 import CaseStudy from '../components/casestudy';
 import QuadGrid from '../components/quadgrid';
@@ -23,8 +24,18 @@ export default (props) => {
         <span>{props.subtitle}</span>
         <ContentSection title={props.title}>{renderAst(props.intro)}</ContentSection>
       </div>
-       <ContentSection title="Solution/Project">
+      <ContentSection title="Solution/Project">
         {renderAst(props.metricsIntro)}
+        {props.metrics.map((metric) => {
+          return (
+            <Metric
+              key={metric.metric}
+              metric={metric.metric}
+              value={metric.value}
+              description={metric.description}
+            />
+          );
+        })}
       </ContentSection>
       {/*<ContentSection title="Approach">
         {renderAst(props.approachIntro)}

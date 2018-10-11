@@ -10,7 +10,7 @@ export default (props) => {
   // const services = findNodes('group', props, 'Services');
   // const caseStudies = findNodes('group', props, 'CaseStudies');
   // const caseStudiesIntro = findNode('case_studies.md', props);
-  const metricsIntro = findNode(`${props.pageContext.slug}/metrics`, props);
+  const metrics = findNode(`${props.pageContext.slug}/metrics`, props);
   // const approachIntro = findNode('approach.md', props);
   // const clientPortfoliosIntro = findNode('client_portfolio.md', props);
   // const insightsIntro = findNode('insights.md', props);
@@ -22,7 +22,8 @@ export default (props) => {
     // subtitle: rootNode.frontmatter.subtitle,
     // title: rootNode.frontmatter.title,
     intro: rootNode.htmlAst,
-    metricsIntro: metricsIntro.htmlAst,
+    metricsIntro: metrics.htmlAst,
+    metrics: metrics.frontmatter.scores,
     // approachIntro: approachIntro.htmlAst,
     // caseStudiesIntro: caseStudiesIntro.htmlAst,
     // clientPortfoliosIntro: clientPortfoliosIntro.htmlAst,
@@ -51,6 +52,11 @@ export const caseStudyQuery = graphql`
             title
             subtitle
             group
+            scores {
+              metric
+              value
+              description
+            }
           }
           fileAbsolutePath
         }
