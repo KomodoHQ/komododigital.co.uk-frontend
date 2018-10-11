@@ -7,28 +7,24 @@ export default (props) => {
   // Basename is the top level, should have sections
   // Use sections to pull out sub content in order
   const rootNode = findNode(props.pageContext.slug, props);
-  // const services = findNodes('group', props, 'Services');
-  // const caseStudies = findNodes('group', props, 'CaseStudies');
-  // const caseStudiesIntro = findNode('case_studies.md', props);
+  let caseStudies = findNodes('group', props, 'case-studies');
+  const caseStudiesIntro = findNode('case_studies', props);
   const metrics = findNode(`${props.pageContext.slug}/metrics`, props);
-  // const approachIntro = findNode('approach.md', props);
-  // const clientPortfoliosIntro = findNode('client_portfolio.md', props);
-  // const insightsIntro = findNode('insights.md', props);
-  // const contactsIntro = findNode('contacts.md', props);
+  const process = findNode(`${props.pageContext.slug}/process`, props);
+  const contactsIntro = findNode('contacts', props);
+
+  // Show other case studies, but filter this one
+  caseStudies = caseStudies.filter(study => study.fileAbsolutePath !== rootNode.fileAbsolutePath);
 
   const hocProps = {
-    // services,
-    // caseStudies,
-    // subtitle: rootNode.frontmatter.subtitle,
-    // title: rootNode.frontmatter.title,
+    caseStudies,
     intro: rootNode.htmlAst,
     metricsIntro: metrics.htmlAst,
     metrics: metrics.frontmatter.scores,
-    // approachIntro: approachIntro.htmlAst,
-    // caseStudiesIntro: caseStudiesIntro.htmlAst,
-    // clientPortfoliosIntro: clientPortfoliosIntro.htmlAst,
-    // insightsIntro: insightsIntro.htmlAst,
-    // contactsIntro: contactsIntro.htmlAst,
+    processTitle: process.frontmatter.title,
+    process: process.htmlAst,
+    caseStudiesIntro: caseStudiesIntro.htmlAst,
+    contactsIntro: contactsIntro.htmlAst,
     ...props,
   };
 

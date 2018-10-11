@@ -1,6 +1,5 @@
 import React from 'react';
 import rehypeReact from 'rehype-react';
-import { Link } from 'gatsby';
 import Layout from '../components/layout';
 import Services from '../components/services';
 import CaseStudy from '../components/casestudy';
