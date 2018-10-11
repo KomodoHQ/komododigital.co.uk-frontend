@@ -1,6 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import Index from '../templates/index';
+import CaseStudies from '../templates/case-studies';
 import path from 'path';
 
 const findNodes = (keyToFind, props, valueToFind = null) => {
@@ -28,36 +28,20 @@ const findNode = (keyToFind, props) => {
 export default (props) => {
   // Basename is the top level, should have sections
   // Use sections to pull out sub content in order
-  const rootNode = findNode('index.md', props);
-  const services = findNodes('group', props, 'Services');
   const caseStudies = findNodes('group', props, 'CaseStudies');
-  const caseStudiesIntro = findNode('case_studies.md', props);
-  const aboutUsIntro = findNode('about_us.md', props);
-  const approachIntro = findNode('approach.md', props);
-  const clientPortfoliosIntro = findNode('client_portfolio.md', props);
-  const insightsIntro = findNode('insights.md', props);
   const contactsIntro = findNode('contacts.md', props);
 
   const hocProps = {
-    services,
     caseStudies,
-    subtitle: rootNode.frontmatter.subtitle,
-    title: rootNode.frontmatter.title,
-    intro: rootNode.htmlAst,
-    aboutUsIntro: aboutUsIntro.htmlAst,
-    approachIntro: approachIntro.htmlAst,
-    caseStudiesIntro: caseStudiesIntro.htmlAst,
-    clientPortfoliosIntro: clientPortfoliosIntro.htmlAst,
-    insightsIntro: insightsIntro.htmlAst,
     contactsIntro: contactsIntro.htmlAst,
     ...props,
   };
 
-  return <Index {...hocProps} />;
+  return <CaseStudies {...hocProps} />;
 };
 
-export const pageQuery = graphql`
-  query pageQuery {
+export const caseStudiesQuery = graphql`
+  query caseStudiesQuery {
     site {
       siteMetadata {
         name
@@ -65,7 +49,7 @@ export const pageQuery = graphql`
         description
       }
     }
-    allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/index|case-studies|contacts/" } }) {
+    allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/case-studies|contacts/" } }) {
       edges {
         node {
           htmlAst
