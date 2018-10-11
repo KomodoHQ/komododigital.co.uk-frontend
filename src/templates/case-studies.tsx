@@ -18,7 +18,7 @@ export default (props) => {
       <ContentSection title="Case Studies">
         {props.caseStudies.map((study) => {
           return (
-            <CaseStudy key={study.title} subtitle={study.subtitle} title={study.title}>
+            <CaseStudy key={study.title} subtitle={study.subtitle} title={study.title} link={study.link}>
               {renderAst(study.htmlAst)}
             </CaseStudy>
           );

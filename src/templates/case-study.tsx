@@ -23,8 +23,10 @@ export default (props) => {
         <span>{props.subtitle}</span>
         <ContentSection title={props.title}>{renderAst(props.intro)}</ContentSection>
       </div>
-      <ContentSection title="About Us">{renderAst(props.aboutUsIntro)}</ContentSection>
-      <ContentSection title="Approach">
+       <ContentSection title="Solution/Project">
+        {renderAst(props.metricsIntro)}
+      </ContentSection>
+      {/*<ContentSection title="Approach">
         {renderAst(props.approachIntro)}
         <Services>
           {props.services.map((service) => {
@@ -40,12 +42,7 @@ export default (props) => {
         {renderAst(props.caseStudiesIntro)}
         {props.caseStudies.map((study) => {
           return (
-            <CaseStudy
-              key={study.title}
-              subtitle={study.subtitle}
-              title={study.title}
-              link={study.link}
-            >
+            <CaseStudy key={study.title} subtitle={study.subtitle} title={study.title}>
               {renderAst(study.htmlAst)}
             </CaseStudy>
           );
@@ -78,7 +75,7 @@ export default (props) => {
       <ContactSection>
         {renderAst(props.contactsIntro)}
         <ContactForm />
-      </ContactSection>
+      </ContactSection> */}
     </Layout>
   );
 };

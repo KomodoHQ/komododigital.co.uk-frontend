@@ -2,7 +2,7 @@
 title: 'Simplifying the customer journey to digital adoption'
 subtitle: 'Social Housing'
 date: '2018-09-22'
-group: 'CaseStudies'
+group: 'case-studies'
 ---
 
 

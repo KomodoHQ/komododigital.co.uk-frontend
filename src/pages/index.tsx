@@ -1,42 +1,20 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import Index from '../templates/index';
-import path from 'path';
-
-const findNodes = (keyToFind, props, valueToFind = null) => {
-  if (typeof valueToFind === 'string') {
-    return props.data.allMarkdownRemark.edges.filter(
-      (edge) => edge.node.frontmatter[keyToFind] === valueToFind,
-    ).map(edge => {
-      return {
-        ...edge.node,
-        ...edge.node.frontmatter,
-      };
-    });
-  } else {
-    return props.data.allMarkdownRemark.edges.filter(
-      (edge) => path.basename(edge.node.fileAbsolutePath) === keyToFind,
-    );
-  }
-};
-
-const findNode = (keyToFind, props) => {
-  const elements = findNodes(keyToFind, props);
-  return elements[0].node;
-};
+import { findNodes, findNode } from '../utils/nodes';
 
 export default (props) => {
   // Basename is the top level, should have sections
   // Use sections to pull out sub content in order
-  const rootNode = findNode('index.md', props);
-  const services = findNodes('group', props, 'Services');
-  const caseStudies = findNodes('group', props, 'CaseStudies');
-  const caseStudiesIntro = findNode('case_studies.md', props);
-  const aboutUsIntro = findNode('about_us.md', props);
-  const approachIntro = findNode('approach.md', props);
-  const clientPortfoliosIntro = findNode('client_portfolio.md', props);
-  const insightsIntro = findNode('insights.md', props);
-  const contactsIntro = findNode('contacts.md', props);
+  const rootNode = findNode('index', props);
+  const services = findNodes('group', props, 'services');
+  const caseStudies = findNodes('group', props, 'case-studies');
+  const caseStudiesIntro = findNode('case_studies', props);
+  const aboutUsIntro = findNode('about_us', props);
+  const approachIntro = findNode('approach', props);
+  const clientPortfoliosIntro = findNode('client_portfolio', props);
+  const insightsIntro = findNode('insights', props);
+  const contactsIntro = findNode('contacts', props);
 
   const hocProps = {
     services,
