@@ -29,21 +29,27 @@ export default (props) => {
   // Basename is the top level, should have sections
   // Use sections to pull out sub content in order
   const rootNode = findNode('index.md', props);
-  const aboutUs = findNode('about_us.md', props);
-  const approach = findNode('approach.md', props);
   const services = findNodes('group', props, 'Services');
-  const caseStudiesIntro = findNode('case_studies.md', props);
   const caseStudies = findNodes('group', props, 'CaseStudies');
+  const caseStudiesIntro = findNode('case_studies.md', props);
+  const aboutUsIntro = findNode('about_us.md', props);
+  const approachIntro = findNode('approach.md', props);
+  const clientPortfoliosIntro = findNode('client_portfolio.md', props);
+  const insightsIntro = findNode('insights.md', props);
+  const contactsIntro = findNode('contacts.md', props);
 
   const hocProps = {
+    services,
+    caseStudies,
     subtitle: rootNode.frontmatter.subtitle,
     title: rootNode.frontmatter.title,
     intro: rootNode.htmlAst,
-    aboutUs: aboutUs.htmlAst,
-    approach: approach.htmlAst,
-    services,
+    aboutUsIntro: aboutUsIntro.htmlAst,
+    approachIntro: approachIntro.htmlAst,
     caseStudiesIntro: caseStudiesIntro.htmlAst,
-    caseStudies,
+    clientPortfoliosIntro: clientPortfoliosIntro.htmlAst,
+    insightsIntro: insightsIntro.htmlAst,
+    contactsIntro: contactsIntro.htmlAst,
     ...props,
   };
 

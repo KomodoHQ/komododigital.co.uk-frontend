@@ -24,10 +24,10 @@ export default (props) => {
         <ContentSection title={props.title}>{renderAst(props.intro)}</ContentSection>
       </div>
       <ContentSection title="About Us">
-        {renderAst(props.aboutUs)}
+        {renderAst(props.aboutUsIntro)}
       </ContentSection>
       <ContentSection title="Approach">
-        {renderAst(props.approach)}
+        {renderAst(props.approachIntro)}
         <Services>
           {props.services.map((service) => {
             return (
@@ -50,6 +50,7 @@ export default (props) => {
         <SeeMoreButton title="See More Work" />
       </ContentSection>
       <ContentSection title="Client Portfolio">
+        {renderAst(props.clientPortfoliosIntro)}
         <QuadGrid>
           <GridItem />
           <GridItem />
@@ -65,12 +66,14 @@ export default (props) => {
         </QuadGrid>
       </ContentSection>
       <ContentSection title="Insights">
+        {renderAst(props.insightsIntro)}
         <BlogPost />
         <BlogPost />
         <BlogPost />
         <SeeMoreButton title="See More Insights" />
       </ContentSection>
       <ContactSection>
+        {renderAst(props.contactsIntro)}
         <ContactForm />
       </ContactSection>
     </Layout>
