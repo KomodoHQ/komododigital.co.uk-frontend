@@ -3,4 +3,4 @@ title: 'Contacts'
 date: '2018-09-22'
 ---
 
-Look, just because I don't be givin' no man a foot massage don't make it right for Marsellus to throw Antwone into a glass motherfuckin' house, fuckin' up the way the nigger talks. Motherfucker do that shit to me, he better paralyze my ass, 'cause I'll kill the motherfucker, know what I'm sayin'?
+Maybe there's a happy little Evergreen that lives here. You can create beautiful things - but you have to see them in your mind first. You have to make these big decisions. Every highlight needs it's own personal shadow.
