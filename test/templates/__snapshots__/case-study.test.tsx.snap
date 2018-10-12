@@ -1,0 +1,193 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Case Study template is rendered 1`] = `
+<div>
+  <div
+    className="navigationBar"
+  >
+    <a
+      aria-current="page"
+      href="/"
+      onClick={[Function]}
+    >
+      <h1>
+        Komodo
+      </h1>
+    </a>
+    <ul>
+      <li>
+        <a
+          href="/about"
+          onClick={[Function]}
+        >
+          About
+        </a>
+      </li>
+      <li>
+        <a
+          href="/case-studies"
+          onClick={[Function]}
+        >
+          Case Studies
+        </a>
+      </li>
+      <li>
+        <a
+          href="/blog-list"
+          onClick={[Function]}
+        >
+          Insights
+        </a>
+      </li>
+      <li>
+        <a
+          href="/contact"
+          onClick={[Function]}
+        >
+          Contact
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div>
+    <span>
+      subtitle
+    </span>
+    <div
+      className="Content-Section"
+    >
+      <h2>
+        title
+      </h2>
+      <div>
+        <span>
+          Lorem Ipsum is the industry standard typesetting text
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    className="Content-Section"
+  >
+    <h2>
+      Solution/Project Outcome
+    </h2>
+    <div>
+      <span>
+        Lorem Ipsum is the industry standard typesetting text
+      </span>
+    </div>
+  </div>
+  <div
+    className="Content-Section"
+  >
+    <h2>
+      title
+    </h2>
+    <div>
+      <span>
+        Lorem Ipsum is the industry standard typesetting text
+      </span>
+    </div>
+  </div>
+  <div
+    className="Content-Section"
+  >
+    <h2>
+      test
+    </h2>
+    <div>
+      <div
+        className="Testimonial"
+      >
+        <span>
+          Name:
+        </span>
+        <q>
+          Testimonial
+        </q>
+        <hr />
+        <span
+          className="job"
+        >
+          Job title
+        </span>
+        <span
+          className="company"
+        >
+          Company
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    className="Content-Section"
+  >
+    <h2>
+      Other related work
+    </h2>
+    <div>
+      <span>
+        Lorem Ipsum is the industry standard typesetting text
+      </span>
+    </div>
+  </div>
+  <div>
+    ContactSection
+    <span>
+      Lorem Ipsum is the industry standard typesetting text
+    </span>
+    <div>
+      ContactForm
+    </div>
+  </div>
+  <footer>
+    <div
+      className="komodo"
+    >
+      Komodo
+    </div>
+    <div
+      className="address"
+    >
+      Address
+    </div>
+    <div
+      className="sitemap"
+    >
+      Sitemap
+    </div>
+  </footer>
+  <footer>
+    <div>
+      Komodo Digital Copyright © 2018
+      <br />
+      <a
+        aria-current="page"
+        href="/"
+        onClick={[Function]}
+      >
+        Privacy Policy
+      </a>
+      |
+      <a
+        aria-current="page"
+        href="/"
+        onClick={[Function]}
+      >
+        Terms and Conditions
+      </a>
+    </div>
+    <div>
+      Get in touch on:
+      <br />
+      <a
+        href="/tel:0191 228 6555"
+        onClick={[Function]}
+      >
+        0191 228 6555
+      </a>
+    </div>
+  </footer>
+</div>
+`;

@@ -15,6 +15,10 @@ const renderAst = new rehypeReact({
   createElement: React.createElement,
 }).Compiler;
 
+/**
+ * Note, the interfaces below will eventually exist in their own 
+ * components, but for now are fine here.
+ */
 interface Service {
   title: string;
   htmlAst: any;
