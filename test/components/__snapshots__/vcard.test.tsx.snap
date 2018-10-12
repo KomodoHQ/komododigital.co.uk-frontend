@@ -2,11 +2,19 @@
 
 exports[`Vcard element is rendered 1`] = `
 <div>
-  <div />
-  <h1 />
-  <h2 />
+  <div>
+    test
+  </div>
+  <h1>
+    test
+  </h1>
+  <h2>
+    test
+  </h2>
   <a
     href="mailto: {email}"
-  />
+  >
+    test
+  </a>
 </div>
 `;

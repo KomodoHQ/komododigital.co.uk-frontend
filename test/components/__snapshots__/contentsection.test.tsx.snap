@@ -4,9 +4,16 @@ exports[`ContentSection element is rendered 1`] = `
 <div
   className="Content-Section"
 >
+  <span>
+    Testy
+  </span>
   <h2>
-    TITLE HERE
+    Test
   </h2>
-  <div />
+  <div>
+    <p>
+      Test
+    </p>
+  </div>
 </div>
 `;

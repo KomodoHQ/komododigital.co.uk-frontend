@@ -21,7 +21,8 @@
     "lint-fix": "tslint --project tsconfig.json 'src/**/*.{ts,tsx}' --fix",
     "storybook": "start-storybook -p 9001 -c storybook",
     "coverage": "codecov",
-    "cloudfront-invalidate": "node scripts/cloudfront-invalidate.js"
+    "cloudfront-invalidate": "node scripts/cloudfront-invalidate.js",
+    "ts": "tsc --diagnostics --project tsconfig.json"
   },
   "repository": {
     "type": "git",

@@ -6,9 +6,15 @@ exports[`Metric element is rendered 1`] = `
 >
   <span
     className="number"
-  />
-  <span />
+  >
+    1
+  </span>
+  <span>
+    Test
+  </span>
   <hr />
-  <p />
+  <p>
+    test
+  </p>
 </div>
 `;
