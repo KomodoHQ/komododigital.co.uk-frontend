@@ -4,8 +4,6 @@ import CaseStudies from '../templates/case-studies';
 import { findNodes, findNode } from '../utils/nodes';
 
 export default (props) => {
-  // Basename is the top level, should have sections
-  // Use sections to pull out sub content in order
   const caseStudies = findNodes('group', props, 'case-studies');
   const contactsIntro = findNode('contacts', props);
 

@@ -60,14 +60,18 @@ exports.createPages = ({ graphql, actions }) => {
       });
 
       _.each(result.data.allMarkdownRemark.edges, (edge) => {
-        const actualPath = fileToSlug(edge.node.fileAbsolutePath);
-        createPage({
-          path: `/case-studies/${actualPath}/`,
-          component: slash(caseStudyTemplate),
-          context: {
-            slug: actualPath,
-          },
-        });
+        // Only create pages for files with index in
+        if (edge.node.fileAbsolutePath.endsWith('index.md')) {
+          const slug = fileToSlug(edge.node.fileAbsolutePath);
+
+          createPage({
+            path: `/${slug}/`,
+            component: slash(caseStudyTemplate),
+            context: {
+              slug: slug,
+            },
+          });
+        }
       });
 
       resolve();

@@ -9,7 +9,7 @@ interface Edge {
     frontmatter: any;
     fileAbsolutePath: string;
   };
-  link?: string;
+  link?: string | null;
   // As this object is spread from frontmatter with any number of additional keys,
   // we use this bad boy.
   [key: string]: any;
@@ -58,7 +58,7 @@ export const findNodes = (
         return {
           ...edge.node,
           ...edge.node.frontmatter,
-          link: `${valueToFind}/${fileToSlug(edge.node.fileAbsolutePath)}`,
+          link: fileToSlug(edge.node.fileAbsolutePath),
         };
       });
   }
@@ -69,7 +69,7 @@ export const findNodes = (
       return {
         ...edge.node,
         ...edge.node.frontmatter,
-        link: `${fileToSlug(edge.node.fileAbsolutePath)}`,
+        link: fileToSlug(edge.node.fileAbsolutePath),
       };
     });
 };

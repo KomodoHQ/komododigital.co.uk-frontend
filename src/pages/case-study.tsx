@@ -4,11 +4,9 @@ import CaseStudy from '../templates/case-study';
 import { findNodes, findNode } from '../utils/nodes';
 
 export default (props) => {
-  // Basename is the top level, should have sections
-  // Use sections to pull out sub content in order
   const rootNode = findNode(props.pageContext.slug, props);
   let caseStudies = findNodes('group', props, 'case-studies');
-  const caseStudiesIntro = findNode('case_studies', props);
+  const caseStudiesIntro = findNode('case-studies/index', props);
   const metrics = findNode(`${props.pageContext.slug}/metrics`, props);
   const process = findNode(`${props.pageContext.slug}/process`, props);
   const contactsIntro = findNode('contacts', props);
