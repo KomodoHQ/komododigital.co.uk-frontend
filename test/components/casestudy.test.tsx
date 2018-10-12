@@ -3,9 +3,7 @@ import CaseStudy from '../../src/components/casestudy';
 import renderer from 'react-test-renderer';
 
 test('CaseStudy element is rendered', () => {
-  const data = {
-  };
-  const component = renderer.create(<CaseStudy data={data} />);
+  const component = renderer.create(<CaseStudy subtitle={"Test"} title={"Test"} link={"Test"} />);
   let tree = component.toJSON();
   expect(tree).toMatchSnapshot();
 });

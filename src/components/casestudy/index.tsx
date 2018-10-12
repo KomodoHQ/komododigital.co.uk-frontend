@@ -5,6 +5,7 @@ interface Props {
   data?: any;
   subtitle: string;
   title: string;
+  link: string;
 }
 
 const CaseStudy: React.SFC<Props> = ({ data, subtitle, title, children, link }) => {

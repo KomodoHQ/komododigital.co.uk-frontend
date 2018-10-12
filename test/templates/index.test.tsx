@@ -4,18 +4,31 @@ import renderer from 'react-test-renderer';
 import GatsbyData from '../../gatsby-config';
 
 test('Blog template is rendered', () => {
+
+  const htmlAst = {
+    type: 'element',
+    tagName: 'span',
+    properties: {},
+    children: [
+      {
+        type: 'text',
+        value: 'Lorem Ipsum is the industry standard typesetting text',
+      },
+    ],
+  };
+
   const hocProps = {
-    htmlAst: {
-      type: 'element',
-      tagName: 'span',
-      properties: {},
-      children: [
-        {
-          type: 'text',
-          value: 'Komodo Digital',
-        },
-      ],
-    },
+    services: [],
+    caseStudies: [],
+    subtitle: 'subtitle',
+    title: 'title',
+    intro: htmlAst,
+    aboutUsIntro: htmlAst,
+    approachIntro: htmlAst,
+    caseStudiesIntro: htmlAst,
+    clientPortfoliosIntro: htmlAst,
+    insightsIntro: htmlAst,
+    contactsIntro: htmlAst,
     data: {
       site: GatsbyData,
     },

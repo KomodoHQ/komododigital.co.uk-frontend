@@ -17,8 +17,7 @@ exports[`Blog template is rendered 1`] = `
     <ul>
       <li>
         <a
-          aria-current="page"
-          href="/"
+          href="/about"
           onClick={[Function]}
         >
           About
@@ -26,8 +25,7 @@ exports[`Blog template is rendered 1`] = `
       </li>
       <li>
         <a
-          aria-current="page"
-          href="/"
+          href="/case-studies"
           onClick={[Function]}
         >
           Case Studies
@@ -43,8 +41,7 @@ exports[`Blog template is rendered 1`] = `
       </li>
       <li>
         <a
-          aria-current="page"
-          href="/"
+          href="/contact"
           onClick={[Function]}
         >
           Contact
@@ -54,151 +51,73 @@ exports[`Blog template is rendered 1`] = `
   </div>
   <div>
     <span>
-      People Friendly Software
+      subtitle
     </span>
-    <div>
+    <div
+      className="Content-Section"
+    >
       <h2>
-        This is a fairly long header with words spanning multiple lines.
+        title
       </h2>
       <div>
-        <p>
-          God gave you this gift of imagination. Use it. Just think about these things in your mind and drop em' on canvas. All you need is a dream in your heart, and an almighty knife. You could sit here for weeks with your one hair brush trying to do that - or you could do it with one stroke with an almighty brush.
-        </p>
-        <p>
-          This is the time to get out all your flustrations, much better than kicking the dog around the house or taking it out on your spouse. Fluff it up a little and hypnotize it. I think there's an artist hidden in the bottom of every single one of us. You can do anything your heart can imagine. Steve wants reflections, so let's give him reflections. Don't be afraid to make these big decisions. Once you start, they sort of just make themselves.
-        </p>
+        <span>
+          Lorem Ipsum is the industry standard typesetting text
+        </span>
       </div>
     </div>
   </div>
-  <div>
+  <div
+    className="Content-Section"
+  >
     <h2>
       About Us
     </h2>
     <div>
-      <p>
-        We don't need any guidelines or formats. All we need to do is just let it flow right out of us. This is gonna be a happy little seascape. Let's build some happy little clouds up here. It's so important to do something every day that will make you happy.
-      </p>
-      <div>
-        IMAGE HERE
-      </div>
+      <span>
+        Lorem Ipsum is the industry standard typesetting text
+      </span>
     </div>
   </div>
-  <div>
+  <div
+    className="Content-Section"
+  >
     <h2>
       Approach
     </h2>
     <div>
-      <p>
-        Here's something that's fun. Let's do that again. I can't think of anything more rewarding than being able to express yourself to others through painting. Brown is such a nice color.
-      </p>
+      <span>
+        Lorem Ipsum is the industry standard typesetting text
+      </span>
       <div>
         Services
-        <div>
-          <div>
-            IMAGE
-          </div>
-          <h3>
-            Discovery
-          </h3>
-          <p>
-            We'll put some happy little leaves here and there. The light is your friend. Preserve it. Let's do it again then, what the heck.
-          </p>
-        </div>
-        <div>
-          <div>
-            IMAGE
-          </div>
-          <h3>
-            Design
-          </h3>
-          <p>
-            The very fact that you're aware of suffering is enough reason to be overjoyed that you're alive and can experience it.
-          </p>
-        </div>
-        <div>
-          <div>
-            IMAGE
-          </div>
-          <h3>
-            Development
-          </h3>
-          <p />
-        </div>
-        Tree trunks grow however makes them happy. Everything's not great in life, but we can still find beauty in it.
-        <div>
-          <div>
-            IMAGE
-          </div>
-          <h3>
-            Delivery
-          </h3>
-          <p>
-            There we go. In your world you can create anything you desire. You can create the world you want to see and be a part of.
-          </p>
-        </div>
       </div>
     </div>
   </div>
-  <div>
+  <div
+    className="Content-Section"
+  >
     <h2>
       Case Studies
     </h2>
     <div>
-      <p>
-        All you have to do is let your imagination go wild. The secret to doing anything is believing that you can do it. Anything that you believe you can do strong enough, you can do.
-      </p>
-      <div>
-        <img />
-        <div>
-          <span>
-            Social Housing
-          </span>
-          <h2>
-            Simplifying the customer journey to digital adoption
-          </h2>
-          <p>
-            The light is your friend. Preserve it. Nothing wrong with washing your brush. And right there you got an almighty cloud.Let's put some happy little bushes on the other side now. You want your tree to have some character. Make it special. In your world you can create anything you desire. Just make a decision and let it go.
-          </p>
-          <a
-            aria-current="page"
-            href="/"
-            onClick={[Function]}
-          >
-            Read Case Study
-          </a>
-        </div>
-      </div>
-      <div>
-        <img />
-        <div>
-          <span>
-            Start Up
-          </span>
-          <h2>
-            Delivering a user focused solution for an on-demand courier service
-          </h2>
-          <p>
-            The light is your friend. Preserve it. Nothing wrong with washing your brush. And right there you got an almighty cloud.Let's put some happy little bushes on the other side now. You want your tree to have some character. Make it special. In your world you can create anything you desire. Just make a decision and let it go.
-          </p>
-          <a
-            aria-current="page"
-            href="/"
-            onClick={[Function]}
-          >
-            Read Case Study
-          </a>
-        </div>
-      </div>
+      <span>
+        Lorem Ipsum is the industry standard typesetting text
+      </span>
       <div>
         See More Work
       </div>
     </div>
   </div>
-  <div>
+  <div
+    className="Content-Section"
+  >
     <h2>
       Client Portfolio
     </h2>
     <div>
+      <span>
+        Lorem Ipsum is the industry standard typesetting text
+      </span>
       <div>
         QuadGrid
         <div>
@@ -206,86 +125,80 @@ exports[`Blog template is rendered 1`] = `
             IMAGE
           </div>
           <h3 />
-          <p />
         </div>
         <div>
           <div>
             IMAGE
           </div>
           <h3 />
-          <p />
         </div>
         <div>
           <div>
             IMAGE
           </div>
           <h3 />
-          <p />
         </div>
         <div>
           <div>
             IMAGE
           </div>
           <h3 />
-          <p />
         </div>
         <div>
           <div>
             IMAGE
           </div>
           <h3 />
-          <p />
         </div>
         <div>
           <div>
             IMAGE
           </div>
           <h3 />
-          <p />
         </div>
         <div>
           <div>
             IMAGE
           </div>
           <h3 />
-          <p />
         </div>
         <div>
           <div>
             IMAGE
           </div>
           <h3 />
-          <p />
         </div>
         <div>
           <div>
             IMAGE
           </div>
           <h3 />
-          <p />
         </div>
         <div>
           <div>
             IMAGE
           </div>
           <h3 />
-          <p />
         </div>
         <div>
           <div>
             IMAGE
           </div>
           <h3 />
-          <p />
         </div>
       </div>
     </div>
   </div>
-  <div>
+  <div
+    className="Content-Section"
+  >
     <h2>
       Insights
     </h2>
     <div>
+      <span>
+        Lorem Ipsum is the industry standard typesetting text
+      </span>
       <div>
         BlogPost
       </div>
@@ -302,6 +215,9 @@ exports[`Blog template is rendered 1`] = `
   </div>
   <div>
     ContactSection
+    <span>
+      Lorem Ipsum is the industry standard typesetting text
+    </span>
     <div>
       ContactForm
     </div>
@@ -326,6 +242,7 @@ exports[`Blog template is rendered 1`] = `
   <footer>
     <div>
       Komodo Digital Copyright © 2018
+      <br />
       <a
         aria-current="page"
         href="/"
@@ -344,6 +261,7 @@ exports[`Blog template is rendered 1`] = `
     </div>
     <div>
       Get in touch on:
+      <br />
       <a
         href="/tel:0191 228 6555"
         onClick={[Function]}

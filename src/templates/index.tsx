@@ -15,7 +15,34 @@ const renderAst = new rehypeReact({
   createElement: React.createElement,
 }).Compiler;
 
-export default (props) => {
+interface Service {
+  title: string;
+  htmlAst: any;
+}
+
+interface CaseStudy {
+  title: string;
+  subtitle: string;
+  link: string;
+  htmlAst: any;
+}
+
+interface IndexPageProps {
+  services: Service[];
+  caseStudies: CaseStudy[];
+  subtitle: string;
+  title: string;
+  intro: any;
+  aboutUsIntro: any;
+  approachIntro: any;
+  caseStudiesIntro: any;
+  clientPortfoliosIntro: any;
+  insightsIntro: any;
+  contactsIntro: any;
+  data?: any;
+}
+
+export default (props: IndexPageProps) => {
   return (
     <Layout data={props.data}>
       <div>
