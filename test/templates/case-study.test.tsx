@@ -34,6 +34,6 @@ test('Case Study template is rendered', () => {
   };
 
   const component = renderer.create(<CaseStudy {...hocProps} />);
-  let tree = component.toJSON();
+  const tree = component.toJSON();
   expect(tree).toMatchSnapshot();
 });

@@ -21,6 +21,6 @@ test('Blog template is rendered', () => {
   };
 
   const component = renderer.create(<BlogList {...hocProps} />);
-  let tree = component.toJSON();
+  const tree = component.toJSON();
   expect(tree).toMatchSnapshot();
 });
