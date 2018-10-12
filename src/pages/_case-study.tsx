@@ -1,3 +1,9 @@
+/**
+ * This is a template for an individual case-study page. As this page is dynamically
+ * used to create pages via the "createPages" function in `gatsby-node.js`, we
+ * prefix the filename with an _ (underscore) so that a HTML page is not generated
+ * for it.
+ */
 import React from 'react';
 import { graphql } from 'gatsby';
 import CaseStudy from '../templates/case-study';
@@ -10,6 +16,10 @@ export default (props) => {
   const metrics = findNode(`${props.pageContext.slug}/metrics`, props);
   const process = findNode(`${props.pageContext.slug}/process`, props);
   const contactsIntro = findNode('contacts', props);
+
+  if (!rootNode) {
+    console.log(props)
+  }
 
   // Show other case studies, but filter this one
   caseStudies = caseStudies.filter((study) => study.fileAbsolutePath !== rootNode.fileAbsolutePath);

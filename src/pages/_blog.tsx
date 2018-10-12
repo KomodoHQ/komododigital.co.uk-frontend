@@ -1,3 +1,9 @@
+/**
+ * This is a template for an individual blog post. As this page is dynamically
+ * used to create pages via the "createPages" function in `gatsby-node.js`, we
+ * prefix the filename with an _ (underscore) so that a HTML page is not generated
+ * for it.
+ */
 import React from 'react';
 import { graphql } from 'gatsby';
 import CleanSourceURL from '../utils/clean-source-url';
