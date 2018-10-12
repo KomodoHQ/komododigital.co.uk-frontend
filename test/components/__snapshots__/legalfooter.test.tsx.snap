@@ -4,6 +4,7 @@ exports[`LegalFooter element is rendered 1`] = `
 <footer>
   <div>
     Komodo Digital Copyright © 2018
+    <br />
     <a
       aria-current="page"
       href="/"
@@ -22,6 +23,7 @@ exports[`LegalFooter element is rendered 1`] = `
   </div>
   <div>
     Get in touch on:
+    <br />
     <a
       href="/tel:0191 228 6555"
       onClick={[Function]}

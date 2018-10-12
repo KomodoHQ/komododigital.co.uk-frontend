@@ -1,8 +1,57 @@
+/**
+ * The functions in here are used for object tree traversal to extract the correct
+ * content to formulate pages.
+ */
 import { fileToSlug } from './file-to-slug';
 
-export const findNodes = (keyToFind, props, valueToFind = null) => {
+interface Edge {
+  node: {
+    frontmatter: any;
+    fileAbsolutePath: string;
+  };
+  link?: string;
+  [key: string]: any; // As this object is spread from frontmatter with any number of additional keys,
+                      // we use this bad boy.
+}
+
+interface Tree {
+  data: {
+    allMarkdownRemark: {
+      edges: Edge[];
+    };
+  };
+}
+
+/**
+ * Find content within GraphQL queried Markdown tree data.
+ *
+ * This function allows us to resolve content appropriate to pages by traversing the object
+ * `tree` for a given `keyToFind`.
+ *
+ * If `valueToFind` is supplied, will search tree `frontmatter` to ensure that the value
+ * of `keyToFind` matches `valueToFind`.
+ *
+ * If `valueToFind` is not supplied, will search tree `fileAbsolutePath` to match `keyToFind`
+ * inside of the filename.
+ *
+ * @example I want to search for a file named `index`. Use `findNodes("index", tree);
+ * @example I want to search fo all files that are `case-studies`. These files have a `group`
+ *          key with a value of `case-studies` inside their frontmatter.
+ *          Use `findNodes("group", tree, "case-studies");
+ *
+ * @param keyToFind Key to find content.
+ * @param tree Object tree to traverse to find the content.
+ * @param valueToFind Optional.
+ *                    Default `null` - will search inside `fileAbsolutePath` for `keyToFind`.
+ *                    Otherwise, searches inside `frontmatter` for `keyToFind`
+ */
+export const findNodes = (
+  keyToFind: string,
+  tree: Tree,
+  valueToFind: string | null = null,
+): Edge[] => {
   if (typeof valueToFind === 'string') {
-    return props.data.allMarkdownRemark.edges
+    return tree.data.allMarkdownRemark.edges
       .filter((edge) => edge.node.frontmatter[keyToFind] === valueToFind)
       .map((edge) => {
         return {
@@ -11,14 +60,32 @@ export const findNodes = (keyToFind, props, valueToFind = null) => {
           link: `${valueToFind}/${fileToSlug(edge.node.fileAbsolutePath)}`,
         };
       });
-  } else {
-    return props.data.allMarkdownRemark.edges.filter(
-      (edge) => edge.node.fileAbsolutePath.includes(keyToFind),
-    );
   }
+
+  return tree.data.allMarkdownRemark.edges.filter((edge) =>
+    edge.node.fileAbsolutePath.includes(keyToFind),
+  ).map((edge) => {
+    return {
+      ...edge.node,
+      ...edge.node.frontmatter,
+      link: `${fileToSlug(edge.node.fileAbsolutePath)}`,
+    };
+  });
 };
 
-export const findNode = (keyToFind, props) => {
-  const elements = findNodes(keyToFind, props);
-  return elements[0].node;
+/**
+ * Find a single piece of content within GraphQL queried Markdown tree data.
+ *
+ * This function allows us to resolve content appropriate to a single page by traversing the object
+ * `tree` for a given `keyToFind`. It will search tree `fileAbsolutePath` to match `keyToFind`
+ * inside of the filename.
+ *
+ * @example I want to search for a file named `index`. Use `findNodes("index", tree);
+ *
+ * @param keyToFind Key to find content.
+ * @param tree Object tree to traverse to find the content.
+ */
+export const findNode = (keyToFind: string, tree: Tree): Edge => {
+  const elements = findNodes(keyToFind, tree);
+  return elements[0];
 };

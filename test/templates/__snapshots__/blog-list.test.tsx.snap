@@ -17,8 +17,7 @@ exports[`Blog template is rendered 1`] = `
     <ul>
       <li>
         <a
-          aria-current="page"
-          href="/"
+          href="/about"
           onClick={[Function]}
         >
           About
@@ -26,8 +25,7 @@ exports[`Blog template is rendered 1`] = `
       </li>
       <li>
         <a
-          aria-current="page"
-          href="/"
+          href="/case-studies"
           onClick={[Function]}
         >
           Case Studies
@@ -43,8 +41,7 @@ exports[`Blog template is rendered 1`] = `
       </li>
       <li>
         <a
-          aria-current="page"
-          href="/"
+          href="/contact"
           onClick={[Function]}
         >
           Contact
@@ -94,6 +91,7 @@ exports[`Blog template is rendered 1`] = `
   <footer>
     <div>
       Komodo Digital Copyright © 2018
+      <br />
       <a
         aria-current="page"
         href="/"
@@ -112,6 +110,7 @@ exports[`Blog template is rendered 1`] = `
     </div>
     <div>
       Get in touch on:
+      <br />
       <a
         href="/tel:0191 228 6555"
         onClick={[Function]}

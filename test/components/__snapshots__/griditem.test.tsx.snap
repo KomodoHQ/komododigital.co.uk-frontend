@@ -6,6 +6,5 @@ exports[`GridItem element is rendered 1`] = `
     IMAGE
   </div>
   <h3 />
-  <p />
 </div>
 `;

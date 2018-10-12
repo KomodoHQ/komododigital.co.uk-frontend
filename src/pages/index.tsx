@@ -19,8 +19,8 @@ export default (props) => {
   const hocProps = {
     services,
     caseStudies,
-    subtitle: rootNode.frontmatter.subtitle,
-    title: rootNode.frontmatter.title,
+    subtitle: rootNode.subtitle,
+    title: rootNode.title,
     intro: rootNode.htmlAst,
     aboutUsIntro: aboutUsIntro.htmlAst,
     approachIntro: approachIntro.htmlAst,
