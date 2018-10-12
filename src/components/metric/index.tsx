@@ -2,10 +2,9 @@ import React, { ReactNode } from 'react';
 import './metric.css';
 
 interface Props {
-  data: any;
-  value: number,
-  metric: string,
-  description: string
+  value: number;
+  metric: string;
+  description: string;
 }
 
 const Metric: React.SFC<Props> = ({ value, metric, description }) => {

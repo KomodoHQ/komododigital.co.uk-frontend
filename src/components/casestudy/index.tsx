@@ -7,7 +7,7 @@ interface Props {
   title: string;
 }
 
-const CaseStudy: React.SFC<Props> = ({ data, subtitle, title, children }) => {
+const CaseStudy: React.SFC<Props> = ({ data, subtitle, title, children, link }) => {
   return (
     <div>
       <img />
@@ -15,7 +15,7 @@ const CaseStudy: React.SFC<Props> = ({ data, subtitle, title, children }) => {
         <span>{subtitle}</span>
         <h2>{title}</h2>
         {children}
-        <Link to="/">Read Case Study</Link>
+        <Link to={link}>Read Case Study</Link>
       </div>
     </div>
   );

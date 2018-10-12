@@ -1,6 +1,5 @@
 import React from 'react';
 import rehypeReact from 'rehype-react';
-import { Link } from 'gatsby';
 import Layout from '../components/layout';
 import Services from '../components/services';
 import CaseStudy from '../components/casestudy';
@@ -23,11 +22,9 @@ export default (props) => {
         <span>{props.subtitle}</span>
         <ContentSection title={props.title}>{renderAst(props.intro)}</ContentSection>
       </div>
-      <ContentSection title="About Us">
-        {renderAst(props.aboutUs)}
-      </ContentSection>
+      <ContentSection title="About Us">{renderAst(props.aboutUsIntro)}</ContentSection>
       <ContentSection title="Approach">
-        {renderAst(props.approach)}
+        {renderAst(props.approachIntro)}
         <Services>
           {props.services.map((service) => {
             return (
@@ -42,7 +39,12 @@ export default (props) => {
         {renderAst(props.caseStudiesIntro)}
         {props.caseStudies.map((study) => {
           return (
-            <CaseStudy key={study.title} subtitle={study.subtitle} title={study.title}>
+            <CaseStudy
+              key={study.title}
+              subtitle={study.subtitle}
+              title={study.title}
+              link={study.link}
+            >
               {renderAst(study.htmlAst)}
             </CaseStudy>
           );
@@ -50,6 +52,7 @@ export default (props) => {
         <SeeMoreButton title="See More Work" />
       </ContentSection>
       <ContentSection title="Client Portfolio">
+        {renderAst(props.clientPortfoliosIntro)}
         <QuadGrid>
           <GridItem />
           <GridItem />
@@ -65,12 +68,14 @@ export default (props) => {
         </QuadGrid>
       </ContentSection>
       <ContentSection title="Insights">
+        {renderAst(props.insightsIntro)}
         <BlogPost />
         <BlogPost />
         <BlogPost />
         <SeeMoreButton title="See More Insights" />
       </ContentSection>
       <ContactSection>
+        {renderAst(props.contactsIntro)}
         <ContactForm />
       </ContactSection>
     </Layout>
