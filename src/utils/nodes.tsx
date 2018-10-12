@@ -10,8 +10,9 @@ interface Edge {
     fileAbsolutePath: string;
   };
   link?: string;
-  [key: string]: any; // As this object is spread from frontmatter with any number of additional keys,
-                      // we use this bad boy.
+  // As this object is spread from frontmatter with any number of additional keys,
+  // we use this bad boy.
+  [key: string]: any;
 }
 
 interface Tree {
@@ -62,15 +63,15 @@ export const findNodes = (
       });
   }
 
-  return tree.data.allMarkdownRemark.edges.filter((edge) =>
-    edge.node.fileAbsolutePath.includes(keyToFind),
-  ).map((edge) => {
-    return {
-      ...edge.node,
-      ...edge.node.frontmatter,
-      link: `${fileToSlug(edge.node.fileAbsolutePath)}`,
-    };
-  });
+  return tree.data.allMarkdownRemark.edges
+    .filter((edge) => edge.node.fileAbsolutePath.includes(keyToFind))
+    .map((edge) => {
+      return {
+        ...edge.node,
+        ...edge.node.frontmatter,
+        link: `${fileToSlug(edge.node.fileAbsolutePath)}`,
+      };
+    });
 };
 
 /**
@@ -85,7 +86,12 @@ export const findNodes = (
  * @param keyToFind Key to find content.
  * @param tree Object tree to traverse to find the content.
  */
-export const findNode = (keyToFind: string, tree: Tree): Edge => {
+export const findNode = (keyToFind: string, tree: Tree): Edge | null => {
   const elements = findNodes(keyToFind, tree);
-  return elements[0];
+
+  if (elements.length) {
+    return elements[0];
+  }
+
+  return null;
 };
