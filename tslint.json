@@ -4,6 +4,6 @@
     "import-name": false,
     "variable-name": false,
     "no-boolean-literal-compare": true,
-    "arrow-parens": true,
+    "arrow-parens": true
   }
 }

@@ -16,7 +16,7 @@ const renderAst = new rehypeReact({
 }).Compiler;
 
 /**
- * Note, the interfaces below will eventually exist in their own 
+ * Note, the interfaces below will eventually exist in their own
  * components, but for now are fine here.
  */
 interface Service {

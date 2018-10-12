@@ -14,7 +14,7 @@ export default (props) => {
   const contactsIntro = findNode('contacts', props);
 
   // Show other case studies, but filter this one
-  caseStudies = caseStudies.filter(study => study.fileAbsolutePath !== rootNode.fileAbsolutePath);
+  caseStudies = caseStudies.filter((study) => study.fileAbsolutePath !== rootNode.fileAbsolutePath);
 
   const hocProps = {
     caseStudies,
