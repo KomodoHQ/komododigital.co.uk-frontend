@@ -9,7 +9,7 @@ export default (props) => {
 
   const hocProps = {
     caseStudies,
-    contactsIntro: contactsIntro.htmlAst,
+    contactsIntro: (contactsIntro) ? contactsIntro.htmlAst : '',
     ...props,
   };
 

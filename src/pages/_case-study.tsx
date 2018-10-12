@@ -17,22 +17,22 @@ export default (props) => {
   const process = findNode(`${props.pageContext.slug}/process`, props);
   const contactsIntro = findNode('contacts', props);
 
-  if (!rootNode) {
-    console.log(props)
+  if (rootNode) {
+    // Show other case studies, but filter this one
+    caseStudies = caseStudies.filter(
+      (study) => study.fileAbsolutePath !== rootNode.fileAbsolutePath,
+    );
   }
-
-  // Show other case studies, but filter this one
-  caseStudies = caseStudies.filter((study) => study.fileAbsolutePath !== rootNode.fileAbsolutePath);
 
   const hocProps = {
     caseStudies,
-    intro: rootNode.htmlAst,
-    metricsIntro: metrics.htmlAst,
-    metrics: metrics.frontmatter.scores,
-    processTitle: process.frontmatter.title,
-    process: process.htmlAst,
-    caseStudiesIntro: caseStudiesIntro.htmlAst,
-    contactsIntro: contactsIntro.htmlAst,
+    intro: (rootNode) ? rootNode.htmlAst : '',
+    metricsIntro: (metrics) ? metrics.htmlAst : '',
+    metrics: (metrics) ? metrics.frontmatter.scores : '',
+    processTitle: (process) ? process.frontmatter.title : '',
+    process: (process) ? process.htmlAst : '',
+    caseStudiesIntro: (caseStudiesIntro) ? caseStudiesIntro.htmlAst : '',
+    contactsIntro: (contactsIntro) ? contactsIntro.htmlAst : '',
     ...props,
   };
 
