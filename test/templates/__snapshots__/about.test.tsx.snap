@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Home template is rendered 1`] = `
+exports[`About template is rendered 1`] = `
 <div>
   <div
     className="navigationBar"
@@ -70,18 +70,6 @@ exports[`Home template is rendered 1`] = `
     className="Content-Section"
   >
     <h2>
-      About Us
-    </h2>
-    <div>
-      <span>
-        Lorem Ipsum is the industry standard typesetting text
-      </span>
-    </div>
-  </div>
-  <div
-    className="Content-Section"
-  >
-    <h2>
       Approach
     </h2>
     <div>
@@ -97,22 +85,19 @@ exports[`Home template is rendered 1`] = `
     className="Content-Section"
   >
     <h2>
-      Case Studies
+      Services
     </h2>
     <div>
       <span>
         Lorem Ipsum is the industry standard typesetting text
       </span>
-      <div>
-        See More Work
-      </div>
     </div>
   </div>
   <div
     className="Content-Section"
   >
     <h2>
-      Client Portfolio
+      Standards
     </h2>
     <div>
       <span>
@@ -144,72 +129,6 @@ exports[`Home template is rendered 1`] = `
           </div>
           <h3 />
         </div>
-        <div>
-          <div>
-            IMAGE
-          </div>
-          <h3 />
-        </div>
-        <div>
-          <div>
-            IMAGE
-          </div>
-          <h3 />
-        </div>
-        <div>
-          <div>
-            IMAGE
-          </div>
-          <h3 />
-        </div>
-        <div>
-          <div>
-            IMAGE
-          </div>
-          <h3 />
-        </div>
-        <div>
-          <div>
-            IMAGE
-          </div>
-          <h3 />
-        </div>
-        <div>
-          <div>
-            IMAGE
-          </div>
-          <h3 />
-        </div>
-        <div>
-          <div>
-            IMAGE
-          </div>
-          <h3 />
-        </div>
-      </div>
-    </div>
-  </div>
-  <div
-    className="Content-Section"
-  >
-    <h2>
-      Insights
-    </h2>
-    <div>
-      <span>
-        Lorem Ipsum is the industry standard typesetting text
-      </span>
-      <div>
-        BlogPost
-      </div>
-      <div>
-        BlogPost
-      </div>
-      <div>
-        BlogPost
-      </div>
-      <div>
-        See More Insights
       </div>
     </div>
   </div>
