@@ -17,11 +17,12 @@
     "test": "jest",
     "test:watch": "jest -u --watchAll",
     "test:watch:noupdate": "jest --watchAll",
-    "lint": "tslint -c tslint.json --project tsconfig.json 'src/**/*.{ts,tsx}'",
-    "lint-fix": "tslint -c tslint.json --project tsconfig.json 'src/**/*.{ts,tsx}' --fix",
+    "lint": "tslint --project tsconfig.json 'src/**/*.{ts,tsx}'",
+    "lint-fix": "tslint --project tsconfig.json 'src/**/*.{ts,tsx}' --fix",
     "storybook": "start-storybook -p 9001 -c storybook",
     "coverage": "codecov",
-    "cloudfront-invalidate": "node scripts/cloudfront-invalidate.js"
+    "cloudfront-invalidate": "node scripts/cloudfront-invalidate.js",
+    "ts": "tsc --diagnostics --project tsconfig.json"
   },
   "repository": {
     "type": "git",

@@ -1,11 +1,10 @@
 import React, { ReactNode } from 'react';
 
 interface Props {
-  data?: any;
   title: string;
 }
 
-const SeeMoreButton: React.SFC<Props> = ({ data, title }) => {
+const SeeMoreButton: React.SFC<Props> = ({ title }) => {
   return (
     <div>
         {title}

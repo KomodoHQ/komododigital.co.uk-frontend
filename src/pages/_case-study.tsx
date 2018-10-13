@@ -1,30 +1,38 @@
+/**
+ * This is a template for an individual case-study page. As this page is dynamically
+ * used to create pages via the "createPages" function in `gatsby-node.js`, we
+ * prefix the filename with an _ (underscore) so that a HTML page is not generated
+ * for it.
+ */
 import React from 'react';
 import { graphql } from 'gatsby';
 import CaseStudy from '../templates/case-study';
 import { findNodes, findNode } from '../utils/nodes';
 
 export default (props) => {
-  // Basename is the top level, should have sections
-  // Use sections to pull out sub content in order
   const rootNode = findNode(props.pageContext.slug, props);
   let caseStudies = findNodes('group', props, 'case-studies');
-  const caseStudiesIntro = findNode('case_studies', props);
+  const caseStudiesIntro = findNode('case-studies/index', props);
   const metrics = findNode(`${props.pageContext.slug}/metrics`, props);
   const process = findNode(`${props.pageContext.slug}/process`, props);
   const contactsIntro = findNode('contacts', props);
 
-  // Show other case studies, but filter this one
-  caseStudies = caseStudies.filter(study => study.fileAbsolutePath !== rootNode.fileAbsolutePath);
+  if (rootNode) {
+    // Show other case studies, but filter this one
+    caseStudies = caseStudies.filter(
+      (study) => study.fileAbsolutePath !== rootNode.fileAbsolutePath,
+    );
+  }
 
   const hocProps = {
     caseStudies,
-    intro: rootNode.htmlAst,
-    metricsIntro: metrics.htmlAst,
-    metrics: metrics.frontmatter.scores,
-    processTitle: process.frontmatter.title,
-    process: process.htmlAst,
-    caseStudiesIntro: caseStudiesIntro.htmlAst,
-    contactsIntro: contactsIntro.htmlAst,
+    intro: (rootNode) ? rootNode.htmlAst : '',
+    metricsIntro: (metrics) ? metrics.htmlAst : '',
+    metrics: (metrics) ? metrics.frontmatter.scores : '',
+    processTitle: (process) ? process.frontmatter.title : '',
+    process: (process) ? process.htmlAst : '',
+    caseStudiesIntro: (caseStudiesIntro) ? caseStudiesIntro.htmlAst : '',
+    contactsIntro: (contactsIntro) ? contactsIntro.htmlAst : '',
     ...props,
   };
 

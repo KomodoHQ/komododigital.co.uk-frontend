@@ -4,12 +4,14 @@ exports[`CaseStudy element is rendered 1`] = `
 <div>
   <img />
   <div>
-    <span />
-    <h2 />
-    <p />
+    <span>
+      Test
+    </span>
+    <h2>
+      Test
+    </h2>
     <a
-      aria-current="page"
-      href="/"
+      href="/Test"
       onClick={[Function]}
     >
       Read Case Study

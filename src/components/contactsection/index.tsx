@@ -1,10 +1,9 @@
 import React, { ReactNode } from 'react';
 
 interface Props {
-  data?: any;
 }
 
-const ContactSection: React.SFC<Props> = ({ data, children }) => {
+const ContactSection: React.SFC<Props> = ({ children }) => {
   return (
     <div>
         ContactSection

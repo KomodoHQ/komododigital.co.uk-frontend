@@ -1,10 +1,10 @@
 import React, { ReactNode } from 'react';
 
 interface Props {
-  avatar: string,
-  name: string,
-  jobtitle: string,
-  email: string
+  avatar: string;
+  name: string;
+  jobtitle: string;
+  email: string;
 }
 
 const VCard: React.SFC<Props> = ({ avatar, name, jobtitle, email }) => {

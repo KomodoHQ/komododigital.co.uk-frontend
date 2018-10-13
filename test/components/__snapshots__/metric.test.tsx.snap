@@ -7,14 +7,14 @@ exports[`Metric element is rendered 1`] = `
   <span
     className="number"
   >
-    Number
+    1
   </span>
   <span>
-    Metric / Result
+    Test
   </span>
   <hr />
   <p>
-    Description
+    test
   </p>
 </div>
 `;

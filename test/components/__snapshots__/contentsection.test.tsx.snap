@@ -1,10 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ContentSection element is rendered 1`] = `
-<div>
+<div
+  className="Content-Section"
+>
+  <span>
+    Testy
+  </span>
   <h2>
-    TITLE HERE
+    Test
   </h2>
-  <div />
+  <div>
+    <p>
+      Test
+    </p>
+  </div>
 </div>
 `;

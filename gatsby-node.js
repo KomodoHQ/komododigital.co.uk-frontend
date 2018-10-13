@@ -44,8 +44,10 @@ exports.createPages = ({ graphql, actions }) => {
         console.log(result.errors);
         reject(result.errors);
       }
-      const blogPostTemplate = path.resolve('./src/pages/blog.tsx');
-      const caseStudyTemplate = path.resolve('./src/pages/case-study.tsx');
+
+      // Templates are prefixed with underscore
+      const blogPostTemplate = path.resolve('./src/pages/_blog.tsx');
+      const caseStudyTemplate = path.resolve('./src/pages/_case-study.tsx');
       // We want to create a detailed page for each
       // post node. We'll just use the WordPress Slug for the slug.
       // The Post ID is prefixed with 'POST_'
@@ -60,14 +62,18 @@ exports.createPages = ({ graphql, actions }) => {
       });
 
       _.each(result.data.allMarkdownRemark.edges, (edge) => {
-        const actualPath = fileToSlug(edge.node.fileAbsolutePath);
-        createPage({
-          path: `/case-studies/${actualPath}/`,
-          component: slash(caseStudyTemplate),
-          context: {
-            slug: actualPath,
-          },
-        });
+        // Only create pages for files with index in
+        if (edge.node.fileAbsolutePath.endsWith('index.md')) {
+          const slug = fileToSlug(edge.node.fileAbsolutePath);
+
+          createPage({
+            path: `/${slug}/`,
+            component: slash(caseStudyTemplate),
+            context: {
+              slug: slug,
+            },
+          });
+        }
       });
 
       resolve();

@@ -1,39 +1,33 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import Index from '../templates/index';
+import About from '../templates/about';
 import { findNodes, findNode } from '../utils/nodes';
 
 export default (props) => {
-  const rootNode = findNode('index/index', props);
+  const rootNode = findNode('about/index', props);
   const services = findNodes('group', props, 'services');
-  const caseStudies = findNodes('group', props, 'case-studies');
-  const caseStudiesIntro = findNode('case-studies/index', props);
-  const aboutUsIntro = findNode('index/about_us', props);
+  const servicesIntro = findNode('about/services', props);
   const approachIntro = findNode('index/approach', props);
-  const clientPortfoliosIntro = findNode('index/client_portfolio', props);
-  const insightsIntro = findNode('index/insights', props);
+  const standardsIntro = findNode('about/standards', props);
   const contactsIntro = findNode('contacts/index', props);
 
   const hocProps = {
     services,
-    caseStudies,
     subtitle: (rootNode) ? rootNode.subtitle : '',
     title: (rootNode) ? rootNode.title : '',
     intro: (rootNode) ? rootNode.htmlAst : '',
-    aboutUsIntro: (aboutUsIntro) ? aboutUsIntro.htmlAst : '',
     approachIntro: (approachIntro) ? approachIntro.htmlAst : '',
-    caseStudiesIntro: (caseStudiesIntro) ? caseStudiesIntro.htmlAst : '',
-    clientPortfoliosIntro: (clientPortfoliosIntro) ? clientPortfoliosIntro.htmlAst : '',
-    insightsIntro: (insightsIntro) ? insightsIntro.htmlAst : '',
+    servicesIntro: (servicesIntro) ? servicesIntro.htmlAst : '',
+    standardsIntro: (standardsIntro) ? standardsIntro.htmlAst : '',
     contactsIntro: (contactsIntro) ? contactsIntro.htmlAst : '',
     ...props,
   };
 
-  return <Index {...hocProps} />;
+  return <About {...hocProps} />;
 };
 
-export const pageQuery = graphql`
-  query pageQuery {
+export const aboutQuery = graphql`
+  query aboutQuery {
     site {
       siteMetadata {
         name
@@ -41,7 +35,7 @@ export const pageQuery = graphql`
         description
       }
     }
-    allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/index|case-studies|contacts/" } }) {
+    allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/index|about|contacts/" } }) {
       edges {
         node {
           htmlAst

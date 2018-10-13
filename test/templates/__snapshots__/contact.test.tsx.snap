@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Blog template is rendered 1`] = `
+exports[`Contact template is rendered 1`] = `
 <div>
   <div
     className="navigationBar"
@@ -50,26 +50,13 @@ exports[`Blog template is rendered 1`] = `
     </ul>
   </div>
   <div>
-    <a
-      href="/blog/test"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-    >
-      <div>
-        <div>
-          <img
-            height="150"
-            width="300"
-          />
-        </div>
-        <h1>
-          test post
-        </h1>
-        <span>
-          20 September 2018
-        </span>
-      </div>
-    </a>
+    ContactSection
+    <span>
+      Lorem Ipsum is the industry standard typesetting text
+    </span>
+    <div>
+      ContactForm
+    </div>
   </div>
   <footer>
     <div

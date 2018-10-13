@@ -1,9 +1,9 @@
 import React from 'react';
-import Index from '../../src/templates/index';
+import CaseStudies from '../../src/templates/case-studies';
 import renderer from 'react-test-renderer';
 import GatsbyData from '../../gatsby-config';
 
-test('Home template is rendered', () => {
+test('Case Studies template is rendered', () => {
 
   const htmlAst = {
     type: 'element',
@@ -18,23 +18,14 @@ test('Home template is rendered', () => {
   };
 
   const hocProps = {
-    services: [],
     caseStudies: [],
-    subtitle: 'subtitle',
-    title: 'title',
-    intro: htmlAst,
-    aboutUsIntro: htmlAst,
-    approachIntro: htmlAst,
-    caseStudiesIntro: htmlAst,
-    clientPortfoliosIntro: htmlAst,
-    insightsIntro: htmlAst,
     contactsIntro: htmlAst,
     data: {
       site: GatsbyData,
     },
   };
 
-  const component = renderer.create(<Index {...hocProps} />);
+  const component = renderer.create(<CaseStudies {...hocProps} />);
   const tree = component.toJSON();
   expect(tree).toMatchSnapshot();
 });

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Blog template is rendered 1`] = `
+exports[`About template is rendered 1`] = `
 <div>
   <div
     className="navigationBar"
@@ -50,26 +50,96 @@ exports[`Blog template is rendered 1`] = `
     </ul>
   </div>
   <div>
-    <a
-      href="/blog/test"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
+    <span>
+      subtitle
+    </span>
+    <div
+      className="Content-Section"
     >
+      <h2>
+        title
+      </h2>
       <div>
-        <div>
-          <img
-            height="150"
-            width="300"
-          />
-        </div>
-        <h1>
-          test post
-        </h1>
         <span>
-          20 September 2018
+          Lorem Ipsum is the industry standard typesetting text
         </span>
       </div>
-    </a>
+    </div>
+  </div>
+  <div
+    className="Content-Section"
+  >
+    <h2>
+      Approach
+    </h2>
+    <div>
+      <span>
+        Lorem Ipsum is the industry standard typesetting text
+      </span>
+      <div>
+        Services
+      </div>
+    </div>
+  </div>
+  <div
+    className="Content-Section"
+  >
+    <h2>
+      Services
+    </h2>
+    <div>
+      <span>
+        Lorem Ipsum is the industry standard typesetting text
+      </span>
+    </div>
+  </div>
+  <div
+    className="Content-Section"
+  >
+    <h2>
+      Standards
+    </h2>
+    <div>
+      <span>
+        Lorem Ipsum is the industry standard typesetting text
+      </span>
+      <div>
+        QuadGrid
+        <div>
+          <div>
+            IMAGE
+          </div>
+          <h3 />
+        </div>
+        <div>
+          <div>
+            IMAGE
+          </div>
+          <h3 />
+        </div>
+        <div>
+          <div>
+            IMAGE
+          </div>
+          <h3 />
+        </div>
+        <div>
+          <div>
+            IMAGE
+          </div>
+          <h3 />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    ContactSection
+    <span>
+      Lorem Ipsum is the industry standard typesetting text
+    </span>
+    <div>
+      ContactForm
+    </div>
   </div>
   <footer>
     <div
