@@ -19,7 +19,7 @@
     "test:watch:noupdate": "jest --watchAll",
     "lint": "tslint --project tsconfig.json 'src/**/*.{ts,tsx}'",
     "lint-fix": "tslint --project tsconfig.json 'src/**/*.{ts,tsx}' --fix",
-    "storybook": "start-storybook -p 9001 -c storybook",
+    "storybook": "start-storybook -p 9001 -c storybook -s ./src/assets/fonts",
     "coverage": "codecov",
     "cloudfront-invalidate": "node scripts/cloudfront-invalidate.js",
     "ts": "tsc --diagnostics --project tsconfig.json"

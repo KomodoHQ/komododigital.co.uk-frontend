@@ -1,5 +1,4 @@
 .Content-Section {
-    font-family: "New Transport", Arial, Helvetica, sans-serif;
     max-width: 86vw;
 }
 
@@ -7,6 +6,7 @@
     font-size: 16px;
     text-transform: uppercase;
     display: block;
+    margin-bottom: 16px;
 }
 
 .Content-Section > h2 {
