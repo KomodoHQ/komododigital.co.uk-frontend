@@ -2,12 +2,12 @@ import React, { ReactNode } from 'react';
 import { Link } from '@reach/router';
 
 interface Props {
-  data?: any;
   subtitle: string;
   title: string;
+  link: string;
 }
 
-const CaseStudy: React.SFC<Props> = ({ data, subtitle, title, children, link }) => {
+const CaseStudy: React.SFC<Props> = ({ subtitle, title, children, link }) => {
   return (
     <div>
       <img />

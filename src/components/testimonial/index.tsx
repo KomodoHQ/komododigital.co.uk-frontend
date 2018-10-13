@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react';
 import './testimonial.css';
 
 interface Props {
-  data: any;
+  data?: any;
 }
 
 const Testimonial: React.SFC<Props> = ({ data }) => {
