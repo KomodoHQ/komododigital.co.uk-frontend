@@ -15,11 +15,14 @@ const ContentSection: React.SFC<Props> = ({ title = 'TITLE HERE', subtitle= null
   const invertedClassname = invert ? "invert" : "";
 
   return (
-    <div className={`Content-Section ${invertedClassname}`}>
-        {subtitleEl}
-        {titleEl}
-        <div>{children}</div>
+    <div className={`cs-wrapper ${invertedClassname}`}>
+      <div className={`Content-Section`}>
+          {subtitleEl}
+          {titleEl}
+          <div>{children}</div>
+      </div>
     </div>
+
   );
 };
 
