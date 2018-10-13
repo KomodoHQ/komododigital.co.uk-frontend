@@ -10,7 +10,7 @@ interface Props {
 const NavigationBar: React.SFC<Props> = ({ data }) => {
   return (
     <div className="navigationBar">
-      <Link to="/"><h1>Komodo</h1></Link>
+      <h1><Link to="/">Komodo</Link></h1>
       <ul>
         <li>
           <Link to={'about'}>About</Link>
