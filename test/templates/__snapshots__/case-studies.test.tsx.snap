@@ -8,15 +8,15 @@ exports[`Case Studies template is rendered 1`] = `
   <div
     className="navigationBar"
   >
-    <a
-      aria-current="page"
-      href="/"
-      onClick={[Function]}
-    >
-      <h1>
+    <h1>
+      <a
+        aria-current="page"
+        href="/"
+        onClick={[Function]}
+      >
         Komodo
-      </h1>
-    </a>
+      </a>
+    </h1>
     <ul>
       <li>
         <a
@@ -53,14 +53,18 @@ exports[`Case Studies template is rendered 1`] = `
     </ul>
   </div>
   <div
-    className="Content-Section"
+    className="cs-wrapper "
   >
-    <h2>
-      Case Studies
-    </h2>
-    <div>
+    <div
+      className="Content-Section"
+    >
+      <h2>
+        Case Studies
+      </h2>
       <div>
-        See More Work
+        <div>
+          See More Work
+        </div>
       </div>
     </div>
   </div>
