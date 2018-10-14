@@ -115,27 +115,27 @@ exports[`Case Study template is rendered 1`] = `
         test
       </h2>
       <div>
-        <div
-          className="Testimonial"
+        <article
+          className="testimonial-wrapper"
         >
-          <span>
-            Name:
-          </span>
-          <q>
-            Testimonial
-          </q>
-          <hr />
-          <span
-            className="job"
+          <div
+            className="Testimonial"
           >
-            Job title
-          </span>
-          <span
-            className="company"
-          >
-            Company
-          </span>
-        </div>
+            <span
+              className="name"
+            >
+              :
+            </span>
+            <q />
+            <hr />
+            <span
+              className="job"
+            />
+            <span
+              className="company"
+            />
+          </div>
+        </article>
       </div>
     </div>
   </div>

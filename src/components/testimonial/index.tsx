@@ -30,7 +30,7 @@ interface Props {
  * 
  * @param data
  */
-const Testimonial: React.SFC<Props> = ({ name, children, jobtitle, company }) => {
+const Testimonial: React.SFC<Props> = ({ name=null, children=null, jobtitle=null, company=null }) => {
   return (
     <article className="testimonial-wrapper">
       <div className="Testimonial">

@@ -1,25 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Testimonial element is rendered 1`] = `
-<div
-  className="Testimonial"
+<article
+  className="testimonial-wrapper"
 >
-  <span>
-    Name:
-  </span>
-  <q>
-    Testimonial
-  </q>
-  <hr />
-  <span
-    className="job"
+  <div
+    className="Testimonial"
   >
-    Job title
-  </span>
-  <span
-    className="company"
-  >
-    Company
-  </span>
-</div>
+    <span
+      className="name"
+    >
+      :
+    </span>
+    <q />
+    <hr />
+    <span
+      className="job"
+    />
+    <span
+      className="company"
+    />
+  </div>
+</article>
 `;
