@@ -1,0 +1,14 @@
+.QuadGrid {
+    display: grid;
+    grid-template-columns: repeat(14, 70px);
+    grid-gap: 30px;
+    padding: 30px 0;
+}
+
+.QuadGrid > div:nth-of-type(odd) {
+    grid-column: 2 / 8;
+}
+
+.QuadGrid > div:nth-of-type(even) {
+    grid-column: 8 / 14;
+}
