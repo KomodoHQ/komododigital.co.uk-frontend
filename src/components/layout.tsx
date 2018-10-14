@@ -1,5 +1,6 @@
 import React, { ReactNode } from 'react';
-import { Helmet } from 'react-helmet';
+// import { Helmet } from 'react-helmet';
+import SEO from './seo';
 import NavigationBar from './navigationbar';
 import Footer from './footer';
 import LegalFooter from './legalfooter';
@@ -11,17 +12,17 @@ interface Props {
 const Layout: React.SFC<Props> = ({ data, children }) => {
   return (
     <div>
-      <Helmet defaultTitle={data.site.siteMetadata.title}>
-        <html lang="en" />
-        <meta property="og:type" content="website" />
-        <meta property="og:site_name" content={data.site.siteMetadata.name} />
-        <meta name="description" content={data.site.siteMetadata.description} />
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Roboto: 300,400,500"
-        />
+      <SEO
+        defaultTitle={data.site.siteMetadata.title}
+        siteName={data.site.siteMetadata.name}
+        description={data.site.siteMetadata.description}
+        // TODO: fix
+        url="http://test"
+        // TODO: Individual page title
+      >
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto: 300,400,500" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-      </Helmet>
+      </SEO>
 
       <NavigationBar />
       {children}
