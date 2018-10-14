@@ -1,8 +1,4 @@
 
-/* 14 columns
-col width 70
-gutter 30 */
-
 .cs-wrapper {
     display: grid;
     grid-template-columns: repeat(14, 70px);
