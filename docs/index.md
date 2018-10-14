@@ -20,6 +20,8 @@ This is the landing page for our documentation.
 
 [Testing](testing.md)
 
+[Security](security.md)
+
 [Deployment](deployment.md)
 
 [Content](content.md)
