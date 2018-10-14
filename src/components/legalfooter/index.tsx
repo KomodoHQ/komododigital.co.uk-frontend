@@ -1,11 +1,33 @@
+/**
+ * legal footer that holds information at the very bottom of the page
+ */
+
+/**
+ * NPM Dependencies
+ */
 import React, { ReactNode } from 'react';
 import { Link } from '@reach/router';
+
+/**
+ * Local dependencies
+ */
 import './legalfooter.css';
 
+/**
+ * Props for the legal footer component
+ * 
+ * data
+ */
 interface Props {
   data?: any;
 }
 
+/**
+ * 
+ * Using SFC (Stateless Functional Component) because a legal footer doesn't need to maintain any state of its own.
+ * 
+ * @param data
+ */
 const LegalFooter: React.SFC<Props> = ({ data }) => {
   return (
     <footer>

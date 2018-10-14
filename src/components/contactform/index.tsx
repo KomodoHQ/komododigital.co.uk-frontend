@@ -1,9 +1,31 @@
+/**
+ * outer component of a contact form (temp form included)
+ */
+
+/**
+ * NPM Dependencies
+ */
 import React, { ReactNode } from 'react';
 
+/**
+ * Local dependencies
+ */
+
+/**
+ * Props for the contact form component
+ * 
+ * data
+ */
 interface Props {
   data?: any;
 }
 
+/**
+ * 
+ * Contact form needs to switch to use stateful pattern to hold contact form data
+ * 
+ * @param data
+ */
 const ContactForm: React.SFC<Props> = ({ data }) => {
   return (
     <div>

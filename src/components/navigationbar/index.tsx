@@ -1,12 +1,33 @@
+/**
+ * headline navigation bar that sits at the top of the page
+ */
+
+/**
+ * NPM Dependencies
+ */
 import React, { ReactNode } from 'react';
 import { Link } from '@reach/router';
 
+/**
+ * Local dependencies
+ */
 import './NavigationBar.css';
 
+/**
+ * Props for the navigation bar component
+ * 
+ * data
+ */
 interface Props {
   data?: any;
 }
 
+/**
+ * 
+ * Using SFC (Stateless Functional Component) because a navigation bar doesn't need to maintain any state of its own.
+ * 
+ * @param data
+ */
 const NavigationBar: React.SFC<Props> = ({ data }) => {
   return (
     <div className="navigationBar">
