@@ -2,6 +2,9 @@
 
 exports[`404 template is rendered 1`] = `
 <div>
+  <noscript>
+    You have Javascript disabled. While it isn't needed, it will make your experience nicer.
+  </noscript>
   <div
     className="navigationBar"
   >
@@ -105,5 +108,13 @@ exports[`404 template is rendered 1`] = `
       </a>
     </div>
   </footer>
+  <noscript>
+    <img
+      alt=""
+      height="1"
+      src="https://dc.ads.linkedin.com/collect/?pid=377068&fmt=gif"
+      width="1"
+    />
+  </noscript>
 </div>
 `;
