@@ -137,72 +137,73 @@ exports[`Home template is rendered 1`] = `
         <span>
           Lorem Ipsum is the industry standard typesetting text
         </span>
-        <div>
-          QuadGrid
-          <div>
-            <div>
-              IMAGE
-            </div>
+        <div
+          className="QuadGrid"
+        >
+          <div
+            className="GridItem"
+          >
+            <img />
             <h3 />
           </div>
-          <div>
-            <div>
-              IMAGE
-            </div>
+          <div
+            className="GridItem"
+          >
+            <img />
             <h3 />
           </div>
-          <div>
-            <div>
-              IMAGE
-            </div>
+          <div
+            className="GridItem"
+          >
+            <img />
             <h3 />
           </div>
-          <div>
-            <div>
-              IMAGE
-            </div>
+          <div
+            className="GridItem"
+          >
+            <img />
             <h3 />
           </div>
-          <div>
-            <div>
-              IMAGE
-            </div>
+          <div
+            className="GridItem"
+          >
+            <img />
             <h3 />
           </div>
-          <div>
-            <div>
-              IMAGE
-            </div>
+          <div
+            className="GridItem"
+          >
+            <img />
             <h3 />
           </div>
-          <div>
-            <div>
-              IMAGE
-            </div>
+          <div
+            className="GridItem"
+          >
+            <img />
             <h3 />
           </div>
-          <div>
-            <div>
-              IMAGE
-            </div>
+          <div
+            className="GridItem"
+          >
+            <img />
             <h3 />
           </div>
-          <div>
-            <div>
-              IMAGE
-            </div>
+          <div
+            className="GridItem"
+          >
+            <img />
             <h3 />
           </div>
-          <div>
-            <div>
-              IMAGE
-            </div>
+          <div
+            className="GridItem"
+          >
+            <img />
             <h3 />
           </div>
-          <div>
-            <div>
-              IMAGE
-            </div>
+          <div
+            className="GridItem"
+          >
+            <img />
             <h3 />
           </div>
         </div>
