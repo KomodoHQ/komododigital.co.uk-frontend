@@ -18,7 +18,10 @@ import './testimonial.css';
  * data
  */
 interface Props {
-  data?: any;
+  name?: string;
+  children?: any;
+  jobtitle?: string;
+  company?: string;
 }
 
 /**
@@ -27,15 +30,17 @@ interface Props {
  * 
  * @param data
  */
-const Testimonial: React.SFC<Props> = ({ data }) => {
+const Testimonial: React.SFC<Props> = ({ name, children, jobtitle, company }) => {
   return (
-    <div className="Testimonial">
-        <span>Name:</span>
-        <q>Testimonial</q>
-        <hr />
-        <span className="job">Job title</span>
-        <span className="company">Company</span>
-    </div>
+    <article className="testimonial-wrapper">
+      <div className="Testimonial">
+          <span className="name">{name}:</span>
+          <q>{children}</q>
+          <hr />
+          <span className="job">{jobtitle}</span>
+          <span className="company">{company}</span>
+      </div>
+    </article>
   );
 };
 
