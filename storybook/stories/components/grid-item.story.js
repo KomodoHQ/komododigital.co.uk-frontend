@@ -15,5 +15,5 @@ story.add(
       <GridItem />
       ~~~
     
-    `)(() => <GridItem />),
+    `)(() => <GridItem title="Title"><p>Content</p></GridItem>),
 );

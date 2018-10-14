@@ -2,18 +2,22 @@
 
 exports[`ContentSection element is rendered 1`] = `
 <div
-  className="Content-Section"
+  className="cs-wrapper "
 >
-  <span>
-    Testy
-  </span>
-  <h2>
-    Test
-  </h2>
-  <div>
-    <p>
+  <div
+    className="Content-Section"
+  >
+    <span>
+      Testy
+    </span>
+    <h2>
       Test
-    </p>
+    </h2>
+    <div>
+      <p>
+        Test
+      </p>
+    </div>
   </div>
 </div>
 `;

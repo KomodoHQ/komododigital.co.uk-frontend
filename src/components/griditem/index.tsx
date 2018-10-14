@@ -1,14 +1,16 @@
 import React, { ReactNode } from 'react';
+import "./griditem.css";
 
 interface Props {
-  data?: any;
   title?: string;
+  image?: string;
+  children?: ReactNode
 }
 
-const GridItem: React.SFC<Props> = ({ data, title, children }) => {
+const GridItem: React.SFC<Props> = ({ title, image, children }) => {
   return (
-    <div>
-        <div>IMAGE</div>
+    <div className="GridItem">
+        <img src={image} />
         <h3>{title}</h3>
         {children}
     </div>
