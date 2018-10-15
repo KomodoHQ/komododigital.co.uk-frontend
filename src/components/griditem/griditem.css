@@ -1,0 +1,24 @@
+.GridItem {
+    min-height: 150px;
+    padding: 30px;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.2);
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas: "img title" "img desc";
+}
+
+.GridItem > img {
+    grid-area: img;
+}
+
+.GridItem > h3 {
+    grid-area: title;
+    font-size: 2.5rem;
+    padding: 0;
+    margin: 0;
+}
+
+.GridItem > p {
+    grid-area: desc;
+}

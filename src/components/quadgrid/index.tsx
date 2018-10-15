@@ -1,13 +1,36 @@
+/**
+ * quad grid component that holds four cards
+ */
+
+/**
+ * NPM Dependencies
+ */
 import React, { ReactNode } from 'react';
 
+/**
+ * Local dependencies
+ */
+import "./quadgrid.css";
+
+/**
+ * Props for the quad grid component
+ * 
+ * data
+ */
 interface Props {
-  data: any;
+  children?: ReactNode;
 }
 
-const QuadGrid: React.SFC<Props> = ({ data }) => {
+/**
+ * 
+ * Using SFC (Stateless Functional Component) because a quad grid doesn't need to maintain any state of its own.
+ * 
+ * @param data
+ */
+const QuadGrid: React.SFC<Props> = ({ children }) => {
   return (
-    <div>
-        QuadGrid
+    <div className="QuadGrid">
+        {children}
     </div>
   );
 };

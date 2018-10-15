@@ -2,6 +2,18 @@
 
 exports[`CaseStudySection element is rendered 1`] = `
 <div>
-  CaseStudySection
+  <span>
+    Subtitle
+  </span>
+  <h2>
+    Title
+  </h2>
+  <p>
+    Content
+  </p>
+  <p>
+    Content
+  </p>
+  <img />
 </div>
 `;

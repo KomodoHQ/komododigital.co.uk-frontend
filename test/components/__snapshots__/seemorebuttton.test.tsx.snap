@@ -2,6 +2,6 @@
 
 exports[`SeeMoreButton element is rendered 1`] = `
 <div>
-  SeeMoreButton
+  test
 </div>
 `;

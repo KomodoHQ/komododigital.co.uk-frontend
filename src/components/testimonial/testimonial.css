@@ -1,0 +1,56 @@
+.testimonial-wrapper {
+    display: grid;
+    grid-template-columns: repeat(14, 70px);
+    grid-gap: 30px;
+    padding: 30px 0;
+    background: linear-gradient(0deg, #0F1E65 0%, #04104A 100%);
+}
+
+.Testimonial {
+    grid-column: 4 / 12;
+    color: white;
+}
+
+.Testimonial > span {
+    font-size: 2.0rem;
+}
+
+.Testimonial > span.name, .Testimonial > span.job {
+    font-weight: 900;
+}
+
+.Testimonial > .name {
+    margin-right: 5px;
+}
+
+q {
+    quotes: "“" "”" "‘" "’";
+    font-size: 2.0rem;
+    line-height: 52px;
+}
+
+.Testimonial > q:before {
+    content: open-quote;
+}
+
+.Testimonial > q:after {
+    content: close-quote;
+}
+
+.Testimonial > div {
+    display: inline-block;
+}
+
+.Testimonial > span.job, .Testimonial > span.company {
+    display: block;
+}
+
+.Testimonial > span.job:after {
+    content: ",";
+}
+
+.Testimonial > hr {
+    box-shadow: none;
+    border: 1px solid white;
+    margin-bottom: 30px;
+}

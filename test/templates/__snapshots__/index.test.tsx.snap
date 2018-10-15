@@ -1,21 +1,411 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Blog template is rendered 1`] = `
+exports[`Home template is rendered 1`] = `
 <div>
-  <span>
-    Hello World!
-  </span>
+  <noscript>
+    You have Javascript disabled. While it isn't needed, it will make your experience nicer.
+  </noscript>
+  <div
+    className="navigationBar"
+  >
+    <h1>
+      <a
+        aria-current="page"
+        href="/"
+        onClick={[Function]}
+      >
+        Komodo
+      </a>
+    </h1>
+    <ul>
+      <li>
+        <a
+          href="/about"
+          onClick={[Function]}
+        >
+          About
+        </a>
+      </li>
+      <li>
+        <a
+          href="/case-studies"
+          onClick={[Function]}
+        >
+          Case Studies
+        </a>
+      </li>
+      <li>
+        <a
+          href="/blog-list"
+          onClick={[Function]}
+        >
+          Insights
+        </a>
+      </li>
+      <li>
+        <a
+          href="/contact"
+          onClick={[Function]}
+        >
+          Contact
+        </a>
+      </li>
+    </ul>
+  </div>
   <div>
     <span>
-      Komodo Digital
+      subtitle
     </span>
+    <div
+      className="cs-wrapper "
+    >
+      <div
+        className="Content-Section"
+      >
+        <h2>
+          title
+        </h2>
+        <div>
+          <span>
+            Lorem Ipsum is the industry standard typesetting text
+          </span>
+        </div>
+      </div>
+    </div>
   </div>
-  <a
-    href="/blog-list"
-    onClick={[Function]}
-    onMouseEnter={[Function]}
+  <div
+    className="cs-wrapper "
   >
-    Blog
-  </a>
+    <div
+      className="Content-Section"
+    >
+      <h2>
+        About Us
+      </h2>
+      <div>
+        <span>
+          Lorem Ipsum is the industry standard typesetting text
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    className="cs-wrapper "
+  >
+    <div
+      className="Content-Section"
+    >
+      <h2>
+        Approach
+      </h2>
+      <div>
+        <span>
+          Lorem Ipsum is the industry standard typesetting text
+        </span>
+        <div>
+          Services
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="cs-wrapper "
+  >
+    <div
+      className="Content-Section"
+    >
+      <h2>
+        Case Studies
+      </h2>
+      <div>
+        <span>
+          Lorem Ipsum is the industry standard typesetting text
+        </span>
+        <div>
+          See More Work
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="cs-wrapper "
+  >
+    <div
+      className="Content-Section"
+    >
+      <h2>
+        Client Portfolio
+      </h2>
+      <div>
+        <span>
+          Lorem Ipsum is the industry standard typesetting text
+        </span>
+        <div
+          className="QuadGrid"
+        >
+          <div
+            className="GridItem"
+          >
+            <img />
+            <h3 />
+          </div>
+          <div
+            className="GridItem"
+          >
+            <img />
+            <h3 />
+          </div>
+          <div
+            className="GridItem"
+          >
+            <img />
+            <h3 />
+          </div>
+          <div
+            className="GridItem"
+          >
+            <img />
+            <h3 />
+          </div>
+          <div
+            className="GridItem"
+          >
+            <img />
+            <h3 />
+          </div>
+          <div
+            className="GridItem"
+          >
+            <img />
+            <h3 />
+          </div>
+          <div
+            className="GridItem"
+          >
+            <img />
+            <h3 />
+          </div>
+          <div
+            className="GridItem"
+          >
+            <img />
+            <h3 />
+          </div>
+          <div
+            className="GridItem"
+          >
+            <img />
+            <h3 />
+          </div>
+          <div
+            className="GridItem"
+          >
+            <img />
+            <h3 />
+          </div>
+          <div
+            className="GridItem"
+          >
+            <img />
+            <h3 />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="cs-wrapper "
+  >
+    <div
+      className="Content-Section"
+    >
+      <h2>
+        Insights
+      </h2>
+      <div>
+        <span>
+          Lorem Ipsum is the industry standard typesetting text
+        </span>
+        <div>
+          BlogPost
+        </div>
+        <div>
+          BlogPost
+        </div>
+        <div>
+          BlogPost
+        </div>
+        <div>
+          See More Insights
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    ContactSection
+    <span>
+      Lorem Ipsum is the industry standard typesetting text
+    </span>
+    <div>
+      <form
+        action="https://formspree.io/hello@komododigital.co.uk"
+        method="POST"
+      >
+        <label
+          htmlFor="form-name"
+        >
+          Your Name
+        </label>
+        <input
+          id="form-name"
+          name="name"
+          placeholder="Joe Blogs"
+          type="text"
+        />
+        <label
+          htmlFor="form-email"
+        >
+          Your Email
+        </label>
+        <input
+          id="form-email"
+          name="email"
+          placeholder="joe@blogs.com"
+          type="email"
+        />
+        <label
+          htmlFor="form-service"
+        >
+          Service
+        </label>
+        <select
+          id="form-service"
+          name="service"
+        >
+          <option
+            value="Discovery"
+          >
+            Discovery
+          </option>
+          <option
+            value="Design"
+          >
+            Design
+          </option>
+          <option
+            value="Development"
+          >
+            Development
+          </option>
+          <option
+            value="Delivery"
+          >
+            Delivery
+          </option>
+        </select>
+        <label
+          htmlFor="form-sector"
+        >
+          Sector
+        </label>
+        <select
+          id="form-sector"
+          name="sector"
+        >
+          <option
+            value="Education"
+          >
+            Education
+          </option>
+          <option
+            value="Law Enforcement"
+          >
+            Law Enforcement
+          </option>
+          <option
+            value="Startups"
+          >
+            Startups
+          </option>
+          <option
+            value="Social Housing"
+          >
+            Social Housing
+          </option>
+        </select>
+        <label
+          htmlFor="form-message"
+        >
+          Your Message
+        </label>
+        <textarea
+          cols={30}
+          id="form-message"
+          name="message"
+          rows={10}
+        />
+        <input
+          type="submit"
+          value="Send"
+        />
+      </form>
+    </div>
+  </div>
+  <footer>
+    <div
+      className="komodo"
+    >
+      Komodo
+    </div>
+    <div
+      className="address"
+    >
+      Address
+    </div>
+    <div
+      className="sitemap"
+    >
+      Sitemap
+    </div>
+  </footer>
+  <footer>
+    <div>
+      Komodo Digital Copyright © 2018
+      <br />
+      <a
+        aria-current="page"
+        href="/"
+        onClick={[Function]}
+      >
+        Privacy Policy
+      </a>
+      |
+      <a
+        aria-current="page"
+        href="/"
+        onClick={[Function]}
+      >
+        Terms and Conditions
+      </a>
+    </div>
+    <div>
+      Get in touch on:
+      <br />
+      <a
+        href="/tel:0191 228 6555"
+        onClick={[Function]}
+      >
+        0191 228 6555
+      </a>
+    </div>
+  </footer>
+  <noscript>
+    <img
+      alt=""
+      height="1"
+      src="https://dc.ads.linkedin.com/collect/?pid=377068&fmt=gif"
+      width="1"
+    />
+  </noscript>
 </div>
 `;

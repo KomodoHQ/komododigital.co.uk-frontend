@@ -12,8 +12,8 @@ story.add(
       A contact form vCard
     
       ~~~js
-      <VCard />
+      <VCard avatar="avatar.png" jobtitle="Job Title" name="Firstname Surname" email="story@vcard.com" />
       ~~~
     
-    `)(() => <VCard />),
+    `)(() => <VCard avatar="avatar.png" jobtitle="Job Title" name="Firstname Surname" email="story@vcard.com" />),
 );

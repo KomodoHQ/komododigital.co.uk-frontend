@@ -1,7 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Metric element is rendered 1`] = `
-<div>
-  Metric
+<div
+  className="Metric"
+>
+  <span
+    className="number"
+  >
+    1
+  </span>
+  <span>
+    Test
+  </span>
+  <hr />
+  <p>
+    test
+  </p>
 </div>
 `;

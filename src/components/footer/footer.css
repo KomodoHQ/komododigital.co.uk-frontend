@@ -1,0 +1,18 @@
+footer {
+    padding: 20px;
+    color: #ffffff;
+    background-color: #151515;
+    display: flex;
+}
+
+.komodo {
+    flex: 5;
+}
+
+.address {
+    flex: 6;
+}
+
+.sitemap {
+    flex: 3;
+}

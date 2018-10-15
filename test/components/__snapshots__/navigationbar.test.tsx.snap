@@ -5,13 +5,18 @@ exports[`NavigationBar element is rendered 1`] = `
   className="navigationBar"
 >
   <h1>
-    Komodo
+    <a
+      aria-current="page"
+      href="/"
+      onClick={[Function]}
+    >
+      Komodo
+    </a>
   </h1>
   <ul>
     <li>
       <a
-        aria-current="page"
-        href="/"
+        href="/about"
         onClick={[Function]}
       >
         About
@@ -19,8 +24,7 @@ exports[`NavigationBar element is rendered 1`] = `
     </li>
     <li>
       <a
-        aria-current="page"
-        href="/"
+        href="/case-studies"
         onClick={[Function]}
       >
         Case Studies
@@ -28,8 +32,7 @@ exports[`NavigationBar element is rendered 1`] = `
     </li>
     <li>
       <a
-        aria-current="page"
-        href="/"
+        href="/blog-list"
         onClick={[Function]}
       >
         Insights
@@ -37,8 +40,7 @@ exports[`NavigationBar element is rendered 1`] = `
     </li>
     <li>
       <a
-        aria-current="page"
-        href="/"
+        href="/contact"
         onClick={[Function]}
       >
         Contact

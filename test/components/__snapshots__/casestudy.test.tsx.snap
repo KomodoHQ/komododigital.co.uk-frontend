@@ -2,6 +2,20 @@
 
 exports[`CaseStudy element is rendered 1`] = `
 <div>
-  CaseStudy
+  <img />
+  <div>
+    <span>
+      Test
+    </span>
+    <h2>
+      Test
+    </h2>
+    <a
+      href="/Test"
+      onClick={[Function]}
+    >
+      Read Case Study
+    </a>
+  </div>
 </div>
 `;

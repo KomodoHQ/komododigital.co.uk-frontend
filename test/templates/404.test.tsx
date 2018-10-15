@@ -22,6 +22,6 @@ test('404 template is rendered', () => {
   };
 
   const component = renderer.create(<FourOhFour {...hocProps} />);
-  let tree = component.toJSON();
+  const tree = component.toJSON();
   expect(tree).toMatchSnapshot();
 });
