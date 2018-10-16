@@ -6,10 +6,13 @@ import CaseStudy from '../components/casestudy';
 import QuadGrid from '../components/quadgrid';
 import GridItem from '../components/griditem';
 import ContentSection from '../components/contentsection';
+import ContentImage from '../components/contentimage';
 import BlogPost from '../components/blogpost';
 import SeeMoreButton from '../components/seemorebutton';
 import ContactSection from '../components/contactsection';
 import ContactForm from '../components/contactform';
+
+import illustration from "../assets/images/illustration.png";
 
 const renderAst = new rehypeReact({
   createElement: React.createElement,
@@ -49,23 +52,27 @@ interface IndexPageProps {
 export default (props: IndexPageProps) => {
   return (
     <Layout data={props.data}>
-      <div>
-        <span>{props.subtitle}</span>
-        <ContentSection title={props.title}>{renderAst(props.intro)}</ContentSection>
-      </div>
-      <ContentSection title="About Us">{renderAst(props.aboutUsIntro)}</ContentSection>
+      <ContentSection title={props.title} subtitle={props.subtitle} invert background="#151515" verticalPadding={200}>
+        {renderAst(props.intro)}
+      </ContentSection>
+      <ContentSection title="About Us">
+        {renderAst(props.aboutUsIntro)}
+      </ContentSection>
+      <ContentImage>
+        <img src={illustration} alt={"Komodo at work"} />
+      </ContentImage>
       <ContentSection title="Approach">
         {renderAst(props.approachIntro)}
-        <Services>
-          {props.services.map((service) => {
-            return (
-              <GridItem key={service.title} title={service.title}>
-                {renderAst(service.htmlAst)}
-              </GridItem>
-            );
-          })}
-        </Services>
       </ContentSection>
+      <QuadGrid>
+        {props.services.map((service) => {
+          return (
+            <GridItem key={service.title} title={service.title}>
+              {renderAst(service.htmlAst)}
+            </GridItem>
+          );
+        })}
+      </QuadGrid>
       <ContentSection title="Case Studies">
         {renderAst(props.caseStudiesIntro)}
         {props.caseStudies.map((study) => {
@@ -84,20 +91,20 @@ export default (props: IndexPageProps) => {
       </ContentSection>
       <ContentSection title="Client Portfolio">
         {renderAst(props.clientPortfoliosIntro)}
-        <QuadGrid>
-          <GridItem />
-          <GridItem />
-          <GridItem />
-          <GridItem />
-          <GridItem />
-          <GridItem />
-          <GridItem />
-          <GridItem />
-          <GridItem />
-          <GridItem />
-          <GridItem />
-        </QuadGrid>
       </ContentSection>
+      <QuadGrid>
+        <GridItem />
+        <GridItem />
+        <GridItem />
+        <GridItem />
+        <GridItem />
+        <GridItem />
+        <GridItem />
+        <GridItem />
+        <GridItem />
+        <GridItem />
+        <GridItem />
+      </QuadGrid>
       <ContentSection title="Insights">
         {renderAst(props.insightsIntro)}
         <BlogPost />

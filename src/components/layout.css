@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'New Transport';
+    src: url('../assets/fonts/NewTransport-Regular.otf');
+    src: url('../assets/fonts/NewTransport-Regular.otf?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/NewTransport-RegularWEB.woff2') format('woff2'),
+        url('../assets/fonts/NewTransport-RegularWEB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'New Transport';
+    src: url('../assets/fonts/NewTransport-Bold.otf');
+    src: url('../assets/fonts/NewTransport-Bold.otf?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/NewTransport-BoldWEB.woff2') format('woff2'),
+        url('../assets/fonts/NewTransport-BoldWEB.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    font-family: 'New Transport', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0;
+    margin: 0;
+}
