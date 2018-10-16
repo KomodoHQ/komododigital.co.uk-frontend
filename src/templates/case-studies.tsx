@@ -15,24 +15,24 @@ export default (props) => {
   return (
     <Layout data={props.data}>
       <ContentSection title="Case Studies">
-        {props.caseStudies.map((study) => {
-          return (
-            <CaseStudy
-              key={study.title}
-              subtitle={study.subtitle}
-              title={study.title}
-              link={study.link}
-            >
-              {renderAst(study.htmlAst)}
-            </CaseStudy>
-          );
-        })}
-        <SeeMoreButton title="See More Work" />
       </ContentSection>
+      {props.caseStudies.map((study) => {
+        return (
+          <CaseStudy
+            key={study.title}
+            subtitle={study.subtitle}
+            title={study.title}
+            link={study.link}
+          >
+            {renderAst(study.htmlAst)}
+          </CaseStudy>
+        );
+      })}
+      <SeeMoreButton title="See More Work" />
       <ContactSection>
         {renderAst(props.contactsIntro)}
-        <ContactForm />
       </ContactSection>
+      <ContactForm />
     </Layout>
   );
 };

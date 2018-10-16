@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 1fr repeat(14, 70px) 1fr;
     grid-gap: 30px;
+    margin-bottom: 50px;
 }
 
 .case-study-link {
@@ -29,7 +30,9 @@
 }
 
 .case-study-link > div.content > h2 {
-    font-size: 3.0rem;
+    font-size: 2.6rem;
+    margin: 20px 0;
+    padding: 0;
 }
 
 .case-study-link > div.content > p {

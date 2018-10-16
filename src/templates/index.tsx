@@ -75,20 +75,20 @@ export default (props: IndexPageProps) => {
       </QuadGrid>
       <ContentSection title="Case Studies">
         {renderAst(props.caseStudiesIntro)}
-        {props.caseStudies.map((study) => {
-          return (
-            <CaseStudy
-              key={study.title}
-              subtitle={study.subtitle}
-              title={study.title}
-              link={study.link}
-            >
-              {renderAst(study.htmlAst)}
-            </CaseStudy>
-          );
-        })}
-        <SeeMoreButton title="See More Work" />
       </ContentSection>
+      {props.caseStudies.map((study) => {
+        return (
+          <CaseStudy
+            key={study.title}
+            subtitle={study.subtitle}
+            title={study.title}
+            link={study.link}
+          >
+            {renderAst(study.htmlAst)}
+          </CaseStudy>
+        );
+      })}
+      <SeeMoreButton title="See More Work" />
       <ContentSection title="Client Portfolio">
         {renderAst(props.clientPortfoliosIntro)}
       </ContentSection>
