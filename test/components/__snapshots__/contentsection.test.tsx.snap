@@ -3,6 +3,13 @@
 exports[`ContentSection element is rendered 1`] = `
 <div
   className="cs-wrapper "
+  style={
+    Object {
+      "backgroundColor": "#ffffff",
+      "paddingBottom": "100px",
+      "paddingTop": "100px",
+    }
+  }
 >
   <div
     className="Content-Section"

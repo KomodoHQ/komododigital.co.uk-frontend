@@ -52,29 +52,41 @@ exports[`Home template is rendered 1`] = `
       </li>
     </ul>
   </div>
-  <div>
-    <span>
-      subtitle
-    </span>
+  <div
+    className="cs-wrapper invert"
+    style={
+      Object {
+        "backgroundColor": "#151515",
+        "paddingBottom": "200px",
+        "paddingTop": "200px",
+      }
+    }
+  >
     <div
-      className="cs-wrapper "
+      className="Content-Section"
     >
-      <div
-        className="Content-Section"
-      >
-        <h2>
-          title
-        </h2>
-        <div>
-          <span>
-            Lorem Ipsum is the industry standard typesetting text
-          </span>
-        </div>
+      <span>
+        subtitle
+      </span>
+      <h2>
+        title
+      </h2>
+      <div>
+        <span>
+          Lorem Ipsum is the industry standard typesetting text
+        </span>
       </div>
     </div>
   </div>
   <div
     className="cs-wrapper "
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "paddingBottom": "100px",
+        "paddingTop": "100px",
+      }
+    }
   >
     <div
       className="Content-Section"
@@ -90,7 +102,22 @@ exports[`Home template is rendered 1`] = `
     </div>
   </div>
   <div
+    className="csi-wrapper"
+  >
+    <img
+      alt="Komodo at work"
+      src={Object {}}
+    />
+  </div>
+  <div
     className="cs-wrapper "
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "paddingBottom": "100px",
+        "paddingTop": "100px",
+      }
+    }
   >
     <div
       className="Content-Section"
@@ -102,14 +129,21 @@ exports[`Home template is rendered 1`] = `
         <span>
           Lorem Ipsum is the industry standard typesetting text
         </span>
-        <div>
-          Services
-        </div>
       </div>
     </div>
   </div>
   <div
+    className="QuadGrid"
+  />
+  <div
     className="cs-wrapper "
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "paddingBottom": "100px",
+        "paddingTop": "100px",
+      }
+    }
   >
     <div
       className="Content-Section"
@@ -129,6 +163,13 @@ exports[`Home template is rendered 1`] = `
   </div>
   <div
     className="cs-wrapper "
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "paddingBottom": "100px",
+        "paddingTop": "100px",
+      }
+    }
   >
     <div
       className="Content-Section"
@@ -140,81 +181,88 @@ exports[`Home template is rendered 1`] = `
         <span>
           Lorem Ipsum is the industry standard typesetting text
         </span>
-        <div
-          className="QuadGrid"
-        >
-          <div
-            className="GridItem"
-          >
-            <img />
-            <h3 />
-          </div>
-          <div
-            className="GridItem"
-          >
-            <img />
-            <h3 />
-          </div>
-          <div
-            className="GridItem"
-          >
-            <img />
-            <h3 />
-          </div>
-          <div
-            className="GridItem"
-          >
-            <img />
-            <h3 />
-          </div>
-          <div
-            className="GridItem"
-          >
-            <img />
-            <h3 />
-          </div>
-          <div
-            className="GridItem"
-          >
-            <img />
-            <h3 />
-          </div>
-          <div
-            className="GridItem"
-          >
-            <img />
-            <h3 />
-          </div>
-          <div
-            className="GridItem"
-          >
-            <img />
-            <h3 />
-          </div>
-          <div
-            className="GridItem"
-          >
-            <img />
-            <h3 />
-          </div>
-          <div
-            className="GridItem"
-          >
-            <img />
-            <h3 />
-          </div>
-          <div
-            className="GridItem"
-          >
-            <img />
-            <h3 />
-          </div>
-        </div>
       </div>
     </div>
   </div>
   <div
+    className="QuadGrid"
+  >
+    <div
+      className="GridItem"
+    >
+      <img />
+      <h3 />
+    </div>
+    <div
+      className="GridItem"
+    >
+      <img />
+      <h3 />
+    </div>
+    <div
+      className="GridItem"
+    >
+      <img />
+      <h3 />
+    </div>
+    <div
+      className="GridItem"
+    >
+      <img />
+      <h3 />
+    </div>
+    <div
+      className="GridItem"
+    >
+      <img />
+      <h3 />
+    </div>
+    <div
+      className="GridItem"
+    >
+      <img />
+      <h3 />
+    </div>
+    <div
+      className="GridItem"
+    >
+      <img />
+      <h3 />
+    </div>
+    <div
+      className="GridItem"
+    >
+      <img />
+      <h3 />
+    </div>
+    <div
+      className="GridItem"
+    >
+      <img />
+      <h3 />
+    </div>
+    <div
+      className="GridItem"
+    >
+      <img />
+      <h3 />
+    </div>
+    <div
+      className="GridItem"
+    >
+      <img />
+      <h3 />
+    </div>
+  </div>
+  <div
     className="cs-wrapper "
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "paddingBottom": "100px",
+        "paddingTop": "100px",
+      }
+    }
   >
     <div
       className="Content-Section"

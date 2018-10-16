@@ -21,8 +21,8 @@ interface Props {
   title?: string;
   subtitle?: string;
   invert?: boolean;
-  background: string;
-  verticalPadding: number;
+  background?: string;
+  verticalPadding?: number;
   children: ReactNode;
 }
 
