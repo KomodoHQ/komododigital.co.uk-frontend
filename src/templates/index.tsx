@@ -12,7 +12,7 @@ import SeeMoreButton from '../components/seemorebutton';
 import ContactSection from '../components/contactsection';
 import ContactForm from '../components/contactform';
 
-import illustration from "../assets/images/illustration.png";
+import illustration from "../images/illustration.png";
 
 const renderAst = new rehypeReact({
   createElement: React.createElement,
