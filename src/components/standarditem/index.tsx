@@ -17,7 +17,8 @@ import React, { ReactNode } from 'react';
  * data
  */
 interface Props {
-  data: any;
+  imgsrc?: string;
+  link?: string;
 }
 
 /**
@@ -26,7 +27,7 @@ interface Props {
  * 
  * @param data
  */
-const StandardItem: React.SFC<Props> = ({ data }) => {
+const StandardItem: React.SFC<Props> = ({ imgsrc, link }) => {
   return (
     <div>
         StandardItem
