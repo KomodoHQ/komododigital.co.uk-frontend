@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="69px" height="81px" viewBox="0 0 69 81" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>05A94EA2-6A0F-406F-B094-9D75D614F237@1.5x</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="Komodo-Website-2.0-Designs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-V2-Desktop" transform="translate(-180.000000, -2203.000000)">
+            <g id="Discovery" transform="translate(165.000000, 2193.000000)">
+                <rect id="Rectangle-2" fill-opacity="0" fill="#D8D8D8" fill-rule="nonzero" x="0" y="0" width="100" height="100"></rect>
+                <g id="Discovery-Copy-2" transform="translate(16.000000, 11.000000)">
+                    <g id="Pages-3" transform="translate(15.000000, 36.000000)">
+                        <polygon id="Stroke-157" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="0 43 23 43 23 12 0 12"></polygon>
+                        <path d="M51.7024,28 L38.2976,28 C37.5808,28 37,27.44824 37,26.76728 L37,10.23272 C37,9.55176 37.5808,9 38.2976,9 L51.7024,9 C52.4192,9 53,9.55176 53,10.23272 L53,26.76728 C53,27.44824 52.4192,28 51.7024,28" id="Fill-159" fill="#01D764"></path>
+                        <path d="M45,0.8 L45,11.2 C45,11.6416 44.6416,12 44.2,12 L29.8,12 C29.3584,12 29,11.6416 29,11.2 L29,0.8 C29,0.3584 29.3584,0 29.8,0 L44.2,0 C44.6416,0 45,0.3584 45,0.8" id="Fill-161" fill="#000000"></path>
+                    </g>
+                    <g id="User-2">
+                        <circle id="Oval" cx="16" cy="13" r="7"></circle>
+                        <path d="M29,35.5 C29,28.0441559 22.9558441,22 15.5,22 C8.04415588,22 2,28.0441559 2,35.5" id="Oval-Copy"></path>
+                        <path d="M15.5,19.6666667 C11.647475,19.6666667 8.525,16.5322222 8.525,12.6666667 C8.525,8.80033333 11.647475,5.66666667 15.5,5.66666667 C19.352525,5.66666667 22.475,8.80033333 22.475,12.6666667 C22.475,16.5322222 19.352525,19.6666667 15.5,19.6666667 Z M0,0 L0,35 L1.589525,35 C1.9933,27.6321111 8.0569,21.7777778 15.5,21.7777778 C22.9431,21.7777778 29.0067,27.6321111 29.41125,35 L31,35 L31,0 L0,0 Z" id="Stroke-155" stroke="#000000" stroke-width="2" fill="#01D764" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <g id="Group-175" transform="translate(0.000000, 35.000000)">
+                            <path d="M0,0 L31,0" id="Fill-173" fill="#01D764"></path>
+                            <path d="M0,0 L31,0" id="Stroke-174" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </g>
+                        <path d="M37,19 C40.8318,19 40.8318,21 44.6636,21 C48.4977,21 48.4977,19 52.3318,19 C56.1659,19 56.1659,21 60,21" id="Stroke-185" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M37,11 C40.8318,11 40.8318,13 44.6636,13 C48.4977,13 48.4977,11 52.3318,11 C56.1659,11 56.1659,13 60,13" id="Stroke-185-Copy" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M37,3 C40.8318,3 40.8318,5 44.6636,5 C48.4977,5 48.4977,3 52.3318,3 C56.1659,3 56.1659,5 60,5" id="Stroke-185-Copy-2" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

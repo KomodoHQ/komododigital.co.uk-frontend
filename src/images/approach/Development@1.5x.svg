@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="70px" height="92px" viewBox="0 0 70 92" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>508392B9-7C09-41C3-98FC-527C80DAF755@1.5x</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="Komodo-Website-2.0-Designs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-V2-Desktop" transform="translate(-183.000000, -2453.000000)">
+            <g id="Development" transform="translate(165.000000, 2449.000000)">
+                <rect id="Rectangle-2" fill-opacity="0" fill="#D8D8D8" fill-rule="nonzero" x="0" y="0" width="100" height="100"></rect>
+                <g id="Development-Copy" transform="translate(13.000000, 5.000000)">
+                    <g id="Window">
+                        <path d="M73.7026726,0 L0.297327354,0 C0.132735426,0 0,0.191782609 0,0.428521739 L0,11 L74,11 L74,0.428521739 C74,0.191782609 73.8672646,0 73.7026726,0 Z" id="Fill-1"></path>
+                        <path d="M15.4272461,61 L8,61 C6.8954305,61 6,60.1045695 6,59 L6,1.23287671 C6,0.551917808 6.4451753,1.42108547e-14 6.99443477,1.42108547e-14 L73.0055652,0 C73.5548247,0 74,0.551917808 74,1.23287671 L74,58.7671233 C74,59.4480822 73.9812313,61 72.0288093,61 C70.7271946,61 59.3928481,61 38.0257697,61" id="Stroke-3" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M74,11 L6,11 L6,0.428521739 C6,0.191782609 6.12197309,0 6.27321973,0 L73.7267803,0 C73.8780269,0 74,0.191782609 74,0.428521739 L74,11 Z" id="Stroke-5" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M15,6 C15,7.10466667 14.1046667,8 13,8 C11.8953333,8 11,7.10466667 11,6 C11,4.89533333 11.8953333,4 13,4 C14.1046667,4 15,4.89533333 15,6" id="Fill-7" fill="#000000"></path>
+                        <path d="M24,6 C24,7.10466667 23.1046667,8 22,8 C20.8953333,8 20,7.10466667 20,6 C20,4.89533333 20.8953333,4 22,4 C23.1046667,4 24,4.89533333 24,6" id="Fill-9" fill="#5A96FF"></path>
+                        <path d="M33,6 C33,7.10466667 32.1046667,8 31,8 C29.8953333,8 29,7.10466667 29,6 C29,4.89533333 29.8953333,4 31,4 C32.1046667,4 33,4.89533333 33,6" id="Fill-9-Copy" fill="#E5E5E5"></path>
+                    </g>
+                    <g id="Phone-1" transform="translate(14.000000, 48.000000)">
+                        <path d="M29.5240398,36.7736463 L13.3493322,41.8994338 C12.232615,42.2530088 11.0373454,41.6445797 10.6799676,40.5397453 L0.101584197,7.86731393 C-0.255793619,6.76317969 0.359886975,5.58062881 1.47589651,5.22635365 L17.6513119,0.100566225 C18.7673214,-0.253008785 19.962591,0.355420292 20.3206765,1.46025468 L30.8983522,34.1326861 C31.25573,35.2375205 30.6407571,36.4200713 29.5240398,36.7736463 Z" id="Stroke-1" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M22,22 C20.4020561,22.4793832 17.0687228,23.4793832 12,25" id="Stroke-1" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M23,27 C21.3883735,27.4834879 18.0550402,28.4834879 13,30" id="Stroke-1" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M23,33 C21.9283747,33.3572084 19.9283747,34.0238751 17,35" id="Stroke-1" stroke="#5A96FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <polygon id="Fill-3" fill="#000000" points="15 4.54610719 6.49247578 7 5 4.83141478 14.8158455 2"></polygon>
+                        <polygon id="Stroke-5" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="15 4.54610719 6.49247578 7 5 4.83141478 14.8158455 2"></polygon>
+                        <path d="M17.7621425,13.0599015 C18.5573941,15.4137485 17.2935739,17.9669216 14.9396569,18.7621496 C12.5857398,19.5573775 10.033183,18.2935949 9.23793136,15.9397479 C8.44267977,13.5859009 9.70580784,11.0334199 12.0597249,10.2381919 C14.4136419,9.44227189 16.9668909,10.7060545 17.7621425,13.0599015" id="Fill-7" fill="#5A96FF"></path>
+                        <path d="M17.7621425,13.0599015 C18.5573941,15.4137485 17.2935739,17.9669216 14.9396569,18.7621496 C12.5857398,19.5573775 10.033183,18.2935949 9.23793136,15.9397479 C8.44267977,13.5859009 9.70580784,11.0334199 12.0597249,10.2381919 C14.4136419,9.44227189 16.9668909,10.7060545 17.7621425,13.0599015 Z" id="Stroke-9" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                    <polyline id="chevron-1" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="27 27 17 34.0298704 27 41"></polyline>
+                    <polyline id="chevron-2" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(58.000000, 34.000000) scale(-1, 1) translate(-58.000000, -34.000000) " points="63 27 53 34.0298704 63 41"></polyline>
+                    <path d="M45.6428571,21.3676471 L41.3571429,45.6323529" id="slash" stroke="#5A96FF" stroke-width="2" stroke-linecap="round"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
