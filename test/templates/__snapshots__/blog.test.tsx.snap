@@ -70,17 +70,115 @@ exports[`Blog template is rendered 1`] = `
     <div
       className="address"
     >
-      Address
+      <span>
+        Address
+      </span>
+      <address>
+        Komodo Digital,
+        <br />
+        63 Westgate Rd,
+        <br />
+        Newcastle upon Tyne,
+        <br />
+        NE1 1SG
+      </address>
+      <address>
+        Komodo | The Core
+        <br />
+        Science Central, Bath Ln,
+        <br />
+        Newcastle upon Tyne
+        <br />
+        NE4 5TF
+      </address>
     </div>
     <div
       className="sitemap"
     >
-      Sitemap
+      <span>
+        Sitemap
+      </span>
+      <ul>
+        <li>
+          <a
+            aria-current="page"
+            href="/"
+            onClick={[Function]}
+          >
+            Home
+          </a>
+        </li>
+        <li>
+          <a
+            aria-current="page"
+            href="/"
+            onClick={[Function]}
+          >
+            Case Studies
+          </a>
+        </li>
+        <li>
+          <a
+            aria-current="page"
+            href="/"
+            onClick={[Function]}
+          >
+            Insights
+          </a>
+        </li>
+        <li>
+          <a
+            aria-current="page"
+            href="/"
+            onClick={[Function]}
+          >
+            Careers
+          </a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a
+            aria-current="page"
+            href="/"
+            onClick={[Function]}
+          >
+            Contact
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://twitter.com/komodohq"
+          >
+            Twitter
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://facebook.com/komodohq"
+          >
+            Facebook
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://linkedin.com/komodohq"
+          >
+            LinkedIn
+          </a>
+        </li>
+      </ul>
     </div>
   </footer>
-  <footer>
-    <div>
-      Komodo Digital Copyright © 2018
+  <footer
+    className="legal-footer"
+  >
+    <div
+      className="company"
+    >
+      <span>
+        Komodo Digital Copyright © 2018
+      </span>
       <br />
       <a
         aria-current="page"
@@ -89,7 +187,7 @@ exports[`Blog template is rendered 1`] = `
       >
         Privacy Policy
       </a>
-      |
+       | 
       <a
         aria-current="page"
         href="/"
@@ -98,7 +196,9 @@ exports[`Blog template is rendered 1`] = `
         Terms and Conditions
       </a>
     </div>
-    <div>
+    <div
+      className="contact"
+    >
       Get in touch on:
       <br />
       <a
