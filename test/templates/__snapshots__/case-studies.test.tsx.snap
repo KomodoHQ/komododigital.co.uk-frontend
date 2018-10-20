@@ -83,13 +83,20 @@ exports[`Case Studies template is rendered 1`] = `
       </button>
     </a>
   </div>
-  <div>
-    ContactSection
-    <span>
-      Lorem Ipsum is the industry standard typesetting text
-    </span>
+  <div
+    className="contactsection-wrapper"
+  >
+    <div
+      className="contactsection"
+    >
+      <span>
+        Lorem Ipsum is the industry standard typesetting text
+      </span>
+    </div>
   </div>
-  <div>
+  <div
+    className="contactform"
+  >
     <form
       action="https://formspree.io/hello@komododigital.co.uk"
       method="POST"
