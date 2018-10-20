@@ -95,7 +95,26 @@ export default (props: IndexPageProps) => {
         {renderAst(props.clientPortfoliosIntro)}
       </ContentSection>
       <PortfolioGrid>
-        <StandardItem imgsrc="" link="" />
+        <StandardItem imgsrc={require("../images/portfolio/CoP.png")} link="/About" />
+        <StandardItem imgsrc={require("../images/portfolio/DB.png")} link="/About" />
+        <StandardItem imgsrc={require("../images/portfolio/elanders@2x.png")} link="/About" />
+
+        <StandardItem imgsrc={require("../images/portfolio/gichd.png")} link="/About" />
+        <StandardItem imgsrc={require("../images/portfolio/HTL.png")} link="/About" />
+        <StandardItem imgsrc={require("../images/portfolio/ISG.png")} link="/About" />
+        <StandardItem imgsrc={require("../images/portfolio/ITV.png")} link="/About" />
+        <StandardItem imgsrc={require("../images/portfolio/Legrand.png")} link="/About" />
+        <StandardItem imgsrc={require("../images/portfolio/logo-space-group.png")} link="/About" />
+
+        <StandardItem imgsrc={require("../images/portfolio/Newcastle Uni.png")} link="/About" />
+        <StandardItem imgsrc={require("../images/portfolio/Northumbria Uni.png")} link="/About" />
+        <StandardItem imgsrc={require("../images/portfolio/Northumbria-police logo@2x.png")} link="/About" />
+        <StandardItem imgsrc={require("../images/portfolio/onward-logo.png")} link="/About" />
+        <StandardItem imgsrc={require("../images/portfolio/Orchard.png")} link="/About" />
+        <StandardItem imgsrc={require("../images/portfolio/streetstream.png")} link="/About" />
+
+        <StandardItem imgsrc={require("../images/portfolio/ThingCo.png")} link="/About" />
+
       </PortfolioGrid>
       <ContentSection title="Insights">
         {renderAst(props.insightsIntro)}

@@ -196,8 +196,197 @@ exports[`Home template is rendered 1`] = `
   <div
     className="PortfolioGrid"
   >
-    <div>
-      StandardItem
+    <div
+      className="StandardItem"
+    >
+      <a
+        href="/About"
+        onClick={[Function]}
+      >
+        <img
+          src={Object {}}
+        />
+      </a>
+    </div>
+    <div
+      className="StandardItem"
+    >
+      <a
+        href="/About"
+        onClick={[Function]}
+      >
+        <img
+          src={Object {}}
+        />
+      </a>
+    </div>
+    <div
+      className="StandardItem"
+    >
+      <a
+        href="/About"
+        onClick={[Function]}
+      >
+        <img
+          src={Object {}}
+        />
+      </a>
+    </div>
+    <div
+      className="StandardItem"
+    >
+      <a
+        href="/About"
+        onClick={[Function]}
+      >
+        <img
+          src={Object {}}
+        />
+      </a>
+    </div>
+    <div
+      className="StandardItem"
+    >
+      <a
+        href="/About"
+        onClick={[Function]}
+      >
+        <img
+          src={Object {}}
+        />
+      </a>
+    </div>
+    <div
+      className="StandardItem"
+    >
+      <a
+        href="/About"
+        onClick={[Function]}
+      >
+        <img
+          src={Object {}}
+        />
+      </a>
+    </div>
+    <div
+      className="StandardItem"
+    >
+      <a
+        href="/About"
+        onClick={[Function]}
+      >
+        <img
+          src={Object {}}
+        />
+      </a>
+    </div>
+    <div
+      className="StandardItem"
+    >
+      <a
+        href="/About"
+        onClick={[Function]}
+      >
+        <img
+          src={Object {}}
+        />
+      </a>
+    </div>
+    <div
+      className="StandardItem"
+    >
+      <a
+        href="/About"
+        onClick={[Function]}
+      >
+        <img
+          src={Object {}}
+        />
+      </a>
+    </div>
+    <div
+      className="StandardItem"
+    >
+      <a
+        href="/About"
+        onClick={[Function]}
+      >
+        <img
+          src={Object {}}
+        />
+      </a>
+    </div>
+    <div
+      className="StandardItem"
+    >
+      <a
+        href="/About"
+        onClick={[Function]}
+      >
+        <img
+          src={Object {}}
+        />
+      </a>
+    </div>
+    <div
+      className="StandardItem"
+    >
+      <a
+        href="/About"
+        onClick={[Function]}
+      >
+        <img
+          src={Object {}}
+        />
+      </a>
+    </div>
+    <div
+      className="StandardItem"
+    >
+      <a
+        href="/About"
+        onClick={[Function]}
+      >
+        <img
+          src={Object {}}
+        />
+      </a>
+    </div>
+    <div
+      className="StandardItem"
+    >
+      <a
+        href="/About"
+        onClick={[Function]}
+      >
+        <img
+          src={Object {}}
+        />
+      </a>
+    </div>
+    <div
+      className="StandardItem"
+    >
+      <a
+        href="/About"
+        onClick={[Function]}
+      >
+        <img
+          src={Object {}}
+        />
+      </a>
+    </div>
+    <div
+      className="StandardItem"
+    >
+      <a
+        href="/About"
+        onClick={[Function]}
+      >
+        <img
+          src={Object {}}
+        />
+      </a>
     </div>
   </div>
   <div

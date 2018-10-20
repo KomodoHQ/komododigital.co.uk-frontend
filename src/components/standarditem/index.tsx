@@ -6,10 +6,12 @@
  * NPM Dependencies
  */
 import React, { ReactNode } from 'react';
+import { Link } from '@reach/router';
 
 /**
  * Local dependencies
  */
+import './standarditem.css';
 
 /**
  * Props for the item component
@@ -28,9 +30,10 @@ interface Props {
  * @param data
  */
 const StandardItem: React.SFC<Props> = ({ imgsrc, link }) => {
+  const img = link ? <Link to={link}><img src={imgsrc} /></Link>  : <img src={imgsrc} />; 
   return (
-    <div>
-        StandardItem
+    <div className="StandardItem">
+      {img}
     </div>
   );
 };
