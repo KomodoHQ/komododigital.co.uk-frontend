@@ -6,10 +6,12 @@
  * NPM Dependencies
  */
 import React, { ReactNode } from 'react';
+import { Link } from '@reach/router';
 
 /**
  * Local dependencies
  */
+import './seemorebutton.css';
 
 /**
  * Props for the see more button component
@@ -18,6 +20,7 @@ import React, { ReactNode } from 'react';
  */
 interface Props {
   title: string;
+  link?: string;
 }
 
 /**
@@ -26,10 +29,10 @@ interface Props {
  * 
  * @param data
  */
-const SeeMoreButton: React.SFC<Props> = ({ title }) => {
+const SeeMoreButton: React.SFC<Props> = ({ title, link="/About" }) => {
   return (
-    <div>
-        {title}
+    <div className="seemorebutton-wrapper">
+        <Link to={link}><button>{title}</button></Link>
     </div>
   );
 };

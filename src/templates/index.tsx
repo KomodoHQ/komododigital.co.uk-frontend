@@ -4,7 +4,9 @@ import Layout from '../components/layout';
 import Services from '../components/services';
 import CaseStudy from '../components/casestudy';
 import QuadGrid from '../components/quadgrid';
+import PortfolioGrid from '../components/portfoliogrid';
 import GridItem from '../components/griditem';
+import StandardItem from '../components/standarditem';
 import ContentSection from '../components/contentsection';
 import ContentImage from '../components/contentimage';
 import BlogPost from '../components/blogpost';
@@ -92,26 +94,16 @@ export default (props: IndexPageProps) => {
       <ContentSection title="Client Portfolio">
         {renderAst(props.clientPortfoliosIntro)}
       </ContentSection>
-      <QuadGrid>
-        <GridItem />
-        <GridItem />
-        <GridItem />
-        <GridItem />
-        <GridItem />
-        <GridItem />
-        <GridItem />
-        <GridItem />
-        <GridItem />
-        <GridItem />
-        <GridItem />
-      </QuadGrid>
+      <PortfolioGrid>
+        <StandardItem imgsrc="" link="" />
+      </PortfolioGrid>
       <ContentSection title="Insights">
         {renderAst(props.insightsIntro)}
         <BlogPost />
         <BlogPost />
         <BlogPost />
-        <SeeMoreButton title="See More Insights" />
       </ContentSection>
+      <SeeMoreButton title="See More Insights" />
       <ContactSection>
         {renderAst(props.contactsIntro)}
         <ContactForm />
