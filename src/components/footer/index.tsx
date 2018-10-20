@@ -33,19 +33,19 @@ const Footer: React.SFC<Props> = ({  }) => {
     <footer>
         <div className="komodo">Komodo</div>
         <div className="address">
-        <span>Address</span>
-        <address>
-          Komodo Digital,<br />
-          63 Westgate Rd,<br />
-          Newcastle upon Tyne,<br />
-          NE1 1SG
-        </address>
-        <address>
-          Komodo | The Core<br />
-          Science Central, Bath Ln,<br />
-          Newcastle upon Tyne<br />
-          NE4 5TF
-        </address>
+          <span>Address</span>
+          <address>
+            Komodo Digital,<br />
+            63 Westgate Rd,<br />
+            Newcastle upon Tyne,<br />
+            NE1 1SG
+          </address>
+          <address>
+            Komodo | The Core<br />
+            Science Central, Bath Ln,<br />
+            Newcastle upon Tyne<br />
+            NE4 5TF
+          </address>
         </div>
         <div className="sitemap">
           <span>Sitemap</span>
