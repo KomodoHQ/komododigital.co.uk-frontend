@@ -58,6 +58,13 @@ exports[`About template is rendered 1`] = `
     </span>
     <div
       className="cs-wrapper "
+      style={
+        Object {
+          "backgroundColor": "#ffffff",
+          "paddingBottom": "100px",
+          "paddingTop": "100px",
+        }
+      }
     >
       <div
         className="Content-Section"
@@ -75,6 +82,13 @@ exports[`About template is rendered 1`] = `
   </div>
   <div
     className="cs-wrapper "
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "paddingBottom": "100px",
+        "paddingTop": "100px",
+      }
+    }
   >
     <div
       className="Content-Section"
@@ -94,6 +108,13 @@ exports[`About template is rendered 1`] = `
   </div>
   <div
     className="cs-wrapper "
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "paddingBottom": "100px",
+        "paddingTop": "100px",
+      }
+    }
   >
     <div
       className="Content-Section"
@@ -110,6 +131,13 @@ exports[`About template is rendered 1`] = `
   </div>
   <div
     className="cs-wrapper "
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "paddingBottom": "100px",
+        "paddingTop": "100px",
+      }
+    }
   >
     <div
       className="Content-Section"

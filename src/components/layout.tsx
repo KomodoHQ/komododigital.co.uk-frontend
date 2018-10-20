@@ -4,6 +4,7 @@ import NavigationBar from './navigationbar';
 import Footer from './footer';
 import LegalFooter from './legalfooter';
 import '../assets/css/cookies.css';
+import './layout.css';
 
 interface Props {
   children?: ReactNode;

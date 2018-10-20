@@ -21,6 +21,8 @@ interface Props {
   title?: string;
   subtitle?: string;
   invert?: boolean;
+  background?: string;
+  verticalPadding?: number;
   children: ReactNode;
 }
 
@@ -30,14 +32,14 @@ interface Props {
  * 
  * @param data
  */
-const ContentSection: React.SFC<Props> = ({ title = 'TITLE HERE', subtitle= null, invert, children }) => {
+const ContentSection: React.SFC<Props> = ({ title = 'TITLE HERE', subtitle= null, invert, background='#ffffff', verticalPadding=100, children }) => {
 
   const subtitleEl = subtitle ? (<span>{subtitle}</span>) : null;
   const titleEl = title ? (<h2>{title}</h2>) : null;
   const invertedClassname = invert ? "invert" : "";
 
   return (
-    <div className={`cs-wrapper ${invertedClassname}`}>
+    <div className={`cs-wrapper ${invertedClassname}`} style={{ backgroundColor: background, paddingTop: verticalPadding+'px', paddingBottom: verticalPadding+'px' }}>
       <div className={`Content-Section`}>
           {subtitleEl}
           {titleEl}

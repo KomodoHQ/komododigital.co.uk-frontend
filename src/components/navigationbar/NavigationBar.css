@@ -1,14 +1,14 @@
 .navigationBar {
-    width: 100vw;
-    padding: 5px 15px;
+    display: grid;
+    grid-template-columns: 1fr repeat(14, 70px) 1fr;
+    grid-gap: 30px;
     color: #ffffff;
     background-color: #151515;
-    display: flex;
 }
 
 .navigationBar > h1 {
     color: white;
-    flex: 1;
+    grid-column: 2 / 6;
 }
 
 .navigationBar > h1 > a {
@@ -18,7 +18,7 @@
 
 .navigationBar > ul {
     list-style: none;
-    flex: 1;
+    grid-column: 8 / 16;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -27,6 +27,7 @@
 
 .navigationBar > ul > li {
     flex: 1;
+    text-align: right;
 }
 
 .navigationBar > ul > li > a {

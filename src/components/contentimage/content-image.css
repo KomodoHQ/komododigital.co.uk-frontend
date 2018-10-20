@@ -1,0 +1,14 @@
+
+.csi-wrapper {
+    display: grid;
+    grid-template-columns: 1fr repeat(14, 70px) 1fr;
+    grid-gap: 30px;
+    padding: 0;
+}
+
+/* Needs to work with multiple images */
+
+.csi-wrapper > img {
+    grid-column: 2 / 16;
+    margin: 0 auto;
+}
