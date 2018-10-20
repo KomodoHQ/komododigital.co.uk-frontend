@@ -10,6 +10,7 @@ import React, { ReactNode } from 'react';
 /**
  * Local dependencies
  */
+import './contactsection.css';
 
 /**
  * Props for the contact section component
@@ -27,9 +28,10 @@ interface Props {
  */
 const ContactSection: React.SFC<Props> = ({ children }) => {
   return (
-    <div>
-        ContactSection
+    <div className="contactsection-wrapper">
+      <div className="contactsection">
         {children}
+      </div>
     </div>
   );
 };

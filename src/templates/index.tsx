@@ -1,7 +1,7 @@
 import React from 'react';
 import rehypeReact from 'rehype-react';
 import Layout from '../components/layout';
-import Services from '../components/services';
+import VCard from '../components/vcard';
 import CaseStudy from '../components/casestudy';
 import QuadGrid from '../components/quadgrid';
 import PortfolioGrid from '../components/portfoliogrid';
@@ -98,23 +98,19 @@ export default (props: IndexPageProps) => {
         <StandardItem imgsrc={require("../images/portfolio/CoP.png")} link="/About" />
         <StandardItem imgsrc={require("../images/portfolio/DB.png")} link="/About" />
         <StandardItem imgsrc={require("../images/portfolio/elanders@2x.png")} link="/About" />
-
         <StandardItem imgsrc={require("../images/portfolio/gichd.png")} link="/About" />
         <StandardItem imgsrc={require("../images/portfolio/HTL.png")} link="/About" />
         <StandardItem imgsrc={require("../images/portfolio/ISG.png")} link="/About" />
         <StandardItem imgsrc={require("../images/portfolio/ITV.png")} link="/About" />
         <StandardItem imgsrc={require("../images/portfolio/Legrand.png")} link="/About" />
         <StandardItem imgsrc={require("../images/portfolio/logo-space-group.png")} link="/About" />
-
         <StandardItem imgsrc={require("../images/portfolio/Newcastle Uni.png")} link="/About" />
         <StandardItem imgsrc={require("../images/portfolio/Northumbria uni.png")} link="/About" />
         <StandardItem imgsrc={require("../images/portfolio/Northumbria-police logo@2x.png")} link="/About" />
         <StandardItem imgsrc={require("../images/portfolio/onward-logo.png")} link="/About" />
         <StandardItem imgsrc={require("../images/portfolio/Orchard.png")} link="/About" />
         <StandardItem imgsrc={require("../images/portfolio/streetstream.png")} link="/About" />
-
         <StandardItem imgsrc={require("../images/portfolio/ThingCo.png")} link="/About" />
-
       </PortfolioGrid>
       <ContentSection title="Insights">
         {renderAst(props.insightsIntro)}
@@ -123,8 +119,12 @@ export default (props: IndexPageProps) => {
         <BlogPost />
       </ContentSection>
       <SeeMoreButton title="See More Insights" />
-      <ContactSection>
+      <ContentSection>
         {renderAst(props.contactsIntro)}
+      </ContentSection>
+      <ContactSection>
+        <VCard avatar="avatar.png" jobtitle="Job Title" name="Firstname Surname" email="story@vcard.com" />
+        <VCard avatar="avatar.png" jobtitle="Job Title" name="Firstname Surname" email="story@vcard.com" />
         <ContactForm />
       </ContactSection>
     </Layout>

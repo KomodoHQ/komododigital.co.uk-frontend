@@ -10,6 +10,7 @@ import React, { ReactNode } from 'react';
 /**
  * Local dependencies
  */
+import './vcard.css'
 
 /**
  * Props for the vCard component
@@ -31,7 +32,7 @@ interface Props {
  */
 const VCard: React.SFC<Props> = ({ avatar, name, jobtitle, email }) => {
   return (
-    <div>
+    <div className="vcard">
       <div>{avatar}</div>
         <h1>{name}</h1>
         <h2>{jobtitle}</h2>

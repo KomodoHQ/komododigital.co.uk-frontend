@@ -10,6 +10,7 @@ import React, { ReactNode } from 'react';
 /**
  * Local dependencies
  */
+import './contactform.css';
 
 /**
  * Props for the contact form component
@@ -28,7 +29,7 @@ interface Props {
  */
 const ContactForm: React.SFC<Props> = ({ data }) => {
   return (
-    <div>
+    <div className="contactform">
       <form action="https://formspree.io/hello@komododigital.co.uk" method="POST">
         <label htmlFor="form-name">Your Name</label>
         <input type="text" name="name" placeholder="Joe Blogs" id="form-name" />
