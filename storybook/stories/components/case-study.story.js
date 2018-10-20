@@ -15,5 +15,5 @@ story.add(
       <CaseStudy>Click Here</CaseStudy>
       ~~~
     
-    `)(() => <CaseStudy />),
+    `)(() => <CaseStudy imgsrc={"images/casestudy.png"} subtitle="SOCIAL HOUSING" title="Simplifying the customer journey to digital adoption" link="/Case-study"><p>Onward is a leading provider of quality, affordable homes for rent and sale in the North West. Once a collection of five individual organisations, they now own and manage over 35,000 homes across the region.</p></CaseStudy>),
 );

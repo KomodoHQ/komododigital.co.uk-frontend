@@ -1,7 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`StandardItem element is rendered 1`] = `
-<div>
-  StandardItem
+<div
+  className="StandardItem"
+>
+  <a
+    href="/About"
+    onClick={[Function]}
+  >
+    <img
+      src="image.png"
+    />
+  </a>
 </div>
 `;

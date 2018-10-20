@@ -13,8 +13,8 @@ story.add(
       A panel for displaying a standard or portfolio item
     
       ~~~js
-      <StandardItem />
+      <StandardItem imgsrc="portfolio/CoP.png" link="/About" />
       ~~~
     
-    `)(() => <StandardItem />),
+    `)(() => <StandardItem imgsrc="portfolio/CoP.png" link="/About" />),
 );

@@ -4,7 +4,9 @@ import Layout from '../components/layout';
 import Services from '../components/services';
 import CaseStudy from '../components/casestudy';
 import QuadGrid from '../components/quadgrid';
+import PortfolioGrid from '../components/portfoliogrid';
 import GridItem from '../components/griditem';
+import StandardItem from '../components/standarditem';
 import ContentSection from '../components/contentsection';
 import ContentImage from '../components/contentimage';
 import BlogPost from '../components/blogpost';
@@ -12,7 +14,7 @@ import SeeMoreButton from '../components/seemorebutton';
 import ContactSection from '../components/contactsection';
 import ContactForm from '../components/contactform';
 
-import illustration from "../images/illustration.png";
+const illustration = require("../images/illustration.png");
 
 const renderAst = new rehypeReact({
   createElement: React.createElement,
@@ -75,43 +77,52 @@ export default (props: IndexPageProps) => {
       </QuadGrid>
       <ContentSection title="Case Studies">
         {renderAst(props.caseStudiesIntro)}
-        {props.caseStudies.map((study) => {
-          return (
-            <CaseStudy
-              key={study.title}
-              subtitle={study.subtitle}
-              title={study.title}
-              link={study.link}
-            >
-              {renderAst(study.htmlAst)}
-            </CaseStudy>
-          );
-        })}
-        <SeeMoreButton title="See More Work" />
       </ContentSection>
+      {props.caseStudies.map((study) => {
+        return (
+          <CaseStudy
+            key={study.title}
+            subtitle={study.subtitle}
+            title={study.title}
+            link={study.link}
+          >
+            {renderAst(study.htmlAst)}
+          </CaseStudy>
+        );
+      })}
+      <SeeMoreButton title="See More Work" />
       <ContentSection title="Client Portfolio">
         {renderAst(props.clientPortfoliosIntro)}
       </ContentSection>
-      <QuadGrid>
-        <GridItem />
-        <GridItem />
-        <GridItem />
-        <GridItem />
-        <GridItem />
-        <GridItem />
-        <GridItem />
-        <GridItem />
-        <GridItem />
-        <GridItem />
-        <GridItem />
-      </QuadGrid>
+      <PortfolioGrid>
+        <StandardItem imgsrc={require("../images/portfolio/CoP.png")} link="/About" />
+        <StandardItem imgsrc={require("../images/portfolio/DB.png")} link="/About" />
+        <StandardItem imgsrc={require("../images/portfolio/elanders@2x.png")} link="/About" />
+
+        <StandardItem imgsrc={require("../images/portfolio/gichd.png")} link="/About" />
+        <StandardItem imgsrc={require("../images/portfolio/HTL.png")} link="/About" />
+        <StandardItem imgsrc={require("../images/portfolio/ISG.png")} link="/About" />
+        <StandardItem imgsrc={require("../images/portfolio/ITV.png")} link="/About" />
+        <StandardItem imgsrc={require("../images/portfolio/Legrand.png")} link="/About" />
+        <StandardItem imgsrc={require("../images/portfolio/logo-space-group.png")} link="/About" />
+
+        <StandardItem imgsrc={require("../images/portfolio/Newcastle Uni.png")} link="/About" />
+        <StandardItem imgsrc={require("../images/portfolio/Northumbria Uni.png")} link="/About" />
+        <StandardItem imgsrc={require("../images/portfolio/Northumbria-police logo@2x.png")} link="/About" />
+        <StandardItem imgsrc={require("../images/portfolio/onward-logo.png")} link="/About" />
+        <StandardItem imgsrc={require("../images/portfolio/Orchard.png")} link="/About" />
+        <StandardItem imgsrc={require("../images/portfolio/streetstream.png")} link="/About" />
+
+        <StandardItem imgsrc={require("../images/portfolio/ThingCo.png")} link="/About" />
+
+      </PortfolioGrid>
       <ContentSection title="Insights">
         {renderAst(props.insightsIntro)}
         <BlogPost />
         <BlogPost />
         <BlogPost />
-        <SeeMoreButton title="See More Insights" />
       </ContentSection>
+      <SeeMoreButton title="See More Insights" />
       <ContactSection>
         {renderAst(props.contactsIntro)}
         <ContactForm />

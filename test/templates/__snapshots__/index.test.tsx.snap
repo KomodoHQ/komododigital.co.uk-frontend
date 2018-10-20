@@ -155,11 +155,20 @@ exports[`Home template is rendered 1`] = `
         <span>
           Lorem Ipsum is the industry standard typesetting text
         </span>
-        <div>
-          See More Work
-        </div>
       </div>
     </div>
+  </div>
+  <div
+    className="seemorebutton-wrapper"
+  >
+    <a
+      href="/About"
+      onClick={[Function]}
+    >
+      <button>
+        See More Work
+      </button>
+    </a>
   </div>
   <div
     className="cs-wrapper "
@@ -185,73 +194,199 @@ exports[`Home template is rendered 1`] = `
     </div>
   </div>
   <div
-    className="QuadGrid"
+    className="PortfolioGrid"
   >
     <div
-      className="GridItem"
+      className="StandardItem"
     >
-      <img />
-      <h3 />
+      <a
+        href="/About"
+        onClick={[Function]}
+      >
+        <img
+          src={Object {}}
+        />
+      </a>
     </div>
     <div
-      className="GridItem"
+      className="StandardItem"
     >
-      <img />
-      <h3 />
+      <a
+        href="/About"
+        onClick={[Function]}
+      >
+        <img
+          src={Object {}}
+        />
+      </a>
     </div>
     <div
-      className="GridItem"
+      className="StandardItem"
     >
-      <img />
-      <h3 />
+      <a
+        href="/About"
+        onClick={[Function]}
+      >
+        <img
+          src={Object {}}
+        />
+      </a>
     </div>
     <div
-      className="GridItem"
+      className="StandardItem"
     >
-      <img />
-      <h3 />
+      <a
+        href="/About"
+        onClick={[Function]}
+      >
+        <img
+          src={Object {}}
+        />
+      </a>
     </div>
     <div
-      className="GridItem"
+      className="StandardItem"
     >
-      <img />
-      <h3 />
+      <a
+        href="/About"
+        onClick={[Function]}
+      >
+        <img
+          src={Object {}}
+        />
+      </a>
     </div>
     <div
-      className="GridItem"
+      className="StandardItem"
     >
-      <img />
-      <h3 />
+      <a
+        href="/About"
+        onClick={[Function]}
+      >
+        <img
+          src={Object {}}
+        />
+      </a>
     </div>
     <div
-      className="GridItem"
+      className="StandardItem"
     >
-      <img />
-      <h3 />
+      <a
+        href="/About"
+        onClick={[Function]}
+      >
+        <img
+          src={Object {}}
+        />
+      </a>
     </div>
     <div
-      className="GridItem"
+      className="StandardItem"
     >
-      <img />
-      <h3 />
+      <a
+        href="/About"
+        onClick={[Function]}
+      >
+        <img
+          src={Object {}}
+        />
+      </a>
     </div>
     <div
-      className="GridItem"
+      className="StandardItem"
     >
-      <img />
-      <h3 />
+      <a
+        href="/About"
+        onClick={[Function]}
+      >
+        <img
+          src={Object {}}
+        />
+      </a>
     </div>
     <div
-      className="GridItem"
+      className="StandardItem"
     >
-      <img />
-      <h3 />
+      <a
+        href="/About"
+        onClick={[Function]}
+      >
+        <img
+          src={Object {}}
+        />
+      </a>
     </div>
     <div
-      className="GridItem"
+      className="StandardItem"
     >
-      <img />
-      <h3 />
+      <a
+        href="/About"
+        onClick={[Function]}
+      >
+        <img
+          src={Object {}}
+        />
+      </a>
+    </div>
+    <div
+      className="StandardItem"
+    >
+      <a
+        href="/About"
+        onClick={[Function]}
+      >
+        <img
+          src={Object {}}
+        />
+      </a>
+    </div>
+    <div
+      className="StandardItem"
+    >
+      <a
+        href="/About"
+        onClick={[Function]}
+      >
+        <img
+          src={Object {}}
+        />
+      </a>
+    </div>
+    <div
+      className="StandardItem"
+    >
+      <a
+        href="/About"
+        onClick={[Function]}
+      >
+        <img
+          src={Object {}}
+        />
+      </a>
+    </div>
+    <div
+      className="StandardItem"
+    >
+      <a
+        href="/About"
+        onClick={[Function]}
+      >
+        <img
+          src={Object {}}
+        />
+      </a>
+    </div>
+    <div
+      className="StandardItem"
+    >
+      <a
+        href="/About"
+        onClick={[Function]}
+      >
+        <img
+          src={Object {}}
+        />
+      </a>
     </div>
   </div>
   <div
@@ -283,11 +418,20 @@ exports[`Home template is rendered 1`] = `
         <div>
           BlogPost
         </div>
-        <div>
-          See More Insights
-        </div>
       </div>
     </div>
+  </div>
+  <div
+    className="seemorebutton-wrapper"
+  >
+    <a
+      href="/About"
+      onClick={[Function]}
+    >
+      <button>
+        See More Insights
+      </button>
+    </a>
   </div>
   <div>
     ContactSection
