@@ -107,7 +107,7 @@ export default (props: IndexPageProps) => {
         <StandardItem imgsrc={require("../images/portfolio/logo-space-group.png")} link="/About" />
 
         <StandardItem imgsrc={require("../images/portfolio/Newcastle Uni.png")} link="/About" />
-        <StandardItem imgsrc={require("../images/portfolio/Northumbria Uni.png")} link="/About" />
+        <StandardItem imgsrc={require("../images/portfolio/Northumbria uni.png")} link="/About" />
         <StandardItem imgsrc={require("../images/portfolio/Northumbria-police logo@2x.png")} link="/About" />
         <StandardItem imgsrc={require("../images/portfolio/onward-logo.png")} link="/About" />
         <StandardItem imgsrc={require("../images/portfolio/Orchard.png")} link="/About" />
