@@ -60,7 +60,7 @@ exports[`About template is rendered 1`] = `
       className="cs-wrapper "
       style={
         Object {
-          "backgroundColor": "#ffffff",
+          "backgroundColor": "inherit",
           "paddingBottom": "100px",
           "paddingTop": "100px",
         }
@@ -84,7 +84,7 @@ exports[`About template is rendered 1`] = `
     className="cs-wrapper "
     style={
       Object {
-        "backgroundColor": "#ffffff",
+        "backgroundColor": "inherit",
         "paddingBottom": "100px",
         "paddingTop": "100px",
       }
@@ -110,7 +110,7 @@ exports[`About template is rendered 1`] = `
     className="cs-wrapper "
     style={
       Object {
-        "backgroundColor": "#ffffff",
+        "backgroundColor": "inherit",
         "paddingBottom": "100px",
         "paddingTop": "100px",
       }
@@ -133,7 +133,7 @@ exports[`About template is rendered 1`] = `
     className="cs-wrapper "
     style={
       Object {
-        "backgroundColor": "#ffffff",
+        "backgroundColor": "inherit",
         "paddingBottom": "100px",
         "paddingTop": "100px",
       }
@@ -180,114 +180,129 @@ exports[`About template is rendered 1`] = `
       </div>
     </div>
   </div>
-  <div>
-    ContactSection
-    <span>
-      Lorem Ipsum is the industry standard typesetting text
-    </span>
-    <div>
-      <form
-        action="https://formspree.io/hello@komododigital.co.uk"
-        method="POST"
+  <div
+    className="contactsection-wrapper"
+  >
+    <div
+      className="contactsection"
+    >
+      <span>
+        Lorem Ipsum is the industry standard typesetting text
+      </span>
+      <div
+        className="contactform"
       >
-        <label
-          htmlFor="form-name"
+        <form
+          action="https://formspree.io/hello@komododigital.co.uk"
+          method="POST"
         >
-          Your Name
-        </label>
-        <input
-          id="form-name"
-          name="name"
-          placeholder="Joe Blogs"
-          type="text"
-        />
-        <label
-          htmlFor="form-email"
-        >
-          Your Email
-        </label>
-        <input
-          id="form-email"
-          name="email"
-          placeholder="joe@blogs.com"
-          type="email"
-        />
-        <label
-          htmlFor="form-service"
-        >
-          Service
-        </label>
-        <select
-          id="form-service"
-          name="service"
-        >
-          <option
-            value="Discovery"
+          <label
+            htmlFor="form-name"
           >
-            Discovery
-          </option>
-          <option
-            value="Design"
+            Your Name
+            <input
+              id="form-name"
+              name="name"
+              placeholder="Joe Blogs"
+              type="text"
+            />
+          </label>
+          <label
+            htmlFor="form-email"
           >
-            Design
-          </option>
-          <option
-            value="Development"
+            Your Email
+            <input
+              id="form-email"
+              name="email"
+              placeholder="joe@blogs.com"
+              type="email"
+            />
+          </label>
+          <label
+            htmlFor="form-service"
           >
-            Development
-          </option>
-          <option
-            value="Delivery"
+            Service
+            <select
+              id="form-service"
+              name="service"
+            >
+              <option>
+                Choose Service
+              </option>
+              <option
+                value="Discovery"
+              >
+                Discovery
+              </option>
+              <option
+                value="Design"
+              >
+                Design
+              </option>
+              <option
+                value="Development"
+              >
+                Development
+              </option>
+              <option
+                value="Delivery"
+              >
+                Delivery
+              </option>
+            </select>
+          </label>
+          <label
+            htmlFor="form-sector"
           >
-            Delivery
-          </option>
-        </select>
-        <label
-          htmlFor="form-sector"
-        >
-          Sector
-        </label>
-        <select
-          id="form-sector"
-          name="sector"
-        >
-          <option
-            value="Education"
+            Sector
+            <select
+              id="form-sector"
+              name="sector"
+            >
+              <option>
+                Choose Sector
+              </option>
+              <option
+                value="Education"
+              >
+                Education
+              </option>
+              <option
+                value="Law Enforcement"
+              >
+                Law Enforcement
+              </option>
+              <option
+                value="Startups"
+              >
+                Startups
+              </option>
+              <option
+                value="Social Housing"
+              >
+                Social Housing
+              </option>
+            </select>
+          </label>
+          <label
+            htmlFor="form-message"
           >
-            Education
-          </option>
-          <option
-            value="Law Enforcement"
-          >
-            Law Enforcement
-          </option>
-          <option
-            value="Startups"
-          >
-            Startups
-          </option>
-          <option
-            value="Social Housing"
-          >
-            Social Housing
-          </option>
-        </select>
-        <label
-          htmlFor="form-message"
-        >
-          Your Message
-        </label>
-        <textarea
-          cols={30}
-          id="form-message"
-          name="message"
-          rows={10}
-        />
-        <input
-          type="submit"
-          value="Send"
-        />
-      </form>
+            Your Message
+            <textarea
+              cols={30}
+              id="form-message"
+              name="message"
+              rows={10}
+            />
+          </label>
+          <div>
+            <input
+              type="submit"
+              value="Send"
+            />
+          </div>
+        </form>
+      </div>
     </div>
   </div>
   <footer>

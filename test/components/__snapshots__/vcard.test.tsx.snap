@@ -1,20 +1,26 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Vcard element is rendered 1`] = `
-<div>
+<div
+  className="vcard"
+>
+  <img
+    height="70"
+    src="test"
+    width="70"
+  />
   <div>
-    test
+    <h1>
+      test
+    </h1>
+    <h2>
+      test
+    </h2>
+    <a
+      href="mailto: {email}"
+    >
+      test
+    </a>
   </div>
-  <h1>
-    test
-  </h1>
-  <h2>
-    test
-  </h2>
-  <a
-    href="mailto: {email}"
-  >
-    test
-  </a>
 </div>
 `;

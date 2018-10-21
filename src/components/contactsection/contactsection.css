@@ -1,0 +1,12 @@
+.contactsection-wrapper {
+    display: grid;
+    grid-template-columns: 1fr repeat(14, 70px) 1fr;
+    grid-gap: 30px;
+    background-color: white;
+}
+
+.contactsection {
+    grid-column: 5 / 13;
+    display: flex;
+    flex-wrap: wrap;
+}

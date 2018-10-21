@@ -5,7 +5,7 @@ exports[`ContentSection element is rendered 1`] = `
   className="cs-wrapper "
   style={
     Object {
-      "backgroundColor": "#ffffff",
+      "backgroundColor": "inherit",
       "paddingBottom": "100px",
       "paddingTop": "100px",
     }

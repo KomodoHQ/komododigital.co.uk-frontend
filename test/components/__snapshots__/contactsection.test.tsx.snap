@@ -1,7 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ContactSection element is rendered 1`] = `
-<div>
-  ContactSection
+<div
+  className="contactsection-wrapper"
+>
+  <div
+    className="contactsection"
+  />
 </div>
 `;
