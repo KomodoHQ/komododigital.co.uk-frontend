@@ -5,7 +5,6 @@ import BlogGrid from '../components/bloggrid';
 import BlogPost from '../components/blogpost';
 
 export default (props) => {
-
   return (
     <Layout data={props.data}>
       <BlogGrid>
