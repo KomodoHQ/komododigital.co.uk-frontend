@@ -119,7 +119,7 @@ export default (props: IndexPageProps) => {
         <BlogPost />
       </ContentSection>
       <SeeMoreButton title="See More Insights" />
-      <ContentSection verticalPadding={50}>
+      <ContentSection verticalPadding={50} background="#FFFFFF">
         {renderAst(props.contactsIntro)}
       </ContentSection>
       <ContactSection>
