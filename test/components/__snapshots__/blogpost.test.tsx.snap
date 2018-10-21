@@ -1,7 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`BlogPost element is rendered 1`] = `
-<div>
-  BlogPost
-</div>
+<a
+  aria-current="page"
+  className="blogpost"
+  href="/"
+  onClick={[Function]}
+>
+  <img
+    alt="title"
+    src=""
+    width={370}
+  />
+  <div>
+    <h1>
+      title
+    </h1>
+    <span>
+      
+    </span>
+    <p>
+      Read More
+    </p>
+  </div>
+</a>
 `;

@@ -409,18 +409,12 @@ exports[`Home template is rendered 1`] = `
         <span>
           Lorem Ipsum is the industry standard typesetting text
         </span>
-        <div>
-          BlogPost
-        </div>
-        <div>
-          BlogPost
-        </div>
-        <div>
-          BlogPost
-        </div>
       </div>
     </div>
   </div>
+  <div
+    className="BlogGrid"
+  />
   <div
     className="seemorebutton-wrapper"
   >

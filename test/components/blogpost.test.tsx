@@ -3,7 +3,7 @@ import BlogPost from '../../src/components/blogpost';
 import renderer from 'react-test-renderer';
 
 test('BlogPost element is rendered', () => {
-  const component = renderer.create(<BlogPost title={"title"} />);
+  const component = renderer.create(<BlogPost title={"title"} image="" slug="" date="" />);
   let tree = component.toJSON();
   expect(tree).toMatchSnapshot();
 });
