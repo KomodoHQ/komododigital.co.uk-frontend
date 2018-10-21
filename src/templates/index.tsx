@@ -119,12 +119,12 @@ export default (props: IndexPageProps) => {
         <BlogPost />
       </ContentSection>
       <SeeMoreButton title="See More Insights" />
-      <ContentSection>
+      <ContentSection verticalPadding={50}>
         {renderAst(props.contactsIntro)}
       </ContentSection>
       <ContactSection>
-        <VCard avatar="avatar.png" jobtitle="Job Title" name="Firstname Surname" email="story@vcard.com" />
-        <VCard avatar="avatar.png" jobtitle="Job Title" name="Firstname Surname" email="story@vcard.com" />
+        <VCard avatar={require("../images/avatar.png")} jobtitle="Commercial Director" name="Armin Talic" email="story@vcard.com" />
+        <VCard avatar={require("../images/avatar.png")} jobtitle="Director" name="Matt Moran" email="story@vcard.com" />
         <ContactForm />
       </ContactSection>
     </Layout>
