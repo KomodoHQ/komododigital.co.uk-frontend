@@ -9,12 +9,11 @@ import GridItem from '../components/griditem';
 import StandardItem from '../components/standarditem';
 import ContentSection from '../components/contentsection';
 import ContentImage from '../components/contentimage';
+import BlogGrid from "../components/bloggrid";
 import BlogPost from '../components/blogpost';
 import SeeMoreButton from '../components/seemorebutton';
 import ContactSection from '../components/contactsection';
 import ContactForm from '../components/contactform';
-
-const illustration = require("../images/illustration.png");
 
 const renderAst = new rehypeReact({
   createElement: React.createElement,
@@ -24,8 +23,13 @@ const renderAst = new rehypeReact({
  * Note, the interfaces below will eventually exist in their own
  * components, but for now are fine here.
  */
-interface Service {
+interface Insight {
+  node: any;
+}
+
+ interface Service {
   title: string;
+  image: string;
   htmlAst: any;
 }
 
@@ -39,6 +43,7 @@ interface CaseStudy {
 interface IndexPageProps {
   services: Service[];
   caseStudies: CaseStudy[];
+  insights: Insight[];
   subtitle: string;
   title: string;
   intro: any;
@@ -61,7 +66,7 @@ export default (props: IndexPageProps) => {
         {renderAst(props.aboutUsIntro)}
       </ContentSection>
       <ContentImage>
-        <img src={illustration} alt={"Komodo at work"} />
+        <img src={require("../images/illustration.png")} alt={"Komodo at work"} />
       </ContentImage>
       <ContentSection title="Approach">
         {renderAst(props.approachIntro)}
@@ -69,7 +74,7 @@ export default (props: IndexPageProps) => {
       <QuadGrid>
         {props.services.map((service) => {
           return (
-            <GridItem key={service.title} title={service.title}>
+            <GridItem key={service.title} title={service.title} image={require("../images/approach/Design.png")}>
               {renderAst(service.htmlAst)}
             </GridItem>
           );
@@ -114,10 +119,12 @@ export default (props: IndexPageProps) => {
       </PortfolioGrid>
       <ContentSection title="Insights">
         {renderAst(props.insightsIntro)}
-        <BlogPost />
-        <BlogPost />
-        <BlogPost />
       </ContentSection>
+      <BlogGrid>
+      {props.insights.map((insight) => {
+        return <BlogPost key={insight.node.title} slug={insight.node.slug} title={insight.node.title} date={insight.node.date} image={insight.node.imageSource} />;
+      })}
+      </BlogGrid>
       <SeeMoreButton title="See More Insights" />
       <ContentSection verticalPadding={50} background="#FFFFFF">
         {renderAst(props.contactsIntro)}

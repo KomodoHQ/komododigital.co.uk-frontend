@@ -1,5 +1,6 @@
 ---
 title: 'Development'
+image: 'approach/Development.png'
 date: '2018-09-22'
 group: 'services'
 ---

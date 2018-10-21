@@ -20,6 +20,7 @@ test('Home template is rendered', () => {
   const hocProps = {
     services: [],
     caseStudies: [],
+    insights: [],
     subtitle: 'subtitle',
     title: 'title',
     intro: htmlAst,

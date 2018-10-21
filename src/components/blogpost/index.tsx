@@ -6,10 +6,12 @@
  * NPM Dependencies
  */
 import React, { ReactNode } from 'react';
+import { Link } from '@reach/router';
 
 /**
  * Local dependencies
  */
+import './blogpost.css';
 
 /**
  * Props for the blog post link component
@@ -17,7 +19,10 @@ import React, { ReactNode } from 'react';
  * data
  */
 interface Props {
-  data?: any;
+  slug?: string;
+  title?: any;
+  date?: string;
+  image?: string;
 }
 
 /**
@@ -26,11 +31,16 @@ interface Props {
  * 
  * @param data
  */
-const BlogPost: React.SFC<Props> = ({ data }) => {
+const BlogPost: React.SFC<Props> = ({ slug, title, date, image }) => {
   return (
-    <div>
-        BlogPost
-    </div>
+    <Link className="blogpost" to={slug}>
+        <img src={image} width={370} alt={title} />
+        <div>
+          <h1>{title}</h1>
+          <span>{date}</span>
+          <p>Read More</p>
+        </div>
+    </Link>
   );
 };
 

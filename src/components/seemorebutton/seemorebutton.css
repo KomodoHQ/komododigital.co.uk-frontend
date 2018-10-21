@@ -2,11 +2,12 @@
     display: grid;
     grid-template-columns: 1fr repeat(14, 70px) 1fr;
     grid-gap: 30px;
+    justify-items: center;
     padding: 30px 0;
 }
 
 .seemorebutton-wrapper > a {
-    grid-column: 7 / 10;
+    grid-column: 7 / 11;
 }
 
 .seemorebutton-wrapper > a > button {

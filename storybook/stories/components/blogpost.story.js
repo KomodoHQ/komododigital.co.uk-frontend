@@ -27,6 +27,6 @@ story.add(
         <BlogPost>Click Here</BlogPost>
         ~~~
       
-      `)(() => <BlogPost image={"img.jpg"} />),
+      `)(() => <BlogPost title={"title"} image={"img.jpg"} />),
   );
   
