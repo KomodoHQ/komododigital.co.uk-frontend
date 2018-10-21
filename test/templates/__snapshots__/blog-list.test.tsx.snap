@@ -52,25 +52,28 @@ exports[`Blog template is rendered 1`] = `
       </li>
     </ul>
   </div>
-  <div>
+  <div
+    className="BlogGrid"
+  >
     <a
+      className="blogpost"
       href="/blog/test"
       onClick={[Function]}
-      onMouseEnter={[Function]}
     >
+      <img
+        alt="test post"
+        width={370}
+      />
       <div>
-        <div>
-          <img
-            height="150"
-            width="300"
-          />
-        </div>
         <h1>
           test post
         </h1>
         <span>
-          20 September 2018
+          2018-09-20
         </span>
+        <p>
+          Read More
+        </p>
       </div>
     </a>
   </div>

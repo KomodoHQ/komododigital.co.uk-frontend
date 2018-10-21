@@ -11,7 +11,7 @@ export default (props) => {
       <BlogGrid>
         {props.posts.map((post) => {
           return (
-            <BlogPost slug={ post.node.slug } title={ post.node.title } date={ post.node.date } image={ post.node.imageSource } />
+            <BlogPost key={ post.node.slug } slug={ post.node.slug } title={ post.node.title } date={ post.node.date } image={ post.node.imageSource } />
           );
           })}
       </BlogGrid>
