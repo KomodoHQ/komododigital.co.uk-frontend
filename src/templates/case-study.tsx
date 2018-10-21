@@ -1,6 +1,7 @@
 import React from 'react';
 import rehypeReact from 'rehype-react';
 import Layout from '../components/layout';
+import Metrics from '../components/metrics';
 import Metric from '../components/metric';
 import Testimonial from '../components/testimonial';
 import ContentSection from '../components/contentsection';
@@ -15,13 +16,12 @@ const renderAst = new rehypeReact({
 export default (props) => {
   return (
     <Layout data={props.data}>
-      <div>
-        <span>{props.subtitle}</span>
-        <ContentSection title={props.title}>{renderAst(props.intro)}</ContentSection>
-      </div>
+      <ContentSection subtitle={props.subtitle} title={props.title}>{renderAst(props.intro)}</ContentSection>
       <ContentSection title="Solution/Project Outcome">
         {renderAst(props.metricsIntro)}
-        {props.metrics.map((metric) => {
+      </ContentSection>
+      <Metrics>
+      {props.metrics.map((metric) => {
           return (
             <Metric
               key={metric.metric}
@@ -31,16 +31,15 @@ export default (props) => {
             />
           );
         })}
-      </ContentSection>
+      </Metrics>
       <ContentSection title={props.processTitle}>
         {renderAst(props.process)}
       </ContentSection>
-      <ContentSection title="test">
-        <Testimonial />
-      </ContentSection>
+      <Testimonial name="A Developer" jobtitle="Senior Developer" company="Komodo">Testimonial content</Testimonial>
       <ContentSection title="Other related work">
         {renderAst(props.caseStudiesIntro)}
-        {props.caseStudies.map((study) => {
+      </ContentSection>
+      {props.caseStudies.map((study) => {
           return (
             <CaseStudy
               key={study.title}
@@ -52,9 +51,10 @@ export default (props) => {
             </CaseStudy>
           );
         })}
+      <ContentSection background={"#ffffff"} verticalPadding={50}>
+        {renderAst(props.contactsIntro)}
       </ContentSection>
       <ContactSection>
-        {renderAst(props.contactsIntro)}
         <ContactForm />
       </ContactSection>
     </Layout>

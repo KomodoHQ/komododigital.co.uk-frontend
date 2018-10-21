@@ -1,22 +1,19 @@
 import React from 'react';
 import Layout from '../components/layout';
 import { Link } from 'gatsby';
-import BlogSummaryView from '../components/blogsummaryview';
+import BlogGrid from '../components/bloggrid';
+import BlogPost from '../components/blogpost';
 
 export default (props) => {
-  const html = props.posts.map((post) => {
-    const slug = `blog/${post.node.slug}`;
-
-    return (
-      <Link to={slug} key={slug}>
-        <BlogSummaryView data={{ ...post.node }} />
-      </Link>
-    );
-  });
-
   return (
     <Layout data={props.data}>
-      <div>{html}</div>
+      <BlogGrid>
+        {props.posts.map((post) => {
+          return (
+            <BlogPost key={ post.node.slug } slug={ post.node.slug } title={ post.node.title } date={ post.node.date } image={ post.node.imageSource } />
+          );
+          })}
+      </BlogGrid>
     </Layout>
   );
 };

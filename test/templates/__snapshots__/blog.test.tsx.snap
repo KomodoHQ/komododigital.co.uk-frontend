@@ -52,15 +52,36 @@ exports[`Blog template is rendered 1`] = `
       </li>
     </ul>
   </div>
-  <img />
-  <h1 />
+  <img
+    width="100%"
+  />
   <div
-    dangerouslySetInnerHTML={
+    className="cs-wrapper "
+    style={
       Object {
-        "__html": "<p>Test</p>",
+        "backgroundColor": "inherit",
+        "paddingBottom": "100px",
+        "paddingTop": "100px",
       }
     }
-  />
+  >
+    <div
+      className="Content-Section"
+    >
+      <h2>
+        No Title Found
+      </h2>
+      <div>
+        <div
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<p>Test</p>",
+            }
+          }
+        />
+      </div>
+    </div>
+  </div>
   <footer>
     <div
       className="komodo"

@@ -15,6 +15,7 @@ export default (props) => {
   return (
     <Layout data={props.data}>
       <ContentSection title="Case Studies">
+        <p>Content</p>
       </ContentSection>
       {props.caseStudies.map((study) => {
         return (
@@ -29,10 +30,12 @@ export default (props) => {
         );
       })}
       <SeeMoreButton title="See More Work" />
-      <ContactSection>
+      <ContentSection background={"#ffffff"} verticalPadding={50}>
         {renderAst(props.contactsIntro)}
+      </ContentSection>
+      <ContactSection>
+        <ContactForm />
       </ContactSection>
-      <ContactForm />
     </Layout>
   );
 };

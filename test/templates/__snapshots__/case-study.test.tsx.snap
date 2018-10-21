@@ -52,31 +52,29 @@ exports[`Case Study template is rendered 1`] = `
       </li>
     </ul>
   </div>
-  <div>
-    <span>
-      subtitle
-    </span>
-    <div
-      className="cs-wrapper "
-      style={
-        Object {
-          "backgroundColor": "inherit",
-          "paddingBottom": "100px",
-          "paddingTop": "100px",
-        }
+  <div
+    className="cs-wrapper "
+    style={
+      Object {
+        "backgroundColor": "inherit",
+        "paddingBottom": "100px",
+        "paddingTop": "100px",
       }
+    }
+  >
+    <div
+      className="Content-Section"
     >
-      <div
-        className="Content-Section"
-      >
-        <h2>
-          title
-        </h2>
-        <div>
-          <span>
-            Lorem Ipsum is the industry standard typesetting text
-          </span>
-        </div>
+      <span>
+        subtitle
+      </span>
+      <h2>
+        title
+      </h2>
+      <div>
+        <span>
+          Lorem Ipsum is the industry standard typesetting text
+        </span>
       </div>
     </div>
   </div>
@@ -104,6 +102,13 @@ exports[`Case Study template is rendered 1`] = `
     </div>
   </div>
   <div
+    className="metrics-wrapper"
+  >
+    <div
+      className="Metrics"
+    />
+  </div>
+  <div
     className="cs-wrapper "
     style={
       Object {
@@ -126,47 +131,34 @@ exports[`Case Study template is rendered 1`] = `
       </div>
     </div>
   </div>
-  <div
-    className="cs-wrapper "
-    style={
-      Object {
-        "backgroundColor": "inherit",
-        "paddingBottom": "100px",
-        "paddingTop": "100px",
-      }
-    }
+  <article
+    className="testimonial-wrapper"
   >
     <div
-      className="Content-Section"
+      className="Testimonial"
     >
-      <h2>
-        test
-      </h2>
-      <div>
-        <article
-          className="testimonial-wrapper"
-        >
-          <div
-            className="Testimonial"
-          >
-            <span
-              className="name"
-            >
-              :
-            </span>
-            <q />
-            <hr />
-            <span
-              className="job"
-            />
-            <span
-              className="company"
-            />
-          </div>
-        </article>
-      </div>
+      <span
+        className="name"
+      >
+        A Developer
+        :
+      </span>
+      <q>
+        Testimonial content
+      </q>
+      <hr />
+      <span
+        className="job"
+      >
+        Senior Developer
+      </span>
+      <span
+        className="company"
+      >
+        Komodo
+      </span>
     </div>
-  </div>
+  </article>
   <div
     className="cs-wrapper "
     style={
@@ -191,14 +183,34 @@ exports[`Case Study template is rendered 1`] = `
     </div>
   </div>
   <div
+    className="cs-wrapper "
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "paddingBottom": "50px",
+        "paddingTop": "50px",
+      }
+    }
+  >
+    <div
+      className="Content-Section"
+    >
+      <h2>
+        TITLE HERE
+      </h2>
+      <div>
+        <span>
+          Lorem Ipsum is the industry standard typesetting text
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
     className="contactsection-wrapper"
   >
     <div
       className="contactsection"
     >
-      <span>
-        Lorem Ipsum is the industry standard typesetting text
-      </span>
       <div
         className="contactform"
       >

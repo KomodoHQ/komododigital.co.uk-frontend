@@ -29,8 +29,10 @@ interface Props {
  */
 const Metrics: React.SFC<Props> = ({ metrics, children }) => {
   return (
-    <div className="Metrics">
+    <div className="metrics-wrapper">
+      <div className="Metrics">
         {children}
+      </div>
     </div>
   );
 };

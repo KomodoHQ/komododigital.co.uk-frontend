@@ -9,16 +9,20 @@
     background-color: #151515;
 }
 
-div.company {
+.legal-footer  div.company {
     grid-column: 2 / 14;
     line-height: 2.0rem;
 }
 
-span {
+.legal-footer span {
     font-weight: bold;
 }
 
-div.contact {
+.legal-footer  div.contact {
     grid-column: 14 / 16;
     line-height: 2.0rem;
+}
+
+.legal-footer a {
+    color: white;
 }

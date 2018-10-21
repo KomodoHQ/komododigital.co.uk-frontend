@@ -21,27 +21,27 @@ footer > .address {
     flex-wrap: wrap;
 }
 
-span {
+footer span {
     flex: 100%;
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 20px;
 }
 
-address {
+footer > div.address > address {
     flex: 50%;
     line-height: 2.0rem;
     font-style: normal;
 }
 
-footer > .sitemap {
+footer > div.sitemap {
     grid-column: 13 / 16;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
 
-ul {
+footer > div.sitemap > ul {
     flex: 50%;
     line-height: 2.0rem;
     list-style: none;
@@ -50,6 +50,6 @@ ul {
     font-style: normal;
 }
 
-a {
+footer > div.sitemap > ul > li > a {
     color: white;
 }
