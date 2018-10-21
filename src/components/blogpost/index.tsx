@@ -33,7 +33,7 @@ interface Props {
  */
 const BlogPost: React.SFC<Props> = ({ slug, title, date, image }) => {
   return (
-    <Link className="blogpost" to={slug}>
+    <Link className="blogpost" to={`blog/${slug}`}>
         <img src={image} width={370} alt={title} />
         <div>
           <h1>{title}</h1>

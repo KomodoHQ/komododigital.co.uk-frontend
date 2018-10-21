@@ -2,9 +2,8 @@
 
 exports[`BlogPost element is rendered 1`] = `
 <a
-  aria-current="page"
   className="blogpost"
-  href="/"
+  href="/blog"
   onClick={[Function]}
 >
   <img
