@@ -1,7 +1,6 @@
 import React from 'react';
 import rehypeReact from 'rehype-react';
 import Layout from '../components/layout';
-import Services from '../components/services';
 import QuadGrid from '../components/quadgrid';
 import GridItem from '../components/griditem';
 import ContentSection from '../components/contentsection';
@@ -36,36 +35,35 @@ interface AboutPageProps {
 export default (props: AboutPageProps) => {
   return (
     <Layout data={props.data}>
-      <div>
-        <span>{props.subtitle}</span>
-        <ContentSection title={props.title}>{renderAst(props.intro)}</ContentSection>
-      </div>
+      <ContentSection subtitle={props.subtitle} title={props.title}>{renderAst(props.intro)}</ContentSection>
       <ContentSection title="Approach">
         {renderAst(props.approachIntro)}
-        <Services>
-          {props.services.map((service) => {
-            return (
-              <GridItem key={service.title} title={service.title}>
-                {renderAst(service.htmlAst)}
-              </GridItem>
-            );
-          })}
-        </Services>
       </ContentSection>
+      <QuadGrid>
+        {props.services.map((service) => {
+          return (
+            <GridItem key={service.title} title={service.title}>
+              {renderAst(service.htmlAst)}
+            </GridItem>
+          );
+        })}
+      </QuadGrid>
       <ContentSection title="Services">
         {renderAst(props.servicesIntro)}
       </ContentSection>
       <ContentSection title="Standards">
         {renderAst(props.standardsIntro)}
-        <QuadGrid>
-          <GridItem />
-          <GridItem />
-          <GridItem />
-          <GridItem />
-        </QuadGrid>
+      </ContentSection>
+      <QuadGrid>
+        <GridItem />
+        <GridItem />
+        <GridItem />
+        <GridItem />
+      </QuadGrid>
+      <ContentSection background="#ffffff" verticalPadding={50} >
+        {renderAst(props.contactsIntro)}
       </ContentSection>
       <ContactSection>
-        {renderAst(props.contactsIntro)}
         <ContactForm />
       </ContactSection>
     </Layout>

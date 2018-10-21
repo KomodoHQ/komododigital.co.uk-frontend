@@ -52,31 +52,29 @@ exports[`About template is rendered 1`] = `
       </li>
     </ul>
   </div>
-  <div>
-    <span>
-      subtitle
-    </span>
-    <div
-      className="cs-wrapper "
-      style={
-        Object {
-          "backgroundColor": "inherit",
-          "paddingBottom": "100px",
-          "paddingTop": "100px",
-        }
+  <div
+    className="cs-wrapper "
+    style={
+      Object {
+        "backgroundColor": "inherit",
+        "paddingBottom": "100px",
+        "paddingTop": "100px",
       }
+    }
+  >
+    <div
+      className="Content-Section"
     >
-      <div
-        className="Content-Section"
-      >
-        <h2>
-          title
-        </h2>
-        <div>
-          <span>
-            Lorem Ipsum is the industry standard typesetting text
-          </span>
-        </div>
+      <span>
+        subtitle
+      </span>
+      <h2>
+        title
+      </h2>
+      <div>
+        <span>
+          Lorem Ipsum is the industry standard typesetting text
+        </span>
       </div>
     </div>
   </div>
@@ -100,12 +98,12 @@ exports[`About template is rendered 1`] = `
         <span>
           Lorem Ipsum is the industry standard typesetting text
         </span>
-        <div>
-          Services
-        </div>
       </div>
     </div>
   </div>
+  <div
+    className="QuadGrid"
+  />
   <div
     className="cs-wrapper "
     style={
@@ -149,34 +147,57 @@ exports[`About template is rendered 1`] = `
         <span>
           Lorem Ipsum is the industry standard typesetting text
         </span>
-        <div
-          className="QuadGrid"
-        >
-          <div
-            className="GridItem"
-          >
-            <img />
-            <h3 />
-          </div>
-          <div
-            className="GridItem"
-          >
-            <img />
-            <h3 />
-          </div>
-          <div
-            className="GridItem"
-          >
-            <img />
-            <h3 />
-          </div>
-          <div
-            className="GridItem"
-          >
-            <img />
-            <h3 />
-          </div>
-        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="QuadGrid"
+  >
+    <div
+      className="GridItem"
+    >
+      <img />
+      <h3 />
+    </div>
+    <div
+      className="GridItem"
+    >
+      <img />
+      <h3 />
+    </div>
+    <div
+      className="GridItem"
+    >
+      <img />
+      <h3 />
+    </div>
+    <div
+      className="GridItem"
+    >
+      <img />
+      <h3 />
+    </div>
+  </div>
+  <div
+    className="cs-wrapper "
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "paddingBottom": "50px",
+        "paddingTop": "50px",
+      }
+    }
+  >
+    <div
+      className="Content-Section"
+    >
+      <h2>
+        TITLE HERE
+      </h2>
+      <div>
+        <span>
+          Lorem Ipsum is the industry standard typesetting text
+        </span>
       </div>
     </div>
   </div>
@@ -186,9 +207,6 @@ exports[`About template is rendered 1`] = `
     <div
       className="contactsection"
     >
-      <span>
-        Lorem Ipsum is the industry standard typesetting text
-      </span>
       <div
         className="contactform"
       >
