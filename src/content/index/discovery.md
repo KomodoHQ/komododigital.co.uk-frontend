@@ -1,5 +1,6 @@
 ---
 title: 'Discovery'
+image: 'approach/Discovery.png'
 date: '2018-09-22'
 group: 'services'
 ---

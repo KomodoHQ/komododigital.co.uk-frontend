@@ -2,6 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import Index from '../templates/index';
 import { findNodes, findNode } from '../utils/nodes';
+import CleanSourceURL from '../utils/clean-source-url';
 
 export default (props) => {
   const rootNode = findNode('index/index', props);
@@ -14,9 +15,20 @@ export default (props) => {
   const insightsIntro = findNode('index/insights', props);
   const contactsIntro = findNode('contacts/index', props);
 
+  const insights = props.data.allWordpressPost.edges.map((edge) => {
+    const data = {
+      node: {
+        imageSource: CleanSourceURL(edge.node.featured_media.source_url),
+        ...edge.node,
+      },
+    };
+    return data;
+  });
+  
   const hocProps = {
     services,
     caseStudies,
+    insights,
     subtitle: (rootNode) ? rootNode.subtitle : '',
     title: (rootNode) ? rootNode.title : '',
     intro: (rootNode) ? rootNode.htmlAst : '',
@@ -41,12 +53,26 @@ export const pageQuery = graphql`
         description
       }
     }
+    allWordpressPost(limit: 3) {
+      edges {
+        node {
+          status
+          slug
+          title
+          date
+          featured_media {
+            source_url
+          }
+        }
+      }
+    }
     allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/index|case-studies|contacts/" } }) {
       edges {
         node {
           htmlAst
           frontmatter {
             title
+            image
             subtitle
             group
           }
