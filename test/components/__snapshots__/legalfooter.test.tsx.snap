@@ -1,9 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`LegalFooter element is rendered 1`] = `
-<footer>
-  <div>
-    Komodo Digital Copyright © 2018
+<footer
+  className="legal-footer"
+>
+  <div
+    className="company"
+  >
+    <span>
+      Komodo Digital Copyright © 2018
+    </span>
     <br />
     <a
       aria-current="page"
@@ -12,7 +18,7 @@ exports[`LegalFooter element is rendered 1`] = `
     >
       Privacy Policy
     </a>
-    |
+     | 
     <a
       aria-current="page"
       href="/"
@@ -21,7 +27,9 @@ exports[`LegalFooter element is rendered 1`] = `
       Terms and Conditions
     </a>
   </div>
-  <div>
+  <div
+    className="contact"
+  >
     Get in touch on:
     <br />
     <a

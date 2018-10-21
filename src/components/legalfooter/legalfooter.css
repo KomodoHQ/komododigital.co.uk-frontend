@@ -1,5 +1,24 @@
-footer {
-    padding: 20px;
+.legal-footer {
+    display: grid;
+    grid-template-columns: 1fr repeat(14, 70px) 1fr;
+    grid-gap: 30px;
+    padding: 20px 0 30px;
+    align-items: flex-start;
+    justify-items: flex-start;
     color: #ffffff;
     background-color: #151515;
+}
+
+div.company {
+    grid-column: 2 / 14;
+    line-height: 2.0rem;
+}
+
+span {
+    font-weight: bold;
+}
+
+div.contact {
+    grid-column: 14 / 16;
+    line-height: 2.0rem;
 }

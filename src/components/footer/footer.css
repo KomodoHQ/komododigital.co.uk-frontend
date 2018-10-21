@@ -1,18 +1,55 @@
 footer {
-    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr repeat(14, 70px) 1fr;
+    grid-gap: 30px;
+    padding: 50px 0 100px;
+    align-items: flex-start;
+    justify-items: flex-start;
     color: #ffffff;
-    background-color: #151515;
+    background-color: #000000;
+}
+
+footer > .komodo {
+    grid-column: 2 / 7;
+    width: 100%;
+}
+
+footer > .address {
+    grid-column: 7 / 13;
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
 }
 
-.komodo {
-    flex: 5;
+span {
+    flex: 100%;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
 }
 
-.address {
-    flex: 6;
+address {
+    flex: 50%;
+    line-height: 2.0rem;
+    font-style: normal;
 }
 
-.sitemap {
-    flex: 3;
+footer > .sitemap {
+    grid-column: 13 / 16;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    flex: 50%;
+    line-height: 2.0rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-style: normal;
+}
+
+a {
+    color: white;
 }
