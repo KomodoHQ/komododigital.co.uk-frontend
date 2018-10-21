@@ -5,6 +5,12 @@
     text-decoration: none;
 }
 
+.blogpost > img {
+    width: 370px;
+    height: 240px;
+    object-fit: cover;
+}
+
 .blogpost > div {
     padding: 10px 30px;
 }
