@@ -8,7 +8,7 @@
 }
 
 .contactform > form > label {
-    flex: 50%;
+    flex: 100%;
     margin-bottom: 20px;
 }
 
@@ -54,4 +54,13 @@ input[type=submit] {
     background-color: black;
     color: white;
     padding: 20px 40px;
+}
+
+@media (min-width: 1200px) {
+
+    .contactform > form > label {
+        flex: 50%;
+        margin-bottom: 20px;
+    }
+
 }
