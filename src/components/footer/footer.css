@@ -1,7 +1,7 @@
 footer {
     display: grid;
-    grid-template-columns: 1fr repeat(14, 70px) 1fr;
-    grid-gap: 30px;
+    grid-template-columns: 1fr repeat(14, 20px) 1fr;
+    grid-gap: 10px;
     padding: 50px 0 100px;
     align-items: flex-start;
     justify-items: flex-start;
@@ -10,12 +10,14 @@ footer {
 }
 
 footer > .komodo {
-    grid-column: 2 / 7;
+    grid-column: 2 / 16;
     width: 100%;
+    margin-bottom: 50px;
 }
 
 footer > .address {
-    grid-column: 7 / 13;
+    grid-column: 2 / 16;
+    margin-bottom: 50px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -35,7 +37,7 @@ footer > div.address > address {
 }
 
 footer > div.sitemap {
-    grid-column: 13 / 16;
+    grid-column: 2 / 16;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -52,4 +54,62 @@ footer > div.sitemap > ul {
 
 footer > div.sitemap > ul > li > a {
     color: white;
+}
+
+
+@media (min-width: 800px) {
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr repeat(14, 30px) 1fr;
+        grid-gap: 20px;
+        padding: 50px 0 100px;
+    }
+
+}
+
+@media (min-width: 1000px) {
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr repeat(14, 50px) 1fr;
+        grid-gap: 20px;
+        padding: 50px 0 100px;
+    }
+    
+    footer > .komodo {
+        grid-column: 2 / 16;
+    }
+    
+    footer > .address {
+        grid-column: 2 / 10;
+    }
+
+    footer > div.sitemap {
+        grid-column: 10 / 16;
+    }
+
+}
+
+@media (min-width: 1430px) {
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr repeat(14, 70px) 1fr;
+        grid-gap: 30px;
+        padding: 50px 0 100px;
+    }
+    
+    footer > .komodo {
+        grid-column: 2 / 7;
+    }
+    
+    footer > .address {
+        grid-column: 7 / 13;
+    }
+
+    footer > div.sitemap {
+        grid-column: 13 / 16;
+    }
+
 }

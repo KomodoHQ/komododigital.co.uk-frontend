@@ -1,12 +1,63 @@
 .contactsection-wrapper {
     display: grid;
-    grid-template-columns: 1fr repeat(14, 70px) 1fr;
-    grid-gap: 30px;
+    grid-template-columns: 1fr repeat(14, 15px) 1fr;
+    grid-gap: 10px;
     background-color: white;
 }
 
 .contactsection {
-    grid-column: 5 / 13;
+    grid-column: 2 / 16;
     display: flex;
     flex-wrap: wrap;
+}
+
+@media (min-width: 800px) {
+
+    .contactsection-wrapper {
+        display: grid;
+        grid-template-columns: 1fr repeat(14, 30px) 1fr;
+        grid-gap: 10px;
+        background-color: white;
+    }
+    
+    .contactsection {
+        grid-column: 3 / 15;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    .contactsection-wrapper {
+        display: grid;
+        grid-template-columns: 1fr repeat(14, 40px) 1fr;
+        grid-gap: 10px;
+        background-color: white;
+    }
+    
+    .contactsection {
+        grid-column: 3 / 15;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (min-width: 1430px) {
+
+    .contactsection-wrapper {
+        display: grid;
+        grid-template-columns: 1fr repeat(14, 70px) 1fr;
+        grid-gap: 30px;
+        background-color: white;
+    }
+    
+    .contactsection {
+        grid-column: 5 / 13;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
 }
