@@ -10,6 +10,7 @@ import React, { ReactNode } from 'react';
 /**
  * Local dependencies
  */
+import "./services.css";
 
 /**
  * Props for the services component
@@ -28,8 +29,7 @@ interface Props {
  */
 const Services: React.SFC<Props> = ({ data, children }) => {
   return (
-    <div>
-        Services
+    <div className="services">
         {children}
     </div>
   );

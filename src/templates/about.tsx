@@ -3,6 +3,7 @@ import rehypeReact from 'rehype-react';
 import Layout from '../components/layout';
 import QuadGrid from '../components/quadgrid';
 import GridItem from '../components/griditem';
+import Services from '../components/services';
 import ContentSection from '../components/contentsection';
 import ContactSection from '../components/contactsection';
 import ContactForm from '../components/contactform';
@@ -51,15 +52,41 @@ export default (props: AboutPageProps) => {
       <ContentSection title="Services">
         {renderAst(props.servicesIntro)}
       </ContentSection>
+      <Services>
+        <ul>
+          <li>Discovery Workshops</li>
+          <li>Technical Audits</li>
+          <li>User Research</li>
+          <li>Concept Design</li>
+          <li>Project Roadmapping</li>
+          <li>Usability testing and research</li>
+          <li>Design Research</li>
+          <li>Visual Design</li>
+        </ul>
+        <ul>
+          <li>Interaction Design</li>
+          <li>Prototype Development</li>
+          <li>Testing</li>
+          <li>User-centered development</li>
+          <li>Agile Development</li>
+          <li>TDD/BDD</li>
+          <li>Mobile App Development</li>
+          <li>Web App Development</li>
+        </ul>
+        <ul>
+          <li>Native iOS app development</li>
+          <li>Native Android app development</li>
+          <li>Infrastructure and Devops</li>
+          <li>Real time application monitoring</li>
+          <li>Information architecture</li>
+          <li>W3C Compliance</li>
+          <li>Ongoing Strategy</li>
+          <li>Innovation development</li>
+        </ul>
+      </Services>
       <ContentSection title="Standards">
         {renderAst(props.standardsIntro)}
       </ContentSection>
-      <QuadGrid>
-        <GridItem />
-        <GridItem />
-        <GridItem />
-        <GridItem />
-      </QuadGrid>
       <ContentSection background="#ffffff" verticalPadding={50} >
         {renderAst(props.contactsIntro)}
       </ContentSection>
