@@ -128,6 +128,88 @@ exports[`About template is rendered 1`] = `
     </div>
   </div>
   <div
+    className="services"
+  >
+    <ul>
+      <li>
+        Discovery Workshops
+      </li>
+      <li>
+        Technical Audits
+      </li>
+      <li>
+        User Research
+      </li>
+      <li>
+        Concept Design
+      </li>
+      <li>
+        Project Roadmapping
+      </li>
+      <li>
+        Usability testing and research
+      </li>
+      <li>
+        Design Research
+      </li>
+      <li>
+        Visual Design
+      </li>
+    </ul>
+    <ul>
+      <li>
+        Interaction Design
+      </li>
+      <li>
+        Prototype Development
+      </li>
+      <li>
+        Testing
+      </li>
+      <li>
+        User-centered development
+      </li>
+      <li>
+        Agile Development
+      </li>
+      <li>
+        TDD/BDD
+      </li>
+      <li>
+        Mobile App Development
+      </li>
+      <li>
+        Web App Development
+      </li>
+    </ul>
+    <ul>
+      <li>
+        Native iOS app development
+      </li>
+      <li>
+        Native Android app development
+      </li>
+      <li>
+        Infrastructure and Devops
+      </li>
+      <li>
+        Real time application monitoring
+      </li>
+      <li>
+        Information architecture
+      </li>
+      <li>
+        W3C Compliance
+      </li>
+      <li>
+        Ongoing Strategy
+      </li>
+      <li>
+        Innovation development
+      </li>
+    </ul>
+  </div>
+  <div
     className="cs-wrapper "
     style={
       Object {
@@ -151,31 +233,314 @@ exports[`About template is rendered 1`] = `
     </div>
   </div>
   <div
-    className="QuadGrid"
+    className="PortfolioGrid"
   >
+    <span>
+      We Design With
+    </span>
     <div
-      className="GridItem"
+      className="StandardItem"
     >
-      <img />
-      <h3 />
+      <a
+        href="/AWS"
+        onClick={[Function]}
+      >
+        <img
+          src={Object {}}
+        />
+      </a>
     </div>
     <div
-      className="GridItem"
+      className="StandardItem"
     >
-      <img />
-      <h3 />
+      <a
+        href="/AWS"
+        onClick={[Function]}
+      >
+        <img
+          src={Object {}}
+        />
+      </a>
     </div>
     <div
-      className="GridItem"
+      className="StandardItem"
     >
-      <img />
-      <h3 />
+      <a
+        href="/AWS"
+        onClick={[Function]}
+      >
+        <img
+          src={Object {}}
+        />
+      </a>
     </div>
     <div
-      className="GridItem"
+      className="StandardItem"
     >
-      <img />
-      <h3 />
+      <a
+        href="/AWS"
+        onClick={[Function]}
+      >
+        <img
+          src={Object {}}
+        />
+      </a>
+    </div>
+  </div>
+  <div
+    className="PortfolioGrid"
+  >
+    <span>
+      We Develop With
+    </span>
+    <div
+      className="StandardItem"
+    >
+      <a
+        href="/AWS"
+        onClick={[Function]}
+      >
+        <img
+          src={Object {}}
+        />
+      </a>
+    </div>
+    <div
+      className="StandardItem"
+    >
+      <a
+        href="/AWS"
+        onClick={[Function]}
+      >
+        <img
+          src={Object {}}
+        />
+      </a>
+    </div>
+    <div
+      className="StandardItem"
+    >
+      <a
+        href="/AWS"
+        onClick={[Function]}
+      >
+        <img
+          src={Object {}}
+        />
+      </a>
+    </div>
+    <div
+      className="StandardItem"
+    >
+      <a
+        href="/AWS"
+        onClick={[Function]}
+      >
+        <img
+          src={Object {}}
+        />
+      </a>
+    </div>
+    <div
+      className="StandardItem"
+    >
+      <a
+        href="/AWS"
+        onClick={[Function]}
+      >
+        <img
+          src={Object {}}
+        />
+      </a>
+    </div>
+    <div
+      className="StandardItem"
+    >
+      <a
+        href="/AWS"
+        onClick={[Function]}
+      >
+        <img
+          src={Object {}}
+        />
+      </a>
+    </div>
+    <div
+      className="StandardItem"
+    >
+      <a
+        href="/AWS"
+        onClick={[Function]}
+      >
+        <img
+          src={Object {}}
+        />
+      </a>
+    </div>
+    <div
+      className="StandardItem"
+    >
+      <a
+        href="/AWS"
+        onClick={[Function]}
+      >
+        <img
+          src={Object {}}
+        />
+      </a>
+    </div>
+  </div>
+  <div
+    className="PortfolioGrid"
+  >
+    <span>
+      We Test With
+    </span>
+    <div
+      className="StandardItem"
+    >
+      <a
+        href="/AWS"
+        onClick={[Function]}
+      >
+        <img
+          src={Object {}}
+        />
+      </a>
+    </div>
+    <div
+      className="StandardItem"
+    >
+      <a
+        href="/AWS"
+        onClick={[Function]}
+      >
+        <img
+          src={Object {}}
+        />
+      </a>
+    </div>
+    <div
+      className="StandardItem"
+    >
+      <a
+        href="/AWS"
+        onClick={[Function]}
+      >
+        <img
+          src={Object {}}
+        />
+      </a>
+    </div>
+    <div
+      className="StandardItem"
+    >
+      <a
+        href="/AWS"
+        onClick={[Function]}
+      >
+        <img
+          src={Object {}}
+        />
+      </a>
+    </div>
+  </div>
+  <div
+    className="PortfolioGrid"
+  >
+    <span>
+      We Deploy With
+    </span>
+    <div
+      className="StandardItem"
+    >
+      <a
+        href="/AWS"
+        onClick={[Function]}
+      >
+        <img
+          src={Object {}}
+        />
+      </a>
+    </div>
+    <div
+      className="StandardItem"
+    >
+      <a
+        href="/AWS"
+        onClick={[Function]}
+      >
+        <img
+          src={Object {}}
+        />
+      </a>
+    </div>
+    <div
+      className="StandardItem"
+    >
+      <a
+        href="/AWS"
+        onClick={[Function]}
+      >
+        <img
+          src={Object {}}
+        />
+      </a>
+    </div>
+    <div
+      className="StandardItem"
+    >
+      <a
+        href="/AWS"
+        onClick={[Function]}
+      >
+        <img
+          src={Object {}}
+        />
+      </a>
+    </div>
+  </div>
+  <div
+    className="PortfolioGrid"
+  >
+    <span>
+      We Are Certified By
+    </span>
+    <div
+      className="StandardItem"
+    >
+      <a
+        href="/AWS"
+        onClick={[Function]}
+      >
+        <img
+          src={Object {}}
+        />
+      </a>
+    </div>
+    <div
+      className="StandardItem"
+    >
+      <a
+        href="/AWS"
+        onClick={[Function]}
+      >
+        <img
+          src={Object {}}
+        />
+      </a>
+    </div>
+    <div
+      className="StandardItem"
+    >
+      <a
+        href="/AWS"
+        onClick={[Function]}
+      >
+        <img
+          src={Object {}}
+        />
+      </a>
     </div>
   </div>
   <div

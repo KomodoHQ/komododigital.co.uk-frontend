@@ -196,6 +196,7 @@ exports[`Home template is rendered 1`] = `
   <div
     className="PortfolioGrid"
   >
+    <span />
     <div
       className="StandardItem"
     >
