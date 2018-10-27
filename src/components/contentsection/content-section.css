@@ -30,7 +30,11 @@
     line-height: 30px;    
 }
 
-.invert {
+.Content-Section a {
+    color: black;
+}
+
+.invert, .invert a {
     color: white;
 }
 

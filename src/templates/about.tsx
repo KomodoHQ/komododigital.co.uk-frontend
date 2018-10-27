@@ -38,7 +38,7 @@ interface AboutPageProps {
 export default (props: AboutPageProps) => {
   return (
     <Layout data={props.data}>
-      <ContentSection subtitle={props.subtitle} title={props.title}>{renderAst(props.intro)}</ContentSection>
+      <ContentSection subtitle={props.subtitle} title={props.title} invert background="#000000">{renderAst(props.intro)}</ContentSection>
       <ContentSection title="Approach">
         {renderAst(props.approachIntro)}
       </ContentSection>

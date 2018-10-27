@@ -59,7 +59,7 @@ interface IndexPageProps {
 export default (props: IndexPageProps) => {
   return (
     <Layout data={props.data}>
-      <ContentSection title={props.title} subtitle={props.subtitle} invert background="#151515" verticalPadding={200}>
+      <ContentSection title={props.title} subtitle={props.subtitle} invert background="#000000" verticalPadding={200}>
         {renderAst(props.intro)}
       </ContentSection>
       <ContentSection title="About Us">
