@@ -4,6 +4,8 @@ import Layout from '../components/layout';
 import QuadGrid from '../components/quadgrid';
 import GridItem from '../components/griditem';
 import Services from '../components/services';
+import PortfolioGrid from '../components/portfoliogrid';
+import StandardItem from '../components/standarditem';
 import ContentSection from '../components/contentsection';
 import ContactSection from '../components/contactsection';
 import ContactForm from '../components/contactform';
@@ -87,6 +89,39 @@ export default (props: AboutPageProps) => {
       <ContentSection title="Standards">
         {renderAst(props.standardsIntro)}
       </ContentSection>
+      <PortfolioGrid title="We Design With">
+        <StandardItem imgsrc={require("../images/standards/AWS.png")} link="/AWS" />
+        <StandardItem imgsrc={require("../images/standards/AWS.png")} link="/AWS" />
+        <StandardItem imgsrc={require("../images/standards/AWS.png")} link="/AWS" />
+        <StandardItem imgsrc={require("../images/standards/AWS.png")} link="/AWS" />
+      </PortfolioGrid>
+      <PortfolioGrid title="We Develop With">
+        <StandardItem imgsrc={require("../images/standards/PHP.png")} link="/AWS" />
+        <StandardItem imgsrc={require("../images/standards/HTML5.png")} link="/AWS" />
+        <StandardItem imgsrc={require("../images/standards/Node.png")} link="/AWS" />
+        <StandardItem imgsrc={require("../images/standards/React.png")} link="/AWS" />
+        <StandardItem imgsrc={require("../images/standards/Angular.png")} link="/AWS" />
+        <StandardItem imgsrc={require("../images/standards/Swift.png")} link="/AWS" />
+        <StandardItem imgsrc={require("../images/standards/Java.png")} link="/AWS" />
+        <StandardItem imgsrc={require("../images/standards/Xamarin.png")} link="/AWS" />
+      </PortfolioGrid>
+      <PortfolioGrid title="We Test With">
+        <StandardItem imgsrc={require("../images/standards/Codeception.png")} link="/AWS" />
+        <StandardItem imgsrc={require("../images/standards/Chai.png")} link="/AWS" />
+        <StandardItem imgsrc={require("../images/standards/Selenium.png")} link="/AWS" />
+        <StandardItem imgsrc={require("../images/standards/Jest.png")} link="/AWS" />
+      </PortfolioGrid>
+      <PortfolioGrid title="We Deploy With">
+        <StandardItem imgsrc={require("../images/standards/Apple.png")} link="/AWS" />
+        <StandardItem imgsrc={require("../images/standards/Android.png")} link="/AWS" />
+        <StandardItem imgsrc={require("../images/standards/AWS.png")} link="/AWS" />
+        <StandardItem imgsrc={require("../images/standards/Azure.png")} link="/AWS" />
+      </PortfolioGrid>
+      <PortfolioGrid title="We Are Certified By">
+        <StandardItem imgsrc={require("../images/standards/CyberEssentials.png")} link="/AWS" />
+        <StandardItem imgsrc={require("../images/standards/ISTQB.png")} link="/AWS" />
+        <StandardItem imgsrc={require("../images/standards/AWS.png")} link="/AWS" />
+      </PortfolioGrid>
       <ContentSection background="#ffffff" verticalPadding={50} >
         {renderAst(props.contactsIntro)}
       </ContentSection>

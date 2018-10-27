@@ -5,6 +5,10 @@
     padding: 30px 0;
 }
 
+.PortfolioGrid > span {
+    grid-column: 3 / 15;
+}
+
 .PortfolioGrid > div:nth-of-type(4n+1) {
     grid-column: 3 / 6;
 }
