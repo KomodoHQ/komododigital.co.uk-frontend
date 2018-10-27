@@ -1,6 +1,6 @@
 footer {
     display: grid;
-    grid-template-columns: 1fr repeat(14, 20px) 1fr;
+    grid-template-columns: 1fr repeat(14, 15px) 1fr;
     grid-gap: 10px;
     padding: 50px 0 100px;
     align-items: flex-start;
@@ -57,7 +57,7 @@ footer > div.sitemap > ul > li > a {
 }
 
 
-@media (min-width: 800px) {
+@media (min-width: 700px) {
 
     footer {
         display: grid;

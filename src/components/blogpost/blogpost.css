@@ -6,11 +6,25 @@
 }
 
 .blogpost > img {
-    width: 370px;
-    height: 240px;
+    width: 100%;
     object-fit: cover;
 }
 
 .blogpost > div {
     padding: 10px 30px;
+}
+
+@media (min-width: 700px) {
+
+}
+
+@media (min-width: 900px) {
+
+}
+
+@media (min-width: 1430px) {
+    .blogpost > img {
+        width: 370px;
+        height: 240px;
+    }
 }

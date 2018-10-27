@@ -1,14 +1,15 @@
 
 .csi-wrapper {
-    display: grid;
-    grid-template-columns: 1fr repeat(14, 70px) 1fr;
-    grid-gap: 30px;
-    padding: 0;
+    overflow: hidden;
+    padding: 0 30px;
 }
 
 /* Needs to work with multiple images */
 
-.csi-wrapper > img {
-    grid-column: 2 / 16;
-    margin: 0 auto;
+.csi-wrapper > div {
+
+}
+
+.csi-wrapper > div > img {
+    max-width: 100%;
 }
