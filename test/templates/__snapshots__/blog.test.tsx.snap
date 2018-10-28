@@ -2,6 +2,9 @@
 
 exports[`Blog template is rendered 1`] = `
 Array [
+  <noscript>
+    You have Javascript disabled. While it isn't needed, it will make your experience nicer.
+  </noscript>,
   <div
     className="navigationBar"
   >
@@ -14,7 +17,20 @@ Array [
         Komodo
       </a>
     </h1>
-    <ul>
+    <div
+      className="hamburger"
+    >
+      <a
+        aria-current="page"
+        href="/"
+        onClick={[Function]}
+      >
+        Menu
+      </a>
+    </div>
+    <ul
+      className="Menu"
+    >
       <li>
         <a
           href="/about"
@@ -49,15 +65,8 @@ Array [
       </li>
     </ul>
   </div>,
-  <noscript>
-    You have Javascript disabled. While it isn't needed, it will make your experience nicer.
-  </noscript>,
   <div
-    style={
-      Object {
-        "paddingTop": "80px",
-      }
-    }
+    className="main"
   >
     <img
       width="100%"

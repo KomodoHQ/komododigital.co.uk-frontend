@@ -20,6 +20,7 @@ import './NavigationBar.css';
  */
 interface Props {
   data?: any;
+
 }
 
 /**
@@ -29,14 +30,16 @@ interface Props {
  * @param data
  */
 const NavigationBar: React.SFC<Props> = ({ data }) => {
-  const menuref = React.createRef();
+  const menuref = React.createRef<HTMLUListElement>();
   return (
     <div className="navigationBar">
       <h1><Link to="/">Komodo</Link></h1>
       <div className="hamburger">
         <Link to="/" onClick={(e)=>{
           e.preventDefault();
-          menuref.current.classList.toggle("open");
+          if (menuref.current) {
+            menuref.current.classList.toggle("open");
+          }
         }}>Menu</Link>
       </div>
       <ul className="Menu" ref={menuref}>
