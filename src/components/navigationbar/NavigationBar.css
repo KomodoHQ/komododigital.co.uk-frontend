@@ -25,6 +25,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
+    z-index: 99999;
 }
 
 .navigationBar > .hamburger > a {
@@ -34,22 +35,27 @@
 }
 
 .navigationBar > ul {
-    display: none;
+    padding: 0;
+    margin: 0;
     background-color: #000000;
     position: fixed;
     top: 0;
-    bottom: 0;
-    left: -300px;
-    width: 300px;
-    height: 90vh;
-    transform: translate(300px);
+    left: -120vw;
+    width: 100vw;
+    height: 100vh;
     list-style: none;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
+    transition: all 0.25s linear;
+}
+
+.navigationBar > ul.open {
+    transform: translate(120vw);
 }
 
 .navigationBar > ul > li {
+    padding: 10px 50px;
     flex: 1;
     text-align: left;
 }
@@ -57,6 +63,7 @@
 .navigationBar > ul > li > a {
     color: #ffffff;
     text-decoration: none;
+    line-height: 60px;
     font-size: 24px;
 }
 
@@ -69,22 +76,31 @@
         grid-gap: 10px;
         padding: 10px 0;
     }
+
     .navigationBar > .hamburger {
         display: none;
     }
     
     .navigationBar > ul {
         list-style: none;
-        grid-column: 8 / 16;
+        grid-column: 6 / 16;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: flex-end;
+
+        position: initial;
+        transform: none;
+        left: initial;
+        height: auto;
+        width: 100%;
+
     }
 
     .navigationBar > ul > li {
         flex: 1;
         text-align: right;
+        padding: 0;
     }
     
     .navigationBar > ul > li > a {

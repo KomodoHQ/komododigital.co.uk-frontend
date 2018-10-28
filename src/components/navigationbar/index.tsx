@@ -29,13 +29,17 @@ interface Props {
  * @param data
  */
 const NavigationBar: React.SFC<Props> = ({ data }) => {
+  const menuref = React.createRef();
   return (
     <div className="navigationBar">
       <h1><Link to="/">Komodo</Link></h1>
       <div className="hamburger">
-        <Link to="/">Menu</Link>
+        <Link to="/" onClick={(e)=>{
+          e.preventDefault();
+          menuref.current.classList.toggle("open");
+        }}>Menu</Link>
       </div>
-      <ul>
+      <ul className="Menu" ref={menuref}>
         <li>
           <Link to={'about'}>About</Link>
         </li>
