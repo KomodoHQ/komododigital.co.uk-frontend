@@ -30,11 +30,11 @@ const Layout: React.SFC<Props> = ({ data, children }) => {
           content="NjvhRGkpFOUEaqakyfa4pkVtErwqLzH3oPITur3WIYA"
         />
       </SEO>
-      <NavigationBar />
       <noscript>
         You have Javascript disabled. While it isn't needed, it will make your experience nicer.
       </noscript>
-      <div style={{ paddingTop: '80px' }}>
+      <NavigationBar />
+      <div className="main">
         {children}
         <Footer />
         <LegalFooter />

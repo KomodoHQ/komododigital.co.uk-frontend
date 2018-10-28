@@ -32,6 +32,9 @@ const NavigationBar: React.SFC<Props> = ({ data }) => {
   return (
     <div className="navigationBar">
       <h1><Link to="/">Komodo</Link></h1>
+      <div className="hamburger">
+        <Link to="/">Menu</Link>
+      </div>
       <ul>
         <li>
           <Link to={'about'}>About</Link>

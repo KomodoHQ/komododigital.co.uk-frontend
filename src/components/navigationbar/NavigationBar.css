@@ -1,7 +1,10 @@
 .navigationBar {
+    position: fixed;
+    width: 100vw;
     display: grid;
-    grid-template-columns: 1fr repeat(14, 30px) 1fr;
+    grid-template-columns: 1fr repeat(14, 15px) 1fr;
     grid-gap: 10px;
+    padding: 0;
     color: #ffffff;
     background-color: #000000;
 }
@@ -16,18 +19,39 @@
     text-decoration: none;
 }
 
+.navigationBar > .hamburger {
+    grid-column: 6 / 16;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.navigationBar > .hamburger > a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 24px;
+}
+
 .navigationBar > ul {
     display: none;
+    background-color: #000000;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -300px;
+    width: 300px;
+    height: 90vh;
+    transform: translate(300px);
     list-style: none;
-    grid-column: 8 / 16;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: flex-end;
 }
 
 .navigationBar > ul > li {
     flex: 1;
-    text-align: right;
+    text-align: left;
 }
 
 .navigationBar > ul > li > a {
@@ -40,14 +64,15 @@
 @media (min-width: 700px) {
 
     .navigationBar {
-        position: fixed;
-        width: 100vw;
         display: grid;
         grid-template-columns: 1fr repeat(14, 35px) 1fr;
         grid-gap: 10px;
         padding: 10px 0;
     }
-
+    .navigationBar > .hamburger {
+        display: none;
+    }
+    
     .navigationBar > ul {
         list-style: none;
         grid-column: 8 / 16;
@@ -55,6 +80,17 @@
         flex-direction: row;
         align-items: center;
         justify-content: flex-end;
+    }
+
+    .navigationBar > ul > li {
+        flex: 1;
+        text-align: right;
+    }
+    
+    .navigationBar > ul > li > a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 24px;
     }
     
     .navigationBar > h1 {
@@ -79,6 +115,11 @@
         grid-template-columns: 1fr repeat(14, 50px) 1fr;
         grid-gap: 10px;
         padding: 10px 0;
+    }
+    .navigationBar > ul > li > a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 24px;
     }
 
 }
