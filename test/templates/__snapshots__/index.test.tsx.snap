@@ -1,10 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Home template is rendered 1`] = `
-<div>
-  <noscript>
-    You have Javascript disabled. While it isn't needed, it will make your experience nicer.
-  </noscript>
+Array [
   <div
     className="navigationBar"
   >
@@ -51,722 +48,731 @@ exports[`Home template is rendered 1`] = `
         </a>
       </li>
     </ul>
-  </div>
+  </div>,
+  <noscript>
+    You have Javascript disabled. While it isn't needed, it will make your experience nicer.
+  </noscript>,
   <div
-    className="cs-wrapper invert"
     style={
       Object {
-        "backgroundColor": "#000000",
-        "paddingBottom": "200px",
-        "paddingTop": "200px",
+        "paddingTop": "80px",
       }
     }
   >
     <div
-      className="Content-Section"
-    >
-      <span>
-        subtitle
-      </span>
-      <h2>
-        title
-      </h2>
-      <div>
-        <span>
-          Lorem Ipsum is the industry standard typesetting text
-        </span>
-      </div>
-    </div>
-  </div>
-  <div
-    className="cs-wrapper "
-    style={
-      Object {
-        "backgroundColor": "inherit",
-        "paddingBottom": "100px",
-        "paddingTop": "100px",
+      className="cs-wrapper invert"
+      style={
+        Object {
+          "backgroundColor": "#000000",
+          "paddingBottom": "200px",
+          "paddingTop": "200px",
+        }
       }
-    }
-  >
-    <div
-      className="Content-Section"
     >
-      <h2>
-        About Us
-      </h2>
-      <div>
+      <div
+        className="Content-Section"
+      >
         <span>
-          Lorem Ipsum is the industry standard typesetting text
+          subtitle
         </span>
+        <h2>
+          title
+        </h2>
+        <div>
+          <span>
+            Lorem Ipsum is the industry standard typesetting text
+          </span>
+        </div>
       </div>
     </div>
-  </div>
-  <div
-    className="csi-wrapper"
-  >
-    <div>
+    <div
+      className="cs-wrapper "
+      style={
+        Object {
+          "backgroundColor": "inherit",
+          "paddingBottom": "100px",
+          "paddingTop": "100px",
+        }
+      }
+    >
+      <div
+        className="Content-Section"
+      >
+        <h2>
+          About Us
+        </h2>
+        <div>
+          <span>
+            Lorem Ipsum is the industry standard typesetting text
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="csi-wrapper"
+    >
       <img
         alt="Komodo at work"
         src={Object {}}
       />
     </div>
-  </div>
-  <div
-    className="cs-wrapper "
-    style={
-      Object {
-        "backgroundColor": "inherit",
-        "paddingBottom": "100px",
-        "paddingTop": "100px",
+    <div
+      className="cs-wrapper "
+      style={
+        Object {
+          "backgroundColor": "inherit",
+          "paddingBottom": "100px",
+          "paddingTop": "100px",
+        }
       }
-    }
-  >
-    <div
-      className="Content-Section"
-    >
-      <h2>
-        Approach
-      </h2>
-      <div>
-        <span>
-          Lorem Ipsum is the industry standard typesetting text
-        </span>
-      </div>
-    </div>
-  </div>
-  <div
-    className="QuadGrid"
-  />
-  <div
-    className="cs-wrapper "
-    style={
-      Object {
-        "backgroundColor": "inherit",
-        "paddingBottom": "100px",
-        "paddingTop": "100px",
-      }
-    }
-  >
-    <div
-      className="Content-Section"
-    >
-      <h2>
-        Case Studies
-      </h2>
-      <div>
-        <span>
-          Lorem Ipsum is the industry standard typesetting text
-        </span>
-      </div>
-    </div>
-  </div>
-  <div
-    className="seemorebutton-wrapper"
-  >
-    <a
-      href="/About"
-      onClick={[Function]}
-    >
-      <button>
-        See More Work
-      </button>
-    </a>
-  </div>
-  <div
-    className="cs-wrapper "
-    style={
-      Object {
-        "backgroundColor": "inherit",
-        "paddingBottom": "100px",
-        "paddingTop": "100px",
-      }
-    }
-  >
-    <div
-      className="Content-Section"
-    >
-      <h2>
-        Client Portfolio
-      </h2>
-      <div>
-        <span>
-          Lorem Ipsum is the industry standard typesetting text
-        </span>
-      </div>
-    </div>
-  </div>
-  <div
-    className="PortfolioGrid"
-  >
-    <span />
-    <div
-      className="StandardItem"
-    >
-      <a
-        href="/About"
-        onClick={[Function]}
-      >
-        <img
-          src={Object {}}
-        />
-      </a>
-    </div>
-    <div
-      className="StandardItem"
-    >
-      <a
-        href="/About"
-        onClick={[Function]}
-      >
-        <img
-          src={Object {}}
-        />
-      </a>
-    </div>
-    <div
-      className="StandardItem"
-    >
-      <a
-        href="/About"
-        onClick={[Function]}
-      >
-        <img
-          src={Object {}}
-        />
-      </a>
-    </div>
-    <div
-      className="StandardItem"
-    >
-      <a
-        href="/About"
-        onClick={[Function]}
-      >
-        <img
-          src={Object {}}
-        />
-      </a>
-    </div>
-    <div
-      className="StandardItem"
-    >
-      <a
-        href="/About"
-        onClick={[Function]}
-      >
-        <img
-          src={Object {}}
-        />
-      </a>
-    </div>
-    <div
-      className="StandardItem"
-    >
-      <a
-        href="/About"
-        onClick={[Function]}
-      >
-        <img
-          src={Object {}}
-        />
-      </a>
-    </div>
-    <div
-      className="StandardItem"
-    >
-      <a
-        href="/About"
-        onClick={[Function]}
-      >
-        <img
-          src={Object {}}
-        />
-      </a>
-    </div>
-    <div
-      className="StandardItem"
-    >
-      <a
-        href="/About"
-        onClick={[Function]}
-      >
-        <img
-          src={Object {}}
-        />
-      </a>
-    </div>
-    <div
-      className="StandardItem"
-    >
-      <a
-        href="/About"
-        onClick={[Function]}
-      >
-        <img
-          src={Object {}}
-        />
-      </a>
-    </div>
-    <div
-      className="StandardItem"
-    >
-      <a
-        href="/About"
-        onClick={[Function]}
-      >
-        <img
-          src={Object {}}
-        />
-      </a>
-    </div>
-    <div
-      className="StandardItem"
-    >
-      <a
-        href="/About"
-        onClick={[Function]}
-      >
-        <img
-          src={Object {}}
-        />
-      </a>
-    </div>
-    <div
-      className="StandardItem"
-    >
-      <a
-        href="/About"
-        onClick={[Function]}
-      >
-        <img
-          src={Object {}}
-        />
-      </a>
-    </div>
-    <div
-      className="StandardItem"
-    >
-      <a
-        href="/About"
-        onClick={[Function]}
-      >
-        <img
-          src={Object {}}
-        />
-      </a>
-    </div>
-    <div
-      className="StandardItem"
-    >
-      <a
-        href="/About"
-        onClick={[Function]}
-      >
-        <img
-          src={Object {}}
-        />
-      </a>
-    </div>
-    <div
-      className="StandardItem"
-    >
-      <a
-        href="/About"
-        onClick={[Function]}
-      >
-        <img
-          src={Object {}}
-        />
-      </a>
-    </div>
-    <div
-      className="StandardItem"
-    >
-      <a
-        href="/About"
-        onClick={[Function]}
-      >
-        <img
-          src={Object {}}
-        />
-      </a>
-    </div>
-  </div>
-  <div
-    className="cs-wrapper "
-    style={
-      Object {
-        "backgroundColor": "inherit",
-        "paddingBottom": "100px",
-        "paddingTop": "100px",
-      }
-    }
-  >
-    <div
-      className="Content-Section"
-    >
-      <h2>
-        Insights
-      </h2>
-      <div>
-        <span>
-          Lorem Ipsum is the industry standard typesetting text
-        </span>
-      </div>
-    </div>
-  </div>
-  <div
-    className="BlogGrid"
-  />
-  <div
-    className="seemorebutton-wrapper"
-  >
-    <a
-      href="/About"
-      onClick={[Function]}
-    >
-      <button>
-        See More Insights
-      </button>
-    </a>
-  </div>
-  <div
-    className="cs-wrapper "
-    style={
-      Object {
-        "backgroundColor": "#FFFFFF",
-        "paddingBottom": "50px",
-        "paddingTop": "50px",
-      }
-    }
-  >
-    <div
-      className="Content-Section"
-    >
-      <h2>
-        TITLE HERE
-      </h2>
-      <div>
-        <span>
-          Lorem Ipsum is the industry standard typesetting text
-        </span>
-      </div>
-    </div>
-  </div>
-  <div
-    className="contactsection-wrapper"
-  >
-    <div
-      className="contactsection"
     >
       <div
-        className="vcard"
+        className="Content-Section"
       >
-        <img
-          height="70"
-          src={Object {}}
-          width="70"
-        />
+        <h2>
+          Approach
+        </h2>
         <div>
-          <h1>
-            Armin Talic
-          </h1>
-          <h2>
-            Commercial Director
-          </h2>
-          <a
-            href="mailto: {email}"
-          >
-            story@vcard.com
-          </a>
+          <span>
+            Lorem Ipsum is the industry standard typesetting text
+          </span>
         </div>
       </div>
+    </div>
+    <div
+      className="QuadGrid"
+    />
+    <div
+      className="cs-wrapper "
+      style={
+        Object {
+          "backgroundColor": "inherit",
+          "paddingBottom": "100px",
+          "paddingTop": "100px",
+        }
+      }
+    >
       <div
-        className="vcard"
+        className="Content-Section"
       >
-        <img
-          height="70"
-          src={Object {}}
-          width="70"
-        />
+        <h2>
+          Case Studies
+        </h2>
         <div>
-          <h1>
-            Matt Moran
-          </h1>
-          <h2>
-            Director
-          </h2>
-          <a
-            href="mailto: {email}"
-          >
-            story@vcard.com
-          </a>
+          <span>
+            Lorem Ipsum is the industry standard typesetting text
+          </span>
         </div>
       </div>
-      <div
-        className="contactform"
+    </div>
+    <div
+      className="seemorebutton-wrapper"
+    >
+      <a
+        href="/About"
+        onClick={[Function]}
       >
-        <form
-          action="https://formspree.io/hello@komododigital.co.uk"
-          method="POST"
+        <button>
+          See More Work
+        </button>
+      </a>
+    </div>
+    <div
+      className="cs-wrapper "
+      style={
+        Object {
+          "backgroundColor": "inherit",
+          "paddingBottom": "100px",
+          "paddingTop": "100px",
+        }
+      }
+    >
+      <div
+        className="Content-Section"
+      >
+        <h2>
+          Client Portfolio
+        </h2>
+        <div>
+          <span>
+            Lorem Ipsum is the industry standard typesetting text
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="PortfolioGrid"
+    >
+      <span />
+      <div
+        className="StandardItem"
+      >
+        <a
+          href="/About"
+          onClick={[Function]}
         >
-          <label
-            htmlFor="form-name"
-          >
-            Your Name
-            <input
-              id="form-name"
-              name="name"
-              placeholder="Joe Blogs"
-              type="text"
-            />
-          </label>
-          <label
-            htmlFor="form-email"
-          >
-            Your Email
-            <input
-              id="form-email"
-              name="email"
-              placeholder="joe@blogs.com"
-              type="email"
-            />
-          </label>
-          <label
-            htmlFor="form-service"
-          >
-            Service
-            <select
-              id="form-service"
-              name="service"
-            >
-              <option>
-                Choose Service
-              </option>
-              <option
-                value="Discovery"
-              >
-                Discovery
-              </option>
-              <option
-                value="Design"
-              >
-                Design
-              </option>
-              <option
-                value="Development"
-              >
-                Development
-              </option>
-              <option
-                value="Delivery"
-              >
-                Delivery
-              </option>
-            </select>
-          </label>
-          <label
-            htmlFor="form-sector"
-          >
-            Sector
-            <select
-              id="form-sector"
-              name="sector"
-            >
-              <option>
-                Choose Sector
-              </option>
-              <option
-                value="Education"
-              >
-                Education
-              </option>
-              <option
-                value="Law Enforcement"
-              >
-                Law Enforcement
-              </option>
-              <option
-                value="Startups"
-              >
-                Startups
-              </option>
-              <option
-                value="Social Housing"
-              >
-                Social Housing
-              </option>
-            </select>
-          </label>
-          <label
-            htmlFor="form-message"
-          >
-            Your Message
-            <textarea
-              cols={30}
-              id="form-message"
-              name="message"
-              rows={10}
-            />
-          </label>
-          <div>
-            <input
-              type="submit"
-              value="Send"
-            />
-          </div>
-        </form>
+          <img
+            src={Object {}}
+          />
+        </a>
+      </div>
+      <div
+        className="StandardItem"
+      >
+        <a
+          href="/About"
+          onClick={[Function]}
+        >
+          <img
+            src={Object {}}
+          />
+        </a>
+      </div>
+      <div
+        className="StandardItem"
+      >
+        <a
+          href="/About"
+          onClick={[Function]}
+        >
+          <img
+            src={Object {}}
+          />
+        </a>
+      </div>
+      <div
+        className="StandardItem"
+      >
+        <a
+          href="/About"
+          onClick={[Function]}
+        >
+          <img
+            src={Object {}}
+          />
+        </a>
+      </div>
+      <div
+        className="StandardItem"
+      >
+        <a
+          href="/About"
+          onClick={[Function]}
+        >
+          <img
+            src={Object {}}
+          />
+        </a>
+      </div>
+      <div
+        className="StandardItem"
+      >
+        <a
+          href="/About"
+          onClick={[Function]}
+        >
+          <img
+            src={Object {}}
+          />
+        </a>
+      </div>
+      <div
+        className="StandardItem"
+      >
+        <a
+          href="/About"
+          onClick={[Function]}
+        >
+          <img
+            src={Object {}}
+          />
+        </a>
+      </div>
+      <div
+        className="StandardItem"
+      >
+        <a
+          href="/About"
+          onClick={[Function]}
+        >
+          <img
+            src={Object {}}
+          />
+        </a>
+      </div>
+      <div
+        className="StandardItem"
+      >
+        <a
+          href="/About"
+          onClick={[Function]}
+        >
+          <img
+            src={Object {}}
+          />
+        </a>
+      </div>
+      <div
+        className="StandardItem"
+      >
+        <a
+          href="/About"
+          onClick={[Function]}
+        >
+          <img
+            src={Object {}}
+          />
+        </a>
+      </div>
+      <div
+        className="StandardItem"
+      >
+        <a
+          href="/About"
+          onClick={[Function]}
+        >
+          <img
+            src={Object {}}
+          />
+        </a>
+      </div>
+      <div
+        className="StandardItem"
+      >
+        <a
+          href="/About"
+          onClick={[Function]}
+        >
+          <img
+            src={Object {}}
+          />
+        </a>
+      </div>
+      <div
+        className="StandardItem"
+      >
+        <a
+          href="/About"
+          onClick={[Function]}
+        >
+          <img
+            src={Object {}}
+          />
+        </a>
+      </div>
+      <div
+        className="StandardItem"
+      >
+        <a
+          href="/About"
+          onClick={[Function]}
+        >
+          <img
+            src={Object {}}
+          />
+        </a>
+      </div>
+      <div
+        className="StandardItem"
+      >
+        <a
+          href="/About"
+          onClick={[Function]}
+        >
+          <img
+            src={Object {}}
+          />
+        </a>
+      </div>
+      <div
+        className="StandardItem"
+      >
+        <a
+          href="/About"
+          onClick={[Function]}
+        >
+          <img
+            src={Object {}}
+          />
+        </a>
       </div>
     </div>
-  </div>
-  <footer>
     <div
-      className="komodo"
+      className="cs-wrapper "
+      style={
+        Object {
+          "backgroundColor": "inherit",
+          "paddingBottom": "100px",
+          "paddingTop": "100px",
+        }
+      }
     >
-      Komodo
+      <div
+        className="Content-Section"
+      >
+        <h2>
+          Insights
+        </h2>
+        <div>
+          <span>
+            Lorem Ipsum is the industry standard typesetting text
+          </span>
+        </div>
+      </div>
     </div>
     <div
-      className="address"
-    >
-      <span>
-        Address
-      </span>
-      <address>
-        Komodo Digital,
-        <br />
-        63 Westgate Rd,
-        <br />
-        Newcastle upon Tyne,
-        <br />
-        NE1 1SG
-      </address>
-      <address>
-        Komodo | The Core
-        <br />
-        Science Central, Bath Ln,
-        <br />
-        Newcastle upon Tyne
-        <br />
-        NE4 5TF
-      </address>
-    </div>
+      className="BlogGrid"
+    />
     <div
-      className="sitemap"
+      className="seemorebutton-wrapper"
     >
-      <span>
-        Sitemap
-      </span>
-      <ul>
-        <li>
-          <a
-            aria-current="page"
-            href="/"
-            onClick={[Function]}
-          >
-            Home
-          </a>
-        </li>
-        <li>
-          <a
-            aria-current="page"
-            href="/"
-            onClick={[Function]}
-          >
-            Case Studies
-          </a>
-        </li>
-        <li>
-          <a
-            aria-current="page"
-            href="/"
-            onClick={[Function]}
-          >
-            Insights
-          </a>
-        </li>
-        <li>
-          <a
-            aria-current="page"
-            href="/"
-            onClick={[Function]}
-          >
-            Careers
-          </a>
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <a
-            aria-current="page"
-            href="/"
-            onClick={[Function]}
-          >
-            Contact
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://twitter.com/komodohq"
-          >
-            Twitter
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://facebook.com/komodohq"
-          >
-            Facebook
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://linkedin.com/komodohq"
-          >
-            LinkedIn
-          </a>
-        </li>
-      </ul>
-    </div>
-  </footer>
-  <footer
-    className="legal-footer"
-  >
-    <div
-      className="company"
-    >
-      <span>
-        Komodo Digital Copyright © 2018
-      </span>
-      <br />
       <a
-        aria-current="page"
-        href="/"
+        href="/About"
         onClick={[Function]}
       >
-        Privacy Policy
-      </a>
-       | 
-      <a
-        aria-current="page"
-        href="/"
-        onClick={[Function]}
-      >
-        Terms and Conditions
+        <button>
+          See More Insights
+        </button>
       </a>
     </div>
     <div
-      className="contact"
+      className="cs-wrapper "
+      style={
+        Object {
+          "backgroundColor": "#FFFFFF",
+          "paddingBottom": "50px",
+          "paddingTop": "50px",
+        }
+      }
     >
-      Get in touch on:
-      <br />
-      <a
-        href="/tel:0191 228 6555"
-        onClick={[Function]}
+      <div
+        className="Content-Section"
       >
-        0191 228 6555
-      </a>
+        <h2>
+          TITLE HERE
+        </h2>
+        <div>
+          <span>
+            Lorem Ipsum is the industry standard typesetting text
+          </span>
+        </div>
+      </div>
     </div>
-  </footer>
+    <div
+      className="contactsection-wrapper"
+    >
+      <div
+        className="contactsection"
+      >
+        <div
+          className="vcard"
+        >
+          <img
+            height="70"
+            src={Object {}}
+            width="70"
+          />
+          <div>
+            <h1>
+              Armin Talic
+            </h1>
+            <h2>
+              Commercial Director
+            </h2>
+            <a
+              href="mailto: {email}"
+            >
+              story@vcard.com
+            </a>
+          </div>
+        </div>
+        <div
+          className="vcard"
+        >
+          <img
+            height="70"
+            src={Object {}}
+            width="70"
+          />
+          <div>
+            <h1>
+              Matt Moran
+            </h1>
+            <h2>
+              Director
+            </h2>
+            <a
+              href="mailto: {email}"
+            >
+              story@vcard.com
+            </a>
+          </div>
+        </div>
+        <div
+          className="contactform"
+        >
+          <form
+            action="https://formspree.io/hello@komododigital.co.uk"
+            method="POST"
+          >
+            <label
+              htmlFor="form-name"
+            >
+              Your Name
+              <input
+                id="form-name"
+                name="name"
+                placeholder="Joe Blogs"
+                type="text"
+              />
+            </label>
+            <label
+              htmlFor="form-email"
+            >
+              Your Email
+              <input
+                id="form-email"
+                name="email"
+                placeholder="joe@blogs.com"
+                type="email"
+              />
+            </label>
+            <label
+              htmlFor="form-service"
+            >
+              Service
+              <select
+                id="form-service"
+                name="service"
+              >
+                <option>
+                  Choose Service
+                </option>
+                <option
+                  value="Discovery"
+                >
+                  Discovery
+                </option>
+                <option
+                  value="Design"
+                >
+                  Design
+                </option>
+                <option
+                  value="Development"
+                >
+                  Development
+                </option>
+                <option
+                  value="Delivery"
+                >
+                  Delivery
+                </option>
+              </select>
+            </label>
+            <label
+              htmlFor="form-sector"
+            >
+              Sector
+              <select
+                id="form-sector"
+                name="sector"
+              >
+                <option>
+                  Choose Sector
+                </option>
+                <option
+                  value="Education"
+                >
+                  Education
+                </option>
+                <option
+                  value="Law Enforcement"
+                >
+                  Law Enforcement
+                </option>
+                <option
+                  value="Startups"
+                >
+                  Startups
+                </option>
+                <option
+                  value="Social Housing"
+                >
+                  Social Housing
+                </option>
+              </select>
+            </label>
+            <label
+              htmlFor="form-message"
+            >
+              Your Message
+              <textarea
+                cols={30}
+                id="form-message"
+                name="message"
+                rows={10}
+              />
+            </label>
+            <div>
+              <input
+                type="submit"
+                value="Send"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div
+        className="komodo"
+      >
+        Komodo
+      </div>
+      <div
+        className="address"
+      >
+        <span>
+          Address
+        </span>
+        <address>
+          Komodo Digital,
+          <br />
+          63 Westgate Rd,
+          <br />
+          Newcastle upon Tyne,
+          <br />
+          NE1 1SG
+        </address>
+        <address>
+          Komodo | The Core
+          <br />
+          Science Central, Bath Ln,
+          <br />
+          Newcastle upon Tyne
+          <br />
+          NE4 5TF
+        </address>
+      </div>
+      <div
+        className="sitemap"
+      >
+        <span>
+          Sitemap
+        </span>
+        <ul>
+          <li>
+            <a
+              aria-current="page"
+              href="/"
+              onClick={[Function]}
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              aria-current="page"
+              href="/"
+              onClick={[Function]}
+            >
+              Case Studies
+            </a>
+          </li>
+          <li>
+            <a
+              aria-current="page"
+              href="/"
+              onClick={[Function]}
+            >
+              Insights
+            </a>
+          </li>
+          <li>
+            <a
+              aria-current="page"
+              href="/"
+              onClick={[Function]}
+            >
+              Careers
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a
+              aria-current="page"
+              href="/"
+              onClick={[Function]}
+            >
+              Contact
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://twitter.com/komodohq"
+            >
+              Twitter
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://facebook.com/komodohq"
+            >
+              Facebook
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://linkedin.com/komodohq"
+            >
+              LinkedIn
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <footer
+      className="legal-footer"
+    >
+      <div
+        className="company"
+      >
+        <span>
+          Komodo Digital Copyright © 2018
+        </span>
+        <br />
+        <a
+          aria-current="page"
+          href="/"
+          onClick={[Function]}
+        >
+          Privacy Policy
+        </a>
+         | 
+        <a
+          aria-current="page"
+          href="/"
+          onClick={[Function]}
+        >
+          Terms and Conditions
+        </a>
+      </div>
+      <div
+        className="contact"
+      >
+        Get in touch on:
+        <br />
+        <a
+          href="/tel:0191 228 6555"
+          onClick={[Function]}
+        >
+          0191 228 6555
+        </a>
+      </div>
+    </footer>
+  </div>,
   <noscript>
     <img
       alt=""
@@ -774,6 +780,6 @@ exports[`Home template is rendered 1`] = `
       src="https://dc.ads.linkedin.com/collect/?pid=377068&fmt=gif"
       width="1"
     />
-  </noscript>
-</div>
+  </noscript>,
+]
 `;

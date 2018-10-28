@@ -1,10 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`About template is rendered 1`] = `
-<div>
-  <noscript>
-    You have Javascript disabled. While it isn't needed, it will make your experience nicer.
-  </noscript>
+Array [
   <div
     className="navigationBar"
   >
@@ -51,791 +48,802 @@ exports[`About template is rendered 1`] = `
         </a>
       </li>
     </ul>
-  </div>
+  </div>,
+  <noscript>
+    You have Javascript disabled. While it isn't needed, it will make your experience nicer.
+  </noscript>,
   <div
-    className="cs-wrapper invert"
     style={
       Object {
-        "backgroundColor": "#000000",
-        "paddingBottom": "100px",
-        "paddingTop": "100px",
+        "paddingTop": "80px",
       }
     }
   >
     <div
-      className="Content-Section"
-    >
-      <span>
-        subtitle
-      </span>
-      <h2>
-        title
-      </h2>
-      <div>
-        <span>
-          Lorem Ipsum is the industry standard typesetting text
-        </span>
-      </div>
-    </div>
-  </div>
-  <div
-    className="cs-wrapper "
-    style={
-      Object {
-        "backgroundColor": "inherit",
-        "paddingBottom": "100px",
-        "paddingTop": "100px",
+      className="cs-wrapper invert"
+      style={
+        Object {
+          "backgroundColor": "#000000",
+          "paddingBottom": "100px",
+          "paddingTop": "100px",
+        }
       }
-    }
-  >
-    <div
-      className="Content-Section"
-    >
-      <h2>
-        Approach
-      </h2>
-      <div>
-        <span>
-          Lorem Ipsum is the industry standard typesetting text
-        </span>
-      </div>
-    </div>
-  </div>
-  <div
-    className="QuadGrid"
-  />
-  <div
-    className="cs-wrapper "
-    style={
-      Object {
-        "backgroundColor": "inherit",
-        "paddingBottom": "100px",
-        "paddingTop": "100px",
-      }
-    }
-  >
-    <div
-      className="Content-Section"
-    >
-      <h2>
-        Services
-      </h2>
-      <div>
-        <span>
-          Lorem Ipsum is the industry standard typesetting text
-        </span>
-      </div>
-    </div>
-  </div>
-  <div
-    className="services"
-  >
-    <ul>
-      <li>
-        Discovery Workshops
-      </li>
-      <li>
-        Technical Audits
-      </li>
-      <li>
-        User Research
-      </li>
-      <li>
-        Concept Design
-      </li>
-      <li>
-        Project Roadmapping
-      </li>
-      <li>
-        Usability testing and research
-      </li>
-      <li>
-        Design Research
-      </li>
-      <li>
-        Visual Design
-      </li>
-    </ul>
-    <ul>
-      <li>
-        Interaction Design
-      </li>
-      <li>
-        Prototype Development
-      </li>
-      <li>
-        Testing
-      </li>
-      <li>
-        User-centered development
-      </li>
-      <li>
-        Agile Development
-      </li>
-      <li>
-        TDD/BDD
-      </li>
-      <li>
-        Mobile App Development
-      </li>
-      <li>
-        Web App Development
-      </li>
-    </ul>
-    <ul>
-      <li>
-        Native iOS app development
-      </li>
-      <li>
-        Native Android app development
-      </li>
-      <li>
-        Infrastructure and Devops
-      </li>
-      <li>
-        Real time application monitoring
-      </li>
-      <li>
-        Information architecture
-      </li>
-      <li>
-        W3C Compliance
-      </li>
-      <li>
-        Ongoing Strategy
-      </li>
-      <li>
-        Innovation development
-      </li>
-    </ul>
-  </div>
-  <div
-    className="cs-wrapper "
-    style={
-      Object {
-        "backgroundColor": "inherit",
-        "paddingBottom": "100px",
-        "paddingTop": "100px",
-      }
-    }
-  >
-    <div
-      className="Content-Section"
-    >
-      <h2>
-        Standards
-      </h2>
-      <div>
-        <span>
-          Lorem Ipsum is the industry standard typesetting text
-        </span>
-      </div>
-    </div>
-  </div>
-  <div
-    className="PortfolioGrid"
-  >
-    <span>
-      We Design With
-    </span>
-    <div
-      className="StandardItem"
-    >
-      <a
-        href="/AWS"
-        onClick={[Function]}
-      >
-        <img
-          src={Object {}}
-        />
-      </a>
-    </div>
-    <div
-      className="StandardItem"
-    >
-      <a
-        href="/AWS"
-        onClick={[Function]}
-      >
-        <img
-          src={Object {}}
-        />
-      </a>
-    </div>
-    <div
-      className="StandardItem"
-    >
-      <a
-        href="/AWS"
-        onClick={[Function]}
-      >
-        <img
-          src={Object {}}
-        />
-      </a>
-    </div>
-    <div
-      className="StandardItem"
-    >
-      <a
-        href="/AWS"
-        onClick={[Function]}
-      >
-        <img
-          src={Object {}}
-        />
-      </a>
-    </div>
-  </div>
-  <div
-    className="PortfolioGrid"
-  >
-    <span>
-      We Develop With
-    </span>
-    <div
-      className="StandardItem"
-    >
-      <a
-        href="/AWS"
-        onClick={[Function]}
-      >
-        <img
-          src={Object {}}
-        />
-      </a>
-    </div>
-    <div
-      className="StandardItem"
-    >
-      <a
-        href="/AWS"
-        onClick={[Function]}
-      >
-        <img
-          src={Object {}}
-        />
-      </a>
-    </div>
-    <div
-      className="StandardItem"
-    >
-      <a
-        href="/AWS"
-        onClick={[Function]}
-      >
-        <img
-          src={Object {}}
-        />
-      </a>
-    </div>
-    <div
-      className="StandardItem"
-    >
-      <a
-        href="/AWS"
-        onClick={[Function]}
-      >
-        <img
-          src={Object {}}
-        />
-      </a>
-    </div>
-    <div
-      className="StandardItem"
-    >
-      <a
-        href="/AWS"
-        onClick={[Function]}
-      >
-        <img
-          src={Object {}}
-        />
-      </a>
-    </div>
-    <div
-      className="StandardItem"
-    >
-      <a
-        href="/AWS"
-        onClick={[Function]}
-      >
-        <img
-          src={Object {}}
-        />
-      </a>
-    </div>
-    <div
-      className="StandardItem"
-    >
-      <a
-        href="/AWS"
-        onClick={[Function]}
-      >
-        <img
-          src={Object {}}
-        />
-      </a>
-    </div>
-    <div
-      className="StandardItem"
-    >
-      <a
-        href="/AWS"
-        onClick={[Function]}
-      >
-        <img
-          src={Object {}}
-        />
-      </a>
-    </div>
-  </div>
-  <div
-    className="PortfolioGrid"
-  >
-    <span>
-      We Test With
-    </span>
-    <div
-      className="StandardItem"
-    >
-      <a
-        href="/AWS"
-        onClick={[Function]}
-      >
-        <img
-          src={Object {}}
-        />
-      </a>
-    </div>
-    <div
-      className="StandardItem"
-    >
-      <a
-        href="/AWS"
-        onClick={[Function]}
-      >
-        <img
-          src={Object {}}
-        />
-      </a>
-    </div>
-    <div
-      className="StandardItem"
-    >
-      <a
-        href="/AWS"
-        onClick={[Function]}
-      >
-        <img
-          src={Object {}}
-        />
-      </a>
-    </div>
-    <div
-      className="StandardItem"
-    >
-      <a
-        href="/AWS"
-        onClick={[Function]}
-      >
-        <img
-          src={Object {}}
-        />
-      </a>
-    </div>
-  </div>
-  <div
-    className="PortfolioGrid"
-  >
-    <span>
-      We Deploy With
-    </span>
-    <div
-      className="StandardItem"
-    >
-      <a
-        href="/AWS"
-        onClick={[Function]}
-      >
-        <img
-          src={Object {}}
-        />
-      </a>
-    </div>
-    <div
-      className="StandardItem"
-    >
-      <a
-        href="/AWS"
-        onClick={[Function]}
-      >
-        <img
-          src={Object {}}
-        />
-      </a>
-    </div>
-    <div
-      className="StandardItem"
-    >
-      <a
-        href="/AWS"
-        onClick={[Function]}
-      >
-        <img
-          src={Object {}}
-        />
-      </a>
-    </div>
-    <div
-      className="StandardItem"
-    >
-      <a
-        href="/AWS"
-        onClick={[Function]}
-      >
-        <img
-          src={Object {}}
-        />
-      </a>
-    </div>
-  </div>
-  <div
-    className="PortfolioGrid"
-  >
-    <span>
-      We Are Certified By
-    </span>
-    <div
-      className="StandardItem"
-    >
-      <a
-        href="/AWS"
-        onClick={[Function]}
-      >
-        <img
-          src={Object {}}
-        />
-      </a>
-    </div>
-    <div
-      className="StandardItem"
-    >
-      <a
-        href="/AWS"
-        onClick={[Function]}
-      >
-        <img
-          src={Object {}}
-        />
-      </a>
-    </div>
-    <div
-      className="StandardItem"
-    >
-      <a
-        href="/AWS"
-        onClick={[Function]}
-      >
-        <img
-          src={Object {}}
-        />
-      </a>
-    </div>
-  </div>
-  <div
-    className="cs-wrapper "
-    style={
-      Object {
-        "backgroundColor": "#ffffff",
-        "paddingBottom": "50px",
-        "paddingTop": "50px",
-      }
-    }
-  >
-    <div
-      className="Content-Section"
-    >
-      <h2>
-        TITLE HERE
-      </h2>
-      <div>
-        <span>
-          Lorem Ipsum is the industry standard typesetting text
-        </span>
-      </div>
-    </div>
-  </div>
-  <div
-    className="contactsection-wrapper"
-  >
-    <div
-      className="contactsection"
     >
       <div
-        className="contactform"
+        className="Content-Section"
       >
-        <form
-          action="https://formspree.io/hello@komododigital.co.uk"
-          method="POST"
-        >
-          <label
-            htmlFor="form-name"
-          >
-            Your Name
-            <input
-              id="form-name"
-              name="name"
-              placeholder="Joe Blogs"
-              type="text"
-            />
-          </label>
-          <label
-            htmlFor="form-email"
-          >
-            Your Email
-            <input
-              id="form-email"
-              name="email"
-              placeholder="joe@blogs.com"
-              type="email"
-            />
-          </label>
-          <label
-            htmlFor="form-service"
-          >
-            Service
-            <select
-              id="form-service"
-              name="service"
-            >
-              <option>
-                Choose Service
-              </option>
-              <option
-                value="Discovery"
-              >
-                Discovery
-              </option>
-              <option
-                value="Design"
-              >
-                Design
-              </option>
-              <option
-                value="Development"
-              >
-                Development
-              </option>
-              <option
-                value="Delivery"
-              >
-                Delivery
-              </option>
-            </select>
-          </label>
-          <label
-            htmlFor="form-sector"
-          >
-            Sector
-            <select
-              id="form-sector"
-              name="sector"
-            >
-              <option>
-                Choose Sector
-              </option>
-              <option
-                value="Education"
-              >
-                Education
-              </option>
-              <option
-                value="Law Enforcement"
-              >
-                Law Enforcement
-              </option>
-              <option
-                value="Startups"
-              >
-                Startups
-              </option>
-              <option
-                value="Social Housing"
-              >
-                Social Housing
-              </option>
-            </select>
-          </label>
-          <label
-            htmlFor="form-message"
-          >
-            Your Message
-            <textarea
-              cols={30}
-              id="form-message"
-              name="message"
-              rows={10}
-            />
-          </label>
-          <div>
-            <input
-              type="submit"
-              value="Send"
-            />
-          </div>
-        </form>
+        <span>
+          subtitle
+        </span>
+        <h2>
+          title
+        </h2>
+        <div>
+          <span>
+            Lorem Ipsum is the industry standard typesetting text
+          </span>
+        </div>
       </div>
     </div>
-  </div>
-  <footer>
     <div
-      className="komodo"
+      className="cs-wrapper "
+      style={
+        Object {
+          "backgroundColor": "inherit",
+          "paddingBottom": "100px",
+          "paddingTop": "100px",
+        }
+      }
     >
-      Komodo
+      <div
+        className="Content-Section"
+      >
+        <h2>
+          Approach
+        </h2>
+        <div>
+          <span>
+            Lorem Ipsum is the industry standard typesetting text
+          </span>
+        </div>
+      </div>
     </div>
     <div
-      className="address"
+      className="QuadGrid"
+    />
+    <div
+      className="cs-wrapper "
+      style={
+        Object {
+          "backgroundColor": "inherit",
+          "paddingBottom": "100px",
+          "paddingTop": "100px",
+        }
+      }
     >
-      <span>
-        Address
-      </span>
-      <address>
-        Komodo Digital,
-        <br />
-        63 Westgate Rd,
-        <br />
-        Newcastle upon Tyne,
-        <br />
-        NE1 1SG
-      </address>
-      <address>
-        Komodo | The Core
-        <br />
-        Science Central, Bath Ln,
-        <br />
-        Newcastle upon Tyne
-        <br />
-        NE4 5TF
-      </address>
+      <div
+        className="Content-Section"
+      >
+        <h2>
+          Services
+        </h2>
+        <div>
+          <span>
+            Lorem Ipsum is the industry standard typesetting text
+          </span>
+        </div>
+      </div>
     </div>
     <div
-      className="sitemap"
+      className="services"
     >
-      <span>
-        Sitemap
-      </span>
       <ul>
         <li>
-          <a
-            aria-current="page"
-            href="/"
-            onClick={[Function]}
-          >
-            Home
-          </a>
+          Discovery Workshops
         </li>
         <li>
-          <a
-            aria-current="page"
-            href="/"
-            onClick={[Function]}
-          >
-            Case Studies
-          </a>
+          Technical Audits
         </li>
         <li>
-          <a
-            aria-current="page"
-            href="/"
-            onClick={[Function]}
-          >
-            Insights
-          </a>
+          User Research
         </li>
         <li>
-          <a
-            aria-current="page"
-            href="/"
-            onClick={[Function]}
-          >
-            Careers
-          </a>
+          Concept Design
+        </li>
+        <li>
+          Project Roadmapping
+        </li>
+        <li>
+          Usability testing and research
+        </li>
+        <li>
+          Design Research
+        </li>
+        <li>
+          Visual Design
         </li>
       </ul>
       <ul>
         <li>
-          <a
-            aria-current="page"
-            href="/"
-            onClick={[Function]}
-          >
-            Contact
-          </a>
+          Interaction Design
         </li>
         <li>
-          <a
-            href="https://twitter.com/komodohq"
-          >
-            Twitter
-          </a>
+          Prototype Development
         </li>
         <li>
-          <a
-            href="https://facebook.com/komodohq"
-          >
-            Facebook
-          </a>
+          Testing
         </li>
         <li>
-          <a
-            href="https://linkedin.com/komodohq"
-          >
-            LinkedIn
-          </a>
+          User-centered development
+        </li>
+        <li>
+          Agile Development
+        </li>
+        <li>
+          TDD/BDD
+        </li>
+        <li>
+          Mobile App Development
+        </li>
+        <li>
+          Web App Development
+        </li>
+      </ul>
+      <ul>
+        <li>
+          Native iOS app development
+        </li>
+        <li>
+          Native Android app development
+        </li>
+        <li>
+          Infrastructure and Devops
+        </li>
+        <li>
+          Real time application monitoring
+        </li>
+        <li>
+          Information architecture
+        </li>
+        <li>
+          W3C Compliance
+        </li>
+        <li>
+          Ongoing Strategy
+        </li>
+        <li>
+          Innovation development
         </li>
       </ul>
     </div>
-  </footer>
-  <footer
-    className="legal-footer"
-  >
     <div
-      className="company"
+      className="cs-wrapper "
+      style={
+        Object {
+          "backgroundColor": "inherit",
+          "paddingBottom": "100px",
+          "paddingTop": "100px",
+        }
+      }
+    >
+      <div
+        className="Content-Section"
+      >
+        <h2>
+          Standards
+        </h2>
+        <div>
+          <span>
+            Lorem Ipsum is the industry standard typesetting text
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="PortfolioGrid"
     >
       <span>
-        Komodo Digital Copyright © 2018
+        We Design With
       </span>
-      <br />
-      <a
-        aria-current="page"
-        href="/"
-        onClick={[Function]}
+      <div
+        className="StandardItem"
       >
-        Privacy Policy
-      </a>
-       | 
-      <a
-        aria-current="page"
-        href="/"
-        onClick={[Function]}
+        <a
+          href="/AWS"
+          onClick={[Function]}
+        >
+          <img
+            src={Object {}}
+          />
+        </a>
+      </div>
+      <div
+        className="StandardItem"
       >
-        Terms and Conditions
-      </a>
+        <a
+          href="/AWS"
+          onClick={[Function]}
+        >
+          <img
+            src={Object {}}
+          />
+        </a>
+      </div>
+      <div
+        className="StandardItem"
+      >
+        <a
+          href="/AWS"
+          onClick={[Function]}
+        >
+          <img
+            src={Object {}}
+          />
+        </a>
+      </div>
+      <div
+        className="StandardItem"
+      >
+        <a
+          href="/AWS"
+          onClick={[Function]}
+        >
+          <img
+            src={Object {}}
+          />
+        </a>
+      </div>
     </div>
     <div
-      className="contact"
+      className="PortfolioGrid"
     >
-      Get in touch on:
-      <br />
-      <a
-        href="/tel:0191 228 6555"
-        onClick={[Function]}
+      <span>
+        We Develop With
+      </span>
+      <div
+        className="StandardItem"
       >
-        0191 228 6555
-      </a>
+        <a
+          href="/AWS"
+          onClick={[Function]}
+        >
+          <img
+            src={Object {}}
+          />
+        </a>
+      </div>
+      <div
+        className="StandardItem"
+      >
+        <a
+          href="/AWS"
+          onClick={[Function]}
+        >
+          <img
+            src={Object {}}
+          />
+        </a>
+      </div>
+      <div
+        className="StandardItem"
+      >
+        <a
+          href="/AWS"
+          onClick={[Function]}
+        >
+          <img
+            src={Object {}}
+          />
+        </a>
+      </div>
+      <div
+        className="StandardItem"
+      >
+        <a
+          href="/AWS"
+          onClick={[Function]}
+        >
+          <img
+            src={Object {}}
+          />
+        </a>
+      </div>
+      <div
+        className="StandardItem"
+      >
+        <a
+          href="/AWS"
+          onClick={[Function]}
+        >
+          <img
+            src={Object {}}
+          />
+        </a>
+      </div>
+      <div
+        className="StandardItem"
+      >
+        <a
+          href="/AWS"
+          onClick={[Function]}
+        >
+          <img
+            src={Object {}}
+          />
+        </a>
+      </div>
+      <div
+        className="StandardItem"
+      >
+        <a
+          href="/AWS"
+          onClick={[Function]}
+        >
+          <img
+            src={Object {}}
+          />
+        </a>
+      </div>
+      <div
+        className="StandardItem"
+      >
+        <a
+          href="/AWS"
+          onClick={[Function]}
+        >
+          <img
+            src={Object {}}
+          />
+        </a>
+      </div>
     </div>
-  </footer>
+    <div
+      className="PortfolioGrid"
+    >
+      <span>
+        We Test With
+      </span>
+      <div
+        className="StandardItem"
+      >
+        <a
+          href="/AWS"
+          onClick={[Function]}
+        >
+          <img
+            src={Object {}}
+          />
+        </a>
+      </div>
+      <div
+        className="StandardItem"
+      >
+        <a
+          href="/AWS"
+          onClick={[Function]}
+        >
+          <img
+            src={Object {}}
+          />
+        </a>
+      </div>
+      <div
+        className="StandardItem"
+      >
+        <a
+          href="/AWS"
+          onClick={[Function]}
+        >
+          <img
+            src={Object {}}
+          />
+        </a>
+      </div>
+      <div
+        className="StandardItem"
+      >
+        <a
+          href="/AWS"
+          onClick={[Function]}
+        >
+          <img
+            src={Object {}}
+          />
+        </a>
+      </div>
+    </div>
+    <div
+      className="PortfolioGrid"
+    >
+      <span>
+        We Deploy With
+      </span>
+      <div
+        className="StandardItem"
+      >
+        <a
+          href="/AWS"
+          onClick={[Function]}
+        >
+          <img
+            src={Object {}}
+          />
+        </a>
+      </div>
+      <div
+        className="StandardItem"
+      >
+        <a
+          href="/AWS"
+          onClick={[Function]}
+        >
+          <img
+            src={Object {}}
+          />
+        </a>
+      </div>
+      <div
+        className="StandardItem"
+      >
+        <a
+          href="/AWS"
+          onClick={[Function]}
+        >
+          <img
+            src={Object {}}
+          />
+        </a>
+      </div>
+      <div
+        className="StandardItem"
+      >
+        <a
+          href="/AWS"
+          onClick={[Function]}
+        >
+          <img
+            src={Object {}}
+          />
+        </a>
+      </div>
+    </div>
+    <div
+      className="PortfolioGrid"
+    >
+      <span>
+        We Are Certified By
+      </span>
+      <div
+        className="StandardItem"
+      >
+        <a
+          href="/AWS"
+          onClick={[Function]}
+        >
+          <img
+            src={Object {}}
+          />
+        </a>
+      </div>
+      <div
+        className="StandardItem"
+      >
+        <a
+          href="/AWS"
+          onClick={[Function]}
+        >
+          <img
+            src={Object {}}
+          />
+        </a>
+      </div>
+      <div
+        className="StandardItem"
+      >
+        <a
+          href="/AWS"
+          onClick={[Function]}
+        >
+          <img
+            src={Object {}}
+          />
+        </a>
+      </div>
+    </div>
+    <div
+      className="cs-wrapper "
+      style={
+        Object {
+          "backgroundColor": "#ffffff",
+          "paddingBottom": "50px",
+          "paddingTop": "50px",
+        }
+      }
+    >
+      <div
+        className="Content-Section"
+      >
+        <h2>
+          TITLE HERE
+        </h2>
+        <div>
+          <span>
+            Lorem Ipsum is the industry standard typesetting text
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="contactsection-wrapper"
+    >
+      <div
+        className="contactsection"
+      >
+        <div
+          className="contactform"
+        >
+          <form
+            action="https://formspree.io/hello@komododigital.co.uk"
+            method="POST"
+          >
+            <label
+              htmlFor="form-name"
+            >
+              Your Name
+              <input
+                id="form-name"
+                name="name"
+                placeholder="Joe Blogs"
+                type="text"
+              />
+            </label>
+            <label
+              htmlFor="form-email"
+            >
+              Your Email
+              <input
+                id="form-email"
+                name="email"
+                placeholder="joe@blogs.com"
+                type="email"
+              />
+            </label>
+            <label
+              htmlFor="form-service"
+            >
+              Service
+              <select
+                id="form-service"
+                name="service"
+              >
+                <option>
+                  Choose Service
+                </option>
+                <option
+                  value="Discovery"
+                >
+                  Discovery
+                </option>
+                <option
+                  value="Design"
+                >
+                  Design
+                </option>
+                <option
+                  value="Development"
+                >
+                  Development
+                </option>
+                <option
+                  value="Delivery"
+                >
+                  Delivery
+                </option>
+              </select>
+            </label>
+            <label
+              htmlFor="form-sector"
+            >
+              Sector
+              <select
+                id="form-sector"
+                name="sector"
+              >
+                <option>
+                  Choose Sector
+                </option>
+                <option
+                  value="Education"
+                >
+                  Education
+                </option>
+                <option
+                  value="Law Enforcement"
+                >
+                  Law Enforcement
+                </option>
+                <option
+                  value="Startups"
+                >
+                  Startups
+                </option>
+                <option
+                  value="Social Housing"
+                >
+                  Social Housing
+                </option>
+              </select>
+            </label>
+            <label
+              htmlFor="form-message"
+            >
+              Your Message
+              <textarea
+                cols={30}
+                id="form-message"
+                name="message"
+                rows={10}
+              />
+            </label>
+            <div>
+              <input
+                type="submit"
+                value="Send"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div
+        className="komodo"
+      >
+        Komodo
+      </div>
+      <div
+        className="address"
+      >
+        <span>
+          Address
+        </span>
+        <address>
+          Komodo Digital,
+          <br />
+          63 Westgate Rd,
+          <br />
+          Newcastle upon Tyne,
+          <br />
+          NE1 1SG
+        </address>
+        <address>
+          Komodo | The Core
+          <br />
+          Science Central, Bath Ln,
+          <br />
+          Newcastle upon Tyne
+          <br />
+          NE4 5TF
+        </address>
+      </div>
+      <div
+        className="sitemap"
+      >
+        <span>
+          Sitemap
+        </span>
+        <ul>
+          <li>
+            <a
+              aria-current="page"
+              href="/"
+              onClick={[Function]}
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              aria-current="page"
+              href="/"
+              onClick={[Function]}
+            >
+              Case Studies
+            </a>
+          </li>
+          <li>
+            <a
+              aria-current="page"
+              href="/"
+              onClick={[Function]}
+            >
+              Insights
+            </a>
+          </li>
+          <li>
+            <a
+              aria-current="page"
+              href="/"
+              onClick={[Function]}
+            >
+              Careers
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a
+              aria-current="page"
+              href="/"
+              onClick={[Function]}
+            >
+              Contact
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://twitter.com/komodohq"
+            >
+              Twitter
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://facebook.com/komodohq"
+            >
+              Facebook
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://linkedin.com/komodohq"
+            >
+              LinkedIn
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <footer
+      className="legal-footer"
+    >
+      <div
+        className="company"
+      >
+        <span>
+          Komodo Digital Copyright © 2018
+        </span>
+        <br />
+        <a
+          aria-current="page"
+          href="/"
+          onClick={[Function]}
+        >
+          Privacy Policy
+        </a>
+         | 
+        <a
+          aria-current="page"
+          href="/"
+          onClick={[Function]}
+        >
+          Terms and Conditions
+        </a>
+      </div>
+      <div
+        className="contact"
+      >
+        Get in touch on:
+        <br />
+        <a
+          href="/tel:0191 228 6555"
+          onClick={[Function]}
+        >
+          0191 228 6555
+        </a>
+      </div>
+    </footer>
+  </div>,
   <noscript>
     <img
       alt=""
@@ -843,6 +851,6 @@ exports[`About template is rendered 1`] = `
       src="https://dc.ads.linkedin.com/collect/?pid=377068&fmt=gif"
       width="1"
     />
-  </noscript>
-</div>
+  </noscript>,
+]
 `;
