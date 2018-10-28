@@ -13,7 +13,7 @@ interface Props {
 
 const Layout: React.SFC<Props> = ({ data, children }) => {
   return (
-    <div>
+    <>
       <SEO
         defaultTitle={data.site.siteMetadata.title}
         siteName={data.site.siteMetadata.name}
@@ -30,16 +30,15 @@ const Layout: React.SFC<Props> = ({ data, children }) => {
           content="NjvhRGkpFOUEaqakyfa4pkVtErwqLzH3oPITur3WIYA"
         />
       </SEO>
-
       <noscript>
         You have Javascript disabled. While it isn't needed, it will make your experience nicer.
       </noscript>
-
       <NavigationBar />
-      {children}
-      <Footer />
-      <LegalFooter />
-
+      <div className="main">
+        {children}
+        <Footer />
+        <LegalFooter />
+      </div>
       <noscript>
         <img
           height="1"
@@ -48,7 +47,7 @@ const Layout: React.SFC<Props> = ({ data, children }) => {
           src="https://dc.ads.linkedin.com/collect/?pid=377068&amp;fmt=gif"
         />
       </noscript>
-    </div>
+    </>
   );
 };
 

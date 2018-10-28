@@ -1,15 +1,13 @@
 
 .csi-wrapper {
-    overflow: hidden;
-    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Needs to work with multiple images */
 
-.csi-wrapper > div {
-
-}
-
-.csi-wrapper > div > img {
-    max-width: 100%;
+.csi-wrapper > img {
+    overflow: hidden;
+    object-fit: contain;
 }

@@ -13,7 +13,20 @@ exports[`NavigationBar element is rendered 1`] = `
       Komodo
     </a>
   </h1>
-  <ul>
+  <div
+    className="hamburger"
+  >
+    <a
+      aria-current="page"
+      href="/"
+      onClick={[Function]}
+    >
+      Menu
+    </a>
+  </div>
+  <ul
+    className="Menu"
+  >
     <li>
       <a
         href="/about"

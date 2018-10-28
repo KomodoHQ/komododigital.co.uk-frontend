@@ -1,10 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Contact template is rendered 1`] = `
-<div>
+Array [
   <noscript>
     You have Javascript disabled. While it isn't needed, it will make your experience nicer.
-  </noscript>
+  </noscript>,
   <div
     className="navigationBar"
   >
@@ -17,7 +17,20 @@ exports[`Contact template is rendered 1`] = `
         Komodo
       </a>
     </h1>
-    <ul>
+    <div
+      className="hamburger"
+    >
+      <a
+        aria-current="page"
+        href="/"
+        onClick={[Function]}
+      >
+        Menu
+      </a>
+    </div>
+    <ul
+      className="Menu"
+    >
       <li>
         <a
           href="/about"
@@ -51,373 +64,377 @@ exports[`Contact template is rendered 1`] = `
         </a>
       </li>
     </ul>
-  </div>
+  </div>,
   <div
-    className="cs-wrapper "
-    style={
-      Object {
-        "backgroundColor": "#ffffff",
-        "paddingBottom": "50px",
-        "paddingTop": "50px",
-      }
-    }
+    className="main"
   >
     <div
-      className="Content-Section"
+      className="cs-wrapper "
+      style={
+        Object {
+          "backgroundColor": "#ffffff",
+          "paddingBottom": "50px",
+          "paddingTop": "50px",
+        }
+      }
     >
-      <h2>
-        TITLE HERE
-      </h2>
-      <div>
-        <span>
-          Lorem Ipsum is the industry standard typesetting text
-        </span>
+      <div
+        className="Content-Section"
+      >
+        <h2>
+          TITLE HERE
+        </h2>
+        <div>
+          <span>
+            Lorem Ipsum is the industry standard typesetting text
+          </span>
+        </div>
       </div>
     </div>
-  </div>
-  <div
-    className="contactsection-wrapper"
-  >
     <div
-      className="contactsection"
+      className="contactsection-wrapper"
     >
       <div
-        className="vcard"
+        className="contactsection"
       >
-        <img
-          height="70"
-          src={Object {}}
-          width="70"
-        />
-        <div>
-          <h1>
-            Armin Talic
-          </h1>
-          <h2>
-            Commercial Director
-          </h2>
-          <a
-            href="mailto: {email}"
-          >
-            story@vcard.com
-          </a>
-        </div>
-      </div>
-      <div
-        className="vcard"
-      >
-        <img
-          height="70"
-          src={Object {}}
-          width="70"
-        />
-        <div>
-          <h1>
-            Matt Moran
-          </h1>
-          <h2>
-            Director
-          </h2>
-          <a
-            href="mailto: {email}"
-          >
-            story@vcard.com
-          </a>
-        </div>
-      </div>
-      <div
-        className="contactform"
-      >
-        <form
-          action="https://formspree.io/hello@komododigital.co.uk"
-          method="POST"
+        <div
+          className="vcard"
         >
-          <label
-            htmlFor="form-name"
-          >
-            Your Name
-            <input
-              id="form-name"
-              name="name"
-              placeholder="Joe Blogs"
-              type="text"
-            />
-          </label>
-          <label
-            htmlFor="form-email"
-          >
-            Your Email
-            <input
-              id="form-email"
-              name="email"
-              placeholder="joe@blogs.com"
-              type="email"
-            />
-          </label>
-          <label
-            htmlFor="form-service"
-          >
-            Service
-            <select
-              id="form-service"
-              name="service"
-            >
-              <option>
-                Choose Service
-              </option>
-              <option
-                value="Discovery"
-              >
-                Discovery
-              </option>
-              <option
-                value="Design"
-              >
-                Design
-              </option>
-              <option
-                value="Development"
-              >
-                Development
-              </option>
-              <option
-                value="Delivery"
-              >
-                Delivery
-              </option>
-            </select>
-          </label>
-          <label
-            htmlFor="form-sector"
-          >
-            Sector
-            <select
-              id="form-sector"
-              name="sector"
-            >
-              <option>
-                Choose Sector
-              </option>
-              <option
-                value="Education"
-              >
-                Education
-              </option>
-              <option
-                value="Law Enforcement"
-              >
-                Law Enforcement
-              </option>
-              <option
-                value="Startups"
-              >
-                Startups
-              </option>
-              <option
-                value="Social Housing"
-              >
-                Social Housing
-              </option>
-            </select>
-          </label>
-          <label
-            htmlFor="form-message"
-          >
-            Your Message
-            <textarea
-              cols={30}
-              id="form-message"
-              name="message"
-              rows={10}
-            />
-          </label>
+          <img
+            height="70"
+            src={Object {}}
+            width="70"
+          />
           <div>
-            <input
-              type="submit"
-              value="Send"
-            />
+            <h1>
+              Armin Talic
+            </h1>
+            <h2>
+              Commercial Director
+            </h2>
+            <a
+              href="mailto: {email}"
+            >
+              story@vcard.com
+            </a>
           </div>
-        </form>
+        </div>
+        <div
+          className="vcard"
+        >
+          <img
+            height="70"
+            src={Object {}}
+            width="70"
+          />
+          <div>
+            <h1>
+              Matt Moran
+            </h1>
+            <h2>
+              Director
+            </h2>
+            <a
+              href="mailto: {email}"
+            >
+              story@vcard.com
+            </a>
+          </div>
+        </div>
+        <div
+          className="contactform"
+        >
+          <form
+            action="https://formspree.io/hello@komododigital.co.uk"
+            method="POST"
+          >
+            <label
+              htmlFor="form-name"
+            >
+              Your Name
+              <input
+                id="form-name"
+                name="name"
+                placeholder="Joe Blogs"
+                type="text"
+              />
+            </label>
+            <label
+              htmlFor="form-email"
+            >
+              Your Email
+              <input
+                id="form-email"
+                name="email"
+                placeholder="joe@blogs.com"
+                type="email"
+              />
+            </label>
+            <label
+              htmlFor="form-service"
+            >
+              Service
+              <select
+                id="form-service"
+                name="service"
+              >
+                <option>
+                  Choose Service
+                </option>
+                <option
+                  value="Discovery"
+                >
+                  Discovery
+                </option>
+                <option
+                  value="Design"
+                >
+                  Design
+                </option>
+                <option
+                  value="Development"
+                >
+                  Development
+                </option>
+                <option
+                  value="Delivery"
+                >
+                  Delivery
+                </option>
+              </select>
+            </label>
+            <label
+              htmlFor="form-sector"
+            >
+              Sector
+              <select
+                id="form-sector"
+                name="sector"
+              >
+                <option>
+                  Choose Sector
+                </option>
+                <option
+                  value="Education"
+                >
+                  Education
+                </option>
+                <option
+                  value="Law Enforcement"
+                >
+                  Law Enforcement
+                </option>
+                <option
+                  value="Startups"
+                >
+                  Startups
+                </option>
+                <option
+                  value="Social Housing"
+                >
+                  Social Housing
+                </option>
+              </select>
+            </label>
+            <label
+              htmlFor="form-message"
+            >
+              Your Message
+              <textarea
+                cols={30}
+                id="form-message"
+                name="message"
+                rows={10}
+              />
+            </label>
+            <div>
+              <input
+                type="submit"
+                value="Send"
+              />
+            </div>
+          </form>
+        </div>
       </div>
     </div>
-  </div>
-  <div
-    className="cs-wrapper invert"
-    style={
-      Object {
-        "backgroundColor": "#151515",
-        "paddingBottom": "150px",
-        "paddingTop": "150px",
-      }
-    }
-  >
     <div
-      className="Content-Section"
+      className="cs-wrapper invert"
+      style={
+        Object {
+          "backgroundColor": "#151515",
+          "paddingBottom": "150px",
+          "paddingTop": "150px",
+        }
+      }
     >
-      <h2>
-        Careers
-      </h2>
-      <div>
-        <p>
-          Whether you’re looking to progress in your career or you’re a fresh-faced graduate, Komodo could be the right place for you to hone your skills and grow. The talent here is intimidatingly good, so be confident and ready to impress.
-        </p>
+      <div
+        className="Content-Section"
+      >
+        <h2>
+          Careers
+        </h2>
+        <div>
+          <p>
+            Whether you’re looking to progress in your career or you’re a fresh-faced graduate, Komodo could be the right place for you to hone your skills and grow. The talent here is intimidatingly good, so be confident and ready to impress.
+          </p>
+          <a
+            href="/careers"
+            onClick={[Function]}
+          >
+            See what careers we have available
+          </a>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div
+        className="komodo"
+      >
+        Komodo
+      </div>
+      <div
+        className="address"
+      >
+        <span>
+          Address
+        </span>
+        <address>
+          Komodo Digital,
+          <br />
+          63 Westgate Rd,
+          <br />
+          Newcastle upon Tyne,
+          <br />
+          NE1 1SG
+        </address>
+        <address>
+          Komodo | The Core
+          <br />
+          Science Central, Bath Ln,
+          <br />
+          Newcastle upon Tyne
+          <br />
+          NE4 5TF
+        </address>
+      </div>
+      <div
+        className="sitemap"
+      >
+        <span>
+          Sitemap
+        </span>
+        <ul>
+          <li>
+            <a
+              aria-current="page"
+              href="/"
+              onClick={[Function]}
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              aria-current="page"
+              href="/"
+              onClick={[Function]}
+            >
+              Case Studies
+            </a>
+          </li>
+          <li>
+            <a
+              aria-current="page"
+              href="/"
+              onClick={[Function]}
+            >
+              Insights
+            </a>
+          </li>
+          <li>
+            <a
+              aria-current="page"
+              href="/"
+              onClick={[Function]}
+            >
+              Careers
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a
+              aria-current="page"
+              href="/"
+              onClick={[Function]}
+            >
+              Contact
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://twitter.com/komodohq"
+            >
+              Twitter
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://facebook.com/komodohq"
+            >
+              Facebook
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://linkedin.com/komodohq"
+            >
+              LinkedIn
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <footer
+      className="legal-footer"
+    >
+      <div
+        className="company"
+      >
+        <span>
+          Komodo Digital Copyright © 2018
+        </span>
+        <br />
         <a
-          href="/careers"
+          aria-current="page"
+          href="/"
           onClick={[Function]}
         >
-          See what careers we have available
+          Privacy Policy
+        </a>
+         | 
+        <a
+          aria-current="page"
+          href="/"
+          onClick={[Function]}
+        >
+          Terms and Conditions
         </a>
       </div>
-    </div>
-  </div>
-  <footer>
-    <div
-      className="komodo"
-    >
-      Komodo
-    </div>
-    <div
-      className="address"
-    >
-      <span>
-        Address
-      </span>
-      <address>
-        Komodo Digital,
-        <br />
-        63 Westgate Rd,
-        <br />
-        Newcastle upon Tyne,
-        <br />
-        NE1 1SG
-      </address>
-      <address>
-        Komodo | The Core
-        <br />
-        Science Central, Bath Ln,
-        <br />
-        Newcastle upon Tyne
-        <br />
-        NE4 5TF
-      </address>
-    </div>
-    <div
-      className="sitemap"
-    >
-      <span>
-        Sitemap
-      </span>
-      <ul>
-        <li>
-          <a
-            aria-current="page"
-            href="/"
-            onClick={[Function]}
-          >
-            Home
-          </a>
-        </li>
-        <li>
-          <a
-            aria-current="page"
-            href="/"
-            onClick={[Function]}
-          >
-            Case Studies
-          </a>
-        </li>
-        <li>
-          <a
-            aria-current="page"
-            href="/"
-            onClick={[Function]}
-          >
-            Insights
-          </a>
-        </li>
-        <li>
-          <a
-            aria-current="page"
-            href="/"
-            onClick={[Function]}
-          >
-            Careers
-          </a>
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <a
-            aria-current="page"
-            href="/"
-            onClick={[Function]}
-          >
-            Contact
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://twitter.com/komodohq"
-          >
-            Twitter
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://facebook.com/komodohq"
-          >
-            Facebook
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://linkedin.com/komodohq"
-          >
-            LinkedIn
-          </a>
-        </li>
-      </ul>
-    </div>
-  </footer>
-  <footer
-    className="legal-footer"
-  >
-    <div
-      className="company"
-    >
-      <span>
-        Komodo Digital Copyright © 2018
-      </span>
-      <br />
-      <a
-        aria-current="page"
-        href="/"
-        onClick={[Function]}
+      <div
+        className="contact"
       >
-        Privacy Policy
-      </a>
-       | 
-      <a
-        aria-current="page"
-        href="/"
-        onClick={[Function]}
-      >
-        Terms and Conditions
-      </a>
-    </div>
-    <div
-      className="contact"
-    >
-      Get in touch on:
-      <br />
-      <a
-        href="/tel:0191 228 6555"
-        onClick={[Function]}
-      >
-        0191 228 6555
-      </a>
-    </div>
-  </footer>
+        Get in touch on:
+        <br />
+        <a
+          href="/tel:0191 228 6555"
+          onClick={[Function]}
+        >
+          0191 228 6555
+        </a>
+      </div>
+    </footer>
+  </div>,
   <noscript>
     <img
       alt=""
@@ -425,6 +442,6 @@ exports[`Contact template is rendered 1`] = `
       src="https://dc.ads.linkedin.com/collect/?pid=377068&fmt=gif"
       width="1"
     />
-  </noscript>
-</div>
+  </noscript>,
+]
 `;

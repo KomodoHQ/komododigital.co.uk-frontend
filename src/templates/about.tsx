@@ -90,7 +90,7 @@ export default (props: AboutPageProps) => {
         {renderAst(props.standardsIntro)}
       </ContentSection>
       <PortfolioGrid title="We Design With">
-        <StandardItem imgsrc={require("../images/standards/AWS.png")} link="/AWS" />
+        <StandardItem imgsrc={require("../images/standards/Sketch.png")} link="/AWS" />
         <StandardItem imgsrc={require("../images/standards/AWS.png")} link="/AWS" />
         <StandardItem imgsrc={require("../images/standards/AWS.png")} link="/AWS" />
         <StandardItem imgsrc={require("../images/standards/AWS.png")} link="/AWS" />

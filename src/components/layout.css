@@ -24,3 +24,9 @@ body {
     margin: 0;
     background-color: #EAEAEA;
 }
+
+@media (min-width: 700px) {
+    .main {
+        paddingTop: 80px;
+    }
+}
