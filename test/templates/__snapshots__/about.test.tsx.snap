@@ -53,10 +53,10 @@ exports[`About template is rendered 1`] = `
     </ul>
   </div>
   <div
-    className="cs-wrapper "
+    className="cs-wrapper invert"
     style={
       Object {
-        "backgroundColor": "inherit",
+        "backgroundColor": "#000000",
         "paddingBottom": "100px",
         "paddingTop": "100px",
       }
