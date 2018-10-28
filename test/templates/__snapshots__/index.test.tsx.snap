@@ -56,7 +56,7 @@ exports[`Home template is rendered 1`] = `
     className="cs-wrapper invert"
     style={
       Object {
-        "backgroundColor": "#151515",
+        "backgroundColor": "#000000",
         "paddingBottom": "200px",
         "paddingTop": "200px",
       }
@@ -104,10 +104,12 @@ exports[`Home template is rendered 1`] = `
   <div
     className="csi-wrapper"
   >
-    <img
-      alt="Komodo at work"
-      src={Object {}}
-    />
+    <div>
+      <img
+        alt="Komodo at work"
+        src={Object {}}
+      />
+    </div>
   </div>
   <div
     className="cs-wrapper "
@@ -196,6 +198,7 @@ exports[`Home template is rendered 1`] = `
   <div
     className="PortfolioGrid"
   >
+    <span />
     <div
       className="StandardItem"
     >

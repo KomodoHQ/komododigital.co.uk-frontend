@@ -18,6 +18,7 @@ import "./portfoliogrid.css";
  * data
  */
 interface Props {
+  title?: string;
   children?: ReactNode;
 }
 
@@ -27,9 +28,10 @@ interface Props {
  * 
  * @param data
  */
-const PortfolioGrid: React.SFC<Props> = ({ children }) => {
+const PortfolioGrid: React.SFC<Props> = ({ title, children }) => {
   return (
     <div className="PortfolioGrid">
+        <span>{title}</span>
         {children}
     </div>
   );

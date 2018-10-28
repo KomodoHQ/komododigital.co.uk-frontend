@@ -31,7 +31,9 @@ const ContentSection: React.SFC<Props> = ({ children }) => {
 
   return (
     <div className={`csi-wrapper`}>
-      {children}
+      <div>
+        {children}
+      </div>
     </div>
 
   );

@@ -53,14 +53,78 @@ exports[`Contact template is rendered 1`] = `
     </ul>
   </div>
   <div
+    className="cs-wrapper "
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "paddingBottom": "50px",
+        "paddingTop": "50px",
+      }
+    }
+  >
+    <div
+      className="Content-Section"
+    >
+      <h2>
+        TITLE HERE
+      </h2>
+      <div>
+        <span>
+          Lorem Ipsum is the industry standard typesetting text
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
     className="contactsection-wrapper"
   >
     <div
       className="contactsection"
     >
-      <span>
-        Lorem Ipsum is the industry standard typesetting text
-      </span>
+      <div
+        className="vcard"
+      >
+        <img
+          height="70"
+          src={Object {}}
+          width="70"
+        />
+        <div>
+          <h1>
+            Armin Talic
+          </h1>
+          <h2>
+            Commercial Director
+          </h2>
+          <a
+            href="mailto: {email}"
+          >
+            story@vcard.com
+          </a>
+        </div>
+      </div>
+      <div
+        className="vcard"
+      >
+        <img
+          height="70"
+          src={Object {}}
+          width="70"
+        />
+        <div>
+          <h1>
+            Matt Moran
+          </h1>
+          <h2>
+            Director
+          </h2>
+          <a
+            href="mailto: {email}"
+          >
+            story@vcard.com
+          </a>
+        </div>
+      </div>
       <div
         className="contactform"
       >
@@ -174,6 +238,35 @@ exports[`Contact template is rendered 1`] = `
             />
           </div>
         </form>
+      </div>
+    </div>
+  </div>
+  <div
+    className="cs-wrapper invert"
+    style={
+      Object {
+        "backgroundColor": "#151515",
+        "paddingBottom": "150px",
+        "paddingTop": "150px",
+      }
+    }
+  >
+    <div
+      className="Content-Section"
+    >
+      <h2>
+        Careers
+      </h2>
+      <div>
+        <p>
+          Whether you’re looking to progress in your career or you’re a fresh-faced graduate, Komodo could be the right place for you to hone your skills and grow. The talent here is intimidatingly good, so be confident and ready to impress.
+        </p>
+        <a
+          href="/careers"
+          onClick={[Function]}
+        >
+          See what careers we have available
+        </a>
       </div>
     </div>
   </div>

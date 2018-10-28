@@ -11,7 +11,7 @@
     flex-wrap: wrap;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 700px) {
 
     .contactsection-wrapper {
         display: grid;
@@ -28,7 +28,7 @@
 
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
 
     .contactsection-wrapper {
         display: grid;
