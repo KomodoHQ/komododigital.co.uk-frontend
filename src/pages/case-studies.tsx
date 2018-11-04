@@ -32,6 +32,7 @@ export const caseStudiesQuery = graphql`
           frontmatter {
             title
             subtitle
+            image
             group
           }
           fileAbsolutePath
