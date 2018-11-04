@@ -29,7 +29,7 @@ interface Insight {
 
  interface Service {
   title: string;
-  image: string;
+  image: any;
   htmlAst: any;
 }
 

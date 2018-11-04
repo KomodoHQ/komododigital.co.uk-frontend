@@ -22,7 +22,7 @@ import "./casestudy.css";
  * link - an internal page address within the site
  */
 interface Props {
-  imgsrc?: string,
+  image?: any,
   title: string;
   subtitle?: string;
   link?: string;
@@ -33,22 +33,23 @@ interface Props {
  * 
  * Using SFC (Stateless Functional Component) because a case study link doesn't need to maintain any state of its own.
  * 
- * @param imgsrc
+ * @param image
  * @param subtitle 
  * @param title 
  * @param link 
  * @param children  
  */
-const CaseStudyLink: React.SFC<Props> = ({ imgsrc, subtitle, title, children, link="#" }) => {
+const CaseStudyLink: React.SFC<Props> = ({ image, subtitle, title, children, link="#" }) => {
   return (
     <div className="case-study-link-wrapper">
       <div className="case-study-link">
-        <div className="img"><img src={imgsrc} /></div>
+        <div className="img"><img src={image} /></div>
         <div className="content">
           <span>{subtitle}</span>
           <h2>{title}</h2>
           {children}
           <Link to={link}>Read Case Study</Link>
+          {image}
         </div>
       </div>
     </div>

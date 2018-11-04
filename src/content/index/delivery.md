@@ -1,6 +1,5 @@
 ---
 title: 'Delivery'
-image: 'approach/Delivery.png'
 date: '2018-09-22'
 group: 'services'
 ---

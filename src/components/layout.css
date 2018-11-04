@@ -27,6 +27,6 @@ body {
 
 @media (min-width: 700px) {
     .main {
-        paddingTop: 80px;
+        padding-top: 80px;
     }
 }
