@@ -34,19 +34,24 @@ const NavigationBar: React.SFC<Props> = ({ data, previousScrollY=0 }) => {
   const navbarRef = React.createRef<HTMLDivElement>();
   const menuRef = React.createRef<HTMLUListElement>();
 
-  window.addEventListener('scroll', function(e) {
-    if (!navbarRef.current) {
-      return;
-    }
-
-    if (window.scrollY > 100 && !navbarRef.current.classList.contains("small")) {
-      navbarRef.current.classList.add("small");
-      previousScrollY = window.scrollY;
-    } else if (window.scrollY < 100 && navbarRef.current.classList.contains("small")) {
-      navbarRef.current.classList.remove("small");
-      previousScrollY = window.scrollY;
-    }
-  });
+  try {
+    window.addEventListener('scroll', function(e) {
+      if (!navbarRef.current) {
+        return;
+      }
+  
+      if (window.scrollY > 100 && !navbarRef.current.classList.contains("small")) {
+        navbarRef.current.classList.add("small");
+        previousScrollY = window.scrollY;
+      } else if (window.scrollY < 100 && navbarRef.current.classList.contains("small")) {
+        navbarRef.current.classList.remove("small");
+        previousScrollY = window.scrollY;
+      }
+    });
+  
+  } catch(e) {
+    console.log("window isn't working", e);
+  }
 
   return (
     <div className="navigationBar" ref={navbarRef}>
