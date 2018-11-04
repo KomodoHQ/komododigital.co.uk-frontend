@@ -12,6 +12,7 @@ import { Link } from '@reach/router';
  * Local dependencies
  */
 import './NavigationBar.css';
+import { any } from 'prop-types';
 
 /**
  * Props for the navigation bar component
@@ -20,7 +21,6 @@ import './NavigationBar.css';
  */
 interface Props {
   data?: any;
-  previousScrollY?: Number
 }
 
 /**
@@ -29,57 +29,66 @@ interface Props {
  * 
  * @param data
  */
-const NavigationBar: React.SFC<Props> = ({ data, previousScrollY=0 }) => {
+class NavigationBar extends React.Component<Props> {
 
-  const navbarRef = React.createRef<HTMLDivElement>();
-  const menuRef = React.createRef<HTMLUListElement>();
+  navbarRef: any;
+  menuRef: any;
 
-  try {
-    window.addEventListener('scroll', function(e) {
-      if (!navbarRef.current) {
-        return;
-      }
+  constructor(props){
+    super(props);
+
+    this.navbarRef = React.createRef<HTMLDivElement>();
+    this.menuRef = React.createRef<HTMLUListElement>();
   
-      if (window.scrollY > 100 && !navbarRef.current.classList.contains("small")) {
-        navbarRef.current.classList.add("small");
-        previousScrollY = window.scrollY;
-      } else if (window.scrollY < 100 && navbarRef.current.classList.contains("small")) {
-        navbarRef.current.classList.remove("small");
-        previousScrollY = window.scrollY;
-      }
-    });
-  
-  } catch(e) {
-    console.log("window isn't working", e);
   }
 
-  return (
-    <div className="navigationBar" ref={navbarRef}>
-      <Link to="/"><img src={require('../../images/Komodo.png')} alt="Komodo Digital" /></Link>
-      <div className="hamburger">
-        <Link to="/" onClick={(e)=>{
-          e.preventDefault();
-          if (menuRef.current) {
-            menuRef.current.classList.toggle("open");
-          }
-        }}>Menu</Link>
+  componentDidMount() {
+
+    window.addEventListener('scroll', (e) => {
+        if (!this.navbarRef.current) {
+          return;
+        }
+    
+        if (window.scrollY > 100 && !this.navbarRef.current.classList.contains("small")) {
+          this.navbarRef.current.classList.add("small");
+        } else if (window.scrollY < 100 && this.navbarRef.current.classList.contains("small")) {
+          this.navbarRef.current.classList.remove("small");
+        }
+      });
+  
+  }
+
+  render() {
+    return (
+      <div className="navigationBar" ref={this.navbarRef}>
+        <Link to="/"><img src={require('../../images/Komodo.png')} alt="Komodo Digital" /></Link>
+        <div className="hamburger">
+          <Link to="/" onClick={(e)=>{
+            e.preventDefault();
+            if (this.menuRef.current) {
+              this.menuRef.current.classList.toggle("open");
+            }
+          }}>Menu</Link>
+        </div>
+        <ul className="Menu" ref={this.menuRef}>
+          <li>
+            <Link to={'about'}>About</Link>
+          </li>
+          <li>
+            <Link to={'case-studies'}>Case Studies</Link>
+          </li>
+          <li>
+            <Link to={'blog-list'}>Insights</Link>
+          </li>
+          <li>
+            <Link to={'contact'}>Contact</Link>
+          </li>
+        </ul>
       </div>
-      <ul className="Menu" ref={menuRef}>
-        <li>
-          <Link to={'about'}>About</Link>
-        </li>
-        <li>
-          <Link to={'case-studies'}>Case Studies</Link>
-        </li>
-        <li>
-          <Link to={'blog-list'}>Insights</Link>
-        </li>
-        <li>
-          <Link to={'contact'}>Contact</Link>
-        </li>
-      </ul>
-    </div>
-  );
+    );
+  
+  }
+
 };
 
 export default NavigationBar;
