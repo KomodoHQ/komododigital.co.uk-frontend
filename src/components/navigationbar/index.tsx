@@ -25,7 +25,7 @@ interface Props {
 
 /**
  * 
- * Using SFC (Stateless Functional Component) because a navigation bar doesn't need to maintain any state of its own.
+ * Using a stateful component because a navigation bar needs access to the lifecycle.
  * 
  * @param data
  */
