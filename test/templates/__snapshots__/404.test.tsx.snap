@@ -8,15 +8,16 @@ Array [
   <div
     className="navigationBar"
   >
-    <h1>
-      <a
-        aria-current="page"
-        href="/"
-        onClick={[Function]}
-      >
-        Komodo
-      </a>
-    </h1>
+    <a
+      aria-current="page"
+      href="/"
+      onClick={[Function]}
+    >
+      <img
+        alt="Komodo Digital"
+        src={Object {}}
+      />
+    </a>
     <div
       className="hamburger"
     >
@@ -80,7 +81,10 @@ Array [
       <div
         className="komodo"
       >
-        Komodo
+        <img
+          alt="Komodo - People Friendly Software"
+          src={Object {}}
+        />
       </div>
       <div
         className="address"

@@ -5,7 +5,10 @@ exports[`Footer element is rendered 1`] = `
   <div
     className="komodo"
   >
-    Komodo
+    <img
+      alt="Komodo - People Friendly Software"
+      src={Object {}}
+    />
   </div>
   <div
     className="address"

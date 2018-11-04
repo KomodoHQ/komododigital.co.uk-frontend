@@ -31,7 +31,7 @@ interface Props {
 const Footer: React.SFC<Props> = ({  }) => {
   return (
     <footer>
-        <div className="komodo">Komodo</div>
+        <div className="komodo"><img src={require('../../images/Komodo_PFS.png')} alt="Komodo - People Friendly Software" /></div>
         <div className="address">
           <span>Address</span>
           <address>

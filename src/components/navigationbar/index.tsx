@@ -20,7 +20,7 @@ import './NavigationBar.css';
  */
 interface Props {
   data?: any;
-
+  previousScrollY?: Number
 }
 
 /**
@@ -29,20 +29,37 @@ interface Props {
  * 
  * @param data
  */
-const NavigationBar: React.SFC<Props> = ({ data }) => {
-  const menuref = React.createRef<HTMLUListElement>();
+const NavigationBar: React.SFC<Props> = ({ data, previousScrollY=0 }) => {
+
+  const navbarRef = React.createRef<HTMLDivElement>();
+  const menuRef = React.createRef<HTMLUListElement>();
+
+  window.addEventListener('scroll', function(e) {
+    if (!navbarRef.current) {
+      return;
+    }
+
+    if (window.scrollY > 100 && !navbarRef.current.classList.contains("small")) {
+      navbarRef.current.classList.add("small");
+      previousScrollY = window.scrollY;
+    } else if (window.scrollY < 100 && navbarRef.current.classList.contains("small")) {
+      navbarRef.current.classList.remove("small");
+      previousScrollY = window.scrollY;
+    }
+  });
+
   return (
-    <div className="navigationBar">
-      <h1><Link to="/">Komodo</Link></h1>
+    <div className="navigationBar" ref={navbarRef}>
+      <Link to="/"><img src={require('../../images/Komodo.png')} alt="Komodo Digital" /></Link>
       <div className="hamburger">
         <Link to="/" onClick={(e)=>{
           e.preventDefault();
-          if (menuref.current) {
-            menuref.current.classList.toggle("open");
+          if (menuRef.current) {
+            menuRef.current.classList.toggle("open");
           }
         }}>Menu</Link>
       </div>
-      <ul className="Menu" ref={menuref}>
+      <ul className="Menu" ref={menuRef}>
         <li>
           <Link to={'about'}>About</Link>
         </li>

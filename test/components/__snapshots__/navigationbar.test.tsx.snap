@@ -4,15 +4,16 @@ exports[`NavigationBar element is rendered 1`] = `
 <div
   className="navigationBar"
 >
-  <h1>
-    <a
-      aria-current="page"
-      href="/"
-      onClick={[Function]}
-    >
-      Komodo
-    </a>
-  </h1>
+  <a
+    aria-current="page"
+    href="/"
+    onClick={[Function]}
+  >
+    <img
+      alt="Komodo Digital"
+      src={Object {}}
+    />
+  </a>
   <div
     className="hamburger"
   >

@@ -7,16 +7,24 @@
     padding: 0;
     color: #ffffff;
     background-color: #000000;
+    transition: all 0.25s linear;
 }
 
-.navigationBar > h1 {
+.navigationBar > a {
     color: white;
     grid-column: 2 / 6;
-}
-
-.navigationBar > h1 > a {
+    display: flex;
+    align-items: center;
     color: white;
     text-decoration: none;
+}
+
+.navigationBar img {
+    height: auto; 
+    width: auto; 
+    max-width: 235px; 
+    max-height: 235px;
+    transition: all 0.25s linear;
 }
 
 .navigationBar > .hamburger {
@@ -67,6 +75,20 @@
     font-size: 24px;
 }
 
+.navigationBar.small {
+    padding: 0;
+}
+
+.navigationBar.small img {
+    max-width: 135px; 
+    max-height: 135px;
+}
+
+.navigationBar.small > ul > li > a {
+    line-height: 45px;
+    font-size: 16px;
+    transition: line-height 0.25s linear;
+}
 
 @media (min-width: 700px) {
 
