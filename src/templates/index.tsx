@@ -15,6 +15,8 @@ import SeeMoreButton from '../components/seemorebutton';
 import ContactSection from '../components/contactsection';
 import ContactForm from '../components/contactform';
 
+import images from "../utils/images";
+
 const renderAst = new rehypeReact({
   createElement: React.createElement,
 }).Compiler;
@@ -38,6 +40,7 @@ interface CaseStudy {
   subtitle: string;
   link: string;
   htmlAst: any;
+  image: string;
 }
 
 interface IndexPageProps {
@@ -74,7 +77,7 @@ export default (props: IndexPageProps) => {
       <QuadGrid>
         {props.services.map((service) => {
           return (
-            <GridItem key={service.title} title={service.title} image={require("../images/approach/Design.png")}>
+            <GridItem key={service.title} title={service.title} image={images[`images/approach/${service.title}.png`]}>
               {renderAst(service.htmlAst)}
             </GridItem>
           );
@@ -90,6 +93,7 @@ export default (props: IndexPageProps) => {
             subtitle={study.subtitle}
             title={study.title}
             link={study.link}
+            image={images[study.image]}
           >
             {renderAst(study.htmlAst)}
           </CaseStudy>

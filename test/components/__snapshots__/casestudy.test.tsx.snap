@@ -10,7 +10,9 @@ exports[`CaseStudy element is rendered 1`] = `
     <div
       className="img"
     >
-      <img />
+      <img
+        src=""
+      />
     </div>
     <div
       className="content"

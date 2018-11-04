@@ -16,7 +16,7 @@
     display: none;
     width: 100px;
     height: 100px;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     background-color: #04114A;
 }

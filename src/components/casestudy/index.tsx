@@ -49,7 +49,6 @@ const CaseStudyLink: React.SFC<Props> = ({ image, subtitle, title, children, lin
           <h2>{title}</h2>
           {children}
           <Link to={link}>Read Case Study</Link>
-          {image}
         </div>
       </div>
     </div>
