@@ -10,6 +10,8 @@ import ContentSection from '../components/contentsection';
 import ContactSection from '../components/contactsection';
 import ContactForm from '../components/contactform';
 
+import images from "../utils/images";
+
 const renderAst = new rehypeReact({
   createElement: React.createElement,
 }).Compiler;
@@ -45,7 +47,7 @@ export default (props: AboutPageProps) => {
       <QuadGrid>
         {props.services.map((service) => {
           return (
-            <GridItem key={service.title} title={service.title}>
+            <GridItem key={service.title} title={service.title} image={images[`images/approach/${service.title}.png`]}>
               {renderAst(service.htmlAst)}
             </GridItem>
           );
