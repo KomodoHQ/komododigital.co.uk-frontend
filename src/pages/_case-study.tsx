@@ -14,6 +14,7 @@ export default (props) => {
   let caseStudies = findNodes('group', props, 'case-studies');
   const caseStudiesIntro = findNode('case-studies/index', props);
   const metrics = findNode(`${props.pageContext.slug}/metrics`, props);
+  const testimonial = findNode(`${props.pageContext.slug}/testimonial`, props);
   const process = findNode(`${props.pageContext.slug}/process`, props);
   const contactsIntro = findNode('contacts', props);
 
@@ -29,6 +30,8 @@ export default (props) => {
     intro: (rootNode) ? rootNode.htmlAst : '',
     metricsIntro: (metrics) ? metrics.htmlAst : '',
     metrics: (metrics) ? metrics.frontmatter.scores : '',
+    testimonial: (testimonial) ? testimonial.frontmatter.testimonial : '',
+    testimonialText: (testimonial) ? testimonial.htmlAst : '',
     processTitle: (process) ? process.frontmatter.title : '',
     process: (process) ? process.htmlAst : '',
     caseStudiesIntro: (caseStudiesIntro) ? caseStudiesIntro.htmlAst : '',
@@ -56,11 +59,12 @@ export const caseStudyQuery = graphql`
             title
             subtitle
             group
+            headercolor
             scores {
               metric
               value
               description
-            }
+            }    
           }
           fileAbsolutePath
         }

@@ -14,6 +14,7 @@ const renderAst = new rehypeReact({
 }).Compiler;
 
 export default (props) => {
+  console.log(props.testimonial)
   return (
     <Layout data={props.data}>
       <ContentSection subtitle={props.subtitle} title={props.title}>{renderAst(props.intro)}</ContentSection>
