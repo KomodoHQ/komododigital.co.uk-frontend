@@ -17,7 +17,7 @@ export default (props) => {
   console.log(props.testimonial)
   return (
     <Layout data={props.data}>
-      <ContentSection subtitle={props.subtitle} title={props.title}>{renderAst(props.intro)}</ContentSection>
+      <ContentSection subtitle={props.subtitle} title={props.title} verticalPadding={200}>{renderAst(props.intro)}</ContentSection>
       <ContentSection title="Solution/Project Outcome">
         {renderAst(props.metricsIntro)}
       </ContentSection>

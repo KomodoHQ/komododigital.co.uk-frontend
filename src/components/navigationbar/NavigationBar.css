@@ -64,8 +64,6 @@
 
 .navigationBar > ul > li {
     padding: 10px 50px;
-    flex: 1;
-    text-align: left;
 }
 
 .navigationBar > ul > li > a {
@@ -73,6 +71,7 @@
     text-decoration: none;
     line-height: 60px;
     font-size: 24px;
+    transition: all 0.25s linear;
 }
 
 .navigationBar.small {
@@ -86,8 +85,7 @@
 
 .navigationBar.small > ul > li > a {
     line-height: 45px;
-    font-size: 16px;
-    transition: line-height 0.25s linear;
+    font-size: 20px;
 }
 
 @media (min-width: 700px) {
@@ -102,43 +100,28 @@
     .navigationBar > .hamburger {
         display: none;
     }
-    
-    .navigationBar > ul {
-        list-style: none;
-        grid-column: 6 / 16;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-end;
 
-        position: initial;
-        transform: none;
-        left: initial;
-        height: auto;
-        width: 100%;
-
-    }
-
-    .navigationBar > ul > li {
-        flex: 1;
-        text-align: right;
-        padding: 0;
-    }
-    
-    .navigationBar > ul > li > a {
-        color: #ffffff;
-        text-decoration: none;
-        font-size: 24px;
-    }
-    
     .navigationBar > h1 {
         grid-column: 2 / 5;
     }
 
     .navigationBar > ul {
-        grid-column: 5 / 16;
+        list-style: none;
+        grid-column: 6 / 16;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: initial;
+        transform: none;
+        left: initial;
+        height: auto;
+        width: 100%;
     }
 
+    .navigationBar > ul > li {
+        padding: 0;
+    }
+    
     .navigationBar > ul > li > a {
         color: #ffffff;
         text-decoration: none;
@@ -155,8 +138,6 @@
         padding: 10px 0;
     }
     .navigationBar > ul > li > a {
-        color: #ffffff;
-        text-decoration: none;
         font-size: 24px;
     }
 
@@ -173,7 +154,7 @@
     }
 
     .navigationBar > h1 {
-        grid-column: 3 / 8;
+        grid-column: 3 / 6;
     }
 
     .navigationBar > ul {
