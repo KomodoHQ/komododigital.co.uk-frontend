@@ -22,13 +22,13 @@
 .navigationBar img {
     height: auto; 
     width: auto; 
-    max-width: 235px; 
+    max-width: 235px;
     max-height: 235px;
     transition: all 0.25s linear;
 }
 
 .navigationBar > .hamburger {
-    grid-column: 6 / 16;
+    grid-column: 10 / 17;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -40,6 +40,11 @@
     color: #ffffff;
     text-decoration: none;
     font-size: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+
 }
 
 .navigationBar > ul {
@@ -79,8 +84,8 @@
 }
 
 .navigationBar.small img {
-    max-width: 135px; 
-    max-height: 135px;
+    max-width: 235px; 
+    max-height: 235px;
 }
 
 .navigationBar.small > ul > li > a {
@@ -127,6 +132,12 @@
         text-decoration: none;
         font-size: 16px;
     }
+
+    .navigationBar.small img {
+        max-width: 135px; 
+        max-height: 135px;
+    }
+
 }
 
 @media (min-width: 900px) {

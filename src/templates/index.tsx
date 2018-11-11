@@ -100,7 +100,7 @@ export default (props: IndexPageProps) => {
         );
       })}
       <SeeMoreButton title="See More Work" />
-      <ContentSection title="Client Portfolio">
+      <ContentSection title="Client Portfolio" paddingTop={0} paddingBottom={40}>
         {renderAst(props.clientPortfoliosIntro)}
       </ContentSection>
       <PortfolioGrid>
@@ -129,8 +129,8 @@ export default (props: IndexPageProps) => {
         return <BlogPost key={insight.node.title} slug={insight.node.slug} title={insight.node.title} date={insight.node.date} image={insight.node.imageSource} />;
       })}
       </BlogGrid>
-      <SeeMoreButton title="See More Insights" />
-      <ContentSection verticalPadding={50} background="#FFFFFF">
+      <SeeMoreButton title="See More Insights" link={"/blog-list"} />
+      <ContentSection background="#FFFFFF">
         {renderAst(props.contactsIntro)}
       </ContentSection>
       <ContactSection>

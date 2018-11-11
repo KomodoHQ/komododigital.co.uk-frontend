@@ -88,43 +88,43 @@ export default (props: AboutPageProps) => {
           <li>Innovation development</li>
         </ul>
       </Services>
-      <ContentSection title="Standards">
+      <ContentSection title="Standards" paddingTop={180} paddingBottom={80}>
         {renderAst(props.standardsIntro)}
       </ContentSection>
       <PortfolioGrid title="We Design With">
-        <StandardItem imgsrc={require("../images/standards/Sketch.png")} link="/AWS" />
-        <StandardItem imgsrc={require("../images/standards/AWS.png")} link="/AWS" />
-        <StandardItem imgsrc={require("../images/standards/AWS.png")} link="/AWS" />
-        <StandardItem imgsrc={require("../images/standards/AWS.png")} link="/AWS" />
+        <StandardItem imgsrc={require("../images/standards/Sketch.png")} link="https://www.sketchapp.com/" />
+        <StandardItem imgsrc={require("../images/standards/Abstract.png")} link="https://www.goabstract.com/" />
+        <StandardItem imgsrc={require("../images/standards/InVision.png")} link="https://www.invisionapp.com/" />
+        <StandardItem imgsrc={require("../images/standards/AdobeCC.png")} link="https://www.adobe.com/uk/creativecloud.html" />
       </PortfolioGrid>
       <PortfolioGrid title="We Develop With">
-        <StandardItem imgsrc={require("../images/standards/PHP.png")} link="/AWS" />
-        <StandardItem imgsrc={require("../images/standards/HTML5.png")} link="/AWS" />
-        <StandardItem imgsrc={require("../images/standards/Node.png")} link="/AWS" />
-        <StandardItem imgsrc={require("../images/standards/React.png")} link="/AWS" />
-        <StandardItem imgsrc={require("../images/standards/Angular.png")} link="/AWS" />
-        <StandardItem imgsrc={require("../images/standards/Swift.png")} link="/AWS" />
-        <StandardItem imgsrc={require("../images/standards/Java.png")} link="/AWS" />
-        <StandardItem imgsrc={require("../images/standards/Xamarin.png")} link="/AWS" />
+        <StandardItem imgsrc={require("../images/standards/PHP.png")} link="http://www.php.net/" />
+        <StandardItem imgsrc={require("../images/standards/HTML5.png")} link="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" />
+        <StandardItem imgsrc={require("../images/standards/Node.png")} link="https://nodejs.org/en/" />
+        <StandardItem imgsrc={require("../images/standards/React.png")} link="https://reactjs.org/" />
+        <StandardItem imgsrc={require("../images/standards/Angular.png")} link="https://angularjs.org/" />
+        <StandardItem imgsrc={require("../images/standards/Swift.png")} link="https://developer.apple.com/swift/" />
+        <StandardItem imgsrc={require("../images/standards/Java.png")} link="https://www.java.com/en/" />
+        <StandardItem imgsrc={require("../images/standards/Xamarin.png")} link="https://visualstudio.microsoft.com/xamarin/" />
       </PortfolioGrid>
       <PortfolioGrid title="We Test With">
-        <StandardItem imgsrc={require("../images/standards/Codeception.png")} link="/AWS" />
-        <StandardItem imgsrc={require("../images/standards/Chai.png")} link="/AWS" />
-        <StandardItem imgsrc={require("../images/standards/Selenium.png")} link="/AWS" />
-        <StandardItem imgsrc={require("../images/standards/Jest.png")} link="/AWS" />
+        <StandardItem imgsrc={require("../images/standards/Codeception.png")} link="https://codeception.com/" />
+        <StandardItem imgsrc={require("../images/standards/Chai.png")} link="https://www.chaijs.com/" />
+        <StandardItem imgsrc={require("../images/standards/Selenium.png")} link="https://www.seleniumhq.org/" />
+        <StandardItem imgsrc={require("../images/standards/Jest.png")} link="https://jestjs.io/" />
       </PortfolioGrid>
       <PortfolioGrid title="We Deploy With">
-        <StandardItem imgsrc={require("../images/standards/Apple.png")} link="/AWS" />
-        <StandardItem imgsrc={require("../images/standards/Android.png")} link="/AWS" />
-        <StandardItem imgsrc={require("../images/standards/AWS.png")} link="/AWS" />
-        <StandardItem imgsrc={require("../images/standards/Azure.png")} link="/AWS" />
+        <StandardItem imgsrc={require("../images/standards/Apple.png")} link="https://www.apple.com/uk/" />
+        <StandardItem imgsrc={require("../images/standards/Android.png")} link="https://www.android.com/" />
+        <StandardItem imgsrc={require("../images/standards/AWS.png")} link="https://aws.amazon.com/" />
+        <StandardItem imgsrc={require("../images/standards/Azure.png")} link="https://azure.microsoft.com/en-gb/" />
       </PortfolioGrid>
       <PortfolioGrid title="We Are Certified By">
-        <StandardItem imgsrc={require("../images/standards/CyberEssentials.png")} link="/AWS" />
-        <StandardItem imgsrc={require("../images/standards/ISTQB.png")} link="/AWS" />
-        <StandardItem imgsrc={require("../images/standards/AWS.png")} link="/AWS" />
+        <StandardItem imgsrc={require("../images/standards/CyberEssentials.png")} link="https://www.cyberessentials.ncsc.gov.uk/" />
+        <StandardItem imgsrc={require("../images/standards/ISTQB.png")} link="https://www.istqb.org/" />
+        <StandardItem>NPPV 2</StandardItem>
       </PortfolioGrid>
-      <ContentSection background="#ffffff" verticalPadding={50} >
+      <ContentSection background="#ffffff" marginTop={180} >
         {renderAst(props.contactsIntro)}
       </ContentSection>
       <ContactSection>

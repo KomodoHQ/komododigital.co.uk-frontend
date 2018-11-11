@@ -21,6 +21,7 @@ import './standarditem.css';
 interface Props {
   imgsrc?: string;
   link?: string;
+  children?: ReactNode;
 }
 
 /**
@@ -29,11 +30,14 @@ interface Props {
  * 
  * @param data
  */
-const StandardItem: React.SFC<Props> = ({ imgsrc, link }) => {
-  const img = link ? <Link to={link}><img src={imgsrc} /></Link>  : <img src={imgsrc} />; 
+const StandardItem: React.SFC<Props> = ({ imgsrc, link, children }) => {
+
+  const logo = imgsrc ? <img src={imgsrc} /> : <div>{children}</div>;
+  const el = link ? <a href={link}><img src={imgsrc} /></a>  : logo;
+
   return (
     <div className="StandardItem">
-      {img}
+      {el}
     </div>
   );
 };

@@ -5,11 +5,27 @@
 }
 
 .Metric > span.number {
-    font-size: 4.0em;
-    color: green;
+    color: #69C900;
+    font-size: 70px;
+    line-height: 86px;
 }
 
 .Metric > span {
     display: block;
-    color: green;
+    color: black;
+    font-size: 28px;
+    line-height: 34px;
 }
+
+.Metric > hr {
+    background-color: #E0E0E0;
+}
+
+.Metric > p {
+    display: block;
+    color: black;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+
