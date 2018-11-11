@@ -43,7 +43,7 @@ const ContentSection: React.SFC<Props> = ({ title = 'TITLE HERE', subtitle= null
 
   const style = {
     backgroundColor: background,
-    marginTop: marginTop ? marginTop+'px' : null,
+    marginTop: marginTop ? marginTop+'px' : 'inherit',
     paddingTop: verticalPadding ? verticalPadding+'px' : paddingTop+'px',
     paddingBottom: verticalPadding ? verticalPadding+'px' : paddingBottom+'px',
   }

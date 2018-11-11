@@ -26,7 +26,18 @@ Array [
         href="/"
         onClick={[Function]}
       >
-        Menu
+        <img
+          height={64}
+          src={Object {}}
+          style={
+            Object {
+              "height": 64,
+              "marginTop": 10,
+              "width": 64,
+            }
+          }
+          width={64}
+        />
       </a>
     </div>
     <ul
@@ -74,6 +85,7 @@ Array [
       style={
         Object {
           "backgroundColor": "#000000",
+          "marginTop": "inherit",
           "paddingBottom": "200px",
           "paddingTop": "200px",
         }
@@ -100,8 +112,9 @@ Array [
       style={
         Object {
           "backgroundColor": "inherit",
-          "paddingBottom": "100px",
-          "paddingTop": "100px",
+          "marginTop": "inherit",
+          "paddingBottom": "80px",
+          "paddingTop": "180px",
         }
       }
     >
@@ -131,8 +144,9 @@ Array [
       style={
         Object {
           "backgroundColor": "inherit",
-          "paddingBottom": "100px",
-          "paddingTop": "100px",
+          "marginTop": "inherit",
+          "paddingBottom": "80px",
+          "paddingTop": "180px",
         }
       }
     >
@@ -157,8 +171,9 @@ Array [
       style={
         Object {
           "backgroundColor": "inherit",
-          "paddingBottom": "100px",
-          "paddingTop": "100px",
+          "marginTop": "inherit",
+          "paddingBottom": "80px",
+          "paddingTop": "180px",
         }
       }
     >
@@ -192,8 +207,9 @@ Array [
       style={
         Object {
           "backgroundColor": "inherit",
-          "paddingBottom": "100px",
-          "paddingTop": "100px",
+          "marginTop": "inherit",
+          "paddingBottom": "40px",
+          "paddingTop": "0px",
         }
       }
     >
@@ -219,7 +235,6 @@ Array [
       >
         <a
           href="/About"
-          onClick={[Function]}
         >
           <img
             src={Object {}}
@@ -231,7 +246,6 @@ Array [
       >
         <a
           href="/About"
-          onClick={[Function]}
         >
           <img
             src={Object {}}
@@ -243,7 +257,6 @@ Array [
       >
         <a
           href="/About"
-          onClick={[Function]}
         >
           <img
             src={Object {}}
@@ -255,7 +268,6 @@ Array [
       >
         <a
           href="/About"
-          onClick={[Function]}
         >
           <img
             src={Object {}}
@@ -267,7 +279,6 @@ Array [
       >
         <a
           href="/About"
-          onClick={[Function]}
         >
           <img
             src={Object {}}
@@ -279,7 +290,6 @@ Array [
       >
         <a
           href="/About"
-          onClick={[Function]}
         >
           <img
             src={Object {}}
@@ -291,7 +301,6 @@ Array [
       >
         <a
           href="/About"
-          onClick={[Function]}
         >
           <img
             src={Object {}}
@@ -303,7 +312,6 @@ Array [
       >
         <a
           href="/About"
-          onClick={[Function]}
         >
           <img
             src={Object {}}
@@ -315,7 +323,6 @@ Array [
       >
         <a
           href="/About"
-          onClick={[Function]}
         >
           <img
             src={Object {}}
@@ -327,7 +334,6 @@ Array [
       >
         <a
           href="/About"
-          onClick={[Function]}
         >
           <img
             src={Object {}}
@@ -339,7 +345,6 @@ Array [
       >
         <a
           href="/About"
-          onClick={[Function]}
         >
           <img
             src={Object {}}
@@ -351,7 +356,6 @@ Array [
       >
         <a
           href="/About"
-          onClick={[Function]}
         >
           <img
             src={Object {}}
@@ -363,7 +367,6 @@ Array [
       >
         <a
           href="/About"
-          onClick={[Function]}
         >
           <img
             src={Object {}}
@@ -375,7 +378,6 @@ Array [
       >
         <a
           href="/About"
-          onClick={[Function]}
         >
           <img
             src={Object {}}
@@ -387,7 +389,6 @@ Array [
       >
         <a
           href="/About"
-          onClick={[Function]}
         >
           <img
             src={Object {}}
@@ -399,7 +400,6 @@ Array [
       >
         <a
           href="/About"
-          onClick={[Function]}
         >
           <img
             src={Object {}}
@@ -412,8 +412,9 @@ Array [
       style={
         Object {
           "backgroundColor": "inherit",
-          "paddingBottom": "100px",
-          "paddingTop": "100px",
+          "marginTop": "inherit",
+          "paddingBottom": "80px",
+          "paddingTop": "180px",
         }
       }
     >
@@ -437,7 +438,7 @@ Array [
       className="seemorebutton-wrapper"
     >
       <a
-        href="/About"
+        href="/blog-list"
         onClick={[Function]}
       >
         <button>
@@ -450,8 +451,9 @@ Array [
       style={
         Object {
           "backgroundColor": "#FFFFFF",
-          "paddingBottom": "50px",
-          "paddingTop": "50px",
+          "marginTop": "inherit",
+          "paddingBottom": "80px",
+          "paddingTop": "180px",
         }
       }
     >

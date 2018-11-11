@@ -26,7 +26,18 @@ Array [
         href="/"
         onClick={[Function]}
       >
-        Menu
+        <img
+          height={64}
+          src={Object {}}
+          style={
+            Object {
+              "height": 64,
+              "marginTop": 10,
+              "width": 64,
+            }
+          }
+          width={64}
+        />
       </a>
     </div>
     <ul
@@ -74,8 +85,9 @@ Array [
       style={
         Object {
           "backgroundColor": "#ffffff",
-          "paddingBottom": "50px",
-          "paddingTop": "50px",
+          "marginTop": "inherit",
+          "paddingBottom": "200px",
+          "paddingTop": "200px",
         }
       }
     >
@@ -263,6 +275,7 @@ Array [
       style={
         Object {
           "backgroundColor": "#151515",
+          "marginTop": "inherit",
           "paddingBottom": "150px",
           "paddingTop": "150px",
         }

@@ -106,7 +106,7 @@
       "node"
     ],
     "moduleNameMapper": {
-      "\\.(css|sass|scss)$": "<rootDir>/test/__mocks__/styleMock.js"
+      "\\.(css|sass|scss|svg)$": "<rootDir>/test/__mocks__/styleMock.js"
     },
     "testPathIgnorePatterns": [
       "node_modules",

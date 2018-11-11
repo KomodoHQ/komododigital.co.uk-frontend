@@ -6,7 +6,6 @@ exports[`StandardItem element is rendered 1`] = `
 >
   <a
     href="/About"
-    onClick={[Function]}
   >
     <img
       src="image.png"

@@ -26,7 +26,18 @@ Array [
         href="/"
         onClick={[Function]}
       >
-        Menu
+        <img
+          height={64}
+          src={Object {}}
+          style={
+            Object {
+              "height": 64,
+              "marginTop": 10,
+              "width": 64,
+            }
+          }
+          width={64}
+        />
       </a>
     </div>
     <ul
@@ -74,8 +85,9 @@ Array [
       style={
         Object {
           "backgroundColor": "#000000",
-          "paddingBottom": "100px",
-          "paddingTop": "100px",
+          "marginTop": "inherit",
+          "paddingBottom": "200px",
+          "paddingTop": "200px",
         }
       }
     >
@@ -100,8 +112,9 @@ Array [
       style={
         Object {
           "backgroundColor": "inherit",
-          "paddingBottom": "100px",
-          "paddingTop": "100px",
+          "marginTop": "inherit",
+          "paddingBottom": "80px",
+          "paddingTop": "180px",
         }
       }
     >
@@ -126,8 +139,9 @@ Array [
       style={
         Object {
           "backgroundColor": "inherit",
-          "paddingBottom": "100px",
-          "paddingTop": "100px",
+          "marginTop": "inherit",
+          "paddingBottom": "80px",
+          "paddingTop": "180px",
         }
       }
     >
@@ -231,8 +245,9 @@ Array [
       style={
         Object {
           "backgroundColor": "inherit",
-          "paddingBottom": "100px",
-          "paddingTop": "100px",
+          "marginTop": "inherit",
+          "paddingBottom": "80px",
+          "paddingTop": "180px",
         }
       }
     >
@@ -259,8 +274,7 @@ Array [
         className="StandardItem"
       >
         <a
-          href="/AWS"
-          onClick={[Function]}
+          href="https://www.sketchapp.com/"
         >
           <img
             src={Object {}}
@@ -271,8 +285,7 @@ Array [
         className="StandardItem"
       >
         <a
-          href="/AWS"
-          onClick={[Function]}
+          href="https://www.goabstract.com/"
         >
           <img
             src={Object {}}
@@ -283,8 +296,7 @@ Array [
         className="StandardItem"
       >
         <a
-          href="/AWS"
-          onClick={[Function]}
+          href="https://www.invisionapp.com/"
         >
           <img
             src={Object {}}
@@ -295,8 +307,7 @@ Array [
         className="StandardItem"
       >
         <a
-          href="/AWS"
-          onClick={[Function]}
+          href="https://www.adobe.com/uk/creativecloud.html"
         >
           <img
             src={Object {}}
@@ -314,8 +325,7 @@ Array [
         className="StandardItem"
       >
         <a
-          href="/AWS"
-          onClick={[Function]}
+          href="http://www.php.net/"
         >
           <img
             src={Object {}}
@@ -326,8 +336,7 @@ Array [
         className="StandardItem"
       >
         <a
-          href="/AWS"
-          onClick={[Function]}
+          href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5"
         >
           <img
             src={Object {}}
@@ -338,8 +347,7 @@ Array [
         className="StandardItem"
       >
         <a
-          href="/AWS"
-          onClick={[Function]}
+          href="https://nodejs.org/en/"
         >
           <img
             src={Object {}}
@@ -350,8 +358,7 @@ Array [
         className="StandardItem"
       >
         <a
-          href="/AWS"
-          onClick={[Function]}
+          href="https://reactjs.org/"
         >
           <img
             src={Object {}}
@@ -362,8 +369,7 @@ Array [
         className="StandardItem"
       >
         <a
-          href="/AWS"
-          onClick={[Function]}
+          href="https://angularjs.org/"
         >
           <img
             src={Object {}}
@@ -374,8 +380,7 @@ Array [
         className="StandardItem"
       >
         <a
-          href="/AWS"
-          onClick={[Function]}
+          href="https://developer.apple.com/swift/"
         >
           <img
             src={Object {}}
@@ -386,8 +391,7 @@ Array [
         className="StandardItem"
       >
         <a
-          href="/AWS"
-          onClick={[Function]}
+          href="https://www.java.com/en/"
         >
           <img
             src={Object {}}
@@ -398,8 +402,7 @@ Array [
         className="StandardItem"
       >
         <a
-          href="/AWS"
-          onClick={[Function]}
+          href="https://visualstudio.microsoft.com/xamarin/"
         >
           <img
             src={Object {}}
@@ -417,8 +420,7 @@ Array [
         className="StandardItem"
       >
         <a
-          href="/AWS"
-          onClick={[Function]}
+          href="https://codeception.com/"
         >
           <img
             src={Object {}}
@@ -429,8 +431,7 @@ Array [
         className="StandardItem"
       >
         <a
-          href="/AWS"
-          onClick={[Function]}
+          href="https://www.chaijs.com/"
         >
           <img
             src={Object {}}
@@ -441,8 +442,7 @@ Array [
         className="StandardItem"
       >
         <a
-          href="/AWS"
-          onClick={[Function]}
+          href="https://www.seleniumhq.org/"
         >
           <img
             src={Object {}}
@@ -453,8 +453,7 @@ Array [
         className="StandardItem"
       >
         <a
-          href="/AWS"
-          onClick={[Function]}
+          href="https://jestjs.io/"
         >
           <img
             src={Object {}}
@@ -472,8 +471,7 @@ Array [
         className="StandardItem"
       >
         <a
-          href="/AWS"
-          onClick={[Function]}
+          href="https://www.apple.com/uk/"
         >
           <img
             src={Object {}}
@@ -484,8 +482,7 @@ Array [
         className="StandardItem"
       >
         <a
-          href="/AWS"
-          onClick={[Function]}
+          href="https://www.android.com/"
         >
           <img
             src={Object {}}
@@ -496,8 +493,7 @@ Array [
         className="StandardItem"
       >
         <a
-          href="/AWS"
-          onClick={[Function]}
+          href="https://aws.amazon.com/"
         >
           <img
             src={Object {}}
@@ -508,8 +504,7 @@ Array [
         className="StandardItem"
       >
         <a
-          href="/AWS"
-          onClick={[Function]}
+          href="https://azure.microsoft.com/en-gb/"
         >
           <img
             src={Object {}}
@@ -527,8 +522,7 @@ Array [
         className="StandardItem"
       >
         <a
-          href="/AWS"
-          onClick={[Function]}
+          href="https://www.cyberessentials.ncsc.gov.uk/"
         >
           <img
             src={Object {}}
@@ -539,8 +533,7 @@ Array [
         className="StandardItem"
       >
         <a
-          href="/AWS"
-          onClick={[Function]}
+          href="https://www.istqb.org/"
         >
           <img
             src={Object {}}
@@ -550,14 +543,9 @@ Array [
       <div
         className="StandardItem"
       >
-        <a
-          href="/AWS"
-          onClick={[Function]}
-        >
-          <img
-            src={Object {}}
-          />
-        </a>
+        <div>
+          NPPV 2
+        </div>
       </div>
     </div>
     <div
@@ -565,8 +553,9 @@ Array [
       style={
         Object {
           "backgroundColor": "#ffffff",
-          "paddingBottom": "50px",
-          "paddingTop": "50px",
+          "marginTop": "180px",
+          "paddingBottom": "80px",
+          "paddingTop": "180px",
         }
       }
     >

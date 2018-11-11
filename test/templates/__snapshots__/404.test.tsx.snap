@@ -26,7 +26,18 @@ Array [
         href="/"
         onClick={[Function]}
       >
-        Menu
+        <img
+          height={64}
+          src={Object {}}
+          style={
+            Object {
+              "height": 64,
+              "marginTop": 10,
+              "width": 64,
+            }
+          }
+          width={64}
+        />
       </a>
     </div>
     <ul

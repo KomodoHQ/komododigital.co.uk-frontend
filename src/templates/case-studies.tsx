@@ -33,7 +33,7 @@ export default (props) => {
         );
       })}
       <SeeMoreButton title="See More Work" />
-      <ContentSection background={"#ffffff"} verticalPadding={50}>
+      <ContentSection background={"#ffffff"}>
         {renderAst(props.contactsIntro)}
       </ContentSection>
       <ContactSection>

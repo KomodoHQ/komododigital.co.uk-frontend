@@ -6,8 +6,9 @@ exports[`ContentSection element is rendered 1`] = `
   style={
     Object {
       "backgroundColor": "inherit",
-      "paddingBottom": "100px",
-      "paddingTop": "100px",
+      "marginTop": "inherit",
+      "paddingBottom": "80px",
+      "paddingTop": "180px",
     }
   }
 >
