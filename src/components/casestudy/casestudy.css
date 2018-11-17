@@ -106,6 +106,10 @@
         margin-bottom: 50px;
     }
 
+    .case-study-link {
+        grid-column: 3 / 15;
+    }
+
     .case-study-link > div.img {
         width: 450px;
         height: 450px;

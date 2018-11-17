@@ -169,6 +169,6 @@
     }
 
     .navigationBar > ul {
-        grid-column: 8 / 15;
+        grid-column: 9 / 16;
     }
 }

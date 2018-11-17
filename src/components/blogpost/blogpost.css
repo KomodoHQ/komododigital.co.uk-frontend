@@ -1,18 +1,60 @@
-.blogpost {
+.blogpostLink {
     color: black;
     background-color: white;
     box-shadow: 0 1px 4px 0 rgba(0,0,0,0.2);
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
 }
 
-.blogpost > img {
+.blogpostLink > img {
     width: 100%;
     object-fit: cover;
 }
 
-.blogpost > div {
-    padding: 10px 30px;
+.blogpostLink > div {
+    padding: 10px 30px 30px;
+    display: flex;
 }
+
+.blogpostLink > p {
+    padding: 10px 30px 0;
+    margin: 10px 0 0;
+    font-size: 12px;
+}
+
+.blogpostLink > h1 {
+    padding: 0 30px 0;
+    min-height: 100px;
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.blogpostLink > .read {
+    align-items: flex-end;
+    justify-self: flex-end;
+}
+
+.blogpostLink > .read > .readingTime {
+    flex: 1;
+    color: #888888;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.blogpostLink > .read > .readmore {
+    flex: 1;
+    text-align: right;
+    font-size: 18px;
+    font-weight: bold;
+    align-self: flex-end;
+}
+.blogpostLink > .read > .readmore::after {
+    content: '→';
+    margin: 3px 0 0 5px;
+}
+
 
 @media (min-width: 700px) {
 
@@ -23,7 +65,7 @@
 }
 
 @media (min-width: 1430px) {
-    .blogpost > img {
+    .blogpostLink > img {
         width: 370px;
         height: 240px;
     }
