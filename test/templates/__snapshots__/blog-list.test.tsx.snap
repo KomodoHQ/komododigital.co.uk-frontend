@@ -84,7 +84,7 @@ Array [
       className="BlogGrid"
     >
       <a
-        className="blogpost"
+        className="blogpostLink"
         href="/blog/test"
         onClick={[Function]}
       >
@@ -92,16 +92,27 @@ Array [
           alt="test post"
           width={370}
         />
-        <div>
-          <h1>
-            test post
-          </h1>
-          <span>
-            2018-09-20
-          </span>
-          <p>
+        <p>
+          INSIGHTS
+        </p>
+        <h1>
+          test post
+        </h1>
+        <div
+          className="read"
+        >
+          <div
+            className="readingTime"
+          >
+            Read time: 
+            5
+             mins
+          </div>
+          <div
+            className="readmore"
+          >
             Read More
-          </p>
+          </div>
         </div>
       </a>
     </div>

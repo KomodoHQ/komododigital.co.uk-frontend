@@ -9,7 +9,6 @@ test('Blog template is rendered', () => {
       {
         node: {
           slug: 'test',
-          date: '2018-09-20',
           imagesource: 'https://www.komododigital.co.uk/static/media/logo.50a4b652.svg',
           title: 'test post',
         },
