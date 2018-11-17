@@ -116,158 +116,158 @@ Array [
         </div>
       </a>
     </div>
-    <footer>
-      <div
-        className="komodo"
-      >
-        <img
-          alt="Komodo - People Friendly Software"
-          src={Object {}}
-        />
-      </div>
-      <div
-        className="address"
-      >
-        <span>
-          Address
-        </span>
-        <address>
-          Komodo Digital,
-          <br />
-          63 Westgate Rd,
-          <br />
-          Newcastle upon Tyne,
-          <br />
-          NE1 1SG
-        </address>
-        <address>
-          Komodo | The Core
-          <br />
-          Science Central, Bath Ln,
-          <br />
-          Newcastle upon Tyne
-          <br />
-          NE4 5TF
-        </address>
-      </div>
-      <div
-        className="sitemap"
-      >
-        <span>
-          Sitemap
-        </span>
-        <ul>
-          <li>
-            <a
-              aria-current="page"
-              href="/"
-              onClick={[Function]}
-            >
-              Home
-            </a>
-          </li>
-          <li>
-            <a
-              aria-current="page"
-              href="/"
-              onClick={[Function]}
-            >
-              Case Studies
-            </a>
-          </li>
-          <li>
-            <a
-              aria-current="page"
-              href="/"
-              onClick={[Function]}
-            >
-              Insights
-            </a>
-          </li>
-          <li>
-            <a
-              aria-current="page"
-              href="/"
-              onClick={[Function]}
-            >
-              Careers
-            </a>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <a
-              aria-current="page"
-              href="/"
-              onClick={[Function]}
-            >
-              Contact
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://twitter.com/komodohq"
-            >
-              Twitter
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://facebook.com/komodohq"
-            >
-              Facebook
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://linkedin.com/komodohq"
-            >
-              LinkedIn
-            </a>
-          </li>
-        </ul>
-      </div>
-    </footer>
-    <footer
-      className="legal-footer"
-    >
-      <div
-        className="company"
-      >
-        <span>
-          Komodo Digital Copyright © 2018
-        </span>
-        <br />
-        <a
-          aria-current="page"
-          href="/"
-          onClick={[Function]}
-        >
-          Privacy Policy
-        </a>
-         | 
-        <a
-          aria-current="page"
-          href="/"
-          onClick={[Function]}
-        >
-          Terms and Conditions
-        </a>
-      </div>
-      <div
-        className="contact"
-      >
-        Get in touch on:
-        <br />
-        <a
-          href="/tel:0191 228 6555"
-          onClick={[Function]}
-        >
-          0191 228 6555
-        </a>
-      </div>
-    </footer>
   </div>,
+  <footer>
+    <div
+      className="komodo"
+    >
+      <img
+        alt="Komodo - People Friendly Software"
+        src={Object {}}
+      />
+    </div>
+    <div
+      className="address"
+    >
+      <span>
+        Address
+      </span>
+      <address>
+        Komodo Digital,
+        <br />
+        63 Westgate Rd,
+        <br />
+        Newcastle upon Tyne,
+        <br />
+        NE1 1SG
+      </address>
+      <address>
+        Komodo | The Core
+        <br />
+        Science Central, Bath Ln,
+        <br />
+        Newcastle upon Tyne
+        <br />
+        NE4 5TF
+      </address>
+    </div>
+    <div
+      className="sitemap"
+    >
+      <span>
+        Sitemap
+      </span>
+      <ul>
+        <li>
+          <a
+            aria-current="page"
+            href="/"
+            onClick={[Function]}
+          >
+            Home
+          </a>
+        </li>
+        <li>
+          <a
+            aria-current="page"
+            href="/"
+            onClick={[Function]}
+          >
+            Case Studies
+          </a>
+        </li>
+        <li>
+          <a
+            aria-current="page"
+            href="/"
+            onClick={[Function]}
+          >
+            Insights
+          </a>
+        </li>
+        <li>
+          <a
+            aria-current="page"
+            href="/"
+            onClick={[Function]}
+          >
+            Careers
+          </a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a
+            aria-current="page"
+            href="/"
+            onClick={[Function]}
+          >
+            Contact
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://twitter.com/komodohq"
+          >
+            Twitter
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://facebook.com/komodohq"
+          >
+            Facebook
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://linkedin.com/komodohq"
+          >
+            LinkedIn
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>,
+  <footer
+    className="legal-footer"
+  >
+    <div
+      className="company"
+    >
+      <span>
+        Komodo Digital Copyright © 2018
+      </span>
+      <br />
+      <a
+        aria-current="page"
+        href="/"
+        onClick={[Function]}
+      >
+        Privacy Policy
+      </a>
+       | 
+      <a
+        aria-current="page"
+        href="/"
+        onClick={[Function]}
+      >
+        Terms and Conditions
+      </a>
+    </div>
+    <div
+      className="contact"
+    >
+      Get in touch on:
+      <br />
+      <a
+        href="/tel:0191 228 6555"
+        onClick={[Function]}
+      >
+        0191 228 6555
+      </a>
+    </div>
+  </footer>,
   <noscript>
     <img
       alt=""

@@ -22,9 +22,6 @@ const Layout: React.SFC<Props> = ({ data, children }) => {
         url="http://test"
         // TODO: Individual page title
       >
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto: 300,400,500" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-
         <meta
           name="google-site-verification"
           content="NjvhRGkpFOUEaqakyfa4pkVtErwqLzH3oPITur3WIYA"
@@ -36,9 +33,9 @@ const Layout: React.SFC<Props> = ({ data, children }) => {
       <NavigationBar />
       <div className="main">
         {children}
-        <Footer />
-        <LegalFooter />
       </div>
+      <Footer />
+      <LegalFooter />
       <noscript>
         <img
           height="1"
