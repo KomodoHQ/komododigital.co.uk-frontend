@@ -1,3 +1,5 @@
+@import '../settings.css';
+
 .case-study-link-wrapper {
     margin-bottom: 50px;
 }
@@ -11,11 +13,12 @@
 
 .case-study-link > div.img {
     display: none;
-    width: 100px;
-    height: 100px;
     align-items: flex-end;
     justify-content: center;
+    overflow: hidden;
+    padding: 0 10px;
     background-color: #04114A;
+    object-fit: contain;
 }
 
 .case-study-link > div.content {
@@ -50,53 +53,15 @@
 }
 
 
-@media (min-width: 600px) {
-    .case-study-link-wrapper {
-        margin-bottom: 50px;
-    }
-
+@media (--mobile-viewport) {
     .case-study-link > div.img {
         display: flex;
-        width: 150px;
-        height: 150px;
     }
     
 }
 
-@media (min-width: 800px) {
-    .case-study-link-wrapper {
-        margin-bottom: 50px;
-    }
-
-    .case-study-link > div.img {
-        width: 150px;
-        height: 150px;
-    }
-    
-}
-
-@media (min-width: 1000px) {
-    .case-study-link-wrapper {
-        margin-bottom: 50px;
-    }
-
-    .case-study-link > div.img {
-        width: 300px;
-        height: 300px;
-    }
-}
-
-@media (min-width: 1430px) {
-    .case-study-link-wrapper {
-        margin-bottom: 50px;
-    }
-
+@media (--desktop-viewport) {
     .case-study-link {
         grid-column: 3 / 15;
-    }
-
-    .case-study-link > div.img {
-        width: 450px;
-        height: 450px;
     }
 }

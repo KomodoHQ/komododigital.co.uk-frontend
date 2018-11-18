@@ -9,12 +9,13 @@ import ContactSection from '../components/contactsection';
 import ContactForm from '../components/contactform';
 import CaseStudy from '../components/casestudy';
 
+import images from "../utils/images";
+
 const renderAst = new rehypeReact({
   createElement: React.createElement,
 }).Compiler;
 
 export default (props) => {
-  console.log(props.testimonial)
   return (
     <Layout data={props.data}>
       <ContentSection subtitle={props.subtitle} title={props.title}>{renderAst(props.intro)}</ContentSection>
@@ -47,6 +48,7 @@ export default (props) => {
               subtitle={study.subtitle}
               title={study.title}
               link={study.link}
+              image={images[study.image]}
             >
               {renderAst(study.htmlAst)}
             </CaseStudy>
