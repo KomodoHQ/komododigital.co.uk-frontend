@@ -7,6 +7,11 @@ Array [
   </noscript>,
   <div
     className="komodoGridWrapper navigationBar"
+    style={
+      Object {
+        "background": "#000000",
+      }
+    }
   >
     <a
       aria-current="page"
@@ -84,7 +89,7 @@ Array [
       className="komodoGridWrapper cs-wrapper invert"
       style={
         Object {
-          "backgroundColor": "#000000",
+          "background": "#000000",
           "marginTop": "inherit",
           "paddingBottom": "200px",
           "paddingTop": "200px",
@@ -111,7 +116,7 @@ Array [
       className="komodoGridWrapper cs-wrapper "
       style={
         Object {
-          "backgroundColor": "inherit",
+          "background": "none",
           "marginTop": "inherit",
           "paddingBottom": "80px",
           "paddingTop": "180px",
@@ -143,7 +148,7 @@ Array [
       className="komodoGridWrapper cs-wrapper "
       style={
         Object {
-          "backgroundColor": "inherit",
+          "background": "none",
           "marginTop": "inherit",
           "paddingBottom": "80px",
           "paddingTop": "180px",
@@ -170,7 +175,7 @@ Array [
       className="komodoGridWrapper cs-wrapper "
       style={
         Object {
-          "backgroundColor": "inherit",
+          "background": "none",
           "marginTop": "inherit",
           "paddingBottom": "80px",
           "paddingTop": "180px",
@@ -206,7 +211,7 @@ Array [
       className="komodoGridWrapper cs-wrapper "
       style={
         Object {
-          "backgroundColor": "inherit",
+          "background": "none",
           "marginTop": "inherit",
           "paddingBottom": "40px",
           "paddingTop": "0px",
@@ -411,7 +416,7 @@ Array [
       className="komodoGridWrapper cs-wrapper "
       style={
         Object {
-          "backgroundColor": "inherit",
+          "background": "none",
           "marginTop": "inherit",
           "paddingBottom": "80px",
           "paddingTop": "180px",
@@ -450,7 +455,7 @@ Array [
       className="komodoGridWrapper cs-wrapper "
       style={
         Object {
-          "backgroundColor": "#FFFFFF",
+          "background": "#FFFFFF",
           "marginTop": "inherit",
           "paddingBottom": "80px",
           "paddingTop": "180px",

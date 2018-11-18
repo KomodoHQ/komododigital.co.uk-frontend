@@ -4,7 +4,6 @@
     position: fixed;
     padding: 0;
     color: #ffffff;
-    background-color: #000000;
     transition: all 0.25s linear;
 }
 
@@ -48,7 +47,6 @@
 .navigationBar > ul {
     padding: 0;
     margin: 0;
-    background-color: #000000;
     position: fixed;
     top: 0;
     left: -120vw;
@@ -147,7 +145,6 @@
 
     .navigationBar {
         color: #ffffff;
-        background-color: #000000;
     }
 
     .navigationBar > h1 {

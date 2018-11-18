@@ -7,6 +7,11 @@ Array [
   </noscript>,
   <div
     className="komodoGridWrapper navigationBar"
+    style={
+      Object {
+        "background": "#000000",
+      }
+    }
   >
     <a
       aria-current="page"
@@ -84,7 +89,7 @@ Array [
       className="komodoGridWrapper cs-wrapper "
       style={
         Object {
-          "backgroundColor": "inherit",
+          "background": "none",
           "marginTop": "inherit",
           "paddingBottom": "80px",
           "paddingTop": "180px",
@@ -120,7 +125,7 @@ Array [
       className="komodoGridWrapper cs-wrapper "
       style={
         Object {
-          "backgroundColor": "#ffffff",
+          "background": "#ffffff",
           "marginTop": "inherit",
           "paddingBottom": "80px",
           "paddingTop": "180px",

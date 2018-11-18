@@ -25,7 +25,8 @@
 
 .Content-Section > div {
     font-size: 18px;
-    line-height: 30px;    
+    line-height: 30px;
+    padding-bottom: 50px;
 }
 
 .Content-Section a {

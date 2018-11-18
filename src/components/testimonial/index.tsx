@@ -22,6 +22,7 @@ interface Props {
   children?: any;
   jobtitle?: string;
   company?: string;
+  background?: string;
 }
 
 /**
@@ -30,9 +31,9 @@ interface Props {
  * 
  * @param data
  */
-const Testimonial: React.SFC<Props> = ({ name=null, children=null, jobtitle=null, company=null }) => {
+const Testimonial: React.SFC<Props> = ({ name=null, children=null, jobtitle=null, company=null, background="linear-gradient(0deg, #0F1E65 0%, #04104A 100%)" }) => {
   return (
-    <article className="komodoGridWrapper testimonial-wrapper">
+    <article className="komodoGridWrapper testimonial-wrapper" style={{ background: background }}>
       <div className="Testimonial">
           <span className="name">{name}:</span>
           <q>{children}</q>

@@ -1,8 +1,7 @@
 @import '../settings.css';
 
 .testimonial-wrapper {
-    padding: 130px 0;
-    background: linear-gradient(0deg, #0F1E65 0%, #04104A 100%);
+    padding: 200px 0;
 }
 
 .Testimonial {
@@ -42,6 +41,7 @@ q {
 
 .Testimonial > span.job, .Testimonial > span.company {
     display: block;
+    margin-bottom: 10px;
 }
 
 .Testimonial > span.job:after {

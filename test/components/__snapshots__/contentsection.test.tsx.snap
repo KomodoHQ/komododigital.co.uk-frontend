@@ -5,7 +5,7 @@ exports[`ContentSection element is rendered 1`] = `
   className="komodoGridWrapper cs-wrapper "
   style={
     Object {
-      "backgroundColor": "inherit",
+      "background": "none",
       "marginTop": "inherit",
       "paddingBottom": "80px",
       "paddingTop": "180px",

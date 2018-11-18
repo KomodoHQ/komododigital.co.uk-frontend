@@ -7,6 +7,11 @@ Array [
   </noscript>,
   <div
     className="komodoGridWrapper navigationBar"
+    style={
+      Object {
+        "background": "#12203A",
+      }
+    }
   >
     <a
       aria-current="page"
@@ -81,13 +86,13 @@ Array [
     className="main"
   >
     <div
-      className="komodoGridWrapper cs-wrapper "
+      className="komodoGridWrapper cs-wrapper invert"
       style={
         Object {
-          "backgroundColor": "inherit",
+          "background": "linear-gradient(0deg, #23375A 0%, #12203A 100%)",
           "marginTop": "inherit",
-          "paddingBottom": "80px",
-          "paddingTop": "180px",
+          "paddingBottom": "0",
+          "paddingTop": "200px",
         }
       }
     >
@@ -105,13 +110,16 @@ Array [
             Lorem Ipsum is the industry standard typesetting text
           </span>
         </div>
+        <img
+          src={Object {}}
+        />
       </div>
     </div>
     <div
       className="komodoGridWrapper cs-wrapper "
       style={
         Object {
-          "backgroundColor": "inherit",
+          "background": "none",
           "marginTop": "inherit",
           "paddingBottom": "80px",
           "paddingTop": "180px",
@@ -142,7 +150,7 @@ Array [
       className="komodoGridWrapper cs-wrapper "
       style={
         Object {
-          "backgroundColor": "inherit",
+          "background": "none",
           "marginTop": "inherit",
           "paddingBottom": "80px",
           "paddingTop": "180px",
@@ -164,6 +172,11 @@ Array [
     </div>
     <article
       className="komodoGridWrapper testimonial-wrapper"
+      style={
+        Object {
+          "background": "linear-gradient(0deg, #23375A 0%, #12203A 100%)",
+        }
+      }
     >
       <div
         className="Testimonial"
@@ -171,22 +184,22 @@ Array [
         <span
           className="name"
         >
-          A Developer
+          Paul Crennell
           :
         </span>
         <q>
-          Testimonial content
+          Komodo are very refreshing, a talented, engaging and flexible team completely focused on delivering the customer's objectives.
         </q>
         <hr />
         <span
           className="job"
         >
-          Senior Developer
+          Chief Technology Officer
         </span>
         <span
           className="company"
         >
-          Komodo
+          Orchard Systems
         </span>
       </div>
     </article>
@@ -194,7 +207,7 @@ Array [
       className="komodoGridWrapper cs-wrapper "
       style={
         Object {
-          "backgroundColor": "inherit",
+          "background": "none",
           "marginTop": "inherit",
           "paddingBottom": "80px",
           "paddingTop": "180px",
@@ -218,7 +231,7 @@ Array [
       className="komodoGridWrapper cs-wrapper "
       style={
         Object {
-          "backgroundColor": "#ffffff",
+          "background": "#ffffff",
           "marginTop": "inherit",
           "paddingBottom": "80px",
           "paddingTop": "180px",

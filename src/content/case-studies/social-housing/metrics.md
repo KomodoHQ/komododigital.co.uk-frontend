@@ -1,14 +1,16 @@
 ---
-title: 'Success Through Collaboration'
+title: 'Solution/Project Outcome'
 date: '2018-09-22'
 scores:
-  - metric: "Test"
-    value: 100
-    description: "Testing"
-  - metric: "Another"
-    value: 50
-    description: "Another"
-  
+  - metric: "Metric/Result"
+    value: "100%"
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text."
+  - metric: "Metric/Result"
+    value: "2,500"
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text."
+  - metric: "Metric/Result"
+    value: "150%"
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text." 
 ---
 
-This case is a huge success story in proving digital adoption can work for social housing organisations. As Phase 1 of a wider plan to integrate digital into Onward's offering, it shows how digital transformation, regardless of your sector, can be immensely successful when it's done right and whne the customer knows how the changes will directly benefit them.
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.

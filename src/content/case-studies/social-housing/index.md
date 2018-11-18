@@ -1,5 +1,5 @@
 ---
-title: 'Simplifying the customer journey to digital adoption'
+title: 'Mobilising the housing management toolkit'
 subtitle: 'Social Housing'
 date: '2018-09-22'
 group: 'case-studies'
@@ -7,4 +7,4 @@ headercolor: '#00ff00'
 image: "images/casestudy/Onward.png"
 ---
 
-There we go. In your world you can create anything you desire. You can create the world you want to see and be a part of.
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard

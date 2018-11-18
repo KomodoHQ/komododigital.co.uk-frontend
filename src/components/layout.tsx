@@ -9,9 +9,10 @@ import './layout.css';
 interface Props {
   children?: ReactNode;
   data?: any;
+  background?: string;
 }
 
-const Layout: React.SFC<Props> = ({ data, children }) => {
+const Layout: React.SFC<Props> = ({ data, children, background='' }) => {
   return (
     <>
       <SEO
@@ -30,7 +31,7 @@ const Layout: React.SFC<Props> = ({ data, children }) => {
       <noscript>
         You have Javascript disabled. While it isn't needed, it will make your experience nicer.
       </noscript>
-      <NavigationBar />
+      <NavigationBar background={background} />
       <div className="main">
         {children}
       </div>
