@@ -1,7 +1,6 @@
+@import '../settings.css';
+
 .metrics-wrapper {
-    display: grid;
-    grid-template-columns: 1fr repeat(14, 70px) 1fr;
-    grid-gap: 30px;
     margin-bottom: 50px;
 }
 
@@ -12,7 +11,7 @@
     grid-gap: 30px;
 }
  
-@media (min-width: 600px) {
+@media (--mobile-viewport) {
     .Metrics {
         display: grid;
         grid-template-columns: repeat(3, 1fr);

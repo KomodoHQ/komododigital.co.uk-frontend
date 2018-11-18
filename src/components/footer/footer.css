@@ -1,7 +1,6 @@
+@import '../settings.css';
+
 footer {
-    display: grid;
-    grid-template-columns: 1fr repeat(14, 15px) 1fr;
-    grid-gap: 10px;
     padding: 50px 0 100px;
     align-items: flex-start;
     justify-items: flex-start;
@@ -57,23 +56,17 @@ footer > div.sitemap > ul > li > a {
 }
 
 
-@media (min-width: 700px) {
+@media (--mobile-viewport) {
 
     footer {
-        display: grid;
-        grid-template-columns: 1fr repeat(14, 30px) 1fr;
-        grid-gap: 20px;
         padding: 50px 0 100px;
     }
 
 }
 
-@media (min-width: 1000px) {
+@media (--laptop-viewport) {
 
     footer {
-        display: grid;
-        grid-template-columns: 1fr repeat(14, 50px) 1fr;
-        grid-gap: 20px;
         padding: 50px 0 100px;
     }
     
@@ -91,12 +84,9 @@ footer > div.sitemap > ul > li > a {
 
 }
 
-@media (min-width: 1430px) {
+@media (--desktop-viewport) {
 
     footer {
-        display: grid;
-        grid-template-columns: 1fr repeat(14, 70px) 1fr;
-        grid-gap: 30px;
         padding: 50px 0 100px;
     }
     

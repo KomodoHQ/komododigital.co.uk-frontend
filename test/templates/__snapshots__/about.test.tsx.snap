@@ -6,7 +6,7 @@ Array [
     You have Javascript disabled. While it isn't needed, it will make your experience nicer.
   </noscript>,
   <div
-    className="navigationBar"
+    className="komodoGridWrapper navigationBar"
   >
     <a
       aria-current="page"
@@ -81,7 +81,7 @@ Array [
     className="main"
   >
     <div
-      className="cs-wrapper invert"
+      className="komodoGridWrapper cs-wrapper invert"
       style={
         Object {
           "backgroundColor": "#000000",
@@ -108,7 +108,7 @@ Array [
       </div>
     </div>
     <div
-      className="cs-wrapper "
+      className="komodoGridWrapper cs-wrapper "
       style={
         Object {
           "backgroundColor": "inherit",
@@ -132,10 +132,10 @@ Array [
       </div>
     </div>
     <div
-      className="QuadGrid"
+      className="komodoGridWrapper QuadGrid"
     />
     <div
-      className="cs-wrapper "
+      className="komodoGridWrapper cs-wrapper "
       style={
         Object {
           "backgroundColor": "inherit",
@@ -159,7 +159,7 @@ Array [
       </div>
     </div>
     <div
-      className="services"
+      className="komodoGridWrapper services"
     >
       <ul>
         <li>
@@ -241,7 +241,7 @@ Array [
       </ul>
     </div>
     <div
-      className="cs-wrapper "
+      className="komodoGridWrapper cs-wrapper "
       style={
         Object {
           "backgroundColor": "inherit",
@@ -265,7 +265,7 @@ Array [
       </div>
     </div>
     <div
-      className="PortfolioGrid"
+      className="komodoGridWrapper PortfolioGrid"
     >
       <span>
         We Design With
@@ -316,7 +316,7 @@ Array [
       </div>
     </div>
     <div
-      className="PortfolioGrid"
+      className="komodoGridWrapper PortfolioGrid"
     >
       <span>
         We Develop With
@@ -411,7 +411,7 @@ Array [
       </div>
     </div>
     <div
-      className="PortfolioGrid"
+      className="komodoGridWrapper PortfolioGrid"
     >
       <span>
         We Test With
@@ -462,7 +462,7 @@ Array [
       </div>
     </div>
     <div
-      className="PortfolioGrid"
+      className="komodoGridWrapper PortfolioGrid"
     >
       <span>
         We Deploy With
@@ -513,7 +513,7 @@ Array [
       </div>
     </div>
     <div
-      className="PortfolioGrid"
+      className="komodoGridWrapper PortfolioGrid"
     >
       <span>
         We Are Certified By
@@ -549,7 +549,7 @@ Array [
       </div>
     </div>
     <div
-      className="cs-wrapper "
+      className="komodoGridWrapper cs-wrapper "
       style={
         Object {
           "backgroundColor": "#ffffff",
@@ -573,7 +573,7 @@ Array [
       </div>
     </div>
     <div
-      className="contactsection-wrapper"
+      className="komodoGridWrapper contactsection-wrapper"
     >
       <div
         className="contactsection"
@@ -696,7 +696,9 @@ Array [
       </div>
     </div>
   </div>,
-  <footer>
+  <footer
+    className="komodoGridWrapper"
+  >
     <div
       className="komodo"
     >
@@ -809,7 +811,7 @@ Array [
     </div>
   </footer>,
   <footer
-    className="legal-footer"
+    className="komodoGridWrapper legal-footer"
   >
     <div
       className="company"

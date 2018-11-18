@@ -30,7 +30,7 @@ interface Props {
  */
 const PortfolioGrid: React.SFC<Props> = ({ title, children }) => {
   return (
-    <div className="PortfolioGrid">
+    <div className="komodoGridWrapper PortfolioGrid">
         <span>{title}</span>
         {children}
     </div>

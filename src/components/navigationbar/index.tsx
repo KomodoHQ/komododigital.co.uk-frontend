@@ -60,7 +60,7 @@ class NavigationBar extends React.Component<Props> {
 
   render() {
     return (
-      <div className="navigationBar" ref={this.navbarRef}>
+      <div className="komodoGridWrapper navigationBar" ref={this.navbarRef}>
         <Link to="/"><img src={require('../../images/Komodo.png')} alt="Komodo Digital" /></Link>
         <div className="hamburger">
           <Link to="/" onClick={(e)=>{

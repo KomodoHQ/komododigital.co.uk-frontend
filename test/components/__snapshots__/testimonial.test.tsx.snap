@@ -2,7 +2,7 @@
 
 exports[`Testimonial element is rendered 1`] = `
 <article
-  className="testimonial-wrapper"
+  className="komodoGridWrapper testimonial-wrapper"
 >
   <div
     className="Testimonial"

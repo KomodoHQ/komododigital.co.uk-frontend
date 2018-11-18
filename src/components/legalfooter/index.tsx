@@ -30,7 +30,7 @@ interface Props {
  */
 const LegalFooter: React.SFC<Props> = ({ data }) => {
   return (
-    <footer className="legal-footer">
+    <footer className="komodoGridWrapper legal-footer">
       <div className="company">
         <span>Komodo Digital Copyright &copy; 2018</span><br/>
         <Link to="/">Privacy Policy</Link> | <Link to="/">Terms and Conditions</Link>

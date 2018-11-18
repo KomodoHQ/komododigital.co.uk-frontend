@@ -29,7 +29,7 @@ interface Props {
  */
 const QuadGrid: React.SFC<Props> = ({ children }) => {
   return (
-    <div className="QuadGrid">
+    <div className="komodoGridWrapper QuadGrid">
         {children}
     </div>
   );

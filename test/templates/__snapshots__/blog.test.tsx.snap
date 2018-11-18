@@ -6,7 +6,7 @@ Array [
     You have Javascript disabled. While it isn't needed, it will make your experience nicer.
   </noscript>,
   <div
-    className="navigationBar"
+    className="komodoGridWrapper navigationBar"
   >
     <a
       aria-current="page"
@@ -84,7 +84,7 @@ Array [
       width="100%"
     />
     <div
-      className="cs-wrapper "
+      className="komodoGridWrapper cs-wrapper "
       style={
         Object {
           "backgroundColor": "inherit",
@@ -112,7 +112,9 @@ Array [
       </div>
     </div>
   </div>,
-  <footer>
+  <footer
+    className="komodoGridWrapper"
+  >
     <div
       className="komodo"
     >
@@ -225,7 +227,7 @@ Array [
     </div>
   </footer>,
   <footer
-    className="legal-footer"
+    className="komodoGridWrapper legal-footer"
   >
     <div
       className="company"

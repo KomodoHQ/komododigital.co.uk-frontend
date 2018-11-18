@@ -2,7 +2,7 @@
 
 exports[`SeeMoreButton element is rendered 1`] = `
 <div
-  className="seemorebutton-wrapper"
+  className="komodoGridWrapper seemorebutton-wrapper"
 >
   <a
     href="/About"

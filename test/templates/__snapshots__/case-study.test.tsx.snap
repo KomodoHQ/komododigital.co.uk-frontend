@@ -6,7 +6,7 @@ Array [
     You have Javascript disabled. While it isn't needed, it will make your experience nicer.
   </noscript>,
   <div
-    className="navigationBar"
+    className="komodoGridWrapper navigationBar"
   >
     <a
       aria-current="page"
@@ -81,7 +81,7 @@ Array [
     className="main"
   >
     <div
-      className="cs-wrapper "
+      className="komodoGridWrapper cs-wrapper "
       style={
         Object {
           "backgroundColor": "inherit",
@@ -108,7 +108,7 @@ Array [
       </div>
     </div>
     <div
-      className="cs-wrapper "
+      className="komodoGridWrapper cs-wrapper "
       style={
         Object {
           "backgroundColor": "inherit",
@@ -132,14 +132,14 @@ Array [
       </div>
     </div>
     <div
-      className="metrics-wrapper"
+      className="komodoGridWrapper metrics-wrapper"
     >
       <div
         className="Metrics"
       />
     </div>
     <div
-      className="cs-wrapper "
+      className="komodoGridWrapper cs-wrapper "
       style={
         Object {
           "backgroundColor": "inherit",
@@ -163,7 +163,7 @@ Array [
       </div>
     </div>
     <article
-      className="testimonial-wrapper"
+      className="komodoGridWrapper testimonial-wrapper"
     >
       <div
         className="Testimonial"
@@ -191,7 +191,7 @@ Array [
       </div>
     </article>
     <div
-      className="cs-wrapper "
+      className="komodoGridWrapper cs-wrapper "
       style={
         Object {
           "backgroundColor": "inherit",
@@ -215,7 +215,7 @@ Array [
       </div>
     </div>
     <div
-      className="cs-wrapper "
+      className="komodoGridWrapper cs-wrapper "
       style={
         Object {
           "backgroundColor": "#ffffff",
@@ -239,7 +239,7 @@ Array [
       </div>
     </div>
     <div
-      className="contactsection-wrapper"
+      className="komodoGridWrapper contactsection-wrapper"
     >
       <div
         className="contactsection"
@@ -362,7 +362,9 @@ Array [
       </div>
     </div>
   </div>,
-  <footer>
+  <footer
+    className="komodoGridWrapper"
+  >
     <div
       className="komodo"
     >
@@ -475,7 +477,7 @@ Array [
     </div>
   </footer>,
   <footer
-    className="legal-footer"
+    className="komodoGridWrapper legal-footer"
   >
     <div
       className="company"

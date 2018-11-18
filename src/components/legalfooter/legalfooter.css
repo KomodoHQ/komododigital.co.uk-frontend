@@ -1,7 +1,6 @@
+@import '../settings.css';
+
 .legal-footer {
-    display: grid;
-    grid-template-columns: 1fr repeat(14, 40px) 1fr;
-    grid-gap: 10px;
     padding: 20px 0 30px;
     align-items: flex-start;
     justify-items: flex-start;
@@ -28,12 +27,9 @@
 }
 
 
-@media (min-width: 800px) {
+@media (--mobile-viewport) {
 
     .legal-footer {
-        display: grid;
-        grid-template-columns: 1fr repeat(14, 50px) 1fr;
-        grid-gap: 10px;
         padding: 20px 0 30px;
         align-items: flex-start;
         justify-items: flex-start;
@@ -54,12 +50,9 @@
     
 }
 
-@media (min-width: 1430px) {
+@media (--desktop-viewport) {
 
     .legal-footer {
-        display: grid;
-        grid-template-columns: 1fr repeat(14, 70px) 1fr;
-        grid-gap: 30px;
         padding: 20px 0 30px;
         align-items: flex-start;
         justify-items: flex-start;

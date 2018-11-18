@@ -2,7 +2,7 @@
 
 exports[`LegalFooter element is rendered 1`] = `
 <footer
-  className="legal-footer"
+  className="komodoGridWrapper legal-footer"
 >
   <div
     className="company"

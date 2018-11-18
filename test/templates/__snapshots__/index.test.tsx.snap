@@ -6,7 +6,7 @@ Array [
     You have Javascript disabled. While it isn't needed, it will make your experience nicer.
   </noscript>,
   <div
-    className="navigationBar"
+    className="komodoGridWrapper navigationBar"
   >
     <a
       aria-current="page"
@@ -81,7 +81,7 @@ Array [
     className="main"
   >
     <div
-      className="cs-wrapper invert"
+      className="komodoGridWrapper cs-wrapper invert"
       style={
         Object {
           "backgroundColor": "#000000",
@@ -108,7 +108,7 @@ Array [
       </div>
     </div>
     <div
-      className="cs-wrapper "
+      className="komodoGridWrapper cs-wrapper "
       style={
         Object {
           "backgroundColor": "inherit",
@@ -140,7 +140,7 @@ Array [
       />
     </div>
     <div
-      className="cs-wrapper "
+      className="komodoGridWrapper cs-wrapper "
       style={
         Object {
           "backgroundColor": "inherit",
@@ -164,10 +164,10 @@ Array [
       </div>
     </div>
     <div
-      className="QuadGrid"
+      className="komodoGridWrapper QuadGrid"
     />
     <div
-      className="cs-wrapper "
+      className="komodoGridWrapper cs-wrapper "
       style={
         Object {
           "backgroundColor": "inherit",
@@ -191,7 +191,7 @@ Array [
       </div>
     </div>
     <div
-      className="seemorebutton-wrapper"
+      className="komodoGridWrapper seemorebutton-wrapper"
     >
       <a
         href="/About"
@@ -203,7 +203,7 @@ Array [
       </a>
     </div>
     <div
-      className="cs-wrapper "
+      className="komodoGridWrapper cs-wrapper "
       style={
         Object {
           "backgroundColor": "inherit",
@@ -227,7 +227,7 @@ Array [
       </div>
     </div>
     <div
-      className="PortfolioGrid"
+      className="komodoGridWrapper PortfolioGrid"
     >
       <span />
       <div
@@ -408,7 +408,7 @@ Array [
       </div>
     </div>
     <div
-      className="cs-wrapper "
+      className="komodoGridWrapper cs-wrapper "
       style={
         Object {
           "backgroundColor": "inherit",
@@ -432,10 +432,10 @@ Array [
       </div>
     </div>
     <div
-      className="BlogGrid"
+      className="komodoGridWrapper BlogGrid"
     />
     <div
-      className="seemorebutton-wrapper"
+      className="komodoGridWrapper seemorebutton-wrapper"
     >
       <a
         href="/blog-list"
@@ -447,7 +447,7 @@ Array [
       </a>
     </div>
     <div
-      className="cs-wrapper "
+      className="komodoGridWrapper cs-wrapper "
       style={
         Object {
           "backgroundColor": "#FFFFFF",
@@ -471,7 +471,7 @@ Array [
       </div>
     </div>
     <div
-      className="contactsection-wrapper"
+      className="komodoGridWrapper contactsection-wrapper"
     >
       <div
         className="contactsection"
@@ -638,7 +638,9 @@ Array [
       </div>
     </div>
   </div>,
-  <footer>
+  <footer
+    className="komodoGridWrapper"
+  >
     <div
       className="komodo"
     >
@@ -751,7 +753,7 @@ Array [
     </div>
   </footer>,
   <footer
-    className="legal-footer"
+    className="komodoGridWrapper legal-footer"
   >
     <div
       className="company"

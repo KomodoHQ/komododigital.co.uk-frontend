@@ -40,3 +40,43 @@ body {
         padding-top: 80px;
     }
 }
+
+
+.komodoGridWrapper {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr repeat(14, 15px) 1fr;
+    grid-gap: 10px;
+}
+
+@media (--mobile-viewport) {
+
+    .komodoGridWrapper {
+        grid-template-columns: 1fr repeat(14, 30px) 1fr;
+    }
+}
+
+@media (--tablet-viewport) {
+
+    .komodoGridWrapper {
+        grid-template-columns: 1fr repeat(14, 38px) 1fr;
+    }
+
+}
+
+@media (--laptop-viewport) {
+
+    .komodoGridWrapper {
+        grid-template-columns: 1fr repeat(14, 50px) 1fr;
+    }
+
+}
+
+@media (--desktop-viewport) {
+
+    .komodoGridWrapper {
+        grid-template-columns: 1fr repeat(14, 70px) 1fr;
+        grid-gap: 30px;
+    }
+
+}

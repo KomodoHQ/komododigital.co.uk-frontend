@@ -31,7 +31,7 @@ interface Props {
  */
 const SeeMoreButton: React.SFC<Props> = ({ title, link="/About" }) => {
   return (
-    <div className="seemorebutton-wrapper">
+    <div className="komodoGridWrapper seemorebutton-wrapper">
         <Link to={link}><button>{title}</button></Link>
     </div>
   );

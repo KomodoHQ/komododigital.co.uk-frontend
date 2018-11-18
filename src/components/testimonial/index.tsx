@@ -32,7 +32,7 @@ interface Props {
  */
 const Testimonial: React.SFC<Props> = ({ name=null, children=null, jobtitle=null, company=null }) => {
   return (
-    <article className="testimonial-wrapper">
+    <article className="komodoGridWrapper testimonial-wrapper">
       <div className="Testimonial">
           <span className="name">{name}:</span>
           <q>{children}</q>

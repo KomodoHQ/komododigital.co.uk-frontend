@@ -2,7 +2,7 @@
 
 exports[`QuadGrid element is rendered 1`] = `
 <div
-  className="QuadGrid"
+  className="komodoGridWrapper QuadGrid"
 >
   <div />
 </div>

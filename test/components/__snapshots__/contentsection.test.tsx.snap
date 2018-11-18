@@ -2,7 +2,7 @@
 
 exports[`ContentSection element is rendered 1`] = `
 <div
-  className="cs-wrapper "
+  className="komodoGridWrapper cs-wrapper "
   style={
     Object {
       "backgroundColor": "inherit",

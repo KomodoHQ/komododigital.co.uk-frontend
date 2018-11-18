@@ -28,7 +28,7 @@ interface Props {
  */
 const ContactSection: React.SFC<Props> = ({ children }) => {
   return (
-    <div className="contactsection-wrapper">
+    <div className="komodoGridWrapper contactsection-wrapper">
       <div className="contactsection">
         {children}
       </div>
