@@ -1,3 +1,4 @@
+@import '../settings.css';
 
 .cs-wrapper {
     display: grid;
@@ -38,7 +39,7 @@
     color: white;
 }
 
-@media (min-width: 600px) {
+@media (--mobile-viewport) {
 
     .cs-wrapper {
         display: grid;
@@ -49,7 +50,7 @@
 
 }
 
-@media (min-width: 800px) {
+@media (--laptop-viewport) {
 
     .cs-wrapper {
         display: grid;
@@ -60,7 +61,7 @@
 
 }
 
-@media (min-width: 1430px) {
+@media (--desktop-viewport) {
 
     .cs-wrapper {
         display: grid;

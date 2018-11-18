@@ -1,3 +1,5 @@
+@import 'settings.css';
+
 @font-face {
     font-family: 'New Transport';
     src: url('../assets/fonts/NewTransport-Regular.otf');
@@ -27,13 +29,13 @@ body {
 
 .main {
     background: #EAEAEA;
-    background: -moz-linear-gradient(top, #000000 3%, #EAEAEA 3%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #000000 3%,#EAEAEA 3%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #000000 3%,#EAEAEA 3%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: -moz-linear-gradient(top, #000000 80px, #EAEAEA 80px); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #000000 80px,#EAEAEA 80px); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #000000 80px,#EAEAEA 80px); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#EAEAEA',GradientType=0 ); /* IE6-9 */
 }
 
-@media (min-width: 700px) {
+@media (--mobile-viewport) {
     .main {
         padding-top: 80px;
     }
