@@ -9,9 +9,10 @@ import './layout.css';
 interface Props {
   children?: ReactNode;
   data?: any;
+  background?: string;
 }
 
-const Layout: React.SFC<Props> = ({ data, children }) => {
+const Layout: React.SFC<Props> = ({ data, children, background='' }) => {
   return (
     <>
       <SEO
@@ -22,9 +23,6 @@ const Layout: React.SFC<Props> = ({ data, children }) => {
         url="http://test"
         // TODO: Individual page title
       >
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto: 300,400,500" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-
         <meta
           name="google-site-verification"
           content="NjvhRGkpFOUEaqakyfa4pkVtErwqLzH3oPITur3WIYA"
@@ -33,12 +31,12 @@ const Layout: React.SFC<Props> = ({ data, children }) => {
       <noscript>
         You have Javascript disabled. While it isn't needed, it will make your experience nicer.
       </noscript>
-      <NavigationBar />
+      <NavigationBar background={background} />
       <div className="main">
         {children}
-        <Footer />
-        <LegalFooter />
       </div>
+      <Footer />
+      <LegalFooter />
       <noscript>
         <img
           height="1"

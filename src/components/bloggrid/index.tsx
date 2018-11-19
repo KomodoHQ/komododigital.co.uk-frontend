@@ -29,7 +29,7 @@ interface Props {
  */
 const BlogGrid: React.SFC<Props> = ({ children }) => {
   return (
-    <div className="BlogGrid">
+    <div className="komodoGridWrapper BlogGrid">
         {children}
     </div>
   );

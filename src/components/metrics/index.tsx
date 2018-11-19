@@ -29,7 +29,7 @@ interface Props {
  */
 const Metrics: React.SFC<Props> = ({ metrics, children }) => {
   return (
-    <div className="metrics-wrapper">
+    <div className="komodoGridWrapper metrics-wrapper">
       <div className="Metrics">
         {children}
       </div>

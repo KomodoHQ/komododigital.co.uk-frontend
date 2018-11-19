@@ -2,7 +2,12 @@
 
 exports[`NavigationBar element is rendered 1`] = `
 <div
-  className="navigationBar"
+  className="komodoGridWrapper navigationBar"
+  style={
+    Object {
+      "background": "#000000",
+    }
+  }
 >
   <a
     aria-current="page"

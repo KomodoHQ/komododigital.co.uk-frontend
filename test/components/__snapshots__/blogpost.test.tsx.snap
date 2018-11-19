@@ -2,7 +2,7 @@
 
 exports[`BlogPost element is rendered 1`] = `
 <a
-  className="blogpost"
+  className="blogpostLink"
   href="/blog"
   onClick={[Function]}
 >
@@ -11,16 +11,27 @@ exports[`BlogPost element is rendered 1`] = `
     src=""
     width={370}
   />
-  <div>
-    <h1>
-      title
-    </h1>
-    <span>
-      
-    </span>
-    <p>
+  <p>
+    INSIGHTS
+  </p>
+  <h1>
+    title
+  </h1>
+  <div
+    className="read"
+  >
+    <div
+      className="readingTime"
+    >
+      Read time: 
+      5
+       mins
+    </div>
+    <div
+      className="readmore"
+    >
       Read More
-    </p>
+    </div>
   </div>
 </a>
 `;

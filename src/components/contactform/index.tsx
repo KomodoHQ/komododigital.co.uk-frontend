@@ -61,7 +61,7 @@ const ContactForm: React.SFC<Props> = ({ data }) => {
         </label>
         <label htmlFor="form-message">
           Your Message
-          <textarea name="message" id="form-message" cols={30} rows={10} />
+          <textarea name="message" id="form-message" cols={30} rows={10} placeholder="Your message" />
         </label>
         <div>
           <input type="submit" value="Send" />

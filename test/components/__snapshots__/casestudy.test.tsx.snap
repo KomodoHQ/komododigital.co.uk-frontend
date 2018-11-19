@@ -2,7 +2,7 @@
 
 exports[`CaseStudy element is rendered 1`] = `
 <div
-  className="case-study-link-wrapper"
+  className="komodoGridWrapper case-study-link-wrapper"
 >
   <div
     className="case-study-link"

@@ -2,7 +2,12 @@
 
 exports[`Testimonial element is rendered 1`] = `
 <article
-  className="testimonial-wrapper"
+  className="komodoGridWrapper testimonial-wrapper"
+  style={
+    Object {
+      "background": "linear-gradient(0deg, #0F1E65 0%, #04104A 100%)",
+    }
+  }
 >
   <div
     className="Testimonial"

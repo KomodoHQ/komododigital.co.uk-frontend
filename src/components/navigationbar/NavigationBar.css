@@ -1,12 +1,9 @@
+@import '../settings.css';
+
 .navigationBar {
     position: fixed;
-    width: 100vw;
-    display: grid;
-    grid-template-columns: 1fr repeat(14, 15px) 1fr;
-    grid-gap: 10px;
     padding: 0;
     color: #ffffff;
-    background-color: #000000;
     transition: all 0.25s linear;
 }
 
@@ -50,7 +47,6 @@
 .navigationBar > ul {
     padding: 0;
     margin: 0;
-    background-color: #000000;
     position: fixed;
     top: 0;
     left: -120vw;
@@ -93,12 +89,9 @@
     font-size: 20px;
 }
 
-@media (min-width: 700px) {
+@media (--mobile-viewport) {
 
     .navigationBar {
-        display: grid;
-        grid-template-columns: 1fr repeat(14, 35px) 1fr;
-        grid-gap: 10px;
         padding: 10px 0;
     }
 
@@ -106,13 +99,13 @@
         display: none;
     }
 
-    .navigationBar > h1 {
-        grid-column: 2 / 5;
+    .navigationBar > a {
+        grid-column: 2 / 7;
     }
 
     .navigationBar > ul {
         list-style: none;
-        grid-column: 6 / 16;
+        grid-column: 7 / 16;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -140,28 +133,18 @@
 
 }
 
-@media (min-width: 900px) {
+@media (--laptop-viewport) {
 
-    .navigationBar {
-        display: grid;
-        grid-template-columns: 1fr repeat(14, 50px) 1fr;
-        grid-gap: 10px;
-        padding: 10px 0;
-    }
     .navigationBar > ul > li > a {
         font-size: 24px;
     }
 
 }
 
-@media (min-width: 1430px) {
+@media (--desktop-viewport) {
 
     .navigationBar {
-        display: grid;
-        grid-template-columns: 1fr repeat(14, 70px) 1fr;
-        grid-gap: 30px;
         color: #ffffff;
-        background-color: #000000;
     }
 
     .navigationBar > h1 {
@@ -169,6 +152,6 @@
     }
 
     .navigationBar > ul {
-        grid-column: 8 / 15;
+        grid-column: 9 / 16;
     }
 }

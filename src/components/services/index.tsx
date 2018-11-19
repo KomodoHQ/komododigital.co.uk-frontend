@@ -29,7 +29,7 @@ interface Props {
  */
 const Services: React.SFC<Props> = ({ data, children }) => {
   return (
-    <div className="services">
+    <div className="komodoGridWrapper services">
         {children}
     </div>
   );

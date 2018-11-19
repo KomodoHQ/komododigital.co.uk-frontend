@@ -58,6 +58,7 @@ export const caseStudyQuery = graphql`
           frontmatter {
             title
             subtitle
+            image
             group
             headercolor
             scores {

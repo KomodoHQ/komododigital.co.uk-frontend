@@ -1,7 +1,6 @@
+@import '../settings.css';
+
 .PortfolioGrid {
-    display: grid;
-    grid-template-columns: 1fr repeat(14, 15px) 1fr;
-    grid-gap: 10px;
     padding: 30px 0;
 }
 
@@ -13,11 +12,7 @@
     grid-column: 2 / 16;
 }
 
-@media (min-width: 700px) {
-    .PortfolioGrid {
-        grid-template-columns: 1fr repeat(14, 20px) 1fr;
-        grid-gap: 20px;
-    }
+@media (--tablet-viewport) {
 
     .PortfolioGrid > div:nth-of-type(odd) {
         grid-column: 2 / 9;
@@ -29,18 +24,7 @@
 
 }
 
-@media (min-width: 900px) {
-    .PortfolioGrid {
-        grid-template-columns: 1fr repeat(14, 40px) 1fr;
-        grid-gap: 30px;
-    }
-}
-
-@media (min-width: 1430px) {
-    .PortfolioGrid {
-        grid-template-columns: 1fr repeat(14, 70px) 1fr;
-        grid-gap: 30px;
-    }
+@media (--desktop-viewport) {
 
     .PortfolioGrid > span {
         grid-column: 3 / 15;

@@ -2,6 +2,6 @@
 
 exports[`Services element is rendered 1`] = `
 <div
-  className="services"
+  className="komodoGridWrapper services"
 />
 `;

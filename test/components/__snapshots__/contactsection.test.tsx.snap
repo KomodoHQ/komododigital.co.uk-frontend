@@ -2,7 +2,7 @@
 
 exports[`ContactSection element is rendered 1`] = `
 <div
-  className="contactsection-wrapper"
+  className="komodoGridWrapper contactsection-wrapper"
 >
   <div
     className="contactsection"

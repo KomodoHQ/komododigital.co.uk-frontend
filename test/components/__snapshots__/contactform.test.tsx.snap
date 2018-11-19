@@ -104,6 +104,7 @@ exports[`ContactForm element is rendered 1`] = `
         cols={30}
         id="form-message"
         name="message"
+        placeholder="Your message"
         rows={10}
       />
     </label>

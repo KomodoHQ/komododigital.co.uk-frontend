@@ -1,7 +1,6 @@
+@import '../settings.css';
+
 .seemorebutton-wrapper {
-    display: grid;
-    grid-template-columns: 1fr repeat(14, 10px) 1fr;
-    grid-gap: 10px;
     justify-items: center;
     padding: 10px 0;
     margin-bottom: 140px;
@@ -20,28 +19,19 @@
 }
 
 
-@media (min-width: 700px) {
-    .seemorebutton-wrapper {
-        grid-template-columns: 1fr repeat(14, 20px) 1fr;
-    }
+@media (--tablet-viewport) {
     .seemorebutton-wrapper > a {
         grid-column: 2 / 16;
     }
 }
 
-@media (min-width: 900px) {
-    .seemorebutton-wrapper {
-        grid-template-columns: 1fr repeat(14, 40px) 1fr;
-    }
+@media (--laptop-viewport) {
     .seemorebutton-wrapper > a {
         grid-column: 4 / 14;
     }
 }
 
-@media (min-width: 1430px) {
-    .seemorebutton-wrapper {
-        grid-template-columns: 1fr repeat(14, 70px) 1fr;
-    }
+@media (--desktop-viewport) {
     .seemorebutton-wrapper > a {
         grid-column: 7 / 11;
     }

@@ -21,7 +21,8 @@ import './blogpost.css';
 interface Props {
   slug?: string;
   title?: any;
-  date?: string;
+  subtitle?: string;
+  readingtime?: number;
   image?: string;
 }
 
@@ -31,14 +32,16 @@ interface Props {
  * 
  * @param data
  */
-const BlogPost: React.SFC<Props> = ({ slug, title, date, image }) => {
+const BlogPost: React.SFC<Props> = ({ slug, title, subtitle="INSIGHTS", readingtime=5, image }) => {
+
   return (
-    <Link className="blogpost" to={`blog/${slug}`}>
+    <Link className="blogpostLink" to={`blog/${slug}`}>
         <img src={image} width={370} alt={title} />
-        <div>
-          <h1>{title}</h1>
-          <span>{date}</span>
-          <p>Read More</p>
+        <p>{subtitle}</p>
+        <h1>{title}</h1>
+        <div className="read">
+          <div className="readingTime">Read time: {readingtime} mins</div>
+          <div className="readmore">Read More</div>
         </div>
     </Link>
   );

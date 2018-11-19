@@ -6,7 +6,12 @@ Array [
     You have Javascript disabled. While it isn't needed, it will make your experience nicer.
   </noscript>,
   <div
-    className="navigationBar"
+    className="komodoGridWrapper navigationBar"
+    style={
+      Object {
+        "background": "#12203A",
+      }
+    }
   >
     <a
       aria-current="page"
@@ -81,13 +86,13 @@ Array [
     className="main"
   >
     <div
-      className="cs-wrapper "
+      className="komodoGridWrapper cs-wrapper invert"
       style={
         Object {
-          "backgroundColor": "inherit",
+          "background": "linear-gradient(0deg, #23375A 0%, #12203A 100%)",
           "marginTop": "inherit",
-          "paddingBottom": "80px",
-          "paddingTop": "180px",
+          "paddingBottom": "0",
+          "paddingTop": "200px",
         }
       }
     >
@@ -105,13 +110,16 @@ Array [
             Lorem Ipsum is the industry standard typesetting text
           </span>
         </div>
+        <img
+          src={Object {}}
+        />
       </div>
     </div>
     <div
-      className="cs-wrapper "
+      className="komodoGridWrapper cs-wrapper "
       style={
         Object {
-          "backgroundColor": "inherit",
+          "background": "none",
           "marginTop": "inherit",
           "paddingBottom": "80px",
           "paddingTop": "180px",
@@ -132,17 +140,17 @@ Array [
       </div>
     </div>
     <div
-      className="metrics-wrapper"
+      className="komodoGridWrapper metrics-wrapper"
     >
       <div
         className="Metrics"
       />
     </div>
     <div
-      className="cs-wrapper "
+      className="komodoGridWrapper cs-wrapper "
       style={
         Object {
-          "backgroundColor": "inherit",
+          "background": "none",
           "marginTop": "inherit",
           "paddingBottom": "80px",
           "paddingTop": "180px",
@@ -163,7 +171,12 @@ Array [
       </div>
     </div>
     <article
-      className="testimonial-wrapper"
+      className="komodoGridWrapper testimonial-wrapper"
+      style={
+        Object {
+          "background": "linear-gradient(0deg, #23375A 0%, #12203A 100%)",
+        }
+      }
     >
       <div
         className="Testimonial"
@@ -171,30 +184,30 @@ Array [
         <span
           className="name"
         >
-          A Developer
+          Paul Crennell
           :
         </span>
         <q>
-          Testimonial content
+          Komodo are very refreshing, a talented, engaging and flexible team completely focused on delivering the customer's objectives.
         </q>
         <hr />
         <span
           className="job"
         >
-          Senior Developer
+          Chief Technology Officer
         </span>
         <span
           className="company"
         >
-          Komodo
+          Orchard Systems
         </span>
       </div>
     </article>
     <div
-      className="cs-wrapper "
+      className="komodoGridWrapper cs-wrapper "
       style={
         Object {
-          "backgroundColor": "inherit",
+          "background": "none",
           "marginTop": "inherit",
           "paddingBottom": "80px",
           "paddingTop": "180px",
@@ -215,10 +228,10 @@ Array [
       </div>
     </div>
     <div
-      className="cs-wrapper "
+      className="komodoGridWrapper cs-wrapper "
       style={
         Object {
-          "backgroundColor": "#ffffff",
+          "background": "#ffffff",
           "marginTop": "inherit",
           "paddingBottom": "80px",
           "paddingTop": "180px",
@@ -239,7 +252,7 @@ Array [
       </div>
     </div>
     <div
-      className="contactsection-wrapper"
+      className="komodoGridWrapper contactsection-wrapper"
     >
       <div
         className="contactsection"
@@ -347,6 +360,7 @@ Array [
                 cols={30}
                 id="form-message"
                 name="message"
+                placeholder="Your message"
                 rows={10}
               />
             </label>
@@ -360,158 +374,160 @@ Array [
         </div>
       </div>
     </div>
-    <footer>
-      <div
-        className="komodo"
-      >
-        <img
-          alt="Komodo - People Friendly Software"
-          src={Object {}}
-        />
-      </div>
-      <div
-        className="address"
-      >
-        <span>
-          Address
-        </span>
-        <address>
-          Komodo Digital,
-          <br />
-          63 Westgate Rd,
-          <br />
-          Newcastle upon Tyne,
-          <br />
-          NE1 1SG
-        </address>
-        <address>
-          Komodo | The Core
-          <br />
-          Science Central, Bath Ln,
-          <br />
-          Newcastle upon Tyne
-          <br />
-          NE4 5TF
-        </address>
-      </div>
-      <div
-        className="sitemap"
-      >
-        <span>
-          Sitemap
-        </span>
-        <ul>
-          <li>
-            <a
-              aria-current="page"
-              href="/"
-              onClick={[Function]}
-            >
-              Home
-            </a>
-          </li>
-          <li>
-            <a
-              aria-current="page"
-              href="/"
-              onClick={[Function]}
-            >
-              Case Studies
-            </a>
-          </li>
-          <li>
-            <a
-              aria-current="page"
-              href="/"
-              onClick={[Function]}
-            >
-              Insights
-            </a>
-          </li>
-          <li>
-            <a
-              aria-current="page"
-              href="/"
-              onClick={[Function]}
-            >
-              Careers
-            </a>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <a
-              aria-current="page"
-              href="/"
-              onClick={[Function]}
-            >
-              Contact
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://twitter.com/komodohq"
-            >
-              Twitter
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://facebook.com/komodohq"
-            >
-              Facebook
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://linkedin.com/komodohq"
-            >
-              LinkedIn
-            </a>
-          </li>
-        </ul>
-      </div>
-    </footer>
-    <footer
-      className="legal-footer"
-    >
-      <div
-        className="company"
-      >
-        <span>
-          Komodo Digital Copyright © 2018
-        </span>
-        <br />
-        <a
-          aria-current="page"
-          href="/"
-          onClick={[Function]}
-        >
-          Privacy Policy
-        </a>
-         | 
-        <a
-          aria-current="page"
-          href="/"
-          onClick={[Function]}
-        >
-          Terms and Conditions
-        </a>
-      </div>
-      <div
-        className="contact"
-      >
-        Get in touch on:
-        <br />
-        <a
-          href="/tel:0191 228 6555"
-          onClick={[Function]}
-        >
-          0191 228 6555
-        </a>
-      </div>
-    </footer>
   </div>,
+  <footer
+    className="komodoGridWrapper"
+  >
+    <div
+      className="komodo"
+    >
+      <img
+        alt="Komodo - People Friendly Software"
+        src={Object {}}
+      />
+    </div>
+    <div
+      className="address"
+    >
+      <span>
+        Address
+      </span>
+      <address>
+        Komodo Digital,
+        <br />
+        63 Westgate Rd,
+        <br />
+        Newcastle upon Tyne,
+        <br />
+        NE1 1SG
+      </address>
+      <address>
+        Komodo | The Core
+        <br />
+        Science Central, Bath Ln,
+        <br />
+        Newcastle upon Tyne
+        <br />
+        NE4 5TF
+      </address>
+    </div>
+    <div
+      className="sitemap"
+    >
+      <span>
+        Sitemap
+      </span>
+      <ul>
+        <li>
+          <a
+            aria-current="page"
+            href="/"
+            onClick={[Function]}
+          >
+            Home
+          </a>
+        </li>
+        <li>
+          <a
+            aria-current="page"
+            href="/"
+            onClick={[Function]}
+          >
+            Case Studies
+          </a>
+        </li>
+        <li>
+          <a
+            aria-current="page"
+            href="/"
+            onClick={[Function]}
+          >
+            Insights
+          </a>
+        </li>
+        <li>
+          <a
+            aria-current="page"
+            href="/"
+            onClick={[Function]}
+          >
+            Careers
+          </a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a
+            aria-current="page"
+            href="/"
+            onClick={[Function]}
+          >
+            Contact
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://twitter.com/komodohq"
+          >
+            Twitter
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://facebook.com/komodohq"
+          >
+            Facebook
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://linkedin.com/komodohq"
+          >
+            LinkedIn
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>,
+  <footer
+    className="komodoGridWrapper legal-footer"
+  >
+    <div
+      className="company"
+    >
+      <span>
+        Komodo Digital Copyright © 2018
+      </span>
+      <br />
+      <a
+        aria-current="page"
+        href="/"
+        onClick={[Function]}
+      >
+        Privacy Policy
+      </a>
+       | 
+      <a
+        aria-current="page"
+        href="/"
+        onClick={[Function]}
+      >
+        Terms and Conditions
+      </a>
+    </div>
+    <div
+      className="contact"
+    >
+      Get in touch on:
+      <br />
+      <a
+        href="/tel:0191 228 6555"
+        onClick={[Function]}
+      >
+        0191 228 6555
+      </a>
+    </div>
+  </footer>,
   <noscript>
     <img
       alt=""
