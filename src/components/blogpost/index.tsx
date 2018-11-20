@@ -40,7 +40,7 @@ const BlogPost: React.SFC<Props> = ({ slug, title, subtitle="INSIGHTS", readingt
         <p>{subtitle}</p>
         <h1>{title}</h1>
         <div className="read">
-          <div className="readingTime">Read time: {readingtime} mins</div>
+          <div className="readingTime">{readingtime} minutes</div>
           <div className="readmore">Read More</div>
         </div>
     </Link>

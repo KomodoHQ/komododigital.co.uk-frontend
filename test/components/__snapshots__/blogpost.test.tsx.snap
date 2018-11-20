@@ -23,9 +23,8 @@ exports[`BlogPost element is rendered 1`] = `
     <div
       className="readingTime"
     >
-      Read time: 
       5
-       mins
+       minutes
     </div>
     <div
       className="readmore"

@@ -1,3 +1,5 @@
+@import '../settings.css';
+
 .blogpostLink {
     color: black;
     background-color: white;
@@ -56,17 +58,59 @@
 }
 
 
-@media (min-width: 700px) {
-
-}
-
-@media (min-width: 900px) {
-
-}
-
-@media (min-width: 1430px) {
+@media (--tablet-viewport) {
     .blogpostLink > img {
-        width: 370px;
+        height: 180px;
+    }
+
+    .blogpostLink > p, .blogpostLink > h1, .blogpostLink > div {
+        padding: 0 20px;
+    }
+
+    .blogpostLink > div {
+        padding: 10px 20px;
+    }
+    
+    .blogpostLink > .read {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .blogpostLink > .read > .readmore {
+        text-align: left;
+        align-self: flex-start;
+        margin-top: 10px;
+    }
+    
+}
+
+@media (--laptop-viewport) {
+    .blogpostLink > img {
+        height: 200px;
+    }
+}
+
+@media (--desktop-viewport) {
+    .blogpostLink > img {
         height: 240px;
     }
+    .blogpostLink > p, .blogpostLink > h1, .blogpostLink > div {
+        padding: 10px 30px 0;
+    }
+
+    .blogpostLink > div {
+        padding: 10px 30px;
+    }
+    
+    .blogpostLink > .read {
+        flex-direction: row;
+        align-items: flex-end;
+    }
+
+    .blogpostLink > .read > .readmore {
+        text-align: right;
+        align-self: flex-end;
+        margin-top: 0;
+    }
+
 }

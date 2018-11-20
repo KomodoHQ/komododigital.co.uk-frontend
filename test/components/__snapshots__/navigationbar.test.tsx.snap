@@ -43,6 +43,11 @@ exports[`NavigationBar element is rendered 1`] = `
   </div>
   <ul
     className="Menu"
+    style={
+      Object {
+        "background": "#000000",
+      }
+    }
   >
     <li>
       <a

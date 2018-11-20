@@ -47,6 +47,11 @@ Array [
     </div>
     <ul
       className="Menu"
+      style={
+        Object {
+          "background": "#000000",
+        }
+      }
     >
       <li>
         <a
@@ -109,9 +114,8 @@ Array [
           <div
             className="readingTime"
           >
-            Read time: 
             5
-             mins
+             minutes
           </div>
           <div
             className="readmore"

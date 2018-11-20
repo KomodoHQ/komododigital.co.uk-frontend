@@ -47,6 +47,11 @@ Array [
     </div>
     <ul
       className="Menu"
+      style={
+        Object {
+          "background": "#12203A",
+        }
+      }
     >
       <li>
         <a
