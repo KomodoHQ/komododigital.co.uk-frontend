@@ -2,7 +2,7 @@
 
 exports[`NavigationBar element is rendered 1`] = `
 <div
-  className="komodoGridWrapper navigationBar"
+  className="komodoGridWrapper navigationBar "
   style={
     Object {
       "background": "#000000",
