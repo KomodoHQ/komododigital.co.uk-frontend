@@ -23,11 +23,13 @@
 
 .case-study-link > div.content {
     flex: 1;
-    padding: 40px;
+    padding: 62px 82px;
 }
 
 .case-study-link > div.content > span {
     text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
 }
 
 .case-study-link > div.content > h2 {
@@ -45,6 +47,7 @@
 .case-study-link > div.content > a {
     font-size: 1.6rem;
     text-decoration: none;
+    font-weight: bold;
     color: black;
 }
 

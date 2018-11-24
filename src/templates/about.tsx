@@ -41,7 +41,7 @@ export default (props: AboutPageProps) => {
   return (
     <Layout data={props.data}>
       <ContentSection subtitle={props.subtitle} title={props.title} invert background="#000000" verticalPadding={200}>{renderAst(props.intro)}</ContentSection>
-      <ContentSection title="Approach">
+      <ContentSection title="Approach" paddingBottom={0}>
         {renderAst(props.approachIntro)}
       </ContentSection>
       <QuadGrid>
@@ -53,7 +53,7 @@ export default (props: AboutPageProps) => {
           );
         })}
       </QuadGrid>
-      <ContentSection title="Services">
+      <ContentSection title="Services" paddingBottom={0}>
         {renderAst(props.servicesIntro)}
       </ContentSection>
       <Services>
@@ -88,7 +88,7 @@ export default (props: AboutPageProps) => {
           <li>Innovation development</li>
         </ul>
       </Services>
-      <ContentSection title="Standards" paddingTop={180} paddingBottom={80}>
+      <ContentSection title="Standards" paddingTop={180} paddingBottom={0}>
         {renderAst(props.standardsIntro)}
       </ContentSection>
       <PortfolioGrid title="We Design With">
@@ -124,7 +124,7 @@ export default (props: AboutPageProps) => {
         <StandardItem imgsrc={require("../images/standards/ISTQB.png")} link="https://www.istqb.org/" />
         <StandardItem>NPPV 2</StandardItem>
       </PortfolioGrid>
-      <ContentSection background="#ffffff" marginTop={180} >
+      <ContentSection title="Contact Us" paddingTop={180} paddingBottom={0} background="#FFFFFF">
         {renderAst(props.contactsIntro)}
       </ContentSection>
       <ContactSection>

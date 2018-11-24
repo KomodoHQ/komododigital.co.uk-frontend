@@ -15,7 +15,7 @@ const renderAst = new rehypeReact({
 
 export default (props) => {
   return (
-    <Layout data={props.data}>
+    <Layout data={props.data} background={"#EAEAEA"} inverted={true}>
       <ContentSection title="Case Studies">
         <p>Content</p>
       </ContentSection>
@@ -33,7 +33,7 @@ export default (props) => {
         );
       })}
       <SeeMoreButton title="See More Work" />
-      <ContentSection background={"#ffffff"}>
+      <ContentSection title="Contact Us" background={"#ffffff"}>
         {renderAst(props.contactsIntro)}
       </ContentSection>
       <ContactSection>

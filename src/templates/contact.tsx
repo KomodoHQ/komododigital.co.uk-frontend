@@ -24,7 +24,7 @@ interface ContactPageProps {
 export default (props: ContactPageProps) => {
   return (
     <Layout data={props.data}>
-      <ContentSection verticalPadding={200} background="#ffffff">
+      <ContentSection title="Contact Us" verticalPadding={200} background="#ffffff">
         {renderAst(props.contactsIntro)}
       </ContentSection>
       <ContactSection>

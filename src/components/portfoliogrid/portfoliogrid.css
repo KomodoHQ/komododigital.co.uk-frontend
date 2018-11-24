@@ -6,6 +6,11 @@
 
 .PortfolioGrid > span {
     grid-column: 2 / 16;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: -20px;
 }
 
 .PortfolioGrid > div {

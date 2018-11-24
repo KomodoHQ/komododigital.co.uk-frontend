@@ -7,4 +7,4 @@ headercolor: '#00ff00'
 image: "images/casestudy/Start Up.png"
 ---
 
-The light is your friend. Preserve it. Nothing wrong with washing your brush. And right there you got an almighty cloud.Let's put some happy little bushes on the other side now. You want your tree to have some character. Make it special. In your world you can create anything you desire. Just make a decision and let it go.
+From an idea to a successful product, Komodo helped to design and build London’s first service-focused platform for both customers and couriers.

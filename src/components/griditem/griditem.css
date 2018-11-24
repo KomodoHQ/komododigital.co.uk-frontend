@@ -10,6 +10,8 @@
 }
 
 .GridItem > img {
+    width: 100px;
+    height: 100px;
     grid-area: img;
 }
 
@@ -21,6 +23,8 @@
 }
 
 .GridItem > p {
+    font-size: 18px;
+    line-height: 30px;
     grid-area: desc;
 }
 

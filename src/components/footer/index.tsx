@@ -40,12 +40,12 @@ const Footer: React.SFC<Props> = ({  }) => {
             Newcastle upon Tyne,<br />
             NE1 1SG
           </address>
-          <address>
+          {/* <address>
             Komodo | The Core<br />
             Science Central, Bath Ln,<br />
             Newcastle upon Tyne<br />
             NE4 5TF
-          </address>
+          </address> */}
         </div>
         <div className="sitemap">
           <span>Sitemap</span>

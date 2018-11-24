@@ -10,9 +10,10 @@ interface Props {
   children?: ReactNode;
   data?: any;
   background?: string;
+  inverted?: boolean;
 }
 
-const Layout: React.SFC<Props> = ({ data, children, background='' }) => {
+const Layout: React.SFC<Props> = ({ data, children, background='', inverted=false }) => {
   return (
     <>
       <SEO
@@ -31,7 +32,7 @@ const Layout: React.SFC<Props> = ({ data, children, background='' }) => {
       <noscript>
         You have Javascript disabled. While it isn't needed, it will make your experience nicer.
       </noscript>
-      <NavigationBar background={background} />
+      <NavigationBar background={background} inverted={inverted} />
       <div className="main">
         {children}
       </div>

@@ -22,6 +22,7 @@ import { any } from 'prop-types';
 interface Props {
   data?: any;
   background?: string;
+  inverted?: boolean;
 }
 
 /**
@@ -60,9 +61,12 @@ class NavigationBar extends React.Component<Props> {
   }
 
   render() {
+
+    const { inverted } = this.props;
+    const komodo = inverted ? require('../../images/Komodo_black.png') : require('../../images/Komodo.png'); 
     return (
-      <div className="komodoGridWrapper navigationBar" style={{ background: this.props.background ? this.props.background : "#000000" }} ref={this.navbarRef}>
-        <Link to="/"><img src={require('../../images/Komodo.png')} alt="Komodo Digital" /></Link>
+      <div className={`komodoGridWrapper navigationBar ${inverted ? "inverted" : "" }`} style={{ background: this.props.background ? this.props.background : "#000000" }} ref={this.navbarRef}>
+        <Link to="/"><img src={komodo} alt="Komodo Digital" /></Link>
         <div className="hamburger">
           <Link to="/" onClick={(e)=>{
             e.preventDefault();

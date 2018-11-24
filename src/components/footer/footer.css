@@ -30,7 +30,6 @@ footer span {
 }
 
 footer > div.address > address {
-    flex: 50%;
     line-height: 2.0rem;
     font-style: normal;
 }
@@ -64,7 +63,7 @@ footer > div.sitemap > ul > li > a {
 
 }
 
-@media (--laptop-viewport) {
+@media (--tablet-viewport) {
 
     footer {
         padding: 50px 0 100px;
@@ -91,11 +90,11 @@ footer > div.sitemap > ul > li > a {
     }
     
     footer > .komodo {
-        grid-column: 2 / 7;
+        grid-column: 2 / 9;
     }
-    
+
     footer > .address {
-        grid-column: 7 / 13;
+        grid-column: 9 / 13;
     }
 
     footer > div.sitemap {

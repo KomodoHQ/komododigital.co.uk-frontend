@@ -16,6 +16,20 @@ const renderAst = new rehypeReact({
 }).Compiler;
 
 const data = {
+  "case-studies": {
+    navBackground: "#2C8827",
+    background: "linear-gradient(0deg, #82B84F 0%, #2C8827 100%)",
+    invert: true,
+    content: {
+      cover: null,
+      testimonial: {
+        testimonial: "Komodo are very refreshing, a talented, engaging and flexible team completely focused on delivering the customer's objectives.",
+        name: "Paul Crennell",
+        title: "Chief Technology Officer",
+        company: "Orchard Systems"
+      }
+    }
+  },
   "case-studies/social-housing": {
     navBackground: "#2C8827",
     background: "linear-gradient(0deg, #82B84F 0%, #2C8827 100%)",
@@ -94,7 +108,7 @@ export default (props) => {
             </CaseStudy>
           );
         })}
-      <ContentSection background={"#ffffff"}>
+      <ContentSection title="Contact Us" background={"#ffffff"}>
         {renderAst(props.contactsIntro)}
       </ContentSection>
       <ContactSection>

@@ -65,25 +65,25 @@ export default (props: IndexPageProps) => {
       <ContentSection title={props.title} subtitle={props.subtitle} invert background="#000000" paddingTop={200} paddingBottom={200}>
         {renderAst(props.intro)}
       </ContentSection>
-      <ContentSection title="About Us">
+      <ContentSection title="About Us" paddingTop={200} paddingBottom={30}>
         {renderAst(props.aboutUsIntro)}
       </ContentSection>
       <ContentImage>
-        <img src={require("../images/illustration.png")} alt={"Komodo at work"} />
+        <img src={require("../images/illustration@1.5x.svg")} alt={"Komodo at work"} />
       </ContentImage>
-      <ContentSection title="Approach">
+      <ContentSection title="Approach" paddingTop={200} paddingBottom={0}>
         {renderAst(props.approachIntro)}
       </ContentSection>
       <QuadGrid>
         {props.services.map((service) => {
           return (
-            <GridItem key={service.title} title={service.title} image={images[`images/approach/${service.title}.png`]}>
+            <GridItem key={service.title} title={service.title} image={images[`images/approach/${service.title}@1.5x.svg`]}>
               {renderAst(service.htmlAst)}
             </GridItem>
           );
         })}
       </QuadGrid>
-      <ContentSection title="Case Studies">
+      <ContentSection title="Case Studies" paddingTop={200} paddingBottom={0}>
         {renderAst(props.caseStudiesIntro)}
       </ContentSection>
       {props.caseStudies.map((study) => {
@@ -100,7 +100,7 @@ export default (props: IndexPageProps) => {
         );
       })}
       <SeeMoreButton title="See More Work" />
-      <ContentSection title="Client Portfolio" paddingTop={0} paddingBottom={40}>
+      <ContentSection title="Client Portfolio" paddingTop={0} paddingBottom={0}>
         {renderAst(props.clientPortfoliosIntro)}
       </ContentSection>
       <PortfolioGrid>
@@ -130,7 +130,7 @@ export default (props: IndexPageProps) => {
       })}
       </BlogGrid>
       <SeeMoreButton title="See More Insights" link={"/blog-list"} />
-      <ContentSection background="#FFFFFF">
+      <ContentSection title="Contact Us" background="#FFFFFF">
         {renderAst(props.contactsIntro)}
       </ContentSection>
       <ContactSection>
