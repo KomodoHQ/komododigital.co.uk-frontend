@@ -6,7 +6,7 @@ Array [
     You have Javascript disabled. While it isn't needed, it will make your experience nicer.
   </noscript>,
   <div
-    className="komodoGridWrapper navigationBar"
+    className="komodoGridWrapper navigationBar "
     style={
       Object {
         "background": "#000000",
@@ -123,8 +123,8 @@ Array [
         Object {
           "background": "none",
           "marginTop": "inherit",
-          "paddingBottom": "80px",
-          "paddingTop": "180px",
+          "paddingBottom": "30px",
+          "paddingTop": "200px",
         }
       }
     >
@@ -155,8 +155,8 @@ Array [
         Object {
           "background": "none",
           "marginTop": "inherit",
-          "paddingBottom": "80px",
-          "paddingTop": "180px",
+          "paddingBottom": "0px",
+          "paddingTop": "200px",
         }
       }
     >
@@ -182,8 +182,8 @@ Array [
         Object {
           "background": "none",
           "marginTop": "inherit",
-          "paddingBottom": "80px",
-          "paddingTop": "180px",
+          "paddingBottom": "0px",
+          "paddingTop": "200px",
         }
       }
     >
@@ -218,7 +218,7 @@ Array [
         Object {
           "background": "none",
           "marginTop": "inherit",
-          "paddingBottom": "40px",
+          "paddingBottom": "0px",
           "paddingTop": "0px",
         }
       }
@@ -471,7 +471,7 @@ Array [
         className="Content-Section"
       >
         <h2>
-          TITLE HERE
+          Contact Us
         </h2>
         <div>
           <span>
@@ -673,15 +673,6 @@ Array [
         Newcastle upon Tyne,
         <br />
         NE1 1SG
-      </address>
-      <address>
-        Komodo | The Core
-        <br />
-        Science Central, Bath Ln,
-        <br />
-        Newcastle upon Tyne
-        <br />
-        NE4 5TF
       </address>
     </div>
     <div

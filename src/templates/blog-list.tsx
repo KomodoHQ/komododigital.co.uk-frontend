@@ -6,7 +6,7 @@ import BlogPost from '../components/blogpost';
 
 export default (props) => {
   return (
-    <Layout data={props.data}>
+    <Layout data={props.data} background={"#EAEAEA"} inverted={true}>
       <BlogGrid>
         {props.posts.map((post) => {
           return (

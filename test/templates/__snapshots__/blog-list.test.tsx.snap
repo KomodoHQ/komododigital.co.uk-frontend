@@ -6,10 +6,10 @@ Array [
     You have Javascript disabled. While it isn't needed, it will make your experience nicer.
   </noscript>,
   <div
-    className="komodoGridWrapper navigationBar"
+    className="komodoGridWrapper navigationBar inverted"
     style={
       Object {
-        "background": "#000000",
+        "background": "#EAEAEA",
       }
     }
   >
@@ -49,7 +49,7 @@ Array [
       className="Menu"
       style={
         Object {
-          "background": "#000000",
+          "background": "#EAEAEA",
         }
       }
     >
@@ -151,15 +151,6 @@ Array [
         Newcastle upon Tyne,
         <br />
         NE1 1SG
-      </address>
-      <address>
-        Komodo | The Core
-        <br />
-        Science Central, Bath Ln,
-        <br />
-        Newcastle upon Tyne
-        <br />
-        NE4 5TF
       </address>
     </div>
     <div
