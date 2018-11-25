@@ -17,13 +17,13 @@
 .navigationBar, .navigationBar a { color: white; }
 .navigationBar.inverted, .navigationBar.inverted a { color: black; }
 
-.navigationBar img {
+/* .navigationBar img {
     height: auto; 
     width: auto; 
     max-width: 235px;
     max-height: 235px;
     transition: all 0.25s linear;
-}
+} */
 
 .navigationBar > .hamburger {
     grid-column: 10 / 17;
@@ -81,10 +81,10 @@
     box-shadow: 0px 5px 4px rgba(64,64,64,0.5);
 }
 
-.navigationBar.small img {
+/* .navigationBar.small img {
     max-width: 235px; 
     max-height: 235px;
-}
+} */
 
 .navigationBar.small > ul > li > a {
     line-height: 45px;
@@ -126,11 +126,11 @@
         text-decoration: none;
         font-size: 16px;
     }
-
+/* 
     .navigationBar.small img {
         max-width: 135px; 
         max-height: 135px;
-    }
+    } */
 
 }
 

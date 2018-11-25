@@ -9,6 +9,33 @@ test('Blog template is rendered', () => {
     html: '<p>Test</p>',
     data: {
       site: GatsbyData,
+      logo: {
+        childImageSharp: {
+          fixed: {
+            height: 29,
+            src: "",
+            srcSet: "",
+            srcSetWebp: "",
+            srcWebp: "",
+            tracedSVG: "",
+            width: 170
+          }
+        }
+      },
+      logo_inverted: {
+        childImageSharp: {
+          fixed: {
+            height: 29,
+            src: "",
+            srcSet: "",
+            srcSetWebp: "",
+            srcWebp: "",
+            tracedSVG: "",
+            width: 170
+          }
+        }
+      }
+
     },
   };
 

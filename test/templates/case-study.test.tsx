@@ -30,6 +30,33 @@ test('Case Study template is rendered', () => {
     contactsIntro: htmlAst,
     data: {
       site: GatsbyData,
+      logo: {
+        childImageSharp: {
+          fixed: {
+            height: 29,
+            src: "",
+            srcSet: "",
+            srcSetWebp: "",
+            srcWebp: "",
+            tracedSVG: "",
+            width: 170
+          }
+        }
+      },
+      logo_inverted: {
+        childImageSharp: {
+          fixed: {
+            height: 29,
+            src: "",
+            srcSet: "",
+            srcSetWebp: "",
+            srcWebp: "",
+            tracedSVG: "",
+            width: 170
+          }
+        }
+      }
+
     },
   };
 

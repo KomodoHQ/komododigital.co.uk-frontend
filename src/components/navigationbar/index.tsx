@@ -7,6 +7,7 @@
  */
 import React, { ReactNode } from 'react';
 import { Link } from '@reach/router';
+import Img from 'gatsby-image';
 
 /**
  * Local dependencies
@@ -21,6 +22,7 @@ import { any } from 'prop-types';
  */
 interface Props {
   data?: any;
+  logo?: any;
   background?: string;
   inverted?: boolean;
 }
@@ -62,11 +64,12 @@ class NavigationBar extends React.Component<Props> {
 
   render() {
 
+    const { logo } = this.props;
     const { inverted } = this.props;
-    const komodo = inverted ? require('../../images/Komodo_black.png') : require('../../images/Komodo.png'); 
+
     return (
       <div className={`komodoGridWrapper navigationBar ${inverted ? "inverted" : "" }`} style={{ background: this.props.background ? this.props.background : "#000000" }} ref={this.navbarRef}>
-        <Link to="/"><img src={komodo} alt="Komodo Digital" /></Link>
+        <Link to="/"><Img fixed={logo.fixed} /></Link>
         <div className="hamburger">
           <Link to="/" onClick={(e)=>{
             e.preventDefault();
