@@ -30,24 +30,15 @@ test('About template is rendered', () => {
       site: GatsbyData,
       logo: {
         childImageSharp: {
-          tracedSVG: "",
-          width: "",
-          height: "",
-          src: "",
-          srcSet: "",
-          srcWebp: "",
-          srcSetWebp: ""
-        }
-      },
-      logo_inverted: {
-        childImageSharp: {
-          tracedSVG: "",
-          width: "",
-          height: "",
-          src: "",
-          srcSet: "",
-          srcWebp: "",
-          srcSetWebp: ""
+          fixed: {
+            height: 29,
+            src: "",
+            srcSet: "",
+            srcSetWebp: "",
+            srcWebp: "",
+            tracedSVG: "",
+            width: 170
+          }
         }
       }
     },
