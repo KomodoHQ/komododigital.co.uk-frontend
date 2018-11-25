@@ -28,6 +28,28 @@ test('About template is rendered', () => {
     contactsIntro: htmlAst,
     data: {
       site: GatsbyData,
+      logo: {
+        childImageSharp: {
+          tracedSVG: "",
+          width: "",
+          height: "",
+          src: "",
+          srcSet: "",
+          srcWebp: "",
+          srcSetWebp: ""
+        }
+      },
+      logo_inverted: {
+        childImageSharp: {
+          tracedSVG: "",
+          width: "",
+          height: "",
+          src: "",
+          srcSet: "",
+          srcWebp: "",
+          srcSetWebp: ""
+        }
+      }
     },
   };
 

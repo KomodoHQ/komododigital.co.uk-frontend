@@ -1,6 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import Contact from '../templates/contact';
+import { komodoLogo } from '../utils/site-queries';
 import { findNodes, findNode } from '../utils/nodes';
 
 export default (props) => {
@@ -36,5 +37,6 @@ export const contactQuery = graphql`
         }
       }
     }
+    ...komodoLogo
   }
 `;

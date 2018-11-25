@@ -5,6 +5,7 @@ import Footer from './footer';
 import LegalFooter from './legalfooter';
 import '../assets/css/cookies.css';
 import './layout.css';
+import Img from 'gatsby-image';
 
 interface Props {
   children?: ReactNode;
@@ -14,6 +15,9 @@ interface Props {
 }
 
 const Layout: React.SFC<Props> = ({ data, children, background='', inverted=false }) => {
+
+  const logo = !inverted ? data.logo.childImageSharp : data.logo_inverted.childImageSharp;
+  
   return (
     <>
       <SEO
@@ -32,7 +36,7 @@ const Layout: React.SFC<Props> = ({ data, children, background='', inverted=fals
       <noscript>
         You have Javascript disabled. While it isn't needed, it will make your experience nicer.
       </noscript>
-      <NavigationBar background={background} inverted={inverted} />
+      <NavigationBar logo={logo} background={background} inverted={inverted} />
       <div className="main">
         {children}
       </div>

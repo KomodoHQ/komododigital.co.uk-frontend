@@ -1,5 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
+import { komodoLogo } from '../utils/site-queries';
 import FourOhFour from '../templates/404';
 
 export default (props) => {
@@ -37,5 +38,6 @@ export const fourOhFourQuery = graphql`
         }
       }
     }
+    ...komodoLogo
   }
 `;
