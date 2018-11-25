@@ -66,7 +66,7 @@ class NavigationBar extends React.Component<Props> {
 
     const { logo } = this.props;
     const { inverted } = this.props;
-    // const komodo = inverted ? require('../../images/Komodo_black.png') : require('../../images/Komodo.png'); 
+
     return (
       <div className={`komodoGridWrapper navigationBar ${inverted ? "inverted" : "" }`} style={{ background: this.props.background ? this.props.background : "#000000" }} ref={this.navbarRef}>
         <Link to="/"><Img fixed={logo.fixed} /></Link>
