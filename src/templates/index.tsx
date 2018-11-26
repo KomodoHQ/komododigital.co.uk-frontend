@@ -60,6 +60,7 @@ interface IndexPageProps {
 }
 
 export default (props: IndexPageProps) => {
+  console.log(props)
   return (
     <Layout data={props.data} >
       <ContentSection title={props.title} subtitle={props.subtitle} invert background="#000000" paddingTop={200} paddingBottom={200}>
