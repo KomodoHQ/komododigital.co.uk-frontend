@@ -5,6 +5,7 @@
     padding: 0;
     color: #ffffff;
     transition: all 0.25s linear;
+    z-index: 999;
 }
 
 .navigationBar > a {
