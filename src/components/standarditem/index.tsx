@@ -20,7 +20,7 @@ import './standarditem.css';
  * data
  */
 interface Props {
-  imgsrc: any;
+  imgsrc?: any;
   title?: string;
   link?: string;
   children?: ReactNode;
