@@ -34,7 +34,7 @@ interface Props {
  */
 const StandardItem: React.SFC<Props> = ({ imgsrc, title, link, children }) => {
 
-  const logo = <Img fixed={imgsrc.childImageSharp.fixed} title={title} />;
+  const logo = children ? <div>{children}</div> : <Img fixed={imgsrc.childImageSharp.fixed} title={title} />;
   const el = link ? <a href={link}>{logo}</a> : logo;
 
   return (

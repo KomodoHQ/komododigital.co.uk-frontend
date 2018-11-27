@@ -136,3 +136,165 @@ export const clientLogos = graphql`
     }
   }
 `;
+
+export const standardsLogos = graphql`
+  fragment standardsLogos on Query {
+    standard_abstract: file(relativePath: { eq: "standards/Abstract@3x.png" }) {
+      childImageSharp {
+        fixed(width: 168) {
+          ...GatsbyImageSharpFixed_withWebp_tracedSVG
+        }
+      }
+    }
+    standard_adobecc: file(relativePath: { eq: "standards/AdobeCC@3x.png" }) {
+      childImageSharp {
+        fixed(width: 120) {
+          ...GatsbyImageSharpFixed_withWebp_tracedSVG
+        }
+      }
+    }
+    standard_android: file(relativePath: { eq: "standards/Android@3x.png" }) {
+      childImageSharp {
+        fixed(width: 43) {
+          ...GatsbyImageSharpFixed_withWebp_tracedSVG
+        }
+      }
+    }
+    standard_angular: file(relativePath: { eq: "standards/Angular@3x.png" }) {
+      childImageSharp {
+        fixed(width: 44) {
+          ...GatsbyImageSharpFixed_withWebp_tracedSVG
+        }
+      }
+    }
+    standard_apple: file(relativePath: { eq: "standards/Apple@3x.png" }) {
+      childImageSharp {
+        fixed(width: 40) {
+          ...GatsbyImageSharpFixed_withWebp_tracedSVG
+        }
+      }
+    }
+    standard_aws: file(relativePath: { eq: "standards/AWS@3x.png" }) {
+      childImageSharp {
+        fixed(width: 69) {
+          ...GatsbyImageSharpFixed_withWebp_tracedSVG
+        }
+      }
+    }
+    standard_azure: file(relativePath: { eq: "standards/Azure@3x.png" }) {
+      childImageSharp {
+        fixed(width: 107) {
+          ...GatsbyImageSharpFixed_withWebp_tracedSVG
+        }
+      }
+    }
+    standard_chai: file(relativePath: { eq: "standards/Chai@3x.png" }) {
+      childImageSharp {
+        fixed(width: 49) {
+          ...GatsbyImageSharpFixed_withWebp_tracedSVG
+        }
+      }
+    }
+    standard_codeception: file(relativePath: { eq: "standards/Codeception@3x.png" }) {
+      childImageSharp {
+        fixed(width: 64) {
+          ...GatsbyImageSharpFixed_withWebp_tracedSVG
+        }
+      }
+    }
+    standard_cyberessentials: file(relativePath: { eq: "standards/CyberEssentials@3x.png" }) {
+      childImageSharp {
+        fixed(width: 57) {
+          ...GatsbyImageSharpFixed_withWebp_tracedSVG
+        }
+      }
+    }
+    standard_html5: file(relativePath: { eq: "standards/HTML5@3x.png" }) {
+      childImageSharp {
+        fixed(width: 38) {
+          ...GatsbyImageSharpFixed_withWebp_tracedSVG
+        }
+      }
+    }
+    standard_invision: file(relativePath: { eq: "standards/InVision@3x.png" }) {
+      childImageSharp {
+        fixed(width: 115) {
+          ...GatsbyImageSharpFixed_withWebp_tracedSVG
+        }
+      }
+    }
+    standard_istqb: file(relativePath: { eq: "standards/ISTQB@3x.png" }) {
+      childImageSharp {
+        fixed(width: 91) {
+          ...GatsbyImageSharpFixed_withWebp_tracedSVG
+        }
+      }
+    }
+    standard_java: file(relativePath: { eq: "standards/Java@3x.png" }) {
+      childImageSharp {
+        fixed(width: 39) {
+          ...GatsbyImageSharpFixed_withWebp_tracedSVG
+        }
+      }
+    }
+    standard_jest: file(relativePath: { eq: "standards/Jest@3x.png" }) {
+      childImageSharp {
+        fixed(width: 48) {
+          ...GatsbyImageSharpFixed_withWebp_tracedSVG
+        }
+      }
+    }
+    standard_node: file(relativePath: { eq: "standards/Node@3x.png" }) {
+      childImageSharp {
+        fixed(width: 80) {
+          ...GatsbyImageSharpFixed_withWebp_tracedSVG
+        }
+      }
+    }
+    standard_php: file(relativePath: { eq: "standards/PHP@3x.png" }) {
+      childImageSharp {
+        fixed(width: 70) {
+          ...GatsbyImageSharpFixed_withWebp_tracedSVG
+        }
+      }
+    }
+    standard_react: file(relativePath: { eq: "standards/React@3x.png" }) {
+      childImageSharp {
+        fixed(width: 62) {
+          ...GatsbyImageSharpFixed_withWebp_tracedSVG
+        }
+      }
+    }
+    standard_selenium: file(relativePath: { eq: "standards/Selenium@3x.png" }) {
+      childImageSharp {
+        fixed(width: 52) {
+          ...GatsbyImageSharpFixed_withWebp_tracedSVG
+        }
+      }
+    }
+    standard_sketch: file(relativePath: { eq: "standards/Sketch@3x.png" }) {
+      childImageSharp {
+        fixed(width: 53) {
+          ...GatsbyImageSharpFixed_withWebp_tracedSVG
+        }
+      }
+    }
+    standard_swift: file(relativePath: { eq: "standards/Swift@3x.png" }) {
+      childImageSharp {
+        fixed(width: 44) {
+          ...GatsbyImageSharpFixed_withWebp_tracedSVG
+        }
+      }
+    }
+    standard_xamarin: file(relativePath: { eq: "standards/Xamarin@3x.png" }) {
+      childImageSharp {
+        fixed(width: 49) {
+          ...GatsbyImageSharpFixed_withWebp_tracedSVG
+        }
+      }
+    }
+
+  }
+`;
+  
+  
