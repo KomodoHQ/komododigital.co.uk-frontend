@@ -7,6 +7,7 @@
  */
 import React, { ReactNode } from 'react';
 import { Link } from '@reach/router';
+import Img from 'gatsby-image';
 
 /**
  * Local dependencies
@@ -19,7 +20,8 @@ import './standarditem.css';
  * data
  */
 interface Props {
-  imgsrc?: string;
+  imgsrc: any;
+  title?: string;
   link?: string;
   children?: ReactNode;
 }
@@ -30,10 +32,10 @@ interface Props {
  * 
  * @param data
  */
-const StandardItem: React.SFC<Props> = ({ imgsrc, link, children }) => {
+const StandardItem: React.SFC<Props> = ({ imgsrc, title, link, children }) => {
 
-  const logo = imgsrc ? <img src={imgsrc} /> : <div>{children}</div>;
-  const el = link ? <a href={link}><img src={imgsrc} /></a>  : logo;
+  const logo = children ? <div>{children}</div> : <Img fixed={imgsrc.childImageSharp.fixed} title={title} />;
+  const el = link ? <a href={link}>{logo}</a> : logo;
 
   return (
     <div className="StandardItem">

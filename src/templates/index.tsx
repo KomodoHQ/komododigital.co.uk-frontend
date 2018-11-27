@@ -104,22 +104,24 @@ export default (props: IndexPageProps) => {
         {renderAst(props.clientPortfoliosIntro)}
       </ContentSection>
       <PortfolioGrid>
-        <StandardItem imgsrc={require("../images/portfolio/CoP.png")} link="/About" />
-        <StandardItem imgsrc={require("../images/portfolio/DB.png")} link="/About" />
-        <StandardItem imgsrc={require("../images/portfolio/elanders@2x.png")} link="/About" />
-        <StandardItem imgsrc={require("../images/portfolio/gichd.png")} link="/About" />
-        <StandardItem imgsrc={require("../images/portfolio/HTL.png")} link="/About" />
-        <StandardItem imgsrc={require("../images/portfolio/ISG.png")} link="/About" />
-        <StandardItem imgsrc={require("../images/portfolio/ITV.png")} link="/About" />
-        <StandardItem imgsrc={require("../images/portfolio/Legrand.png")} link="/About" />
-        <StandardItem imgsrc={require("../images/portfolio/logo-space-group.png")} link="/About" />
-        <StandardItem imgsrc={require("../images/portfolio/Newcastle Uni.png")} link="/About" />
-        <StandardItem imgsrc={require("../images/portfolio/Northumbria uni.png")} link="/About" />
-        <StandardItem imgsrc={require("../images/portfolio/Northumbria-police logo@2x.png")} link="/About" />
-        <StandardItem imgsrc={require("../images/portfolio/onward-logo.png")} link="/About" />
-        <StandardItem imgsrc={require("../images/portfolio/Orchard.png")} link="/About" />
-        <StandardItem imgsrc={require("../images/portfolio/streetstream.png")} link="/About" />
-        <StandardItem imgsrc={require("../images/portfolio/ThingCo.png")} link="/About" />
+
+        <StandardItem imgsrc={props.data.client_cop} title="College of Policing" link="/About" />
+        <StandardItem imgsrc={props.data.client_digitalbarriers} title="Digital Barriers" link="/About" />
+        <StandardItem imgsrc={props.data.client_elanders} title="eLanders" link="/About" />
+        <StandardItem imgsrc={props.data.client_gichd} title="GICHD" link="/About" />
+        <StandardItem imgsrc={props.data.client_htl} title="HTL" link="/About" />
+        <StandardItem imgsrc={props.data.client_isg} title="ISG" link="/About" />
+        <StandardItem imgsrc={props.data.client_itv} title="ITV" link="/About" />
+        <StandardItem imgsrc={props.data.client_legrand} title="LeGrand" link="/About" />
+        <StandardItem imgsrc={props.data.client_spacegroup} title="Space Group" link="/About" />
+        <StandardItem imgsrc={props.data.client_newcastleuni} title="Newcastle University" link="/About" />
+        <StandardItem imgsrc={props.data.client_northumbriapolice} title="Northumbria Police" link="/About" />
+        <StandardItem imgsrc={props.data.client_northumbriauni} title="Northumbria University" link="/About" />
+        <StandardItem imgsrc={props.data.client_onward} title="Onward" link="/About" />
+        <StandardItem imgsrc={props.data.client_orchard} title="Orchard" link="/About" />
+        <StandardItem imgsrc={props.data.client_streetstream} title="Streetstream" link="/About" />
+        <StandardItem imgsrc={props.data.client_thingco} title="ThingCo" link="/About" />
+
       </PortfolioGrid>
       <ContentSection title="Insights">
         {renderAst(props.insightsIntro)}

@@ -50,5 +50,6 @@ export const aboutQuery = graphql`
       }
     }
     ...komodoLogo
+    ...standardsLogos
   }
 `;
