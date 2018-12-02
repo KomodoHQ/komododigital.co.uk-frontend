@@ -61,7 +61,7 @@ const data = {
 }
 
 export default (props) => {
-
+  
   let page;
 
   if (props.pageContext && props.pageContext.hasOwnProperty("slug")) { // TODO: Work out why tests don't have the pageContext property
@@ -77,16 +77,17 @@ export default (props) => {
         {renderAst(props.metricsIntro)}
       </ContentSection>
       <Metrics>
-      {props.metrics.map((metric) => {
+      {props.metrics.map((metric, i) => {
           return (
             <Metric
-              key={metric.metric}
+              key={`metric-${i}`}
               metric={metric.metric}
               value={metric.value}
               description={metric.description}
             />
           );
-        })}
+        })
+      }
       </Metrics>
       <ContentSection title={props.processTitle}>
         {renderAst(props.process)}
@@ -102,7 +103,7 @@ export default (props) => {
               subtitle={study.subtitle}
               title={study.title}
               link={study.link}
-              image={images[study.image]}
+              image={study.csimage}
             >
               {renderAst(study.htmlAst)}
             </CaseStudy>

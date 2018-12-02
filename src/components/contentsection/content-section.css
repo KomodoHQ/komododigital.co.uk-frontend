@@ -1,11 +1,21 @@
 @import '../settings.css';
 
 .cs-wrapper {
-    padding: 10px 0;
+    padding: 0;
+}
+
+.cs-wrapper > img {
+    margin: 0;
+    padding: 0;
+    align-self: center;
+    justify-content: center;
+    justify-self: center;
+    grid-column: 2 / 16;
 }
 
 .Content-Section {
     grid-column: 2 / 16;
+    overflow: hidden;
 }
 
 .Content-Section > span {
@@ -37,6 +47,13 @@
 
 .invert, .invert a {
     color: white;
+}
+
+.size-full {
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+    object-position: 50% 50%;
 }
 
 @media (--mobile-viewport) {

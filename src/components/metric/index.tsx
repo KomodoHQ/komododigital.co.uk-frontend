@@ -32,10 +32,10 @@ interface Props {
 const Metric: React.SFC<Props> = ({ value, metric, description }) => {
   return (
     <div className="Metric">
-        <span className="number">{value}</span>
-        <span>{metric}</span>
-        <hr />
-        <p>{description}</p>
+      <span className="number">{value}</span>
+      <span>{metric}</span>
+      <hr />
+      <p>{description}</p>
     </div>
   );
 };

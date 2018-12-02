@@ -61,11 +61,11 @@ const ContentSection: React.SFC<Props> = ({ title = 'TITLE HERE', subtitle= null
   return (
     <div className={`komodoGridWrapper cs-wrapper ${invertedClassname}`} style={style}>
       <div className={`Content-Section`}>
-          {subtitleEl}
-          {titleEl}
-          <div>{children}</div>
-          {coverImage}
+        {subtitleEl}
+        {titleEl}
+        <div>{children}</div>
       </div>
+      {coverImage}
     </div>
 
   );

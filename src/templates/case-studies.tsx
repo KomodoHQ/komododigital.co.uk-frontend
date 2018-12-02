@@ -26,7 +26,7 @@ export default (props) => {
             subtitle={study.subtitle}
             title={study.title}
             link={study.link}
-            image={images[study.image]}
+            image={study.csimage}
           >
             {renderAst(study.htmlAst)}
           </CaseStudy>
