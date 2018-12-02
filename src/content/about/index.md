@@ -1,5 +1,5 @@
 ---
-title: 'Lorem Ipsum is the industry standard typesetting text'
+title: 'Content About Title'
 subtitle: 'About Us'
 date: '2018-09-22'
 ---

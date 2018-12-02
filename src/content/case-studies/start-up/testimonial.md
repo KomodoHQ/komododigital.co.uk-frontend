@@ -4,4 +4,4 @@ jobtitle: 'Testimonial Writer'
 company: 'Testimonials R Us'
 ---
 
-Text for the testimonial
+Text for the startups testimonial

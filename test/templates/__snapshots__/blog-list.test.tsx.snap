@@ -132,6 +132,11 @@ Array [
   </div>,
   <div
     className="main"
+    style={
+      Object {
+        "background": "linear-gradient(to bottom, #EAEAEA 80px,#EAEAEA 80px)",
+      }
+    }
   >
     <div
       className="komodoGridWrapper BlogGrid"
