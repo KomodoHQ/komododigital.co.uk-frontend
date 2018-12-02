@@ -6,6 +6,7 @@
  * NPM Dependencies
  */
 import React, { ReactNode } from 'react';
+import Img from 'gatsby-image';
 import { Link } from '@reach/router';
 
 /**
@@ -40,10 +41,11 @@ interface Props {
  * @param children  
  */
 const CaseStudyLink: React.SFC<Props> = ({ image, subtitle, title, children, link="#" }) => {
+  console.log(image)
   return (
     <div className="komodoGridWrapper case-study-link-wrapper">
       <div className="case-study-link">
-        <div className="img"><img src={image} /></div>
+        <div className="img"><Img fluid={image.childImageSharp.fluid} title={title} /></div>
         <div className="content">
           <span>{subtitle}</span>
           <h2>{title}</h2>

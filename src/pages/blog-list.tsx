@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import BlogList from '../templates/blog-list';
-import { komodoLogo } from '../utils/site-queries';
+import { siteMeta, komodoLogo } from '../utils/site-queries';
 import CleanSourceURL from '../utils/clean-source-url';
 
 export default (props) => {
@@ -21,13 +21,7 @@ export default (props) => {
 
 export const blogListQuery = graphql`
   query blogListQuery {
-    site {
-      siteMetadata {
-        name
-        title
-        description
-      }
-    }
+    ...siteMeta
     allWordpressPost(limit: 20) {
       edges {
         node {

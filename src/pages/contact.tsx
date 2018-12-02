@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import Contact from '../templates/contact';
-import { komodoLogo } from '../utils/site-queries';
+import { siteMeta, komodoLogo } from '../utils/site-queries';
 import { findNodes, findNode } from '../utils/nodes';
 
 export default (props) => {
@@ -17,13 +17,7 @@ export default (props) => {
 
 export const contactQuery = graphql`
   query contactQuery {
-    site {
-      siteMetadata {
-        name
-        title
-        description
-      }
-    }
+    ...siteMeta
     allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/index|case-studies|contacts/" } }) {
       edges {
         node {

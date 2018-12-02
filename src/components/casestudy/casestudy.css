@@ -5,25 +5,24 @@
 }
 
 .case-study-link {
-    background-color: white;
+    background-color: #04114A;
     box-shadow: 0 1px 4px 0 rgba(0,0,0,0.2);
     grid-column: 2 / 16;
     display: flex;
+    flex-direction: column;
 }
 
 .case-study-link > div.img {
-    display: none;
-    align-items: flex-end;
-    justify-content: center;
-    overflow: hidden;
+    flex: 1;
+    width: 200px;
     padding: 0 10px;
-    background-color: #04114A;
-    object-fit: contain;
+    align-self: center;
 }
 
 .case-study-link > div.content {
     flex: 1;
-    padding: 62px 82px;
+    background-color: white;
+    padding: 32px 32px;
 }
 
 .case-study-link > div.content > span {
@@ -33,15 +32,15 @@
 }
 
 .case-study-link > div.content > h2 {
-    font-size: 2.6rem;
+    font-size: 1.6rem;
     margin: 20px 0;
     padding: 0;
 }
 
 .case-study-link > div.content > p {
     font-size: 1.0rem;
-    line-height: 2.0rem;
-    margin-bottom: 30px;
+    line-height: 1.2rem;
+    margin-bottom: 10px;
 }
 
 .case-study-link > div.content > a {
@@ -55,16 +54,62 @@
     content: '→';
 }
 
-
-@media (--mobile-viewport) {
-    .case-study-link > div.img {
-        display: flex;
+@media (--tablet-viewport) {
+    .case-study-link {
+        flex-direction: row;
     }
-    
+    .case-study-link > div.content {
+        padding: 32px;
+    }
+    .case-study-link > div.content > h2 {
+        font-size: 1.4rem;
+    }
+    .case-study-link > div.content > p {
+        font-size: 1.0rem;
+        line-height: 1.2rem;
+        margin-bottom: 20px;
+    }
+    .case-study-link > div.img {
+        flex: 1;
+        width: 200px;
+        padding: 0 10px;
+        align-self: flex-end;
+    }
+}
+
+
+@media (--laptop-viewport) {
+    .case-study-link {
+        flex-direction: row;
+    }
+    .case-study-link > div.content {
+        padding: 62px 62px;
+    }
+    .case-study-link > div.img {
+        flex: 1;
+        width: 200px;
+        padding: 0 10px;
+        align-self: flex-end;
+    }
 }
 
 @media (--desktop-viewport) {
     .case-study-link {
         grid-column: 3 / 15;
     }
+    .case-study-link > div.content {
+        padding: 62px 82px;
+    }
+    .case-study-link > div.content > h2 {
+        font-size: 2.6rem;
+    }
+    .case-study-link > div.content > p {
+        font-size: 1.0rem;
+        line-height: 2.0rem;
+        margin-bottom: 30px;
+    }
+    .case-study-link > div.img {
+        width: 450px;
+    }
+
 }

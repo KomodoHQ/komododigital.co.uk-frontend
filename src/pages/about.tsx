@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import About from '../templates/about';
-import { komodoLogo } from '../utils/site-queries';
+import { siteMeta, komodoLogo } from '../utils/site-queries';
 import { findNodes, findNode } from '../utils/nodes';
 
 export default (props) => {
@@ -29,13 +29,7 @@ export default (props) => {
 
 export const aboutQuery = graphql`
   query aboutQuery {
-    site {
-      siteMetadata {
-        name
-        title
-        description
-      }
-    }
+    ...siteMeta
     allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/index|about|contacts/" } }) {
       edges {
         node {

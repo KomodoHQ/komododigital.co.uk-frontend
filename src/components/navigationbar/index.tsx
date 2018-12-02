@@ -76,7 +76,7 @@ class NavigationBar extends React.Component<Props> {
             if (this.menuRef.current) {
               this.menuRef.current.classList.toggle("open");
             }
-          }}><img src={require('../../images/menu.svg')} width={64} height={64} style={{ width: 64, height: 64, marginTop: 10}} /></Link>
+          }}><img src={require('../../content/images/menu.svg')} width={64} height={64} style={{ width: 64, height: 64, marginTop: 10}} /></Link>
         </div>
         <ul className="Menu" ref={this.menuRef} style={{ background: this.props.background ? this.props.background : "#000000" }}>
           <li>

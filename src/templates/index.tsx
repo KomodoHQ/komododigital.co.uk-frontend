@@ -40,7 +40,7 @@ interface CaseStudy {
   subtitle: string;
   link: string;
   htmlAst: any;
-  image: string;
+  csimage: any;
 }
 
 interface IndexPageProps {
@@ -69,7 +69,7 @@ export default (props: IndexPageProps) => {
         {renderAst(props.aboutUsIntro)}
       </ContentSection>
       <ContentImage>
-        <img src={require("../images/illustration@1.5x.svg")} alt={"Komodo at work"} />
+        <img src={require("../content/images/illustration@1.5x.svg")} alt={"Komodo at work"} />
       </ContentImage>
       <ContentSection title="Approach" paddingTop={200} paddingBottom={0}>
         {renderAst(props.approachIntro)}
@@ -87,13 +87,14 @@ export default (props: IndexPageProps) => {
         {renderAst(props.caseStudiesIntro)}
       </ContentSection>
       {props.caseStudies.map((study) => {
+        console.log(study)
         return (
           <CaseStudy
             key={study.title}
             subtitle={study.subtitle}
             title={study.title}
             link={study.link}
-            image={images[study.image]}
+            image={study.csimage}
           >
             {renderAst(study.htmlAst)}
           </CaseStudy>
@@ -136,8 +137,8 @@ export default (props: IndexPageProps) => {
         {renderAst(props.contactsIntro)}
       </ContentSection>
       <ContactSection>
-        <VCard avatar={require("../images/avatar.png")} jobtitle="Commercial Director" name="Armin Talic" email="story@vcard.com" />
-        <VCard avatar={require("../images/avatar.png")} jobtitle="Director" name="Matt Moran" email="story@vcard.com" />
+        <VCard avatar={require("../content/images/avatar.png")} jobtitle="Commercial Director" name="Armin Talic" email="story@vcard.com" />
+        <VCard avatar={require("../content/images/avatar.png")} jobtitle="Director" name="Matt Moran" email="story@vcard.com" />
         <ContactForm />
       </ContactSection>
     </Layout>

@@ -49,7 +49,7 @@ const data = {
     background: "linear-gradient(0deg, #23375A 0%, #12203A 100%)",
     invert: true,
     content: {
-      cover: require("../images/casestudy/StreetStreamCover.png"),
+      cover: require("../content/images/casestudy/StreetStreamCover.png"),
       testimonial: {
         testimonial: "Komodo are very refreshing, a talented, engaging and flexible team completely focused on delivering the customer's objectives.",
         name: "Paul Crennell",

@@ -1,6 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import { komodoLogo } from '../utils/site-queries';
+import { siteMeta, komodoLogo } from '../utils/site-queries';
 import FourOhFour from '../templates/404';
 
 export default (props) => {
@@ -14,13 +14,7 @@ export default (props) => {
 
 export const fourOhFourQuery = graphql`
   query fourOhFourQuery {
-    site {
-      siteMetadata {
-        name
-        title
-        description
-      }
-    }
+    ...siteMeta
     allMarkdownRemark(filter: { frontmatter: { title: { eq: "404" } } }) {
       edges {
         node {

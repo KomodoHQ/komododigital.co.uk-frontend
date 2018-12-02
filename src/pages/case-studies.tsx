@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import CaseStudies from '../templates/case-studies';
-import { komodoLogo } from '../utils/site-queries';
+import { siteMeta, komodoLogo } from '../utils/site-queries';
 import { findNodes, findNode } from '../utils/nodes';
 
 export default (props) => {
@@ -19,13 +19,7 @@ export default (props) => {
 
 export const caseStudiesQuery = graphql`
   query caseStudiesQuery {
-    site {
-      siteMetadata {
-        name
-        title
-        description
-      }
-    }
+    ...siteMeta
     allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/case-studies|contacts/" } }) {
       edges {
         node {
@@ -33,7 +27,13 @@ export const caseStudiesQuery = graphql`
           frontmatter {
             title
             subtitle
-            image
+            csimage {
+              childImageSharp {
+                fixed(width: 49) {
+                  ...GatsbyImageSharpFixed_withWebp_tracedSVG
+                }
+              }
+            }
             group
           }
           fileAbsolutePath

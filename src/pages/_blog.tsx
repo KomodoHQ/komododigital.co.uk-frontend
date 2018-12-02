@@ -7,7 +7,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import CleanSourceURL from '../utils/clean-source-url';
-import { komodoLogo } from '../utils/site-queries';
+import { siteMeta, komodoLogo } from '../utils/site-queries';
 import Blog from '../templates/blog';
 
 export default (props) => {
@@ -33,13 +33,7 @@ export default (props) => {
 
 export const blogQuery = graphql`
   query blogQuery($slug: String) {
-    site {
-      siteMetadata {
-        name
-        title
-        description
-      }
-    }
+    ...siteMeta
     allWordpressPost(limit: 1, filter: { slug: { eq: $slug } }) {
       edges {
         node {
