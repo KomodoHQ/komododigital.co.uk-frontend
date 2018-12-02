@@ -41,7 +41,6 @@ interface Props {
  * @param children  
  */
 const CaseStudyLink: React.SFC<Props> = ({ image, subtitle, title, children, link="#" }) => {
-  console.log(image)
   return (
     <div className="komodoGridWrapper case-study-link-wrapper">
       <div className="case-study-link">
