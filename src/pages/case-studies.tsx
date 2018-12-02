@@ -29,8 +29,8 @@ export const caseStudiesQuery = graphql`
             subtitle
             csimage {
               childImageSharp {
-                fixed(width: 49) {
-                  ...GatsbyImageSharpFixed_withWebp_tracedSVG
+                fluid(maxWidth: 450) {
+                  ...GatsbyImageSharpFluid_withWebp_tracedSVG
                 }
               }
             }
