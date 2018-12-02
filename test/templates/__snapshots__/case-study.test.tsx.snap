@@ -158,10 +158,10 @@ Array [
             Lorem Ipsum is the industry standard typesetting text
           </span>
         </div>
-        <img
-          src={Object {}}
-        />
       </div>
+      <img
+        src={Object {}}
+      />
     </div>
     <div
       className="komodoGridWrapper cs-wrapper "
