@@ -6,20 +6,20 @@ exports[`Vcard element is rendered 1`] = `
 >
   <img
     height="70"
-    src="test"
+    src={Object {}}
     width="70"
   />
   <div>
     <h1>
-      test
+      Armin Talic
     </h1>
     <h2>
-      test
+      Commercial Director
     </h2>
     <a
-      href="mailto: {email}"
+      href="mailto:armin@komododigital.co.uk"
     >
-      test
+      armin@komododigital.co.uk
     </a>
   </div>
 </div>
