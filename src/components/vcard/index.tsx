@@ -18,10 +18,22 @@ import './vcard.css'
  * data
  */
 interface Props {
-  avatar: string;
-  name: string;
-  jobtitle: string;
-  email: string;
+  person: string;
+}
+
+const people = {
+  "Armin": {
+    avatar: require("../../content/images/avatar.png"),
+    jobtitle: "Commercial Director",
+    name:"Armin Talic",
+    email:"armin@komododigital.co.uk"
+  },
+  "Phoebe": {
+    avatar: require("../../content/images/avatar.png"),
+    jobtitle: "Account Manager",
+    name:"Phoebe Dowley",
+    email:"phoebe@komododigital.co.uk"
+  }
 }
 
 /**
@@ -30,14 +42,15 @@ interface Props {
  * 
  * @param data
  */
-const VCard: React.SFC<Props> = ({ avatar, name, jobtitle, email }) => {
+const VCard: React.SFC<Props> = ({ person }) => {
+  const { avatar, jobtitle, name, email } = people[person];
   return (
     <div className="vcard">
       <img src={avatar} width="70" height="70" />
       <div>
         <h1>{name}</h1>
         <h2>{jobtitle}</h2>
-        <a href="mailto: {email}">{email}</a>
+        <a href={`mailto:${email}`}>{email}</a>
       </div>
     </div>
   );

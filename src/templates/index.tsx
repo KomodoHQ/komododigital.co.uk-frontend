@@ -137,8 +137,8 @@ export default (props: IndexPageProps) => {
         {renderAst(props.contactsIntro)}
       </ContentSection>
       <ContactSection>
-        <VCard avatar={require("../content/images/avatar.png")} jobtitle="Commercial Director" name="Armin Talic" email="story@vcard.com" />
-        <VCard avatar={require("../content/images/avatar.png")} jobtitle="Director" name="Matt Moran" email="story@vcard.com" />
+        <VCard person="Armin" />
+        <VCard person="Phoebe" />
         <ContactForm />
       </ContactSection>
     </Layout>
