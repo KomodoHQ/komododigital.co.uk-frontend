@@ -6,8 +6,8 @@
  * NPM Dependencies
  */
 import React, { ReactNode } from 'react';
+import Img from 'gatsby-image';
 import './content-section.css';
-import { POINT_CONVERSION_UNCOMPRESSED } from 'constants';
 
 /**
  * Local dependencies
@@ -28,7 +28,7 @@ interface Props {
   paddingTop?: number;
   paddingBottom?: number;
   children: ReactNode;
-  cover?: string;
+  coverimage?: any;
 }
 
 /**
@@ -37,7 +37,7 @@ interface Props {
  * 
  * @param data
  */
-const ContentSection: React.SFC<Props> = ({ title = 'TITLE HERE', subtitle= null, invert, background='none', verticalPadding=0, marginTop=0, paddingTop=180, paddingBottom=80, children, cover=null }) => {
+const ContentSection: React.SFC<Props> = ({ title = 'TITLE HERE', subtitle= null, invert, background='none', verticalPadding=0, marginTop=0, paddingTop=180, paddingBottom=80, children, coverimage=null }) => {
 
   const subtitleEl = subtitle ? (<span>{subtitle}</span>) : null;
   const titleEl = title ? (<h2>{title}</h2>) : null;
@@ -51,8 +51,8 @@ const ContentSection: React.SFC<Props> = ({ title = 'TITLE HERE', subtitle= null
   }
 
   let coverImage;
-  if (cover!==null) {
-    coverImage = <img src={cover} />;
+    if (coverimage!==null) {
+    coverImage = <Img fluid={coverimage.childImageSharp.fluid} />;
     style.paddingBottom = "0";
   } else {
     coverImage = null;

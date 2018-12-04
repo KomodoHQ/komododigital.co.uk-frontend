@@ -18,8 +18,6 @@ const Layout: React.SFC<Props> = ({ data, children, background='', inverted=fals
 
   const logo = !inverted ? data.logo.childImageSharp : data.logo_inverted.childImageSharp;
 
-  console.log(background)
-
   return (
     <>
       <SEO

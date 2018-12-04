@@ -60,6 +60,13 @@ export const caseStudyQuery = graphql`
                 }
               }
             }
+            coverimage {
+              childImageSharp {
+                fluid(maxWidth: 700) {
+                  ...GatsbyImageSharpFluid_withWebp_tracedSVG
+                }
+              }
+            }
             group
             headercolor
             scores {

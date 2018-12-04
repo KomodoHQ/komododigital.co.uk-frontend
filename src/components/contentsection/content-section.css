@@ -4,12 +4,11 @@
     padding: 0;
 }
 
-.cs-wrapper > img {
+.cs-wrapper > .gatsby-image-wrapper {
+    width: 700px;
+    justify-self: center;
     margin: 0;
     padding: 0;
-    align-self: center;
-    justify-content: center;
-    justify-self: center;
     grid-column: 2 / 16;
 }
 

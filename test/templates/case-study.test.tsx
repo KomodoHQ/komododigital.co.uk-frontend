@@ -18,7 +18,45 @@ test('Case Study template is rendered', () => {
   };
 
   const hocProps = {
-    caseStudies: [],
+    caseStudies: [
+      {
+        htmlAst: htmlAst,
+        link: "case-studies/start-up",
+        coverimage: {
+          childImageSharp: {
+            fluid: {
+              height: 29,
+              src: "",
+              srcSet: "",
+              srcSetWebp: "",
+              srcWebp: "",
+              tracedSVG: "",
+              width: 170,
+              aspectRatio: 1,
+              sizes: ""
+            }
+          }
+        },
+        csimage: {
+          childImageSharp: {
+            fluid: {
+              height: 29,
+              src: "",
+              srcSet: "",
+              srcSetWebp: "",
+              srcWebp: "",
+              tracedSVG: "",
+              width: 170,
+              aspectRatio: 1,
+              sizes: ""
+            }
+          }
+        },
+        key: "study.title",
+        subtitle:"study.subtitle",
+        title:"study.title"
+      }
+    ],
     metrics: [],
     subtitle: 'subtitle',
     title: 'title',
