@@ -76,10 +76,10 @@ export default (props) => {
   const casestudy = props.caseStudies.filter((casestudy)=>{
     return casestudy.link===slug;
   });
-
+  
   return (
     <Layout data={props.data} background={page.navBackground}>
-      <ContentSection subtitle={props.subtitle} title={props.title} background={page.background} invert={page.invert} paddingTop={200} paddingBottom={200} coverimage={casestudy[0].coverimage}>{renderAst(props.intro)}</ContentSection>
+      <ContentSection subtitle={props.subtitle} title={props.title} background={page.background} invert={page.invert} paddingTop={200} paddingBottom={200} coverimage={casestudy[0]?casestudy[0].coverimage:null}>{renderAst(props.intro)}</ContentSection>
       <ContentSection title="Solution/Project Outcome">
         {renderAst(props.metricsIntro)}
       </ContentSection>
