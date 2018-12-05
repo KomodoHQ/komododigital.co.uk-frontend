@@ -30,7 +30,7 @@ const people = {
   },
   "Phoebe": {
     avatar: require("../../content/images/avatar.png"),
-    jobtitle: "Account Manager",
+    jobtitle: "Client Partner",
     name:"Phoebe Dowley",
     email:"phoebe@komododigital.co.uk"
   }
@@ -50,7 +50,6 @@ const VCard: React.SFC<Props> = ({ person }) => {
       <div>
         <h1>{name}</h1>
         <h2>{jobtitle}</h2>
-        <a href={`mailto:${email}`}>{email}</a>
       </div>
     </div>
   );

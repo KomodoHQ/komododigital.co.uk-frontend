@@ -16,11 +16,6 @@ exports[`Vcard element is rendered 1`] = `
     <h2>
       Commercial Director
     </h2>
-    <a
-      href="mailto:armin@komododigital.co.uk"
-    >
-      armin@komododigital.co.uk
-    </a>
   </div>
 </div>
 `;

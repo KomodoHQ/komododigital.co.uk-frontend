@@ -1,6 +1,8 @@
 .vcard {
     flex: 50%;
     display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 50px;
 }
 
@@ -27,6 +29,7 @@
     font-size: 14px;
     font-weight: bold;
     letter-spacing: 3px;
+    margin: 10px 0 0
 }
 
 .vcard > div > a {
