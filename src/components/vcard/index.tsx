@@ -43,7 +43,6 @@ const people = {
  * @param data
  */
 const VCard: React.SFC<Props> = ({ person, avatar }) => {
-  console.log(avatar)
   const { jobtitle, name, email } = people[person];
   return (
     <div className="vcard">

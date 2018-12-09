@@ -28,9 +28,9 @@ export default (props: ContactPageProps) => {
         {renderAst(props.contactsIntro)}
       </ContentSection>
       <ContactSection>
-        <VCard person="Armin" />
-        <VCard person="Phoebe" />
-        <ContactForm />
+        <VCard person="Armin" avatar={props.data.avatar} />
+        <VCard person="Phoebe" avatar={props.data.avatar} />
+      <ContactForm />
       </ContactSection>
       <ContentSection verticalPadding={150} background="#151515" invert title="Careers">
         <p>Whether you’re looking to progress in your career or you’re a fresh-faced graduate, Komodo could be the right place for you to hone your skills and grow. The talent here is intimidatingly good, so be confident and ready to impress.</p>

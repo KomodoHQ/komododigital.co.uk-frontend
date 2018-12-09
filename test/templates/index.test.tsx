@@ -58,6 +58,19 @@ test('Home template is rendered', () => {
           }
         }
       },
+      avatar: {
+        childImageSharp: {
+          fixed: {
+            height: 29,
+            src: "",
+            srcSet: "",
+            srcSetWebp: "",
+            srcWebp: "",
+            tracedSVG: "",
+            width: 170
+          }
+        }
+      },
       client_cop: { childImageSharp: { fixed: {width: 1, srcSet:'',src:'',height:1} } },
       client_digitalbarriers: { childImageSharp: { fixed: {width: 1, srcSet:'',src:'',height:1} } },
       client_elanders: { childImageSharp: { fixed: {width: 1, srcSet:'',src:'',height:1} } },
