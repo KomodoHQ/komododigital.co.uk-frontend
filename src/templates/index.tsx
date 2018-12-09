@@ -136,8 +136,8 @@ export default (props: IndexPageProps) => {
         {renderAst(props.contactsIntro)}
       </ContentSection>
       <ContactSection>
-        <VCard person="Armin" />
-        <VCard person="Phoebe" />
+        <VCard person="Armin" avatar={props.data.avatar} />
+        <VCard person="Phoebe" avatar={props.data.avatar} />
         <ContactForm />
       </ContactSection>
     </Layout>
