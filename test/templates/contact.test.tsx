@@ -46,8 +46,20 @@ test('Contact template is rendered', () => {
             width: 170
           }
         }
-      }
-
+      },
+      avatar: {
+        childImageSharp: {
+          fixed: {
+            height: 29,
+            src: "",
+            srcSet: "",
+            srcSetWebp: "",
+            srcWebp: "",
+            tracedSVG: "",
+            width: 170
+          }
+        }
+      },
     },
   };
 

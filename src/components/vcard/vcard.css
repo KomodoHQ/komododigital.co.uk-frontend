@@ -14,6 +14,11 @@
     border-radius: 50%;
 }
 
+.vcard > div.gatsby-image-wrapper {
+    flex: initial;
+    margin-right: 15px;
+}
+
 .vcard > div {
     flex: 3;
 }

@@ -28,6 +28,13 @@ export const komodoLogo = graphql`
         }
       }
     }
+    avatar: file(relativePath: { eq: "images/avatar.png" }) {
+      childImageSharp {
+        fixed(width: 70) {
+          ...GatsbyImageSharpFixed_withWebp_tracedSVG
+        }
+      }
+    }
   }
 `;
 
