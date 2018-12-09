@@ -1,7 +1,7 @@
 {
   "name": "komododigital.co.uk-frontend",
   "version": "3.0.0",
-  "description": "Komodo Digital's 2018 Website Refresh",
+  "description": "Komodo Digital's 2018 Website",
   "main": "index.js",
   "directories": {
     "doc": "docs"
