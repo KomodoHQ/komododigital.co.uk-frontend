@@ -87,7 +87,6 @@ export default (props: IndexPageProps) => {
         {renderAst(props.caseStudiesIntro)}
       </ContentSection>
       {props.caseStudies.map((study) => {
-        console.log(study)
         return (
           <CaseStudy
             key={study.title}
