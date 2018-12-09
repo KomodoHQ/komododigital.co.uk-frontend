@@ -22,6 +22,7 @@
 
 body {
     font-family: 'New Transport', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-display: optional;
     padding: 0;
     margin: 0;
     background-color: #000000;
