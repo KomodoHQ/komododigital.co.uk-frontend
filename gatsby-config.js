@@ -33,7 +33,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: 'Komodo Digital',
-        short_name: 'Komodo Digital',
+        short_name: 'Komodo',
         start_url: '/',
         background_color: '#FFFFFF',
         theme_color: '#FFFFFF',
