@@ -62,16 +62,16 @@ interface IndexPageProps {
 export default (props: IndexPageProps) => {
   return (
     <Layout data={props.data} >
-      <ContentSection title={props.title} subtitle={props.subtitle} invert background="#000000" paddingTop={200} paddingBottom={200}>
+      <ContentSection title={props.title} subtitle={props.subtitle} invert background="#000000" className="topPaddingLarge bottomPaddingLarge">
         {renderAst(props.intro)}
       </ContentSection>
-      <ContentSection title="About Us" paddingTop={200} paddingBottom={30}>
+      <ContentSection title="About Us" className="topPaddingLarge bottomPaddingsmall">
         {renderAst(props.aboutUsIntro)}
       </ContentSection>
       <ContentImage>
-        <img src={require("../content/images/illustration@1.5x.svg")} alt={"Komodo at work"} />
+        <object type="image/svg+xml" data={require("../content/images/illustration@1.5x.svg")} alt={"Komodo at work"} />
       </ContentImage>
-      <ContentSection title="Approach" paddingTop={200} paddingBottom={0}>
+      <ContentSection title="Approach" className="topPaddingLarge bottomPaddingSmall">
         {renderAst(props.approachIntro)}
       </ContentSection>
       <QuadGrid>
@@ -83,7 +83,7 @@ export default (props: IndexPageProps) => {
           );
         })}
       </QuadGrid>
-      <ContentSection title="Case Studies" paddingTop={200} paddingBottom={0}>
+      <ContentSection title="Case Studies" className="topPaddingLarge bottomPaddingSmall">
         {renderAst(props.caseStudiesIntro)}
       </ContentSection>
       {props.caseStudies.map((study) => {
@@ -100,7 +100,7 @@ export default (props: IndexPageProps) => {
         );
       })}
       <SeeMoreButton title="See More Work" />
-      <ContentSection title="Client Portfolio" paddingTop={0} paddingBottom={0}>
+      <ContentSection title="Client Portfolio" className="topPaddingMedium">
         {renderAst(props.clientPortfoliosIntro)}
       </ContentSection>
       <PortfolioGrid>
@@ -123,7 +123,7 @@ export default (props: IndexPageProps) => {
         <StandardItem imgsrc={props.data.client_thingco} title="ThingCo" link="/About" />
 
       </PortfolioGrid>
-      <ContentSection title="Insights">
+      <ContentSection title="Insights" className="topPaddingMedium">
         {renderAst(props.insightsIntro)}
       </ContentSection>
       <BlogGrid>
@@ -132,7 +132,7 @@ export default (props: IndexPageProps) => {
       })}
       </BlogGrid>
       <SeeMoreButton title="See More Insights" link={"/blog-list"} />
-      <ContentSection title="Contact Us" background="#FFFFFF">
+      <ContentSection title="Contact Us" background="#FFFFFF" className="topPaddingMedium">
         {renderAst(props.contactsIntro)}
       </ContentSection>
       <ContactSection>

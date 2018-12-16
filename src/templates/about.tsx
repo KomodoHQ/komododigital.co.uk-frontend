@@ -40,7 +40,7 @@ interface AboutPageProps {
 export default (props: AboutPageProps) => {
   return (
     <Layout data={props.data}>
-      <ContentSection subtitle={props.subtitle} title={props.title} invert background="#000000" verticalPadding={200}>{renderAst(props.intro)}</ContentSection>
+      <ContentSection subtitle={props.subtitle} title={props.title} invert background="#000000" className="topPaddingLarge bottomPaddingLarge">{renderAst(props.intro)}</ContentSection>
       <ContentSection title="Approach" paddingBottom={0}>
         {renderAst(props.approachIntro)}
       </ContentSection>
@@ -88,7 +88,7 @@ export default (props: AboutPageProps) => {
           <li>Innovation development</li>
         </ul>
       </Services>
-      <ContentSection title="Standards" paddingTop={180} paddingBottom={0}>
+      <ContentSection title="Standards" className="topPaddingLarge bottomPaddingSmall">
         {renderAst(props.standardsIntro)}
       </ContentSection>
       <PortfolioGrid title="We Design With">
@@ -124,7 +124,7 @@ export default (props: AboutPageProps) => {
         <StandardItem imgsrc={props.data.standard_istqb} link="https://www.istqb.org/" />
         <StandardItem>NPPV 2</StandardItem>
       </PortfolioGrid>
-      <ContentSection title="Contact Us" paddingTop={180} paddingBottom={0} background="#FFFFFF">
+      <ContentSection title="Contact Us" className="topPaddingLarge bottomPaddingSmall" background="#FFFFFF">
         {renderAst(props.contactsIntro)}
       </ContentSection>
       <ContactSection>

@@ -23,10 +23,7 @@ interface Props {
   subtitle?: string;
   invert?: boolean;
   background?: string;
-  verticalPadding?: number;
-  marginTop?: number;
-  paddingTop?: number;
-  paddingBottom?: number;
+  className?: string;
   children: ReactNode;
   coverimage?: any;
 }
@@ -37,17 +34,14 @@ interface Props {
  * 
  * @param data
  */
-const ContentSection: React.SFC<Props> = ({ title = 'TITLE HERE', subtitle= null, invert, background='none', verticalPadding=0, marginTop=0, paddingTop=180, paddingBottom=80, children, coverimage=null }) => {
+const ContentSection: React.SFC<Props> = ({ title = 'TITLE HERE', subtitle= null, invert, background='none', className=null, children, coverimage=null }) => {
 
   const subtitleEl = subtitle ? (<span>{subtitle}</span>) : null;
   const titleEl = title ? (<h2>{title}</h2>) : null;
   const invertedClassname = invert ? "invert" : "";
 
   const style = {
-    background: background,
-    marginTop: marginTop ? marginTop+'px' : 'inherit',
-    paddingTop: verticalPadding ? verticalPadding+'px' : paddingTop+'px',
-    paddingBottom: verticalPadding ? verticalPadding+'px' : paddingBottom+'px',
+    background: background
   }
 
   let coverImage;
@@ -59,7 +53,7 @@ const ContentSection: React.SFC<Props> = ({ title = 'TITLE HERE', subtitle= null
   }
 
   return (
-    <div className={`komodoGridWrapper cs-wrapper ${invertedClassname}`} style={style}>
+    <div className={`komodoGridWrapper cs-wrapper ${invertedClassname} ${className}`} style={style}>
       <div className={`Content-Section`}>
         {subtitleEl}
         {titleEl}

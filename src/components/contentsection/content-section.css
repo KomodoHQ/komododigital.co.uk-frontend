@@ -17,6 +17,30 @@
     overflow: hidden;
 }
 
+.cs-wrapper.topPaddingLarge {
+    padding-top: 100px;
+}
+
+.cs-wrapper.topPaddingMedium {
+    padding-top: 60px;
+}
+
+.cs-wrapper.topPaddingSmall {
+    padding-top: 30px;
+}
+
+.cs-wrapper.bottomPaddingLarge {
+    padding-bottom: 100px;
+}
+
+.cs-wrapper.bottomPaddingMedium {
+    padding-bottom: 60px;
+}
+
+.cs-wrapper.bottomPaddingSmall {
+    padding-bottom: 30px;
+}
+
 .Content-Section > span {
     font-size: 16px;
     text-transform: uppercase;
@@ -61,6 +85,31 @@
         padding: 15px 0;
     }
 
+    .cs-wrapper.topPaddingLarge {
+        padding-top: 180px;
+    }
+    
+    .cs-wrapper.topPaddingMedium {
+        padding-top: 120px;
+    }
+    
+    .cs-wrapper.topPaddingSmall {
+        padding-top: 60px;
+    }
+    
+    .cs-wrapper.bottomPaddingLarge {
+        padding-bottom: 180px;
+    }
+    
+    .cs-wrapper.bottomPaddingMedium {
+        padding-bottom: 120px;
+    }
+    
+    .cs-wrapper.bottomPaddingSmall {
+        padding-bottom: 60px;
+    }
+    
+
 }
 
 @media (--laptop-viewport) {
@@ -73,6 +122,30 @@
         grid-column: 3 / 15;
     }
 
+    .cs-wrapper.topPaddingLarge {
+        padding-top: 180px;
+    }
+    
+    .cs-wrapper.topPaddingMedium {
+        padding-top: 120px;
+    }
+    
+    .cs-wrapper.topPaddingSmall {
+        padding-top: 60px;
+    }
+    
+    .cs-wrapper.bottomPaddingLarge {
+        padding-bottom: 180px;
+    }
+    
+    .cs-wrapper.bottomPaddingMedium {
+        padding-bottom: 120px;
+    }
+    
+    .cs-wrapper.bottomPaddingSmall {
+        padding-bottom: 60px;
+    }
+    
 }
 
 @media (--desktop-viewport) {
@@ -84,5 +157,29 @@
     .Content-Section {
         grid-column: 5 / 13;
     }
-    
+
+    .cs-wrapper.topPaddingLarge {
+    padding-top: 180px;
+    }
+
+    .cs-wrapper.topPaddingMedium {
+    padding-top: 120px;
+    }
+
+    .cs-wrapper.topPaddingSmall {
+    padding-top: 60px;
+    }
+
+    .cs-wrapper.bottomPaddingLarge {
+    padding-bottom: 180px;
+    }
+
+    .cs-wrapper.bottomPaddingMedium {
+    padding-bottom: 120px;
+    }
+
+    .cs-wrapper.bottomPaddingSmall {
+    padding-bottom: 60px;
+    }
+
 }

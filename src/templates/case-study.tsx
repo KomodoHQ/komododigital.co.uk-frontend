@@ -79,7 +79,7 @@ export default (props) => {
   
   return (
     <Layout data={props.data} background={page.navBackground}>
-      <ContentSection subtitle={props.subtitle} title={props.title} background={page.background} invert={page.invert} paddingTop={200} paddingBottom={200} coverimage={casestudy[0]?casestudy[0].coverimage:null}>{renderAst(props.intro)}</ContentSection>
+      <ContentSection subtitle={props.subtitle} title={props.title} background={page.background} invert={page.invert} className="topPaddingLarge bottomPaddingLarge" coverimage={casestudy[0]?casestudy[0].coverimage:null}>{renderAst(props.intro)}</ContentSection>
       <ContentSection title="Solution/Project Outcome">
         {renderAst(props.metricsIntro)}
       </ContentSection>

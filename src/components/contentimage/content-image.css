@@ -1,3 +1,4 @@
+@import '../settings.css';
 
 .csi-wrapper {
     display: flex;
@@ -10,4 +11,15 @@
 .csi-wrapper > img {
     overflow: hidden;
     object-fit: contain;
+    height: 100%;
+}
+
+.csi-wrapper > object {
+    width: 80%;
+}
+
+@media (--mobile-viewport) {
+    .csi-wrapper > object {
+        width: 65%;
+    }
 }
