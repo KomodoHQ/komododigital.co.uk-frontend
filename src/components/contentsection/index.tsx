@@ -34,7 +34,7 @@ interface Props {
  * 
  * @param data
  */
-const ContentSection: React.SFC<Props> = ({ title = 'TITLE HERE', subtitle= null, invert, background='none', className=null, children, coverimage=null }) => {
+const ContentSection: React.SFC<Props> = ({ title = 'TITLE HERE', subtitle= null, invert, background='none', className='', children, coverimage=null }) => {
 
   const subtitleEl = subtitle ? (<span>{subtitle}</span>) : null;
   const titleEl = title ? (<h2>{title}</h2>) : null;
@@ -45,9 +45,9 @@ const ContentSection: React.SFC<Props> = ({ title = 'TITLE HERE', subtitle= null
   }
 
   let coverImage;
-    if (coverimage!==null) {
+  if (coverimage!==null) {
     coverImage = <Img fluid={coverimage.childImageSharp.fluid} />;
-    style.paddingBottom = "0";
+    // style.paddingBottom = "0";
   } else {
     coverImage = null;
   }

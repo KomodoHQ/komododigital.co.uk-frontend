@@ -139,13 +139,10 @@ Array [
     }
   >
     <div
-      className="komodoGridWrapper cs-wrapper invert"
+      className="komodoGridWrapper cs-wrapper invert topPaddingLarge bottomPaddingLarge"
       style={
         Object {
           "background": "#000000",
-          "marginTop": "inherit",
-          "paddingBottom": "200px",
-          "paddingTop": "200px",
         }
       }
     >
@@ -166,13 +163,10 @@ Array [
       </div>
     </div>
     <div
-      className="komodoGridWrapper cs-wrapper "
+      className="komodoGridWrapper cs-wrapper  bottomPaddingSmall"
       style={
         Object {
           "background": "none",
-          "marginTop": "inherit",
-          "paddingBottom": "0px",
-          "paddingTop": "180px",
         }
       }
     >
@@ -193,13 +187,10 @@ Array [
       className="komodoGridWrapper QuadGrid"
     />
     <div
-      className="komodoGridWrapper cs-wrapper "
+      className="komodoGridWrapper cs-wrapper  bottomPaddingSmall"
       style={
         Object {
           "background": "none",
-          "marginTop": "inherit",
-          "paddingBottom": "0px",
-          "paddingTop": "180px",
         }
       }
     >
@@ -299,13 +290,10 @@ Array [
       </ul>
     </div>
     <div
-      className="komodoGridWrapper cs-wrapper "
+      className="komodoGridWrapper cs-wrapper  topPaddingLarge bottomPaddingSmall"
       style={
         Object {
           "background": "none",
-          "marginTop": "inherit",
-          "paddingBottom": "0px",
-          "paddingTop": "180px",
         }
       }
     >
@@ -1532,13 +1520,10 @@ Array [
       </div>
     </div>
     <div
-      className="komodoGridWrapper cs-wrapper "
+      className="komodoGridWrapper cs-wrapper  topPaddingLarge bottomPaddingSmall"
       style={
         Object {
           "background": "#FFFFFF",
-          "marginTop": "inherit",
-          "paddingBottom": "0px",
-          "paddingTop": "180px",
         }
       }
     >

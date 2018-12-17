@@ -41,7 +41,7 @@ export default (props: AboutPageProps) => {
   return (
     <Layout data={props.data}>
       <ContentSection subtitle={props.subtitle} title={props.title} invert background="#000000" className="topPaddingLarge bottomPaddingLarge">{renderAst(props.intro)}</ContentSection>
-      <ContentSection title="Approach" paddingBottom={0}>
+      <ContentSection title="Approach" className="bottomPaddingSmall">
         {renderAst(props.approachIntro)}
       </ContentSection>
       <QuadGrid>
@@ -53,7 +53,7 @@ export default (props: AboutPageProps) => {
           );
         })}
       </QuadGrid>
-      <ContentSection title="Services" paddingBottom={0}>
+      <ContentSection title="Services" className="bottomPaddingSmall">
         {renderAst(props.servicesIntro)}
       </ContentSection>
       <Services>

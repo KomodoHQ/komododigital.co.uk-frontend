@@ -139,13 +139,10 @@ Array [
     }
   >
     <div
-      className="komodoGridWrapper cs-wrapper "
+      className="komodoGridWrapper cs-wrapper  topPaddingLarge"
       style={
         Object {
           "background": "#ffffff",
-          "marginTop": "inherit",
-          "paddingBottom": "200px",
-          "paddingTop": "200px",
         }
       }
     >
@@ -404,13 +401,10 @@ Array [
       </div>
     </div>
     <div
-      className="komodoGridWrapper cs-wrapper invert"
+      className="komodoGridWrapper cs-wrapper invert topPaddingLarge bottomPaddingLarge"
       style={
         Object {
           "background": "#151515",
-          "marginTop": "inherit",
-          "paddingBottom": "150px",
-          "paddingTop": "150px",
         }
       }
     >

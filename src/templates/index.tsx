@@ -69,7 +69,7 @@ export default (props: IndexPageProps) => {
         {renderAst(props.aboutUsIntro)}
       </ContentSection>
       <ContentImage>
-        <object type="image/svg+xml" data={require("../content/images/illustration@1.5x.svg")} alt={"Komodo at work"} />
+        <object type="image/svg+xml" data={require("../content/images/illustration@1.5x.svg")} />
       </ContentImage>
       <ContentSection title="Approach" className="topPaddingLarge bottomPaddingSmall">
         {renderAst(props.approachIntro)}
