@@ -22,19 +22,19 @@ const BLOCK_TAGS = {
   blockquote: 'quote',
   p: 'paragraph',
   pre: 'code',
-}
+};
 
 // Add a dictionary of mark tags.
 const MARK_TAGS = {
   em: 'italic',
   strong: 'bold',
   u: 'underline',
-}
+};
 
 const rules = [
   {
     deserialize(el, next) {
-      const type = BLOCK_TAGS[el.tagName.toLowerCase()]
+      const type = BLOCK_TAGS[el.tagName.toLowerCase()];
       if (type) {
         return {
           object: 'block',
@@ -43,7 +43,7 @@ const rules = [
             className: el.getAttribute('class'),
           },
           nodes: next(el.childNodes),
-        }
+        };
       }
     },
     serialize(obj, children) {
@@ -54,11 +54,11 @@ const rules = [
               <pre>
                 <code>{children}</code>
               </pre>
-            )
+            );
           case 'paragraph':
-            return <p className={obj.data.get('className')}>{children}</p>
+            return <p className={obj.data.get('className')}>{children}</p>;
           case 'quote':
-            return <blockquote>{children}</blockquote>
+            return <blockquote>{children}</blockquote>;
         }
       }
     },
@@ -66,31 +66,31 @@ const rules = [
   // Add a new rule that handles marks...
   {
     deserialize(el, next) {
-      const type = MARK_TAGS[el.tagName.toLowerCase()]
+      const type = MARK_TAGS[el.tagName.toLowerCase()];
       if (type) {
         return {
           object: 'mark',
           type: type,
           nodes: next(el.childNodes),
-        }
+        };
       }
     },
     serialize(obj, children) {
       if (obj.object == 'mark') {
         switch (obj.type) {
           case 'bold':
-            return <strong>{children}</strong>
+            return <strong>{children}</strong>;
           case 'italic':
-            return <em>{children}</em>
+            return <em>{children}</em>;
           case 'underline':
-            return <u>{children}</u>
+            return <u>{children}</u>;
         }
       }
     },
   },
-]
+];
 
-const html = new Html({ rules })
+const html = new Html({ rules });
 
 /**
  * Local dependencies
@@ -117,7 +117,7 @@ class ContentSection extends React.Component<Props> {
       : Plain.deserialize(''),
     titleValue: this.props.title ? Plain.deserialize(this.props.title) : Plain.deserialize(''),
     bodyValue: html.deserialize(ReactDOMServer.renderToString(this.props.children)),
-    editing: true,
+    editing: false,
   };
 
   // On change, update the app's React state with the new editor value.
@@ -320,6 +320,21 @@ class ContentSection extends React.Component<Props> {
         style={style}
       >
         <div className={`Content-Section`}>
+          <div className={`editButton`}>
+            <span
+              onClick={() => {
+                this.setState({ editing: !this.state.editing });
+              }}
+            >
+              {this.state.editing && (
+                <>Stop</>
+              )}
+              {!this.state.editing && (
+                <>Edit</>
+              )}
+            </span>
+          </div>
+
           {this.state.editing && (
             <span>
               <Editor

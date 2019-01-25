@@ -17,6 +17,29 @@
     overflow: hidden;
 }
 
+.editButton {
+    display: none;
+}
+
+.Content-Section:hover {
+    position: relative;
+}
+
+.Content-Section:hover .editButton {
+    display: block;
+    font-size: inherit;
+    line-height: inherit;
+    padding-bottom: inherit;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 100;
+}
+
+.Content-Section:hover .editButton > span {
+    text-decoration: underline;
+}
+
 .cs-wrapper.topPaddingLarge {
     padding-top: 100px;
 }
