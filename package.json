@@ -88,14 +88,20 @@
     "gatsby-source-wordpress": "^3.0.14",
     "gatsby-transformer-remark": "^2.1.12",
     "gatsby-transformer-sharp": "^2.1.8",
+    "immutable": "^4.0.0-rc.12",
     "moment": "^2.22.2",
     "postcss-custom-media": "^7.0.7",
     "postcss-easy-import": "^3.0.0",
     "postcss-preset-env": "^6.4.0",
+    "prismjs": "^1.15.0",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-helmet": "^5.2.0",
-    "rehype-react": "^3.1.0"
+    "rehype-react": "^3.1.0",
+    "slate": "^0.44.9",
+    "slate-html-serializer": "^0.7.33",
+    "slate-plain-serializer": "^0.6.33",
+    "slate-react": "^0.21.15"
   },
   "jest": {
     "transform": {
