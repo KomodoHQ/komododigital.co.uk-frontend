@@ -47,6 +47,7 @@ interface IndexPageProps {
   services: Service[];
   caseStudies: CaseStudy[];
   insights: Insight[];
+  source: string;
   subtitle: string;
   title: string;
   intro: any;
@@ -71,6 +72,7 @@ export default class HomePage extends React.Component<IndexPageProps> {
           invert
           background="#000000"
           className="topPaddingLarge bottomPaddingLarge"
+          source={props.source}
         >
           {renderAst(props.intro)}
         </ContentSection>

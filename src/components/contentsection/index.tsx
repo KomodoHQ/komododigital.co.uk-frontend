@@ -109,6 +109,7 @@ interface Props {
   className?: string;
   children: ReactNode;
   coverimage?: any;
+  source?: string;
 }
 class ContentSection extends React.Component<Props> {
   state = {
@@ -116,13 +117,21 @@ class ContentSection extends React.Component<Props> {
       ? Plain.deserialize(this.props.subtitle)
       : Plain.deserialize(''),
     titleValue: this.props.title ? Plain.deserialize(this.props.title) : Plain.deserialize(''),
-    bodyValue: html.deserialize(ReactDOMServer.renderToString(this.props.children)),
+    bodyValue: html.deserialize(ReactDOMServer.renderToStaticMarkup(this.props.children)),
     editing: false,
   };
 
   // On change, update the app's React state with the new editor value.
-  onChange = ({ value }) => {
-    this.setState({ value });
+  onChangeSubtitleText = ({ value }) => {
+    this.setState({ subtitleValue: value });
+  };
+
+  onChangeTitleText = ({ value }) => {
+    this.setState({ titleValue: value });
+  };
+
+  onChangeBodyText = ({ value }) => {
+    this.setState({ bodyValue: value });
   };
 
   /**
@@ -287,18 +296,22 @@ class ContentSection extends React.Component<Props> {
   }
 
   render() {
-    const {
-      title = 'TITLE HERE',
-      subtitle = null,
-      invert,
-      background = 'none',
-      className = '',
-      children,
-      coverimage = null,
-    } = this.props;
+    const { invert, background = 'none', className = '', children, coverimage = null } = this.props;
 
-    const subtitleEl = subtitle ? <span>{subtitle}</span> : null;
-    const titleEl = title ? <h2>{title}</h2> : null;
+    const subtitleEl = this.state.subtitleValue ? (
+      <span>{Plain.serialize(this.state.subtitleValue)}</span>
+    ) : null;
+
+    const titleEl = this.state.titleValue ? (
+      <h2>{Plain.serialize(this.state.titleValue)}</h2>
+    ) : null;
+
+    const bodyEl = this.state.bodyValue ? (
+      <div dangerouslySetInnerHTML={{
+        __html: html.serialize(this.state.bodyValue),
+      }} />
+    ) : null;
+
     const invertedClassname = invert ? 'invert' : '';
 
     const style = {
@@ -312,8 +325,6 @@ class ContentSection extends React.Component<Props> {
       coverImage = null;
     }
 
-    console.log(this.props.children);
-
     return (
       <div
         className={`komodoGridWrapper cs-wrapper ${invertedClassname} ${className}`}
@@ -326,12 +337,8 @@ class ContentSection extends React.Component<Props> {
                 this.setState({ editing: !this.state.editing });
               }}
             >
-              {this.state.editing && (
-                <>Stop</>
-              )}
-              {!this.state.editing && (
-                <>Edit</>
-              )}
+              {this.state.editing && <>Stop</>}
+              {!this.state.editing && <>Edit</>}
             </span>
           </div>
 
@@ -342,6 +349,7 @@ class ContentSection extends React.Component<Props> {
                 defaultValue={this.state.subtitleValue}
                 renderMark={this.renderMark}
                 decorateNode={this.decorateNode}
+                onChange={this.onChangeSubtitleText}
               />
             </span>
           )}
@@ -355,6 +363,7 @@ class ContentSection extends React.Component<Props> {
                 defaultValue={this.state.titleValue}
                 renderMark={this.renderMark}
                 decorateNode={this.decorateNode}
+                onChange={this.onChangeTitleText}
               />
             </h2>
           )}
@@ -368,11 +377,12 @@ class ContentSection extends React.Component<Props> {
                 defaultValue={this.state.bodyValue}
                 renderMark={this.renderMark}
                 decorateNode={this.decorateNode}
+                onChange={this.onChangeBodyText}
               />
             </div>
           )}
 
-          {!this.state.editing && <div>{children}</div>}
+          {!this.state.editing && bodyEl}
         </div>
         {coverImage}
       </div>

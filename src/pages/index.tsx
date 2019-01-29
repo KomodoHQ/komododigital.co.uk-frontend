@@ -25,11 +25,12 @@ export default (props) => {
     };
     return data;
   });
-  
+
   const hocProps = {
     services,
     caseStudies,
     insights,
+    source: 'index/index',
     subtitle: (rootNode) ? rootNode.subtitle : '',
     title: (rootNode) ? rootNode.title : '',
     intro: (rootNode) ? rootNode.htmlAst : '',
