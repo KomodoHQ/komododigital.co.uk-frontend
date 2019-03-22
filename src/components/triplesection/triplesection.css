@@ -1,0 +1,39 @@
+@import '../settings.css';
+
+.tripleSection {
+  & > div {
+    grid-column: 2/16;
+  }
+}
+
+@media (--laptop-viewport) {
+  .tripleSection {
+    & > div:nth-of-type(1n) {
+      grid-column: 2/6
+    }
+
+    & > div:nth-of-type(2n) {
+      grid-column: 7/11
+    }
+
+    & > div:nth-of-type(3n) {
+      grid-column: 12/16
+    }
+  }
+}
+
+@media (--desktop-viewport) {
+  .tripleSection {
+    & > div:nth-of-type(1n) {
+      grid-column: 3/7
+    }
+
+    & > div:nth-of-type(2n) {
+      grid-column: 7/11
+    }
+
+    & > div:nth-of-type(3n) {
+      grid-column: 11/15
+    }
+  }
+}

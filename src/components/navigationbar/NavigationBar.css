@@ -71,7 +71,7 @@
 .navigationBar > ul > li > a {
     text-decoration: none;
     line-height: 60px;
-    font-size: 24px;
+    font-size: 22px;
     transition: all 0.25s linear;
 }
 
@@ -138,7 +138,7 @@
 @media (--laptop-viewport) {
 
     .navigationBar > ul > li > a {
-        font-size: 24px;
+        font-size: 22px;
     }
 
 }

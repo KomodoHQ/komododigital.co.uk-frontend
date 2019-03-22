@@ -15,8 +15,10 @@ import SeeMoreButton from '../components/seemorebutton';
 import ContactSection from '../components/contactsection';
 import ContactForm from '../components/contactform';
 import TitleText from '../components/titletext';
+import TripleSection from '../components/triplesection';
 
 import images from "../utils/images";
+import TripleFeature from '../components/triplefeature/index';
 
 const renderAst = new rehypeReact({
   createElement: React.createElement,
@@ -61,51 +63,31 @@ interface IndexPageProps {
 }
 
 export default (props: IndexPageProps) => {
-  return (
-    <Layout data={props.data} >
+  return <Layout data={props.data}>
       <TitleText title={props.title} subtitle={props.subtitle} invert background="#000000" className="topPaddingLarge bottomPaddingLarge">
         {renderAst(props.intro)}
       </TitleText>
-      <ContentSection title="About Us" className="topPaddingLarge bottomPaddingsmall">
+      <ContentSection title="What We Bring To Your Team" className="topPaddingLarge bottomPaddingSmall" background="#ffffff">
         {renderAst(props.aboutUsIntro)}
       </ContentSection>
-      <ContentImage>
-        <object type="image/svg+xml" data={require("../content/images/illustration@1.5x.svg")} />
-      </ContentImage>
-      <ContentSection title="Approach" className="topPaddingLarge bottomPaddingSmall">
-        {renderAst(props.approachIntro)}
-      </ContentSection>
-      <QuadGrid>
-        {props.services.map((service) => {
-          return (
-            <GridItem key={service.title} title={service.title} image={images[`images/approach/${service.title}@1.5x.svg`]}>
-              {renderAst(service.htmlAst)}
-            </GridItem>
-          );
-        })}
-      </QuadGrid>
+      <TripleSection background="#ffffff" className="bottomPaddingLarge">
+        <TripleFeature title="Consultancy">Providing expert advice that helps solve bigger problems, avoid wasted time and redefine constraints.</TripleFeature>
+        <TripleFeature title="Design">Producing great digital experiences that add value and turns product users into product advocates.</TripleFeature>
+        <TripleFeature title="Development">Delivering intelligent, scalable and robust solutions built with future needs in mind to maximise return on investment.</TripleFeature>
+      </TripleSection>
       <ContentSection title="Case Studies" className="topPaddingLarge bottomPaddingSmall">
         {renderAst(props.caseStudiesIntro)}
       </ContentSection>
       {props.caseStudies.map((study) => {
-        return (
-          <CaseStudy
-            key={study.title}
-            subtitle={study.subtitle}
-            title={study.title}
-            link={study.link}
-            image={study.csimage}
-          >
+        return <CaseStudy key={study.title} subtitle={study.subtitle} title={study.title} link={study.link} image={study.csimage}>
             {renderAst(study.htmlAst)}
-          </CaseStudy>
-        );
+          </CaseStudy>;
       })}
       <SeeMoreButton title="See More Work" />
       <ContentSection title="Client Portfolio" className="topPaddingMedium">
         {renderAst(props.clientPortfoliosIntro)}
       </ContentSection>
       <PortfolioGrid>
-
         <StandardItem imgsrc={props.data.client_cop} title="College of Policing" link="/About" />
         <StandardItem imgsrc={props.data.client_digitalbarriers} title="Digital Barriers" link="/About" />
         <StandardItem imgsrc={props.data.client_elanders} title="eLanders" link="/About" />
@@ -122,17 +104,16 @@ export default (props: IndexPageProps) => {
         <StandardItem imgsrc={props.data.client_orchard} title="Orchard" link="/About" />
         <StandardItem imgsrc={props.data.client_streetstream} title="Streetstream" link="/About" />
         <StandardItem imgsrc={props.data.client_thingco} title="ThingCo" link="/About" />
-
       </PortfolioGrid>
       <ContentSection title="Insights" className="topPaddingMedium">
         {renderAst(props.insightsIntro)}
       </ContentSection>
       <BlogGrid>
-      {props.insights.map((insight) => {
-        return <BlogPost key={insight.node.title} slug={insight.node.slug} title={insight.node.title} image={insight.node.imageSource} />;
-      })}
+        {props.insights.map((insight) => {
+          return <BlogPost key={insight.node.title} slug={insight.node.slug} title={insight.node.title} image={insight.node.imageSource} />;
+        })}
       </BlogGrid>
-      <SeeMoreButton title="See More Insights" link={"/blog-list"} />
+      <SeeMoreButton title="See More Insights" link={'/blog-list'} />
       <ContentSection title="Contact Us" background="#FFFFFF" className="topPaddingMedium">
         {renderAst(props.contactsIntro)}
       </ContentSection>
@@ -141,6 +122,5 @@ export default (props: IndexPageProps) => {
         <VCard person="Phoebe" avatar={props.data.avatar} />
         <ContactForm />
       </ContactSection>
-    </Layout>
-  );
+    </Layout>;
 };

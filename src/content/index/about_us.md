@@ -1,6 +1,8 @@
 ---
-title: 'About Us'
-date: '2018-09-22'
+title: 'What we bring to your team'
+date: '2019-03-22'
 ---
 
-We don't need any guidelines or formats. All we need to do is just let it flow right out of us. This is gonna be a happy little seascape. Let's build some happy little clouds up here. It's so important to do something every day that will make you happy.
+Deep knowledge, agile resources and broad experience allow us to punch above our weight, to deliver more than you expect.
+
+Our curiosity drives us to learn and experiment, to ask the 'right' questions that lead to intelligent answers. Integrity guides our decision-making processes ensuring we make the right choices for you. Courage means we challenge and explore the unknown, to push past what's 'expected' and deliver exceptional digital products that people prefer to use.
