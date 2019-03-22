@@ -15,8 +15,6 @@
 .Content-Section {
     grid-column: 2 / 16;
     overflow: hidden;
-
-    display: flex;
 }
 
 .cs-wrapper.topPaddingLarge {
@@ -55,19 +53,15 @@
 .Content-Section > h2 {
     margin: 0;
     padding: 0;
-    font-size: 60px;
-    font-weight: 600;
-    line-height: 74px;
-
-    flex: 3;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 56px;
 }
 
 .Content-Section > div {
     font-size: 18px;
-    line-height: 30px;
+    line-height: 28px;
     padding-bottom: 50px;
-
-    flex: 5;
 }
 
 .Content-Section a {
@@ -120,12 +114,24 @@
 
 @media (--laptop-viewport) {
 
-    .cs-wrapper {
-        padding: 15px 0;
+    .Content-Section {
+        grid-column: 2 / 16;
+        display: grid;
+
+        grid-template-columns: 1fr repeat(14, 50px) 1fr;
     }
 
-    .Content-Section {
-        grid-column: 3 / 15;
+    .Content-Section > h2 {
+        grid-column: 1/8;
+        padding: 1rem;
+    }
+
+    .Content-Section > div {
+        grid-column: 8/17;
+    }
+
+    .cs-wrapper {
+        padding: 15px 0;
     }
 
     .cs-wrapper.topPaddingLarge {
@@ -151,41 +157,51 @@
     .cs-wrapper.bottomPaddingSmall {
         padding-bottom: 60px;
     }
+
+
     
 }
 
 @media (--desktop-viewport) {
 
+    .Content-Section {
+        grid-column: 3 / 15;
+    }
+
+    .Content-Section > h2 {
+        grid-column: 1/6;
+    }
+
+    .Content-Section > div {
+        grid-column: 6/17;
+    }
+
     .cs-wrapper {
         padding: 30px 0;
     }
-    
-    /* .Content-Section {
-        grid-column: 5 / 13;
-    } */
 
     .cs-wrapper.topPaddingLarge {
-    padding-top: 180px;
+        padding-top: 180px;
     }
 
     .cs-wrapper.topPaddingMedium {
-    padding-top: 120px;
+        padding-top: 120px;
     }
 
     .cs-wrapper.topPaddingSmall {
-    padding-top: 60px;
+        padding-top: 60px;
     }
 
     .cs-wrapper.bottomPaddingLarge {
-    padding-bottom: 180px;
+        padding-bottom: 180px;
     }
 
     .cs-wrapper.bottomPaddingMedium {
-    padding-bottom: 120px;
+        padding-bottom: 120px;
     }
 
     .cs-wrapper.bottomPaddingSmall {
-    padding-bottom: 60px;
+        padding-bottom: 60px;
     }
 
 }
