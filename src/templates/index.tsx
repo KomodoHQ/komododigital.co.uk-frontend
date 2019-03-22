@@ -14,6 +14,7 @@ import BlogPost from '../components/blogpost';
 import SeeMoreButton from '../components/seemorebutton';
 import ContactSection from '../components/contactsection';
 import ContactForm from '../components/contactform';
+import TitleText from '../components/titletext';
 
 import images from "../utils/images";
 
@@ -62,9 +63,9 @@ interface IndexPageProps {
 export default (props: IndexPageProps) => {
   return (
     <Layout data={props.data} >
-      <ContentSection title={props.title} subtitle={props.subtitle} invert background="#000000" className="topPaddingLarge bottomPaddingLarge">
+      <TitleText title={props.title} subtitle={props.subtitle} invert background="#000000" className="topPaddingLarge bottomPaddingLarge">
         {renderAst(props.intro)}
-      </ContentSection>
+      </TitleText>
       <ContentSection title="About Us" className="topPaddingLarge bottomPaddingsmall">
         {renderAst(props.aboutUsIntro)}
       </ContentSection>

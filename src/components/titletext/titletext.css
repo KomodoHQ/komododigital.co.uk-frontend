@@ -1,0 +1,188 @@
+@import '../settings.css';
+
+.title-wrapper {
+    padding: 0;
+}
+
+.title-wrapper > .gatsby-image-wrapper {
+    width: 700px;
+    justify-self: center;
+    margin: 0;
+    padding: 0;
+    grid-column: 2 / 16;
+}
+
+.Title-Section {
+    grid-column: 2 / 16;
+    overflow: hidden;
+}
+
+.title-wrapper.topPaddingLarge {
+    padding-top: 100px;
+}
+
+.title-wrapper.topPaddingMedium {
+    padding-top: 60px;
+}
+
+.title-wrapper.topPaddingSmall {
+    padding-top: 30px;
+}
+
+.title-wrapper.bottomPaddingLarge {
+    padding-bottom: 100px;
+}
+
+.title-wrapper.bottomPaddingMedium {
+    padding-bottom: 60px;
+}
+
+.title-wrapper.bottomPaddingSmall {
+    padding-bottom: 30px;
+}
+
+.Title-Section > span {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+    display: block;
+    margin-bottom: 16px;
+}
+
+.Title-Section > h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 56px;
+}
+
+.Title-Section > div {
+    font-size: 18px;
+    line-height: 28px;
+    padding-bottom: 50px;
+}
+
+.Title-Section a {
+    color: black;
+}
+
+.invert, .invert a {
+    color: white;
+}
+
+.size-full {
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+    object-position: 50% 50%;
+}
+
+@media (--mobile-viewport) {
+
+    .title-wrapper {
+        padding: 15px 0;
+    }
+
+    .title-wrapper.topPaddingLarge {
+        padding-top: 180px;
+    }
+    
+    .title-wrapper.topPaddingMedium {
+        padding-top: 120px;
+    }
+    
+    .title-wrapper.topPaddingSmall {
+        padding-top: 60px;
+    }
+    
+    .title-wrapper.bottomPaddingLarge {
+        padding-bottom: 180px;
+    }
+    
+    .title-wrapper.bottomPaddingMedium {
+        padding-bottom: 120px;
+    }
+    
+    .title-wrapper.bottomPaddingSmall {
+        padding-bottom: 60px;
+    }
+    
+
+}
+
+@media (--laptop-viewport) {
+
+    .Title-Section {
+        grid-column: 2 / 16;
+        overflow: hidden;
+        padding: 1rem;
+    }
+
+    .title-wrapper {
+        padding: 15px 0;
+    }
+
+    .title-wrapper.topPaddingLarge {
+        padding-top: 180px;
+    }
+    
+    .title-wrapper.topPaddingMedium {
+        padding-top: 120px;
+    }
+    
+    .title-wrapper.topPaddingSmall {
+        padding-top: 60px;
+    }
+    
+    .title-wrapper.bottomPaddingLarge {
+        padding-bottom: 180px;
+    }
+    
+    .title-wrapper.bottomPaddingMedium {
+        padding-bottom: 120px;
+    }
+    
+    .title-wrapper.bottomPaddingSmall {
+        padding-bottom: 60px;
+    }
+}
+
+@media (--desktop-viewport) {
+
+    .Title-Section {
+        grid-column: 3 / 12;
+        overflow: hidden;
+        padding: 1rem;
+    }
+
+    .title-wrapper {
+        padding: 30px 0;
+    }
+
+    .title-wrapper.topPaddingLarge {
+        padding-top: 180px;
+    }
+
+    .title-wrapper.topPaddingMedium {
+        padding-top: 120px;
+    }
+
+    .title-wrapper.topPaddingSmall {
+        padding-top: 60px;
+    }
+
+    .title-wrapper.bottomPaddingLarge {
+        padding-bottom: 180px;
+    }
+
+    .title-wrapper.bottomPaddingMedium {
+        padding-bottom: 120px;
+    }
+
+    .title-wrapper.bottomPaddingSmall {
+        padding-bottom: 60px;
+    }
+
+}
