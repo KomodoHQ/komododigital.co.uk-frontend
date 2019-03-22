@@ -15,6 +15,8 @@
 .Content-Section {
     grid-column: 2 / 16;
     overflow: hidden;
+
+    display: flex;
 }
 
 .cs-wrapper.topPaddingLarge {
@@ -56,12 +58,16 @@
     font-size: 60px;
     font-weight: 600;
     line-height: 74px;
+
+    flex: 3;
 }
 
 .Content-Section > div {
     font-size: 18px;
     line-height: 30px;
     padding-bottom: 50px;
+
+    flex: 5;
 }
 
 .Content-Section a {
@@ -154,9 +160,9 @@
         padding: 30px 0;
     }
     
-    .Content-Section {
+    /* .Content-Section {
         grid-column: 5 / 13;
-    }
+    } */
 
     .cs-wrapper.topPaddingLarge {
     padding-top: 180px;
