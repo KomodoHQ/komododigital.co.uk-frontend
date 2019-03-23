@@ -315,3 +315,29 @@ export const standardsLogos = graphql`
 
   }
 `;
+
+export const icons = graphql`
+  fragment icons on Query {
+    icon_consultancy: file(relativePath: { eq: "images/icons/consultancy@3x.png" }) {
+      childImageSharp {
+        fixed(width: 90) {
+          ...GatsbyImageSharpFixed_withWebp
+        }
+      }
+    }
+    icon_design: file(relativePath: { eq: "images/icons/design@3x.png" }) {
+      childImageSharp {
+        fixed(width: 90) {
+          ...GatsbyImageSharpFixed_withWebp
+        }
+      }
+    }
+    icon_development: file(relativePath: { eq: "images/icons/development@3x.png" }) {
+      childImageSharp {
+        fixed(width: 90) {
+          ...GatsbyImageSharpFixed_withWebp
+        }
+      }
+    }
+  }
+`

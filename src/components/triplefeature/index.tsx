@@ -22,6 +22,7 @@ interface Props {
   className?: string;
   children?: ReactNode;
   title?: string;
+  imgsrc?: any;
 }
 
 /**
@@ -32,7 +33,7 @@ interface Props {
  */
 const TripleFeature: React.SFC<Props> = (props: Props) => {
   return <div>
-    <img src="" alt=""/>
+    <Img fixed={props.imgsrc.childImageSharp.fixed} />
     <h3>{props.title}</h3>
     {props.children}
   </div>;
