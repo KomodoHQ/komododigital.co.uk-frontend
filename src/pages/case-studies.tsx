@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import CaseStudies from '../templates/case-studies';
-import { siteMeta, komodoLogo } from '../utils/site-queries';
+import { siteMeta, komodoLogo, clientLogos, icons, avatars } from '../utils/site-queries';
 import { findNodes, findNode } from '../utils/nodes';
 
 export default (props) => {
@@ -41,5 +41,6 @@ export const caseStudiesQuery = graphql`
       }
     }
     ...komodoLogo
+    ...avatars
   }
 `;

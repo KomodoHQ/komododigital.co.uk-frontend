@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import BlogList from '../templates/blog-list';
-import { siteMeta, komodoLogo } from '../utils/site-queries';
+import { siteMeta, komodoLogo, clientLogos, icons, avatars } from '../utils/site-queries';
 import CleanSourceURL from '../utils/clean-source-url';
 
 export default (props) => {
@@ -36,5 +36,6 @@ export const blogListQuery = graphql`
       }
     }
     ...komodoLogo
+    ...avatars
   }
 `;

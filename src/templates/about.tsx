@@ -8,7 +8,7 @@ import PortfolioGrid from '../components/portfoliogrid';
 import StandardItem from '../components/standarditem';
 import ContentSection from '../components/contentsection';
 import ContactSection from '../components/contactsection';
-import ContactForm from '../components/contactform';
+import VCard from '../components/vcard';
 
 import images from "../utils/images";
 
@@ -124,11 +124,10 @@ export default (props: AboutPageProps) => {
         <StandardItem imgsrc={props.data.standard_istqb} link="https://www.istqb.org/" />
         <StandardItem>NPPV 2</StandardItem>
       </PortfolioGrid>
-      <ContentSection title="Contact Us" className="topPaddingLarge bottomPaddingSmall" background="#FFFFFF">
-        {renderAst(props.contactsIntro)}
-      </ContentSection>
       <ContactSection>
-        <ContactForm />
+        {renderAst(props.contactsIntro)}
+        <VCard person="Armin" avatars={props.data} />
+        <VCard person="Phoebe" avatars={props.data} />
       </ContactSection>
     </Layout>
   );

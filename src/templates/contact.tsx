@@ -4,7 +4,6 @@ import Layout from '../components/layout';
 import ContentSection from '../components/contentsection';
 import VCard from '../components/vcard';
 import ContactSection from '../components/contactsection';
-import ContactForm from '../components/contactform';
 import { Link } from '@reach/router';
 
 const renderAst = new rehypeReact({
@@ -24,13 +23,10 @@ interface ContactPageProps {
 export default (props: ContactPageProps) => {
   return (
     <Layout data={props.data}>
-      <ContentSection title="Contact Us" className="topPaddingLarge" background="#ffffff">
-        {renderAst(props.contactsIntro)}
-      </ContentSection>
       <ContactSection>
-        <VCard person="Armin" avatar={props.data.avatar} />
-        <VCard person="Phoebe" avatar={props.data.avatar} />
-      <ContactForm />
+        {renderAst(props.contactsIntro)}
+        <VCard person="Armin" avatars={props.data} />
+        <VCard person="Phoebe" avatars={props.data} />
       </ContactSection>
       <ContentSection className="topPaddingLarge bottomPaddingLarge" background="#151515" invert title="Careers">
         <p>Whether you’re looking to progress in your career or you’re a fresh-faced graduate, Komodo could be the right place for you to hone your skills and grow. The talent here is intimidatingly good, so be confident and ready to impress.</p>
