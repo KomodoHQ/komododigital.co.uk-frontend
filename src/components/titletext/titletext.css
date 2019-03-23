@@ -71,7 +71,7 @@
     color: black;
 }
 
-.invert, .invert a {
+.invert {
     color: white;
 }
 
@@ -80,6 +80,38 @@
     width: 100%;
     object-fit: contain;
     object-position: 50% 50%;
+}
+
+.showreel {
+    border: 0;
+    font-size: 22px;
+    font-weight: bold;
+    background-color: #fff;
+    color: #000;
+    padding: 20px 32px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    display: block;
+    width: 206px;
+    position: relative;
+}
+
+.showreel::after {
+    content: '';
+    background-image: url('../../content/images/play@3x.png');
+    width: 24px;
+    height: 24px;
+    background-size: 100%;
+    display: block;
+    position: absolute;
+    top: calc(50% - 14px);
+    right: 2rem;
+
+}
+
+.showreel:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,1);
 }
 
 @media (--mobile-viewport) {
