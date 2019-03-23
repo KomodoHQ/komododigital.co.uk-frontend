@@ -13,8 +13,8 @@
     font-size: 2.0rem;
 }
 
-.Testimonial > span.name, .Testimonial > span.job {
-    font-weight: 900;
+.Testimonial > span.name {
+    font-weight: 400;
 }
 
 .Testimonial > .name {
@@ -24,7 +24,8 @@
 q {
     quotes: "“" "”" "‘" "’";
     font-size: 2.0rem;
-    line-height: 52px;
+    line-height: 56px;
+    font-weight: 500;
 }
 
 .Testimonial > q:before {
@@ -41,11 +42,10 @@ q {
 
 .Testimonial > span.job, .Testimonial > span.company {
     display: block;
-    margin-bottom: 10px;
-}
-
-.Testimonial > span.job:after {
-    content: ",";
+    margin: 1rem 0;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 3px;
 }
 
 .Testimonial > hr {

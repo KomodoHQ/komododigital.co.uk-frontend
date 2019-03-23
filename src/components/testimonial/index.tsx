@@ -35,11 +35,10 @@ const Testimonial: React.SFC<Props> = ({ name=null, children=null, jobtitle=null
   return (
     <article className="komodoGridWrapper testimonial-wrapper" style={{ background: background }}>
       <div className="Testimonial">
-          <span className="name">{name}:</span>
           <q>{children}</q>
           <hr />
-          <span className="job">{jobtitle}</span>
-          <span className="company">{company}</span>
+          <span className="name">{name}</span>
+          <span className="job">{jobtitle}, {company}</span>
       </div>
     </article>
   );

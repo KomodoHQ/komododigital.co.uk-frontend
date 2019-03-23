@@ -13,7 +13,8 @@ import ContactSection from '../components/contactsection';
 import ContactForm from '../components/contactform';
 import TitleText from '../components/titletext';
 import TripleSection from '../components/triplesection';
-import TripleFeature from '../components/triplefeature/index';
+import TripleFeature from '../components/triplefeature';
+import Testimonial from '../components/testimonial';
 
 const renderAst = new rehypeReact({
   createElement: React.createElement,
@@ -114,7 +115,26 @@ export default (props: IndexPageProps) => {
           </CaseStudy>
         );
       })}
-      <SeeMoreButton title="See More Work" />
+      <SeeMoreButton title="See More Work" link={'/case-studies'} />
+      <Testimonial name="Ross Cooney" jobtitle="Chief Technical Officer" company="ISG" background="#000">
+      We’ve worked with Komodo, on and off, for ten years, I can’t think of a better way of giving a client reference than that.
+      </Testimonial>
+      <ContentSection title="Insights" className="topPaddingMedium">
+        {renderAst(props.insightsIntro)}
+      </ContentSection>
+      <BlogGrid>
+        {props.insights.map((insight) => {
+          return (
+            <BlogPost
+              key={insight.node.title}
+              slug={insight.node.slug}
+              title={insight.node.title}
+              image={insight.node.imageSource}
+            />
+          );
+        })}
+      </BlogGrid>
+      <SeeMoreButton title="See More Insights" link={'/blog-list'} />
       <ContentSection title="Client Portfolio" className="topPaddingMedium">
         {renderAst(props.clientPortfoliosIntro)}
       </ContentSection>
@@ -152,22 +172,7 @@ export default (props: IndexPageProps) => {
         <StandardItem imgsrc={props.data.client_streetstream} title="Streetstream" link="/About" />
         <StandardItem imgsrc={props.data.client_thingco} title="ThingCo" link="/About" />
       </PortfolioGrid>
-      <ContentSection title="Insights" className="topPaddingMedium">
-        {renderAst(props.insightsIntro)}
-      </ContentSection>
-      <BlogGrid>
-        {props.insights.map((insight) => {
-          return (
-            <BlogPost
-              key={insight.node.title}
-              slug={insight.node.slug}
-              title={insight.node.title}
-              image={insight.node.imageSource}
-            />
-          );
-        })}
-      </BlogGrid>
-      <SeeMoreButton title="See More Insights" link={'/blog-list'} />
+      
       <ContentSection title="Contact Us" background="#FFFFFF" className="topPaddingMedium">
         {renderAst(props.contactsIntro)}
       </ContentSection>
