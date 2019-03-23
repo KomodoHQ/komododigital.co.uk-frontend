@@ -25,7 +25,7 @@ export default (props) => {
     };
     return data;
   });
-  
+
   const hocProps = {
     services,
     caseStudies,
@@ -33,6 +33,7 @@ export default (props) => {
     subtitle: (rootNode) ? rootNode.subtitle : '',
     title: (rootNode) ? rootNode.title : '',
     intro: (rootNode) ? rootNode.htmlAst : '',
+    image: (rootNode) ? rootNode.csimage : '',
     aboutUsIntro: (aboutUsIntro) ? aboutUsIntro.htmlAst : '',
     approachIntro: (approachIntro) ? approachIntro.htmlAst : '',
     caseStudiesIntro: (caseStudiesIntro) ? caseStudiesIntro.htmlAst : '',
@@ -70,8 +71,11 @@ export const pageQuery = graphql`
             subtitle
             csimage {
               childImageSharp {
-                fluid(maxWidth: 450) {
+                fluid: fluid(maxWidth: 450) {
                   ...GatsbyImageSharpFluid_withWebp_tracedSVG
+                }
+                fluidFull: fluid(maxWidth: 1170, quality: 100) {
+                  ...GatsbyImageSharpFluid_withWebp
                 }
               }
             }

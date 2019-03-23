@@ -23,6 +23,7 @@ interface Props {
   subtitle?: string;
   invert?: boolean;
   background?: string;
+  backgroundImage?: any;
   className?: string;
   children: ReactNode;
   coverimage?: any;
@@ -34,15 +35,16 @@ interface Props {
  * 
  * @param data
  */
-const TitleText: React.SFC<Props> = ({ title = 'TITLE HERE', subtitle = null, invert, background = 'none', className = '', children, coverimage = null }) => {
+const TitleText: React.SFC<Props> = ({ title = 'TITLE HERE', subtitle = null, invert, background = 'none', className = '', children, coverimage = null, backgroundImage = null }) => {
 
   const subtitleEl = subtitle ? (<span>{subtitle}</span>) : null;
   const titleEl = title ? (<h2>{title}</h2>) : null;
   const invertedClassname = invert ? "invert" : "";
 
   const style = {
-    background: background
-  }
+    backgroundColor: backgroundImage ? null : background,
+    backgroundImage: backgroundImage ? `url(${backgroundImage.childImageSharp.fluidFull.src})` : null,
+  };
 
   let coverImage;
   if (coverimage !== null) {
