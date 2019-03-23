@@ -20,6 +20,7 @@ import "./portfoliogrid.css";
 interface Props {
   title?: string;
   children?: ReactNode;
+  className?: string;
 }
 
 /**
@@ -28,9 +29,9 @@ interface Props {
  * 
  * @param data
  */
-const PortfolioGrid: React.SFC<Props> = ({ title, children }) => {
+const PortfolioGrid: React.SFC<Props> = ({ title, children, className = '' }) => {
   return (
-    <div className="komodoGridWrapper PortfolioGrid">
+    <div className={`komodoGridWrapper PortfolioGrid cs-wrapper ${className}`}>
         <span>{title}</span>
         {children}
     </div>

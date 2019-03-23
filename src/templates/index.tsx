@@ -138,7 +138,7 @@ export default (props: IndexPageProps) => {
       <ContentSection title="Client Portfolio" className="topPaddingMedium">
         {renderAst(props.clientPortfoliosIntro)}
       </ContentSection>
-      <PortfolioGrid>
+      <PortfolioGrid className="bottomPaddingLarge">
         <StandardItem imgsrc={props.data.client_itv} title="ITV" link="/About" />
         <StandardItem
           imgsrc={props.data.client_northumbriapolice}
