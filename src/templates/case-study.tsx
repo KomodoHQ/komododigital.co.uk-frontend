@@ -6,10 +6,8 @@ import Metric from '../components/metric';
 import Testimonial from '../components/testimonial';
 import ContentSection from '../components/contentsection';
 import ContactSection from '../components/contactsection';
-import ContactForm from '../components/contactform';
 import CaseStudy from '../components/casestudy';
-
-import images from "../utils/images";
+import VCard from '../components/vcard';
 
 const renderAst = new rehypeReact({
   createElement: React.createElement,
@@ -116,11 +114,10 @@ export default (props) => {
             </CaseStudy>
           );
         })}
-      <ContentSection title="Contact Us" background={"#ffffff"}>
-        {renderAst(props.contactsIntro)}
-      </ContentSection>
       <ContactSection>
-        <ContactForm />
+        {renderAst(props.contactsIntro)}
+        <VCard person="Armin" avatars={props.data} />
+        <VCard person="Phoebe" avatars={props.data} />
       </ContactSection>
     </Layout>
   );

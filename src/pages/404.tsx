@@ -1,6 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import { siteMeta, komodoLogo } from '../utils/site-queries';
+import { siteMeta, komodoLogo, clientLogos, icons, avatars } from '../utils/site-queries';
 import FourOhFour from '../templates/404';
 
 export default (props) => {
@@ -33,5 +33,6 @@ export const fourOhFourQuery = graphql`
       }
     }
     ...komodoLogo
+    ...avatars
   }
 `;
