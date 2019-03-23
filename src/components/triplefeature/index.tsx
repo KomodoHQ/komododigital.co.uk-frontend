@@ -32,7 +32,7 @@ interface Props {
  * @param data
  */
 const TripleFeature: React.SFC<Props> = (props: Props) => {
-  return <div>
+  return <div className={`TripleFeature`}>
     <Img fixed={props.imgsrc.childImageSharp.fixed} />
     <h3>{props.title}</h3>
     {props.children}

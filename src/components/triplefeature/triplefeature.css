@@ -1,0 +1,11 @@
+.TripleFeature h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 56px;
+    margin: 0;
+}
+
+.TripleFeature p {
+    font-size: 1.1rem;
+    line-height: 28px;
+}

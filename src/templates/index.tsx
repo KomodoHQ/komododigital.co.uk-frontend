@@ -80,16 +80,22 @@ export default (props: IndexPageProps) => {
       </ContentSection>
       <TripleSection background="#ffffff" className="bottomPaddingLarge">
         <TripleFeature imgsrc={props.data.icon_consultancy} title="Consultancy">
-          Providing expert advice that helps solve bigger problems, avoid wasted time and redefine
-          constraints.
+          <p>
+            Providing expert advice that helps solve bigger problems, avoid wasted time and redefine
+            constraints.
+          </p>
         </TripleFeature>
         <TripleFeature imgsrc={props.data.icon_design} title="Design">
-          Producing great digital experiences that add value and turns product users into product
-          advocates.
+          <p>
+            Producing great digital experiences that add value and turns product users into product
+            advocates.
+          </p>
         </TripleFeature>
         <TripleFeature imgsrc={props.data.icon_development} title="Development">
-          Delivering intelligent, scalable and robust solutions built with future needs in mind to
-          maximise return on investment.
+          <p>
+            Delivering intelligent, scalable and robust solutions built with future needs in mind to
+            maximise return on investment.
+          </p>
         </TripleFeature>
       </TripleSection>
       <ContentSection title="Case Studies" className="topPaddingLarge bottomPaddingSmall">
