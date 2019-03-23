@@ -153,6 +153,34 @@ export const clientLogos = graphql`
         }
       }
     }
+    client_iamproperty: file(relativePath: { eq: "images/portfolio/iamproperty@3x.png" }) {
+      childImageSharp {
+        fixed(width: 159) {
+          ...GatsbyImageSharpFixed_withWebp_tracedSVG
+        }
+      }
+    }
+    client_theo: file(relativePath: { eq: "images/portfolio/theo@3x.png" }) {
+      childImageSharp {
+        fixed(width: 102) {
+          ...GatsbyImageSharpFixed_withWebp_tracedSVG
+        }
+      }
+    }
+    client_citizens: file(relativePath: { eq: "images/portfolio/citizens@3x.png" }) {
+      childImageSharp {
+        fixed(width: 52) {
+          ...GatsbyImageSharpFixed_withWebp_tracedSVG
+        }
+      }
+    }
+    client_xenith: file(relativePath: { eq: "images/portfolio/xenith@3x.png" }) {
+      childImageSharp {
+        fixed(width: 127) {
+          ...GatsbyImageSharpFixed_withWebp_tracedSVG
+        }
+      }
+    }
   }
 `;
 
