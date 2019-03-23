@@ -6,6 +6,7 @@
  * NPM Dependencies
  */
 import React, { ReactNode } from 'react';
+import ContactForm from '../contactform';
 
 /**
  * Local dependencies
@@ -18,6 +19,8 @@ import './contactsection.css';
  * data
  */
 interface Props {
+  children? : ReactNode;
+  className? : string;
 }
 
 /**
@@ -26,11 +29,15 @@ interface Props {
  * 
  * @param data
  */
-const ContactSection: React.SFC<Props> = ({ children }) => {
+const ContactSection: React.SFC<Props> = (props : Props) => {
   return (
-    <div className="komodoGridWrapper contactsection-wrapper">
+    <div className={`komodoGridWrapper cs-wrapper contactsection-wrapper ${props.className}`}>
       <div className="contactsection">
-        {children}
+        <h2>Contact Us</h2>
+        {props.children}
+      </div>
+      <div className="form">
+        <ContactForm />
       </div>
     </div>
   );

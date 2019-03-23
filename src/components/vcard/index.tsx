@@ -11,11 +11,11 @@ import Img from 'gatsby-image';
 /**
  * Local dependencies
  */
-import './vcard.css'
+import './vcard.css';
 
 /**
  * Props for the vCard component
- * 
+ *
  * data
  */
 interface Props {
@@ -24,33 +24,40 @@ interface Props {
 }
 
 const people = {
-  "Armin": {
-    jobtitle: "Commercial Director",
-    name:"Armin Talic",
-    email:"armin@komododigital.co.uk"
+  Armin: {
+    jobtitle: 'Commercial Director',
+    name: 'Armin Talic',
+    email: 'armin@komododigital.co.uk',
+    text: `A product of ex-Yugoslavia, he’s usually the one trying to work the problem and asking
+    “why?”. Doesn’t play golf to win business.`,
   },
-  "Phoebe": {
-    jobtitle: "Client Partner",
-    name:"Phoebe Dowley",
-    email:"phoebe@komododigital.co.uk"
-  }
-}
+  Phoebe: {
+    jobtitle: 'Client Partner',
+    name: 'Phoebe Dowley',
+    email: 'phoebe@komododigital.co.uk',
+    text: `Supports people from large organisations to start-ups and makes it look easy. Can usually
+    be found running a 5k for breakfast.`,
+  },
+};
 
 /**
- * 
+ *
  * Using SFC (Stateless Functional Component) because a vCard doesn't need to maintain any state of its own.
- * 
+ *
  * @param data
  */
 const VCard: React.SFC<Props> = ({ person, avatar }) => {
-  const { jobtitle, name, email } = people[person];
+  const { jobtitle, name, text } = people[person];
   return (
     <div className="vcard">
-      <Img fixed={avatar.childImageSharp.fixed} />
       <div>
-        <h1>{name}</h1>
-        <h2>{jobtitle}</h2>
+        <Img fixed={avatar.childImageSharp.fixed} />
+        <div>
+          <h1>{name}</h1>
+          <h2>{jobtitle}</h2>
+        </div>
       </div>
+      <p>{text}</p>
     </div>
   );
 };

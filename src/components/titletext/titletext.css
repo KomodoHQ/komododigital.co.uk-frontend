@@ -51,14 +51,15 @@
     letter-spacing: 3px;
     display: block;
     margin-bottom: 16px;
+    margin-top: 100px;
 }
 
 .Title-Section > h2 {
     margin: 0;
     padding: 0;
-    font-size: 4.1rem;
+    font-size: 2rem;
     font-weight: 500;
-    line-height: 70px;
+    line-height: 50px;
 }
 
 .Title-Section > div {
@@ -150,9 +151,17 @@
 @media (--laptop-viewport) {
 
     .Title-Section {
-        grid-column: 2 / 16;
+        grid-column: 2 / 14;
         overflow: hidden;
         padding: 1rem;
+    }
+
+    .Title-Section > h2 {
+        margin: 0;
+        padding: 0;
+        font-size: 4.1rem;
+        font-weight: 500;
+        line-height: 70px;
     }
 
     .title-wrapper {
@@ -190,6 +199,14 @@
         grid-column: 3 / 12;
         overflow: hidden;
         padding: 1rem;
+    }
+
+    .Title-Section > h2 {
+        margin: 0;
+        padding: 0;
+        font-size: 4.1rem;
+        font-weight: 500;
+        line-height: 70px;
     }
 
     .title-wrapper {

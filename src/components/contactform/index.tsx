@@ -39,32 +39,12 @@ const ContactForm: React.SFC<Props> = ({ data }) => {
           Your Email
           <input type="email" name="email" placeholder="joe@blogs.com" id="form-email" />
           </label>
-        <label htmlFor="form-service">
-          Service
-          <select name="service" id="form-service">
-            <option>Choose Service</option>
-            <option value="Discovery">Discovery</option>
-            <option value="Design">Design</option>
-            <option value="Development">Development</option>
-            <option value="Delivery">Delivery</option>
-          </select>
-        </label>
-        <label htmlFor="form-sector">
-        Sector
-          <select name="sector" id="form-sector">
-            <option>Choose Sector</option>
-            <option value="Education">Education</option>
-            <option value="Law Enforcement">Law Enforcement</option>
-            <option value="Startups">Startups</option>
-            <option value="Social Housing">Social Housing</option>
-          </select>
-        </label>
         <label htmlFor="form-message">
           Your Message
           <textarea name="message" id="form-message" cols={30} rows={10} placeholder="Your message" />
         </label>
         <div>
-          <input type="submit" value="Send" />
+          <input type="submit" value="Submit" />
         </div>
       </form>
     </div>

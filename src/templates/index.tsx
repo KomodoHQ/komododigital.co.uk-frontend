@@ -10,7 +10,6 @@ import BlogGrid from '../components/bloggrid';
 import BlogPost from '../components/blogpost';
 import SeeMoreButton from '../components/seemorebutton';
 import ContactSection from '../components/contactsection';
-import ContactForm from '../components/contactform';
 import TitleText from '../components/titletext';
 import TripleSection from '../components/triplesection';
 import TripleFeature from '../components/triplefeature';
@@ -116,8 +115,14 @@ export default (props: IndexPageProps) => {
         );
       })}
       <SeeMoreButton title="See More Work" link={'/case-studies'} />
-      <Testimonial name="Ross Cooney" jobtitle="Chief Technical Officer" company="ISG" background="#000">
-      We’ve worked with Komodo, on and off, for ten years, I can’t think of a better way of giving a client reference than that.
+      <Testimonial
+        name="Ross Cooney"
+        jobtitle="Chief Technical Officer"
+        company="ISG"
+        background="#000"
+      >
+        We’ve worked with Komodo, on and off, for ten years, I can’t think of a better way of giving
+        a client reference than that.
       </Testimonial>
       <ContentSection title="Insights" className="topPaddingMedium">
         {renderAst(props.insightsIntro)}
@@ -168,14 +173,10 @@ export default (props: IndexPageProps) => {
         <StandardItem imgsrc={props.data.client_citizens} title="LeGrand" link="/About" />
         <StandardItem imgsrc={props.data.client_xenith} title="LeGrand" link="/About" />
       </PortfolioGrid>
-      
-      <ContentSection title="Contact Us" background="#FFFFFF" className="topPaddingMedium">
+      <ContactSection className="topPaddingLarge">
         {renderAst(props.contactsIntro)}
-      </ContentSection>
-      <ContactSection>
         <VCard person="Armin" avatar={props.data.avatar} />
         <VCard person="Phoebe" avatar={props.data.avatar} />
-        <ContactForm />
       </ContactSection>
     </Layout>
   );

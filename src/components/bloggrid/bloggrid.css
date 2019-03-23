@@ -11,21 +11,31 @@
 
 @media (--tablet-viewport) {
 
+    .BlogGrid {
+        grid-template-columns: 38px repeat(3, 1fr) 38px;
+        display: grid;
+    }
+
     .BlogGrid > a:nth-of-type(3n+1) {
-        grid-column: 3 / 7;
+        grid-column: 2 / 3;
     }
     
     .BlogGrid > a:nth-of-type(3n+2) {
-        grid-column: 7 / 11;
+        grid-column: 3 / 4;
     }
     
     .BlogGrid > a:nth-of-type(3n) {
-        grid-column: 11 / 15;
+        grid-column: 4 / 5;
     }
     
 }
 
 @media (--desktop-viewport) {
+
+    .BlogGrid {
+        display: grid;
+        grid-template-columns: 1fr repeat(14, 70px) 1fr;
+    }
 
     .BlogGrid > a:nth-of-type(3n+1) {
         grid-column: 3 / 7;
