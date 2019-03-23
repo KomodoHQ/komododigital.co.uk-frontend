@@ -47,7 +47,7 @@
 .Title-Section > span {
     font-size: 16px;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: normal;
     letter-spacing: 3px;
     display: block;
     margin-bottom: 16px;
@@ -56,9 +56,9 @@
 .Title-Section > h2 {
     margin: 0;
     padding: 0;
-    font-size: 50px;
-    font-weight: bold;
-    line-height: 56px;
+    font-size: 4.1rem;
+    font-weight: 500;
+    line-height: 70px;
 }
 
 .Title-Section > div {

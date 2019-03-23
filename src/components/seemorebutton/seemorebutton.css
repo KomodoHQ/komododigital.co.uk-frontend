@@ -8,15 +8,22 @@
 
 .seemorebutton-wrapper > a {
     grid-column: 2 / 16;
+    transition: all 0.2s ease;
+}
+
+.seemorebutton-wrapper > a :hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
 }
 
 .seemorebutton-wrapper > a > button {
     border: 0;
     font-size: 22px;
-    font-weight: bold;
+    font-weight: 400;
     background-color: black;
     color: white;
-    padding: 25px 47px;
+    padding: 25px 75px;
+    letter-spacing: 1px;
 }
 
 
