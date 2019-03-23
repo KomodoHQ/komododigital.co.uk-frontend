@@ -369,3 +369,22 @@ export const icons = graphql`
     }
   }
 `
+
+export const avatars = graphql`
+  fragment avatars on Query {
+    person_armin: file(relativePath: { eq: "images/people/armin@3x.png" }) {
+      childImageSharp {
+        fixed(width: 70) {
+          ...GatsbyImageSharpFixed_withWebp
+        }
+      }
+    }
+    person_phoebe: file(relativePath: { eq: "images/people/phoebe@3x.png" }) {
+      childImageSharp {
+        fixed(width: 70) {
+          ...GatsbyImageSharpFixed_withWebp
+        }
+      }
+    }
+  }
+`

@@ -30,6 +30,7 @@ const people = {
     email: 'armin@komododigital.co.uk',
     text: `A product of ex-Yugoslavia, he’s usually the one trying to work the problem and asking
     “why?”. Doesn’t play golf to win business.`,
+    photo: 'person_armin',
   },
   Phoebe: {
     jobtitle: 'Client Partner',
@@ -37,6 +38,7 @@ const people = {
     email: 'phoebe@komododigital.co.uk',
     text: `Supports people from large organisations to start-ups and makes it look easy. Can usually
     be found running a 5k for breakfast.`,
+    photo: 'person_phoebe',
   },
 };
 
@@ -46,12 +48,12 @@ const people = {
  *
  * @param data
  */
-const VCard: React.SFC<Props> = ({ person, avatar }) => {
-  const { jobtitle, name, text } = people[person];
+const VCard: React.SFC<Props> = ({ person, avatars }) => {
+  const { jobtitle, name, text, photo } = people[person];
   return (
     <div className="vcard">
       <div>
-        <Img fixed={avatar.childImageSharp.fixed} />
+        <Img fixed={avatars[photo].childImageSharp.fixed} />
         <div>
           <h1>{name}</h1>
           <h2>{jobtitle}</h2>

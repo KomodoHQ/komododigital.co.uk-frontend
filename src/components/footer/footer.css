@@ -1,6 +1,6 @@
 @import '../settings.css';
 
-footer {
+footer.main-footer {
     padding: 50px 0 100px;
     align-items: flex-start;
     justify-items: flex-start;
@@ -8,13 +8,17 @@ footer {
     background-color: #000000;
 }
 
-footer > .komodo {
+footer.main-footer > .komodo {
     grid-column: 2 / 16;
     width: 100%;
     margin-bottom: 50px;
 }
 
-footer > .address {
+footer.main-footer > .komodo .logo {
+    width: 241px;
+}
+
+footer.main-footer > .address {
     grid-column: 2 / 16;
     margin-bottom: 50px;
     width: 100%;
@@ -22,26 +26,33 @@ footer > .address {
     flex-wrap: wrap;
 }
 
-footer span {
+footer.main-footer > .address a {
+    color: #fff;
+    font-weight: lighter;
+    -webkit-font-smoothing: antialiased;
+}
+
+footer.main-footer span {
     flex: 100%;
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 20px;
+    letter-spacing: 3px;
 }
 
-footer > div.address > address {
+footer.main-footer > div.address > address {
     line-height: 2.0rem;
     font-style: normal;
 }
 
-footer > div.sitemap {
+footer.main-footer > div.sitemap {
     grid-column: 2 / 16;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
 
-footer > div.sitemap > ul {
+footer.main-footer > div.sitemap > ul {
     flex: 50%;
     line-height: 2.0rem;
     list-style: none;
@@ -50,14 +61,16 @@ footer > div.sitemap > ul {
     font-style: normal;
 }
 
-footer > div.sitemap > ul > li > a {
+footer.main-footer > div.sitemap > ul > li > a {
     color: white;
+    font-weight: lighter;
+    font-size: 1.1rem;
 }
 
 
 @media (--mobile-viewport) {
 
-    footer {
+    footer.main-footer {
         padding: 50px 0 100px;
     }
 
@@ -65,19 +78,19 @@ footer > div.sitemap > ul > li > a {
 
 @media (--tablet-viewport) {
 
-    footer {
+    footer.main-footer {
         padding: 50px 0 100px;
     }
     
-    footer > .komodo {
+    footer.main-footer > .komodo {
         grid-column: 2 / 16;
     }
     
-    footer > .address {
+    footer.main-footer > .address {
         grid-column: 2 / 10;
     }
 
-    footer > div.sitemap {
+    footer.main-footer > div.sitemap {
         grid-column: 10 / 16;
     }
 
@@ -85,19 +98,19 @@ footer > div.sitemap > ul > li > a {
 
 @media (--desktop-viewport) {
 
-    footer {
+    footer.main-footer {
         padding: 50px 0 100px;
     }
     
-    footer > .komodo {
+    footer.main-footer > .komodo {
         grid-column: 2 / 9;
     }
 
-    footer > .address {
+    footer.main-footer > .address {
         grid-column: 9 / 13;
     }
 
-    footer > div.sitemap {
+    footer.main-footer > div.sitemap {
         grid-column: 13 / 16;
     }
 

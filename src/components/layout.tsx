@@ -14,8 +14,7 @@ interface Props {
   inverted?: boolean;
 }
 
-const Layout: React.SFC<Props> = ({ data, children, background='', inverted=false }) => {
-
+const Layout: React.SFC<Props> = ({ data, children, background = '', inverted = false }) => {
   const logo = !inverted ? data.logo.childImageSharp : data.logo_inverted.childImageSharp;
 
   return (
@@ -37,7 +36,12 @@ const Layout: React.SFC<Props> = ({ data, children, background='', inverted=fals
         You have Javascript disabled. While it isn't needed, it will make your experience nicer.
       </noscript>
       <NavigationBar logo={logo} background={background} inverted={inverted} />
-      <div className="main" style={{ background: "linear-gradient(to bottom, "+background+" 80px,#EAEAEA 80px)" }}>
+      <div
+        className="main"
+        style={{
+          background: `linear-gradient(to bottom, ${background} 80px,#EAEAEA 80px)`,
+        }}
+      >
         {children}
       </div>
       <Footer />

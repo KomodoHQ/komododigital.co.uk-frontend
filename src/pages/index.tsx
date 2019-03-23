@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import Index from '../templates/index';
-import { siteMeta, komodoLogo, clientLogos, icons } from '../utils/site-queries';
+import { siteMeta, komodoLogo, clientLogos, icons, avatars } from '../utils/site-queries';
 import { findNodes, findNode } from '../utils/nodes';
 import CleanSourceURL from '../utils/clean-source-url';
 
@@ -88,5 +88,6 @@ export const pageQuery = graphql`
     ...clientLogos
     ...komodoLogo
     ...icons
+    ...avatars
   }
 `;

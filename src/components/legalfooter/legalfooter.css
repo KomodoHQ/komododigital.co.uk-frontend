@@ -26,6 +26,12 @@
     color: white;
 }
 
+.legal-footer ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 0.5rem;
+}
+
 
 @media (--mobile-viewport) {
 
@@ -61,11 +67,15 @@
     }
 
     .legal-footer  div.company {
-        grid-column: 2 / 14;
+        grid-column: 2 / 10;
     }
 
     .legal-footer  div.contact {
-        grid-column: 14 / 16;
+        grid-column: 10 / 16;
+    }
+
+    .legal-footer ul li {
+        margin: 0 1rem;
     }
 
 }

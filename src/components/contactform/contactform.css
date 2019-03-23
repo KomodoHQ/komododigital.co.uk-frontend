@@ -27,7 +27,7 @@
 
 .contactform > form > div {
   display: flex;
-  width: 97.5%;
+  width: 99%;
   justify-content: flex-end;
 }
 
@@ -37,7 +37,7 @@ input[type='submit'] {
   font-weight: bold;
   background-color: black;
   color: white;
-  padding: 27px 47px;
+  padding: 25px 75px;
 }
 
 @media (min-width: 1000px) {

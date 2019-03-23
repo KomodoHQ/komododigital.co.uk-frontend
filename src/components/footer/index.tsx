@@ -15,53 +15,69 @@ import './footer.css';
 
 /**
  * Props for the footer component
- * 
+ *
  * data
  */
-interface Props {
-
-}
+interface Props {}
 
 /**
- * 
- * Using SFC (Stateless Functional Component) because a footer doesn't need to maintain any state of its own.
- * 
+ *
+ * Using SFC (Stateless Functional Component) because a
+ * footer doesn't need to maintain any state of its own.
+ *
  * @param data
  */
-const Footer: React.SFC<Props> = ({  }) => {
+const Footer: React.SFC<Props> = ({}) => {
   return (
-    <footer className="komodoGridWrapper">
-        <div className="komodo"><img src={require('../../content/images/Komodo_PFS.png')} alt="Komodo - People Friendly Software" /></div>
-        <div className="address">
-          <span>Address</span>
-          <address>
-            Komodo Digital,<br />
-            63 Westgate Rd,<br />
-            Newcastle upon Tyne,<br />
-            NE1 1SG
-          </address>
-          {/* <address>
-            Komodo | The Core<br />
-            Science Central, Bath Ln,<br />
-            Newcastle upon Tyne<br />
-            NE4 5TF
-          </address> */}
-        </div>
-        <div className="sitemap">
-          <span>Sitemap</span>
-          <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/">Case Studies</Link></li>
-            <li><Link to="/">Insights</Link></li>
-            <li><Link to="/">Careers</Link></li>
-          </ul>
-          <ul>
-            <li><Link to="/">Contact</Link></li>
-            <li><a href="https://twitter.com/komodohq">Twitter</a></li>
-            <li><a href="https://facebook.com/komodohq">Facebook</a></li>
-            <li><a href="https://linkedin.com/komodohq">LinkedIn</a></li>
-          </ul>
-        </div>
+    <footer className="komodoGridWrapper main-footer">
+      <div className="komodo">
+        <img
+          src={require('../../content/images/Komodo@3x.png')}
+          alt="Komodo - People Friendly Software"
+          className="logo"
+        />
+      </div>
+      <div className="address">
+        <span>Address</span>
+        <address>
+          Komodo Digital,
+          63 Westgate Rd,
+          <br />
+          Newcastle upon Tyne,
+          NE1 1SG,
+          <br />
+          <a href="mailto:hello@komododigital.co.uk">hello@komododigital.co.uk</a><br />
+          <a href="tel:+441912286555">0191 228 6555</a>
+        </address>
+      </div>
+      <div className="sitemap">
+        <span>Sitemap</span>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+          <li>
+            <Link to="/services">Services</Link>
+          </li>
+          <li>
+            <Link to="/case-studies">Case Studies</Link>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <Link to="/blog-list">Insights</Link>
+          </li>
+          <li>
+            <a href="https://hire.withgoogle.com/public/jobs/komododigitalcouk">Careers</a>
+          </li>
+          <li>
+            <Link to="/contact">Contact</Link>
+          </li>
+        </ul>
+      </div>
     </footer>
   );
 };

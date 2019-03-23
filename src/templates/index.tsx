@@ -175,8 +175,8 @@ export default (props: IndexPageProps) => {
       </PortfolioGrid>
       <ContactSection className="topPaddingLarge">
         {renderAst(props.contactsIntro)}
-        <VCard person="Armin" avatar={props.data.avatar} />
-        <VCard person="Phoebe" avatar={props.data.avatar} />
+        <VCard person="Armin" avatars={props.data} />
+        <VCard person="Phoebe" avatars={props.data} />
       </ContactSection>
     </Layout>
   );

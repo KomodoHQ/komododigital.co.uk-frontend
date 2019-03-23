@@ -19,7 +19,7 @@
 .seemorebutton-wrapper > a > button {
     border: 0;
     font-size: 22px;
-    font-weight: 400;
+    font-weight: bold;
     background-color: black;
     color: white;
     padding: 25px 75px;

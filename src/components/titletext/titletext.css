@@ -47,7 +47,7 @@
 .Title-Section > span {
     font-size: 16px;
     text-transform: uppercase;
-    font-weight: normal;
+    font-weight: bold;
     letter-spacing: 3px;
     display: block;
     margin-bottom: 16px;
@@ -58,7 +58,7 @@
     margin: 0;
     padding: 0;
     font-size: 2rem;
-    font-weight: 500;
+    font-weight: bold;
     line-height: 50px;
 }
 
@@ -159,8 +159,8 @@
     .Title-Section > h2 {
         margin: 0;
         padding: 0;
-        font-size: 4.1rem;
-        font-weight: 500;
+        font-size: 4rem;
+        font-weight: bold;
         line-height: 70px;
     }
 
@@ -204,8 +204,8 @@
     .Title-Section > h2 {
         margin: 0;
         padding: 0;
-        font-size: 4.1rem;
-        font-weight: 500;
+        font-size: 4rem;
+        font-weight: bold;
         line-height: 70px;
     }
 
