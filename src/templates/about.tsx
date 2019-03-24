@@ -69,8 +69,8 @@ export default (props: AboutPageProps) => {
       </TwoColumn>
       <ContactSection className="topPaddingLarge">
         {renderAst(props.contactsIntro)}
-        <VCard person="Armin" avatars={props.data} />
-        <VCard person="Phoebe" avatars={props.data} />
+        <VCard person="Jason" avatars={props.data} />
+        <VCard person="Andy" avatars={props.data} />
       </ContactSection>
     </Layout>
   );

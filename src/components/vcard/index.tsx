@@ -40,6 +40,22 @@ const people = {
     be found running a 5k for breakfast.`,
     photo: 'person_phoebe',
   },
+  Jason: {
+    jobtitle: 'Project Manager',
+    name: 'Jason Christie',
+    email: 'jason@komododigital.co.uk',
+    text: `Spends most of his time in JIRA, SoW docs or sprint planning and retrospectives.
+    Attends the BrewDog shareholders meetings.`,
+    photo: 'person_jason',
+  },
+  Andy: {
+    jobtitle: 'Founder & MD',
+    name: 'Andy Greener',
+    email: 'andy@komododigital.co.uk',
+    text: `Entrepreneur and liker of big ideas. Alpine Saxophonist (Grade 1.5) and 
+    Drone enthusiast. Miniature Schnauzer Owner.`,
+    photo: 'person_andy',
+  },
 };
 
 /**

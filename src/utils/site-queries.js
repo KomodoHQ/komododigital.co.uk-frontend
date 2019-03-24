@@ -386,5 +386,19 @@ export const avatars = graphql`
         }
       }
     }
+    person_jason: file(relativePath: { eq: "images/people/jason@3x.png" }) {
+      childImageSharp {
+        fixed(width: 70) {
+          ...GatsbyImageSharpFixed_withWebp
+        }
+      }
+    }
+    person_andy: file(relativePath: { eq: "images/people/andy@3x.png" }) {
+      childImageSharp {
+        fixed(width: 70) {
+          ...GatsbyImageSharpFixed_withWebp
+        }
+      }
+    }
   }
 `
