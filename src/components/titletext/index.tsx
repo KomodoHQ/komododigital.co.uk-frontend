@@ -51,17 +51,24 @@ const TitleText: React.SFC<Props> = ({
   const titleEl = title ? <h2>{title}</h2> : null;
   const invertedClassname = invert ? 'invert' : '';
 
-  const style = {
-    backgroundColor: backgroundImage ? null : background,
+  let style = {
     backgroundImage: backgroundImage
       ? `url(${backgroundImage.childImageSharp.fluidFull.src})`
       : null,
   };
 
+  if (!backgroundImage) {
+    style = {
+      background,
+    };
+  }
+
   const coverImage = coverimage !== null ? <Img fluid={coverimage.childImageSharp.fluid} /> : null;
   const showreel = showShowreel ? (
     <div>
-      <a href="https://www.youtube.com/watch?v=8TSE-zTGd4Q&app=desktop" className="showreel">Watch Showreel</a>
+      <a href="https://www.youtube.com/watch?v=8TSE-zTGd4Q&app=desktop" className="showreel">
+        Watch Showreel
+      </a>
     </div>
   ) : null;
 

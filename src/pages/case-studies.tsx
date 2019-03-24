@@ -29,6 +29,7 @@ export const caseStudiesQuery = graphql`
           frontmatter {
             title
             subtitle
+            excerpt
             csimage {
               childImageSharp {
                 fluid(maxWidth: 450) {

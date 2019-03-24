@@ -32,7 +32,9 @@ export default (props) => {
             link={study.link}
             image={study.csimage}
           >
-            {renderAst(study.htmlAst)}
+            <div>
+              <p>{study.excerpt}</p>
+            </div>
           </CaseStudy>
         );
       })}

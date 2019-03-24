@@ -4,7 +4,9 @@ import Layout from '../components/layout';
 import Metrics from '../components/metrics';
 import Metric from '../components/metric';
 import Testimonial from '../components/testimonial';
-import ContentSection from '../components/contentsection';
+import SeeMoreButton from '../components/seemorebutton';
+import CenterContent from '../components/centercontent';
+import TitleText from '../components/titletext';
 import ContactSection from '../components/contactsection';
 import CaseStudy from '../components/casestudy';
 import VCard from '../components/vcard';
@@ -13,76 +15,26 @@ const renderAst = new rehypeReact({
   createElement: React.createElement,
 }).Compiler;
 
-const data = {
-  "case-studies": {
-    navBackground: "#2C8827",
-    background: "linear-gradient(0deg, #82B84F 0%, #2C8827 100%)",
-    invert: true,
-    content: {
-      cover: null,
-      testimonial: {
-        testimonial: "Komodo are very refreshing, a talented, engaging and flexible team completely focused on delivering the customer's objectives.",
-        name: "Paul Crennell",
-        title: "Chief Technology Officer",
-        company: "Orchard Systems"
-      }
-    }
-  },
-  "case-studies/social-housing": {
-    navBackground: "#2C8827",
-    background: "linear-gradient(0deg, #82B84F 0%, #2C8827 100%)",
-    invert: true,
-    content: {
-      cover: null,
-      testimonial: {
-        testimonial: "Komodo are very refreshing, a talented, engaging and flexible team completely focused on delivering the customer's objectives.",
-        name: "Paul Crennell",
-        title: "Chief Technology Officer",
-        company: "Orchard Systems"
-      }
-    }
-  },
-  "case-studies/start-up": {
-    navBackground: "#12203A",
-    background: "linear-gradient(0deg, #23375A 0%, #12203A 100%)",
-    invert: true,
-    content: {
-      cover: require("../content/images/casestudy/StreetStreamCover.png"),
-      testimonial: {
-        testimonial: "Komodo are very refreshing, a talented, engaging and flexible team completely focused on delivering the customer's objectives.",
-        name: "Paul Crennell",
-        title: "Chief Technology Officer",
-        company: "Orchard Systems"
-      }
-    }
-  }
-}
-
 export default (props) => {
-  
-  let page;
-
-  let slug = "case-studies/start-up";
-
-  if (props.pageContext && props.pageContext.hasOwnProperty("slug")) { // TODO: Work out why tests don't have the pageContext property
-    page = data[props.pageContext.slug];
-    slug = props.pageContext.slug;
-  } else {
-    page = data["case-studies/start-up"];
-  }
-
-  const casestudy = props.caseStudies.filter((casestudy)=>{
-    return casestudy.link===slug;
-  });
-  
   return (
-    <Layout data={props.data} background={page.navBackground}>
-      <ContentSection subtitle={props.subtitle} title={props.title} background={page.background} invert={page.invert} className="topPaddingLarge bottomPaddingLarge" coverimage={casestudy[0]?casestudy[0].coverimage:null}>{renderAst(props.intro)}</ContentSection>
-      <ContentSection title="Solution/Project Outcome">
+    <Layout data={props.data} background={props.navBackground}>
+      <TitleText
+        subtitle={props.subtitle}
+        title={props.title}
+        background={props.background}
+        invert={props.invert}
+        className="topPaddingLarge bottomPaddingNone"
+        coverimage={props.coverimage}
+        showShowreel={false}
+      >
+        {renderAst(props.intro)}
+      </TitleText>
+      <CenterContent className="topPaddingLarge bottomPaddingSmall">
+        <h2>{props.metricsTitle}</h2>
         {renderAst(props.metricsIntro)}
-      </ContentSection>
+      </CenterContent>
       <Metrics>
-      {props.metrics.map((metric, i) => {
+        {props.metrics && props.metrics.map((metric, i) => {
           return (
             <Metric
               key={`metric-${i}`}
@@ -91,30 +43,41 @@ export default (props) => {
               description={metric.description}
             />
           );
-        })
-      }
-      </Metrics>
-      <ContentSection title={props.processTitle}>
-        {renderAst(props.process)}
-      </ContentSection>
-      <Testimonial background={page.background} name={page.content.testimonial.name} jobtitle={page.content.testimonial.title} company={page.content.testimonial.company}>{page.content.testimonial.testimonial}</Testimonial>
-      <ContentSection title="Other related work">
-        {renderAst(props.caseStudiesIntro)}
-      </ContentSection>
-      {props.caseStudies.map((study) => {
-          return (
-            <CaseStudy
-              key={study.title}
-              subtitle={study.subtitle}
-              title={study.title}
-              link={study.link}
-              image={study.csimage}
-            >
-              {renderAst(study.htmlAst)}
-            </CaseStudy>
-          );
         })}
-      <ContactSection>
+      </Metrics>
+      <CenterContent background="#fff" className="bottomPaddingLarge topPaddingLarge">
+        <h2>{props.processTitle}</h2>
+        {renderAst(props.process)}
+      </CenterContent>
+      <Testimonial
+        background={props.background}
+        name={props.testimonial.name}
+        jobtitle={props.testimonial.jobtitle}
+        company={props.testimonial.company}
+      >
+        {props.testimonial.testimonial}
+      </Testimonial>
+      <CenterContent className="bottomPaddingSmall">
+        <h2>{props.caseStudiesTitle}</h2>
+        {renderAst(props.caseStudiesIntro)}
+      </CenterContent>
+      {props.caseStudies.map((study) => {
+        return (
+          <CaseStudy
+            key={study.title}
+            subtitle={study.subtitle}
+            title={study.title}
+            link={study.link}
+            image={study.csimage}
+          >
+            <div>
+              <p>{study.excerpt}</p>
+            </div>
+          </CaseStudy>
+        );
+      })}
+      <SeeMoreButton title="See More Work" />
+      <ContactSection background="#fff" className="topPaddingLarge">
         {renderAst(props.contactsIntro)}
         <VCard person="Armin" avatars={props.data} />
         <VCard person="Phoebe" avatars={props.data} />
