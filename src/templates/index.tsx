@@ -139,7 +139,7 @@ export default (props: IndexPageProps) => {
           );
         })}
       </BlogGrid>
-      <SeeMoreButton title="See More Insights" link={'/blog-list'} />
+      <SeeMoreButton title="See More Insights" link={'/insights'} />
       <ContentSection title="Client Portfolio" className="topPaddingMedium">
         {renderAst(props.clientPortfoliosIntro)}
       </ContentSection>
@@ -173,7 +173,7 @@ export default (props: IndexPageProps) => {
         <StandardItem imgsrc={props.data.client_citizens} title="LeGrand" link="/About" />
         <StandardItem imgsrc={props.data.client_xenith} title="LeGrand" link="/About" />
       </PortfolioGrid>
-      <ContactSection className="topPaddingLarge">
+      <ContactSection className="topPaddingLarge" background="#fff">
         {renderAst(props.contactsIntro)}
         <VCard person="Armin" avatars={props.data} />
         <VCard person="Phoebe" avatars={props.data} />

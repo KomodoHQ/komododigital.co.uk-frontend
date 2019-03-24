@@ -367,6 +367,13 @@ export const icons = graphql`
         }
       }
     }
+    icon_career: file(relativePath: { eq: "images/icons/career@3x.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 571, quality: 100) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
   }
 `
 
@@ -380,6 +387,27 @@ export const avatars = graphql`
       }
     }
     person_phoebe: file(relativePath: { eq: "images/people/phoebe@3x.png" }) {
+      childImageSharp {
+        fixed(width: 70) {
+          ...GatsbyImageSharpFixed_withWebp
+        }
+      }
+    }
+    person_jason: file(relativePath: { eq: "images/people/jason@3x.png" }) {
+      childImageSharp {
+        fixed(width: 70) {
+          ...GatsbyImageSharpFixed_withWebp
+        }
+      }
+    }
+    person_andy: file(relativePath: { eq: "images/people/andy@3x.png" }) {
+      childImageSharp {
+        fixed(width: 70) {
+          ...GatsbyImageSharpFixed_withWebp
+        }
+      }
+    }
+    person_ian: file(relativePath: { eq: "images/people/ian@3x.png" }) {
       childImageSharp {
         fixed(width: 70) {
           ...GatsbyImageSharpFixed_withWebp

@@ -1,10 +1,10 @@
 @import '../settings.css';
 
-.cs-wrapper {
+.two-column-wrapper {
     padding: 0;
 }
 
-.cs-wrapper > .gatsby-image-wrapper {
+.two-column-wrapper > .gatsby-image-wrapper {
     width: 700px;
     justify-self: center;
     margin: 0;
@@ -12,36 +12,36 @@
     grid-column: 2 / 16;
 }
 
-.Content-Section {
+.Two-Column {
     grid-column: 2 / 16;
     overflow: hidden;
 }
 
-.cs-wrapper.topPaddingLarge {
+.two-column-wrapper.topPaddingLarge {
     padding-top: 100px;
 }
 
-.cs-wrapper.topPaddingMedium {
+.two-column-wrapper.topPaddingMedium {
     padding-top: 60px;
 }
 
-.cs-wrapper.topPaddingSmall {
+.two-column-wrapper.topPaddingSmall {
     padding-top: 30px;
 }
 
-.cs-wrapper.bottomPaddingLarge {
+.two-column-wrapper.bottomPaddingLarge {
     padding-bottom: 100px;
 }
 
-.cs-wrapper.bottomPaddingMedium {
+.two-column-wrapper.bottomPaddingMedium {
     padding-bottom: 60px;
 }
 
-.cs-wrapper.bottomPaddingSmall {
+.two-column-wrapper.bottomPaddingSmall {
     padding-bottom: 30px;
 }
 
-.Content-Section > span {
+.Two-Column > span {
     font-size: 16px;
     text-transform: uppercase;
     font-weight: bold;
@@ -51,7 +51,7 @@
     margin-bottom: 1rem;
 }
 
-.Content-Section > h2 {
+.Two-Column > h2 {
     margin: 0;
     padding: 0;
     font-size: 50px;
@@ -59,17 +59,13 @@
     line-height: 56px;
 }
 
-.Content-Section > div {
+.Two-Column > div {
     font-size: 18px;
     line-height: 28px;
 }
 
-.Content-Section a {
+.Two-Column a {
     color: black;
-}
-
-.invert, .invert a {
-    color: white;
 }
 
 .size-full {
@@ -79,33 +75,54 @@
     object-position: 50% 50%;
 }
 
+.Two-Column h3 {
+    font-size: 3rem;
+    line-height: 49px;
+    font-weight: bold;
+    margin: 1.7rem 0 0;
+}
+
+.Two-Column p {
+    margin: 0 0 4rem;
+}
+
+.Two-Column strong {
+    display: block;
+}
+
+.Two-Column-Divider {
+    margin: 0;
+    grid-column: 2 / 16;
+    margin-top: 5rem;
+}
+
 @media (--mobile-viewport) {
 
-    .cs-wrapper {
+    .two-column-wrapper {
         padding: 15px 0;
     }
 
-    .cs-wrapper.topPaddingLarge {
+    .two-column-wrapper.topPaddingLarge {
         padding-top: 180px;
     }
     
-    .cs-wrapper.topPaddingMedium {
+    .two-column-wrapper.topPaddingMedium {
         padding-top: 120px;
     }
     
-    .cs-wrapper.topPaddingSmall {
+    .two-column-wrapper.topPaddingSmall {
         padding-top: 60px;
     }
     
-    .cs-wrapper.bottomPaddingLarge {
+    .two-column-wrapper.bottomPaddingLarge {
         padding-bottom: 180px;
     }
     
-    .cs-wrapper.bottomPaddingMedium {
+    .two-column-wrapper.bottomPaddingMedium {
         padding-bottom: 120px;
     }
     
-    .cs-wrapper.bottomPaddingSmall {
+    .two-column-wrapper.bottomPaddingSmall {
         padding-bottom: 60px;
     }
     
@@ -114,98 +131,102 @@
 
 @media (--laptop-viewport) {
 
-    .Content-Section {
+    .Two-Column {
         grid-column: 2 / 16;
         display: grid;
 
         grid-template-columns: 1fr repeat(14, 50px) 1fr;
     }
 
-    .Content-Section > span {
+    .Two-Column > span {
         margin: 0 1rem;
     }
 
-    .Content-Section > h2 {
+    .Two-Column > h2 {
         grid-column: 1/8;
         padding: 1rem;
     }
 
-    .Content-Section > div {
+    .Two-Column > div {
         grid-column: 8/17;
     }
 
-    .cs-wrapper {
+    .two-column-wrapper {
         padding: 15px 0;
     }
 
-    .cs-wrapper.topPaddingLarge {
+    .two-column-wrapper.topPaddingLarge {
         padding-top: 180px;
     }
     
-    .cs-wrapper.topPaddingMedium {
+    .two-column-wrapper.topPaddingMedium {
         padding-top: 120px;
     }
     
-    .cs-wrapper.topPaddingSmall {
+    .two-column-wrapper.topPaddingSmall {
         padding-top: 60px;
     }
     
-    .cs-wrapper.bottomPaddingLarge {
+    .two-column-wrapper.bottomPaddingLarge {
         padding-bottom: 180px;
     }
     
-    .cs-wrapper.bottomPaddingMedium {
+    .two-column-wrapper.bottomPaddingMedium {
         padding-bottom: 120px;
     }
     
-    .cs-wrapper.bottomPaddingSmall {
+    .two-column-wrapper.bottomPaddingSmall {
         padding-bottom: 60px;
     }
 
-
-    
+    .Two-Column-Divider {
+        grid-column: 2 / 16;
+    }
 }
 
 @media (--desktop-viewport) {
 
-    .Content-Section {
+    .Two-Column {
         grid-column: 3 / 15;
     }
 
-    .Content-Section > h2 {
+    .Two-Column > h2 {
         grid-column: 1/6;
     }
 
-    .Content-Section > div {
+    .Two-Column > div {
         grid-column: 6/17;
     }
 
-    .cs-wrapper {
+    .two-column-wrapper {
         padding: 30px 0;
     }
 
-    .cs-wrapper.topPaddingLarge {
+    .two-column-wrapper.topPaddingLarge {
         padding-top: 180px;
     }
 
-    .cs-wrapper.topPaddingMedium {
+    .two-column-wrapper.topPaddingMedium {
         padding-top: 120px;
     }
 
-    .cs-wrapper.topPaddingSmall {
+    .two-column-wrapper.topPaddingSmall {
         padding-top: 60px;
     }
 
-    .cs-wrapper.bottomPaddingLarge {
+    .two-column-wrapper.bottomPaddingLarge {
         padding-bottom: 180px;
     }
 
-    .cs-wrapper.bottomPaddingMedium {
+    .two-column-wrapper.bottomPaddingMedium {
         padding-bottom: 120px;
     }
 
-    .cs-wrapper.bottomPaddingSmall {
+    .two-column-wrapper.bottomPaddingSmall {
         padding-bottom: 60px;
     }
 
+    .Two-Column-Divider {
+        grid-column: 3 / 15;
+    }
 }

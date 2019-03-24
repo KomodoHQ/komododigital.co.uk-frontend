@@ -1,0 +1,48 @@
+@import '../settings.css';
+
+.centercontent-wrapper {
+    padding: 260px 0;
+}
+
+.CenterContent {
+    grid-column: 3 / 15;
+}
+
+.CenterContent h2 {
+    font-size: 3rem;
+    line-height: 56px;
+    font-weight: bold;
+    margin: 2.2rem 0 1rem;
+}
+
+.CenterContent .gatsby-image-wrapper {
+    margin: 0 auto;
+    display: block !important;
+    max-width: 571px;
+}
+
+.CenterContent p {
+    font-size: 1.2rem;
+    line-height: 28px;
+}
+
+.CenterContent a {
+    color: #000;
+    font-weight: bold;
+}
+
+.CenterContent a::after {
+    content: '→';
+    margin: 3px 0 0 5px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2rem;
+}
+
+@media (--desktop-viewport) {
+
+    .CenterContent {
+        grid-column: 5 / 13;
+    }
+
+}

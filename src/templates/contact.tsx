@@ -1,10 +1,10 @@
 import React from 'react';
 import rehypeReact from 'rehype-react';
 import Layout from '../components/layout';
-import ContentSection from '../components/contentsection';
+import CenterContent from '../components/centercontent';
 import VCard from '../components/vcard';
 import ContactSection from '../components/contactsection';
-import { Link } from '@reach/router';
+import Img from 'gatsby-image';
 
 const renderAst = new rehypeReact({
   createElement: React.createElement,
@@ -17,21 +17,22 @@ const renderAst = new rehypeReact({
 
 interface ContactPageProps {
   contactsIntro: any;
+  career: any;
   data?: any;
 }
 
 export default (props: ContactPageProps) => {
   return (
     <Layout data={props.data}>
-      <ContactSection>
+      <ContactSection className="topPaddingMedium">
         {renderAst(props.contactsIntro)}
         <VCard person="Armin" avatars={props.data} />
         <VCard person="Phoebe" avatars={props.data} />
       </ContactSection>
-      <ContentSection className="topPaddingLarge bottomPaddingLarge" background="#151515" invert title="Careers">
-        <p>Whether you’re looking to progress in your career or you’re a fresh-faced graduate, Komodo could be the right place for you to hone your skills and grow. The talent here is intimidatingly good, so be confident and ready to impress.</p>
-        <Link to="/careers">See what careers we have available</Link>
-      </ContentSection>
+      <CenterContent background="#fff">
+        <Img fluid={props.data.icon_career.childImageSharp.fluid} />
+        {renderAst(props.career)}
+      </CenterContent>
     </Layout>
   );
 };
