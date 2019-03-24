@@ -63,6 +63,7 @@ export default (props: AboutPageProps) => {
         title={props.purposeIntro}
         className="topPaddingLarge bottomPaddingSmall"
         background="#ffffff"
+        hr={false}
       >
         {renderAst(props.purpose)}
       </TwoColumn>

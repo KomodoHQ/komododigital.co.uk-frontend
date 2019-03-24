@@ -35,7 +35,7 @@ interface Props {
  */
 const TwoColumn: React.SFC<Props> = ({
   title = 'TITLE HERE',
-  subtitle = null,
+  subtitle = 'KOMODO',
   background = 'none',
   className = '',
   children,
@@ -43,11 +43,12 @@ const TwoColumn: React.SFC<Props> = ({
 }) => {
   const subtitleEl = subtitle ? <span>{subtitle}</span> : null;
   const titleEl = title ? <h2>{title}</h2> : null;
-  const hrEl = hr ? <hr /> : null;
 
   const style = {
     background: background,
   };
+
+  const hrEl = hr ? <hr class={`Two-Column-Divider`} /> : null;
 
   return (
     <>
@@ -57,8 +58,8 @@ const TwoColumn: React.SFC<Props> = ({
           {titleEl}
           <div>{children}</div>
         </div>
+        {hrEl}
       </div>
-      {hrEl}
     </>
   );
 };

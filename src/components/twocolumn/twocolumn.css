@@ -47,7 +47,8 @@
     font-weight: bold;
     letter-spacing: 3px;
     display: block;
-    margin-bottom: 16px;
+    padding: 0;
+    margin-bottom: 1rem;
 }
 
 .Two-Column > h2 {
@@ -72,6 +73,27 @@
     width: 100%;
     object-fit: contain;
     object-position: 50% 50%;
+}
+
+.Two-Column h3 {
+    font-size: 3rem;
+    line-height: 49px;
+    font-weight: bold;
+    margin: 1.7rem 0 0;
+}
+
+.Two-Column p {
+    margin: 0 0 4rem;
+}
+
+.Two-Column strong {
+    display: block;
+}
+
+.Two-Column-Divider {
+    margin: 0;
+    grid-column: 2 / 16;
+    margin-top: 5rem;
 }
 
 @media (--mobile-viewport) {
@@ -116,6 +138,10 @@
         grid-template-columns: 1fr repeat(14, 50px) 1fr;
     }
 
+    .Two-Column > span {
+        margin: 0 1rem;
+    }
+
     .Two-Column > h2 {
         grid-column: 1/8;
         padding: 1rem;
@@ -153,8 +179,9 @@
         padding-bottom: 60px;
     }
 
-
-    
+    .Two-Column-Divider {
+        grid-column: 2 / 16;
+    }
 }
 
 @media (--desktop-viewport) {
@@ -199,4 +226,7 @@
         padding-bottom: 60px;
     }
 
+    .Two-Column-Divider {
+        grid-column: 3 / 15;
+    }
 }
