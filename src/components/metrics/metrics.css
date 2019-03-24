@@ -12,6 +12,10 @@
  
 @media (--laptop-viewport) {
 
+    .metrics-wrapper {
+        padding-bottom: 180px;
+    }
+
     .Metrics {
         grid-column: 3 / 15;
 

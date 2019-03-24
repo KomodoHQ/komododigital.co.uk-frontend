@@ -1,16 +1,15 @@
 ---
-title: 'Solution/Project Outcome'
+title: 'Success Through Collaboration'
 date: '2018-09-22'
 scores:
-  - metric: "Metric/Result"
-    value: "100%"
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text."
-  - metric: "Metric/Result"
-    value: "2,500"
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text."
-  - metric: "Metric/Result"
-    value: "150%"
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text." 
+  - metric: "Early Registrations"
+    value: "300"
+    description: "The integrated Digital Platform, received over 300 registrations in the first 4 weeks following a roll out to ‘live’."
+  - metric: "‘Find a Home’ Feature"
+    value: "Bespoke"
+    description: "The bespoke ‘Find a Home’ feature proved so popular that Onward is exploring options to meet the sudden surge in demand."
 ---
 
-Social housing metric intro text
+Together with the project team at Orchard Information Systems, we’ve been able to step back and explore the relationship between business and customer’ rather than rely on the traditional housing provider and tenant view.
+
+Working closely with Orchard’s delivery team, we were able to launch the website, alongside the Digital Platform within an ambitious timeline.
