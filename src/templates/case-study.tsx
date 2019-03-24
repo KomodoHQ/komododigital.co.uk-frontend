@@ -5,6 +5,7 @@ import Metrics from '../components/metrics';
 import Metric from '../components/metric';
 import Testimonial from '../components/testimonial';
 import ContentSection from '../components/contentsection';
+import TitleText from '../components/titletext';
 import ContactSection from '../components/contactsection';
 import CaseStudy from '../components/casestudy';
 import VCard from '../components/vcard';
@@ -16,16 +17,17 @@ const renderAst = new rehypeReact({
 export default (props) => {
   return (
     <Layout data={props.data} background={props.navBackground}>
-      <ContentSection
+      <TitleText
         subtitle={props.subtitle}
         title={props.title}
         background={props.background}
         invert={props.invert}
         className="topPaddingLarge bottomPaddingLarge"
         coverimage={props.coverimage}
+        showShowreel={false}
       >
         {renderAst(props.intro)}
-      </ContentSection>
+      </TitleText>
       <ContentSection title="Solution/Project Outcome">
         {renderAst(props.metricsIntro)}
       </ContentSection>
