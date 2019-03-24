@@ -1,6 +1,6 @@
 ---
-title: 'Standards Title'
+title: 'Toolset'
 date: '2018-09-22'
 ---
 
-Maybe there's a happy little Evergreen that lives here. You can create beautiful things - but you have to see them in your mind first. You have to make these big decisions. Every highlight needs it's own personal shadow.
+The right tool for the job is key to the successful delivery of any project. We understand this so our toolset continually evolves as new technologies emerge and advance. What follows is our current 'stack'.

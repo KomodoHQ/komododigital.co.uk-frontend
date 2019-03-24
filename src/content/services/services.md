@@ -1,6 +1,6 @@
 ---
-title: 'Services Title'
+title: 'Our Service Triplet'
 date: '2018-09-22'
 ---
 
-Maybe there's a happy little Evergreen that lives here. You can create beautiful things - but you have to see them in your mind first. You have to make these big decisions. Every highlight needs it's own personal shadow.
+Consulting, design and development form the triplet of the Komodo proposition with each discipline accountable to the other two. Our consultants understand design and development principles, our designers and developers have a consulting mindset. We ask the right questions that challenge assumptions to redefine constraints.

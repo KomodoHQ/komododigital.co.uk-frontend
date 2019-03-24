@@ -1,10 +1,10 @@
 ---
-title: 'Values and Culture Delivering Exceptional Outcomes'
-subtitle: 'The Why Behind The How'
+title: 'A Proposition to Help Your Team Deliver Exceptional Results'
+subtitle: 'We Have Your Back'
 date: '2018-09-22'
-csimage: '../images/about/about-img@3x.png'
+csimage: '../images/services/service-img@3x.png'
 ---
 
-We believe digital products that deliver significant positive impact are created when there is a strong alignment of culture and values within and between the teams that build them.
+Demanding product roadmaps, complex user needs, data integration challenges, multiple platforms and fast-moving market environments are just a few issues that make it tough for even the best digital product and service teams to achieve success.
 
-**These are our guiding principles:**
+We have a proven track record of overcoming challenges just like these for clients just like you.

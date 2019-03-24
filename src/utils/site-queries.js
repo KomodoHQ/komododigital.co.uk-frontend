@@ -400,5 +400,12 @@ export const avatars = graphql`
         }
       }
     }
+    person_ian: file(relativePath: { eq: "images/people/ian@3x.png" }) {
+      childImageSharp {
+        fixed(width: 70) {
+          ...GatsbyImageSharpFixed_withWebp
+        }
+      }
+    }
   }
 `

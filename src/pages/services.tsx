@@ -1,15 +1,15 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import About from '../templates/about';
+import Services from '../templates/services';
 import { siteMeta, komodoLogo, clientLogos, icons, avatars } from '../utils/site-queries';
 import { findNodes, findNode } from '../utils/nodes';
 
 export default (props) => {
-  const rootNode = findNode('about/index', props);
+  const rootNode = findNode('services/index', props);
   const services = findNodes('group', props, 'services');
-  const servicesIntro = findNode('about/services', props);
-  const approachIntro = findNode('index/approach', props);
-  const standardsIntro = findNode('about/standards', props);
+  const servicesIntro = findNode('services/services', props);
+  const wheelhouseIntro = findNode('services/wheelhouse', props);
+  const standardsIntro = findNode('services/standards', props);
   const contactsIntro = findNode('contacts/index', props);
 
   const hocProps = {
@@ -18,20 +18,20 @@ export default (props) => {
     title: (rootNode) ? rootNode.title : '',
     intro: (rootNode) ? rootNode.htmlAst : '',
     image: (rootNode) ? rootNode.csimage : '',
-    approachIntro: (approachIntro) ? approachIntro.htmlAst : '',
+    wheelhouseIntro: (wheelhouseIntro) ? wheelhouseIntro.htmlAst : '',
     servicesIntro: (servicesIntro) ? servicesIntro.htmlAst : '',
     standardsIntro: (standardsIntro) ? standardsIntro.htmlAst : '',
     contactsIntro: (contactsIntro) ? contactsIntro.htmlAst : '',
     ...props,
   };
 
-  return <About {...hocProps} />;
+  return <Services {...hocProps} />;
 };
 
 export const servicesQuery = graphql`
   query servicesQuery {
     ...siteMeta
-    allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/index|about|contacts/" } }) {
+    allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/index|services|contacts/" } }) {
       edges {
         node {
           htmlAst
@@ -53,6 +53,7 @@ export const servicesQuery = graphql`
     }
     ...komodoLogo
     ...standardsLogos
+    ...icons
     ...avatars
   }
 `;

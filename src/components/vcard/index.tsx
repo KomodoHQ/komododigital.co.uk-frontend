@@ -56,6 +56,13 @@ const people = {
     Drone enthusiast. Miniature Schnauzer Owner.`,
     photo: 'person_andy',
   },
+  Ian: {
+    jobtitle: 'Development Team Lead',
+    name: 'Ian Outterside',
+    email: 'ian@komododigital.co.uk',
+    text: `Sees the world in 1s and 0s. Tech, Travel, Dog. Repeat. Proud owner of Shadow.`,
+    photo: 'person_ian',
+  }
 };
 
 /**

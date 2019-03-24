@@ -9,8 +9,11 @@ import StandardItem from '../components/standarditem';
 import ContentSection from '../components/contentsection';
 import ContactSection from '../components/contactsection';
 import VCard from '../components/vcard';
+import TitleText from '../components/titletext';
+import TripleSection from '../components/triplesection';
+import TripleFeature from '../components/triplefeature';
 
-import images from "../utils/images";
+import images from '../utils/images';
 
 const renderAst = new rehypeReact({
   createElement: React.createElement,
@@ -25,7 +28,7 @@ interface Service {
   htmlAst: any;
 }
 
-interface AboutPageProps {
+interface ServicePageProps {
   services: Service[];
   subtitle: string;
   title: string;
@@ -37,24 +40,49 @@ interface AboutPageProps {
   data?: any;
 }
 
-export default (props: AboutPageProps) => {
+export default (props: ServicePageProps) => {
   return (
     <Layout data={props.data}>
-      <ContentSection subtitle={props.subtitle} title={props.title} invert background="#000000" className="topPaddingLarge bottomPaddingLarge">{renderAst(props.intro)}</ContentSection>
-      <ContentSection title="Approach" className="bottomPaddingSmall">
-        {renderAst(props.approachIntro)}
-      </ContentSection>
-      <QuadGrid>
-        {props.services.map((service) => {
-          return (
-            <GridItem key={service.title} title={service.title} image={images[`images/approach/${service.title}.png`]}>
-              {renderAst(service.htmlAst)}
-            </GridItem>
-          );
-        })}
-      </QuadGrid>
-      <ContentSection title="Services" className="bottomPaddingSmall">
+      <TitleText
+        title={props.title}
+        subtitle={props.subtitle}
+        invert
+        background="#000000"
+        className="topPaddingLarge bottomPaddingLarge"
+        backgroundImage={props.image}
+        showShowreel={false}
+      >
+        {renderAst(props.intro)}
+      </TitleText>
+      <ContentSection
+        title="Our Service Triplet"
+        className="topPaddingLarge bottomPaddingSmall"
+        background="#ffffff"
+      >
         {renderAst(props.servicesIntro)}
+      </ContentSection>
+      <TripleSection background="#ffffff" className="bottomPaddingLarge">
+        <TripleFeature imgsrc={props.data.icon_consultancy} title="Consultancy">
+          <p>
+            Providing expert advice that helps solve bigger problems, avoid wasted time and redefine
+            constraints.
+          </p>
+        </TripleFeature>
+        <TripleFeature imgsrc={props.data.icon_design} title="Design">
+          <p>
+            Producing great digital experiences that add value and turns product users into product
+            advocates.
+          </p>
+        </TripleFeature>
+        <TripleFeature imgsrc={props.data.icon_development} title="Development">
+          <p>
+            Delivering intelligent, scalable and robust solutions built with future needs in mind to
+            maximise return on investment.
+          </p>
+        </TripleFeature>
+      </TripleSection>
+      <ContentSection title="Our Wheelhouse" className="bottomPaddingSmall topPaddingLarge">
+        {renderAst(props.wheelhouseIntro)}
       </ContentSection>
       <Services>
         <ul>
@@ -88,24 +116,40 @@ export default (props: AboutPageProps) => {
           <li>Innovation development</li>
         </ul>
       </Services>
-      <ContentSection title="Standards" className="topPaddingLarge bottomPaddingSmall">
+      <ContentSection title="Toolset" className="topPaddingLarge bottomPaddingSmall">
         {renderAst(props.standardsIntro)}
       </ContentSection>
       <PortfolioGrid title="We Design With">
-        <StandardItem imgsrc={props.data.standard_sketch} title="Sketch" link="https://www.sketchapp.com/" />
+        <StandardItem
+          imgsrc={props.data.standard_sketch}
+          title="Sketch"
+          link="https://www.sketchapp.com/"
+        />
         <StandardItem imgsrc={props.data.standard_abstract} link="https://www.goabstract.com/" />
         <StandardItem imgsrc={props.data.standard_invision} link="https://www.invisionapp.com/" />
-        <StandardItem imgsrc={props.data.standard_adobecc} link="https://www.adobe.com/uk/creativecloud.html" />
+        <StandardItem
+          imgsrc={props.data.standard_adobecc}
+          link="https://www.adobe.com/uk/creativecloud.html"
+        />
       </PortfolioGrid>
-      <PortfolioGrid title="We Develop With">
+      <PortfolioGrid title="We Develop In">
         <StandardItem imgsrc={props.data.standard_php} link="http://www.php.net/" />
-        <StandardItem imgsrc={props.data.standard_html5} link="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" />
+        <StandardItem
+          imgsrc={props.data.standard_html5}
+          link="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5"
+        />
         <StandardItem imgsrc={props.data.standard_node} link="https://nodejs.org/en/" />
         <StandardItem imgsrc={props.data.standard_react} link="https://reactjs.org/" />
         <StandardItem imgsrc={props.data.standard_angular} link="https://angularjs.org/" />
-        <StandardItem imgsrc={props.data.standard_swift} link="https://developer.apple.com/swift/" />
+        <StandardItem
+          imgsrc={props.data.standard_swift}
+          link="https://developer.apple.com/swift/"
+        />
         <StandardItem imgsrc={props.data.standard_java} link="https://www.java.com/en/" />
-        <StandardItem imgsrc={props.data.standard_xamarin} link="https://visualstudio.microsoft.com/xamarin/" />
+        <StandardItem
+          imgsrc={props.data.standard_xamarin}
+          link="https://visualstudio.microsoft.com/xamarin/"
+        />
       </PortfolioGrid>
       <PortfolioGrid title="We Test With">
         <StandardItem imgsrc={props.data.standard_codeception} link="https://codeception.com/" />
@@ -113,21 +157,27 @@ export default (props: AboutPageProps) => {
         <StandardItem imgsrc={props.data.standard_selenium} link="https://www.seleniumhq.org/" />
         <StandardItem imgsrc={props.data.standard_jest} link="https://jestjs.io/" />
       </PortfolioGrid>
-      <PortfolioGrid title="We Deploy With">
+      <PortfolioGrid title="We Deploy To">
         <StandardItem imgsrc={props.data.standard_apple} link="https://www.apple.com/uk/" />
         <StandardItem imgsrc={props.data.standard_android} link="https://www.android.com/" />
         <StandardItem imgsrc={props.data.standard_aws} link="https://aws.amazon.com/" />
-        <StandardItem imgsrc={props.data.standard_azure} link="https://azure.microsoft.com/en-gb/" />
+        <StandardItem
+          imgsrc={props.data.standard_azure}
+          link="https://azure.microsoft.com/en-gb/"
+        />
       </PortfolioGrid>
-      <PortfolioGrid title="We Are Certified By">
-        <StandardItem imgsrc={props.data.standard_cyberessentials} link="https://www.cyberessentials.ncsc.gov.uk/" />
+      <PortfolioGrid title="Certified By" className={`bottomPaddingLarge`}>
+        <StandardItem
+          imgsrc={props.data.standard_cyberessentials}
+          link="https://www.cyberessentials.ncsc.gov.uk/"
+        />
         <StandardItem imgsrc={props.data.standard_istqb} link="https://www.istqb.org/" />
         <StandardItem>NPPV 2</StandardItem>
       </PortfolioGrid>
-      <ContactSection>
+      <ContactSection className={'topPaddingLarge'} background="#fff">
         {renderAst(props.contactsIntro)}
+        <VCard person="Ian" avatars={props.data} />
         <VCard person="Armin" avatars={props.data} />
-        <VCard person="Phoebe" avatars={props.data} />
       </ContactSection>
     </Layout>
   );

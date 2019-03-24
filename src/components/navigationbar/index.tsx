@@ -83,6 +83,9 @@ class NavigationBar extends React.Component<Props> {
             <Link to={'about'}>About</Link>
           </li>
           <li>
+            <Link to={'services'}>Services</Link>
+          </li>
+          <li>
             <Link to={'case-studies'}>Case Studies</Link>
           </li>
           <li>
