@@ -13,7 +13,7 @@ import { findNodes, findNode, findNodeRaw } from '../utils/nodes';
 export default (props) => {
   const rootNode = findNode(`${props.pageContext.slug}/index`, props);
   let caseStudies = findNodes('group', props, 'case-studies');
-  const caseStudiesIntro = findNode('case-studies/index', props);
+  const caseStudiesIntro = findNodeRaw('case-studies/other', props.data.others);
   const metrics = findNodeRaw(`${props.pageContext.slug}/metrics`, props.data.metrics);
   const testimonial = findNodeRaw(`${props.pageContext.slug}/testimonial`, props.data.testimonial);
   const process = findNodeRaw(`${props.pageContext.slug}/process`, props.data.process);
@@ -39,10 +39,10 @@ export default (props) => {
     metricsTitle: metrics ? metrics.frontmatter.title : '',
     metrics: metrics ? metrics.frontmatter.scores : '',
     testimonial: testimonial ? testimonial.frontmatter : '',
-    testimonialText: testimonial ? testimonial.htmlAst : '',
     processTitle: process ? process.frontmatter.title : '',
     process: process ? process.htmlAst : '',
     caseStudiesIntro: caseStudiesIntro ? caseStudiesIntro.htmlAst : '',
+    caseStudiesTitle: caseStudiesIntro ? caseStudiesIntro.frontmatter.title : '',
     contactsIntro: contactsIntro ? contactsIntro.htmlAst : '',
     ...props,
   };
@@ -120,11 +120,24 @@ export const caseStudyQuery = graphql`
     ) {
       edges {
         node {
-          htmlAst
           frontmatter {
             name
             jobtitle
             company
+            testimonial
+          }
+          fileAbsolutePath
+        }
+      }
+    }
+    others: allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/case-studies/other/" } }
+    ) {
+      edges {
+        node {
+          htmlAst
+          frontmatter {
+            title
           }
           fileAbsolutePath
         }

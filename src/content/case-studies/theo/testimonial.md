@@ -1,7 +1,6 @@
 ---
-name: 'Bob Testimonial'
-jobtitle: 'Testimonial Writer'
-company: 'Testimonials R Us'
+name: 'Jonathon Valentine'
+jobtitle: 'CO-FOUNDER'
+company: 'THINGCO'
+testimonial: 'I immediately regret this decision.'
 ---
-
-Text for the startups testimonial

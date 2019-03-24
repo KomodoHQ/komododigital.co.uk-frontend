@@ -4,7 +4,7 @@ import Layout from '../components/layout';
 import Metrics from '../components/metrics';
 import Metric from '../components/metric';
 import Testimonial from '../components/testimonial';
-import ContentSection from '../components/contentsection';
+import SeeMoreButton from '../components/seemorebutton';
 import CenterContent from '../components/centercontent';
 import TitleText from '../components/titletext';
 import ContactSection from '../components/contactsection';
@@ -46,18 +46,22 @@ export default (props) => {
           );
         })}
       </Metrics>
-      <ContentSection title={props.processTitle}>{renderAst(props.process)}</ContentSection>
+      <CenterContent background="#fff" className="bottomPaddingLarge topPaddingLarge">
+        <h2>{props.processTitle}</h2>
+        {renderAst(props.process)}
+      </CenterContent>
       <Testimonial
         background={props.background}
         name={props.testimonial.name}
         jobtitle={props.testimonial.jobtitle}
         company={props.testimonial.company}
       >
-        {renderAst(props.testimonialText)}
+        {props.testimonial.testimonial}
       </Testimonial>
-      {/* <ContentSection title="Other related work">
+      <CenterContent className='bottomPaddingSmall'>
+        <h2>{props.caseStudiesTitle}</h2>
         {renderAst(props.caseStudiesIntro)}
-      </ContentSection> */}
+      </CenterContent>
       {props.caseStudies.map((study) => {
         return (
           <CaseStudy
@@ -71,7 +75,8 @@ export default (props) => {
           </CaseStudy>
         );
       })}
-      <ContactSection>
+      <SeeMoreButton title="See More Work" />
+      <ContactSection background='#fff' className='topPaddingLarge'>
         {renderAst(props.contactsIntro)}
         <VCard person="Armin" avatars={props.data} />
         <VCard person="Phoebe" avatars={props.data} />
