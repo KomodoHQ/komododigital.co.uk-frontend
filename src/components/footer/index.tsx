@@ -68,7 +68,7 @@ const Footer: React.SFC<Props> = ({}) => {
         </ul>
         <ul>
           <li>
-            <Link to="/blog-list">Insights</Link>
+            <Link to="/insights">Insights</Link>
           </li>
           <li>
             <a href="https://hire.withgoogle.com/public/jobs/komododigitalcouk">Careers</a>

@@ -139,7 +139,7 @@ export default (props: IndexPageProps) => {
           );
         })}
       </BlogGrid>
-      <SeeMoreButton title="See More Insights" link={'/blog-list'} />
+      <SeeMoreButton title="See More Insights" link={'/insights'} />
       <ContentSection title="Client Portfolio" className="topPaddingMedium">
         {renderAst(props.clientPortfoliosIntro)}
       </ContentSection>
