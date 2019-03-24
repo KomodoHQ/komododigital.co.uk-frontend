@@ -69,6 +69,7 @@ export const pageQuery = graphql`
           frontmatter {
             title
             subtitle
+            excerpt
             csimage {
               childImageSharp {
                 fluid: fluid(maxWidth: 450) {
