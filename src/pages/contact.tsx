@@ -6,9 +6,11 @@ import { findNodes, findNode } from '../utils/nodes';
 
 export default (props) => {
   const contactsIntro = findNode('contacts/index', props);
+  const career = findNode('contacts/career', props);
 
   const hocProps = {
     contactsIntro: (contactsIntro) ? contactsIntro.htmlAst : '',
+    career: (career) ? career.htmlAst : '',
     ...props,
   };
 
@@ -33,5 +35,6 @@ export const contactQuery = graphql`
     }
     ...komodoLogo
     ...avatars
+    ...icons
   }
 `;

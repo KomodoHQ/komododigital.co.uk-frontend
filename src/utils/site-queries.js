@@ -367,6 +367,13 @@ export const icons = graphql`
         }
       }
     }
+    icon_career: file(relativePath: { eq: "images/icons/career@3x.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 571, quality: 100) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
   }
 `
 
