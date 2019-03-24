@@ -1,0 +1,17 @@
+---
+title: 'Transforming the way Policing Services are Delivered'
+subtitle: 'Public Sector'
+date: '2018-09-22'
+group: 'case-studies'
+headercolor: '#003E52'
+csimage: '../../images/casestudy/NorthumbriaPolice@3x.png'
+coverimage: '../../images/casestudy/TheoCover@3x.png'
+navBackground: '#003E52'
+background: 'linear-gradient(0deg, #003E52 0%, #003E52 100%)'
+invert: true
+excerpt: 'Police E-Box is a multi-phased project that sees the integration of mobile technology into police officers day to day workflow, streamlining access to information and reducing load on resource control and radio channels via smartphone technology.'
+---
+
+Theo is a small and compact device, with built-in 4G that fits seamlessly to any vehicle’s windscreen. With a high-quality dash cam, sensors and reactive intelligent voice, Theo ensures all eyes are on the road - giving drivers total peace of mind.
+
+The accompanying mobile app, designed and developed by Komodo, allows drivers to track journeys, record and control driving data and unlock a world of benefits for safer drivers.
