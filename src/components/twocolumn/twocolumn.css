@@ -1,0 +1,202 @@
+@import '../settings.css';
+
+.two-column-wrapper {
+    padding: 0;
+}
+
+.two-column-wrapper > .gatsby-image-wrapper {
+    width: 700px;
+    justify-self: center;
+    margin: 0;
+    padding: 0;
+    grid-column: 2 / 16;
+}
+
+.Two-Column {
+    grid-column: 2 / 16;
+    overflow: hidden;
+}
+
+.two-column-wrapper.topPaddingLarge {
+    padding-top: 100px;
+}
+
+.two-column-wrapper.topPaddingMedium {
+    padding-top: 60px;
+}
+
+.two-column-wrapper.topPaddingSmall {
+    padding-top: 30px;
+}
+
+.two-column-wrapper.bottomPaddingLarge {
+    padding-bottom: 100px;
+}
+
+.two-column-wrapper.bottomPaddingMedium {
+    padding-bottom: 60px;
+}
+
+.two-column-wrapper.bottomPaddingSmall {
+    padding-bottom: 30px;
+}
+
+.Two-Column > span {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+    display: block;
+    margin-bottom: 16px;
+}
+
+.Two-Column > h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 56px;
+}
+
+.Two-Column > div {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.Two-Column a {
+    color: black;
+}
+
+.size-full {
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+    object-position: 50% 50%;
+}
+
+@media (--mobile-viewport) {
+
+    .two-column-wrapper {
+        padding: 15px 0;
+    }
+
+    .two-column-wrapper.topPaddingLarge {
+        padding-top: 180px;
+    }
+    
+    .two-column-wrapper.topPaddingMedium {
+        padding-top: 120px;
+    }
+    
+    .two-column-wrapper.topPaddingSmall {
+        padding-top: 60px;
+    }
+    
+    .two-column-wrapper.bottomPaddingLarge {
+        padding-bottom: 180px;
+    }
+    
+    .two-column-wrapper.bottomPaddingMedium {
+        padding-bottom: 120px;
+    }
+    
+    .two-column-wrapper.bottomPaddingSmall {
+        padding-bottom: 60px;
+    }
+    
+
+}
+
+@media (--laptop-viewport) {
+
+    .Two-Column {
+        grid-column: 2 / 16;
+        display: grid;
+
+        grid-template-columns: 1fr repeat(14, 50px) 1fr;
+    }
+
+    .Two-Column > h2 {
+        grid-column: 1/8;
+        padding: 1rem;
+    }
+
+    .Two-Column > div {
+        grid-column: 8/17;
+    }
+
+    .two-column-wrapper {
+        padding: 15px 0;
+    }
+
+    .two-column-wrapper.topPaddingLarge {
+        padding-top: 180px;
+    }
+    
+    .two-column-wrapper.topPaddingMedium {
+        padding-top: 120px;
+    }
+    
+    .two-column-wrapper.topPaddingSmall {
+        padding-top: 60px;
+    }
+    
+    .two-column-wrapper.bottomPaddingLarge {
+        padding-bottom: 180px;
+    }
+    
+    .two-column-wrapper.bottomPaddingMedium {
+        padding-bottom: 120px;
+    }
+    
+    .two-column-wrapper.bottomPaddingSmall {
+        padding-bottom: 60px;
+    }
+
+
+    
+}
+
+@media (--desktop-viewport) {
+
+    .Two-Column {
+        grid-column: 3 / 15;
+    }
+
+    .Two-Column > h2 {
+        grid-column: 1/6;
+    }
+
+    .Two-Column > div {
+        grid-column: 6/17;
+    }
+
+    .two-column-wrapper {
+        padding: 30px 0;
+    }
+
+    .two-column-wrapper.topPaddingLarge {
+        padding-top: 180px;
+    }
+
+    .two-column-wrapper.topPaddingMedium {
+        padding-top: 120px;
+    }
+
+    .two-column-wrapper.topPaddingSmall {
+        padding-top: 60px;
+    }
+
+    .two-column-wrapper.bottomPaddingLarge {
+        padding-bottom: 180px;
+    }
+
+    .two-column-wrapper.bottomPaddingMedium {
+        padding-bottom: 120px;
+    }
+
+    .two-column-wrapper.bottomPaddingSmall {
+        padding-bottom: 60px;
+    }
+
+}

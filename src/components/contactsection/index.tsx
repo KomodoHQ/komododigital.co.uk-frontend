@@ -21,6 +21,7 @@ import './contactsection.css';
 interface Props {
   children? : ReactNode;
   className? : string;
+  background? : string;
 }
 
 /**
@@ -30,8 +31,13 @@ interface Props {
  * @param data
  */
 const ContactSection: React.SFC<Props> = (props : Props) => {
+
+  const style = {
+    background: props.background ? props.background : 'none',
+  };
+
   return (
-    <div className={`komodoGridWrapper cs-wrapper contactsection-wrapper ${props.className}`}>
+    <div className={`komodoGridWrapper cs-wrapper contactsection-wrapper ${props.className}`} style={style}>
       <div className="contactsection">
         <h2>Contact Us</h2>
         {props.children}
