@@ -47,7 +47,8 @@
     font-weight: bold;
     letter-spacing: 3px;
     display: block;
-    margin-bottom: 16px;
+    padding: 0;
+    margin-bottom: 1rem;
 }
 
 .Content-Section > h2 {
@@ -118,6 +119,10 @@
         display: grid;
 
         grid-template-columns: 1fr repeat(14, 50px) 1fr;
+    }
+
+    .Content-Section > span {
+        margin: 0 1rem;
     }
 
     .Content-Section > h2 {

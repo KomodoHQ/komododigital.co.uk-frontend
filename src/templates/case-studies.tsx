@@ -6,6 +6,7 @@ import ContentSection from '../components/contentsection';
 import SeeMoreButton from '../components/seemorebutton';
 import ContactSection from '../components/contactsection';
 import VCard from '../components/vcard';
+import TitleText from '../components/titletext';
 
 const renderAst = new rehypeReact({
   createElement: React.createElement,
@@ -13,10 +14,15 @@ const renderAst = new rehypeReact({
 
 export default (props) => {
   return (
-    <Layout data={props.data} background={"#EAEAEA"} inverted={true}>
-      <ContentSection title="Case Studies">
-        <p>Content</p>
-      </ContentSection>
+    <Layout data={props.data}>
+      <TitleText
+        title="Case Studies"
+        subtitle="What We Do"
+        showShowreel={false}
+        className={'topPaddingSmall bottomPaddingNone'}
+      >
+        {renderAst(props.caseStudiesIntro)}
+      </TitleText>
       {props.caseStudies.map((study) => {
         return (
           <CaseStudy
@@ -31,7 +37,7 @@ export default (props) => {
         );
       })}
       <SeeMoreButton title="See More Work" />
-      <ContactSection>
+      <ContactSection className={`topPaddingLarge`} background="#fff">
         {renderAst(props.contactsIntro)}
         <VCard person="Armin" avatars={props.data} />
         <VCard person="Phoebe" avatars={props.data} />

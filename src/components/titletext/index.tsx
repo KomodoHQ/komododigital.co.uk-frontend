@@ -60,7 +60,9 @@ const TitleText: React.SFC<Props> = ({
 
   const coverImage = coverimage !== null ? <Img fluid={coverimage.childImageSharp.fluid} /> : null;
   const showreel = showShowreel ? (
-    <a href="https://www.youtube.com/watch?v=8TSE-zTGd4Q&app=desktop" className="showreel">Watch Showreel</a>
+    <div>
+      <a href="https://www.youtube.com/watch?v=8TSE-zTGd4Q&app=desktop" className="showreel">Watch Showreel</a>
+    </div>
   ) : null;
 
   return (
@@ -72,7 +74,7 @@ const TitleText: React.SFC<Props> = ({
         {subtitleEl}
         {titleEl}
         <div>{children}</div>
-        <div>{showreel}</div>
+        {showreel}
       </div>
       {coverImage}
     </div>
