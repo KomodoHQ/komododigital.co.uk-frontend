@@ -57,7 +57,7 @@ export default (props) => {
       >
         {props.testimonial.testimonial}
       </Testimonial>
-      <CenterContent className='bottomPaddingSmall'>
+      <CenterContent className="bottomPaddingSmall">
         <h2>{props.caseStudiesTitle}</h2>
         {renderAst(props.caseStudiesIntro)}
       </CenterContent>
@@ -70,12 +70,14 @@ export default (props) => {
             link={study.link}
             image={study.csimage}
           >
-            {renderAst(study.htmlAst)}
+            <div>
+              <p>{study.excerpt}</p>
+            </div>
           </CaseStudy>
         );
       })}
       <SeeMoreButton title="See More Work" />
-      <ContactSection background='#fff' className='topPaddingLarge'>
+      <ContactSection background="#fff" className="topPaddingLarge">
         {renderAst(props.contactsIntro)}
         <VCard person="Armin" avatars={props.data} />
         <VCard person="Phoebe" avatars={props.data} />
