@@ -1,10 +1,10 @@
 ---
-title: 'Going the Extra Mile'
+title: 'Simplifying Risk Assessment'
 date: '2018-09-22'
 ---
 
-Theo is all about being open, helpful and honest. That’s why it was important for us to make the app’s scoring and driving data easy to read and clear to understand the reasoning behind the scores. The breakdown of scores allows drivers to know what actions to take on their next journey to improve their score. While feature of rewards and incentives provide positive reinforcement to highlight the good in a person’s driving and not make the app a mentally negative experience.
+The ASM Toolset has been developed with the aim of providing in one ‘document’ the entire Ammunition Safety Management (ASM) toolset. The manual has three objectives. Firstly, to provide a single point of reference for all ASM related content and materials. Secondly, to provide a basis for ASM training, education and operations. And lastly, to act as the configuration and quality library for all components of the ASM toolset.
 
-Being a start up company, it’s so important to be able to sell what you’re offering. Not only did we provide our full end-to-end services from user flows all the way to bug testing. We made sure to offer Theo the best by creating them a cross platform react native app, and not just stop design at static screens by bringing the design to life with motion design to bring a higher aesthetic. An extra mile was also pushed to provide marketing materials to aide with sales pitches and app store launches.
+Usability is understandably critical, so the app has been designed to be graphically minimal and simple with emphasis on the clear presentation of content. Developed using Cordova, the app can be easily rolled out and has the ability to exist cross-platform.
 
-Successful delivery of this project came from the collaboration we had between our own development team and Theo’s dev team. Being a part of Theo’s Slack channel, regular contact was made to ensure the project ran along smoothly to meet the benchmarks for testing and launch.
+By undertaking research, developing standards and disseminating knowledge, the GICHD supports capacity development in mine-affected countries and those holding deteriorating, dangerous stocks of ammunition and explosives. As part of this support the GICHD works with national and local authorities to help them plan, coordinate, implement, monitor and evaluate mine action programmes.

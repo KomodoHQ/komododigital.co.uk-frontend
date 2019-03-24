@@ -1,10 +1,11 @@
 ---
-title: 'Going the Extra Mile'
+title: 'User-influenced task flows'
 date: '2018-09-22'
 ---
 
-Theo is all about being open, helpful and honest. That’s why it was important for us to make the app’s scoring and driving data easy to read and clear to understand the reasoning behind the scores. The breakdown of scores allows drivers to know what actions to take on their next journey to improve their score. While feature of rewards and incentives provide positive reinforcement to highlight the good in a person’s driving and not make the app a mentally negative experience.
+The project was steered by persona-driven user stories as a way of describing the functionality required, as opposed to rigid specifications. Once a full backlog of user stories had been created it was possible to model the user flow through the app in detail, so that all features and functions described within the user stories were incorporated into the design and development workflow.
 
-Being a start up company, it’s so important to be able to sell what you’re offering. Not only did we provide our full end-to-end services from user flows all the way to bug testing. We made sure to offer Theo the best by creating them a cross platform react native app, and not just stop design at static screens by bringing the design to life with motion design to bring a higher aesthetic. An extra mile was also pushed to provide marketing materials to aide with sales pitches and app store launches.
+These detailed task flow diagrams allowed a clear understanding of how each feature was established and were then agreed across the project team. From here the design team would produce high fidelity wireframes, allowing us to understand how all of the elements within the application needed to fit together and provide a consistent user experience.
 
-Successful delivery of this project came from the collaboration we had between our own development team and Theo’s dev team. Being a part of Theo’s Slack channel, regular contact was made to ensure the project ran along smoothly to meet the benchmarks for testing and launch.
+Our aim was to produce an application that transitioned effortlessly into the real world for police officers, so regular interaction with the end users was fundamental to the design process. This was facilitated through regular workshops with officers, providing the opportunity to conduct a ‘hands on’ test of the prototype and offer feedback.
+

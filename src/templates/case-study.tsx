@@ -34,7 +34,7 @@ export default (props) => {
         {renderAst(props.metricsIntro)}
       </CenterContent>
       <Metrics>
-        {props.metrics.map((metric, i) => {
+        {props.metrics && props.metrics.map((metric, i) => {
           return (
             <Metric
               key={`metric-${i}`}

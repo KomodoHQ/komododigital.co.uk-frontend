@@ -1,6 +1,6 @@
 ---
-name: 'Jonathon Valentine'
+name: 'John Doe'
 jobtitle: 'CO-FOUNDER'
-company: 'THINGCO'
-testimonial: 'I immediately regret this decision.'
+company: 'GICHD'
+testimonial: 'Where am I?'
 ---

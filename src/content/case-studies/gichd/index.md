@@ -3,15 +3,15 @@ title: 'Building an Ammunition Safety Management (ASM) Toolset'
 subtitle: 'Humanitarian'
 date: '2018-09-22'
 group: 'case-studies'
-headercolor: '#003E52'
+headercolor: '#D17C2F'
 csimage: '../../images/casestudy/GICHD@3x.png'
-coverimage: '../../images/casestudy/TheoCover@3x.png'
-navBackground: '#003E52'
-background: 'linear-gradient(0deg, #003E52 0%, #003E52 100%)'
+coverimage: '../../images/casestudy/GICHDCover@3x.png'
+navBackground: '#D17C2F'
+background: 'linear-gradient(0deg, #D17C2F 0%, #D17C2F 100%)'
 invert: true
 excerpt: 'Komodo was chosen to partner with the Geneva International Centre for Humanitarian Demining (GICHD) in the development of a tablet version of their entire Ammunition Safety Management (ASM) Toolset.'
 ---
 
-Theo is a small and compact device, with built-in 4G that fits seamlessly to any vehicle’s windscreen. With a high-quality dash cam, sensors and reactive intelligent voice, Theo ensures all eyes are on the road - giving drivers total peace of mind.
+Komodo was chosen to partner with the Geneva International Centre for Humanitarian Demining (GICHD) in the development of a tablet version of their entire Ammunition Safety Management (ASM) Toolset.
 
-The accompanying mobile app, designed and developed by Komodo, allows drivers to track journeys, record and control driving data and unlock a world of benefits for safer drivers.
+This is a project with the very real aim of reducing worldwide civilian casualties from abandoned and unmanaged ammunition generally found in locations where the infrastructure is least equipped or able to afford to deal with it safely.
