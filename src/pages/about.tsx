@@ -17,6 +17,7 @@ export default (props) => {
     subtitle: (rootNode) ? rootNode.subtitle : '',
     title: (rootNode) ? rootNode.title : '',
     intro: (rootNode) ? rootNode.htmlAst : '',
+    image: (rootNode) ? rootNode.csimage : '',
     approachIntro: (approachIntro) ? approachIntro.htmlAst : '',
     servicesIntro: (servicesIntro) ? servicesIntro.htmlAst : '',
     standardsIntro: (standardsIntro) ? standardsIntro.htmlAst : '',
@@ -38,6 +39,13 @@ export const aboutQuery = graphql`
             title
             subtitle
             group
+            csimage {
+              childImageSharp {
+                fluidFull: fluid(maxWidth: 1170, quality: 100) {
+                  ...GatsbyImageSharpFluid_withWebp
+                }
+              }
+            }
           }
           fileAbsolutePath
         }

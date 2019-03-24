@@ -8,10 +8,9 @@ import PortfolioGrid from '../components/portfoliogrid';
 import StandardItem from '../components/standarditem';
 import ContentSection from '../components/contentsection';
 import ContactSection from '../components/contactsection';
-import TitleText from '../components/titletext';
 import VCard from '../components/vcard';
 
-import images from '../utils/images';
+import images from "../utils/images";
 
 const renderAst = new rehypeReact({
   createElement: React.createElement,
@@ -41,28 +40,14 @@ interface AboutPageProps {
 export default (props: AboutPageProps) => {
   return (
     <Layout data={props.data}>
-      <TitleText
-        subtitle={props.subtitle}
-        title={props.title}
-        invert
-        background="#000000"
-        className="topPaddingLarge bottomPaddingLarge"
-        showShowreel={false}
-        backgroundImage={props.image}
-      >
-        {renderAst(props.intro)}
-      </TitleText>
+      <ContentSection subtitle={props.subtitle} title={props.title} invert background="#000000" className="topPaddingLarge bottomPaddingLarge">{renderAst(props.intro)}</ContentSection>
       <ContentSection title="Approach" className="bottomPaddingSmall">
         {renderAst(props.approachIntro)}
       </ContentSection>
       <QuadGrid>
         {props.services.map((service) => {
           return (
-            <GridItem
-              key={service.title}
-              title={service.title}
-              image={images[`images/approach/${service.title}.png`]}
-            >
+            <GridItem key={service.title} title={service.title} image={images[`images/approach/${service.title}.png`]}>
               {renderAst(service.htmlAst)}
             </GridItem>
           );
@@ -107,36 +92,20 @@ export default (props: AboutPageProps) => {
         {renderAst(props.standardsIntro)}
       </ContentSection>
       <PortfolioGrid title="We Design With">
-        <StandardItem
-          imgsrc={props.data.standard_sketch}
-          title="Sketch"
-          link="https://www.sketchapp.com/"
-        />
+        <StandardItem imgsrc={props.data.standard_sketch} title="Sketch" link="https://www.sketchapp.com/" />
         <StandardItem imgsrc={props.data.standard_abstract} link="https://www.goabstract.com/" />
         <StandardItem imgsrc={props.data.standard_invision} link="https://www.invisionapp.com/" />
-        <StandardItem
-          imgsrc={props.data.standard_adobecc}
-          link="https://www.adobe.com/uk/creativecloud.html"
-        />
+        <StandardItem imgsrc={props.data.standard_adobecc} link="https://www.adobe.com/uk/creativecloud.html" />
       </PortfolioGrid>
       <PortfolioGrid title="We Develop With">
         <StandardItem imgsrc={props.data.standard_php} link="http://www.php.net/" />
-        <StandardItem
-          imgsrc={props.data.standard_html5}
-          link="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5"
-        />
+        <StandardItem imgsrc={props.data.standard_html5} link="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" />
         <StandardItem imgsrc={props.data.standard_node} link="https://nodejs.org/en/" />
         <StandardItem imgsrc={props.data.standard_react} link="https://reactjs.org/" />
         <StandardItem imgsrc={props.data.standard_angular} link="https://angularjs.org/" />
-        <StandardItem
-          imgsrc={props.data.standard_swift}
-          link="https://developer.apple.com/swift/"
-        />
+        <StandardItem imgsrc={props.data.standard_swift} link="https://developer.apple.com/swift/" />
         <StandardItem imgsrc={props.data.standard_java} link="https://www.java.com/en/" />
-        <StandardItem
-          imgsrc={props.data.standard_xamarin}
-          link="https://visualstudio.microsoft.com/xamarin/"
-        />
+        <StandardItem imgsrc={props.data.standard_xamarin} link="https://visualstudio.microsoft.com/xamarin/" />
       </PortfolioGrid>
       <PortfolioGrid title="We Test With">
         <StandardItem imgsrc={props.data.standard_codeception} link="https://codeception.com/" />
@@ -148,16 +117,10 @@ export default (props: AboutPageProps) => {
         <StandardItem imgsrc={props.data.standard_apple} link="https://www.apple.com/uk/" />
         <StandardItem imgsrc={props.data.standard_android} link="https://www.android.com/" />
         <StandardItem imgsrc={props.data.standard_aws} link="https://aws.amazon.com/" />
-        <StandardItem
-          imgsrc={props.data.standard_azure}
-          link="https://azure.microsoft.com/en-gb/"
-        />
+        <StandardItem imgsrc={props.data.standard_azure} link="https://azure.microsoft.com/en-gb/" />
       </PortfolioGrid>
       <PortfolioGrid title="We Are Certified By">
-        <StandardItem
-          imgsrc={props.data.standard_cyberessentials}
-          link="https://www.cyberessentials.ncsc.gov.uk/"
-        />
+        <StandardItem imgsrc={props.data.standard_cyberessentials} link="https://www.cyberessentials.ncsc.gov.uk/" />
         <StandardItem imgsrc={props.data.standard_istqb} link="https://www.istqb.org/" />
         <StandardItem>NPPV 2</StandardItem>
       </PortfolioGrid>
