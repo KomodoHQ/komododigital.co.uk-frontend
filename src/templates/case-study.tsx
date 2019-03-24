@@ -5,6 +5,7 @@ import Metrics from '../components/metrics';
 import Metric from '../components/metric';
 import Testimonial from '../components/testimonial';
 import ContentSection from '../components/contentsection';
+import CenterContent from '../components/centercontent';
 import TitleText from '../components/titletext';
 import ContactSection from '../components/contactsection';
 import CaseStudy from '../components/casestudy';
@@ -15,6 +16,7 @@ const renderAst = new rehypeReact({
 }).Compiler;
 
 export default (props) => {
+  console.log(props);
   return (
     <Layout data={props.data} background={props.navBackground}>
       <TitleText
@@ -22,15 +24,16 @@ export default (props) => {
         title={props.title}
         background={props.background}
         invert={props.invert}
-        className="topPaddingLarge bottomPaddingLarge"
+        className="topPaddingLarge bottomPaddingNone"
         coverimage={props.coverimage}
         showShowreel={false}
       >
         {renderAst(props.intro)}
       </TitleText>
-      <ContentSection title="Solution/Project Outcome">
+      <CenterContent className="topPaddingLarge bottomPaddingSmall">
+        <h2>{props.metricsTitle}</h2>
         {renderAst(props.metricsIntro)}
-      </ContentSection>
+      </CenterContent>
       <Metrics>
         {props.metrics.map((metric, i) => {
           return (

@@ -1,16 +1,15 @@
 ---
-title: 'Success Through Collaboration'
+title: 'Stress Free Journeys with Theo'
 date: '2018-09-22'
 scores:
-  - metric: "Metric/Result"
-    value: "100%"
-    description: "Metric description text."
-  - metric: "Metric/Result"
-    value: "2,500"
-    description: "Metric description text."
-  - metric: "Metric/Result"
-    value: "150%"
-    description: "Metric description text."  
+  - metric: "Decrease in Young Driver Casualties"
+    value: "35%"
+    description: "17 - 19 year olds who are using black box insurance are less likely to be in an accident. There has been a 35% reduction in young driver casualties."
+  - metric: "Reduction in Speeding and Fines"
+    value: "58%"
+    description: "With drivers having access to scoring systems, 58% of firms said the use of telematics has had an impact on the reduction of speeding and fines." 
 ---
 
-This is the time to get out all your flustrations, much better than kicking the dog around the house or taking it out on your spouse. Fluff it up a little and hypnotize it. I think there's an artist hidden in the bottom of every single one of us. You can do anything your heart can imagine. Steve wants reflections, so let's give him reflections. Don't be afraid to make these big decisions. Once you start, they sort of just make themselves.
+The idea for Theo came around with the idea of turning every car into a smart car. Revolutionising the black box into a desirable device that’s affordable and packs many more features. The main benefit being that safer drivers are rewarded, all drivers are treated fairly and driving will improve with Theo in the car.
+
+With values between the idea and teams in alignment, we believed going forward that this product would bring a positive impact into the insuretech scene.

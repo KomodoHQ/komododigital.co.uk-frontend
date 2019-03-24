@@ -3,11 +3,11 @@ title: 'Giving Drivers Full Control over their Data'
 subtitle: 'Insurance'
 date: '2018-09-22'
 group: 'case-studies'
-headercolor: '#00ff00'
+headercolor: '#003E52'
 csimage: '../../images/casestudy/Start-Up@3x.png'
-coverimage: '../../images/casestudy/StreetStreamCover.png'
-navBackground: '#12203A'
-background: 'linear-gradient(0deg, #23375A 0%, #12203A 100%)'
+coverimage: '../../images/casestudy/TheoCover@3x.png'
+navBackground: '#003E52'
+background: 'linear-gradient(0deg, #003E52 0%, #003E52 100%)'
 invert: true
 ---
 
