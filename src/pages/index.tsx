@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import Index from '../templates/index';
 import { siteMeta, komodoLogo, clientLogos, icons, avatars } from '../utils/site-queries';
-import { findNodes, findNode } from '../utils/nodes';
+import { findNodes, findNode, findNodeRaw } from '../utils/nodes';
 import CleanSourceURL from '../utils/clean-source-url';
 
 export default (props) => {
@@ -15,6 +15,7 @@ export default (props) => {
   const clientPortfoliosIntro = findNode('index/client_portfolio', props);
   const insightsIntro = findNode('index/insights', props);
   const contactsIntro = findNode('contacts/index', props);
+  const testimonial = findNodeRaw('case-studies/onward/testimonial', props.data.testimonial);
 
   const insights = props.data.allWordpressPost.edges.map((edge) => {
     const data = {
@@ -40,6 +41,7 @@ export default (props) => {
     clientPortfoliosIntro: (clientPortfoliosIntro) ? clientPortfoliosIntro.htmlAst : '',
     insightsIntro: (insightsIntro) ? insightsIntro.htmlAst : '',
     contactsIntro: (contactsIntro) ? contactsIntro.htmlAst : '',
+    testimonial: (testimonial) ? testimonial.frontmatter : '',
     ...props,
   };
 
@@ -81,6 +83,21 @@ export const pageQuery = graphql`
               }
             }
             group
+          }
+          fileAbsolutePath
+        }
+      }
+    }
+    testimonial: allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/case-studies/onward/testimonial/" } }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            name
+            jobtitle
+            company
+            testimonial
           }
           fileAbsolutePath
         }

@@ -42,7 +42,6 @@ interface Props {
  * @param children
  */
 const CaseStudyLink: React.SFC<Props> = ({ image, subtitle, title, children, link = '#' }) => {
-  console.log(image.childImageSharp.fluid);
   return (
     <Link to={link} className="case-study-link-element">
       <div className="komodoGridWrapper case-study-link-wrapper">

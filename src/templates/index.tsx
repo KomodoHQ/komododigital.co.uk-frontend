@@ -56,6 +56,7 @@ interface IndexPageProps {
   insightsIntro: any;
   contactsIntro: any;
   data?: any;
+  testimonial: any;
 }
 
 export default (props: IndexPageProps) => {
@@ -118,13 +119,12 @@ export default (props: IndexPageProps) => {
       })}
       <SeeMoreButton title="See More Work" link={'/case-studies'} />
       <Testimonial
-        name="Ross Cooney"
-        jobtitle="Chief Technical Officer"
-        company="ISG"
+        name={props.testimonial.name}
+        jobtitle={props.testimonial.jobtitle}
+        company={props.testimonial.company}
         background="#000"
       >
-        We’ve worked with Komodo, on and off, for ten years, I can’t think of a better way of giving
-        a client reference than that.
+        {props.testimonial.testimonial}
       </Testimonial>
       <ContentSection title="Insights" className="topPaddingMedium">
         {renderAst(props.insightsIntro)}
