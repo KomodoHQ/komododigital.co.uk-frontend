@@ -54,14 +54,14 @@ export default (props: AboutPageProps) => {
       </TwoColumn>
       <TwoColumn
         title={props.cultureIntro}
-        className="topPaddingLarge bottomPaddingSmall"
+        className="topPaddingSmall bottomPaddingSmall"
         background="#ffffff"
       >
         {renderAst(props.culture)}
       </TwoColumn>
       <TwoColumn
         title={props.purposeIntro}
-        className="topPaddingLarge bottomPaddingSmall"
+        className="topPaddingSmall bottomPaddingSmall"
         background="#ffffff"
         hr={false}
       >
