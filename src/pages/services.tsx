@@ -10,7 +10,7 @@ export default (props) => {
   const servicesIntro = findNode('services/services', props);
   const wheelhouseIntro = findNode('services/wheelhouse', props);
   const standardsIntro = findNode('services/standards', props);
-  const contactsIntro = findNode('contacts/index', props);
+  const contactsIntro = findNode('services/contact_us', props);
 
   const hocProps = {
     services,

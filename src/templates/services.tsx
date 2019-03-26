@@ -1,8 +1,6 @@
 import React from 'react';
 import rehypeReact from 'rehype-react';
 import Layout from '../components/layout';
-import QuadGrid from '../components/quadgrid';
-import GridItem from '../components/griditem';
 import Services from '../components/services';
 import PortfolioGrid from '../components/portfoliogrid';
 import StandardItem from '../components/standarditem';
@@ -12,8 +10,6 @@ import VCard from '../components/vcard';
 import TitleText from '../components/titletext';
 import TripleSection from '../components/triplesection';
 import TripleFeature from '../components/triplefeature';
-
-import images from '../utils/images';
 
 const renderAst = new rehypeReact({
   createElement: React.createElement,
