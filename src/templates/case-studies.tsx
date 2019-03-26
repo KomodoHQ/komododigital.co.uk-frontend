@@ -38,7 +38,6 @@ export default (props) => {
           </CaseStudy>
         );
       })}
-      <SeeMoreButton title="See More Work" />
       <ContactSection className={`topPaddingLarge`} background="#fff">
         {renderAst(props.contactsIntro)}
         <VCard person="Armin" avatars={props.data} />

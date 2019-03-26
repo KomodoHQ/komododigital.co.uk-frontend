@@ -6,7 +6,7 @@ import { findNodes, findNode } from '../utils/nodes';
 
 export default (props) => {
   const caseStudies = findNodes('group', props, 'case-studies');
-  const contactsIntro = findNode('contacts', props);
+  const contactsIntro = findNode('case-studies/contact_us', props);
   const caseStudiesIntro = findNode('case-studies/index', props);
 
   const hocProps = {
