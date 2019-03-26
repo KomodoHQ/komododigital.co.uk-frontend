@@ -52,12 +52,16 @@ class NavigationBar extends React.Component<Props> {
 
       if (window.scrollY > 100 && !this.navbarRef.current.classList.contains('small')) {
         this.navbarRef.current.classList.add('small');
-        this.navbarRef.current.style['background-color'] = this.props.inverted
+        this.navbarRef.current.style['background-color'] = this.props.background
+          ? this.props.background
+          : this.props.inverted
           ? 'rgba(234,234,234,1)'
           : 'rgba(0,0,0,1)';
       } else if (window.scrollY < 100 && this.navbarRef.current.classList.contains('small')) {
         this.navbarRef.current.classList.remove('small');
-        this.navbarRef.current.style['background-color'] = this.props.inverted
+        this.navbarRef.current.style['background-color'] = this.props.background
+          ? this.props.background
+          : this.props.inverted
           ? 'rgba(0,0,0,0)'
           : 'rgba(234,234,234,0)';
       }
@@ -71,8 +75,8 @@ class NavigationBar extends React.Component<Props> {
     const backgroundStyle = this.props.background
       ? this.props.background
       : this.props.inverted
-        ? 'rgba(234,234,234,0)'
-        : 'rgba(0,0,0,0)';
+      ? 'rgba(234,234,234,0)'
+      : 'rgba(0,0,0,0)';
 
     return (
       <div
@@ -112,7 +116,8 @@ class NavigationBar extends React.Component<Props> {
             const homeLinkSelected = path === '/' || path === '' ? 'home-selected' : '';
             const aboutLinkSelected = path === '/about' ? 'selected' : '';
             const servicesLinkSelected = path === '/services' ? 'selected' : '';
-            const caseLinkSelected = path === '/case-studies' ? 'selected' : '';
+            const caseLinkSelected =
+              path === '/case-studies' || path.includes('/case-studies/') ? 'selected' : '';
             const insightsLinkSelected = path === '/insights' ? 'selected' : '';
             const contactLinkSelected = path === '/contact' ? 'selected' : '';
 
