@@ -1,5 +1,10 @@
 @import '../settings.css';
 
+.case-study-link-element {
+    text-decoration: none;
+    color: #000;
+}
+
 .case-study-link-wrapper {
     margin-bottom: 50px;
 }
@@ -10,7 +15,14 @@
     grid-column: 2 / 16;
     display: flex;
     flex-direction: column;
+    transition: all 0.2s ease;
 }
+
+.case-study-link-element:hover .case-study-link {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
+}
+
 
 .case-study-link > div.img {
     width: 100%;
@@ -46,15 +58,15 @@
     margin-bottom: 10px;
 }
 
-.case-study-link > div.content > a {
+.case-study-link > div.content span.linktext {
     font-size: 1.0rem;
     text-decoration: none;
     font-weight: bold;
     color: black;
 }
 
-.case-study-link > div.content > a:after {
-    content: '→';
+a:hover .case-study-link > div.content span.linktext {
+    text-decoration: underline;
 }
 
 @media (--tablet-viewport) {

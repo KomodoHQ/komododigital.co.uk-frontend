@@ -32,7 +32,7 @@ interface Props {
 
 /**
  *
- * Using SFC (Stateless Functional Component) because a 
+ * Using SFC (Stateless Functional Component) because a
  * case study link doesn't need to maintain any state of its own.
  *
  * @param image
@@ -44,20 +44,24 @@ interface Props {
 const CaseStudyLink: React.SFC<Props> = ({ image, subtitle, title, children, link = '#' }) => {
   console.log(image.childImageSharp.fluid);
   return (
-    <div className="komodoGridWrapper case-study-link-wrapper">
-      <div className="case-study-link">
-        <div className="img" style={{
-          backgroundImage: `url(${image.childImageSharp.fluid.src})`,
-        }}>
-        </div>
-        <div className="content">
-          <span>{subtitle}</span>
-          <h2>{title}</h2>
-          {children}
-          <Link to={link}>Read Case Study</Link>
+    <Link to={link} className="case-study-link-element">
+      <div className="komodoGridWrapper case-study-link-wrapper">
+        <div className="case-study-link">
+          <div
+            className="img"
+            style={{
+              backgroundImage: `url(${image.childImageSharp.fluid.src})`,
+            }}
+          />
+          <div className="content">
+            <span>{subtitle}</span>
+            <h2>{title}</h2>
+            {children}
+            <span className="linktext">Read Case Study</span>
+          </div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 
