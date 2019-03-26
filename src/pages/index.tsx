@@ -14,7 +14,7 @@ export default (props) => {
   const approachIntro = findNode('index/approach', props);
   const clientPortfoliosIntro = findNode('index/client_portfolio', props);
   const insightsIntro = findNode('index/insights', props);
-  const contactsIntro = findNode('contacts/index', props);
+  const contactsIntro = findNode('index/contact_us', props);
   const testimonial = findNodeRaw('case-studies/onward/testimonial', props.data.testimonial);
 
   const insights = props.data.allWordpressPost.edges.map((edge) => {
