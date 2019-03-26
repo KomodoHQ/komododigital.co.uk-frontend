@@ -55,7 +55,7 @@
     letter-spacing: 3px;
     display: block;
     margin-bottom: 16px;
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 .Title-Section > h2 {
@@ -72,7 +72,7 @@
     padding-bottom: 50px;
 }
 
-.Title-Section a {
+.Title-Section a.showreel {
     color: black;
 }
 
