@@ -75,6 +75,10 @@
     transition: all 0.25s linear;
 }
 
+.navigationBar > ul > li > a:hover {
+    text-decoration: underline;
+}
+
 .navigationBar.small {
     padding: 10px 0;
     -webkit-box-shadow: 0px 5px 4px rgba(0,0,0,0.5);

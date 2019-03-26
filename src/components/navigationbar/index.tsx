@@ -17,7 +17,7 @@ import { any } from 'prop-types';
 
 /**
  * Props for the navigation bar component
- * 
+ *
  * data
  */
 interface Props {
@@ -28,57 +28,72 @@ interface Props {
 }
 
 /**
- * 
+ *
  * Using a stateful component because a navigation bar needs access to the lifecycle.
- * 
+ *
  * @param data
  */
 class NavigationBar extends React.Component<Props> {
-
   navbarRef: any;
   menuRef: any;
 
-  constructor(props){
+  constructor(props) {
     super(props);
 
     this.navbarRef = React.createRef<HTMLDivElement>();
     this.menuRef = React.createRef<HTMLUListElement>();
-  
   }
 
   componentDidMount() {
-
     window.addEventListener('scroll', (e) => {
-        if (!this.navbarRef.current) {
-          return;
-        }
-    
-        if (window.scrollY > 100 && !this.navbarRef.current.classList.contains("small")) {
-          this.navbarRef.current.classList.add("small");
-        } else if (window.scrollY < 100 && this.navbarRef.current.classList.contains("small")) {
-          this.navbarRef.current.classList.remove("small");
-        }
-      });
-  
+      if (!this.navbarRef.current) {
+        return;
+      }
+
+      if (window.scrollY > 100 && !this.navbarRef.current.classList.contains('small')) {
+        this.navbarRef.current.classList.add('small');
+      } else if (window.scrollY < 100 && this.navbarRef.current.classList.contains('small')) {
+        this.navbarRef.current.classList.remove('small');
+      }
+    });
   }
 
   render() {
-
     const { logo } = this.props;
     const { inverted } = this.props;
 
     return (
-      <div className={`komodoGridWrapper navigationBar ${inverted ? "inverted" : "" }`} style={{ background: this.props.background ? this.props.background : "#000000" }} ref={this.navbarRef}>
-        <Link to="/"><Img fixed={logo.fixed} /></Link>
+      <div
+        className={`komodoGridWrapper navigationBar ${inverted ? 'inverted' : ''}`}
+        style={{ background: this.props.background ? this.props.background : '#000000' }}
+        ref={this.navbarRef}
+      >
+        <Link to="/">
+          <Img fixed={logo.fixed} />
+        </Link>
         <div className="hamburger">
-          <Link to="/" onClick={(e)=>{
-            e.preventDefault();
-            if (this.menuRef.current) {
-              this.menuRef.current.classList.toggle("open");
-            }
-          }}><img src={require('../../content/images/menu.svg')} width={64} height={64} style={{ width: 64, height: 64, marginTop: 10}} /></Link>
+          <Link
+            to="/"
+            onClick={(e) => {
+              e.preventDefault();
+              if (this.menuRef.current) {
+                this.menuRef.current.classList.toggle('open');
+              }
+            }}
+          >
+            <img
+              src={require('../../content/images/menu.svg')}
+              width={64}
+              height={64}
+              style={{ width: 64, height: 64, marginTop: 10 }}
+            />
+          </Link>
         </div>
-        <ul className="Menu" ref={this.menuRef} style={{ background: this.props.background ? this.props.background : "#000000" }}>
+        <ul
+          className="Menu"
+          ref={this.menuRef}
+          style={{ background: this.props.background ? this.props.background : '#000000' }}
+        >
           <li>
             <Link to={'about'}>About</Link>
           </li>
@@ -97,9 +112,7 @@ class NavigationBar extends React.Component<Props> {
         </ul>
       </div>
     );
-  
   }
-
-};
+}
 
 export default NavigationBar;
