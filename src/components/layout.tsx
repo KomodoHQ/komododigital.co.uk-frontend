@@ -15,6 +15,7 @@ interface Props {
 }
 
 const Layout: React.SFC<Props> = ({ data, children, background = '', inverted = false }) => {
+  console.log('inverted', inverted);
   const logo = !inverted ? data.logo.childImageSharp : data.logo_inverted.childImageSharp;
 
   return (

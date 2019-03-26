@@ -6,7 +6,7 @@
  * NPM Dependencies
  */
 import React, { ReactNode } from 'react';
-import { Link } from '@reach/router';
+import { Link, Location } from '@reach/router';
 import Img from 'gatsby-image';
 
 /**
@@ -52,8 +52,14 @@ class NavigationBar extends React.Component<Props> {
 
       if (window.scrollY > 100 && !this.navbarRef.current.classList.contains('small')) {
         this.navbarRef.current.classList.add('small');
+        this.navbarRef.current.style['background-color'] = this.props.inverted
+          ? 'rgba(234,234,234,1)'
+          : 'rgba(0,0,0,1)';
       } else if (window.scrollY < 100 && this.navbarRef.current.classList.contains('small')) {
         this.navbarRef.current.classList.remove('small');
+        this.navbarRef.current.style['background-color'] = this.props.inverted
+          ? 'rgba(0,0,0,0)'
+          : 'rgba(234,234,234,0)';
       }
     });
   }
@@ -62,10 +68,18 @@ class NavigationBar extends React.Component<Props> {
     const { logo } = this.props;
     const { inverted } = this.props;
 
+    const backgroundStyle = this.props.background
+      ? this.props.background
+      : this.props.inverted
+        ? 'rgba(234,234,234,0)'
+        : 'rgba(0,0,0,0)';
+
     return (
       <div
         className={`komodoGridWrapper navigationBar ${inverted ? 'inverted' : ''}`}
-        style={{ background: this.props.background ? this.props.background : '#000000' }}
+        style={{
+          background: backgroundStyle,
+        }}
         ref={this.navbarRef}
       >
         <Link to="/">
@@ -89,27 +103,46 @@ class NavigationBar extends React.Component<Props> {
             />
           </Link>
         </div>
-        <ul
-          className="Menu"
-          ref={this.menuRef}
-          style={{ background: this.props.background ? this.props.background : '#000000' }}
-        >
-          <li>
-            <Link to={'about'}>About</Link>
-          </li>
-          <li>
-            <Link to={'services'}>Services</Link>
-          </li>
-          <li>
-            <Link to={'case-studies'}>Case Studies</Link>
-          </li>
-          <li>
-            <Link to={'insights'}>Insights</Link>
-          </li>
-          <li>
-            <Link to={'contact'}>Contact</Link>
-          </li>
-        </ul>
+        <Location>
+          {({ location }) => {
+            const path = location.pathname.endsWith('/')
+              ? location.pathname.slice(0, -1)
+              : location.pathname;
+
+            const homeLinkSelected = path === '/' || path === '' ? 'home-selected' : '';
+            const aboutLinkSelected = path === '/about' ? 'selected' : '';
+            const servicesLinkSelected = path === '/services' ? 'selected' : '';
+            const caseLinkSelected = path === '/case-studies' ? 'selected' : '';
+            const insightsLinkSelected = path === '/insights' ? 'selected' : '';
+            const contactLinkSelected = path === '/contact' ? 'selected' : '';
+
+            return (
+              <ul
+                className="Menu"
+                ref={this.menuRef}
+                style={{
+                  background: this.props.background ? this.props.background : 'rgba(0,0,0,0)',
+                }}
+              >
+                <li className={`nav-link ${aboutLinkSelected} ${homeLinkSelected}`}>
+                  <Link to={'about'}>About</Link>
+                </li>
+                <li className={`nav-link ${servicesLinkSelected} ${homeLinkSelected}`}>
+                  <Link to={'services'}>Services</Link>
+                </li>
+                <li className={`nav-link ${caseLinkSelected} ${homeLinkSelected}`}>
+                  <Link to={'case-studies'}>Case Studies</Link>
+                </li>
+                <li className={`nav-link ${insightsLinkSelected} ${homeLinkSelected}`}>
+                  <Link to={'insights'}>Insights</Link>
+                </li>
+                <li className={`nav-link ${contactLinkSelected} ${homeLinkSelected}`}>
+                  <Link to={'contact'}>Contact</Link>
+                </li>
+              </ul>
+            );
+          }}
+        </Location>
       </div>
     );
   }
