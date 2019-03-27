@@ -1,21 +1,15 @@
 import React from 'react';
 import Layout from '../components/layout';
-import ContentSection from '../components/contentsection';
+import CenterContent from '../components/centercontent';
 
 export default (props) => {
   const title = props.data.allWordpressPost ? props.data.allWordpressPost.edges[0].node.title : "No Title Found";
-  return (
-    <Layout data={props.data}>
+  return <Layout data={props.data} inverted={true} background="#EAEAEA">
       <img src={props.imageSource} width="100%" />
 
-      <ContentSection title={title}>
-        <div
-          dangerouslySetInnerHTML={{
-            __html: props.html,
-          }}
-        />
-      </ContentSection>
-
-    </Layout>
-  );
+      <CenterContent className={`topPaddingSmall`}>
+        <h2>{title}</h2>
+        <div dangerouslySetInnerHTML={{ __html: props.html }} />
+      </CenterContent>
+    </Layout>;
 };

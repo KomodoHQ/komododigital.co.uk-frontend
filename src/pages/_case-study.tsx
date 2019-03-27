@@ -38,7 +38,7 @@ export default (props) => {
     metricsIntro: metrics ? metrics.htmlAst : '',
     metricsTitle: metrics ? metrics.frontmatter.title : '',
     metrics: metrics ? metrics.frontmatter.scores : '',
-    testimonial: testimonial ? testimonial.frontmatter : '',
+    testimonial: testimonial ? testimonial.frontmatter : null,
     processTitle: process ? process.frontmatter.title : '',
     process: process ? process.htmlAst : '',
     caseStudiesIntro: caseStudiesIntro ? caseStudiesIntro.htmlAst : '',

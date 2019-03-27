@@ -35,29 +35,32 @@ export default (props) => {
         {renderAst(props.metricsIntro)}
       </CenterContent>
       <Metrics>
-        {props.metrics && props.metrics.map((metric, i) => {
-          return (
-            <Metric
-              key={`metric-${i}`}
-              metric={metric.metric}
-              value={metric.value}
-              description={metric.description}
-            />
-          );
-        })}
+        {props.metrics &&
+          props.metrics.map((metric, i) => {
+            return (
+              <Metric
+                key={`metric-${i}`}
+                metric={metric.metric}
+                value={metric.value}
+                description={metric.description}
+              />
+            );
+          })}
       </Metrics>
       <CenterContent background="#fff" className="bottomPaddingLarge topPaddingLarge">
         <h2>{props.processTitle}</h2>
         {renderAst(props.process)}
       </CenterContent>
-      <Testimonial
-        background={props.background}
-        name={props.testimonial.name}
-        jobtitle={props.testimonial.jobtitle}
-        company={props.testimonial.company}
-      >
-        {props.testimonial.testimonial}
-      </Testimonial>
+      {props.testimonial && (
+        <Testimonial
+          background={props.background}
+          name={props.testimonial.name}
+          jobtitle={props.testimonial.jobtitle}
+          company={props.testimonial.company}
+        >
+          {props.testimonial.testimonial}
+        </Testimonial>
+      )}
       <CenterContent className="bottomPaddingSmall">
         <h2>{props.caseStudiesTitle}</h2>
         {renderAst(props.caseStudiesIntro)}

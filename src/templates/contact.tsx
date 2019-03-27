@@ -24,7 +24,7 @@ interface ContactPageProps {
 export default (props: ContactPageProps) => {
   return (
     <Layout data={props.data} inverted={true} background="#EAEAEA">
-      <ContactSection className="topPaddingMedium">
+      <ContactSection className="topPaddingLarge">
         {renderAst(props.contactsIntro)}
         <VCard person="Armin" avatars={props.data} />
         <VCard person="Phoebe" avatars={props.data} />
