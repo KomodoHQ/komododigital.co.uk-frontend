@@ -23,7 +23,8 @@ interface Props {
 
 /**
  * 
- * Using SFC (Stateless Functional Component) because a metric cards doesn't need to maintain any state of its own.
+ * Using SFC (Stateless Functional Component) because a
+ * metric cards doesn't need to maintain any state of its own.
  * 
  * @param data
  */
