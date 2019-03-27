@@ -3,11 +3,11 @@ title: 'The World’s First Animated, British and American Sign Language, Storyt
 subtitle: 'Education'
 date: '2018-09-22'
 group: 'case-studies'
-headercolor: '#6D233C'
+headercolor: '#DB8484'
 csimage: '../../images/casestudy/ITV@3x.png'
 coverimage: '../../images/casestudy/ITVCover@3x.png'
-navBackground: '#6D233C'
-background: 'linear-gradient(0deg, #6D233C 0%, #6D233C 100%)'
+navBackground: '#DB8484'
+background: 'linear-gradient(0deg, #DB8484 0%, #DB8484 100%)'
 invert: true
 excerpt: 'Signed Stories is an award-winning iPhone and iPad application, designed and developed for ITV SignPost by Komodo Digital and published by ITV Broadcasting Limited.'
 ---

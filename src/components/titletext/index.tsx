@@ -28,6 +28,7 @@ interface Props {
   children: ReactNode;
   coverimage?: any;
   showShowreel?: boolean;
+  centered?: boolean;
 }
 
 /**
@@ -46,6 +47,7 @@ const TitleText: React.SFC<Props> = ({
   coverimage = null,
   backgroundImage = null,
   showShowreel = true,
+  centered = false,
 }) => {
   const subtitleEl = subtitle ? <span>{subtitle}</span> : null;
   const titleEl = title ? <h2>{title}</h2> : null;
@@ -63,7 +65,16 @@ const TitleText: React.SFC<Props> = ({
     };
   }
 
-  const coverImage = coverimage !== null ? <Img fluid={coverimage.childImageSharp.fluid} /> : null;
+  const coverImage =
+    coverimage !== null ? (
+      <Img
+        fluid={coverimage.childImageSharp.fluid}
+        style={{
+          maxWidth: coverimage.childImageSharp.fluid.presentationWidth,
+          margin: '0 auto', // Used to center the image
+        }}
+      />
+    ) : null;
   const showreel = showShowreel ? (
     <div>
       <a href="https://www.youtube.com/watch?v=8TSE-zTGd4Q&app=desktop" className="showreel">
@@ -71,21 +82,17 @@ const TitleText: React.SFC<Props> = ({
       </a>
     </div>
   ) : null;
+  const centeredClass = centered ? 'centered' : '';
 
-  return (
-    <div
-      className={`komodoGridWrapper title-wrapper ${invertedClassname} ${className}`}
-      style={style}
-    >
-      <div className={`Title-Section`}>
+  return <div className={`komodoGridWrapper title-wrapper ${invertedClassname} ${centeredClass} ${className}`} style={style}>
+      <div className={`Title-Section ${centeredClass}`}>
         {subtitleEl}
         {titleEl}
         <div>{children}</div>
         {showreel}
       </div>
-      {coverImage}
-    </div>
-  );
+      <div className="image-wrapper">{coverImage}</div>
+    </div>;
 };
 
 export default TitleText;

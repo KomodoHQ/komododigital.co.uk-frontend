@@ -8,7 +8,6 @@
 }
 
 .title-wrapper > .gatsby-image-wrapper {
-    width: 700px;
     justify-self: center;
     margin: 0;
     padding: 0;
@@ -18,6 +17,10 @@
 .Title-Section {
     grid-column: 2 / 16;
     overflow: hidden;
+}
+
+.image-wrapper {
+    grid-column: 4 / 14;
 }
 
 .title-wrapper.topPaddingLarge {
@@ -121,6 +124,11 @@
 
 @media (--mobile-viewport) {
 
+    .Title-Section.centered {
+        grid-column: 3 / 15;
+        padding: 0;
+    }
+
     .title-wrapper {
         padding: 15px 0;
     }
@@ -158,6 +166,11 @@
         grid-column: 2 / 14;
         overflow: hidden;
         padding: 1rem;
+    }
+
+    .Title-Section.centered {
+        grid-column: 3 / 15;
+        padding: 0;
     }
 
     .Title-Section > h2 {
@@ -203,6 +216,11 @@
         grid-column: 3 / 12;
         overflow: hidden;
         padding: 1rem;
+    }
+
+    .Title-Section.centered {
+        grid-column: 5 / 13;
+        padding: 0;
     }
 
     .Title-Section > h2 {

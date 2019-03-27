@@ -70,7 +70,7 @@ export const caseStudyQuery = graphql`
             }
             coverimage {
               childImageSharp {
-                fluid(maxWidth: 700) {
+                fluid(maxWidth: 1170) {
                   ...GatsbyImageSharpFluid_withWebp_tracedSVG
                 }
               }

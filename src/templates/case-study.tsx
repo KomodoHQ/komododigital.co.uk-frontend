@@ -26,6 +26,7 @@ export default (props) => {
         className="topPaddingLarge bottomPaddingNone"
         coverimage={props.coverimage}
         showShowreel={false}
+        centered={true}
       >
         {renderAst(props.intro)}
       </TitleText>
