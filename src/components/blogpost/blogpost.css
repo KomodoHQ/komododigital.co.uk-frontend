@@ -49,19 +49,26 @@
     flex: 1;
     color: #888888;
     text-transform: uppercase;
-    font-size: 12px;
     font-weight: bold;
     letter-spacing: 3px;
+    font-size: 0.9rem;
+    margin-top: 5px;
 }
 
 .blogpostLink > .read > .readmore {
     flex: 1;
     text-align: right;
-    font-size: 1.0rem;
+    font-size: 1.4rem;
     font-weight: bold;
     text-decoration: none;
     align-self: flex-end;
     color: black;
+}
+
+.blogpostLink > .read > .readmore::after {
+    content: '→';
+    margin: 3px 0 0 5px;
+    display: inline-block;
 }
 
 a:hover .read > .readmore {
@@ -118,7 +125,7 @@ a:hover .read > .readmore {
 
     .blogpostLink > .read {
         flex-direction: row;
-        align-items: flex-end;
+        align-items: center;
     }
 
     .blogpostLink > .read > .readmore {
