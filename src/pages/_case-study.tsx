@@ -66,14 +66,14 @@ export const caseStudyQuery = graphql`
             csimage {
               childImageSharp {
                 fluid(maxWidth: 450) {
-                  ...GatsbyImageSharpFluid_withWebp_tracedSVG
+                  ...GatsbyImageSharpFluid_withWebp_noBase64
                 }
               }
             }
             coverimage {
               childImageSharp {
                 fluid(maxWidth: 1170) {
-                  ...GatsbyImageSharpFluid_withWebp_tracedSVG
+                  ...GatsbyImageSharpFluid_withWebp_noBase64
                 }
               }
             }
