@@ -65,21 +65,17 @@ export default (props) => {
         <h2>{props.caseStudiesTitle}</h2>
         {renderAst(props.caseStudiesIntro)}
       </CenterContent>
-      {props.caseStudies.map((study) => {
-        return (
-          <CaseStudy
-            key={study.title}
-            subtitle={study.subtitle}
-            title={study.title}
-            link={study.link}
-            image={study.csimage}
-          >
-            <div>
-              <p>{study.excerpt}</p>
-            </div>
-          </CaseStudy>
-        );
-      })}
+      <CaseStudy
+        key={props.caseStudy.title}
+        subtitle={props.caseStudy.subtitle}
+        title={props.caseStudy.title}
+        link={props.caseStudy.link}
+        image={props.caseStudy.csimage}
+      >
+        <div>
+          <p>{props.caseStudy.excerpt}</p>
+        </div>
+      </CaseStudy>
       <SeeMoreButton title="See More Work" />
       <ContactSection background="#fff" className="topPaddingLarge">
         {renderAst(props.contactsIntro)}

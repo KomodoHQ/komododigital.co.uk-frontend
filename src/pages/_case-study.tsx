@@ -26,8 +26,10 @@ export default (props) => {
     );
   }
 
+  const caseStudy = caseStudies.sort(() => .5 - Math.random())[0];
+
   const hocProps = {
-    caseStudies,
+    caseStudy,
     intro: rootNode ? rootNode.htmlAst : '',
     title: rootNode ? rootNode.frontmatter.title : '',
     subtitle: rootNode ? rootNode.frontmatter.subtitle : '',
@@ -64,14 +66,14 @@ export const caseStudyQuery = graphql`
             csimage {
               childImageSharp {
                 fluid(maxWidth: 450) {
-                  ...GatsbyImageSharpFluid_withWebp_tracedSVG
+                  ...GatsbyImageSharpFluid_withWebp_noBase64
                 }
               }
             }
             coverimage {
               childImageSharp {
                 fluid(maxWidth: 1170) {
-                  ...GatsbyImageSharpFluid_withWebp_tracedSVG
+                  ...GatsbyImageSharpFluid_withWebp_noBase64
                 }
               }
             }
