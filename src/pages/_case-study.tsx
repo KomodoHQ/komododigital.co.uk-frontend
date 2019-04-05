@@ -26,8 +26,10 @@ export default (props) => {
     );
   }
 
+  const caseStudy = caseStudies.sort(() => .5 - Math.random())[0];
+
   const hocProps = {
-    caseStudies,
+    caseStudy,
     intro: rootNode ? rootNode.htmlAst : '',
     title: rootNode ? rootNode.frontmatter.title : '',
     subtitle: rootNode ? rootNode.frontmatter.subtitle : '',
