@@ -46,8 +46,15 @@ export default (props: AboutPageProps) => {
         {renderAst(props.intro)}
       </TitleText>
       <TwoColumn
-        title={props.valuesIntro}
+        title={props.purposeIntro}
         className="topPaddingLarge bottomPaddingSmall"
+        background="#ffffff"
+      >
+        {renderAst(props.purpose)}
+      </TwoColumn>
+      <TwoColumn
+        title={props.valuesIntro}
+        className="topPaddingSmall bottomPaddingSmall"
         background="#ffffff"
       >
         {renderAst(props.values)}
@@ -56,16 +63,9 @@ export default (props: AboutPageProps) => {
         title={props.cultureIntro}
         className="topPaddingSmall bottomPaddingSmall"
         background="#ffffff"
-      >
-        {renderAst(props.culture)}
-      </TwoColumn>
-      <TwoColumn
-        title={props.purposeIntro}
-        className="topPaddingSmall bottomPaddingSmall"
-        background="#ffffff"
         hr={false}
       >
-        {renderAst(props.purpose)}
+        {renderAst(props.culture)}
       </TwoColumn>
       <ContactSection className="topPaddingLarge">
         {renderAst(props.contactsIntro)}

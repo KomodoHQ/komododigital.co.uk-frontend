@@ -51,7 +51,7 @@ export default (props: ServicePageProps) => {
         {renderAst(props.intro)}
       </TitleText>
       <ContentSection
-        title="Our Service Triplet"
+        title="Core Services"
         className="topPaddingLarge bottomPaddingSmall"
         background="#ffffff"
       >
@@ -77,39 +77,24 @@ export default (props: ServicePageProps) => {
           </p>
         </TripleFeature>
       </TripleSection>
-      <ContentSection title="Our Wheelhouse" className="bottomPaddingSmall topPaddingLarge">
+      <ContentSection title="Wheelhouse" className="bottomPaddingSmall topPaddingLarge">
         {renderAst(props.wheelhouseIntro)}
       </ContentSection>
       <Services>
         <ul>
           <li>Discovery Workshops</li>
           <li>Technical Audits</li>
-          <li>User Research</li>
-          <li>Concept Design</li>
-          <li>Project Roadmapping</li>
-          <li>Usability testing and research</li>
-          <li>Design Research</li>
-          <li>Visual Design</li>
+          <li>Product Strategy</li>
         </ul>
         <ul>
-          <li>Interaction Design</li>
-          <li>Prototype Development</li>
-          <li>Testing</li>
-          <li>User-centered development</li>
-          <li>Agile Development</li>
-          <li>TDD/BDD</li>
-          <li>Mobile App Development</li>
-          <li>Web App Development</li>
+          <li>Rapid Prototyping</li>
+          <li>User Experience Design</li>
+          <li>User Interface Design</li>
         </ul>
         <ul>
-          <li>Native iOS app development</li>
-          <li>Native Android app development</li>
-          <li>Infrastructure and Devops</li>
-          <li>Real time application monitoring</li>
-          <li>Information architecture</li>
-          <li>W3C Compliance</li>
-          <li>Ongoing Strategy</li>
-          <li>Innovation development</li>
+          <li>Mobile Development</li>
+          <li>Web Development</li>
+          <li>Research &amp; Development</li>
         </ul>
       </Services>
       <ContentSection title="Toolset" className="topPaddingLarge bottomPaddingSmall">
