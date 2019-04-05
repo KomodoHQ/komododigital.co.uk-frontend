@@ -63,7 +63,7 @@ const Footer: React.SFC<Props> = ({}) => {
             <Link to="/services">Services</Link>
           </li>
           <li>
-            <Link to="/case-studies">Case Studies</Link>
+            <Link to="/client-stories">Client Stories</Link>
           </li>
         </ul>
         <ul>

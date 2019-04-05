@@ -100,7 +100,7 @@ export default (props: IndexPageProps) => {
           </p>
         </TripleFeature>
       </TripleSection>
-      <ContentSection title="Case Studies" className="topPaddingLarge bottomPaddingSmall">
+      <ContentSection title="Client Stories" className="topPaddingLarge bottomPaddingSmall">
         {renderAst(props.caseStudiesIntro)}
       </ContentSection>
       {props.caseStudiesRandom.map((study) => {
@@ -118,7 +118,7 @@ export default (props: IndexPageProps) => {
           </CaseStudy>
         );
       })}
-      <SeeMoreButton title="See More Work" link={'/case-studies'} />
+      <SeeMoreButton title="See More Work" link={'/client-stories'} />
       <Testimonial
         name={props.testimonial.name}
         jobtitle={props.testimonial.jobtitle}

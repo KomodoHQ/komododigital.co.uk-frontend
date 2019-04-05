@@ -26,7 +26,7 @@ exports.createPages = ({ graphql, actions }) => {
             }
           }
         }
-        allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/case-studies/" } }) {
+        allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/client-stories/" } }) {
           edges {
             node {
               frontmatter {
@@ -47,7 +47,7 @@ exports.createPages = ({ graphql, actions }) => {
 
       // Templates are prefixed with underscore
       const blogPostTemplate = path.resolve('./src/pages/_blog.tsx');
-      const caseStudyTemplate = path.resolve('./src/pages/_case-study.tsx');
+      const caseStudyTemplate = path.resolve('./src/pages/_client-story.tsx');
       // We want to create a detailed page for each
       // post node. We'll just use the WordPress Slug for the slug.
       // The Post ID is prefixed with 'POST_'

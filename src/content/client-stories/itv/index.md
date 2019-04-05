@@ -2,7 +2,7 @@
 title: 'The World’s First Animated, British and American Sign Language, Storytelling App'
 subtitle: 'Education'
 date: '2018-09-22'
-group: 'case-studies'
+group: 'client-stories'
 headercolor: '#DB8484'
 csimage: '../../images/casestudy/ITV@3x.png'
 coverimage: '../../images/casestudy/ITVCover@3x.png'

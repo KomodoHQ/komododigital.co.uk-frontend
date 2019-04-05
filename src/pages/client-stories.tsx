@@ -1,13 +1,13 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import CaseStudies from '../templates/case-studies';
+import CaseStudies from '../templates/client-stories';
 import { siteMeta, komodoLogo, clientLogos, icons, avatars } from '../utils/site-queries';
 import { findNodes, findNode } from '../utils/nodes';
 
 export default (props) => {
-  const caseStudies = findNodes('group', props, 'case-studies');
-  const contactsIntro = findNode('case-studies/contact_us', props);
-  const caseStudiesIntro = findNode('case-studies/index', props);
+  const caseStudies = findNodes('group', props, 'client-stories');
+  const contactsIntro = findNode('client-stories/contact_us', props);
+  const caseStudiesIntro = findNode('client-stories/index', props);
 
   const hocProps = {
     caseStudies,
@@ -22,7 +22,7 @@ export default (props) => {
 export const caseStudiesQuery = graphql`
   query caseStudiesQuery {
     ...siteMeta
-    allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/case-studies|contacts/" } }) {
+    allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/client-stories|contacts/" } }) {
       edges {
         node {
           htmlAst

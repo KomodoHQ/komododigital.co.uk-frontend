@@ -6,14 +6,14 @@
  */
 import React from 'react';
 import { graphql } from 'gatsby';
-import CaseStudy from '../templates/case-study';
+import CaseStudy from '../templates/client-story';
 import { siteMeta, komodoLogo, clientLogos, icons, avatars } from '../utils/site-queries';
 import { findNodes, findNode, findNodeRaw } from '../utils/nodes';
 
 export default (props) => {
   const rootNode = findNode(`${props.pageContext.slug}/index`, props);
-  let caseStudies = findNodes('group', props, 'case-studies');
-  const caseStudiesIntro = findNodeRaw('case-studies/other', props.data.others);
+  let caseStudies = findNodes('group', props, 'client-stories');
+  const caseStudiesIntro = findNodeRaw('client-stories/other', props.data.others);
   const metrics = findNodeRaw(`${props.pageContext.slug}/metrics`, props.data.metrics);
   const testimonial = findNodeRaw(`${props.pageContext.slug}/testimonial`, props.data.testimonial);
   const process = findNodeRaw(`${props.pageContext.slug}/process`, props.data.process);
@@ -55,7 +55,7 @@ export default (props) => {
 export const caseStudyQuery = graphql`
   query caseStudyQuery {
     ...siteMeta
-    allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/case-studies/.*/index|contacts/" } }) {
+    allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/client-stories/.*/index|contacts/" } }) {
       edges {
         node {
           htmlAst
@@ -88,7 +88,7 @@ export const caseStudyQuery = graphql`
       }
     }
     metrics: allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/case-studies/.*/metrics/" } }
+      filter: { fileAbsolutePath: { regex: "/client-stories/.*/metrics/" } }
     ) {
       edges {
         node {
@@ -106,7 +106,7 @@ export const caseStudyQuery = graphql`
       }
     }
     process: allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/case-studies/.*/process/" } }
+      filter: { fileAbsolutePath: { regex: "/client-stories/.*/process/" } }
     ) {
       edges {
         node {
@@ -119,7 +119,7 @@ export const caseStudyQuery = graphql`
       }
     }
     testimonial: allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/case-studies/.*/testimonial/" } }
+      filter: { fileAbsolutePath: { regex: "/client-stories/.*/testimonial/" } }
     ) {
       edges {
         node {
@@ -134,7 +134,7 @@ export const caseStudyQuery = graphql`
       }
     }
     others: allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/case-studies/other/" } }
+      filter: { fileAbsolutePath: { regex: "/client-stories/other/" } }
     ) {
       edges {
         node {

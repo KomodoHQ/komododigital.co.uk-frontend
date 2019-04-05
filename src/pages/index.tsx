@@ -8,15 +8,15 @@ import CleanSourceURL from '../utils/clean-source-url';
 export default (props) => {
   const rootNode = findNode('index/index', props);
   const services = findNodes('group', props, 'services');
-  const caseStudies = findNodes('group', props, 'case-studies');
+  const caseStudies = findNodes('group', props, 'client-stories');
   const caseStudiesRandom = caseStudies.sort(() => .5 - Math.random()).slice(0, 2);
-  const caseStudiesIntro = findNode('index/case-studies', props);
+  const caseStudiesIntro = findNode('index/client-stories', props);
   const aboutUsIntro = findNode('index/about_us', props);
   const approachIntro = findNode('index/approach', props);
   const clientPortfoliosIntro = findNode('index/client_portfolio', props);
   const insightsIntro = findNode('index/insights', props);
   const contactsIntro = findNode('index/contact_us', props);
-  const testimonial = findNodeRaw('case-studies/onward/testimonial', props.data.testimonial);
+  const testimonial = findNodeRaw('client-stories/onward/testimonial', props.data.testimonial);
 
   const insights = props.data.allWordpressPost.edges.map((edge) => {
     const data = {
@@ -66,7 +66,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/index|case-studies|contacts/" } }) {
+    allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/index|client-stories|contacts/" } }) {
       edges {
         node {
           htmlAst
@@ -91,7 +91,7 @@ export const pageQuery = graphql`
       }
     }
     testimonial: allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/case-studies/onward/testimonial/" } }
+      filter: { fileAbsolutePath: { regex: "/client-stories/onward/testimonial/" } }
     ) {
       edges {
         node {

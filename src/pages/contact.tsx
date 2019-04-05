@@ -20,7 +20,7 @@ export default (props) => {
 export const contactQuery = graphql`
   query contactQuery {
     ...siteMeta
-    allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/index|case-studies|contacts/" } }) {
+    allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/index|client-stories|contacts/" } }) {
       edges {
         node {
           htmlAst

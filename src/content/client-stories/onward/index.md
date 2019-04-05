@@ -2,7 +2,7 @@
 title: 'Simplifying the Customer Journey to Digital Adoption'
 subtitle: 'Social Housing'
 date: '2018-09-22'
-group: 'case-studies'
+group: 'client-stories'
 headercolor: '#0E1948'
 csimage: '../../images/casestudy/Onward@3x.png'
 coverimage: '../../images/casestudy/OnwardCover@3x.png'

@@ -1,5 +1,5 @@
 ---
-title: 'Case Studies'
+title: 'Client Stories'
 date: '2018-09-22'
 ---
 

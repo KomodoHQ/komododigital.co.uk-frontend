@@ -16,7 +16,7 @@ export default (props) => {
   return (
     <Layout data={props.data} inverted={true} background="#EAEAEA">
       <TitleText
-        title="Case Studies"
+        title="Client Stories"
         subtitle="What We Do"
         showShowreel={false}
         className={'topPaddingSmall bottomPaddingNone'}

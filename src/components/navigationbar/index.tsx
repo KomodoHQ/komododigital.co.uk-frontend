@@ -117,7 +117,7 @@ class NavigationBar extends React.Component<Props> {
             const aboutLinkSelected = path === '/about' ? 'selected' : '';
             const servicesLinkSelected = path === '/services' ? 'selected' : '';
             const caseLinkSelected =
-              path === '/case-studies' || path.includes('/case-studies/') ? 'selected' : '';
+              path === '/client-stories' || path.includes('/client-stories/') ? 'selected' : '';
             const insightsLinkSelected =
               path === '/insights' || path.includes('/insights/') ? 'selected' : '';
             const contactLinkSelected = path === '/contact' ? 'selected' : '';
@@ -137,7 +137,7 @@ class NavigationBar extends React.Component<Props> {
                   <Link to={'services'}>Services</Link>
                 </li>
                 <li className={`nav-link ${caseLinkSelected} ${homeLinkSelected}`}>
-                  <Link to={'case-studies'}>Case Studies</Link>
+                  <Link to={'client-stories'}>Client Stories</Link>
                 </li>
                 <li className={`nav-link ${insightsLinkSelected} ${homeLinkSelected}`}>
                   <Link to={'insights'}>Insights</Link>
