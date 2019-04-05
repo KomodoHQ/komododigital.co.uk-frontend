@@ -44,6 +44,7 @@ interface CaseStudy {
 interface IndexPageProps {
   services: Service[];
   caseStudies: CaseStudy[];
+  caseStudiesRandom: CaseStudy[];
   insights: Insight[];
   subtitle: string;
   title: string;
@@ -102,7 +103,7 @@ export default (props: IndexPageProps) => {
       <ContentSection title="Case Studies" className="topPaddingLarge bottomPaddingSmall">
         {renderAst(props.caseStudiesIntro)}
       </ContentSection>
-      {props.caseStudies.map((study) => {
+      {props.caseStudiesRandom.map((study) => {
         return (
           <CaseStudy
             key={study.title}
