@@ -77,7 +77,7 @@ const TitleText: React.SFC<Props> = ({
     ) : null;
   const showreel = showShowreel ? (
     <div>
-      <a href="https://www.youtube.com/watch?v=8TSE-zTGd4Q&app=desktop" className="showreel">
+      <a href="https://vimeo.com/314800766/fef6932281" className="showreel" target="_blank">
         Watch Showreel
       </a>
     </div>

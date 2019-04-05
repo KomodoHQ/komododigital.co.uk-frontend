@@ -9,6 +9,7 @@ export default (props) => {
   const rootNode = findNode('index/index', props);
   const services = findNodes('group', props, 'services');
   const caseStudies = findNodes('group', props, 'case-studies');
+  const caseStudiesRandom = caseStudies.sort(() => .5 - Math.random()).slice(0, 2);
   const caseStudiesIntro = findNode('index/case-studies', props);
   const aboutUsIntro = findNode('index/about_us', props);
   const approachIntro = findNode('index/approach', props);
@@ -30,6 +31,7 @@ export default (props) => {
   const hocProps = {
     services,
     caseStudies,
+    caseStudiesRandom,
     insights,
     subtitle: (rootNode) ? rootNode.subtitle : '',
     title: (rootNode) ? rootNode.title : '',
