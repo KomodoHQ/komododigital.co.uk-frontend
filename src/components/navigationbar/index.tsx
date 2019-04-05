@@ -118,7 +118,8 @@ class NavigationBar extends React.Component<Props> {
             const servicesLinkSelected = path === '/services' ? 'selected' : '';
             const caseLinkSelected =
               path === '/case-studies' || path.includes('/case-studies/') ? 'selected' : '';
-            const insightsLinkSelected = path === '/insights' ? 'selected' : '';
+            const insightsLinkSelected =
+              path === '/insights' || path.includes('/insights/') ? 'selected' : '';
             const contactLinkSelected = path === '/contact' ? 'selected' : '';
 
             return (
