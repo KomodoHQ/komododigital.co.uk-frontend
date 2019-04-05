@@ -68,13 +68,6 @@ a:hover .read > .readmore {
     text-decoration: underline;
 }
 
-.blogpostLink > .read > .readmore::after {
-    content: '→';
-    margin: 3px 0 0 5px;
-    display: inline-block;
-}
-
-
 @media (--tablet-viewport) {
     .blogpostLink > img {
         height: 180px;
