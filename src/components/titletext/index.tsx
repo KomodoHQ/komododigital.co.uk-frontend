@@ -27,8 +27,10 @@ interface Props {
   className?: string;
   children: ReactNode;
   coverimage?: any;
+  coverimageRaw?: any;
   showShowreel?: boolean;
   centered?: boolean;
+  imageOverlap?: boolean;
 }
 
 /**
@@ -45,9 +47,11 @@ const TitleText: React.SFC<Props> = ({
   className = '',
   children,
   coverimage = null,
+  coverimageRaw = null,
   backgroundImage = null,
   showShowreel = true,
   centered = false,
+  imageOverlap = false,
 }) => {
   const subtitleEl = subtitle ? <span>{subtitle}</span> : null;
   const titleEl = title ? <h2>{title}</h2> : null;
@@ -65,16 +69,25 @@ const TitleText: React.SFC<Props> = ({
     };
   }
 
-  const coverImage =
-    coverimage !== null ? (
-      <Img
+  let imageOverlapClass = imageOverlap ? 'image-overlap' : '';
+
+  let coverImage = null;
+
+  if (coverimage !== null || coverimageRaw !== null) {
+    if (coverimage) {
+      coverImage = (<Img
         fluid={coverimage.childImageSharp.fluid}
         style={{
           maxWidth: coverimage.childImageSharp.fluid.presentationWidth,
           margin: '0 auto', // Used to center the image
         }}
-      />
-    ) : null;
+      />);
+    }
+    else {
+      coverImage = (<img src={coverimageRaw} width="100%" />);
+    }
+  }
+
   const showreel = showShowreel ? (
     <div>
       <a href="https://vimeo.com/314800766/fef6932281" className="showreel" target="_blank">
@@ -91,7 +104,7 @@ const TitleText: React.SFC<Props> = ({
         <div>{children}</div>
         {showreel}
       </div>
-      <div className="image-wrapper">{coverImage}</div>
+      <div className={`image-wrapper ${imageOverlapClass}`}>{coverImage}</div>
     </div>;
 };
 

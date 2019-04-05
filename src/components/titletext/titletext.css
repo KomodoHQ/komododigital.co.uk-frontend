@@ -122,6 +122,10 @@
     box-shadow: 0 10px 20px 0 rgba(0,0,0,1);
 }
 
+.image-overlap {
+    margin-bottom: -25%;
+}
+
 @media (--mobile-viewport) {
 
     .Title-Section.centered {
