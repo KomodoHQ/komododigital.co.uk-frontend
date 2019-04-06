@@ -29,7 +29,8 @@ const cloudfront = new AWS.CloudFront({
   secretAccessKey: secret_access_key.trim(),
 });
 
-const distributionId = process.env.DISTRIBUTION_ID; /* env */
+// Use the branch to get the distribution id
+const distributionId = process.env[`DISTRIBUTION_ID_${process.env.CI_BRANCH.toUpperCase()}`]; /* env */
 
 if (!distributionId) {
   console.error('Unable to fetch DISTRIBUTION_ID from environment variables.');
