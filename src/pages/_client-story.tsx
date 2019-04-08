@@ -17,7 +17,7 @@ export default (props) => {
   const metrics = findNodeRaw(`${props.pageContext.slug}/metrics`, props.data.metrics);
   const testimonial = findNodeRaw(`${props.pageContext.slug}/testimonial`, props.data.testimonial);
   const process = findNodeRaw(`${props.pageContext.slug}/process`, props.data.process);
-  const contactsIntro = findNode('contacts', props);
+  const contactsIntro = findNode('client-stories/contact_us', props);
 
   if (rootNode) {
     // Show other case studies, but filter this one
@@ -55,7 +55,7 @@ export default (props) => {
 export const caseStudyQuery = graphql`
   query caseStudyQuery {
     ...siteMeta
-    allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/client-stories/.*/index|contacts/" } }) {
+    allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/client-stories/.*/index|client-stories/contact_us|contacts/" } }) {
       edges {
         node {
           htmlAst
