@@ -1,0 +1,45 @@
+@import '../settings.css';
+
+.job-listings {
+  display: flex;
+  flex-direction: column;
+}
+
+.job-single-job {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+  margin: 20px 0px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 14px;
+  text-align: center;
+}
+
+.job-single-job-title {
+  font-weight: 400;
+}
+
+.job-single-job-text::after {
+  display: inline-block;
+  content: '';
+  margin-left: 10px;
+  background: url('../../content/images/chevron-down.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 16px;
+  height: 9px;
+  transform: rotate(-90deg);
+  transition: transform 0.1s ease-in;
+}
+
+@media (max-width: 600px) {
+  .job-single-job {
+    flex-direction: column;
+  }
+
+  .job-single-job-title {
+    margin-bottom: 10px;
+  }
+}
