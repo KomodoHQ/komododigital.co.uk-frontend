@@ -29,7 +29,7 @@ const people = {
     name: 'Armin Talic',
     email: 'armin@komododigital.co.uk',
     text: `A product of ex-Yugoslavia, he’s usually the one trying to work the problem and asking
-    “why?”. Doesn’t play golf to win business.`,
+    “why?”. Doesn’t play golf.`,
     photo: 'person_armin',
   },
   Phoebe: {
