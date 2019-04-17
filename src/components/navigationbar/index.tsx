@@ -71,6 +71,9 @@ class NavigationBar extends React.Component<Props> {
   render() {
     const { logo } = this.props;
     const { inverted } = this.props;
+    const menu = inverted
+      ? require('../../content/images/menu_black.svg')
+      : require('../../content/images/menu.svg');
 
     const backgroundStyle = this.props.background
       ? this.props.background
@@ -96,11 +99,17 @@ class NavigationBar extends React.Component<Props> {
               e.preventDefault();
               if (this.menuRef.current) {
                 this.menuRef.current.classList.toggle('open');
+                if (!this.props.background) {
+                  this.menuRef.current.style.background =
+                    this.menuRef.current.style.background == 'rgba(0, 0, 0, 0)'
+                      ? 'rgba(0, 0, 0, 1)'
+                      : 'rgba(0, 0, 0, 0)';
+                }
               }
             }}
           >
             <img
-              src={require('../../content/images/menu.svg')}
+              src={menu}
               width={64}
               height={64}
               style={{ width: 64, height: 64, marginTop: 10 }}

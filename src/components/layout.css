@@ -52,8 +52,16 @@ body {
     width: 100vw;
     display: grid;
     grid-template-columns: 1fr repeat(14, 15px) 1fr;
-    grid-gap: 10px;
+    grid-gap: 5px;
     max-width: 100%;
+}
+
+@media (--small-mobile-viewport) {
+
+    .komodoGridWrapper {
+        grid-gap: 10px;
+    }
+
 }
 
 @media (--mobile-viewport) {

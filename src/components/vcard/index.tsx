@@ -28,8 +28,7 @@ const people = {
     jobtitle: 'Commercial Director',
     name: 'Armin Talic',
     email: 'armin@komododigital.co.uk',
-    text: `A product of ex-Yugoslavia, he’s usually the one trying to work the problem and asking
-    “why?”. Doesn’t play golf.`,
+    text: `A product of ex-Yugoslavia. Spent 4 years at Apple learning about the value of service and experience. Usually the one asking “why?”. Doesn’t play golf.`,
     photo: 'person_armin',
   },
   Phoebe: {
@@ -62,7 +61,7 @@ const people = {
     email: 'ian@komododigital.co.uk',
     text: `Sees the world in 1s and 0s. Tech, Travel, Dog. Repeat. Proud owner of Shadow.`,
     photo: 'person_ian',
-  }
+  },
 };
 
 /**
