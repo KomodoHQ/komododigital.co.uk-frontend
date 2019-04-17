@@ -2,6 +2,7 @@ import React from 'react';
 import rehypeReact from 'rehype-react';
 import Layout from '../components/layout';
 import CenterContent from '../components/centercontent';
+import ContactJobs from '../components/contactjobs';
 import VCard from '../components/vcard';
 import ContactSection from '../components/contactsection';
 import Img from 'gatsby-image';
@@ -32,6 +33,7 @@ export default (props: ContactPageProps) => {
       <CenterContent background="#fff">
         <Img fluid={props.data.icon_career.childImageSharp.fluid} />
         {renderAst(props.career)}
+        <ContactJobs />
       </CenterContent>
     </Layout>
   );
