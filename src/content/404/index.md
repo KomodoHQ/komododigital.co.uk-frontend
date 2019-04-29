@@ -2,7 +2,6 @@
 title: "404"
 date: "2018-09-22"
 ---
+We couldn't find the page you are looking for.
 
-# Oh noes
-
-Test add something
+Go to the [homepage](/).

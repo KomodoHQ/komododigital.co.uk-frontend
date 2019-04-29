@@ -1,14 +1,21 @@
 import React from 'react';
 import rehypeReact from 'rehype-react';
 import Layout from '../components/layout';
+import TitleText from '../components/titletext';
 
 const renderAst = new rehypeReact({
   createElement: React.createElement,
 }).Compiler;
 
 export default (props) => (
-  <Layout data={props.data}>
-    <h1>#404 Page Not Found</h1>
-    <div>{renderAst(props.htmlAst)}</div>
+  <Layout data={props.data} inverted={true} background="#EAEAEA">
+    <TitleText
+      title="Four oh Four"
+      subtitle="Page Not Found"
+      showShowreel={false}
+      className={'topPaddingSmall bottomPaddingNone'}
+    >
+      {renderAst(props.htmlAst)}
+    </TitleText>
   </Layout>
 );
