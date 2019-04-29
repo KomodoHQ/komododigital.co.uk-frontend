@@ -28,7 +28,7 @@ const people = {
     jobtitle: 'Commercial Director',
     name: 'Armin Talic',
     email: 'armin@komododigital.co.uk',
-    text: `A product of ex-Yugoslavia. Spent 4 years at Apple learning about the value of service and experience. Usually the one asking “why?”. Doesn’t play golf.`,
+    text: `A product of ex-Yugoslavia. Spent 4 years at Apple learning about the value of service and experience. Usually the one asking “why?”.`,
     photo: 'person_armin',
   },
   Phoebe: {
