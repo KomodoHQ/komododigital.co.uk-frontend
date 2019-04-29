@@ -147,6 +147,63 @@ After configuring CloudFront as above, there are some extra steps to complete.
 13. Add an `Origin Response` under `Lambda Function Associations` and paste the ARN (recorded above) for your `CacheControl` function.
 14. Hit `Yes, Edit`. Your CloudFront distribution should now be configured correctly.
 
+## Redirects
+
+If you need to add redirects, do the following:
+
+
+1. Go to `AWS Lambda`.
+2. **Important**: Switch AWS region to `US East (N. Virginia)`. This is required for the correct configuration options in CloudFront.
+3. Create a new function with the following settings:
+
+  ```
+  Name: SiteRedirects
+  Runtime: NodeJs 8.10
+  Role: <This will be "Create a new role from one or more templates" if you haven't done this before, OR it will be your previously created role>
+  Policy Template: Basic Lambda@Edge permissions (For CloudFront trigger)
+  ```
+
+4. Edit the function code to be the following (adding your redirects in the `routes` object):
+
+  ```
+  'use strict';
+  exports.handler = (event, context, callback) => {
+    const request = event.Records[0].cf.request;
+    const uri = event.Records[0].cf.request.uri;
+    
+    const routes = {
+        "/source": "/destination",
+    }
+
+    if (uri in routes) {
+        const locationRedirect = routes[uri];
+
+        const response = {
+            status: '302',
+            statusDescription: 'Found',
+            headers: {
+                location: [{
+                    key: 'Location',
+                    value: locationRedirect,
+                }],
+            },
+        };
+        
+        callback(null, response);
+    }
+    else {
+      callback(null, request);
+    }
+  };
+  ```
+
+5. Publish a new version, and then note the ARN in the top right corner (we need that in a bit).
+6. Go to your AWS CloudFront distribution
+7. Select the `Behaviours` tab.
+8. Edit the `Default` behaviour.
+9. Add an `Viewer Request` under `Lambda Function Associations` and paste the ARN (recorded above) for your `SiteRedirects` function.
+14. Hit `Yes, Edit`. Your CloudFront distribution should now be configured correctly and start redirecting.
+
 ## Codeship Deployment Creation / Configuration
 
 Follow the usual project creation steps on Codeship, until you're at the point of setting up the pipeline. Configure as below under `Project Settings`:
