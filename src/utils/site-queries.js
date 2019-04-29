@@ -340,7 +340,13 @@ export const standardsLogos = graphql`
         }
       }
     }
-
+    standard_crown: file(relativePath: { eq: "images/standards/CCS@3x.png" }) {
+      childImageSharp {
+        fixed(width: 67) {
+          ...GatsbyImageSharpFixed_withWebp_tracedSVG
+        }
+      }
+    }
   }
 `;
 
