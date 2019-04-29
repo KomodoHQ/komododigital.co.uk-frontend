@@ -39,7 +39,7 @@ const LegalFooter: React.SFC<Props> = ({ data }) => {
       <div className="company">
         <span>Komodo Digital Copyright &copy; 2019</span>
         <br />
-        <Link to="/">Privacy Policy</Link> | <Link to="/">Terms and Conditions</Link>
+        <a href="https://www.iubenda.com/privacy-policy/86373707/full-legal" target="_blank">Privacy Policy</a> | <a href="/terms.pdf">Terms and Conditions</a>
       </div>
       <div className="contact">
         <ul>

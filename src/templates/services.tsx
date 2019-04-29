@@ -154,6 +154,7 @@ export default (props: ServicePageProps) => {
         />
         <StandardItem imgsrc={props.data.standard_istqb} link="https://www.istqb.org/" />
         <StandardItem>NPPV 2</StandardItem>
+        <StandardItem imgsrc={props.data.standard_crown} link="https://www.digitalmarketplace.service.gov.uk/" />
       </PortfolioGrid>
       <ContactSection className={'topPaddingLarge'} background="#fff">
         {renderAst(props.contactsIntro)}

@@ -147,34 +147,34 @@ export default (props: IndexPageProps) => {
         {renderAst(props.clientPortfoliosIntro)}
       </ContentSection>
       <PortfolioGrid className="bottomPaddingLarge">
-        <StandardItem imgsrc={props.data.client_itv} title="ITV" link="/About" />
+        <StandardItem imgsrc={props.data.client_itv} title="ITV" link="https://www.itv.com/" />
         <StandardItem
           imgsrc={props.data.client_northumbriapolice}
           title="Northumbria Police"
-          link="/About"
+          link="https://www.northumbria.police.uk/"
         />
-        <StandardItem imgsrc={props.data.client_streetstream} title="Streetstream" link="/About" />
-        <StandardItem imgsrc={props.data.client_onward} title="Onward" link="/About" />
-        <StandardItem imgsrc={props.data.client_orchard} title="Orchard" link="/About" />
-        <StandardItem imgsrc={props.data.client_gichd} title="GICHD" link="/About" />
+        <StandardItem imgsrc={props.data.client_streetstream} title="Streetstream" link="https://www.streetstream.co.uk/" />
+        <StandardItem imgsrc={props.data.client_onward} title="Onward" link="https://www.onward.co.uk/" />
+        <StandardItem imgsrc={props.data.client_orchard} title="Orchard" link="https://www.orchard-systems.co.uk/" />
+        <StandardItem imgsrc={props.data.client_gichd} title="GICHD" link="https://www.gichd.org/" />
         <StandardItem
           imgsrc={props.data.client_northumbriauni}
           title="Northumbria University"
-          link="/About"
+          link="https://www.northumbria.ac.uk/"
         />
         <StandardItem
           imgsrc={props.data.client_newcastleuni}
           title="Newcastle University"
-          link="/About"
+          link="https://www.ncl.ac.uk/"
         />
-        <StandardItem imgsrc={props.data.client_elanders} title="eLanders" link="/About" />
-        <StandardItem imgsrc={props.data.client_cop} title="College of Policing" link="/About" />
-        <StandardItem imgsrc={props.data.client_legrand} title="LeGrand" link="/About" />
-        <StandardItem imgsrc={props.data.client_spacegroup} title="LeGrand" link="/About" />
-        <StandardItem imgsrc={props.data.client_iamproperty} title="LeGrand" link="/About" />
-        <StandardItem imgsrc={props.data.client_theo} title="LeGrand" link="/About" />
-        <StandardItem imgsrc={props.data.client_citizens} title="LeGrand" link="/About" />
-        <StandardItem imgsrc={props.data.client_xenith} title="LeGrand" link="/About" />
+        <StandardItem imgsrc={props.data.client_elanders} title="elanders" link="https://www.elanders.com/uk/" />
+        <StandardItem imgsrc={props.data.client_cop} title="College of Policing" link="https://www.college.police.uk/" />
+        <StandardItem imgsrc={props.data.client_legrand} title="Legrand" link="https://www.legrand.co.uk/" />
+        <StandardItem imgsrc={props.data.client_spacegroup} title="Space Group" link="https://spacegroup.co.uk/" />
+        <StandardItem imgsrc={props.data.client_iamproperty} title="Iamproperty" link="https://www.iamproperty.com/" />
+        <StandardItem imgsrc={props.data.client_theo} title="Theo" link="https://drivetheo.com/" />
+        <StandardItem imgsrc={props.data.client_citizens} title="Citizens Advice" link="https://www.citizensadvice.org.uk/" />
+        <StandardItem imgsrc={props.data.client_xenith} title="Xenith" link="https://www.xenith.co.uk/" />
       </PortfolioGrid>
       <ContactSection className="topPaddingLarge" background="#fff">
         {renderAst(props.contactsIntro)}
