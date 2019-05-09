@@ -31,6 +31,9 @@ export default class HTML extends React.Component {
           {this.props.headComponents}
         </head>
         <body {...this.props.bodyAttributes}>
+          <script type="text/javascript" src="https://secure.leadforensics.com/js/159776.js" ></script>
+          <noscript><img alt="" src="https://secure.leadforensics.com/159776.png" style="display:none;" /></noscript>
+          
           {this.props.preBodyComponents}
           <div key={`body`} id="___gatsby" dangerouslySetInnerHTML={{ __html: this.props.body }} />
           {this.props.postBodyComponents}
