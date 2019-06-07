@@ -26,10 +26,10 @@ export default (props) => {
         centered={true}
       />
 
-      <CenterContent className={`topPaddingExtraLarge`}>
+      <CenterContent className={`topPaddingExtraLarge bottomPaddingNone`}>
         <div dangerouslySetInnerHTML={{ __html: props.html }} />
       </CenterContent>
-      <ContentSection title="Insights" className="topPaddingMedium">
+      <ContentSection title="Insights" className="topPaddingSmall">
           {renderAst(props.insightsIntro)}
       </ContentSection>
       <BlogGrid>

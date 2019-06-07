@@ -1,5 +1,9 @@
 @import '../settings.css';
 
+.centercontent-wrapper {
+    padding: 260px 0;
+}
+
 .CenterContent {
     grid-column: 3 / 15;
 }
