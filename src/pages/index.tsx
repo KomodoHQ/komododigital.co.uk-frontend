@@ -19,13 +19,13 @@ export default (props) => {
   const testimonial = findNodeRaw('client-stories/onward/testimonial', props.data.testimonial);
 
   const insights = props.data.allWordpressPost.edges.map((edge) => {
-    const data = {
+    const media = edge.node.featured_media;
+    return {
       node: {
-        imageSource: CleanSourceURL(edge.node.featured_media.source_url),
+        imageSource: media === null ? '' : CleanSourceURL(media.source_url),
         ...edge.node,
       },
     };
-    return data;
   });
 
   const hocProps = {

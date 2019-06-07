@@ -11,9 +11,15 @@
     transition: all 0.2s ease;
 }
 
-.seemorebutton-wrapper > a :hover {
+.seemorebutton-wrapper > a :hover:enabled {
     transform: translateY(-2px);
     box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.seemorebutton-wrapper > a :disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
 }
 
 .seemorebutton-wrapper > a > button {
@@ -24,6 +30,14 @@
     color: white;
     padding: 25px 75px;
     letter-spacing: 1px;
+}
+
+.seemorebutton-wrapper.topPaddingSmall {
+    padding-top: 30px
+}
+
+.seemorebutton-wrapper.bottomPaddingMedium {
+    padding-bottom: 60px
 }
 
 

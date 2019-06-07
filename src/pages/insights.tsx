@@ -7,14 +7,13 @@ import { findNodes, findNode } from '../utils/nodes';
 
 export default (props) => {
   const posts = props.data.allWordpressPost.edges.map((edge) => {
-    const data = {
+    const media = edge.node.featured_media;
+    return {
       node: {
-        imageSource: CleanSourceURL(edge.node.featured_media.source_url),
+        imageSource: media === null ? '' : CleanSourceURL(media.source_url),
         ...edge.node,
       },
     };
-
-    return data;
   });
 
   const insightsIntro = findNode('insights/index', props);
@@ -28,7 +27,7 @@ export default (props) => {
 };
 
 export const blogListQuery = graphql`
-  query blogListQuery {
+  query blogListQuery($limit: Int, $skip: Int) {
     ...siteMeta
     allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/insights/" } }) {
       edges {
@@ -50,7 +49,7 @@ export const blogListQuery = graphql`
         }
       }
     }
-    allWordpressPost(limit: 20) {
+    allWordpressPost(limit: $limit, skip: $skip) {
       edges {
         node {
           status
