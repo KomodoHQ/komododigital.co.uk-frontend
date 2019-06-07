@@ -51,7 +51,7 @@ export default (props) => {
           );
         })}
       </BlogGrid>
-      <CenterContent>
+      <CenterContent className={'topPaddingNone bottomPaddingNone'}>
         <p style={{ textAlign: 'center' }}>
           You've viewed {viewedArticles} of {totalArticles} articles
           <div style={styles.progress}>
