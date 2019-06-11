@@ -7,7 +7,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import CleanSourceURL from '../utils/clean-source-url';
-import { siteMeta, komodoLogo } from '../utils/site-queries';
+import Placeholder from '../assets/images/placeholder.png';
 import Blog from '../templates/blog';
 import { findNode } from '../utils/nodes';
 
@@ -22,14 +22,14 @@ export default (props) => {
   }
 
   const insightsIntro = findNode('index/insights', props);
-  const insights = props.data.insights.edges.map((edge) => {
-    const data = {
+  const insights = props.data.allWordpressPost.edges.map((edge) => {
+    const media = edge.node.featured_media;
+    return {
       node: {
-        imageSource: CleanSourceURL(edge.node.featured_media.source_url),
+        imageSource: media === null ? Placeholder : CleanSourceURL(media.source_url),
         ...edge.node,
       },
     };
-    return data;
   });
 
   const html = CleanSourceURL(props.data.allWordpressPost.edges[0].node.content);

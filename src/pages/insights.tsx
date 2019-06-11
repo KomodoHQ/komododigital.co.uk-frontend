@@ -1,16 +1,16 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import Insights from '../templates/insights';
-import { siteMeta, komodoLogo, clientLogos, icons, avatars } from '../utils/site-queries';
+import Placeholder from '../assets/images/placeholder.png';
 import CleanSourceURL from '../utils/clean-source-url';
-import { findNodes, findNode } from '../utils/nodes';
+import { findNode } from '../utils/nodes';
 
 export default (props) => {
   const posts = props.data.allWordpressPost.edges.map((edge) => {
     const media = edge.node.featured_media;
     return {
       node: {
-        imageSource: media === null ? '' : CleanSourceURL(media.source_url),
+        imageSource: media === null ? Placeholder : CleanSourceURL(media.source_url),
         ...edge.node,
       },
     };

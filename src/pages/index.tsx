@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import Index from '../templates/index';
-import { siteMeta, komodoLogo, clientLogos, icons, avatars } from '../utils/site-queries';
+import Placeholder from '../assets/images/placeholder.png';
 import { findNodes, findNode, findNodeRaw } from '../utils/nodes';
 import CleanSourceURL from '../utils/clean-source-url';
 
@@ -22,7 +22,7 @@ export default (props) => {
     const media = edge.node.featured_media;
     return {
       node: {
-        imageSource: media === null ? '' : CleanSourceURL(media.source_url),
+        imageSource: media === null ? Placeholder : CleanSourceURL(media.source_url),
         ...edge.node,
       },
     };
