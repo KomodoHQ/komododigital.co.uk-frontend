@@ -22,7 +22,7 @@ export default (props) => {
   }
 
   const insightsIntro = findNode('index/insights', props);
-  const insights = props.data.allWordpressPost.edges.map((edge) => {
+  const insights = props.data.insights.edges.map((edge) => {
     const media = edge.node.featured_media;
     return {
       node: {
