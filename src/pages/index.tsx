@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import Index from '../templates/index';
-import { siteMeta, komodoLogo, clientLogos, icons, avatars } from '../utils/site-queries';
+import Placeholder from '../assets/images/placeholder.png';
 import { findNodes, findNode, findNodeRaw } from '../utils/nodes';
 import CleanSourceURL from '../utils/clean-source-url';
 
@@ -19,13 +19,13 @@ export default (props) => {
   const testimonial = findNodeRaw('client-stories/onward/testimonial', props.data.testimonial);
 
   const insights = props.data.allWordpressPost.edges.map((edge) => {
-    const data = {
+    const media = edge.node.featured_media;
+    return {
       node: {
-        imageSource: CleanSourceURL(edge.node.featured_media.source_url),
+        imageSource: media === null ? Placeholder : CleanSourceURL(media.source_url),
         ...edge.node,
       },
     };
-    return data;
   });
 
   const hocProps = {

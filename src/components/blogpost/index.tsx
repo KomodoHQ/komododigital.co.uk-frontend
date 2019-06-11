@@ -15,7 +15,7 @@ import './blogpost.css';
 
 /**
  * Props for the blog post link component
- * 
+ *
  * data
  */
 interface Props {
@@ -27,9 +27,9 @@ interface Props {
 }
 
 /**
- * 
+ *
  * Using SFC (Stateless Functional Component) because a blog post link doesn't need to maintain any state of its own.
- * 
+ *
  * @param data
  */
 const BlogPost: React.SFC<Props> = ({ slug, title, subtitle="INSIGHTS", readingtime=5, image }) => {
@@ -38,7 +38,7 @@ const BlogPost: React.SFC<Props> = ({ slug, title, subtitle="INSIGHTS", readingt
     <Link className="blogpostLink" to={`insights/${slug}`}>
         <img src={image} width={370} alt={title} />
         <p>{subtitle}</p>
-        <h1>{title}</h1>
+        <h1 dangerouslySetInnerHTML={{ __html: title }}></h1>
         <div className="read">
           <div className="readingTime">{readingtime} min read</div>
           <div className="readmore">Read</div>

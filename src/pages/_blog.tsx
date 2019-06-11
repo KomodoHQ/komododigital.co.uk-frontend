@@ -7,8 +7,9 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import CleanSourceURL from '../utils/clean-source-url';
-import { siteMeta, komodoLogo } from '../utils/site-queries';
+import Placeholder from '../assets/images/placeholder.png';
 import Blog from '../templates/blog';
+import { findNode } from '../utils/nodes';
 
 export default (props) => {
   const source_url = props.data.allWordpressPost.edges[0].node.featured_media
@@ -20,11 +21,24 @@ export default (props) => {
     imageSource = CleanSourceURL(source_url);
   }
 
+  const insightsIntro = findNode('index/insights', props);
+  const insights = props.data.insights.edges.map((edge) => {
+    const media = edge.node.featured_media;
+    return {
+      node: {
+        imageSource: media === null ? Placeholder : CleanSourceURL(media.source_url),
+        ...edge.node,
+      },
+    };
+  });
+
   const html = CleanSourceURL(props.data.allWordpressPost.edges[0].node.content);
 
   const hocProps = {
     html,
     imageSource,
+    insights,
+    insightsIntro: (insightsIntro) ? insightsIntro.htmlAst : '',
     ...props,
   };
 
@@ -45,6 +59,27 @@ export const blogQuery = graphql`
           featured_media {
             source_url
           }
+        }
+      }
+    }
+    insights: allWordpressPost(limit: 3, filter: { slug: { ne: $slug } }) {
+      edges {
+        node {
+          status
+          slug
+          title
+          date
+          featured_media {
+            source_url
+          }
+        }
+      }
+    }
+    allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/index/" } }) {
+      edges {
+        node {
+          htmlAst
+          fileAbsolutePath
         }
       }
     }

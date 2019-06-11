@@ -15,24 +15,26 @@ import './seemorebutton.css';
 
 /**
  * Props for the see more button component
- * 
+ *
  * data
  */
 interface Props {
   title: string;
   link?: string;
+  className?: string;
+  disabled?: boolean;
 }
 
 /**
- * 
+ *
  * Using SFC (Stateless Functional Component) because a see more button doesn't need to maintain any state of its own.
- * 
+ *
  * @param data
  */
-const SeeMoreButton: React.SFC<Props> = ({ title, link="/About" }) => {
+const SeeMoreButton: React.SFC<Props> = ({ title, link = '/About', className, disabled = false }) => {
   return (
-    <div className="komodoGridWrapper seemorebutton-wrapper">
-        <Link to={link}><button>{title}</button></Link>
+    <div className={`komodoGridWrapper seemorebutton-wrapper ${className}`}>
+        <Link to={link}><button disabled={disabled}>{title}</button></Link>
     </div>
   );
 };

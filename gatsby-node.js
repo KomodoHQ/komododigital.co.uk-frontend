@@ -48,6 +48,28 @@ exports.createPages = ({ graphql, actions }) => {
       // Templates are prefixed with underscore
       const blogPostTemplate = path.resolve('./src/pages/_blog.tsx');
       const caseStudyTemplate = path.resolve('./src/pages/_client-story.tsx');
+
+      // Create a page for every 21 blog posts.
+      // This sets up pagination allowing all blog posts to be viewed
+      const posts = result.data.allWordpressPost.edges;
+      const postsPerPage = 21;
+      const totalArticles = posts.length;
+      const numPages = Math.ceil(totalArticles / postsPerPage);
+
+      Array.from({length: numPages}).forEach((edge, index) => {
+        createPage({
+          path: index === 0 ? `/insights` : `/insights/${index}/`,
+          component: path.resolve('./src/pages/insights.tsx'),
+          context: {
+            limit: postsPerPage,
+            skip: index * postsPerPage,
+            numPages,
+            totalArticles,
+            nextPage: index + 1,
+          },
+        });
+      });
+
       // We want to create a detailed page for each
       // post node. We'll just use the WordPress Slug for the slug.
       // The Post ID is prefixed with 'POST_'
