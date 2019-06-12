@@ -19,6 +19,7 @@ export default class HTML extends React.Component {
           <meta charSet="utf-8" />
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+          <meta name="google-site-verification" content="ddFf2mrb1XOAdGAVsSMIqaZ4m06lVMIlc3oUVc4W7No" />
           <link rel="apple-touch-icon" href={AppleTouchIcon} />
           <link rel="apple-touch-icon" sizes="57x57" href={AppleTouchIcon57} />
           <link rel="apple-touch-icon" sizes="72x72" href={AppleTouchIcon72} />
