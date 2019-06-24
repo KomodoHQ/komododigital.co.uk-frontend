@@ -6,14 +6,13 @@
  * NPM Dependencies
  */
 import React, { ReactNode } from 'react';
-import Img from 'gatsby-image';
-import './titlevideo.css';
-import HeaderVideo from '../../assets/videos/header.mp4';
-import ShowReel from '../../assets/videos/showreel.mp4';
 
 /**
  * Local dependencies
  */
+import './titlevideo.css';
+import HeaderVideo from '../../assets/videos/header.mp4';
+import ShowReel from '../../assets/videos/showreel.mp4';
 
 /**
  * Props for the content section component

@@ -5,7 +5,7 @@
 /**
  * NPM Dependencies
  */
-import React, { ReactNode } from 'react';
+import React  from 'react';
 import { Link, Location } from '@reach/router';
 import Img from 'gatsby-image';
 
@@ -13,7 +13,6 @@ import Img from 'gatsby-image';
  * Local dependencies
  */
 import './NavigationBar.css';
-import { any } from 'prop-types';
 
 /**
  * Props for the navigation bar component
