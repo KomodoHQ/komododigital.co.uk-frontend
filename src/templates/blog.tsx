@@ -22,7 +22,6 @@ export default (props) => {
         className="topPaddingLarge bottomPaddingNone"
         coverimageRaw={props.imageSource}
         imageOverlap={true}
-        showShowreel={false}
         centered={true}
       />
 

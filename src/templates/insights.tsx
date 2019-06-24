@@ -34,7 +34,6 @@ export default (props) => {
       <TitleText
         title="Insights"
         subtitle="What We Know"
-        showShowreel={false}
         className={'topPaddingSmall bottomPaddingNone'}
       >
         {renderAst(props.insightsIntro)}

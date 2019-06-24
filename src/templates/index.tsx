@@ -10,7 +10,7 @@ import BlogGrid from '../components/bloggrid';
 import BlogPost from '../components/blogpost';
 import SeeMoreButton from '../components/seemorebutton';
 import ContactSection from '../components/contactsection';
-import TitleText from '../components/titletext';
+import TitleVideo from '../components/titlevideo';
 import TripleSection from '../components/triplesection';
 import TripleFeature from '../components/triplefeature';
 import Testimonial from '../components/testimonial';
@@ -63,7 +63,7 @@ interface IndexPageProps {
 export default (props: IndexPageProps) => {
   return (
     <Layout data={props.data}>
-      <TitleText
+      <TitleVideo
         title={props.title}
         subtitle={props.subtitle}
         invert
@@ -72,7 +72,7 @@ export default (props: IndexPageProps) => {
         backgroundImage={props.image}
       >
         {renderAst(props.intro)}
-      </TitleText>
+      </TitleVideo>
       <ContentSection
         title="What We Bring To Your Team"
         className="topPaddingLarge bottomPaddingSmall"

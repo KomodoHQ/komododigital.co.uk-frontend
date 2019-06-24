@@ -28,7 +28,6 @@ interface Props {
   children: ReactNode;
   coverimage?: any;
   coverimageRaw?: any;
-  showShowreel?: boolean;
   centered?: boolean;
   imageOverlap?: boolean;
 }
@@ -49,7 +48,6 @@ const TitleText: React.SFC<Props> = ({
   coverimage = null,
   coverimageRaw = null,
   backgroundImage = null,
-  showShowreel = true,
   centered = false,
   imageOverlap = false,
 }) => {
@@ -88,13 +86,6 @@ const TitleText: React.SFC<Props> = ({
     }
   }
 
-  const showreel = showShowreel ? (
-    <div>
-      <a href="https://vimeo.com/314800766/fef6932281" className="showreel" target="_blank">
-        Watch Showreel
-      </a>
-    </div>
-  ) : null;
   const centeredClass = centered ? 'centered' : '';
 
   return <div className={`komodoGridWrapper title-wrapper ${invertedClassname} ${centeredClass} ${className}`} style={style}>
@@ -102,7 +93,6 @@ const TitleText: React.SFC<Props> = ({
         {subtitleEl}
         {titleEl}
         <div>{children}</div>
-        {showreel}
       </div>
       <div className={`image-wrapper ${imageOverlapClass}`}>{coverImage}</div>
     </div>;

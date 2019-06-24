@@ -40,7 +40,6 @@ export default (props: AboutPageProps) => {
         invert
         background="#000000"
         className="topPaddingLarge bottomPaddingLarge"
-        showShowreel={false}
         backgroundImage={props.image}
       >
         {renderAst(props.intro)}

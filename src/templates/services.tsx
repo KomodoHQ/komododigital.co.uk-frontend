@@ -46,7 +46,6 @@ export default (props: ServicePageProps) => {
         background="#000000"
         className="topPaddingLarge bottomPaddingLarge"
         backgroundImage={props.image}
-        showShowreel={false}
       >
         {renderAst(props.intro)}
       </TitleText>

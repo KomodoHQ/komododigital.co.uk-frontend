@@ -12,7 +12,6 @@ export default (props) => (
     <TitleText
       title="Four oh Four"
       subtitle="Page Not Found"
-      showShowreel={false}
       className={'topPaddingSmall bottomPaddingNone'}
     >
       {renderAst(props.htmlAst)}

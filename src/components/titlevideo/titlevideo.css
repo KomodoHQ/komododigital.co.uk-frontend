@@ -1,0 +1,293 @@
+@import '../settings.css';
+
+.title-wrapper {
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.title-wrapper > .gatsby-image-wrapper {
+    justify-self: center;
+    margin: 0;
+    padding: 0;
+    grid-column: 2 / 16;
+}
+
+.Title-Section-Video {
+    grid-column: 2 / 16;
+}
+
+.image-wrapper {
+    grid-column: 4 / 14;
+}
+
+.title-wrapper.topPaddingLarge {
+    padding-top: 100px;
+}
+
+.title-wrapper.topPaddingMedium {
+    padding-top: 60px;
+}
+
+.title-wrapper.topPaddingSmall {
+    padding-top: 30px;
+}
+
+.title-wrapper.bottomPaddingLarge {
+    padding-bottom: 100px;
+}
+
+.title-wrapper.bottomPaddingMedium {
+    padding-bottom: 60px;
+}
+
+.title-wrapper.bottomPaddingSmall {
+    padding-bottom: 30px;
+}
+
+.title-wrapper.bottomPaddingNone {
+    padding-bottom: 0;
+}
+
+.Title-Section-Video > span {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+    display: block;
+    margin-bottom: 16px;
+    margin-top: 80px;
+}
+
+.Title-Section-Video > h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+.Title-Section-Video > div {
+    font-size: 18px;
+    line-height: 28px;
+    padding-bottom: 50px;
+}
+
+.Title-Section-Video a.showreel {
+    color: black;
+    cursor: pointer;
+}
+
+.invert {
+    color: white;
+}
+
+.size-full {
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+    object-position: 50% 50%;
+}
+
+.showreel {
+    border: 0;
+    font-size: 22px;
+    font-weight: bold;
+    background-color: #fff;
+    color: #000;
+    padding: 20px 32px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    display: block;
+    width: 206px;
+    position: relative;
+}
+
+.showreel::after {
+    content: '';
+    background-image: url('../../content/images/play@3x.png');
+    width: 24px;
+    height: 24px;
+    background-size: 100%;
+    display: block;
+    position: absolute;
+    top: calc(50% - 14px);
+    right: 2rem;
+
+}
+
+.showreel:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,1);
+}
+
+.image-overlap {
+    margin-bottom: -25%;
+}
+
+.video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    outline: none;
+}
+
+.video.modal {
+    z-index: 9999;
+}
+
+.video-close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 999999;
+    background-color: Transparent;
+    border: none;
+    height: 50px;
+    width: 50px;
+    color: white;
+    font-size: 3em;
+    outline: none;
+    cursor: pointer;
+}
+
+@media (--mobile-viewport) {
+
+    .Title-Section-Video.centered {
+        grid-column: 3 / 15;
+        padding: 0;
+    }
+
+    .title-wrapper {
+        padding: 15px 0;
+    }
+
+    .title-wrapper.topPaddingLarge {
+        padding-top: 180px;
+    }
+
+    .title-wrapper.topPaddingMedium {
+        padding-top: 120px;
+    }
+
+    .title-wrapper.topPaddingSmall {
+        padding-top: 60px;
+    }
+
+    .title-wrapper.bottomPaddingLarge {
+        padding-bottom: 180px;
+    }
+
+    .title-wrapper.bottomPaddingMedium {
+        padding-bottom: 120px;
+    }
+
+    .title-wrapper.bottomPaddingSmall {
+        padding-bottom: 60px;
+    }
+
+
+}
+
+@media (--laptop-viewport) {
+
+    .Title-Section-Video {
+        grid-column: 2 / 14;
+        padding: 1rem;
+    }
+
+    .Title-Section-Video.centered {
+        grid-column: 3 / 15;
+        padding: 0;
+    }
+
+    .Title-Section-Video > h2 {
+        margin: 0;
+        padding: 0;
+        font-size: 4rem;
+        font-weight: bold;
+        line-height: 70px;
+    }
+
+    .title-wrapper {
+        padding: 15px 0;
+    }
+
+    .title-wrapper.topPaddingLarge {
+        padding-top: 180px;
+    }
+
+    .title-wrapper.topPaddingMedium {
+        padding-top: 120px;
+    }
+
+    .title-wrapper.topPaddingSmall {
+        padding-top: 60px;
+    }
+
+    .title-wrapper.bottomPaddingLarge {
+        padding-bottom: 180px;
+    }
+
+    .title-wrapper.bottomPaddingMedium {
+        padding-bottom: 120px;
+    }
+
+    .title-wrapper.bottomPaddingSmall {
+        padding-bottom: 60px;
+    }
+}
+
+@media (--desktop-viewport) {
+
+    .Title-Section-Video {
+        grid-column: 3 / 12;
+        padding: 1rem;
+    }
+
+    .Title-Section-Video.centered {
+        grid-column: 5 / 13;
+        padding: 0;
+    }
+
+    .Title-Section-Video > h2 {
+        margin: 0;
+        padding: 0;
+        font-size: 4rem;
+        font-weight: bold;
+        line-height: 70px;
+    }
+
+    .title-wrapper {
+        padding: 30px 0;
+    }
+
+    .title-wrapper.topPaddingLarge {
+        padding-top: 180px;
+    }
+
+    .title-wrapper.topPaddingMedium {
+        padding-top: 120px;
+    }
+
+    .title-wrapper.topPaddingSmall {
+        padding-top: 60px;
+    }
+
+    .title-wrapper.bottomPaddingLarge {
+        padding-bottom: 180px;
+    }
+
+    .title-wrapper.bottomPaddingMedium {
+        padding-bottom: 120px;
+    }
+
+    .title-wrapper.bottomPaddingSmall {
+        padding-bottom: 60px;
+    }
+
+}

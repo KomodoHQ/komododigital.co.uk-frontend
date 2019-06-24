@@ -25,7 +25,6 @@ export default (props) => {
         invert={props.invert}
         className="topPaddingLarge bottomPaddingNone"
         coverimage={props.coverimage}
-        showShowreel={false}
         centered={true}
       >
         {renderAst(props.intro)}

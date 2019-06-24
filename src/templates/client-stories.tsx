@@ -18,7 +18,6 @@ export default (props) => {
       <TitleText
         title="Client Stories"
         subtitle="What We Do"
-        showShowreel={false}
         className={'topPaddingSmall bottomPaddingNone'}
       >
         {renderAst(props.caseStudiesIntro)}
