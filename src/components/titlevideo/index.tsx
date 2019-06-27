@@ -55,6 +55,7 @@ class TitleVideo extends React.Component<Props, State> {
   toggleHidden() {
     if (this.state.hidden) {
       this.videoModal.current.play();
+      window.scrollTo(0, 0);
     } else {
       this.videoModal.current.pause();
     }

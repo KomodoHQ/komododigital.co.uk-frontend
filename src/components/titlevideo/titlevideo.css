@@ -130,14 +130,16 @@
     position: absolute;
     left: 0;
     top: 0;
-    width: 100%;
     object-fit: cover;
+    width: 100%;
     height: 100%;
     outline: none;
 }
 
 .video.modal {
     z-index: 9999;
+    background: black;
+    object-fit: contain;
 }
 
 .video-close-button {
@@ -167,7 +169,7 @@
     }
 
     .title-wrapper.topPaddingLarge {
-        padding-top: 180px;
+        padding-top: 0px;
     }
 
     .title-wrapper.topPaddingMedium {
@@ -179,7 +181,7 @@
     }
 
     .title-wrapper.bottomPaddingLarge {
-        padding-bottom: 180px;
+        padding-bottom: 0px;
     }
 
     .title-wrapper.bottomPaddingMedium {
@@ -190,6 +192,9 @@
         padding-bottom: 60px;
     }
 
+    .video.modal {
+        object-fit: contain;
+    }
 
 }
 
@@ -240,6 +245,11 @@
     .title-wrapper.bottomPaddingSmall {
         padding-bottom: 60px;
     }
+
+    .video.modal {
+        object-fit: cover;
+    }
+
 }
 
 @media (--desktop-viewport) {
@@ -288,6 +298,10 @@
 
     .title-wrapper.bottomPaddingSmall {
         padding-bottom: 60px;
+    }
+
+    .video.modal {
+        object-fit: cover;
     }
 
 }
