@@ -144,8 +144,8 @@
 
 .video-close-button {
     position: absolute;
-    top: 15px;
     right: 15px;
+    top: 45px;
     z-index: 999999;
     background-color: black;
     border: none;
@@ -252,6 +252,10 @@
         object-fit: cover;
     }
 
+    .video-close-button {
+        top: 15px;
+    }
+
 }
 
 @media (--desktop-viewport) {
@@ -304,6 +308,10 @@
 
     .video.modal {
         object-fit: cover;
+    }
+
+    .video-close-button {
+        top: 45px;
     }
 
 }
