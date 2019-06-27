@@ -89,7 +89,7 @@ class TitleVideo extends React.Component<Props, State> {
           <div className={`Title-Section-Video ${centeredClass}`} style={{ zIndex: 2 }}>
             {subtitleEl}
             {titleEl}
-            <div>{this.props.children}</div>
+            {this.props.children.length && <div>{this.props.children}</div>}
             {showreel}
           </div>
         </div>
