@@ -6,7 +6,7 @@ import BlogGrid from '../components/bloggrid';
 import BlogPost from '../components/blogpost';
 import SeeMoreButton from '../components/seemorebutton';
 import CenterContent from '../components/centercontent';
-const sanitizeHtml = require('sanitize-html');
+import sanitizeHtml from 'sanitize-html';
 
 const renderAst = new rehypeReact({
   createElement: React.createElement,
