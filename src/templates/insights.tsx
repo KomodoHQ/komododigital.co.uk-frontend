@@ -6,6 +6,7 @@ import BlogGrid from '../components/bloggrid';
 import BlogPost from '../components/blogpost';
 import SeeMoreButton from '../components/seemorebutton';
 import CenterContent from '../components/centercontent';
+import sanitizeHtml from 'sanitize-html';
 
 const renderAst = new rehypeReact({
   createElement: React.createElement,
@@ -41,12 +42,20 @@ export default (props) => {
       </TitleText>
       <BlogGrid>
         {props.posts.map((post) => {
+          // Strip HTML tags so they are not included in the word count
+          const content = sanitizeHtml(post.node.content, { allowedTags: [] });
+          // Get an approximate word count
+          const contentLength = content.replace('\n', ' ').split(' ').length;
+          // Average reading speed is 200 words per minute
+          const readingTime = Math.ceil(contentLength / 200);
+
           return (
             <BlogPost
               key={post.node.slug}
               slug={post.node.slug}
               title={post.node.title}
               image={post.node.imageSource}
+              readingtime={readingTime}
             />
           );
         })}
