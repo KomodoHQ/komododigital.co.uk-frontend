@@ -82,7 +82,7 @@ class TitleVideo extends React.Component<Props, State> {
           <video autoPlay={true} playsInline={true} muted loop className={'video'}>
             <source src={HeaderVideo} type="video/mp4" />
           </video>
-          <button hidden={this.state.hidden} onClick={this.toggleHidden} className={'video-close-button'}>&times;</button>
+          <div hidden={this.state.hidden} onClick={this.toggleHidden} className={'video-close-button'}>&times;</div>
           <video controls={true} ref={this.videoModal} className={'video modal'} hidden={this.state.hidden}>
             <source src={ShowReel} type="video/mp4"/>
           </video>
