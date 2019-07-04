@@ -154,6 +154,10 @@
         text-decoration: none;
         font-size: 16px;
     }
+
+    .navigationBar.small > ul > li > a {
+        font-size: 15px;
+    }
 /*
     .navigationBar.small img {
         max-width: 135px;
@@ -168,6 +172,10 @@
         font-size: 22px;
     }
 
+    .navigationBar.small > ul > li > a {
+        font-size: 20px;
+    }
+
 }
 
 @media (--desktop-viewport) {
@@ -178,5 +186,9 @@
 
     .navigationBar > ul {
         grid-column: 9 / 16;
+    }
+
+    .navigationBar.small > ul > li > a {
+        font-size: 20px;
     }
 }

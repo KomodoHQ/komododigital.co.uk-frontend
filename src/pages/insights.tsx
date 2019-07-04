@@ -56,6 +56,7 @@ export const blogListQuery = graphql`
           slug
           title
           date
+          content
           featured_media {
             source_url
           }

@@ -31,7 +31,7 @@ interface Props {
  *
  * @param data
  */
-const SeeMoreButton: React.SFC<Props> = ({ title, link = '/About', className, disabled = false }) => {
+const SeeMoreButton: React.SFC<Props> = ({ title, link = '/about', className, disabled = false }) => {
   return (
     <div className={`komodoGridWrapper seemorebutton-wrapper ${className}`}>
         <Link to={link}><button disabled={disabled}>{title}</button></Link>
