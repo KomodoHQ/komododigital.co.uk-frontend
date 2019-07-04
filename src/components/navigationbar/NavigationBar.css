@@ -82,6 +82,7 @@
 
 .navigationBar.small {
     padding: 10px 0;
+    z-index: 1001;
 }
 
 /* .navigationBar.small img {

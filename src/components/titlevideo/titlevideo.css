@@ -138,7 +138,7 @@
 }
 
 .video.modal {
-    z-index: 9999;
+    z-index: 1000;
     background: black;
     object-fit: contain;
 }
@@ -147,7 +147,7 @@
     position: absolute;
     right: 7px;
     top: 45px;
-    z-index: 999999;
+    z-index: 1001;
     background-color: black;
     border: none;
     height: 40px;
