@@ -31,6 +31,10 @@
     font-weight: bold;
 }
 
+.CenterContent ul li {
+    margin-bottom: 0.6rem;
+}
+
 .CenterContent .gatsby-resp-image-link {
     margin-bottom: 1rem;
 }
