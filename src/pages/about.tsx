@@ -3,6 +3,7 @@ import { graphql } from 'gatsby';
 import About from '../templates/about';
 import { siteMeta, komodoLogo, clientLogos, icons, avatars } from '../utils/site-queries';
 import { findNodes, findNode } from '../utils/nodes';
+import { pageMetaFromFrontmatter } from '../utils/page-meta';
 
 export default (props) => {
   const rootNode = findNode('about/index', props);
@@ -23,6 +24,7 @@ export default (props) => {
     purpose: (purpose) ? purpose.htmlAst : '',
     purposeIntro: (purpose) ? purpose.frontmatter.title : '',
     contactsIntro: (contactsIntro) ? contactsIntro.htmlAst : '',
+    pageMeta: pageMetaFromFrontmatter(rootNode),
     ...props,
   };
 
@@ -40,6 +42,7 @@ export const aboutQuery = graphql`
             title
             subtitle
             group
+            ...pageMeta
             csimage {
               childImageSharp {
                 fluidFull: fluid(maxWidth: 1170, quality: 100) {

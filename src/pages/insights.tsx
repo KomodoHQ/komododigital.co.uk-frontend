@@ -4,6 +4,7 @@ import Insights from '../templates/insights';
 import Placeholder from '../assets/images/placeholder.png';
 import CleanSourceURL from '../utils/clean-source-url';
 import { findNode } from '../utils/nodes';
+import { pageMetaFromFrontmatter } from '../utils/page-meta';
 
 export default (props) => {
   const posts = props.data.allWordpressPost.edges.map((edge) => {
@@ -20,6 +21,7 @@ export default (props) => {
 
   const hocProps = {
     insightsIntro: (insightsIntro) ? insightsIntro.htmlAst : '',
+    pageMeta: pageMetaFromFrontmatter(insightsIntro),
     ...props,
   };
 
@@ -44,6 +46,7 @@ export const blogListQuery = graphql`
                 }
               }
             }
+            ...pageMeta
           }
           fileAbsolutePath
         }

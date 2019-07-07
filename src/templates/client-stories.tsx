@@ -14,7 +14,7 @@ const renderAst = new rehypeReact({
 
 export default (props) => {
   return (
-    <Layout data={props.data} inverted={true} background="#EAEAEA">
+    <Layout data={props.data} pageMeta={props.pageMeta} inverted={true} background="#EAEAEA">
       <TitleText
         title="Client Stories"
         subtitle="What We Do"

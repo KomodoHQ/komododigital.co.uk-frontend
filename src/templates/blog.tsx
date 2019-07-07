@@ -12,10 +12,10 @@ export default (props) => {
     createElement: React.createElement,
   }).Compiler;
 
-  const title = props.data.allWordpressPost ? props.data.allWordpressPost.edges[0].node.title : "No Title Found";
-  return <Layout data={props.data}>
+  return (
+    <Layout data={props.data} pageMeta={props.pageMeta}>
       <TitleText
-        title={title}
+        title={props.title}
         subtitle={`Insights`}
         background={'#000000'}
         invert={true}
