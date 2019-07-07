@@ -4,6 +4,7 @@ import Index from '../templates/index';
 import Placeholder from '../assets/images/placeholder.png';
 import { findNodes, findNode, findNodeRaw } from '../utils/nodes';
 import CleanSourceURL from '../utils/clean-source-url';
+import { pageMetaFromFrontmatter } from '../utils/page-meta';
 
 export default (props) => {
   const rootNode = findNode('index/index', props);
@@ -44,6 +45,7 @@ export default (props) => {
     insightsIntro: (insightsIntro) ? insightsIntro.htmlAst : '',
     contactsIntro: (contactsIntro) ? contactsIntro.htmlAst : '',
     testimonial: (testimonial) ? testimonial.frontmatter : '',
+    pageMeta: pageMetaFromFrontmatter(rootNode),
     ...props,
   };
 
@@ -85,6 +87,7 @@ export const pageQuery = graphql`
               }
             }
             group
+            ...pageMeta
           }
           fileAbsolutePath
         }
