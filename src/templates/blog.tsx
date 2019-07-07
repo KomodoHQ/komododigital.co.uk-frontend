@@ -25,24 +25,24 @@ export default (props) => {
         showShowreel={false}
         centered={true}
       />
-
       <CenterContent className={`topPaddingExtraLarge bottomPaddingNone`}>
         <div dangerouslySetInnerHTML={{ __html: props.html }} />
       </CenterContent>
       <ContentSection title="Insights" className="topPaddingSmall">
-          {renderAst(props.insightsIntro)}
+        {renderAst(props.insightsIntro)}
       </ContentSection>
       <BlogGrid>
-          {props.insights.map((insight) => {
-            return (
-              <BlogPost
-                  key={insight.node.title}
-                  slug={insight.node.slug}
-                  title={insight.node.title}
-                  image={insight.node.imageSource}
-              />
-            );
-          })}
+        {props.insights.map((insight) => {
+          return (
+            <BlogPost
+              key={insight.node.title}
+              slug={insight.node.slug}
+              title={insight.node.title}
+              image={insight.node.imageSource}
+            />
+          );
+        })}
       </BlogGrid>
-    </Layout>;
+    </Layout>
+  );
 };
