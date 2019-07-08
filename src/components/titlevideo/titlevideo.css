@@ -319,6 +319,8 @@
 
 }
 
+/* min-width: 600px and max-height: 1000px */
+
 @media (--mobile-viewport) and (--mobile-viewport-max) {
     .title-wrapper {
         height: 100vh;
@@ -335,7 +337,6 @@
     .Title-Section-Video {
         margin-top: 25px;
     }
-
 }
 
 @media (--small-mobile-viewport-max) {
@@ -353,7 +354,7 @@
 }
 
 
-@media (--small-mobile-viewport-landscape-max) {
+@media (--small-mobile-viewport-landscape-max) and (--small-mobile-viewport-max-width) {
     .komodoGridWrapper {
         grid-template-columns: 1fr repeat(14, 25px) 1fr;
     }

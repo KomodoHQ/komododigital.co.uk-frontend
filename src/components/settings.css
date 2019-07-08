@@ -2,8 +2,9 @@
 @custom-media --mobile-viewport (min-width: 600px);
 @custom-media --tablet-viewport (min-width: 700px);
 @custom-media --laptop-viewport (min-width: 1000px);
-@custom-media --desktop-viewport (min-width: 1430px);
+@custom-media --desktop-viewport (min-width: 1690px);
 
-@custom-media --mobile-viewport-max (max-height: 1000px);
+@custom-media --mobile-viewport-max (max-height: 700px);
 @custom-media --small-mobile-viewport-max (max-height: 600px);
+@custom-media --small-mobile-viewport-max-width (max-width: 600px);
 @custom-media --small-mobile-viewport-landscape-max (max-height: 350px);

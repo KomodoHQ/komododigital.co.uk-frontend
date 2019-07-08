@@ -65,7 +65,7 @@ interface IndexPageProps {
 export default (props: IndexPageProps) => {
   return (
     <Layout data={props.data} pageMeta={props.pageMeta}>
-      <TitleText
+      <TitleVideo
         title={props.title}
         subtitle={props.subtitle}
         invert
