@@ -27,24 +27,8 @@
     padding-top: 100px;
 }
 
-.title-wrapper.topPaddingMedium {
-    padding-top: 60px;
-}
-
-.title-wrapper.topPaddingSmall {
-    padding-top: 30px;
-}
-
 .title-wrapper.bottomPaddingLarge {
     padding-bottom: 100px;
-}
-
-.title-wrapper.bottomPaddingMedium {
-    padding-bottom: 60px;
-}
-
-.title-wrapper.bottomPaddingSmall {
-    padding-bottom: 30px;
 }
 
 .title-wrapper.bottomPaddingNone {
@@ -175,24 +159,8 @@
         padding-top: 180px;
     }
 
-    .title-wrapper.topPaddingMedium {
-        padding-top: 120px;
-    }
-
-    .title-wrapper.topPaddingSmall {
-        padding-top: 60px;
-    }
-
     .title-wrapper.bottomPaddingLarge {
         padding-bottom: 180px;
-    }
-
-    .title-wrapper.bottomPaddingMedium {
-        padding-bottom: 120px;
-    }
-
-    .title-wrapper.bottomPaddingSmall {
-        padding-bottom: 60px;
     }
 
     .video.modal {
@@ -228,24 +196,8 @@
         padding-top: 90px;
     }
 
-    .title-wrapper.topPaddingMedium {
-        padding-top: 120px;
-    }
-
-    .title-wrapper.topPaddingSmall {
-        padding-top: 60px;
-    }
-
     .title-wrapper.bottomPaddingLarge {
         padding-bottom: 90px;
-    }
-
-    .title-wrapper.bottomPaddingMedium {
-        padding-bottom: 120px;
-    }
-
-    .title-wrapper.bottomPaddingSmall {
-        padding-bottom: 60px;
     }
 
     .video.modal {
@@ -254,10 +206,6 @@
 
     .video-close-button {
         top: 15px;
-    }
-
-    .Title-Section-Video {
-        margin-top: 90px;
     }
 
 }
@@ -289,24 +237,8 @@
         padding-top: 180px;
     }
 
-    .title-wrapper.topPaddingMedium {
-        padding-top: 120px;
-    }
-
-    .title-wrapper.topPaddingSmall {
-        padding-top: 60px;
-    }
-
     .title-wrapper.bottomPaddingLarge {
         padding-bottom: 180px;
-    }
-
-    .title-wrapper.bottomPaddingMedium {
-        padding-bottom: 120px;
-    }
-
-    .title-wrapper.bottomPaddingSmall {
-        padding-bottom: 60px;
     }
 
     .video.modal {
