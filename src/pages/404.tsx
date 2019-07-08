@@ -6,6 +6,10 @@ import FourOhFour from '../templates/404';
 export default (props) => {
   const hocProps = {
     htmlAst: props.data.allMarkdownRemark.edges[0].node.htmlAst,
+    pageMeta: {
+      title: 'Page not found',
+      description: '',
+    },
     ...props,
   };
 

@@ -8,7 +8,7 @@ const renderAst = new rehypeReact({
 }).Compiler;
 
 export default (props) => (
-  <Layout data={props.data} inverted={true} background="#EAEAEA">
+  <Layout data={props.data} pageMeta={props.pageMeta} inverted={true} background="#EAEAEA">
     <TitleText
       title="Four oh Four"
       subtitle="Page Not Found"

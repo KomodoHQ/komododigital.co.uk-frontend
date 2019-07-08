@@ -9,6 +9,7 @@ import { graphql } from 'gatsby';
 import CaseStudy from '../templates/client-story';
 import { siteMeta, komodoLogo, clientLogos, icons, avatars } from '../utils/site-queries';
 import { findNodes, findNode, findNodeRaw } from '../utils/nodes';
+import { pageMetaFromFrontmatter } from '../utils/page-meta';
 
 export default (props) => {
   const rootNode = findNode(`${props.pageContext.slug}/index`, props);
@@ -46,6 +47,7 @@ export default (props) => {
     caseStudiesIntro: caseStudiesIntro ? caseStudiesIntro.htmlAst : '',
     caseStudiesTitle: caseStudiesIntro ? caseStudiesIntro.frontmatter.title : '',
     contactsIntro: contactsIntro ? contactsIntro.htmlAst : '',
+    pageMeta: pageMetaFromFrontmatter(rootNode),
     ...props,
   };
 
@@ -82,6 +84,7 @@ export const caseStudyQuery = graphql`
             navBackground
             background
             invert
+            ...pageMeta
           }
           fileAbsolutePath
         }

@@ -3,6 +3,7 @@ import { graphql } from 'gatsby';
 import CaseStudies from '../templates/client-stories';
 import { siteMeta, komodoLogo, clientLogos, icons, avatars } from '../utils/site-queries';
 import { findNodes, findNode } from '../utils/nodes';
+import { pageMetaFromFrontmatter } from '../utils/page-meta';
 
 export default (props) => {
   const caseStudies = findNodes('group', props, 'client-stories');
@@ -13,6 +14,7 @@ export default (props) => {
     caseStudies,
     contactsIntro: (contactsIntro) ? contactsIntro.htmlAst : '',
     caseStudiesIntro: (caseStudiesIntro) ? caseStudiesIntro.htmlAst : '',
+    pageMeta: pageMetaFromFrontmatter(caseStudiesIntro),
     ...props,
   };
 
@@ -38,6 +40,7 @@ export const caseStudiesQuery = graphql`
               }
             }
             group
+            ...pageMeta
           }
           fileAbsolutePath
         }

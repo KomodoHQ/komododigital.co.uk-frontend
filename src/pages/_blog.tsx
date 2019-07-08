@@ -12,9 +12,9 @@ import Blog from '../templates/blog';
 import { findNode } from '../utils/nodes';
 
 export default (props) => {
-  const source_url = props.data.allWordpressPost.edges[0].node.featured_media
-    ? props.data.allWordpressPost.edges[0].node.featured_media.source_url
-    : null;
+  const post = props.data.allWordpressPost.edges[0].node;
+
+  const source_url = post.featured_media ? post.featured_media.source_url : null;
   let imageSource = '';
 
   if (source_url) {
@@ -32,13 +32,18 @@ export default (props) => {
     };
   });
 
-  const html = CleanSourceURL(props.data.allWordpressPost.edges[0].node.content);
+  const html = CleanSourceURL(post.content);
 
   const hocProps = {
     html,
     imageSource,
     insights,
     insightsIntro: (insightsIntro) ? insightsIntro.htmlAst : '',
+    title: post.title,
+    pageMeta: {
+      title: post.yoast.title || post.title,
+      description: post.yoast.metadesc || '',
+    },
     ...props,
   };
 
@@ -58,6 +63,10 @@ export const blogQuery = graphql`
           content
           featured_media {
             source_url
+          }
+          yoast {
+            title
+            metadesc
           }
         }
       }

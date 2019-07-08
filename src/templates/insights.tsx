@@ -31,7 +31,7 @@ export default (props) => {
   };
 
   return (
-    <Layout data={props.data} inverted={true} background="#EAEAEA">
+    <Layout data={props.data} pageMeta={props.pageMeta} inverted={true} background="#EAEAEA">
       <TitleText
         title="Insights"
         subtitle="What We Know"
