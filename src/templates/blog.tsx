@@ -6,6 +6,7 @@ import TitleText from '../components/titletext';
 import ContentSection from '../components/contentsection';
 import BlogGrid from '../components/bloggrid';
 import BlogPost from '../components/blogpost';
+import sanitizeHtml from 'sanitize-html';
 
 export default (props) => {
   const renderAst = new rehypeReact({
@@ -33,12 +34,20 @@ export default (props) => {
       </ContentSection>
       <BlogGrid>
         {props.insights.map((insight) => {
+          // Strip HTML tags so they are not included in the word count
+          const content = sanitizeHtml(insight.node.content, { allowedTags: [] });
+          // Get an approximate word count
+          const contentLength = content.replace('\n', ' ').split(' ').length;
+          // Average reading speed is 200 words per minute
+          const readingTime = Math.ceil(contentLength / 200);
+
           return (
             <BlogPost
               key={insight.node.title}
               slug={insight.node.slug}
               title={insight.node.title}
               image={insight.node.imageSource}
+              readingtime={readingTime}
             />
           );
         })}
