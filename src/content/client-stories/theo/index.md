@@ -10,6 +10,8 @@ navBackground: '#003E52'
 background: 'linear-gradient(0deg, #003E52 0%, #003E52 100%)'
 invert: true
 excerpt: 'Theo is a small and compact device, with built-in 4G that fits seamlessly to any vehicle’s windscreen. With a high-quality dash cam, sensors and reactive intelligent voice, Theo ensures all eyes are on the road...'
+# metaTitle: '' # TODO: Review meta title - will use value of 'title' if not set
+# metaDescription: '' # TODO: Review meta description - will use value of 'excerpt' if not set
 ---
 
 Theo is a small and compact device, with built-in 4G that fits seamlessly to any vehicle’s windscreen. With a high-quality dash cam, sensors and reactive intelligent voice, Theo ensures all eyes are on the road - giving drivers total peace of mind.

@@ -10,6 +10,8 @@ navBackground: '#DB8484'
 background: 'linear-gradient(0deg, #DB8484 0%, #DB8484 100%)'
 invert: true
 excerpt: 'Signed Stories is an award-winning iPhone and iPad application, designed and developed for ITV SignPost by Komodo Digital and published by ITV Broadcasting Limited.'
+# metaTitle: '' # TODO: Review meta title - will use value of 'title' if not set
+# metaDescription: '' # TODO: Review meta description - will use value of 'excerpt' if not set
 ---
 
 Signed Stories is an award-winning iPhone and iPad application, designed and developed for ITV SignPost by Komodo Digital and published by ITV Broadcasting Limited.

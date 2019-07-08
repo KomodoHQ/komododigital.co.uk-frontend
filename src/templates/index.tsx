@@ -14,6 +14,7 @@ import TitleText from '../components/titletext';
 import TripleSection from '../components/triplesection';
 import TripleFeature from '../components/triplefeature';
 import Testimonial from '../components/testimonial';
+import { PageMeta } from '../components/seo/types';
 
 const renderAst = new rehypeReact({
   createElement: React.createElement,
@@ -58,11 +59,12 @@ interface IndexPageProps {
   contactsIntro: any;
   data?: any;
   testimonial: any;
+  pageMeta: PageMeta;
 }
 
 export default (props: IndexPageProps) => {
   return (
-    <Layout data={props.data}>
+    <Layout data={props.data} pageMeta={props.pageMeta}>
       <TitleText
         title={props.title}
         subtitle={props.subtitle}

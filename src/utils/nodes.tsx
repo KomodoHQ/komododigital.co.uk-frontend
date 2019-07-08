@@ -4,7 +4,7 @@
  */
 import { fileToSlug } from './file-to-slug';
 
-interface Edge {
+export interface Edge {
   node: {
     frontmatter: any;
     fileAbsolutePath: string;

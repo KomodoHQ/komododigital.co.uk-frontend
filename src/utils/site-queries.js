@@ -12,6 +12,13 @@ export const siteMeta = graphql`
   }
 `;
 
+export const pageMeta = graphql`
+  fragment pageMeta on MarkdownRemarkFrontmatter {
+    metaTitle
+    metaDescription
+  }
+`;
+
 export const komodoLogo = graphql`
   fragment komodoLogo on Query {
     logo: file(relativePath: { eq: "images/Komodo@3x.png" }) {
