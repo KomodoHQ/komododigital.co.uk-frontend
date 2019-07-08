@@ -10,6 +10,7 @@ import VCard from '../components/vcard';
 import TitleText from '../components/titletext';
 import TripleSection from '../components/triplesection';
 import TripleFeature from '../components/triplefeature';
+import { PageMeta } from '../components/seo/types';
 
 const renderAst = new rehypeReact({
   createElement: React.createElement,
@@ -34,11 +35,12 @@ interface ServicePageProps {
   standardsIntro: any;
   contactsIntro: any;
   data?: any;
+  pageMeta?: PageMeta;
 }
 
 export default (props: ServicePageProps) => {
   return (
-    <Layout data={props.data}>
+    <Layout data={props.data} pageMeta={props.pageMeta}>
       <TitleText
         title={props.title}
         subtitle={props.subtitle}

@@ -6,26 +6,37 @@ import LegalFooter from './legalfooter';
 import '../assets/css/cookies.css';
 import './layout.css';
 import Img from 'gatsby-image';
+import { PageMeta } from './seo/types';
 
 interface Props {
   children?: ReactNode;
   data?: any;
+  pageMeta?: PageMeta;
   background?: string;
   inverted?: boolean;
 }
 
-const Layout: React.SFC<Props> = ({ data, children, background = '', inverted = false }) => {
+const Layout: React.SFC<Props> = ({
+  data,
+  pageMeta,
+  children,
+  background = '',
+  inverted = false,
+}) => {
   const logo = !inverted ? data.logo.childImageSharp : data.logo_inverted.childImageSharp;
+
+  const title = (pageMeta && pageMeta.title) || '';
+  const description = (pageMeta && pageMeta.description) || data.site.siteMetadata.description;
 
   return (
     <>
       <SEO
         defaultTitle={data.site.siteMetadata.title}
         siteName={data.site.siteMetadata.name}
-        description={data.site.siteMetadata.description}
+        description={description}
         // TODO: fix
         url="http://test"
-        // TODO: Individual page title
+        title={title}
       >
         <meta
           name="google-site-verification"

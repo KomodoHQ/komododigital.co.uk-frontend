@@ -6,6 +6,7 @@ import ContactJobs from '../components/contactjobs';
 import VCard from '../components/vcard';
 import ContactSection from '../components/contactsection';
 import Img from 'gatsby-image';
+import { PageMeta } from '../components/seo/types';
 
 const renderAst = new rehypeReact({
   createElement: React.createElement,
@@ -20,11 +21,12 @@ interface ContactPageProps {
   contactsIntro: any;
   career: any;
   data?: any;
+  pageMeta?: PageMeta;
 }
 
 export default (props: ContactPageProps) => {
   return (
-    <Layout data={props.data} inverted={true} background="#EAEAEA">
+    <Layout data={props.data} pageMeta={props.pageMeta} inverted={true} background="#EAEAEA">
       <ContactSection className="topPaddingLarge">
         {renderAst(props.contactsIntro)}
         <VCard person="Armin" avatars={props.data} />

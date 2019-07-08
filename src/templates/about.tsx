@@ -5,6 +5,7 @@ import TwoColumn from '../components/twocolumn';
 import ContactSection from '../components/contactsection';
 import TitleText from '../components/titletext';
 import VCard from '../components/vcard';
+import { PageMeta } from '../components/seo/types';
 
 const renderAst = new rehypeReact({
   createElement: React.createElement,
@@ -29,11 +30,12 @@ interface AboutPageProps {
   standardsIntro: any;
   contactsIntro: any;
   data?: any;
+  pageMeta?: PageMeta;
 }
 
 export default (props: AboutPageProps) => {
   return (
-    <Layout data={props.data}>
+    <Layout data={props.data} pageMeta={props.pageMeta}>
       <TitleText
         subtitle={props.subtitle}
         title={props.title}

@@ -10,6 +10,8 @@ navBackground: '#0E1948'
 background: 'linear-gradient(0deg, #0E1948 0%, #0E1948 100%)'
 invert: true
 excerpt: 'Onward is a leading provider of quality, affordable homes for rent and sale in the North West. Once a collection of five individual organisations, they now own and manage over 35,000 homes across the region.'
+# metaTitle: '' # TODO: Review meta title - will use value of 'title' if not set
+# metaDescription: '' # TODO: Review meta description - will use value of 'excerpt' if not set
 ---
 
 Onward is a leading provider of quality, affordable homes for rent and sale in the North West. Once a collection of five individual organisations, they now own and manage over 35,000 homes across the region.
