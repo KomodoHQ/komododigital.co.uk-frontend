@@ -101,7 +101,8 @@ class NavigationBar extends React.Component<Props> {
                 this.menuRef.current.classList.toggle('open');
                 if (!this.props.background) {
                   this.menuRef.current.style.background =
-                    this.menuRef.current.style.background == 'rgba(0, 0, 0, 0)'
+                    this.menuRef.current.style.background == 'rgba(0, 0, 0, 0)' ||
+                    this.menuRef.current.style.background == 'rgba(0, 0, 0, 0) none repeat scroll 0% 0%'
                       ? 'rgba(0, 0, 0, 1)'
                       : 'rgba(0, 0, 0, 0)';
                 }
