@@ -5,16 +5,16 @@ module.exports = {
     description: 'Home of Komodo Digital',
   },
   plugins: [
-    { 
-      resolve: 'gatsby-plugin-typescript', 
-      options: { 
-        transpileOnly: true, // default 
-        compilerOptions: { 
-          target: 'esnext', 
-          experimentalDecorators: true, 
-          jsx: 'react', 
-        }, 
-      } 
+    {
+      resolve: 'gatsby-plugin-typescript',
+      options: {
+        transpileOnly: true, // default
+        compilerOptions: {
+          target: 'esnext',
+          experimentalDecorators: true,
+          jsx: 'react',
+        },
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
@@ -24,7 +24,15 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-react-helmet-canonical-urls`,
+      options: {
+        siteUrl: `https://www.komododigital.co.uk`,
+        noTrailingSlash: true,
+      },
+    },
     `gatsby-plugin-offline`,
+    `gatsby-plugin-remove-trailing-slashes`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-postcss`,
@@ -58,9 +66,9 @@ module.exports = {
       resolve: 'gatsby-source-wordpress',
       options: {
         /*
-       * The base URL of the Wordpress site without the trailingslash and the protocol. This is required.
-       * Example : 'gatsbyjsexamplewordpress.wordpress.com' or 'www.example-site.com'
-       */
+         * The base URL of the Wordpress site without the trailingslash and the protocol. This is required.
+         * Example : 'gatsbyjsexamplewordpress.wordpress.com' or 'www.example-site.com'
+         */
         baseUrl: 'blog.komododigital.co.uk',
         // The protocol. This can be http or https.
         protocol: 'https',
@@ -127,13 +135,13 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-sentry',
       options: {
-        dsn: 'https://314dbec933e44245ae35b28fcb15bc96@sentry.io/1289118'
+        dsn: 'https://314dbec933e44245ae35b28fcb15bc96@sentry.io/1289118',
       },
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-1236119-5",
+        trackingId: 'UA-1236119-5',
         // Puts tracking script in the head instead of the body
         head: false,
         // Setting this parameter is optional
@@ -149,6 +157,6 @@ module.exports = {
         // siteSpeedSampleRate: 10,
         // cookieDomain: "example.com",
       },
-    }
+    },
   ],
 };
