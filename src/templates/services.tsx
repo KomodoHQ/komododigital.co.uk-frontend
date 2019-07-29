@@ -39,6 +39,7 @@ interface ServicePageProps {
 }
 
 export default (props: ServicePageProps) => {
+  console.log(props.pageResources.page.path);
   return (
     <Layout data={props.data} pageMeta={props.pageMeta}>
       <TitleText

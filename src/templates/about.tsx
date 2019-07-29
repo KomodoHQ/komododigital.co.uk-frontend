@@ -34,6 +34,7 @@ interface AboutPageProps {
 }
 
 export default (props: AboutPageProps) => {
+  console.log(props.pageResources.page.path);
   return (
     <Layout data={props.data} pageMeta={props.pageMeta}>
       <TitleText

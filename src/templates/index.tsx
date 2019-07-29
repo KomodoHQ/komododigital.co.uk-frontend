@@ -64,6 +64,7 @@ interface IndexPageProps {
 }
 
 export default (props: IndexPageProps) => {
+  console.log(props.pageResources.page.path);
   return (
     <Layout data={props.data} pageMeta={props.pageMeta}>
       <TitleText

@@ -30,6 +30,7 @@ export default (props) => {
     },
   };
 
+  console.log(props.pageResources.page.path);
   return (
     <Layout data={props.data} pageMeta={props.pageMeta} noindex={true} inverted={true} background="#EAEAEA">
       <TitleText

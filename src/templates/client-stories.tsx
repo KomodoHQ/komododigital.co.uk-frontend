@@ -13,6 +13,7 @@ const renderAst = new rehypeReact({
 }).Compiler;
 
 export default (props) => {
+  console.log(props.pageResources.page.path);
   return (
     <Layout data={props.data} pageMeta={props.pageMeta} inverted={true} background="#EAEAEA">
       <TitleText

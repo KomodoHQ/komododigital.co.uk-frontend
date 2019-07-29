@@ -25,6 +25,7 @@ interface ContactPageProps {
 }
 
 export default (props: ContactPageProps) => {
+  console.log(props.pageResources.page.path);
   return (
     <Layout data={props.data} pageMeta={props.pageMeta} inverted={true} background="#EAEAEA">
       <ContactSection className="topPaddingLarge">

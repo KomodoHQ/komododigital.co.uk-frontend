@@ -13,6 +13,7 @@ export default (props) => {
     createElement: React.createElement,
   }).Compiler;
 
+  console.log(props.pageResources.page.path);
   return (
     <Layout data={props.data} pageMeta={props.pageMeta}>
       <TitleText
