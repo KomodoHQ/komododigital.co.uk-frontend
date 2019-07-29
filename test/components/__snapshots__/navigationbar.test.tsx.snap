@@ -5,7 +5,7 @@ exports[`NavigationBar element is rendered 1`] = `
   className="komodoGridWrapper navigationBar "
   style={
     Object {
-      "background": "#000000",
+      "background": "rgba(0,0,0,0)",
     }
   }
 >
@@ -29,21 +29,19 @@ exports[`NavigationBar element is rendered 1`] = `
       
       <picture>
         
-        <source
-          srcSet=""
-        />
         <img
           alt=""
           height={29}
           onLoad={[Function]}
           src=""
+          srcSet=""
           style={
             Object {
               "height": "100%",
               "left": 0,
               "objectFit": "cover",
               "objectPosition": "center",
-              "opacity": 1,
+              "opacity": 0,
               "position": "absolute",
               "top": 0,
               "transition": "opacity 0.5s",
@@ -56,7 +54,7 @@ exports[`NavigationBar element is rendered 1`] = `
       <noscript
         dangerouslySetInnerHTML={
           Object {
-            "__html": "<picture><img width=\\"170\\" height=\\"29\\" src=\\"\\" alt=\\"\\" style=\\"position:absolute;top:0;left:0;transition:opacity 0.5s;transition-delay:0.5s;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+            "__html": "<picture><img width=\\"170\\" height=\\"29\\" src=\\"\\" alt=\\"\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
           }
         }
       />
@@ -88,11 +86,13 @@ exports[`NavigationBar element is rendered 1`] = `
     className="Menu"
     style={
       Object {
-        "background": "#000000",
+        "background": "rgba(0,0,0,0)",
       }
     }
   >
-    <li>
+    <li
+      className="nav-link  home-selected"
+    >
       <a
         href="/about"
         onClick={[Function]}
@@ -100,23 +100,39 @@ exports[`NavigationBar element is rendered 1`] = `
         About
       </a>
     </li>
-    <li>
+    <li
+      className="nav-link  home-selected"
+    >
       <a
-        href="/case-studies"
+        href="/services"
         onClick={[Function]}
       >
-        Case Studies
+        Services
       </a>
     </li>
-    <li>
+    <li
+      className="nav-link  home-selected"
+    >
       <a
-        href="/blog-list"
+        href="/client-stories"
+        onClick={[Function]}
+      >
+        Client Stories
+      </a>
+    </li>
+    <li
+      className="nav-link  home-selected"
+    >
+      <a
+        href="/insights"
         onClick={[Function]}
       >
         Insights
       </a>
     </li>
-    <li>
+    <li
+      className="nav-link  home-selected"
+    >
       <a
         href="/contact"
         onClick={[Function]}

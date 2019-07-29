@@ -1,82 +1,41 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CaseStudy element is rendered 1`] = `
-<div
-  className="komodoGridWrapper case-study-link-wrapper"
+<a
+  className="case-study-link-element"
+  href="/Test"
+  onClick={[Function]}
 >
   <div
-    className="case-study-link"
+    className="komodoGridWrapper case-study-link-wrapper"
   >
     <div
-      className="img"
+      className="case-study-link"
     >
       <div
-        className=" gatsby-image-wrapper"
+        className="img"
         style={
           Object {
-            "overflow": "hidden",
-            "position": "relative",
+            "backgroundImage": "url()",
           }
         }
+      />
+      <div
+        className="content"
       >
-        <div
-          style={
-            Object {
-              "paddingBottom": "100%",
-              "width": "100%",
-            }
-          }
-        />
-        <picture>
-          <source
-            sizes=""
-            srcSet=""
-          />
-          <img
-            alt=""
-            onLoad={[Function]}
-            src=""
-            style={
-              Object {
-                "height": "100%",
-                "left": 0,
-                "objectFit": "cover",
-                "objectPosition": "center",
-                "opacity": 1,
-                "position": "absolute",
-                "top": 0,
-                "transition": "opacity 0.5s",
-                "width": "100%",
-              }
-            }
-            title="Test"
-          />
-        </picture>
-        <noscript
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": "<picture><img width=\\"1\\" height=\\"1\\" src=\\"\\" alt=\\"\\" title=\\"Test\\" style=\\"position:absolute;top:0;left:0;transition:opacity 0.5s;transition-delay:0.5s;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
-            }
-          }
-        />
+        <span>
+          Test
+        </span>
+        <h2>
+          Test
+        </h2>
+        <span
+          className="linktext"
+        >
+          Read Case Study
+        </span>
       </div>
     </div>
-    <div
-      className="content"
-    >
-      <span>
-        Test
-      </span>
-      <h2>
-        Test
-      </h2>
-      <a
-        href="/Test"
-        onClick={[Function]}
-      >
-        Read Case Study
-      </a>
-    </div>
   </div>
-</div>
+</a>
 `;

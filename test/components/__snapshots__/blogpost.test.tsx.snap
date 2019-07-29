@@ -3,7 +3,7 @@
 exports[`BlogPost element is rendered 1`] = `
 <a
   className="blogpostLink"
-  href="/blog"
+  href="/insights"
   onClick={[Function]}
 >
   <img
@@ -14,9 +14,13 @@ exports[`BlogPost element is rendered 1`] = `
   <p>
     INSIGHTS
   </p>
-  <h1>
-    title
-  </h1>
+  <h1
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "title",
+      }
+    }
+  />
   <div
     className="read"
   >
@@ -24,12 +28,12 @@ exports[`BlogPost element is rendered 1`] = `
       className="readingTime"
     >
       5
-       minutes
+       min read
     </div>
     <div
       className="readmore"
     >
-      Read More
+      Read
     </div>
   </div>
 </a>

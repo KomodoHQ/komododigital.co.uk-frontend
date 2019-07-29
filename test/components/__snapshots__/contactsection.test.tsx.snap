@@ -2,10 +2,72 @@
 
 exports[`ContactSection element is rendered 1`] = `
 <div
-  className="komodoGridWrapper contactsection-wrapper"
+  className="komodoGridWrapper cs-wrapper contactsection-wrapper undefined"
+  style={
+    Object {
+      "background": "none",
+    }
+  }
 >
   <div
     className="contactsection"
-  />
+  >
+    <h2>
+      Contact Us
+    </h2>
+  </div>
+  <div
+    className="form"
+  >
+    <div
+      className="contactform"
+    >
+      <form
+        action="https://formspree.io/hello@komododigital.co.uk"
+        method="POST"
+      >
+        <label
+          htmlFor="form-name"
+        >
+          Name
+          <input
+            id="form-name"
+            name="name"
+            placeholder="Joe Blogs"
+            type="text"
+          />
+        </label>
+        <label
+          htmlFor="form-email"
+        >
+          Email
+          <input
+            id="form-email"
+            name="email"
+            placeholder="joe@blogs.com"
+            type="email"
+          />
+        </label>
+        <label
+          htmlFor="form-message"
+        >
+          Message
+          <textarea
+            cols={30}
+            id="form-message"
+            name="message"
+            placeholder="Message"
+            rows={10}
+          />
+        </label>
+        <div>
+          <input
+            type="submit"
+            value="Submit"
+          />
+        </div>
+      </form>
+    </div>
+  </div>
 </div>
 `;
