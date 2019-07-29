@@ -14,6 +14,7 @@ interface Props {
   pageMeta?: PageMeta;
   background?: string;
   inverted?: boolean;
+  noindex?: boolean;
 }
 
 const Layout: React.SFC<Props> = ({
@@ -22,6 +23,7 @@ const Layout: React.SFC<Props> = ({
   children,
   background = '',
   inverted = false,
+  noindex = false
 }) => {
   const logo = !inverted ? data.logo.childImageSharp : data.logo_inverted.childImageSharp;
 
@@ -34,6 +36,7 @@ const Layout: React.SFC<Props> = ({
         defaultTitle={data.site.siteMetadata.title}
         siteName={data.site.siteMetadata.name}
         description={description}
+        noindex={noindex}
         // TODO: fix
         url="http://test"
         title={title}
