@@ -15,6 +15,7 @@ interface Props {
   background?: string;
   inverted?: boolean;
   noindex?: boolean;
+  canonical?: string;
 }
 
 const Layout: React.SFC<Props> = ({
@@ -23,7 +24,8 @@ const Layout: React.SFC<Props> = ({
   children,
   background = '',
   inverted = false,
-  noindex = false
+  noindex = false,
+  canonical = '/'
 }) => {
   const logo = !inverted ? data.logo.childImageSharp : data.logo_inverted.childImageSharp;
 
@@ -37,6 +39,7 @@ const Layout: React.SFC<Props> = ({
         siteName={data.site.siteMetadata.name}
         description={description}
         noindex={noindex}
+        canonical={canonical}
         // TODO: fix
         url="http://test"
         title={title}

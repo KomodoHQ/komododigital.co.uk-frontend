@@ -7,6 +7,7 @@ interface Props {
   description: string;
   separator?: string;
   noindex?: boolean;
+  canonical?: string;
   children?: ReactNode;
 }
 
@@ -16,6 +17,7 @@ const Meta: React.SFC<Props> = ({
   description,
   separator = ' - ',
   noindex = false,
+  canonical = '/',
   children,
 }) => {
   return (
@@ -25,6 +27,7 @@ const Meta: React.SFC<Props> = ({
     >
       {title && <title>{title}</title>}
       <meta name="description" content={description} />
+      {canonical && <link rel="canonical" href={canonical} />}
       {noindex && <meta name="robots" content="noindex, follow" />}
       {children}
     </Helmet>
