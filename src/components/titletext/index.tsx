@@ -57,21 +57,15 @@ const TitleText: React.SFC<Props> = ({
   const titleEl = title ? <h2 dangerouslySetInnerHTML={{ __html: title }}></h2> : null;
   const invertedClassname = invert ? 'invert' : '';
 
-  let style = {
-    backgroundImage: backgroundImage
-      ? `url(${backgroundImage.childImageSharp.fluidFull.src})`
-      : null,
-  };
-
-  if (!backgroundImage) {
-    style = {
-      background,
-    };
+  const style = backgroundImage ? {
+    backgroundImage: `url(${backgroundImage.childImageSharp.fluidFull.src})`
+  } : {
+    background
   }
 
-  let imageOverlapClass = imageOverlap ? 'image-overlap' : '';
+  const imageOverlapClass = imageOverlap ? 'image-overlap' : '';
 
-  let coverImage = null;
+  let coverImage;
 
   if (coverimage !== null || coverimageRaw !== null) {
     if (coverimage) {
