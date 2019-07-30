@@ -12,6 +12,7 @@ import twitter from '../../content/images/icons/twitter.svg'
 import linkedin from '../../content/images/icons/linkedin.svg'
 import facebook from '../../content/images/icons/facebook.svg'
 import youtube from '../../content/images/icons/youtube.svg'
+import glassdoor from '../../content/images/icons/glassdoor.svg'
 
 /**
  * Local dependencies
@@ -61,6 +62,11 @@ const LegalFooter: React.SFC<Props> = ({ data }) => {
           <li>
             <a href="https://www.youtube.com/channel/UCFHSSacCuzJR0T67HiowWCw">
               <img src={youtube} />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.glassdoor.com/Overview/Working-at-Komodo-Digital-EI_IE1359461.11,25.htm">
+              <img src={glassdoor} />
             </a>
           </li>
         </ul>
