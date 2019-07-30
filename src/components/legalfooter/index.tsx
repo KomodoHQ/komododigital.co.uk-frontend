@@ -35,6 +35,15 @@ interface Props {
  * @param data
  */
 const LegalFooter: React.SFC<Props> = ({ data }) => {
+  const Contact = props => {
+    return (
+      <li>
+        <a href={props.href}>
+          <img src={props.src} />
+        </a>
+      </li>
+    )
+  }
   return (
     <footer className="komodoGridWrapper legal-footer">
       <div className="company">
@@ -44,31 +53,11 @@ const LegalFooter: React.SFC<Props> = ({ data }) => {
       </div>
       <div className="contact">
         <ul>
-          <li>
-            <a href="https://www.twitter.com/komododigital">
-              <img src={twitter} />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/company/648969">
-              <img src={linkedin} />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.facebook.com/komodohq">
-              <img src={facebook} />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.youtube.com/channel/UCFHSSacCuzJR0T67HiowWCw">
-              <img src={youtube} />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.glassdoor.com/Overview/Working-at-Komodo-Digital-EI_IE1359461.11,25.htm">
-              <img src={glassdoor} />
-            </a>
-          </li>
+          <Contact href="https://www.twitter.com/komododigital" src={twitter} />
+          <Contact href="https://www.linkedin.com/company/648969" src={linkedin} />
+          <Contact href="https://www.facebook.com/komodohq" src={facebook} />
+          <Contact href="https://www.youtube.com/channel/UCFHSSacCuzJR0T67HiowWCw" src={youtube} />
+          <Contact href="https://www.glassdoor.com/Overview/Working-at-Komodo-Digital-EI_IE1359461.11,25.htm" src={glassdoor} />
         </ul>
       </div>
     </footer>
