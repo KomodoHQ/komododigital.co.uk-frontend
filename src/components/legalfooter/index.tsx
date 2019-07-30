@@ -39,7 +39,7 @@ const LegalFooter: React.SFC<Props> = ({ data }) => {
     return (
       <li>
         <a href={props.href}>
-          <img src={props.src} />
+          <img src={props.src} alt={props.alt} />
         </a>
       </li>
     )
@@ -53,11 +53,11 @@ const LegalFooter: React.SFC<Props> = ({ data }) => {
       </div>
       <div className="contact">
         <ul>
-          <Contact href="https://www.twitter.com/komododigital" src={twitter} />
-          <Contact href="https://www.linkedin.com/company/648969" src={linkedin} />
-          <Contact href="https://www.facebook.com/komodohq" src={facebook} />
-          <Contact href="https://www.youtube.com/channel/UCFHSSacCuzJR0T67HiowWCw" src={youtube} />
-          <Contact href="https://www.glassdoor.com/Overview/Working-at-Komodo-Digital-EI_IE1359461.11,25.htm" src={glassdoor} />
+          <Contact href="https://www.twitter.com/komododigital" src={twitter} alt='Twitter' />
+          <Contact href="https://www.linkedin.com/company/648969" src={linkedin} alt='LinkedIn' />
+          <Contact href="https://www.facebook.com/komodohq" src={facebook} alt='Facebook' />
+          <Contact href="https://www.youtube.com/channel/UCFHSSacCuzJR0T67HiowWCw" src={youtube} alt='YouTube' />
+          <Contact href="https://www.glassdoor.com/Overview/Working-at-Komodo-Digital-EI_IE1359461.11,25.htm" src={glassdoor} alt='Glassdoor' />
         </ul>
       </div>
     </footer>
