@@ -3,6 +3,7 @@ module.exports = {
     name: 'Komodo Digital',
     title: 'Web Design | App Development | Newcastle',
     description: 'Home of Komodo Digital',
+    siteUrl: 'https://www.komododigital.co.uk'
   },
   plugins: [
     { 
@@ -28,6 +29,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-postcss`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
