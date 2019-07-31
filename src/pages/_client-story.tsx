@@ -7,6 +7,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import CaseStudy from '../templates/client-story';
+import CaseStudyV2 from '../templates/client-story-v2';
 import { siteMeta, komodoLogo, clientLogos, icons, avatars } from '../utils/site-queries';
 import { findNodes, findNode, findNodeRaw } from '../utils/nodes';
 import { pageMetaFromFrontmatter } from '../utils/page-meta';
@@ -29,7 +30,18 @@ export default (props) => {
 
   const caseStudy = caseStudies.sort(() => .5 - Math.random())[0];
 
-  const hocProps = {
+  const hocProps = (rootNode && rootNode.frontmatter && rootNode.frontmatter.v2) ? {
+    caseStudy,
+    intro: rootNode ? rootNode.htmlAst : '',
+    title: rootNode ? rootNode.frontmatter.title : '',
+    subtitle: rootNode ? rootNode.frontmatter.subtitle : '',
+    coverimage: rootNode ? rootNode.frontmatter.coverimage : '',
+    navBackground: rootNode ? rootNode.frontmatter.navBackground : '',
+    background: rootNode ? rootNode.background : '',
+    invert: rootNode ? rootNode.invert : false,
+    pageMeta: pageMetaFromFrontmatter(rootNode),
+    ...props,
+  } : {
     caseStudy,
     intro: rootNode ? rootNode.htmlAst : '',
     title: rootNode ? rootNode.frontmatter.title : '',
@@ -51,7 +63,11 @@ export default (props) => {
     ...props,
   };
 
-  return <CaseStudy {...hocProps} />;
+  console.log(rootNode);
+  console.log(hocProps);
+
+  return (rootNode && rootNode.frontmatter && rootNode.frontmatter.v2) ? <CaseStudyV2 {...hocProps} /> : <CaseStudy {...hocProps} />;
+  // return <CaseStudy {...hocProps} />;
 };
 
 export const caseStudyQuery = graphql`
@@ -65,6 +81,7 @@ export const caseStudyQuery = graphql`
             title
             subtitle
             excerpt
+            v2
             csimage {
               childImageSharp {
                 fluid(maxWidth: 450) {
