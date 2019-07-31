@@ -34,7 +34,7 @@ const getV1HocProps = (caseStudy, rootNode, metrics, testimonial, process, caseS
   ...props
 });
 
-const getV2HocProps = (caseStudy, rootNode, one, three, seven, props) => {
+const getV2HocProps = (caseStudy, rootNode, one, two, three, seven, props) => {
   const hocProps = {
     caseStudy,
     intro: rootNode ? rootNode.htmlAst : '',
@@ -46,6 +46,14 @@ const getV2HocProps = (caseStudy, rootNode, one, three, seven, props) => {
     invert: rootNode ? rootNode.invert : false,
     one: one ? one.htmlAst : '',
     oneTitle: one ? one.frontmatter.title : '',
+    two: two ? two.htmlAst : '',
+    twoTitle: two ? two.frontmatter.title : '',
+    twoQuoteName: two ? two.frontmatter.quotename : '',
+    twoQuoteTitle: two ? two.frontmatter.quotetitle : '',
+    twoQuoteCompany: two ? two.frontmatter.quotecompany : '',
+    twoQuoteContent: two ? two.frontmatter.quotecontent : '',
+    twoQuoteLeft: two ? two.frontmatter.quoteleft : '',
+    twoQuoteImage: two ? two.frontmatter.quoteimage : '',
     three: three ? three.htmlAst : '',
     threeTitle: three ? three.frontmatter.title : '',
     seven: seven ? seven.htmlAst : '',
@@ -69,6 +77,7 @@ export default (props) => {
   const contactsIntro = findNode('client-stories/contact_us', props);
 
   const one = findNodeRaw(`${props.pageContext.slug}/one`, props.data.one);
+  const two = findNodeRaw(`${props.pageContext.slug}/two`, props.data.two);
   const three = findNodeRaw(`${props.pageContext.slug}/three`, props.data.three);
   const seven = findNodeRaw(`${props.pageContext.slug}/seven`, props.data.seven);
 
@@ -82,7 +91,7 @@ export default (props) => {
   const caseStudy = caseStudies.sort(() => .5 - Math.random())[0];
 
   return (rootNode && rootNode.frontmatter && rootNode.frontmatter.v2) ?
-    <CaseStudyV2 {...getV2HocProps(caseStudy, rootNode, one, three, seven, props)} /> :
+    <CaseStudyV2 {...getV2HocProps(caseStudy, rootNode, one, two, three, seven, props)} /> :
     <CaseStudy {...getV1HocProps(caseStudy, rootNode, metrics, testimonial, process, caseStudiesIntro, contactsIntro, props)} />;
 };
 
@@ -190,6 +199,31 @@ export const caseStudyQuery = graphql`
           htmlAst
           frontmatter {
             title
+          }
+          fileAbsolutePath
+        }
+      }
+    }
+    two: allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/client-stories/.*/two/" } }
+    ) {
+      edges {
+        node {
+          htmlAst
+          frontmatter {
+            title
+            quotename
+            quotetitle
+            quotecompany
+            quotecontent
+            quoteleft
+            quoteimage {
+              childImageSharp {
+                fluid(maxWidth: 450) {
+                  ...GatsbyImageSharpFluid_withWebp_noBase64
+                }
+              }
+            }
           }
           fileAbsolutePath
         }

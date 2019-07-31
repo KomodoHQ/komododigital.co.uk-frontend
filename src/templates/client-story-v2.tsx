@@ -35,6 +35,16 @@ export default (props) => {
         {renderAst(props.one)}
       </CenterContent>
       <CenterContent className="topPaddingLarge bottomPaddingSmall">
+        <h2>{props.twoTitle}</h2>
+        <h2>{props.twoQuoteName}</h2>
+        <h2>{props.twoQuoteTitle}</h2>
+        <h2>{props.twoQuoteCompany}</h2>
+        <h2>{props.twoQuoteContent}</h2>
+        <h2>{props.twoQuoteLeft.toString()}</h2>
+        {/* <h2>{props.twoQuoteImage}</h2> */}
+        {renderAst(props.two)}
+      </CenterContent>
+      <CenterContent className="topPaddingLarge bottomPaddingSmall">
         <h2>{props.threeTitle}</h2>
         {renderAst(props.three)}
       </CenterContent>
