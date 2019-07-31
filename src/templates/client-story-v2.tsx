@@ -49,6 +49,17 @@ export default (props) => {
         {renderAst(props.three)}
       </CenterContent>
       <CenterContent className="topPaddingLarge bottomPaddingSmall">
+        <h2>{props.fourTitle}</h2>
+        <h2>{props.fourQuoteName}</h2>
+        <h2>{props.fourQuoteTitle}</h2>
+        <h2>{props.fourQuoteCompany}</h2>
+        <h2>{props.fourQuoteContent}</h2>
+        <h2>{props.fourQuoteLeft.toString()}</h2>
+        {/* <h2>{props.fourQuotePicture}</h2> */}
+        {/* <h2>{props.fourQuoteImage}</h2> */}
+        {renderAst(props.four)}
+      </CenterContent>
+      <CenterContent className="topPaddingLarge bottomPaddingSmall">
         <h2>{props.sevenQuoteName}</h2>
         <h2>{props.sevenQuoteTitle}</h2>
         <h2>{props.sevenQuoteCompany}</h2>
