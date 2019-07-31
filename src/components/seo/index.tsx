@@ -16,6 +16,7 @@ interface Props {
   url: string;
   children?: ReactNode;
   siteName: string;
+  noindex?: boolean;
 }
 
 const SEO: React.SFC<Props> = ({
@@ -27,6 +28,7 @@ const SEO: React.SFC<Props> = ({
   url,
   children,
   siteName,
+  noindex = false
 }) => {
   return (
     <>
@@ -35,6 +37,7 @@ const SEO: React.SFC<Props> = ({
         defaultTitle={defaultTitle}
         description={description}
         separator={separator}
+        noindex={noindex}
         key="seo.meta"
       >
         {children}

@@ -14,7 +14,7 @@ export default (props) => {
   }).Compiler;
 
   return (
-    <Layout data={props.data} pageMeta={props.pageMeta}>
+    <Layout data={props.data} pageMeta={props.pageMeta} noindex={true}>
       <TitleText
         title={props.title}
         subtitle={`Insights`}
