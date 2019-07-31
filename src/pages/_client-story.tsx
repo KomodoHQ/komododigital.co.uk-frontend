@@ -34,7 +34,7 @@ const getV1HocProps = (caseStudy, rootNode, metrics, testimonial, process, caseS
   ...props
 });
 
-const getV2HocProps = (caseStudy, rootNode, one, two, three, four, seven, props) => {
+const getV2HocProps = (caseStudy, rootNode, one, two, three, four, seven, eight, props) => {
   const hocProps = {
     caseStudy,
     intro: rootNode ? rootNode.htmlAst : '',
@@ -70,6 +70,14 @@ const getV2HocProps = (caseStudy, rootNode, one, two, three, four, seven, props)
     sevenQuoteTitle: seven ? seven.frontmatter.quotetitle : '',
     sevenQuoteCompany: seven ? seven.frontmatter.quotecompany : '',
     sevenQuoteImage: seven ? seven.frontmatter.quoteimage : '',
+    eight: eight ? eight.htmlAst : '',
+    eightTitle: eight ? eight.frontmatter.title : '',
+    eightQuoteName: eight ? eight.frontmatter.quotename : '',
+    eightQuoteTitle: eight ? eight.frontmatter.quotetitle : '',
+    eightQuoteCompany: eight ? eight.frontmatter.quotecompany : '',
+    eightQuoteContent: eight ? eight.frontmatter.quotecontent : '',
+    eightQuoteLeft: eight ? eight.frontmatter.quoteleft : '',
+    eightQuoteImage: eight ? eight.frontmatter.quoteimage : '',
     pageMeta: pageMetaFromFrontmatter(rootNode),
     ...props
   }
@@ -90,6 +98,7 @@ export default (props) => {
   const three = findNodeRaw(`${props.pageContext.slug}/three`, props.data.three);
   const four = findNodeRaw(`${props.pageContext.slug}/four`, props.data.four);
   const seven = findNodeRaw(`${props.pageContext.slug}/seven`, props.data.seven);
+  const eight = findNodeRaw(`${props.pageContext.slug}/eight`, props.data.eight);
 
   if (rootNode) {
     // Show other case studies, but filter this one
@@ -101,7 +110,7 @@ export default (props) => {
   const caseStudy = caseStudies.sort(() => .5 - Math.random())[0];
 
   return (rootNode && rootNode.frontmatter && rootNode.frontmatter.v2) ?
-    <CaseStudyV2 {...getV2HocProps(caseStudy, rootNode, one, two, three, four, seven, props)} /> :
+    <CaseStudyV2 {...getV2HocProps(caseStudy, rootNode, one, two, three, four, seven, eight, props)} /> :
     <CaseStudy {...getV1HocProps(caseStudy, rootNode, metrics, testimonial, process, caseStudiesIntro, contactsIntro, props)} />;
 };
 
@@ -295,6 +304,31 @@ export const caseStudyQuery = graphql`
             quotename
             quotetitle
             quotecompany
+            quoteimage {
+              childImageSharp {
+                fluid(maxWidth: 450) {
+                  ...GatsbyImageSharpFluid_withWebp_noBase64
+                }
+              }
+            }
+          }
+          fileAbsolutePath
+        }
+      }
+    }
+    eight: allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/client-stories/.*/eight/" } }
+    ) {
+      edges {
+        node {
+          htmlAst
+          frontmatter {
+            title
+            quotename
+            quotetitle
+            quotecompany
+            quotecontent
+            quoteleft
             quoteimage {
               childImageSharp {
                 fluid(maxWidth: 450) {

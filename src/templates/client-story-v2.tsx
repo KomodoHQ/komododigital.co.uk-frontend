@@ -67,6 +67,16 @@ export default (props) => {
         {renderAst(props.seven)}
       </CenterContent>
       <CenterContent className="topPaddingLarge bottomPaddingSmall">
+        <h2>{props.eightTitle}</h2>
+        <h2>{props.eightQuoteName}</h2>
+        <h2>{props.eightQuoteTitle}</h2>
+        <h2>{props.eightQuoteCompany}</h2>
+        <h2>{props.eightQuoteContent}</h2>
+        <h2>{props.eightQuoteLeft.toString()}</h2>
+        {/* <h2>{props.eightQuoteImage}</h2> */}
+        {renderAst(props.eight)}
+      </CenterContent>
+      <CenterContent className="topPaddingLarge bottomPaddingSmall">
         <h2>What can we do for you?</h2>
         "If this story resonates with you, get in contact and let’s explore the opportunities the Komodo team can create for your team."
         <SeeMoreButton title="START A CONVERSATION →" link="/contact" />
