@@ -85,6 +85,7 @@
     "gatsby-plugin-remove-trailing-slashes": "^2.1.2",
     "gatsby-plugin-sentry": "^1.0.1",
     "gatsby-plugin-sharp": "^2.0.13",
+    "gatsby-plugin-sitemap": "^2.2.4",
     "gatsby-plugin-typescript": "2.0.12",
     "gatsby-remark-images": "^3.0.10",
     "gatsby-source-filesystem": "^2.0.8",
