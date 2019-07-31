@@ -16,6 +16,7 @@ const renderAst = new rehypeReact({
 }).Compiler;
 
 export default (props) => {
+    console.log(props);
   return (
     <Layout data={props.data} pageMeta={props.pageMeta} background={props.navBackground}>
       <TitleText
@@ -41,6 +42,7 @@ export default (props) => {
         <h2>{props.sevenQuoteName}</h2>
         <h2>{props.sevenQuoteTitle}</h2>
         <h2>{props.sevenQuoteCompany}</h2>
+        {/* <h2>{props.sevenQuoteImage}</h2> */}
         {renderAst(props.seven)}
       </CenterContent>
       <CenterContent className="topPaddingLarge bottomPaddingSmall">

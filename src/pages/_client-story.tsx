@@ -52,7 +52,7 @@ const getV2HocProps = (caseStudy, rootNode, one, three, seven, props) => {
     sevenQuoteName: seven ? seven.frontmatter.quotename : '',
     sevenQuoteTitle: seven ? seven.frontmatter.quotetitle : '',
     sevenQuoteCompany: seven ? seven.frontmatter.quotecompany : '',
-    sevenQuoteUrl: seven ? seven.frontmatter.quoteurl : '',
+    sevenQuoteImage: seven ? seven.frontmatter.quoteimage : '',
     pageMeta: pageMetaFromFrontmatter(rootNode),
     ...props
   }
