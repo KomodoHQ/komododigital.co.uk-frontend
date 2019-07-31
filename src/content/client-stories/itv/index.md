@@ -4,6 +4,7 @@ subtitle: 'Education'
 date: '2018-09-22'
 group: 'client-stories'
 headercolor: '#DB8484'
+v2: false
 csimage: '../../images/casestudy/ITV@3x.png'
 coverimage: '../../images/casestudy/ITVCover@3x.png'
 navBackground: '#DB8484'

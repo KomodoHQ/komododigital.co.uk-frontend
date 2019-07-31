@@ -3,6 +3,7 @@ title: 'Giving Drivers Full Control over their Data'
 subtitle: 'Insurance'
 date: '2018-09-22'
 group: 'client-stories'
+v2: false
 headercolor: '#003E52'
 csimage: '../../images/casestudy/Theo@3x.png'
 coverimage: '../../images/casestudy/TheoCover@3x.png'

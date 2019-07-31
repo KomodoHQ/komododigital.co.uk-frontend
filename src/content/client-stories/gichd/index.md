@@ -3,6 +3,7 @@ title: 'Building an Ammunition Safety Management (ASM) Toolset'
 subtitle: 'Humanitarian'
 date: '2018-09-22'
 group: 'client-stories'
+v2: false
 headercolor: '#D17C2F'
 csimage: '../../images/casestudy/GICHD@3x.png'
 coverimage: '../../images/casestudy/GICHDCover@3x.png'

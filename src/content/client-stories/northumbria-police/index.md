@@ -3,6 +3,7 @@ title: 'Transforming the way Policing Services are Delivered'
 subtitle: 'Public Sector'
 date: '2018-09-22'
 group: 'client-stories'
+v2: false
 headercolor: '#171717'
 csimage: '../../images/casestudy/NorthumbriaPolice@3x.png'
 coverimage: '../../images/casestudy/NorthumbriaPoliceCover@3x.png'

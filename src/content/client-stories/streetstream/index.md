@@ -3,6 +3,7 @@ title: 'Delivering a User Focused Solution for an On-demand Courier Service'
 subtitle: 'Start Up'
 date: '2018-09-22'
 group: 'client-stories'
+v2: false
 headercolor: '#00ff00'
 csimage: '../../images/casestudy/StreetStream@3x.png'
 coverimage: '../../images/casestudy/StreetStreamCover@3x.png'
