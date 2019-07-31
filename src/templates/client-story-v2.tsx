@@ -59,6 +59,18 @@ export default (props) => {
         {/* <h2>{props.fourQuoteImage}</h2> */}
         {renderAst(props.four)}
       </CenterContent>
+      {props.sixQuotes &&
+          props.sixQuotes.map((quote, i) => {
+            return (
+              <CenterContent className="topPaddingLarge bottomPaddingSmall" key={i}>
+                <h2>{quote.name}</h2>
+                <h2>{quote.title}</h2>
+                <h2>{quote.company}</h2>
+                <h2>{quote.content}</h2>
+                {/* <h2>{quote.image}</h2> */}
+              </CenterContent>
+            );
+          })}
       <CenterContent className="topPaddingLarge bottomPaddingSmall">
         <h2>{props.sevenQuoteName}</h2>
         <h2>{props.sevenQuoteTitle}</h2>

@@ -1,0 +1,20 @@
+---
+title: 'Quotes'
+date: '2018-09-22'
+quotes:
+  - name: 'SCOTT SALISBURY'
+    title: 'SENIOR DEVELOPER'
+    company: 'KOMODO'
+    content: '“[Copy taken from the interviews conducted with Komodo employees in relation to working with ISG — potential for videos too.]”'
+    image: '../../images/casestudy/GICHD@3x.png'
+  - name: 'EMPLOYEE NAME'
+    title: 'DEVELOPER'
+    company: 'IAMPROPERTY'
+    content: '“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the standard.”'
+    image: '../../images/casestudy/GICHD@3x.png'
+  - name: 'FRAZER LILLIE'
+    title: 'DEVELOPER'
+    company: 'KOMODO'
+    content: '“[Copy taken from the interviews conducted with Komodo employees in relation to working with ISG — potential for videos too.]”'
+    image: '../../images/casestudy/GICHD@3x.png'
+---

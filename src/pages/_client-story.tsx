@@ -34,7 +34,7 @@ const getV1HocProps = (caseStudy, rootNode, metrics, testimonial, process, caseS
   ...props
 });
 
-const getV2HocProps = (caseStudy, rootNode, one, two, three, four, seven, eight, props) => {
+const getV2HocProps = (caseStudy, rootNode, one, two, three, four, six, seven, eight, props) => {
   const hocProps = {
     caseStudy,
     intro: rootNode ? rootNode.htmlAst : '',
@@ -65,6 +65,7 @@ const getV2HocProps = (caseStudy, rootNode, one, two, three, four, seven, eight,
     fourQuoteLeft: four ? four.frontmatter.quoteleft : '',
     fourQuotePicture: four ? four.frontmatter.quotepicture : '',
     fourQuoteImage: four ? four.frontmatter.quoteimage : '',
+    sixQuotes: six ? six.frontmatter.quotes : '',
     seven: seven ? seven.htmlAst : '',
     sevenQuoteName: seven ? seven.frontmatter.quotename : '',
     sevenQuoteTitle: seven ? seven.frontmatter.quotetitle : '',
@@ -97,6 +98,7 @@ export default (props) => {
   const two = findNodeRaw(`${props.pageContext.slug}/two`, props.data.two);
   const three = findNodeRaw(`${props.pageContext.slug}/three`, props.data.three);
   const four = findNodeRaw(`${props.pageContext.slug}/four`, props.data.four);
+  const six = findNodeRaw(`${props.pageContext.slug}/six`, props.data.six);
   const seven = findNodeRaw(`${props.pageContext.slug}/seven`, props.data.seven);
   const eight = findNodeRaw(`${props.pageContext.slug}/eight`, props.data.eight);
 
@@ -110,7 +112,7 @@ export default (props) => {
   const caseStudy = caseStudies.sort(() => .5 - Math.random())[0];
 
   return (rootNode && rootNode.frontmatter && rootNode.frontmatter.v2) ?
-    <CaseStudyV2 {...getV2HocProps(caseStudy, rootNode, one, two, three, four, seven, eight, props)} /> :
+    <CaseStudyV2 {...getV2HocProps(caseStudy, rootNode, one, two, three, four, six, seven, eight, props)} /> :
     <CaseStudy {...getV1HocProps(caseStudy, rootNode, metrics, testimonial, process, caseStudiesIntro, contactsIntro, props)} />;
 };
 
@@ -285,6 +287,32 @@ export const caseStudyQuery = graphql`
               childImageSharp {
                 fluid(maxWidth: 450) {
                   ...GatsbyImageSharpFluid_withWebp_noBase64
+                }
+              }
+            }
+          }
+          fileAbsolutePath
+        }
+      }
+    }
+    six: allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/client-stories/.*/six/" } }
+    ) {
+      edges {
+        node {
+          htmlAst
+          frontmatter {
+            title
+            quotes {
+              name
+              title
+              company
+              content
+              image {
+                childImageSharp {
+                  fluid(maxWidth: 450) {
+                    ...GatsbyImageSharpFluid_withWebp_noBase64
+                  }
                 }
               }
             }
