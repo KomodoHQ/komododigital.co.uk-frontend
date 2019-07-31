@@ -30,8 +30,12 @@ export default (props) => {
         {renderAst(props.intro)}
       </TitleText>
       <CenterContent className="topPaddingLarge bottomPaddingSmall">
-        <h2>{props.metricsTitle}</h2>
-        {renderAst(props.metricsIntro)}
+        <h2>{props.oneTitle}</h2>
+        {renderAst(props.one)}
+      </CenterContent>
+      <CenterContent className="topPaddingLarge bottomPaddingSmall">
+        <h2>{props.threeTitle}</h2>
+        {renderAst(props.three)}
       </CenterContent>
       <CenterContent className="topPaddingLarge bottomPaddingSmall">
         <h2>What can we do for you?</h2>

@@ -34,7 +34,7 @@ const getV1HocProps = (caseStudy, rootNode, metrics, testimonial, process, caseS
   ...props
 });
 
-const getV2HocProps = (caseStudy, rootNode, metrics, props) => {
+const getV2HocProps = (caseStudy, rootNode, one, three, props) => {
   const hocProps = {
     caseStudy,
     intro: rootNode ? rootNode.htmlAst : '',
@@ -44,8 +44,10 @@ const getV2HocProps = (caseStudy, rootNode, metrics, props) => {
     navBackground: rootNode ? rootNode.frontmatter.navBackground : '',
     background: rootNode ? rootNode.background : '',
     invert: rootNode ? rootNode.invert : false,
-    metricsIntro: metrics ? metrics.htmlAst : '',
-    metricsTitle: metrics ? metrics.frontmatter.title : '',
+    one: one ? one.htmlAst : '',
+    oneTitle: one ? one.frontmatter.title : '',
+    three: three ? three.htmlAst : '',
+    threeTitle: three ? three.frontmatter.title : '',
     pageMeta: pageMetaFromFrontmatter(rootNode),
     ...props
   }
@@ -61,6 +63,9 @@ export default (props) => {
   const process = findNodeRaw(`${props.pageContext.slug}/process`, props.data.process);
   const contactsIntro = findNode('client-stories/contact_us', props);
 
+  const one = findNodeRaw(`${props.pageContext.slug}/one`, props.data.one);
+  const three = findNodeRaw(`${props.pageContext.slug}/three`, props.data.three);
+
   if (rootNode) {
     // Show other case studies, but filter this one
     caseStudies = caseStudies.filter(
@@ -71,7 +76,7 @@ export default (props) => {
   const caseStudy = caseStudies.sort(() => .5 - Math.random())[0];
 
   return (rootNode && rootNode.frontmatter && rootNode.frontmatter.v2) ?
-    <CaseStudyV2 {...getV2HocProps(caseStudy, rootNode, metrics, props)} /> :
+    <CaseStudyV2 {...getV2HocProps(caseStudy, rootNode, one, three, props)} /> :
     <CaseStudy {...getV1HocProps(caseStudy, rootNode, metrics, testimonial, process, caseStudiesIntro, contactsIntro, props)} />;
 };
 
@@ -160,6 +165,32 @@ export const caseStudyQuery = graphql`
     }
     others: allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "/client-stories/other/" } }
+    ) {
+      edges {
+        node {
+          htmlAst
+          frontmatter {
+            title
+          }
+          fileAbsolutePath
+        }
+      }
+    }
+    one: allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/client-stories/.*/one/" } }
+    ) {
+      edges {
+        node {
+          htmlAst
+          frontmatter {
+            title
+          }
+          fileAbsolutePath
+        }
+      }
+    }
+    three: allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/client-stories/.*/three/" } }
     ) {
       edges {
         node {
