@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>glassdoor-socialicon-circle-rgb</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0.0048 0 40 0 40 40 0.0048 40"></polygon>
+    </defs>
+    <g id="Komodo-Website-Trello-Board-Designs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="glassdoor-socialicon-circle-rgb">
+            <g id="Group-3">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <path d="M40,20 C40,31.04576 31.04568,40 20,40 C8.95432,40 0,31.04576 0,20 C0,8.95432 8.95432,0 20,0 C31.04568,0 40,8.95432 40,20" id="Fill-1" fill="#FFFFFF" mask="url(#mask-2)"></path>
+            </g>
+            <path d="M25.30032,28.83392 L11.16608,28.83392 C11.16608,30.78544 12.74816,32.36744 14.69968,32.36744 L25.30032,32.36744 C27.25184,32.36744 28.83392,30.78544 28.83392,28.83392 L28.83392,14.3236 C28.83392,14.25248 28.77624,14.19488 28.70512,14.19488 L25.42904,14.19488 C25.358,14.19488 25.30032,14.25248 25.30032,14.3236 L25.30032,28.83392 Z M25.30032,7.63248 C27.25184,7.63248 28.83392,9.21456 28.83392,11.16608 L14.69968,11.16608 L14.69968,25.6764 C14.69968,25.74752 14.642,25.8052 14.57096,25.8052 L11.2948,25.8052 C11.22376,25.8052 11.16608,25.74752 11.16608,25.6764 L11.16608,11.16608 C11.16608,9.21456 12.74816,7.63248 14.69968,7.63248 L25.30032,7.63248 L25.30032,7.63248 Z" id="Fill-4" fill="#1E1E1E"></path>
+        </g>
+    </g>
+</svg>
