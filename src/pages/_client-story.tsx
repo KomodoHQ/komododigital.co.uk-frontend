@@ -12,6 +12,44 @@ import { siteMeta, komodoLogo, clientLogos, icons, avatars } from '../utils/site
 import { findNodes, findNode, findNodeRaw } from '../utils/nodes';
 import { pageMetaFromFrontmatter } from '../utils/page-meta';
 
+const getV1HocProps = (caseStudy, rootNode, metrics, testimonial, process, caseStudiesIntro, contactsIntro, props) => ({
+  caseStudy,
+  intro: rootNode ? rootNode.htmlAst : '',
+  title: rootNode ? rootNode.frontmatter.title : '',
+  subtitle: rootNode ? rootNode.frontmatter.subtitle : '',
+  coverimage: rootNode ? rootNode.frontmatter.coverimage : '',
+  navBackground: rootNode ? rootNode.frontmatter.navBackground : '',
+  background: rootNode ? rootNode.background : '',
+  invert: rootNode ? rootNode.invert : false,
+  metricsIntro: metrics ? metrics.htmlAst : '',
+  metricsTitle: metrics ? metrics.frontmatter.title : '',
+  metrics: metrics ? metrics.frontmatter.scores : '',
+  testimonial: testimonial ? testimonial.frontmatter : null,
+  processTitle: process ? process.frontmatter.title : '',
+  process: process ? process.htmlAst : '',
+  caseStudiesIntro: caseStudiesIntro ? caseStudiesIntro.htmlAst : '',
+  caseStudiesTitle: caseStudiesIntro ? caseStudiesIntro.frontmatter.title : '',
+  contactsIntro: contactsIntro ? contactsIntro.htmlAst : '',
+  pageMeta: pageMetaFromFrontmatter(rootNode),
+  ...props
+});
+
+const getV2HocProps = (caseStudy, rootNode, props) => {
+  const hocProps = {
+    caseStudy,
+    intro: rootNode ? rootNode.htmlAst : '',
+    title: rootNode ? rootNode.frontmatter.title : '',
+    subtitle: rootNode ? rootNode.frontmatter.subtitle : '',
+    coverimage: rootNode ? rootNode.frontmatter.coverimage : '',
+    navBackground: rootNode ? rootNode.frontmatter.navBackground : '',
+    background: rootNode ? rootNode.background : '',
+    invert: rootNode ? rootNode.invert : false,
+    pageMeta: pageMetaFromFrontmatter(rootNode),
+    ...props
+  }
+  return hocProps;
+}
+
 export default (props) => {
   const rootNode = findNode(`${props.pageContext.slug}/index`, props);
   let caseStudies = findNodes('group', props, 'client-stories');
@@ -30,44 +68,9 @@ export default (props) => {
 
   const caseStudy = caseStudies.sort(() => .5 - Math.random())[0];
 
-  const hocProps = (rootNode && rootNode.frontmatter && rootNode.frontmatter.v2) ? {
-    caseStudy,
-    intro: rootNode ? rootNode.htmlAst : '',
-    title: rootNode ? rootNode.frontmatter.title : '',
-    subtitle: rootNode ? rootNode.frontmatter.subtitle : '',
-    coverimage: rootNode ? rootNode.frontmatter.coverimage : '',
-    navBackground: rootNode ? rootNode.frontmatter.navBackground : '',
-    background: rootNode ? rootNode.background : '',
-    invert: rootNode ? rootNode.invert : false,
-    pageMeta: pageMetaFromFrontmatter(rootNode),
-    ...props,
-  } : {
-    caseStudy,
-    intro: rootNode ? rootNode.htmlAst : '',
-    title: rootNode ? rootNode.frontmatter.title : '',
-    subtitle: rootNode ? rootNode.frontmatter.subtitle : '',
-    coverimage: rootNode ? rootNode.frontmatter.coverimage : '',
-    navBackground: rootNode ? rootNode.frontmatter.navBackground : '',
-    background: rootNode ? rootNode.background : '',
-    invert: rootNode ? rootNode.invert : false,
-    metricsIntro: metrics ? metrics.htmlAst : '',
-    metricsTitle: metrics ? metrics.frontmatter.title : '',
-    metrics: metrics ? metrics.frontmatter.scores : '',
-    testimonial: testimonial ? testimonial.frontmatter : null,
-    processTitle: process ? process.frontmatter.title : '',
-    process: process ? process.htmlAst : '',
-    caseStudiesIntro: caseStudiesIntro ? caseStudiesIntro.htmlAst : '',
-    caseStudiesTitle: caseStudiesIntro ? caseStudiesIntro.frontmatter.title : '',
-    contactsIntro: contactsIntro ? contactsIntro.htmlAst : '',
-    pageMeta: pageMetaFromFrontmatter(rootNode),
-    ...props,
-  };
-
-  console.log(rootNode);
-  console.log(hocProps);
-
-  return (rootNode && rootNode.frontmatter && rootNode.frontmatter.v2) ? <CaseStudyV2 {...hocProps} /> : <CaseStudy {...hocProps} />;
-  // return <CaseStudy {...hocProps} />;
+  return (rootNode && rootNode.frontmatter && rootNode.frontmatter.v2) ?
+    <CaseStudyV2 {...getV2HocProps(caseStudy, rootNode, props)} /> :
+    <CaseStudy {...getV1HocProps(caseStudy, rootNode, metrics, testimonial, process, caseStudiesIntro, contactsIntro, props)} />;
 };
 
 export const caseStudyQuery = graphql`
