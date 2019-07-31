@@ -33,6 +33,11 @@ export default (props) => {
         <h2>{props.metricsTitle}</h2>
         {renderAst(props.metricsIntro)}
       </CenterContent>
+      <CenterContent className="topPaddingLarge bottomPaddingSmall">
+        <h2>What can we do for you?</h2>
+        "If this story resonates with you, get in contact and let’s explore the opportunities the Komodo team can create for your team."
+        <SeeMoreButton title="START A CONVERSATION →" link="/contact" />
+      </CenterContent>
     </Layout>
   );
 };
