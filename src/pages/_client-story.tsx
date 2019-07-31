@@ -34,7 +34,7 @@ const getV1HocProps = (caseStudy, rootNode, metrics, testimonial, process, caseS
   ...props
 });
 
-const getV2HocProps = (caseStudy, rootNode, props) => {
+const getV2HocProps = (caseStudy, rootNode, metrics, props) => {
   const hocProps = {
     caseStudy,
     intro: rootNode ? rootNode.htmlAst : '',
@@ -44,6 +44,8 @@ const getV2HocProps = (caseStudy, rootNode, props) => {
     navBackground: rootNode ? rootNode.frontmatter.navBackground : '',
     background: rootNode ? rootNode.background : '',
     invert: rootNode ? rootNode.invert : false,
+    metricsIntro: metrics ? metrics.htmlAst : '',
+    metricsTitle: metrics ? metrics.frontmatter.title : '',
     pageMeta: pageMetaFromFrontmatter(rootNode),
     ...props
   }
@@ -69,7 +71,7 @@ export default (props) => {
   const caseStudy = caseStudies.sort(() => .5 - Math.random())[0];
 
   return (rootNode && rootNode.frontmatter && rootNode.frontmatter.v2) ?
-    <CaseStudyV2 {...getV2HocProps(caseStudy, rootNode, props)} /> :
+    <CaseStudyV2 {...getV2HocProps(caseStudy, rootNode, metrics, props)} /> :
     <CaseStudy {...getV1HocProps(caseStudy, rootNode, metrics, testimonial, process, caseStudiesIntro, contactsIntro, props)} />;
 };
 

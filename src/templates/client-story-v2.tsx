@@ -29,6 +29,10 @@ export default (props) => {
       >
         {renderAst(props.intro)}
       </TitleText>
+      <CenterContent className="topPaddingLarge bottomPaddingSmall">
+        <h2>{props.metricsTitle}</h2>
+        {renderAst(props.metricsIntro)}
+      </CenterContent>
     </Layout>
   );
 };
