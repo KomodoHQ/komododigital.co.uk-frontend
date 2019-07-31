@@ -34,7 +34,7 @@ const getV1HocProps = (caseStudy, rootNode, metrics, testimonial, process, caseS
   ...props
 });
 
-const getV2HocProps = (caseStudy, rootNode, one, three, props) => {
+const getV2HocProps = (caseStudy, rootNode, one, three, seven, props) => {
   const hocProps = {
     caseStudy,
     intro: rootNode ? rootNode.htmlAst : '',
@@ -48,6 +48,11 @@ const getV2HocProps = (caseStudy, rootNode, one, three, props) => {
     oneTitle: one ? one.frontmatter.title : '',
     three: three ? three.htmlAst : '',
     threeTitle: three ? three.frontmatter.title : '',
+    seven: seven ? seven.htmlAst : '',
+    sevenQuoteName: seven ? seven.frontmatter.quotename : '',
+    sevenQuoteTitle: seven ? seven.frontmatter.quotetitle : '',
+    sevenQuoteCompany: seven ? seven.frontmatter.quotecompany : '',
+    sevenQuoteUrl: seven ? seven.frontmatter.quoteurl : '',
     pageMeta: pageMetaFromFrontmatter(rootNode),
     ...props
   }
@@ -65,6 +70,7 @@ export default (props) => {
 
   const one = findNodeRaw(`${props.pageContext.slug}/one`, props.data.one);
   const three = findNodeRaw(`${props.pageContext.slug}/three`, props.data.three);
+  const seven = findNodeRaw(`${props.pageContext.slug}/seven`, props.data.seven);
 
   if (rootNode) {
     // Show other case studies, but filter this one
@@ -76,7 +82,7 @@ export default (props) => {
   const caseStudy = caseStudies.sort(() => .5 - Math.random())[0];
 
   return (rootNode && rootNode.frontmatter && rootNode.frontmatter.v2) ?
-    <CaseStudyV2 {...getV2HocProps(caseStudy, rootNode, one, three, props)} /> :
+    <CaseStudyV2 {...getV2HocProps(caseStudy, rootNode, one, three, seven, props)} /> :
     <CaseStudy {...getV1HocProps(caseStudy, rootNode, metrics, testimonial, process, caseStudiesIntro, contactsIntro, props)} />;
 };
 
@@ -197,6 +203,29 @@ export const caseStudyQuery = graphql`
           htmlAst
           frontmatter {
             title
+          }
+          fileAbsolutePath
+        }
+      }
+    }
+    seven: allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/client-stories/.*/seven/" } }
+    ) {
+      edges {
+        node {
+          htmlAst
+          frontmatter {
+            title
+            quotename
+            quotetitle
+            quotecompany
+            quoteimage {
+              childImageSharp {
+                fluid(maxWidth: 450) {
+                  ...GatsbyImageSharpFluid_withWebp_noBase64
+                }
+              }
+            }
           }
           fileAbsolutePath
         }

@@ -38,6 +38,12 @@ export default (props) => {
         {renderAst(props.three)}
       </CenterContent>
       <CenterContent className="topPaddingLarge bottomPaddingSmall">
+        <h2>{props.sevenQuoteName}</h2>
+        <h2>{props.sevenQuoteTitle}</h2>
+        <h2>{props.sevenQuoteCompany}</h2>
+        {renderAst(props.seven)}
+      </CenterContent>
+      <CenterContent className="topPaddingLarge bottomPaddingSmall">
         <h2>What can we do for you?</h2>
         "If this story resonates with you, get in contact and let’s explore the opportunities the Komodo team can create for your team."
         <SeeMoreButton title="START A CONVERSATION →" link="/contact" />
