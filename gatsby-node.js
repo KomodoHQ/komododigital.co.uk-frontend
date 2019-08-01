@@ -55,8 +55,17 @@ exports.createPages = ({ graphql, actions }) => {
       const postsPerPage = 21;
       const totalArticles = posts.length;
       const numPages = Math.ceil(totalArticles / postsPerPage);
+      console.log(numPages);
 
       Array.from({length: numPages}).forEach((edge, index) => {
+        const thing = {
+          limit: postsPerPage,
+          skip: index * postsPerPage,
+          numPages,
+          totalArticles,
+          nextPage: index + 1,
+        }
+        console.log(thing)
         createPage({
           path: index === 0 ? `/insights` : `/insights/${index}/`,
           component: path.resolve('./src/pages/insights.tsx'),

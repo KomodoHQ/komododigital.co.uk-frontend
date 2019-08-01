@@ -82,7 +82,6 @@
     "gatsby-plugin-postcss": "^2.0.1",
     "gatsby-plugin-react-helmet": "^3.0.2",
     "gatsby-plugin-react-helmet-canonical-urls": "^1.2.0",
-    "gatsby-plugin-remove-trailing-slashes": "^2.1.2",
     "gatsby-plugin-sentry": "^1.0.1",
     "gatsby-plugin-sharp": "^2.0.13",
     "gatsby-plugin-sitemap": "^2.2.4",
