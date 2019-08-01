@@ -1,7 +1,7 @@
 import React from 'react';
 import rehypeReact from 'rehype-react';
 import Layout from '../components/layout';
-import Metrics from '../components/metrics';
+import LargeQuote from '../components/largequote';
 import Metric from '../components/metric';
 import Testimonial from '../components/testimonial';
 import SeeMoreButton from '../components/seemorebutton';
@@ -81,12 +81,8 @@ export default (props) => {
               </CenterContent>
             );
           })}
-      <CenterContent className="topPaddingLarge bottomPaddingSmall">
-        <h2>{props.sevenQuoteName}</h2>
-        <h2>{props.sevenQuoteTitle}</h2>
-        <h2>{props.sevenQuoteCompany}</h2>
-        {/* <h2>{props.sevenQuoteImage}</h2> */}
-        {renderAst(props.seven)}
+      <CenterContent className="topPaddingLarge bottomPaddingSmall" background="#FFFFFF">
+        <LargeQuote name={props.sevenQuoteName} title={props.sevenQuoteTitle} company={props.sevenQuoteCompany} image={props.sevenQuoteImage} quote={renderAst(props.seven)}/>
       </CenterContent>
       <CenterContent className="topPaddingLarge bottomPaddingSmall">
         <h2>{props.eightTitle}</h2>
