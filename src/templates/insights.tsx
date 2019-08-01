@@ -13,7 +13,6 @@ const renderAst = new rehypeReact({
 }).Compiler;
 
 export default (props) => {
-  console.log(props)
   const { nextPage, totalArticles, numPages } = props.pageContext;
   const lastPage = numPages === nextPage;
   const viewedArticles = lastPage ? (totalArticles % 21) + (nextPage - 1) * 21 : (nextPage) * 21;
@@ -30,9 +29,6 @@ export default (props) => {
       width: `${(viewedArticles / totalArticles) * 100}%`,
     },
   };
-  console.log(nextPage)
-  console.log(totalArticles)
-  console.log(numPages)
 
   return (
     <Layout data={props.data} pageMeta={props.pageMeta} inverted={true} background="#EAEAEA">

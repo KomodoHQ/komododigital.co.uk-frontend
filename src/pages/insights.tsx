@@ -7,7 +7,6 @@ import { findNode } from '../utils/nodes';
 import { pageMetaFromFrontmatter } from '../utils/page-meta';
 
 export default (props) => {
-  console.log(props);
   const posts = props.data.allWordpressPost.edges.map((edge) => {
     const media = edge.node.featured_media;
     return {
@@ -25,8 +24,6 @@ export default (props) => {
     pageMeta: pageMetaFromFrontmatter(insightsIntro),
     ...props,
   };
-
-  console.log(hocProps);
 
   return <Insights posts={posts} {...hocProps} />;
 };
