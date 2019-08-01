@@ -6,8 +6,8 @@ quotetitle: 'SENIOR DEVELOPER'
 quotecompany: 'KOMODO'
 quotecontent: '[Think this quote should be something from our dev team—feel like there’s a little too many quotes from Cooney]'
 quoteleft: true
-quotepicture: '../../images/casestudy/GICHD@3x.png'
-quoteimage: '../../images/casestudy/GICHD@3x.png'
+quotepicture: '../../images/casestudy/isg/ISG-Developers@3x.png'
+quoteimage: '../../images/casestudy/isg/Scott-Avatar@3x.png'
 ---
 
 iamproperty currently has an in-house development team comprising 15 individuals headed up by their CTO, Cooney. This team takes care of the heavy lifting of the day-to-day development and maintenance of their system. Their business growth trajectory is rapid, creating a high demand to release new product features faster than the in-house resources can sensibly deliver.

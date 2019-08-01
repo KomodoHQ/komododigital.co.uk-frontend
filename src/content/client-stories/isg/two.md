@@ -4,9 +4,9 @@ date: '2019-07-30'
 quotename: 'BEN RIDGWAY'
 quotetitle: 'GROUP MANAGING DIRECTOR'
 quotecompany: 'IAMPROPERTY'
-quotecontent: 'Quote content'
+quotecontent: '“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s.”'
 quoteleft: false
-quoteimage: '../../images/casestudy/GICHD@3x.png'
+quoteimage: '../../images/casestudy/isg/ISG-Ben-Avatar@3x.png'
 ---
 
 During the startup phase, Komodo provided a complete design and development solution as iamproperty had no in-house resource to deliver the digital product.
