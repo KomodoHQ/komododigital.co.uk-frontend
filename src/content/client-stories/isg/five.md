@@ -4,10 +4,9 @@ date: '2019-07-30'
 quotename: 'ROSS COONEY'
 quotetitle: 'CHIEF TECHNICAL OFFICER'
 quotecompany: 'IAMPROPERTY'
-quotecontent: '“We haven't come across a 3rd party that has been so open, so welcoming of such a development process and it’s allowed me as a CTO to get an additional resource to our existing development team.”'
-quotefollowingindex: 1
-quotepicture: '../../images/casestudy/GICHD@3x.png'
-video: '../../images/casestudy/GICHD@3x.png'
+quotecontent: '“We haven’t come across a 3rd party that has been so open, so welcoming of such a development process and it’s allowed me as a CTO to get an additional resource to our existing development team.”'
+quoteleft: true
+quoteimage: '../../images/casestudy/GICHD@3x.png'
 ---
 
 Design sprints are a core competency of Komodo's and are used to great effect, casting a fresh perspective across challenges allows us to redefine constraints and reframe objectives. 

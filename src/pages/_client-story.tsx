@@ -34,7 +34,7 @@ const getV1HocProps = (caseStudy, rootNode, metrics, testimonial, process, caseS
   ...props
 });
 
-const getV2HocProps = (caseStudy, rootNode, one, two, three, four, six, seven, eight, props) => {
+const getV2HocProps = (caseStudy, rootNode, one, two, three, four, five, six, seven, eight, props) => {
   const hocProps = {
     caseStudy,
     intro: rootNode ? rootNode.htmlAst : '',
@@ -65,6 +65,14 @@ const getV2HocProps = (caseStudy, rootNode, one, two, three, four, six, seven, e
     fourQuoteLeft: four ? four.frontmatter.quoteleft : '',
     fourQuotePicture: four ? four.frontmatter.quotepicture : '',
     fourQuoteImage: four ? four.frontmatter.quoteimage : '',
+    five: five ? five.htmlAst : '',
+    fiveTitle: five ? five.frontmatter.title : '',
+    fiveQuoteName: five ? five.frontmatter.quotename : '',
+    fiveQuoteTitle: five ? five.frontmatter.quotetitle : '',
+    fiveQuoteCompany: five ? five.frontmatter.quotecompany : '',
+    fiveQuoteContent: five ? five.frontmatter.quotecontent : '',
+    fiveQuoteLeft: five ? five.frontmatter.quoteleft : '',
+    fiveQuoteImage: five ? five.frontmatter.quoteimage : '',
     sixQuotes: six ? six.frontmatter.quotes : '',
     seven: seven ? seven.htmlAst : '',
     sevenQuoteName: seven ? seven.frontmatter.quotename : '',
@@ -98,6 +106,7 @@ export default (props) => {
   const two = findNodeRaw(`${props.pageContext.slug}/two`, props.data.two);
   const three = findNodeRaw(`${props.pageContext.slug}/three`, props.data.three);
   const four = findNodeRaw(`${props.pageContext.slug}/four`, props.data.four);
+  const five = findNodeRaw(`${props.pageContext.slug}/five`, props.data.five);
   const six = findNodeRaw(`${props.pageContext.slug}/six`, props.data.six);
   const seven = findNodeRaw(`${props.pageContext.slug}/seven`, props.data.seven);
   const eight = findNodeRaw(`${props.pageContext.slug}/eight`, props.data.eight);
@@ -112,7 +121,7 @@ export default (props) => {
   const caseStudy = caseStudies.sort(() => .5 - Math.random())[0];
 
   return (rootNode && rootNode.frontmatter && rootNode.frontmatter.v2) ?
-    <CaseStudyV2 {...getV2HocProps(caseStudy, rootNode, one, two, three, four, six, seven, eight, props)} /> :
+    <CaseStudyV2 {...getV2HocProps(caseStudy, rootNode, one, two, three, four, five, six, seven, eight, props)} /> :
     <CaseStudy {...getV1HocProps(caseStudy, rootNode, metrics, testimonial, process, caseStudiesIntro, contactsIntro, props)} />;
 };
 
@@ -283,6 +292,31 @@ export const caseStudyQuery = graphql`
                 }
               }
             }
+            quoteimage {
+              childImageSharp {
+                fluid(maxWidth: 450) {
+                  ...GatsbyImageSharpFluid_withWebp_noBase64
+                }
+              }
+            }
+          }
+          fileAbsolutePath
+        }
+      }
+    }
+    five: allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/client-stories/.*/five/" } }
+    ) {
+      edges {
+        node {
+          htmlAst
+          frontmatter {
+            title
+            quotename
+            quotetitle
+            quotecompany
+            quotecontent
+            quoteleft
             quoteimage {
               childImageSharp {
                 fluid(maxWidth: 450) {
