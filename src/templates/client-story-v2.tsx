@@ -44,7 +44,7 @@ export default (props) => {
         {/* <h2>{props.twoQuoteImage}</h2> */}
         {renderAst(props.two)}
       </CenterContent>
-      <CenterContent className="topPaddingLarge bottomPaddingSmall">
+      <CenterContent className="topPaddingLarge bottomPaddingSmall" background="#FFFFFF">
         <h2>{props.threeTitle}</h2>
         {renderAst(props.three)}
       </CenterContent>
