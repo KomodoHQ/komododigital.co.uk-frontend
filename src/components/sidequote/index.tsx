@@ -18,8 +18,9 @@ import './sidequote.css';
  * data
  */
 interface Props {
-  name: string;
   title: string;
+  name: string;
+  qtitle: string;
   company: string;
   left: boolean;
   image: any;
@@ -34,14 +35,15 @@ interface Props {
  *
  * @param data
  */
-const SideQuote: React.SFC<Props> = ({ name, title, company, left, image, quote, picture, content }) => {
+const SideQuote: React.SFC<Props> = ({ title, name, qtitle, company, left, image, quote, picture, content }) => {
 
     return (
       <div>
-        <h2>{name}</h2>
         <h2>{title}</h2>
+        <h2>{name}</h2>
+        <h2>{qtitle}</h2>
         <h2>{company}</h2>
-        <h2>left.toString()</h2>
+        <h2>{left.toString()}</h2>
         {/* <h2>{image}</h2> */}
         {quote}
         {/* <h2>{picture}</h2> */}

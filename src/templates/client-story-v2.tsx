@@ -2,6 +2,7 @@ import React from 'react';
 import rehypeReact from 'rehype-react';
 import Layout from '../components/layout';
 import LargeQuote from '../components/largequote';
+import SideQuote from '../components/sidequote';
 import Quotes from '../components/quotes';
 import Metric from '../components/metric';
 import Testimonial from '../components/testimonial';
@@ -35,40 +36,46 @@ export default (props) => {
         <h2>{props.oneTitle}</h2>
         {renderAst(props.one)}
       </CenterContent>
-      <CenterContent className="topPaddingLarge bottomPaddingSmall">
-        <h2>{props.twoTitle}</h2>
-        <h2>{props.twoQuoteName}</h2>
-        <h2>{props.twoQuoteTitle}</h2>
-        <h2>{props.twoQuoteCompany}</h2>
-        <h2>{props.twoQuoteContent}</h2>
-        <h2>{props.twoQuoteLeft.toString()}</h2>
-        {/* <h2>{props.twoQuoteImage}</h2> */}
-        {renderAst(props.two)}
+      <CenterContent className="topPaddingLarge bottomPaddingSmall" background="#F5F5F5">
+        <SideQuote
+          title={props.twoTitle}
+          name={props.twoQuoteName}
+          qtitle={props.twoQuoteTitle}
+          company={props.twoQuoteCompany}
+          quote={props.twoQuoteContent}
+          left={props.twoQuoteLeft}
+          image={props.twoQuoteImage}
+          content={renderAst(props.two)}
+        />
       </CenterContent>
       <CenterContent className="topPaddingLarge bottomPaddingSmall" background="#FFFFFF">
         <h2>{props.threeTitle}</h2>
         {renderAst(props.three)}
       </CenterContent>
-      <CenterContent className="topPaddingLarge bottomPaddingSmall">
-        <h2>{props.fourTitle}</h2>
-        <h2>{props.fourQuoteName}</h2>
-        <h2>{props.fourQuoteTitle}</h2>
-        <h2>{props.fourQuoteCompany}</h2>
-        <h2>{props.fourQuoteContent}</h2>
-        <h2>{props.fourQuoteLeft.toString()}</h2>
-        {/* <h2>{props.fourQuotePicture}</h2> */}
-        {/* <h2>{props.fourQuoteImage}</h2> */}
-        {renderAst(props.four)}
+      <CenterContent className="topPaddingLarge bottomPaddingSmall" background="#F5F5F5">
+        <SideQuote
+          title={props.fourTitle}
+          name={props.fourQuoteName}
+          qtitle={props.fourQuoteTitle}
+          company={props.fourQuoteCompany}
+          quote={props.fourQuoteContent}
+          left={props.fourQuoteLeft}
+          image={props.fourQuoteImage}
+          picture={props.fourQuotePicture}
+          content={renderAst(props.four)}
+        />
       </CenterContent>
-      <CenterContent className="topPaddingLarge bottomPaddingSmall">
-        <h2>{props.fiveTitle}</h2>
-        <h2>{props.fiveQuoteName}</h2>
-        <h2>{props.fiveQuoteTitle}</h2>
-        <h2>{props.fiveQuoteCompany}</h2>
-        <h2>{props.fiveQuoteContent}</h2>
-        <h2>{props.fiveQuoteLeft.toString()}</h2>
-        {/* <h2>{props.fiveQuoteImage}</h2> */}
-        {renderAst(props.five)}
+      <CenterContent className="topPaddingLarge bottomPaddingSmall" background="#FFFFFF">
+        <SideQuote
+          title={props.fiveTitle}
+          name={props.fiveQuoteName}
+          qtitle={props.fiveQuoteTitle}
+          company={props.fiveQuoteCompany}
+          quote={props.fiveQuoteContent}
+          left={props.fiveQuoteLeft}
+          image={props.fiveQuoteImage}
+          content={renderAst(props.five)}
+        />
       </CenterContent>
       <CenterContent className="topPaddingLarge bottomPaddingSmall" background="#F5F5F5">
         <Quotes quotes={props.sixQuotes} />
@@ -76,15 +83,17 @@ export default (props) => {
       <CenterContent className="topPaddingLarge bottomPaddingSmall" background="#FFFFFF">
         <LargeQuote name={props.sevenQuoteName} title={props.sevenQuoteTitle} company={props.sevenQuoteCompany} image={props.sevenQuoteImage} quote={renderAst(props.seven)}/>
       </CenterContent>
-      <CenterContent className="topPaddingLarge bottomPaddingSmall">
-        <h2>{props.eightTitle}</h2>
-        <h2>{props.eightQuoteName}</h2>
-        <h2>{props.eightQuoteTitle}</h2>
-        <h2>{props.eightQuoteCompany}</h2>
-        <h2>{props.eightQuoteContent}</h2>
-        <h2>{props.eightQuoteLeft.toString()}</h2>
-        {/* <h2>{props.eightQuoteImage}</h2> */}
-        {renderAst(props.eight)}
+      <CenterContent className="topPaddingLarge bottomPaddingSmall" background="#F0F0F0">
+      < SideQuote
+          title={props.eightTitle}
+          name={props.eightQuoteName}
+          qtitle={props.eightQuoteTitle}
+          company={props.eightQuoteCompany}
+          quote={props.eightQuoteContent}
+          left={props.eightQuoteLeft}
+          image={props.eightQuoteImage}
+          content={renderAst(props.eight)}
+        />
       </CenterContent>
       <CenterContent className="topPaddingLarge bottomPaddingSmall" background="#FFFFFF">
         <h2>What can we do for you?</h2>
