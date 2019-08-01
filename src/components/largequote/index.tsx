@@ -13,7 +13,7 @@ import React from 'react';
 import './largequote.css';
 
 /**
- * Props for the testimonial component
+ * Props for the large quote component
  *
  * data
  */
@@ -27,7 +27,7 @@ interface Props {
 
 /**
  *
- * Using SFC (Stateless Functional Component) because a blog post link doesn't need to maintain any state of its own.
+ * Using SFC (Stateless Functional Component) because a large quote component doesn't need to maintain any state of its own.
  *
  * @param data
  */

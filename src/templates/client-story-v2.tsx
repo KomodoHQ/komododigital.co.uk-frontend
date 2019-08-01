@@ -2,6 +2,7 @@ import React from 'react';
 import rehypeReact from 'rehype-react';
 import Layout from '../components/layout';
 import LargeQuote from '../components/largequote';
+import Quotes from '../components/quotes';
 import Metric from '../components/metric';
 import Testimonial from '../components/testimonial';
 import SeeMoreButton from '../components/seemorebutton';
@@ -69,18 +70,9 @@ export default (props) => {
         {/* <h2>{props.fiveQuoteImage}</h2> */}
         {renderAst(props.five)}
       </CenterContent>
-      {props.sixQuotes &&
-          props.sixQuotes.map((quote, i) => {
-            return (
-              <CenterContent className="topPaddingLarge bottomPaddingSmall" key={i}>
-                <h2>{quote.name}</h2>
-                <h2>{quote.title}</h2>
-                <h2>{quote.company}</h2>
-                <h2>{quote.content}</h2>
-                {/* <h2>{quote.image}</h2> */}
-              </CenterContent>
-            );
-          })}
+      <CenterContent className="topPaddingLarge bottomPaddingSmall" background="#F5F5F5">
+        <Quotes quotes={props.sixQuotes} />
+      </CenterContent>
       <CenterContent className="topPaddingLarge bottomPaddingSmall" background="#FFFFFF">
         <LargeQuote name={props.sevenQuoteName} title={props.sevenQuoteTitle} company={props.sevenQuoteCompany} image={props.sevenQuoteImage} quote={renderAst(props.seven)}/>
       </CenterContent>
