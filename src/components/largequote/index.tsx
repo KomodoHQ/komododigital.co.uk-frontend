@@ -22,7 +22,7 @@ interface Props {
   title: string;
   company: string;
   image: any;
-  quote: any;
+  quote: string;
 }
 
 /**
