@@ -34,7 +34,7 @@ const getV1HocProps = (caseStudy, rootNode, metrics, testimonial, process, caseS
   ...props
 });
 
-const getV2HocProps = (caseStudy, rootNode, simpleNodes, two, four, five, six, seven, eight, props) => {
+const getV2HocProps = (caseStudy, rootNode, simpleNodes, quotesNodes, largeQuoteNodes, quoteVideoBannerNodes, two, four, eight, props) => {
   const hocProps = {
     caseStudy,
     intro: rootNode ? rootNode.htmlAst : '',
@@ -65,21 +65,21 @@ const getV2HocProps = (caseStudy, rootNode, simpleNodes, two, four, five, six, s
     fourQuoteLeft: four ? four.frontmatter.quoteleft : '',
     fourQuotePicture: four ? four.frontmatter.quotepicture : '',
     fourQuoteImage: four ? four.frontmatter.quoteimage : '',
-    five: five ? five.htmlAst : '',
-    fiveTitle: five ? five.frontmatter.title : '',
-    fiveQuoteName: five ? five.frontmatter.quotename : '',
-    fiveQuoteTitle: five ? five.frontmatter.quotetitle : '',
-    fiveQuoteCompany: five ? five.frontmatter.quotecompany : '',
-    fiveQuoteContent: five ? five.frontmatter.quotecontent : '',
-    fiveQuoteLeft: five ? five.frontmatter.quoteleft : '',
-    fiveQuoteImage: five ? five.frontmatter.quoteimage : '',
-    fiveVideo: five ? five.frontmatter.video : '',
-    sixQuotes: six ? six.frontmatter.quotes : '',
-    seven: seven ? seven.htmlAst : '',
-    sevenQuoteName: seven ? seven.frontmatter.quotename : '',
-    sevenQuoteTitle: seven ? seven.frontmatter.quotetitle : '',
-    sevenQuoteCompany: seven ? seven.frontmatter.quotecompany : '',
-    sevenQuoteImage: seven ? seven.frontmatter.quoteimage : '',
+    five: quoteVideoBannerNodes[0] ? quoteVideoBannerNodes[0].htmlAst : '',
+    fiveTitle: quoteVideoBannerNodes[0] ? quoteVideoBannerNodes[0].frontmatter.title : '',
+    fiveQuoteName: quoteVideoBannerNodes[0] ? quoteVideoBannerNodes[0].frontmatter.quotename : '',
+    fiveQuoteTitle: quoteVideoBannerNodes[0] ? quoteVideoBannerNodes[0].frontmatter.quotetitle : '',
+    fiveQuoteCompany: quoteVideoBannerNodes[0] ? quoteVideoBannerNodes[0].frontmatter.quotecompany : '',
+    fiveQuoteContent: quoteVideoBannerNodes[0] ? quoteVideoBannerNodes[0].frontmatter.quotecontent : '',
+    fiveQuoteLeft: quoteVideoBannerNodes[0] ? quoteVideoBannerNodes[0].frontmatter.quoteleft : '',
+    fiveQuoteImage: quoteVideoBannerNodes[0] ? quoteVideoBannerNodes[0].frontmatter.quoteimage : '',
+    fiveVideo: quoteVideoBannerNodes[0] ? quoteVideoBannerNodes[0].frontmatter.video : '',
+    sixQuotes: quotesNodes[0] ? quotesNodes[0].frontmatter.quotes : '',
+    seven: largeQuoteNodes[0] ? largeQuoteNodes[0].htmlAst : '',
+    sevenQuoteName: largeQuoteNodes[0] ? largeQuoteNodes[0].frontmatter.quotename : '',
+    sevenQuoteTitle: largeQuoteNodes[0] ? largeQuoteNodes[0].frontmatter.quotetitle : '',
+    sevenQuoteCompany: largeQuoteNodes[0] ? largeQuoteNodes[0].frontmatter.quotecompany : '',
+    sevenQuoteImage: largeQuoteNodes[0] ? largeQuoteNodes[0].frontmatter.quoteimage : '',
     eight: eight ? eight.htmlAst : '',
     eightTitle: eight ? eight.frontmatter.title : '',
     eightQuoteName: eight ? eight.frontmatter.quotename : '',
@@ -124,7 +124,7 @@ export default (props) => {
   const caseStudy = caseStudies.sort(() => .5 - Math.random())[0];
 
   return (rootNode && rootNode.frontmatter && rootNode.frontmatter.v2) ?
-    <CaseStudyV2 {...getV2HocProps(caseStudy, rootNode, simpleNodes, sideQuoteNodes[0], sideQuoteNodes[1], quoteVideoBannerNodes[0], quotesNodes[0], largeQuoteNodes[0], sideQuoteNodes[2], props)} /> :
+    <CaseStudyV2 {...getV2HocProps(caseStudy, rootNode, simpleNodes, quotesNodes, largeQuoteNodes, quoteVideoBannerNodes, sideQuoteNodes[0], sideQuoteNodes[1], sideQuoteNodes[2], props)} /> :
     <CaseStudy {...getV1HocProps(caseStudy, rootNode, metrics, testimonial, process, caseStudiesIntro, contactsIntro, props)} />;
 };
 
