@@ -34,13 +34,13 @@ interface Props {
  */
 const Quoter: React.SFC<Props> = ({ image, name, title, company, large = false }) => {
   return (
-    <div>
+    <div className={`quoter ${large ? 'quoter-large': ''}`}>
       <Img fluid={image.childImageSharp.fluid} />
-      <h2>{name}</h2>
-      <h2>{title}</h2>
-      <h2>{company}</h2>
+      <p className="quoter-name">{name}</p>
+      <p className="quoter-title">{title}</p>
+      <p className="quoter-company">{company}</p>
     </div>
   );
 };
   
-  export default Quoter;
+export default Quoter;

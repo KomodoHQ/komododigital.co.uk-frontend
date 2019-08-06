@@ -29,12 +29,7 @@ interface Props {
  * @param data
  */
 const QuoteText: React.SFC<Props> = ({ content, bold = false }) => {
-
-    return (
-      <div>
-        <h2>{content}</h2>
-      </div>
-    );
-  };
+  return <p className={`quotetext ${bold ? 'quotetext-bold': ''}`}>{content}</p>
+};
   
-  export default QuoteText;
+export default QuoteText;

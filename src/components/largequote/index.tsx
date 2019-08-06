@@ -34,13 +34,12 @@ interface Props {
  * @param data
  */
 const LargeQuote: React.SFC<Props> = ({ name, title, company, image, quote }) => {
+  return (
+    <div className="largequote">
+      <QuoteText content={quote} bold={true} />
+      <Quoter image={image} name={name} title={title} company={company} />
+    </div>
+  );
+};
 
-    return (
-      <div className="largequote">
-        <QuoteText content={quote} bold={true} />
-        <Quoter image={image} name={name} title={title} company={company} />
-      </div>
-    );
-  };
-  
-  export default LargeQuote;
+export default LargeQuote;

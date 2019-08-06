@@ -31,19 +31,19 @@ interface Props {
  */
 const Quotes: React.SFC<Props> = ({ quotes }) => {
 
-    return (
-      <div className="quotes">
-        {quotes &&
-          quotes.map((quote, i) => {
-            return (
-              <div key={i}>
-                <Quoter image={quote.image} name={quote.name} title={quote.title} company={quote.company} large={true} />
-                <QuoteText content={quote.content} />
-              </div>
-            );
-          })}
-      </div>
-    );
-  };
-  
-  export default Quotes;
+  return (
+    <div className="quotes">
+      {quotes &&
+        quotes.map((quote, i) => {
+          return (
+            <div key={i}>
+              <Quoter image={quote.image} name={quote.name} title={quote.title} company={quote.company} large={true} />
+              <QuoteText content={quote.content} />
+            </div>
+          );
+        })}
+    </div>
+  );
+};
+
+export default Quotes;
