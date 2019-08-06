@@ -18,7 +18,7 @@ import './quotetext.css';
  * data
  */
 interface Props {
-  quotetext: string;
+  content: string;
   bold?: boolean;
 }
 
@@ -28,11 +28,11 @@ interface Props {
  *
  * @param data
  */
-const QuoteText: React.SFC<Props> = ({ quotetext, bold = false }) => {
+const QuoteText: React.SFC<Props> = ({ content, bold = false }) => {
 
     return (
       <div>
-        <h2>{quotetext}</h2>
+        <h2>{content}</h2>
       </div>
     );
   };

@@ -1,0 +1,9 @@
+.quotes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.quotes > div {
+    flex-basis: 100%;
+}

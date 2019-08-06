@@ -21,7 +21,7 @@ interface Props {
   image: any;
   name: string;
   title: string;
-  company; string;
+  company: string;
   large?: boolean;
 }
 

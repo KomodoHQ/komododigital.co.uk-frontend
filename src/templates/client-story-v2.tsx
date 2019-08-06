@@ -18,7 +18,6 @@ const renderAst = new rehypeReact({
 }).Compiler;
 
 export default (props) => {
-    console.log(props);
   return (
     <Layout data={props.data} pageMeta={props.pageMeta} background={props.navBackground}>
       <TitleText
