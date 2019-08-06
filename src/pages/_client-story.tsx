@@ -128,6 +128,8 @@ export default (props) => {
     <CaseStudy {...getV1HocProps(caseStudy, rootNode, metrics, testimonial, process, caseStudiesIntro, contactsIntro, props)} />;
 };
 
+
+// TODO: String interpolation is not allowed in graphql, but there needs to be a better way to achieve this.
 export const caseStudyQuery = graphql`
   query caseStudyQuery {
     ...siteMeta
@@ -237,6 +239,32 @@ export const caseStudyQuery = graphql`
         }
       }
     }
+    simple2: allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/client-stories/.*/simple2/" } }
+    ) {
+      edges {
+        node {
+          htmlAst
+          frontmatter {
+            title
+          }
+          fileAbsolutePath
+        }
+      }
+    }
+    simple3: allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/client-stories/.*/simple3/" } }
+    ) {
+      edges {
+        node {
+          htmlAst
+          frontmatter {
+            title
+          }
+          fileAbsolutePath
+        }
+      }
+    }
     sidequote1: allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "/client-stories/.*/sidequote1/" } }
     ) {
@@ -262,19 +290,6 @@ export const caseStudyQuery = graphql`
         }
       }
     }
-    simple2: allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/client-stories/.*/simple2/" } }
-    ) {
-      edges {
-        node {
-          htmlAst
-          frontmatter {
-            title
-          }
-          fileAbsolutePath
-        }
-      }
-    }
     sidequote2: allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "/client-stories/.*/sidequote2/" } }
     ) {
@@ -288,17 +303,61 @@ export const caseStudyQuery = graphql`
             quotecompany
             quotecontent
             quoteleft
-            quotepicture {
+            quoteimage {
               childImageSharp {
                 fluid(maxWidth: 450) {
                   ...GatsbyImageSharpFluid_withWebp_noBase64
                 }
               }
             }
+          }
+          fileAbsolutePath
+        }
+      }
+    }
+    sidequote3: allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/client-stories/.*/sidequote3/" } }
+    ) {
+      edges {
+        node {
+          htmlAst
+          frontmatter {
+            title
+            quotename
+            quotetitle
+            quotecompany
+            quotecontent
+            quoteleft
             quoteimage {
               childImageSharp {
                 fluid(maxWidth: 450) {
                   ...GatsbyImageSharpFluid_withWebp_noBase64
+                }
+              }
+            }
+          }
+          fileAbsolutePath
+        }
+      }
+    }
+    quotes1: allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/client-stories/.*/quotes1/" } }
+    ) {
+      edges {
+        node {
+          htmlAst
+          frontmatter {
+            title
+            quotes {
+              name
+              title
+              company
+              content
+              image {
+                childImageSharp {
+                  fluid(maxWidth: 450) {
+                    ...GatsbyImageSharpFluid_withWebp_noBase64
+                  }
                 }
               }
             }
@@ -339,32 +398,6 @@ export const caseStudyQuery = graphql`
         }
       }
     }
-    quotes1: allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/client-stories/.*/quotes1/" } }
-    ) {
-      edges {
-        node {
-          htmlAst
-          frontmatter {
-            title
-            quotes {
-              name
-              title
-              company
-              content
-              image {
-                childImageSharp {
-                  fluid(maxWidth: 450) {
-                    ...GatsbyImageSharpFluid_withWebp_noBase64
-                  }
-                }
-              }
-            }
-          }
-          fileAbsolutePath
-        }
-      }
-    }
     largequote1: allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "/client-stories/.*/largequote1/" } }
     ) {
@@ -376,31 +409,6 @@ export const caseStudyQuery = graphql`
             quotename
             quotetitle
             quotecompany
-            quoteimage {
-              childImageSharp {
-                fluid(maxWidth: 450) {
-                  ...GatsbyImageSharpFluid_withWebp_noBase64
-                }
-              }
-            }
-          }
-          fileAbsolutePath
-        }
-      }
-    }
-    sidequote3: allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/client-stories/.*/sidequote3/" } }
-    ) {
-      edges {
-        node {
-          htmlAst
-          frontmatter {
-            title
-            quotename
-            quotetitle
-            quotecompany
-            quotecontent
-            quoteleft
             quoteimage {
               childImageSharp {
                 fluid(maxWidth: 450) {
