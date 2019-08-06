@@ -84,7 +84,7 @@ export default (props) => {
         <LargeQuote name={props.sevenQuoteName} title={props.sevenQuoteTitle} company={props.sevenQuoteCompany} image={props.sevenQuoteImage} quote={renderAst(props.seven)}/>
       </CenterContent>
       <CenterContent className="topPaddingLarge bottomPaddingSmall" background="#F0F0F0">
-      < SideQuote
+      <SideQuote
           title={props.eightTitle}
           name={props.eightQuoteName}
           qtitle={props.eightQuoteTitle}
