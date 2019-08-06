@@ -34,7 +34,58 @@ const getV1HocProps = (caseStudy, rootNode, metrics, testimonial, process, caseS
   ...props
 });
 
-const getV2HocProps = (caseStudy, rootNode, simpleNodes, sideQuoteNodes, quotesNodes, largeQuoteNodes, quoteVideoBannerNodes, props) => {
+const getV2HocProps = (caseStudy, rootNode, order, simpleNodes, sideQuoteNodes, quotesNodes, largeQuoteNodes, quoteVideoBannerNodes, props) => {
+  const simpleComponentsProperties = simpleNodes.map(simpleNode => {
+    return {
+      htmlContent: simpleNode ? simpleNode.htmlAst : '',
+      title: simpleNode ? simpleNode.frontmatter.title : '',
+    }
+  });
+  const sideQuoteComponentsProperties = sideQuoteNodes.map(sideQuoteNode => {
+    return {
+      htmlContent: sideQuoteNode ? sideQuoteNode.htmlAst : '',
+      title: sideQuoteNode ? sideQuoteNode.frontmatter.title : '',
+      picture: sideQuoteNode ? sideQuoteNode.frontmatter.quotepicture : '',
+      quote : {
+        name: sideQuoteNode ? sideQuoteNode.frontmatter.quotename : '',
+        title: sideQuoteNode ? sideQuoteNode.frontmatter.quotetitle : '',
+        company: sideQuoteNode ? sideQuoteNode.frontmatter.quotecompany : '',
+        content: sideQuoteNode ? sideQuoteNode.frontmatter.quotecontent : '',
+        left: sideQuoteNode ? sideQuoteNode.frontmatter.quoteleft : false,
+        image: sideQuoteNode ? sideQuoteNode.frontmatter.quoteimage : ''
+      }
+    }
+  });
+  const quotesComponentsProperties = quotesNodes.map(quotesNode => {
+    return {
+      quotes: quotesNode ? quotesNode.frontmatter.quotes : []
+    }
+  });
+  const largeQuoteComponentsProperties = largeQuoteNodes.map(largeQuoteNode => {
+    return {
+      content: largeQuoteNode ? largeQuoteNode.htmlAst : '',
+      name: largeQuoteNode ? largeQuoteNode.frontmatter.quotename : '',
+      title: largeQuoteNode ? largeQuoteNode.frontmatter.quotetitle : '',
+      company: largeQuoteNode ? largeQuoteNode.frontmatter.quotecompany : '',
+      image: largeQuoteNode ? largeQuoteNode.frontmatter.quoteimage : '',
+    }
+  });
+  const quoteVideoBannerComponentsProperties = quoteVideoBannerNodes.map(quoteVideoBannerNode => {
+    return {
+      htmlContent: quoteVideoBannerNode ? quoteVideoBannerNode.htmlAst : '',
+      title: quoteVideoBannerNode ? quoteVideoBannerNode.frontmatter.title : '',
+      quote: {
+        name: quoteVideoBannerNode ? quoteVideoBannerNode.frontmatter.quotename : '',
+        title: quoteVideoBannerNode ? quoteVideoBannerNode.frontmatter.quotetitle : '',
+        company: quoteVideoBannerNode ? quoteVideoBannerNode.frontmatter.quotecompany : '',
+        content: quoteVideoBannerNode ? quoteVideoBannerNode.frontmatter.quotecontent : '',
+        left: quoteVideoBannerNode ? quoteVideoBannerNode.frontmatter.quoteleft : '',
+        image: quoteVideoBannerNode ? quoteVideoBannerNode.frontmatter.quoteimage : ''
+      },
+      video: quoteVideoBannerNode ? quoteVideoBannerNode.frontmatter.video : ''
+    }
+  });
+  
   const hocProps = {
     caseStudy,
     intro: rootNode ? rootNode.htmlAst : '',
@@ -44,6 +95,12 @@ const getV2HocProps = (caseStudy, rootNode, simpleNodes, sideQuoteNodes, quotesN
     navBackground: rootNode ? rootNode.frontmatter.navBackground : '',
     background: rootNode ? rootNode.background : '',
     invert: rootNode ? rootNode.invert : false,
+    order: order ? order.frontmatter.components: [],
+    simpleComponentsProperties,
+    sideQuoteComponentsProperties,
+    quotesComponentsProperties,
+    largeQuoteComponentsProperties,
+    quoteVideoBannerComponentsProperties,
     one: simpleNodes[0] ? simpleNodes[0].htmlAst : '',
     oneTitle: simpleNodes[0] ? simpleNodes[0].frontmatter.title : '',
     two: sideQuoteNodes[0] ? sideQuoteNodes[0].htmlAst : '',
@@ -103,6 +160,7 @@ export default (props) => {
   const process = findNodeRaw(`${props.pageContext.slug}/process`, props.data.process);
   const contactsIntro = findNode('client-stories/contact_us', props);
 
+  const order = findNodeRaw(`${props.pageContext.slug}/order`, props.data.order);
   const simpleNodes = Array.from(Array(2).keys())
     .map(i => findNodeRaw(`${props.pageContext.slug}/simple${i + 1}`, props.data[`simple${i + 1}`]));
   const sideQuoteNodes = Array.from(Array(3).keys())
@@ -124,7 +182,7 @@ export default (props) => {
   const caseStudy = caseStudies.sort(() => .5 - Math.random())[0];
 
   return (rootNode && rootNode.frontmatter && rootNode.frontmatter.v2) ?
-    <CaseStudyV2 {...getV2HocProps(caseStudy, rootNode, simpleNodes, sideQuoteNodes, quotesNodes, largeQuoteNodes, quoteVideoBannerNodes, props)} /> :
+    <CaseStudyV2 {...getV2HocProps(caseStudy, rootNode, order, simpleNodes, sideQuoteNodes, quotesNodes, largeQuoteNodes, quoteVideoBannerNodes, props)} /> :
     <CaseStudy {...getV1HocProps(caseStudy, rootNode, metrics, testimonial, process, caseStudiesIntro, contactsIntro, props)} />;
 };
 
@@ -221,6 +279,21 @@ export const caseStudyQuery = graphql`
           htmlAst
           frontmatter {
             title
+          }
+          fileAbsolutePath
+        }
+      }
+    }
+    order: allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/client-stories/.*/order/" } }
+    ) {
+      edges {
+        node {
+          htmlAst
+          frontmatter {
+            components {
+              name
+            }
           }
           fileAbsolutePath
         }

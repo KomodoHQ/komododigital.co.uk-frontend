@@ -1,0 +1,11 @@
+---
+components:
+  - name: 'simple'
+  - name: 'sidequote'
+  - name: 'simple'
+  - name: 'sidequote'
+  - name: 'quotevideobanner'
+  - name: 'quotes'
+  - name: 'largequote'
+  - name: 'sidequote'
+---
