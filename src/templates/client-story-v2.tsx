@@ -14,8 +14,29 @@ const renderAst = new rehypeReact({
 }).Compiler;
 
 export default (props) => {
-  const SimpleComponents = [<div>Simple</div>]
-  const SideQuoteComponents = [<div>SideQuote</div>]
+  const SimpleComponents = props.simpleComponentsProperties.map(simpleComponent => {
+    return (
+      <>
+        <h2>{simpleComponent.title}</h2>
+        {renderAst(simpleComponent.htmlContent)}
+      </>
+    );
+  });
+  const SideQuoteComponents = props.sideQuoteComponentsProperties.map(sideQuoteComponent => {
+    return (
+      <SideQuote
+        title={sideQuoteComponent.title}
+        name={sideQuoteComponent.quote.name}
+        qtitle={sideQuoteComponent.quote.title}
+        company={sideQuoteComponent.quote.company}
+        quote={sideQuoteComponent.quote.content}
+        left={sideQuoteComponent.quote.left}
+        image={sideQuoteComponent.quote.image}
+        picture={sideQuoteComponent.picture}
+        content={renderAst(sideQuoteComponent.htmlContent)}
+      />
+    );
+  })
   const QuotesComponents = [<div>Quotes</div>]
   const LargeQuotesComponents = [<div>LargeQuotes</div>]
   const QuoteVideoBannerComponents = [<div>QuoteVideoBanner</div>]
