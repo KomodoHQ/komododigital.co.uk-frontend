@@ -18,7 +18,11 @@ import './quoter.css';
  * data
  */
 interface Props {
-  quotes: any;
+  image: any;
+  name: string;
+  title: string;
+  company; string;
+  large?: boolean;
 }
 
 /**
@@ -27,11 +31,13 @@ interface Props {
  *
  * @param data
  */
-const Quoter: React.SFC<Props> = ({ quotes }) => {
+const Quoter: React.SFC<Props> = ({ image, name, title, company, large = false }) => {
 
     return (
       <div>
-        Quoter
+        <h2>{name}</h2>
+        <h2>{title}</h2>
+        <h2>{company}</h2>
       </div>
     );
   };
