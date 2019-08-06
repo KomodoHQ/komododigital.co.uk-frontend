@@ -73,6 +73,7 @@ const getV2HocProps = (caseStudy, rootNode, one, two, three, four, five, six, se
     fiveQuoteContent: five ? five.frontmatter.quotecontent : '',
     fiveQuoteLeft: five ? five.frontmatter.quoteleft : '',
     fiveQuoteImage: five ? five.frontmatter.quoteimage : '',
+    fiveVideo: five ? five.frontmatter.video : '',
     sixQuotes: six ? six.frontmatter.quotes : '',
     seven: seven ? seven.htmlAst : '',
     sevenQuoteName: seven ? seven.frontmatter.quotename : '',
@@ -318,6 +319,13 @@ export const caseStudyQuery = graphql`
             quotecontent
             quoteleft
             quoteimage {
+              childImageSharp {
+                fluid(maxWidth: 450) {
+                  ...GatsbyImageSharpFluid_withWebp_noBase64
+                }
+              }
+            }
+            video {
               childImageSharp {
                 fluid(maxWidth: 450) {
                   ...GatsbyImageSharpFluid_withWebp_noBase64

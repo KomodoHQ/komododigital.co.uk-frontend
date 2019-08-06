@@ -1,0 +1,9 @@
+.quotevideobanner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.quotevideobanner > div {
+    flex-basis: 100%;
+}

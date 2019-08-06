@@ -4,20 +4,17 @@ import Layout from '../components/layout';
 import LargeQuote from '../components/largequote';
 import SideQuote from '../components/sidequote';
 import Quotes from '../components/quotes';
-import Metric from '../components/metric';
-import Testimonial from '../components/testimonial';
+import QuoteVideoBanner from '../components/quotevideobanner';
 import SeeMoreButton from '../components/seemorebutton';
 import CenterContent from '../components/centercontent';
 import TitleText from '../components/titletext';
-import ContactSection from '../components/contactsection';
-import CaseStudy from '../components/casestudy';
-import VCard from '../components/vcard';
 
 const renderAst = new rehypeReact({
   createElement: React.createElement,
 }).Compiler;
 
 export default (props) => {
+  console.log(props.fiveVideo);
   return (
     <Layout data={props.data} pageMeta={props.pageMeta} background={props.navBackground}>
       <TitleText
@@ -65,16 +62,17 @@ export default (props) => {
         />
       </CenterContent>
       <CenterContent className="topPaddingLarge bottomPaddingSmall" background="#FFFFFF">
-        <SideQuote
-          title={props.fiveTitle}
+      <h2>{props.fiveTitle}</h2>
+        <QuoteVideoBanner
           name={props.fiveQuoteName}
-          qtitle={props.fiveQuoteTitle}
+          title={props.fiveQuoteTitle}
           company={props.fiveQuoteCompany}
           quote={props.fiveQuoteContent}
           left={props.fiveQuoteLeft}
           image={props.fiveQuoteImage}
-          content={renderAst(props.five)}
+          video={props.fiveVideo}
         />
+        {renderAst(props.five)}
       </CenterContent>
       <CenterContent className="topPaddingLarge bottomPaddingSmall" background="#F5F5F5">
         <Quotes quotes={props.sixQuotes} />
