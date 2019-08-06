@@ -293,6 +293,7 @@ export const caseStudyQuery = graphql`
           frontmatter {
             components {
               name
+              background
             }
           }
           fileAbsolutePath

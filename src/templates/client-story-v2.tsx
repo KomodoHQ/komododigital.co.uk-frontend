@@ -21,25 +21,6 @@ export default (props) => {
   const QuoteVideoBannerComponents = [<div>QuoteVideoBanner</div>]
   console.log(props)
 
-  const OrderedComponents = props.order.reduce((acc, componentType) => {
-    const component = (componentType => {
-      switch(componentType.name) {
-        case 'simple':
-          return SimpleComponents[0];
-        case 'sidequote':
-          return SideQuoteComponents[0];
-        case 'quotes':
-          return QuotesComponents[0];
-        case 'largequote':
-          return LargeQuotesComponents[0];
-        case 'quotevideobanner':
-          return QuoteVideoBannerComponents[0];
-        default:
-          return null;
-      }
-    })(componentType);
-    return acc.concat(component);
-  }, []);
   return (
     <Layout data={props.data} pageMeta={props.pageMeta} background={props.navBackground}>
       <TitleText
@@ -54,7 +35,45 @@ export default (props) => {
         {renderAst(props.intro)}
       </TitleText>
       
-      {OrderedComponents}
+      {props.order.reduce((acc, componentType) => {
+        const component = (componentType => {
+          switch(componentType.name) {
+            case 'simple':
+              return (
+                <CenterContent className="topPaddingLarge bottomPaddingSmall" background={componentType.background}>
+                  {SimpleComponents[0]}
+                </CenterContent>
+              )
+            case 'sidequote':
+              return (
+                <CenterContent className="topPaddingLarge bottomPaddingSmall" background={componentType.background}>
+                  {SideQuoteComponents[0]}
+                </CenterContent>
+              )
+            case 'quotes':
+              return (
+                <CenterContent className="topPaddingLarge bottomPaddingSmall" background={componentType.background}>
+                  {QuotesComponents[0]}
+                </CenterContent>
+              )
+            case 'largequote':
+              return (
+                <CenterContent className="topPaddingLarge bottomPaddingSmall" background={componentType.background}>
+                  {LargeQuotesComponents[0]}
+                </CenterContent>
+              )
+            case 'quotevideobanner':
+              return (
+                <CenterContent className="topPaddingLarge bottomPaddingSmall" background={componentType.background}>
+                  {QuoteVideoBannerComponents[0]}
+                </CenterContent>
+              )
+            default:
+              return null;
+          }
+        })(componentType);
+        return acc.concat(component);
+      }, [])}
       <CenterContent className="topPaddingLarge bottomPaddingSmall" background="#FFFFFF">
         <h2>{props.oneTitle}</h2>
         {renderAst(props.one)}
