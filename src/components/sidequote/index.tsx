@@ -6,6 +6,7 @@
  * NPM Dependencies
  */
 import React from 'react';
+import Img from 'gatsby-image';
 import Quoter from '../quoter';
 import QuoteText from '../quotetext';
 
@@ -40,7 +41,7 @@ interface Props {
 const SideQuote: React.SFC<Props> = ({ title, name, qtitle, company, left, image, quote, picture, content }) => {
 
     const QuoteDiv = <div>
-      { picture && "Picture"}
+      { picture && <Img fluid={picture.childImageSharp.fluid} />}
       <QuoteText content={quote} bold={true} />
       <Quoter image={image} name={name} title={qtitle} company={company} />
     </div>
