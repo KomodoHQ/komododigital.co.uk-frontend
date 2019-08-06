@@ -103,14 +103,16 @@ export default (props) => {
   const process = findNodeRaw(`${props.pageContext.slug}/process`, props.data.process);
   const contactsIntro = findNode('client-stories/contact_us', props);
 
-  const one = findNodeRaw(`${props.pageContext.slug}/simple1`, props.data.simple1);
-  const two = findNodeRaw(`${props.pageContext.slug}/sidequote1`, props.data.sidequote1);
-  const three = findNodeRaw(`${props.pageContext.slug}/simple2`, props.data.simple2);
-  const four = findNodeRaw(`${props.pageContext.slug}/sidequote2`, props.data.sidequote2);
-  const five = findNodeRaw(`${props.pageContext.slug}/quotevideobanner1`, props.data.quotevideobanner1);
-  const six = findNodeRaw(`${props.pageContext.slug}/quotes1`, props.data.quotes1);
-  const seven = findNodeRaw(`${props.pageContext.slug}/largequote1`, props.data.largequote1);
-  const eight = findNodeRaw(`${props.pageContext.slug}/sidequote3`, props.data.sidequote3);
+  const simpleNodes = Array.from(Array(2).keys())
+    .map(i => findNodeRaw(`${props.pageContext.slug}/simple${i + 1}`, props.data[`simple${i + 1}`]));
+  const sideQuoteNodes = Array.from(Array(3).keys())
+    .map(i => findNodeRaw(`${props.pageContext.slug}/sidequote${i + 1}`, props.data[`sidequote${i + 1}`]));
+  const quotesNodes = Array.from(Array(1).keys())
+    .map(i => findNodeRaw(`${props.pageContext.slug}/quotes${i + 1}`, props.data[`quotes${i + 1}`]));
+  const largeQuoteNodes = Array.from(Array(1).keys())
+    .map(i => findNodeRaw(`${props.pageContext.slug}/largequote${i + 1}`, props.data[`largequote${i + 1}`]));
+  const quoteVideoBannerNodes = Array.from(Array(1).keys())
+    .map(i => findNodeRaw(`${props.pageContext.slug}/quotevideobanner${i + 1}`, props.data[`quotevideobanner${i + 1}`]));
 
   if (rootNode) {
     // Show other case studies, but filter this one
@@ -122,7 +124,7 @@ export default (props) => {
   const caseStudy = caseStudies.sort(() => .5 - Math.random())[0];
 
   return (rootNode && rootNode.frontmatter && rootNode.frontmatter.v2) ?
-    <CaseStudyV2 {...getV2HocProps(caseStudy, rootNode, one, two, three, four, five, six, seven, eight, props)} /> :
+    <CaseStudyV2 {...getV2HocProps(caseStudy, rootNode, simpleNodes[0], sideQuoteNodes[0], simpleNodes[1], sideQuoteNodes[1], quoteVideoBannerNodes[0], quotesNodes[0], largeQuoteNodes[0], sideQuoteNodes[2], props)} /> :
     <CaseStudy {...getV1HocProps(caseStudy, rootNode, metrics, testimonial, process, caseStudiesIntro, contactsIntro, props)} />;
 };
 
