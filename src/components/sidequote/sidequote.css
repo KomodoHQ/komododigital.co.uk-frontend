@@ -1,0 +1,9 @@
+.sidequote {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.sidequote > div {
+    flex-basis: 100%;
+}

@@ -37,7 +37,7 @@ const Quotes: React.SFC<Props> = ({ quotes }) => {
           quotes.map((quote, i) => {
             return (
               <div key={i}>
-                <Quoter image={quote.image} name={quote.name} title={quote.title} company={quote.company} />
+                <Quoter image={quote.image} name={quote.name} title={quote.title} company={quote.company} large={true} />
                 <QuoteText content={quote.content} />
               </div>
             );

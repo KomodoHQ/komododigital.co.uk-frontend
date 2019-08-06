@@ -6,6 +6,8 @@
  * NPM Dependencies
  */
 import React from 'react';
+import Quoter from '../quoter';
+import QuoteText from '../quotetext';
 
 /**
  * Local dependencies
@@ -37,17 +39,21 @@ interface Props {
  */
 const SideQuote: React.SFC<Props> = ({ title, name, qtitle, company, left, image, quote, picture, content }) => {
 
+    const QuoteDiv = <div>
+      { picture && "Picture"}
+      <QuoteText content={quote} bold={true} />
+      <Quoter image={image} name={name} title={qtitle} company={company} />
+    </div>
+
+    const ContentDiv = <div>
+      <h2>{title}</h2>
+      {content}
+    </div>
+
     return (
-      <div>
-        <h2>{title}</h2>
-        <h2>{name}</h2>
-        <h2>{qtitle}</h2>
-        <h2>{company}</h2>
-        <h2>{left.toString()}</h2>
-        {/* <h2>{image}</h2> */}
-        {quote}
-        {/* <h2>{picture}</h2> */}
-        {content}
+      <div className="sidequote">
+        {QuoteDiv}
+        {ContentDiv}
       </div>
     );
   };
