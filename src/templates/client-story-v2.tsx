@@ -36,10 +36,36 @@ export default (props) => {
         content={renderAst(sideQuoteComponent.htmlContent)}
       />
     );
-  })
-  const QuotesComponents = [<div>Quotes</div>]
-  const LargeQuotesComponents = [<div>LargeQuotes</div>]
-  const QuoteVideoBannerComponents = [<div>QuoteVideoBanner</div>]
+  });
+  const QuotesComponents = props.quotesComponentsProperties.map(quotesComponent => {
+    return <Quotes quotes={quotesComponent.quotes} />
+  });
+  const LargeQuotesComponents = props.largeQuoteComponentsProperties.map(largeQuoteComponent => {
+    return <LargeQuote
+      name={largeQuoteComponent.name}
+      title={largeQuoteComponent.title}
+      company={largeQuoteComponent.company}
+      image={largeQuoteComponent.image}
+      quote={renderAst(largeQuoteComponent.content)}
+    />
+  });
+  const QuoteVideoBannerComponents = props.quoteVideoBannerComponentsProperties.map(quoteVideoBannerComponent => {
+    return (
+      <>
+        <h2>{quoteVideoBannerComponent.title}</h2>
+        <QuoteVideoBanner
+          name={quoteVideoBannerComponent.quote.name}
+          title={quoteVideoBannerComponent.quote.title}
+          company={quoteVideoBannerComponent.quote.company}
+          image={quoteVideoBannerComponent.quote.image}
+          left={quoteVideoBannerComponent.quote.left}
+          quote={quoteVideoBannerComponent.quote.content}
+          video={quoteVideoBannerComponent.video}
+        />
+        {renderAst(quoteVideoBannerComponent.htmlContent)}
+      </>
+    );
+  });
   console.log(props)
 
   return (
@@ -95,70 +121,7 @@ export default (props) => {
         })(componentType);
         return acc.concat(component);
       }, [])}
-      <CenterContent className="topPaddingLarge bottomPaddingSmall" background="#FFFFFF">
-        <h2>{props.oneTitle}</h2>
-        {renderAst(props.one)}
-      </CenterContent>
-      <CenterContent className="topPaddingLarge bottomPaddingSmall" background="#F5F5F5">
-        <SideQuote
-          title={props.twoTitle}
-          name={props.twoQuoteName}
-          qtitle={props.twoQuoteTitle}
-          company={props.twoQuoteCompany}
-          quote={props.twoQuoteContent}
-          left={props.twoQuoteLeft}
-          image={props.twoQuoteImage}
-          content={renderAst(props.two)}
-        />
-      </CenterContent>
-      <CenterContent className="topPaddingLarge bottomPaddingSmall" background="#FFFFFF">
-        <h2>{props.threeTitle}</h2>
-        {renderAst(props.three)}
-      </CenterContent>
-      <CenterContent className="topPaddingLarge bottomPaddingSmall" background="#F5F5F5">
-        <SideQuote
-          title={props.fourTitle}
-          name={props.fourQuoteName}
-          qtitle={props.fourQuoteTitle}
-          company={props.fourQuoteCompany}
-          quote={props.fourQuoteContent}
-          left={props.fourQuoteLeft}
-          image={props.fourQuoteImage}
-          picture={props.fourQuotePicture}
-          content={renderAst(props.four)}
-        />
-      </CenterContent>
-      <CenterContent className="topPaddingLarge bottomPaddingSmall" background="#FFFFFF">
-      <h2>{props.fiveTitle}</h2>
-        <QuoteVideoBanner
-          name={props.fiveQuoteName}
-          title={props.fiveQuoteTitle}
-          company={props.fiveQuoteCompany}
-          quote={props.fiveQuoteContent}
-          left={props.fiveQuoteLeft}
-          image={props.fiveQuoteImage}
-          video={props.fiveVideo}
-        />
-        {renderAst(props.five)}
-      </CenterContent>
-      <CenterContent className="topPaddingLarge bottomPaddingSmall" background="#F5F5F5">
-        <Quotes quotes={props.sixQuotes} />
-      </CenterContent>
-      <CenterContent className="topPaddingLarge bottomPaddingSmall" background="#FFFFFF">
-        <LargeQuote name={props.sevenQuoteName} title={props.sevenQuoteTitle} company={props.sevenQuoteCompany} image={props.sevenQuoteImage} quote={renderAst(props.seven)}/>
-      </CenterContent>
-      <CenterContent className="topPaddingLarge bottomPaddingSmall" background="#F0F0F0">
-      <SideQuote
-          title={props.eightTitle}
-          name={props.eightQuoteName}
-          qtitle={props.eightQuoteTitle}
-          company={props.eightQuoteCompany}
-          quote={props.eightQuoteContent}
-          left={props.eightQuoteLeft}
-          image={props.eightQuoteImage}
-          content={renderAst(props.eight)}
-        />
-      </CenterContent>
+
       <CenterContent className="topPaddingLarge bottomPaddingSmall" background="#FFFFFF">
         <h2>What can we do for you?</h2>
         <p>“If this story resonates with you, get in contact and let’s explore the opportunities the Komodo team can create for your team.”</p>
