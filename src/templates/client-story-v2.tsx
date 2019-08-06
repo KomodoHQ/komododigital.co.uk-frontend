@@ -82,37 +82,40 @@ export default (props) => {
         {renderAst(props.intro)}
       </TitleText>
       
-      {props.order.reduce((acc, componentType) => {
+      {props.order.reduce((acc, componentType, i) => {
+        const index = props.order.slice(0, i)
+          .filter(ct => ct.name === componentType.name)
+          .length;
         const component = (componentType => {
           switch(componentType.name) {
             case 'simple':
               return (
                 <CenterContent className="topPaddingLarge bottomPaddingSmall" background={componentType.background}>
-                  {SimpleComponents[0]}
+                  {SimpleComponents[index]}
                 </CenterContent>
               )
             case 'sidequote':
               return (
                 <CenterContent className="topPaddingLarge bottomPaddingSmall" background={componentType.background}>
-                  {SideQuoteComponents[0]}
+                  {SideQuoteComponents[index]}
                 </CenterContent>
               )
             case 'quotes':
               return (
                 <CenterContent className="topPaddingLarge bottomPaddingSmall" background={componentType.background}>
-                  {QuotesComponents[0]}
+                  {QuotesComponents[index]}
                 </CenterContent>
               )
             case 'largequote':
               return (
                 <CenterContent className="topPaddingLarge bottomPaddingSmall" background={componentType.background}>
-                  {LargeQuotesComponents[0]}
+                  {LargeQuotesComponents[index]}
                 </CenterContent>
               )
             case 'quotevideobanner':
               return (
                 <CenterContent className="topPaddingLarge bottomPaddingSmall" background={componentType.background}>
-                  {QuoteVideoBannerComponents[0]}
+                  {QuoteVideoBannerComponents[index]}
                 </CenterContent>
               )
             default:
