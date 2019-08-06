@@ -14,7 +14,32 @@ const renderAst = new rehypeReact({
 }).Compiler;
 
 export default (props) => {
+  const SimpleComponents = [<div>Simple</div>]
+  const SideQuoteComponents = [<div>SideQuote</div>]
+  const QuotesComponents = [<div>Quotes</div>]
+  const LargeQuotesComponents = [<div>LargeQuotes</div>]
+  const QuoteVideoBannerComponents = [<div>QuoteVideoBanner</div>]
   console.log(props)
+
+  const OrderedComponents = props.order.reduce((acc, componentType) => {
+    const component = (componentType => {
+      switch(componentType.name) {
+        case 'simple':
+          return SimpleComponents[0];
+        case 'sidequote':
+          return SideQuoteComponents[0];
+        case 'quotes':
+          return QuotesComponents[0];
+        case 'largequote':
+          return LargeQuotesComponents[0];
+        case 'quotevideobanner':
+          return QuoteVideoBannerComponents[0];
+        default:
+          return null;
+      }
+    })(componentType);
+    return acc.concat(component);
+  }, []);
   return (
     <Layout data={props.data} pageMeta={props.pageMeta} background={props.navBackground}>
       <TitleText
@@ -28,6 +53,8 @@ export default (props) => {
       >
         {renderAst(props.intro)}
       </TitleText>
+      
+      {OrderedComponents}
       <CenterContent className="topPaddingLarge bottomPaddingSmall" background="#FFFFFF">
         <h2>{props.oneTitle}</h2>
         {renderAst(props.one)}
