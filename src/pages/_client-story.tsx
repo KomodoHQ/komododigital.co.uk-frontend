@@ -34,7 +34,7 @@ const getV1HocProps = (caseStudy, rootNode, metrics, testimonial, process, caseS
   ...props
 });
 
-const getV2HocProps = (caseStudy, rootNode, one, two, three, four, five, six, seven, eight, props) => {
+const getV2HocProps = (caseStudy, rootNode, simpleNodes, two, four, five, six, seven, eight, props) => {
   const hocProps = {
     caseStudy,
     intro: rootNode ? rootNode.htmlAst : '',
@@ -44,8 +44,8 @@ const getV2HocProps = (caseStudy, rootNode, one, two, three, four, five, six, se
     navBackground: rootNode ? rootNode.frontmatter.navBackground : '',
     background: rootNode ? rootNode.background : '',
     invert: rootNode ? rootNode.invert : false,
-    one: one ? one.htmlAst : '',
-    oneTitle: one ? one.frontmatter.title : '',
+    one: simpleNodes[0] ? simpleNodes[0].htmlAst : '',
+    oneTitle: simpleNodes[0] ? simpleNodes[0].frontmatter.title : '',
     two: two ? two.htmlAst : '',
     twoTitle: two ? two.frontmatter.title : '',
     twoQuoteName: two ? two.frontmatter.quotename : '',
@@ -54,8 +54,8 @@ const getV2HocProps = (caseStudy, rootNode, one, two, three, four, five, six, se
     twoQuoteContent: two ? two.frontmatter.quotecontent : '',
     twoQuoteLeft: two ? two.frontmatter.quoteleft : '',
     twoQuoteImage: two ? two.frontmatter.quoteimage : '',
-    three: three ? three.htmlAst : '',
-    threeTitle: three ? three.frontmatter.title : '',
+    three: simpleNodes[1] ? simpleNodes[1].htmlAst : '',
+    threeTitle: simpleNodes[1] ? simpleNodes[1].frontmatter.title : '',
     four: four ? four.htmlAst : '',
     fourTitle: four ? four.frontmatter.title : '',
     fourQuoteName: four ? four.frontmatter.quotename : '',
@@ -124,7 +124,7 @@ export default (props) => {
   const caseStudy = caseStudies.sort(() => .5 - Math.random())[0];
 
   return (rootNode && rootNode.frontmatter && rootNode.frontmatter.v2) ?
-    <CaseStudyV2 {...getV2HocProps(caseStudy, rootNode, simpleNodes[0], sideQuoteNodes[0], simpleNodes[1], sideQuoteNodes[1], quoteVideoBannerNodes[0], quotesNodes[0], largeQuoteNodes[0], sideQuoteNodes[2], props)} /> :
+    <CaseStudyV2 {...getV2HocProps(caseStudy, rootNode, simpleNodes, sideQuoteNodes[0], sideQuoteNodes[1], quoteVideoBannerNodes[0], quotesNodes[0], largeQuoteNodes[0], sideQuoteNodes[2], props)} /> :
     <CaseStudy {...getV1HocProps(caseStudy, rootNode, metrics, testimonial, process, caseStudiesIntro, contactsIntro, props)} />;
 };
 
