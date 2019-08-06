@@ -103,10 +103,10 @@ export default (props) => {
   const process = findNodeRaw(`${props.pageContext.slug}/process`, props.data.process);
   const contactsIntro = findNode('client-stories/contact_us', props);
 
-  const one = findNodeRaw(`${props.pageContext.slug}/one`, props.data.one);
-  const two = findNodeRaw(`${props.pageContext.slug}/two`, props.data.two);
-  const three = findNodeRaw(`${props.pageContext.slug}/three`, props.data.three);
-  const four = findNodeRaw(`${props.pageContext.slug}/four`, props.data.four);
+  const one = findNodeRaw(`${props.pageContext.slug}/simple1`, props.data.simple1);
+  const two = findNodeRaw(`${props.pageContext.slug}/sidequote1`, props.data.sidequote1);
+  const three = findNodeRaw(`${props.pageContext.slug}/simple2`, props.data.simple2);
+  const four = findNodeRaw(`${props.pageContext.slug}/sidequote2`, props.data.sidequote2);
   const five = findNodeRaw(`${props.pageContext.slug}/five`, props.data.five);
   const six = findNodeRaw(`${props.pageContext.slug}/six`, props.data.six);
   const seven = findNodeRaw(`${props.pageContext.slug}/seven`, props.data.seven);
@@ -222,8 +222,8 @@ export const caseStudyQuery = graphql`
         }
       }
     }
-    one: allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/client-stories/.*/one/" } }
+    simple1: allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/client-stories/.*/simple1/" } }
     ) {
       edges {
         node {
@@ -235,8 +235,8 @@ export const caseStudyQuery = graphql`
         }
       }
     }
-    two: allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/client-stories/.*/two/" } }
+    sidequote1: allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/client-stories/.*/sidequote1/" } }
     ) {
       edges {
         node {
@@ -260,8 +260,8 @@ export const caseStudyQuery = graphql`
         }
       }
     }
-    three: allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/client-stories/.*/three/" } }
+    simple2: allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/client-stories/.*/simple2/" } }
     ) {
       edges {
         node {
@@ -273,8 +273,8 @@ export const caseStudyQuery = graphql`
         }
       }
     }
-    four: allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/client-stories/.*/four/" } }
+    sidequote2: allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/client-stories/.*/sidequote2/" } }
     ) {
       edges {
         node {
