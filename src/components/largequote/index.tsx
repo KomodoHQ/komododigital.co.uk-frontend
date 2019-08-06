@@ -6,6 +6,8 @@
  * NPM Dependencies
  */
 import React from 'react';
+import Quoter from '../quoter';
+import QuoteText from '../quotetext';
 
 /**
  * Local dependencies
@@ -34,12 +36,9 @@ interface Props {
 const LargeQuote: React.SFC<Props> = ({ name, title, company, image, quote }) => {
 
     return (
-      <div>
-        <h2>{name}</h2>
-        <h2>{title}</h2>
-        <h2>{company}</h2>
-        {/* <h2>{image}</h2> */}
-        {quote}
+      <div className="largequote">
+        <QuoteText content={quote} bold={true} />
+        <Quoter image={image} name={name} title={title} company={company} />
       </div>
     );
   };
