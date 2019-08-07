@@ -123,8 +123,8 @@ export default (props) => {
       }, [])}
 
       <CenterContent className="topPaddingLarge bottomPaddingSmall" background="#FFFFFF">
-        <h2>What can we do for you?</h2>
-        <p>“If this story resonates with you, get in contact and let’s explore the opportunities the Komodo team can create for your team.”</p>
+        <h2 style={{ textAlign: 'center' }}>What can we do for you?</h2>
+        <p style={{ textAlign: 'center' }}>“If this story resonates with you, get in contact and let’s explore the opportunities the Komodo team can create for your team.”</p>
         <SeeMoreButton title="START A CONVERSATION →" link="/contact" />
       </CenterContent>
     </Layout>
