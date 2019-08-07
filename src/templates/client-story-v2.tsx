@@ -7,7 +7,7 @@ import Quotes from '../components/quotes';
 import QuoteVideoBanner from '../components/quotevideobanner';
 import SeeMoreButton from '../components/seemorebutton';
 import CenterContent from '../components/centercontent';
-import TitleText from '../components/titletext';
+import TitleVideo from '../components/titlevideo';
 
 const renderAst = new rehypeReact({
   createElement: React.createElement,
@@ -70,9 +70,15 @@ export default (props) => {
 
   return (
     <Layout data={props.data} pageMeta={props.pageMeta} background={props.navBackground}>
-      <CenterContent className="topPaddingLarge bottomPaddingSmall">
-        "video background"
-      </CenterContent>
+      <TitleVideo
+        title={props.title}
+        subtitle={props.subtitle}
+        invert
+        background="#000000"
+        className="topPaddingLarge bottomPaddingLarge"
+        backgroundImage={props.videoBackground}
+      >''
+      </TitleVideo>
       
       {props.order.reduce((acc, componentType, i) => {
         const index = props.order.slice(0, i)

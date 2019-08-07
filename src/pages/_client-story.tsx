@@ -88,6 +88,8 @@ const getV2HocProps = (caseStudy, rootNode, order, simpleNodes, sideQuoteNodes, 
   
   const hocProps = {
     caseStudy,
+    title: rootNode ? rootNode.frontmatter.title : '',
+    subtitle: rootNode ? rootNode.frontmatter.subtitle : '',
     navBackground: rootNode ? rootNode.frontmatter.navBackground : '',
     videoBackground: rootNode ? rootNode.frontmatter.videobackground : '',
     invert: rootNode ? rootNode.invert : false,
