@@ -7,3 +7,7 @@
 .quotes > div {
     flex-basis: 100%;
 }
+
+.quotes p {
+    text-align: center;
+}

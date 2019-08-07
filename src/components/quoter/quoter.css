@@ -6,9 +6,14 @@
 
 }
 
-.quoter-image {
+.quoter-large .quoter-image {
+	height: 150px;
+	width: 150px;
+}
+
+.quoter:not(.quoter-large) .quoter-image {
     height: 105px;
-    width: 106px;
+    width: 105px;
 }
 
 .quoter-name, .quoter-company {
