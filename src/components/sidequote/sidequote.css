@@ -4,7 +4,7 @@
     grid-gap: 0px;
 }
 
-@media (--tablet-viewport) {
+@media (min-width: 1000px) {
     .sidequote {
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 50px;

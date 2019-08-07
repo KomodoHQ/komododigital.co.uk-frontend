@@ -14,6 +14,19 @@
     width: 105px;
 }
 
-.quoter-name, .quoter-company {
+.quoter-name {
+    margin-top: 0px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.quoter-title {
+    margin-bottom: 0px;
+    font-size: 14px;
+}
+
+.quoter-company {
+    margin-top: 0px;
+    font-size: 14px;
     font-weight: bold;
 }
