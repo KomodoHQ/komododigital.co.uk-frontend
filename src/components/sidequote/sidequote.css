@@ -1,9 +1,12 @@
 .sidequote {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0px;
 }
 
-.sidequote > div {
-    flex-basis: 100%;
+@media (--tablet-viewport) {
+    .sidequote {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 50px;
+    }
 }
