@@ -47,14 +47,16 @@ const SideQuote: React.SFC<Props> = ({ title, name, qtitle, company, left, image
   </div>
 
   const ContentDiv = <div>
-    <h2>{title}</h2>
     {content}
   </div>
 
   return (
-    <div className="sidequote">
-      {left ? [QuoteDiv, ContentDiv] : [ContentDiv, QuoteDiv]}
-    </div>
+    <>
+      <h2>{title}</h2>
+      <div className="sidequote">
+        {left ? [QuoteDiv, ContentDiv] : [ContentDiv, QuoteDiv]}
+      </div>
+    </>
   );
 };
 
