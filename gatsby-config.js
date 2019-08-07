@@ -139,25 +139,5 @@ module.exports = {
         dsn: 'https://314dbec933e44245ae35b28fcb15bc96@sentry.io/1289118',
       },
     },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: 'UA-1236119-5',
-        // Puts tracking script in the head instead of the body
-        head: false,
-        // Setting this parameter is optional
-        anonymize: true,
-        // Setting this parameter is also optional
-        respectDNT: true,
-        // Avoids sending pageview hits from custom paths
-        exclude: [],
-        // Enables Google Optimize using your container Id
-        // optimizeId: "YOUR_GOOGLE_OPTIMIZE_TRACKING_ID",
-        // Any additional create only fields (optional)
-        // sampleRate: 5,
-        // siteSpeedSampleRate: 10,
-        // cookieDomain: "example.com",
-      },
-    },
   ],
 };
