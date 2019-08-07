@@ -4,10 +4,14 @@
     display: flex;
 }
 
-.quotes > div {
-    flex-basis: 100%;
-}
-
 .quotes p {
     text-align: center;
+}
+
+@media (max-width: 700px) {
+    .quotes {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
 }
