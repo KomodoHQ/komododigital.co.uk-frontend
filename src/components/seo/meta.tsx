@@ -6,6 +6,7 @@ interface Props {
   defaultTitle: string;
   description: string;
   separator?: string;
+  noindex?: boolean;
   children?: ReactNode;
 }
 
@@ -14,6 +15,7 @@ const Meta: React.SFC<Props> = ({
   title,
   description,
   separator = ' - ',
+  noindex = false,
   children,
 }) => {
   return (
@@ -23,6 +25,7 @@ const Meta: React.SFC<Props> = ({
     >
       {title && <title>{title}</title>}
       <meta name="description" content={description} />
+      {noindex && <meta name="robots" content="noindex, follow" />}
       {children}
     </Helmet>
   );
