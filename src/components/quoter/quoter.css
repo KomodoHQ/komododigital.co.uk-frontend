@@ -1,9 +1,7 @@
-.quoter {
-
-}
-
-.quoter-large {
-
+.quoter:not(.quoter-large) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
 }
 
 .quoter-large .quoter-image {

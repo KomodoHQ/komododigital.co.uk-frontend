@@ -36,9 +36,11 @@ const Quoter: React.SFC<Props> = ({ image, name, title, company, large = false }
   return (
     <div className={`quoter ${large ? 'quoter-large': ''}`}>
       <Img className="quoter-image" fluid={image.childImageSharp.fluid} />
-      <p className="quoter-name">{name}</p>
-      <p className="quoter-title">{title}</p>
-      <p className="quoter-company">{company}</p>
+      <div className="quoter-info">
+        <p className="quoter-name">{name}</p>
+        <p className="quoter-title">{title}</p>
+        <p className="quoter-company">{company}</p>
+      </div>
     </div>
   );
 };
