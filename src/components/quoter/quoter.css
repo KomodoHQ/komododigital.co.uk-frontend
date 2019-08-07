@@ -1,0 +1,16 @@
+.quoter {
+
+}
+
+.quoter-large {
+
+}
+
+.quoter-image {
+    height: 105px;
+    width: 106px;
+}
+
+.quoter-name, .quoter-company {
+    font-weight: bold;
+}

@@ -37,7 +37,7 @@ const LargeQuote: React.SFC<Props> = ({ name, title, company, image, quote }) =>
   return (
     <div className="largequote">
       <QuoteText content={quote} bold={true} />
-      <Quoter image={image} name={name} title={title} company={company} />
+      <Quoter image={image} name={name} title={title} company={company} large={true} />
     </div>
   );
 };
