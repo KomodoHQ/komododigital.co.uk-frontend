@@ -11,8 +11,11 @@ import React, { ReactNode } from 'react';
  * Local dependencies
  */
 import './titlevideo.css';
+
 import HeaderVideo from '../../assets/videos/header.mp4';
 import ShowReel from '../../assets/videos/showreel.mp4';
+import ISGHeaderVideo from '../../assets/videos/isg/header.mp4';
+import ISGShowReel from '../../assets/videos/isg/showreel.mp4';
 
 /**
  * Props for the content section component
