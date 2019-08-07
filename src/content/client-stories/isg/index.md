@@ -6,7 +6,7 @@ group: 'client-stories'
 v2: true
 headercolor: '#000000'
 csimage: '../../images/casestudy/isg/Video-Placeholder@3x.png'
-videobackground: '../../images/casestudy/isg/Video-Placeholder@3x.png'
+videofolder: 'isg'
 navBackground: '#000000'
 invert: true
 excerpt: 'This is the ISG Client Story'

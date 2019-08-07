@@ -76,6 +76,7 @@ export default (props) => {
         showreelLinkTransparent={true}
         invert
         className="topPaddingLarge bottomPaddingLarge"
+        folderRoute={props.videoFolder}
       />
       
       {props.order.reduce((acc, componentType, i) => {

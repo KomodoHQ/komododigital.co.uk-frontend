@@ -12,8 +12,8 @@ import React, { ReactNode } from 'react';
  */
 import './titlevideo.css';
 
-import HeaderVideo from '../../assets/videos/header.mp4';
-import ShowReel from '../../assets/videos/showreel.mp4';
+import MainHeaderVideo from '../../assets/videos/header.mp4';
+import MainShowReel from '../../assets/videos/showreel.mp4';
 import ISGHeaderVideo from '../../assets/videos/isg/header.mp4';
 import ISGShowReel from '../../assets/videos/isg/showreel.mp4';
 
@@ -36,6 +36,7 @@ interface Props {
   imageOverlap?: boolean;
   watchText?: string;
   showreelLinkTransparent? : boolean
+  folderRoute?: string;
 }
 
 interface State {
@@ -81,6 +82,24 @@ class TitleVideo extends React.Component<Props, State> {
         </div>
     );
     const centeredClass = this.props.centered ? 'centered' : '';
+
+    const HeaderVideo = (route => {
+      switch(route) {
+        case 'isg':
+          return ISGHeaderVideo;
+        default:
+          return MainHeaderVideo;
+      }
+    })(this.props.folderRoute);
+
+    const ShowReel = (route => {
+      switch(route) {
+        case 'isg':
+          return ISGShowReel;
+        default:
+          return MainShowReel;
+      }
+    })(this.props.folderRoute);
 
     return (
         <div className={`komodoGridWrapper title-wrapper ${invertedClassname} ${centeredClass} ${this.props.className}`} style={{ position: 'relative' }}>

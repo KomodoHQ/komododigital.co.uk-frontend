@@ -91,7 +91,7 @@ const getV2HocProps = (caseStudy, rootNode, order, simpleNodes, sideQuoteNodes, 
     title: rootNode ? rootNode.frontmatter.title : '',
     subtitle: rootNode ? rootNode.frontmatter.subtitle : '',
     navBackground: rootNode ? rootNode.frontmatter.navBackground : '',
-    videoBackground: rootNode ? rootNode.frontmatter.videobackground : '',
+    videoFolder: rootNode ? rootNode.frontmatter.videofolder : '',
     invert: rootNode ? rootNode.invert : false,
     order: order ? order.frontmatter.components: [],
     simpleComponentsProperties,
@@ -172,13 +172,7 @@ export const caseStudyQuery = graphql`
             headercolor
             navBackground
             background
-            videobackground {
-              childImageSharp {
-                fluid(maxWidth: 1170) {
-                  ...GatsbyImageSharpFluid_withWebp_noBase64
-                }
-              }
-            }
+            videofolder
             invert
             ...pageMeta
           }
