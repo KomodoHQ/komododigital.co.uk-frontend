@@ -70,17 +70,9 @@ export default (props) => {
 
   return (
     <Layout data={props.data} pageMeta={props.pageMeta} background={props.navBackground}>
-      <TitleText
-        subtitle={props.subtitle}
-        title={props.title}
-        background={props.background}
-        invert={props.invert}
-        className="topPaddingLarge bottomPaddingNone"
-        coverimage={props.coverimage}
-        centered={true}
-      >
-        {renderAst(props.intro)}
-      </TitleText>
+      <CenterContent className="topPaddingLarge bottomPaddingSmall">
+        "video background"
+      </CenterContent>
       
       {props.order.reduce((acc, componentType, i) => {
         const index = props.order.slice(0, i)
