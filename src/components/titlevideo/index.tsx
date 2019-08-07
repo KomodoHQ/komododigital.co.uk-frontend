@@ -26,7 +26,7 @@ interface Props {
   background?: string;
   backgroundImage?: any;
   className?: string;
-  children: ReactNode;
+  children?: ReactNode;
   coverimage?: any;
   coverimageRaw?: any;
   centered?: boolean;
@@ -89,7 +89,7 @@ class TitleVideo extends React.Component<Props, State> {
           <div className={`Title-Section-Video ${centeredClass}`} style={{ zIndex: 2 }}>
             {subtitleEl}
             {titleEl}
-            {this.props.children.length && <div>{this.props.children}</div>}
+            {this.props.children && <div>{this.props.children}</div>}
             {showreel}
           </div>
         </div>

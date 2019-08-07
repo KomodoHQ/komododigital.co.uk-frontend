@@ -73,11 +73,8 @@ export default (props) => {
         title={props.title}
         subtitle={props.subtitle}
         invert
-        background="#000000"
         className="topPaddingLarge bottomPaddingLarge"
-        backgroundImage={props.videoBackground}
-      >''
-      </TitleVideo>
+      />
       
       {props.order.reduce((acc, componentType, i) => {
         const index = props.order.slice(0, i)
