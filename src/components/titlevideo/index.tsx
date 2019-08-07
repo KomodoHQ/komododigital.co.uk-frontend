@@ -31,6 +31,8 @@ interface Props {
   coverimageRaw?: any;
   centered?: boolean;
   imageOverlap?: boolean;
+  watchText?: string;
+  showreelLinkTransparent? : boolean
 }
 
 interface State {
@@ -70,8 +72,8 @@ class TitleVideo extends React.Component<Props, State> {
 
     const showreel = (
         <div>
-          <a className="showreel" onClick={this.toggleHidden}>
-            Watch Showreel
+          <a className={`showreel ${this.props.showreelLinkTransparent ? 'showreel-transparent': ''}`} onClick={this.toggleHidden}>
+            {this.props.watchText || "Watch Showreel"}
           </a>
         </div>
     );

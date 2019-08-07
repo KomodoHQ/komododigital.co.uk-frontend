@@ -64,6 +64,11 @@
     cursor: pointer;
 }
 
+.Title-Section-Video a.showreel-transparent {
+    background: transparent;
+    color: white;
+}
+
 .invert {
     color: white;
 }

@@ -72,6 +72,8 @@ export default (props) => {
       <TitleVideo
         title={props.title}
         subtitle={props.subtitle}
+        watchText="WATCH CLIENT STORY"
+        showreelLinkTransparent={true}
         invert
         className="topPaddingLarge bottomPaddingLarge"
       />
