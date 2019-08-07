@@ -13,7 +13,6 @@ const renderAst = new rehypeReact({
 }).Compiler;
 
 export default (props) => {
-  console.log(props.caseStudies)
   const orderedCaseStudies = props.caseStudies.filter(caseStudy => caseStudy.v2).concat(
     props.caseStudies.filter(caseStudy => !caseStudy.v2)
   )

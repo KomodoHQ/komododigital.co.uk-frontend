@@ -18,8 +18,6 @@ export default (props) => {
     ...props,
   };
 
-  console.log(hocProps)
-
   return <CaseStudies {...hocProps} />;
 };
 
