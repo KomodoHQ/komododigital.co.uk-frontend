@@ -174,6 +174,13 @@ export const caseStudyQuery = graphql`
             headercolor
             navBackground
             background
+            videobackground {
+              childImageSharp {
+                fluid(maxWidth: 1170) {
+                  ...GatsbyImageSharpFluid_withWebp_noBase64
+                }
+              }
+            }
             invert
             ...pageMeta
           }

@@ -4,8 +4,10 @@ subtitle: 'ISG'
 date: '2019-07-30'
 group: 'client-stories'
 v2: true
-navBackground: '#DB8484'
-background: 'linear-gradient(0deg, #DB8484 0%, #DB8484 100%)'
+headercolor: '#000000'
+csimage: '../../images/casestudy/isg/Video-Placeholder@3x.png'
+videobackground: '../../images/casestudy/isg/Video-Placeholder@3x.png'
+navBackground: '#000000'
 invert: true
 excerpt: 'ISG'
 # metaTitle: '' # TODO: Review meta title - will use value of 'title' if not set
