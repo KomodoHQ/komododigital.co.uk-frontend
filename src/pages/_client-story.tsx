@@ -314,6 +314,13 @@ export const caseStudyQuery = graphql`
                 }
               }
             }
+            quotepicture {
+              childImageSharp {
+                fluid(maxWidth: 450) {
+                  ...GatsbyImageSharpFluid_withWebp_noBase64
+                }
+              }
+            }
           }
           fileAbsolutePath
         }
@@ -339,6 +346,13 @@ export const caseStudyQuery = graphql`
                 }
               }
             }
+            quotepicture {
+              childImageSharp {
+                fluid(maxWidth: 450) {
+                  ...GatsbyImageSharpFluid_withWebp_noBase64
+                }
+              }
+            }
           }
           fileAbsolutePath
         }
@@ -358,6 +372,13 @@ export const caseStudyQuery = graphql`
             quotecontent
             quoteleft
             quoteimage {
+              childImageSharp {
+                fluid(maxWidth: 450) {
+                  ...GatsbyImageSharpFluid_withWebp_noBase64
+                }
+              }
+            }
+            quotepicture {
               childImageSharp {
                 fluid(maxWidth: 450) {
                   ...GatsbyImageSharpFluid_withWebp_noBase64
