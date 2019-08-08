@@ -34,7 +34,7 @@ interface Props {
  */
 const Quoter: React.SFC<Props> = ({ image, name, title, company, large = false }) => {
   return (
-    <div className={`quoter ${large ? 'quoter-large': ''}`}>
+    <div className={large ? 'quoter-large': 'quoter-small'}>
       <Img className="quoter-image" fluid={image.childImageSharp.fluid} />
       <div className="quoter-info">
         <p className="quoter-name">{name}</p>
