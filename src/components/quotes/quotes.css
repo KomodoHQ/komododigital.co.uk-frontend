@@ -1,3 +1,5 @@
+@import '../settings.css';
+
 .quotes {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -8,7 +10,7 @@
     text-align: center;
 }
 
-@media (max-width: 700px) {
+@media (--small-tablet-viewport-max-width) {
     .quotes {
         display: grid;
         grid-template-columns: 1fr;
