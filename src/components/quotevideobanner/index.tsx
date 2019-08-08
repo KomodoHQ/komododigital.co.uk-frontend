@@ -43,7 +43,9 @@ const QuoteVideoBanner: React.SFC<Props> = ({ name, title, company, left, image,
     <Quoter image={image} name={name} title={title} company={company} />
   </div>
 
-  const VideoDiv = <Img fluid={video.childImageSharp.fluid} />
+  const VideoDiv = <div>
+    <Img fluid={video.childImageSharp.fluid} />
+  </div>
 
   return (
     <div className="quotevideobanner">

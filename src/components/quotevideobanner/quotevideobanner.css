@@ -1,9 +1,16 @@
 .quotevideobanner {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: grid;
+    grid-gap: 20px;
 }
 
-.quotevideobanner > div {
-    flex-basis: 100%;
+@media (min-width: 700px) {
+    .quotevideobanner {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 700px) {
+    .quotevideobanner {
+        grid-template-columns: 1fr;
+    }
 }
