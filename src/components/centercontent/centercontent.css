@@ -80,6 +80,10 @@ img {
     height: auto;
 }
 
+.startAConversation {
+    grid-column: 2 / 16;
+}
+
 @media (--mobile-viewport) {
 
     .CenterContent .gatsby-resp-image-link {
