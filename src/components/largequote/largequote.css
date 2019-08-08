@@ -1,3 +1,7 @@
 .largequote p {
     text-align: center;
 }
+
+.largequote > .quotetext, .largequote > .quotetext p {
+    font-size: 24px;
+}

@@ -4,6 +4,10 @@
     grid-gap: 0px;
 }
 
+.sidequote .quotetext {
+    font-size: 24px;
+}
+
 @media (min-width: 1000px) {
     .sidequote {
         grid-template-columns: repeat(2, 1fr);

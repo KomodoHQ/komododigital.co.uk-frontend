@@ -3,13 +3,19 @@
     grid-gap: 20px;
 }
 
-@media (min-width: 700px) {
+.quotevideobanner > div > .gatsby-image-wrapper {
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+@media (min-width: 1000px) {
     .quotevideobanner {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
     .quotevideobanner {
         grid-template-columns: 1fr;
     }
