@@ -83,32 +83,22 @@ class TitleVideo extends React.Component<Props, State> {
     );
     const centeredClass = this.props.centered ? 'centered' : '';
 
-    const HeaderVideo = (route => {
-      switch(route) {
-        case 'isg':
-          return ISGHeaderVideo;
-        default:
-          return MainHeaderVideo;
-      }
-    })(this.props.folderRoute);
+    const HeaderVideos = {
+      'isg': ISGHeaderVideo
+    };
 
-    const ShowReel = (route => {
-      switch(route) {
-        case 'isg':
-          return ISGShowReel;
-        default:
-          return MainShowReel;
-      }
-    })(this.props.folderRoute);
+    const ShowReels = {
+      'isg': ISGShowReel
+    };
 
     return (
         <div className={`komodoGridWrapper title-wrapper ${invertedClassname} ${centeredClass} ${this.props.className}`} style={{ position: 'relative' }}>
           <video autoPlay={true} playsInline={true} muted loop className={'video'}>
-            <source src={HeaderVideo} type="video/mp4" />
+            <source src={this.props.folderRoute ? HeaderVideos[this.props.folderRoute] : MainHeaderVideo} type="video/mp4" />
           </video>
           <div hidden={this.state.hidden} onClick={this.toggleHidden} className={'video-close-button'}>&times;</div>
           <video controls={true} ref={this.videoModal} className={'video modal'} hidden={this.state.hidden}>
-            <source src={ShowReel} type="video/mp4"/>
+            <source src={this.props.folderRoute ? ShowReels[this.props.folderRoute] : MainShowReel} type="video/mp4"/>
           </video>
           <div className={`Title-Section-Video ${centeredClass}`} style={{ zIndex: 2 }}>
             {subtitleEl}
