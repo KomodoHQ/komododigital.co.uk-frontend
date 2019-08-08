@@ -14,13 +14,13 @@ const Meta: React.SFC<Props> = ({
   defaultTitle,
   title,
   description,
-  separator = ' - ',
+  separator = '',
   noindex = false,
   children,
 }) => {
   return (
     <Helmet
-      titleTemplate={`%s${separator}Web Design | App Development | Newcastle`}
+      titleTemplate={`%s${separator}`}
       defaultTitle={defaultTitle}
     >
       {title && <title>{title}</title>}
