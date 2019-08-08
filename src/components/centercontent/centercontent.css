@@ -182,6 +182,11 @@ img {
         width: 440px;
     }
 
+    .CenterContent .gatsby-resp-image-link:only-of-type .gatsby-resp-image-wrapper {
+        left: -2.5%;
+        width: 880px;
+    }
+
     .CenterContent .gatsby-resp-image-link:nth-of-type(2n) .gatsby-resp-image-wrapper {
         left: 52.5%;
     }
