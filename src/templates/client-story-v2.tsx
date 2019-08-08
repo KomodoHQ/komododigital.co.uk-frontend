@@ -22,7 +22,7 @@ export default (props) => {
       </>
     );
   });
-  const SideQuoteComponents = props.sideQuoteComponentsProperties.map(sideQuoteComponent => {
+  const SideQuoteComponents = props.sideQuoteComponentsProperties.map((sideQuoteComponent, i) => {
     return (
       <SideQuote
         title={sideQuoteComponent.title}
@@ -67,6 +67,14 @@ export default (props) => {
     );
   });
 
+  const componentTypeMap = {
+    'simple': SimpleComponents,
+    'sidequote': SideQuoteComponents,
+    'quotes': QuotesComponents,
+    'largequote': LargeQuotesComponents,
+    'quotevideobanner': QuoteVideoBannerComponents
+  }
+
   return (
     <Layout data={props.data} pageMeta={props.pageMeta} background={props.navBackground}>
       <TitleVideo
@@ -83,42 +91,11 @@ export default (props) => {
         const index = props.order.slice(0, i)
           .filter(ct => ct.name === componentType.name)
           .length;
-        const component = (componentType => {
-          switch(componentType.name) {
-            case 'simple':
-              return (
-                <CenterContent className="topPaddingLarge bottomPaddingSmall" background={componentType.background}>
-                  {SimpleComponents[index]}
-                </CenterContent>
-              )
-            case 'sidequote':
-              return (
-                <CenterContent className="topPaddingLarge bottomPaddingSmall" background={componentType.background}>
-                  {SideQuoteComponents[index]}
-                </CenterContent>
-              )
-            case 'quotes':
-              return (
-                <CenterContent className="topPaddingLarge bottomPaddingSmall" background={componentType.background}>
-                  {QuotesComponents[index]}
-                </CenterContent>
-              )
-            case 'largequote':
-              return (
-                <CenterContent className="topPaddingLarge bottomPaddingSmall" background={componentType.background}>
-                  {LargeQuotesComponents[index]}
-                </CenterContent>
-              )
-            case 'quotevideobanner':
-              return (
-                <CenterContent className="topPaddingLarge bottomPaddingSmall" background={componentType.background}>
-                  {QuoteVideoBannerComponents[index]}
-                </CenterContent>
-              )
-            default:
-              return null;
-          }
-        })(componentType);
+        const component = (
+          <CenterContent className="topPaddingLarge bottomPaddingSmall" background={componentType.background}>
+            {componentTypeMap[componentType.name][index]}
+          </CenterContent>
+        )
         return acc.concat(component);
       }, [])}
 

@@ -38,12 +38,12 @@ interface Props {
  */
 const QuoteVideoBanner: React.SFC<Props> = ({ name, title, company, left, image, quote, video }) => {
 
-  const QuoteDiv = <div>
+  const QuoteDiv = <div key="quote">
     <QuoteText content={quote} bold={true} />
     <Quoter image={image} name={name} title={title} company={company} />
   </div>
 
-  const VideoDiv = <div>
+  const VideoDiv = <div key="video">
     <Img fluid={video.childImageSharp.fluid} />
   </div>
 

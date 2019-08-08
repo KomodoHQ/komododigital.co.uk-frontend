@@ -40,13 +40,13 @@ interface Props {
  */
 const SideQuote: React.SFC<Props> = ({ title, name, qtitle, company, left, image, quote, picture, content }) => {
 
-  const QuoteDiv = <div>
+  const QuoteDiv = <div key="quote">
     { picture && <Img fluid={picture.childImageSharp.fluid} />}
     <QuoteText content={quote} bold={true} />
     <Quoter image={image} name={name} title={qtitle} company={company} />
   </div>
 
-  const ContentDiv = <div>
+  const ContentDiv = <div key="content">
     {content}
   </div>
 
