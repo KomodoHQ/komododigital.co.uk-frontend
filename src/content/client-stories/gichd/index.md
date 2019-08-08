@@ -10,8 +10,8 @@ navBackground: '#D17C2F'
 background: 'linear-gradient(0deg, #D17C2F 0%, #D17C2F 100%)'
 invert: true
 excerpt: 'Komodo was chosen to partner with the Geneva International Centre for Humanitarian Demining (GICHD) in the development of a tablet version of their entire Ammunition Safety Management (ASM) Toolset.'
-# metaTitle: '' # TODO: Review meta title - will use value of 'title' if not set
-# metaDescription: '' # TODO: Review meta description - will use value of 'excerpt' if not set
+metaTitle: 'Building An iPad App To Transform The Experience of Ammunition Safety'
+metaDescription: 'Partnering with the GICHD in the development of a tablet app to digitise their Ammunition Safety Management (ASM) toolkit.'
 ---
 
 Komodo was chosen to partner with the Geneva International Centre for Humanitarian Demining (GICHD) in the development of a tablet version of their entire Ammunition Safety Management (ASM) Toolset.
