@@ -80,7 +80,7 @@ img {
     height: auto;
 }
 
-.startAConversation {
+.startAConversation .CenterContent {
     grid-column: 2 / 16;
 }
 
