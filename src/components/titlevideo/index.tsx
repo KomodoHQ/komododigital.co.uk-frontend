@@ -76,7 +76,7 @@ class TitleVideo extends React.Component<Props, State> {
 
     const showreel = (
         <div>
-          <a className={`showreel ${this.props.showreelLinkTransparent ? 'showreel-transparent': ''}`} onClick={this.toggleHidden}>
+          <a className={this.props.showreelLinkTransparent ? 'showreel-transparent': 'showreel'} onClick={this.toggleHidden}>
             {this.props.watchText || "Watch Showreel"}
           </a>
         </div>

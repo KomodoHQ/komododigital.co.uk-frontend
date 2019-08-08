@@ -80,7 +80,7 @@
     object-position: 50% 50%;
 }
 
-.showreel {
+.showreel, .showreel-transparent {
     border: 0;
     font-size: 22px;
     font-weight: bold;
@@ -94,9 +94,8 @@
     position: relative;
 }
 
-.showreel::after {
+.showreel::after, .showreel-transparent::after {
     content: '';
-    background-image: url('../../content/images/play@3x.png');
     width: 24px;
     height: 24px;
     background-size: 100%;
@@ -104,6 +103,14 @@
     position: absolute;
     top: calc(50% - 14px);
     right: 2rem;
+}
+
+.showreel::after {
+    background-image: url('../../content/images/play@3x.png');
+}
+
+.showreel-transparent::after {
+    background-image: url('../../content/images/play-white@3x.png');
 }
 
 .showreel:hover {
