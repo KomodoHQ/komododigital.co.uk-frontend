@@ -1,3 +1,5 @@
+@import '../settings.css';
+
 .sidequote {
     display: grid;
     grid-template-columns: 1fr;
@@ -8,7 +10,7 @@
     font-size: 24px;
 }
 
-@media (min-width: 1000px) {
+@media (--laptop-viewport) {
     .sidequote {
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 50px;
