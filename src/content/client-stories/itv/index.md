@@ -6,6 +6,7 @@ group: 'client-stories'
 headercolor: '#DB8484'
 csimage: '../../images/casestudy/ITV@3x.png'
 coverimage: '../../images/casestudy/ITVCover@3x.png'
+coverimageAlt: 'ITV Signed Stories iPad App'
 navBackground: '#DB8484'
 background: 'linear-gradient(0deg, #DB8484 0%, #DB8484 100%)'
 invert: true

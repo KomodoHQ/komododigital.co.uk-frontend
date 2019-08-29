@@ -6,6 +6,7 @@ group: 'client-stories'
 headercolor: '#0E1948'
 csimage: '../../images/casestudy/Onward@3x.png'
 coverimage: '../../images/casestudy/OnwardCover@3x.png'
+coverimageAlt: 'Onward Website Homepage'
 navBackground: '#0E1948'
 background: 'linear-gradient(0deg, #0E1948 0%, #0E1948 100%)'
 invert: true

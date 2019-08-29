@@ -6,6 +6,7 @@ group: 'client-stories'
 headercolor: '#171717'
 csimage: '../../images/casestudy/NorthumbriaPolice@3x.png'
 coverimage: '../../images/casestudy/NorthumbriaPoliceCover@3x.png'
+coverimageAlt: 'Police E-Box Windows app'
 navBackground: '#171717'
 background: 'linear-gradient(0deg, #171717 0%, #171717 100%)'
 invert: true

@@ -84,19 +84,27 @@ export default (props: IndexPageProps) => {
         {renderAst(props.aboutUsIntro)}
       </ContentSection>
       <TripleSection background="#ffffff" className="bottomPaddingLarge">
-        <TripleFeature imgsrc={props.data.icon_consultancy} title="Consultancy">
+        <TripleFeature
+          imgsrc={props.data.icon_consultancy}
+          title="Consultancy"
+          alt="Consultancy Sketch"
+        >
           <p>
             Providing expert advice that helps solve bigger problems, avoid wasted time and redefine
             constraints.
           </p>
         </TripleFeature>
-        <TripleFeature imgsrc={props.data.icon_design} title="Design">
+        <TripleFeature imgsrc={props.data.icon_design} title="Design" alt="Design Sketch">
           <p>
             Producing great digital experiences that add value and turns product users into product
             advocates.
           </p>
         </TripleFeature>
-        <TripleFeature imgsrc={props.data.icon_development} title="Development">
+        <TripleFeature
+          imgsrc={props.data.icon_development}
+          title="Development"
+          alt="Development Sketch"
+        >
           <p>
             Delivering intelligent, scalable and robust solutions built with future needs in mind to
             maximise return on investment.
@@ -158,34 +166,102 @@ export default (props: IndexPageProps) => {
         {renderAst(props.clientPortfoliosIntro)}
       </ContentSection>
       <PortfolioGrid className="bottomPaddingLarge">
-        <StandardItem imgsrc={props.data.client_itv} title="ITV" link="https://www.itv.com/" />
+        <StandardItem
+          imgsrc={props.data.client_itv}
+          title="ITV"
+          link="https://www.itv.com/"
+          alt="ITV Logo"
+        />
         <StandardItem
           imgsrc={props.data.client_northumbriapolice}
           title="Northumbria Police"
           link="https://www.northumbria.police.uk/"
+          alt="Northumbria Police Logo"
         />
-        <StandardItem imgsrc={props.data.client_streetstream} title="Streetstream" link="https://www.streetstream.co.uk/" />
-        <StandardItem imgsrc={props.data.client_onward} title="Onward" link="https://www.onward.co.uk/" />
-        <StandardItem imgsrc={props.data.client_orchard} title="Orchard" link="https://www.orchard-systems.co.uk/" />
-        <StandardItem imgsrc={props.data.client_gichd} title="GICHD" link="https://www.gichd.org/" />
+        <StandardItem
+          imgsrc={props.data.client_streetstream}
+          title="Streetstream"
+          link="https://www.streetstream.co.uk/"
+          alt="Streetstream Logo"
+        />
+        <StandardItem
+          imgsrc={props.data.client_onward}
+          title="Onward"
+          link="https://www.onward.co.uk/"
+          alt="Onward Logo"
+        />
+        <StandardItem
+          imgsrc={props.data.client_orchard}
+          title="Orchard"
+          link="https://www.orchard-systems.co.uk/"
+          alt="Orchard Logo"
+        />
+        <StandardItem
+          imgsrc={props.data.client_gichd}
+          title="GICHD"
+          link="https://www.gichd.org/"
+          alt="GICHD Logo"
+        />
         <StandardItem
           imgsrc={props.data.client_northumbriauni}
           title="Northumbria University"
           link="https://www.northumbria.ac.uk/"
+          alt="Northumbria University Logo"
         />
         <StandardItem
           imgsrc={props.data.client_newcastleuni}
           title="Newcastle University"
           link="https://www.ncl.ac.uk/"
+          alt="Newcastle University Logo"
         />
-        <StandardItem imgsrc={props.data.client_elanders} title="elanders" link="https://www.elanders.com/uk/" />
-        <StandardItem imgsrc={props.data.client_cop} title="College of Policing" link="https://www.college.police.uk/" />
-        <StandardItem imgsrc={props.data.client_legrand} title="Legrand" link="https://www.legrand.co.uk/" />
-        <StandardItem imgsrc={props.data.client_spacegroup} title="Space Group" link="https://spacegroup.co.uk/" />
-        <StandardItem imgsrc={props.data.client_iamproperty} title="Iamproperty" link="https://www.iamproperty.com/" />
-        <StandardItem imgsrc={props.data.client_theo} title="Theo" link="https://drivetheo.com/" />
-        <StandardItem imgsrc={props.data.client_citizens} title="Citizens Advice" link="https://www.citizensadvice.org.uk/" />
-        <StandardItem imgsrc={props.data.client_xenith} title="Xenith" link="https://www.xenith.co.uk/" />
+        <StandardItem
+          imgsrc={props.data.client_elanders}
+          title="elanders"
+          link="https://www.elanders.com/uk/"
+          alt="Elanders Logo"
+        />
+        <StandardItem
+          imgsrc={props.data.client_cop}
+          title="College of Policing"
+          link="https://www.college.police.uk/"
+          alt="College of Policing Logo"
+        />
+        <StandardItem
+          imgsrc={props.data.client_legrand}
+          title="Legrand"
+          link="https://www.legrand.co.uk/"
+          alt="Legrand Logo"
+        />
+        <StandardItem
+          imgsrc={props.data.client_spacegroup}
+          title="Space Group"
+          link="https://spacegroup.co.uk/"
+          alt="Space Group Logo"
+        />
+        <StandardItem
+          imgsrc={props.data.client_iamproperty}
+          title="Iamproperty"
+          link="https://www.iamproperty.com/"
+          alt="Iamproperty Logo"
+        />
+        <StandardItem
+          imgsrc={props.data.client_theo}
+          title="Theo"
+          link="https://drivetheo.com/"
+          alt="Theo Logo"
+        />
+        <StandardItem
+          imgsrc={props.data.client_citizens}
+          title="Citizens Advice"
+          link="https://www.citizensadvice.org.uk/"
+          alt="Citizens Advice Logo"
+        />
+        <StandardItem
+          imgsrc={props.data.client_xenith}
+          title="Xenith"
+          link="https://www.xenith.co.uk/"
+          alt="Xenith Logo"
+        />
       </PortfolioGrid>
       <ContactSection className="topPaddingLarge" background="#fff">
         {renderAst(props.contactsIntro)}

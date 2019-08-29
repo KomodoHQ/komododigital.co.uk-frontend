@@ -16,7 +16,7 @@ import './standarditem.css';
 
 /**
  * Props for the item component
- * 
+ *
  * data
  */
 interface Props {
@@ -24,17 +24,18 @@ interface Props {
   title?: string;
   link?: string;
   children?: ReactNode;
+  alt?: string;
 }
 
 /**
- * 
+ *
  * Using SFC (Stateless Functional Component) because a item doesn't need to maintain any state of its own.
- * 
+ *
  * @param data
  */
-const StandardItem: React.SFC<Props> = ({ imgsrc, title, link, children }) => {
+const StandardItem: React.SFC<Props> = ({ imgsrc, title, link, children, alt }) => {
 
-  const logo = children ? <div>{children}</div> : <Img fixed={imgsrc.childImageSharp.fixed} title={title} />;
+  const logo = children ? <div>{children}</div> : <Img fixed={imgsrc.childImageSharp.fixed} title={title} alt={alt} />;
   const el = link ? <a href={link} target="_blank">{logo}</a> : logo;
 
   return (
