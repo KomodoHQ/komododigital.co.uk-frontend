@@ -33,7 +33,7 @@ export default (props: ContactPageProps) => {
         <VCard person="Phoebe" avatars={props.data} />
       </ContactSection>
       <CenterContent background="#fff">
-        <Img fluid={props.data.icon_career.childImageSharp.fluid} />
+        <Img fluid={props.data.icon_career.childImageSharp.fluid} alt="Komodo Team Sketch" />
         {renderAst(props.career)}
         <ContactJobs />
       </CenterContent>

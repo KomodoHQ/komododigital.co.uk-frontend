@@ -6,6 +6,7 @@ group: 'client-stories'
 headercolor: '#003E52'
 csimage: '../../images/casestudy/Theo@3x.png'
 coverimage: '../../images/casestudy/TheoCover@3x.png'
+coverimageAlt: 'Drive Theo iPhone App'
 navBackground: '#003E52'
 background: 'linear-gradient(0deg, #003E52 0%, #003E52 100%)'
 invert: true

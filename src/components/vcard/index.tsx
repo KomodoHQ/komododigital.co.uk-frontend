@@ -30,6 +30,7 @@ const people = {
     email: 'armin@komododigital.co.uk',
     text: `A product of ex-Yugoslavia. Spent 4 years at Apple learning about the value of service and experience. Usually the one asking “why?”.`,
     photo: 'person_armin',
+    alt: 'Armin Talic - Commercial Director - Headshot',
   },
   Phoebe: {
     jobtitle: 'Client Partner',
@@ -38,6 +39,7 @@ const people = {
     text: `Supports people from large organisations to start-ups and makes it look easy. Can usually
     be found running a 5k for breakfast.`,
     photo: 'person_phoebe',
+    alt: 'Phoebe Dowley- Client Partner - Headshot',
   },
   Jason: {
     jobtitle: 'Project Manager',
@@ -46,6 +48,7 @@ const people = {
     text: `Spends most of his time in JIRA, SoW docs or sprint planning and retrospectives.
     Attends the BrewDog shareholders meetings.`,
     photo: 'person_jason',
+    alt: 'Jason Christie - Project Manager - Headshot',
   },
   Andy: {
     jobtitle: 'Founder & MD',
@@ -54,6 +57,7 @@ const people = {
     text: `Entrepreneur and liker of big ideas. Alpine Saxophonist (Grade 1.5) and 
     Drone enthusiast. Miniature Schnauzer Owner.`,
     photo: 'person_andy',
+    alt: 'Andy Greener - Founder & MD - Headshot',
   },
   Ian: {
     jobtitle: 'Development Team Lead',
@@ -61,6 +65,7 @@ const people = {
     email: 'ian@komododigital.co.uk',
     text: `Sees the world in 1s and 0s. Tech, Travel, Dog. Repeat. Proud owner of Shadow.`,
     photo: 'person_ian',
+    alt: 'Ian Outterside - Development Team Lead - Headshot',
   },
 };
 
@@ -71,11 +76,11 @@ const people = {
  * @param data
  */
 const VCard: React.SFC<Props> = ({ person, avatars }) => {
-  const { jobtitle, name, text, photo } = people[person];
+  const { jobtitle, name, text, photo, alt } = people[person];
   return (
     <div className="vcard">
       <div>
-        <Img fixed={avatars[photo].childImageSharp.fixed} />
+        <Img fixed={avatars[photo].childImageSharp.fixed} alt={alt} />
         <div>
           <h1>{name}</h1>
           <h2>{jobtitle}</h2>

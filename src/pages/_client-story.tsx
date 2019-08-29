@@ -27,7 +27,7 @@ export default (props) => {
     );
   }
 
-  const caseStudy = caseStudies.sort(() => .5 - Math.random())[0];
+  const caseStudy = caseStudies.sort(() => 0.5 - Math.random())[0];
 
   const hocProps = {
     caseStudy,
@@ -35,6 +35,7 @@ export default (props) => {
     title: rootNode ? rootNode.frontmatter.title : '',
     subtitle: rootNode ? rootNode.frontmatter.subtitle : '',
     coverimage: rootNode ? rootNode.frontmatter.coverimage : '',
+    coverimageAlt: rootNode ? rootNode.frontmatter.coverimageAlt : '',
     navBackground: rootNode ? rootNode.frontmatter.navBackground : '',
     background: rootNode ? rootNode.background : '',
     invert: rootNode ? rootNode.invert : false,
@@ -57,7 +58,11 @@ export default (props) => {
 export const caseStudyQuery = graphql`
   query caseStudyQuery {
     ...siteMeta
-    allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/client-stories/.*/index|client-stories/contact_us|contacts/" } }) {
+    allMarkdownRemark(
+      filter: {
+        fileAbsolutePath: { regex: "/client-stories/.*/index|client-stories/contact_us|contacts/" }
+      }
+    ) {
       edges {
         node {
           htmlAst
@@ -79,6 +84,7 @@ export const caseStudyQuery = graphql`
                 }
               }
             }
+            coverimageAlt
             group
             headercolor
             navBackground
@@ -136,9 +142,7 @@ export const caseStudyQuery = graphql`
         }
       }
     }
-    others: allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/client-stories/other/" } }
-    ) {
+    others: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/client-stories/other/" } }) {
       edges {
         node {
           htmlAst

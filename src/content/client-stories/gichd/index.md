@@ -6,6 +6,7 @@ group: 'client-stories'
 headercolor: '#D17C2F'
 csimage: '../../images/casestudy/GICHD@3x.png'
 coverimage: '../../images/casestudy/GICHDCover@3x.png'
+coverimageAlt: 'GICHD iPad App'
 navBackground: '#D17C2F'
 background: 'linear-gradient(0deg, #D17C2F 0%, #D17C2F 100%)'
 invert: true

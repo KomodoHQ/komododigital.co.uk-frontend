@@ -27,6 +27,7 @@ interface Props {
   className?: string;
   children: ReactNode;
   coverimage?: any;
+  coverimageAlt?: string;
   coverimageRaw?: any;
   showShowreel?: boolean;
   centered?: boolean;
@@ -52,9 +53,10 @@ const TitleText: React.SFC<Props> = ({
   showShowreel = true,
   centered = false,
   imageOverlap = false,
+  coverimageAlt = '',
 }) => {
   const subtitleEl = subtitle ? <span>{subtitle}</span> : null;
-  const titleEl = title ? <h2 dangerouslySetInnerHTML={{ __html: title }}></h2> : null;
+  const titleEl = title ? <h2 dangerouslySetInnerHTML={{ __html: title }} /> : null;
   const invertedClassname = invert ? 'invert' : '';
 
   let style = {
@@ -75,16 +77,18 @@ const TitleText: React.SFC<Props> = ({
 
   if (coverimage !== null || coverimageRaw !== null) {
     if (coverimage) {
-      coverImage = (<Img
-        fluid={coverimage.childImageSharp.fluid}
-        style={{
-          maxWidth: coverimage.childImageSharp.fluid.presentationWidth,
-          margin: '0 auto', // Used to center the image
-        }}
-      />);
-    }
-    else {
-      coverImage = (<img src={coverimageRaw} width="100%" />);
+      coverImage = (
+        <Img
+          fluid={coverimage.childImageSharp.fluid}
+          style={{
+            maxWidth: coverimage.childImageSharp.fluid.presentationWidth,
+            margin: '0 auto', // Used to center the image
+          }}
+          alt={coverimageAlt}
+        />
+      );
+    } else {
+      coverImage = <img src={coverimageRaw} width="100%" alt={coverimageAlt} />;
     }
   }
 
@@ -97,7 +101,11 @@ const TitleText: React.SFC<Props> = ({
   ) : null;
   const centeredClass = centered ? 'centered' : '';
 
-  return <div className={`komodoGridWrapper title-wrapper ${invertedClassname} ${centeredClass} ${className}`} style={style}>
+  return (
+    <div
+      className={`komodoGridWrapper title-wrapper ${invertedClassname} ${centeredClass} ${className}`}
+      style={style}
+    >
       <div className={`Title-Section ${centeredClass}`}>
         {subtitleEl}
         {titleEl}
@@ -105,7 +113,8 @@ const TitleText: React.SFC<Props> = ({
         {showreel}
       </div>
       <div className={`image-wrapper ${imageOverlapClass}`}>{coverImage}</div>
-    </div>;
+    </div>
+  );
 };
 
 export default TitleText;

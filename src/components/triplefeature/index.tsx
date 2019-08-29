@@ -23,6 +23,7 @@ interface Props {
   children?: ReactNode;
   title?: string;
   imgsrc?: any;
+  alt?: string;
 }
 
 /**
@@ -32,11 +33,13 @@ interface Props {
  * @param data
  */
 const TripleFeature: React.SFC<Props> = (props: Props) => {
-  return <div className={`TripleFeature`}>
-    <Img fixed={props.imgsrc.childImageSharp.fixed} />
-    <h3>{props.title}</h3>
-    {props.children}
-  </div>;
+  return (
+    <div className={`TripleFeature`}>
+      <Img fixed={props.imgsrc.childImageSharp.fixed} alt={props.alt} />
+      <h3>{props.title}</h3>
+      {props.children}
+    </div>
+  );
 };
 
 export default TripleFeature;

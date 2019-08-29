@@ -90,7 +90,7 @@ class NavigationBar extends React.Component<Props> {
         ref={this.navbarRef}
       >
         <Link to="/">
-          <Img fixed={logo.fixed} />
+          <Img fixed={logo.fixed} alt="Komodo - People Friendly Software" />
         </Link>
         <div className="hamburger">
           <Link
@@ -102,7 +102,8 @@ class NavigationBar extends React.Component<Props> {
                 if (!this.props.background) {
                   this.menuRef.current.style.background =
                     this.menuRef.current.style.background == 'rgba(0, 0, 0, 0)' ||
-                    this.menuRef.current.style.background == 'rgba(0, 0, 0, 0) none repeat scroll 0% 0%'
+                    this.menuRef.current.style.background ==
+                      'rgba(0, 0, 0, 0) none repeat scroll 0% 0%'
                       ? 'rgba(0, 0, 0, 1)'
                       : 'rgba(0, 0, 0, 0)';
                 }
@@ -114,6 +115,7 @@ class NavigationBar extends React.Component<Props> {
               width={64}
               height={64}
               style={{ width: 64, height: 64, marginTop: 10 }}
+              alt="menu-hamburger"
             />
           </Link>
         </div>
