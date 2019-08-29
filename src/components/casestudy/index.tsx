@@ -43,8 +43,8 @@ interface Props {
  */
 const CaseStudyLink: React.SFC<Props> = ({ image, subtitle, title, children, link = '#' }) => {
   return (
-    <Link to={link} className="case-study-link-element">
-      <div className="komodoGridWrapper case-study-link-wrapper">
+    <div className="komodoGridWrapper case-study-link-wrapper">
+      <Link to={link} className="case-study-link-element">
         <div className="case-study-link">
           <div
             className="img"
@@ -59,8 +59,8 @@ const CaseStudyLink: React.SFC<Props> = ({ image, subtitle, title, children, lin
             <span className="linktext">Read Case Study</span>
           </div>
         </div>
-      </div>
-    </Link>
+      </Link>
+    </div>
   );
 };
 
