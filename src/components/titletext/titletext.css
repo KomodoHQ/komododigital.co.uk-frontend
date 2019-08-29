@@ -61,7 +61,7 @@
     margin-top: 80px;
 }
 
-.Title-Section > h2 {
+.Title-Section > h1 {
     margin: 0;
     padding: 0;
     font-size: 2rem;
@@ -140,27 +140,27 @@
     .title-wrapper.topPaddingLarge {
         padding-top: 180px;
     }
-    
+
     .title-wrapper.topPaddingMedium {
         padding-top: 120px;
     }
-    
+
     .title-wrapper.topPaddingSmall {
         padding-top: 60px;
     }
-    
+
     .title-wrapper.bottomPaddingLarge {
         padding-bottom: 180px;
     }
-    
+
     .title-wrapper.bottomPaddingMedium {
         padding-bottom: 120px;
     }
-    
+
     .title-wrapper.bottomPaddingSmall {
         padding-bottom: 60px;
     }
-    
+
 
 }
 
@@ -177,7 +177,7 @@
         padding: 0;
     }
 
-    .Title-Section > h2 {
+    .Title-Section > h1 {
         margin: 0;
         padding: 0;
         font-size: 4rem;
@@ -192,23 +192,23 @@
     .title-wrapper.topPaddingLarge {
         padding-top: 180px;
     }
-    
+
     .title-wrapper.topPaddingMedium {
         padding-top: 120px;
     }
-    
+
     .title-wrapper.topPaddingSmall {
         padding-top: 60px;
     }
-    
+
     .title-wrapper.bottomPaddingLarge {
         padding-bottom: 180px;
     }
-    
+
     .title-wrapper.bottomPaddingMedium {
         padding-bottom: 120px;
     }
-    
+
     .title-wrapper.bottomPaddingSmall {
         padding-bottom: 60px;
     }
@@ -227,7 +227,7 @@
         padding: 0;
     }
 
-    .Title-Section > h2 {
+    .Title-Section > h1 {
         margin: 0;
         padding: 0;
         font-size: 4rem;

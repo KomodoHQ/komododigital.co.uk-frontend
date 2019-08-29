@@ -54,7 +54,7 @@ const TitleText: React.SFC<Props> = ({
   imageOverlap = false,
 }) => {
   const subtitleEl = subtitle ? <span>{subtitle}</span> : null;
-  const titleEl = title ? <h2 dangerouslySetInnerHTML={{ __html: title }}></h2> : null;
+  const titleEl = title ? <h1 dangerouslySetInnerHTML={{ __html: title }}></h1> : null;
   const invertedClassname = invert ? 'invert' : '';
 
   let style = {

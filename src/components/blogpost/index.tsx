@@ -38,7 +38,7 @@ const BlogPost: React.SFC<Props> = ({ slug, title, subtitle="INSIGHTS", readingt
     <Link className="blogpostLink" to={`insights/${slug}`}>
         <img src={image} width={370} alt={title} />
         <p>{subtitle}</p>
-        <h1 dangerouslySetInnerHTML={{ __html: title }}></h1>
+        <h2 dangerouslySetInnerHTML={{ __html: title }}></h2>
         <div className="read">
           <div className="readingTime">{readingtime} min read</div>
           <div className="readmore">Read</div>

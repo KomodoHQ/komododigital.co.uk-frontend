@@ -23,13 +23,13 @@
     flex: 3;
 }
 
-.vcard > div > div > h1 {
+.vcard > div > div > h3 {
     font-size: 28px;
     padding: 0;
     margin: 0;
 }
 
-.vcard > div > div > h2 {
+.vcard > div > div > h4 {
     text-transform: uppercase;
     font-size: 14px;
     font-weight: bold;

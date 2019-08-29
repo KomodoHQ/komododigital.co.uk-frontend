@@ -51,7 +51,7 @@ const people = {
     jobtitle: 'Founder & MD',
     name: 'Andy Greener',
     email: 'andy@komododigital.co.uk',
-    text: `Entrepreneur and liker of big ideas. Alpine Saxophonist (Grade 1.5) and 
+    text: `Entrepreneur and liker of big ideas. Alpine Saxophonist (Grade 1.5) and
     Drone enthusiast. Miniature Schnauzer Owner.`,
     photo: 'person_andy',
   },
@@ -77,8 +77,8 @@ const VCard: React.SFC<Props> = ({ person, avatars }) => {
       <div>
         <Img fixed={avatars[photo].childImageSharp.fixed} />
         <div>
-          <h1>{name}</h1>
-          <h2>{jobtitle}</h2>
+          <h3>{name}</h3>
+          <h4>{jobtitle}</h4>
         </div>
       </div>
       <p>{text}</p>
