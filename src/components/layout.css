@@ -50,9 +50,13 @@ body {
 
 .komodoGridWrapper {
     width: 100vw;
-    display: grid;
-    grid-template-columns: 1fr repeat(14, 15px) 1fr;
-    grid-gap: 5px;
+    /* IE11 support */
+    display: flex;
+    @supports (display: grid) {
+      display: grid;
+      grid-template-columns: 1fr repeat(14, 15px) 1fr;
+      grid-gap: 5px;
+    }
     max-width: 100%;
 }
 

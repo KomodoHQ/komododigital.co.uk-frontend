@@ -1,5 +1,4 @@
 .vcard > div {
-    flex: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,11 +14,10 @@
 }
 
 .vcard > div > div.gatsby-image-wrapper {
-    flex: initial;
     margin-right: 2rem;
 }
 
-.vcard > div > div {
+.vcard > div > div:not(.gatsby-image-wrapper) {
     flex: 3;
 }
 

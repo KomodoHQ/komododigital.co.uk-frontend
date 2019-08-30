@@ -111,10 +111,22 @@
 @media (--small-mobile-viewport) {
   .navigationBar > a {
     grid-column: 2 / 10;
+    /* IE11 support */
+    flex: 1;
+    margin-left: 5vw;
+    @supports (display: grid) {
+      margin-left: 0px;
+    }
   }
 
   .navigationBar > ul {
     grid-column: 10 / 17;
+    /* IE11 support */
+    flex: 1;
+    margin-right: 5vw;
+    @supports (display: grid) {
+      margin-right: 0px;
+    }
   }
 }
 
@@ -130,6 +142,8 @@
 
     .navigationBar > a {
         grid-column: 2 / 7;
+        /* IE11 support */
+        flex: 1;
     }
 
     .navigationBar > ul {
@@ -143,6 +157,8 @@
         left: initial;
         height: auto;
         width: 100%;
+        /* IE11 support */
+        flex: 2;
     }
 
     .navigationBar > ul > li {

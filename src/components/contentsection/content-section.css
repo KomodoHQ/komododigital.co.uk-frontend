@@ -88,27 +88,27 @@
     .cs-wrapper.topPaddingLarge {
         padding-top: 180px;
     }
-    
+
     .cs-wrapper.topPaddingMedium {
         padding-top: 120px;
     }
-    
+
     .cs-wrapper.topPaddingSmall {
         padding-top: 60px;
     }
-    
+
     .cs-wrapper.bottomPaddingLarge {
         padding-bottom: 180px;
     }
-    
+
     .cs-wrapper.bottomPaddingMedium {
         padding-bottom: 120px;
     }
-    
+
     .cs-wrapper.bottomPaddingSmall {
         padding-bottom: 60px;
     }
-    
+
 
 }
 
@@ -119,6 +119,18 @@
         display: grid;
 
         grid-template-columns: 1fr repeat(14, 50px) 1fr;
+
+        /* IE11 support */
+        display: flex;
+        width: 80vw;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        @supports (display: grid) {
+          display: grid;
+          width: auto;
+          margin-left: 0vw;
+          margin-right: 0vw;
+        }
     }
 
     .Content-Section > span {
@@ -128,10 +140,14 @@
     .Content-Section > h2 {
         grid-column: 1/8;
         padding: 1rem;
+        /* IE11 support */
+        flex: 1;
     }
 
     .Content-Section > div {
         grid-column: 8/17;
+        /* IE11 support */
+        flex: 1;
     }
 
     .cs-wrapper {
@@ -141,43 +157,46 @@
     .cs-wrapper.topPaddingLarge {
         padding-top: 180px;
     }
-    
+
     .cs-wrapper.topPaddingMedium {
         padding-top: 120px;
     }
-    
+
     .cs-wrapper.topPaddingSmall {
         padding-top: 60px;
     }
-    
+
     .cs-wrapper.bottomPaddingLarge {
         padding-bottom: 180px;
     }
-    
+
     .cs-wrapper.bottomPaddingMedium {
         padding-bottom: 120px;
     }
-    
+
     .cs-wrapper.bottomPaddingSmall {
         padding-bottom: 60px;
     }
 
 
-    
+
 }
 
 @media (--desktop-viewport) {
-
     .Content-Section {
         grid-column: 3 / 15;
     }
 
     .Content-Section > h2 {
         grid-column: 1/6;
+        /* IE11 support */
+        flex: 1;
     }
 
     .Content-Section > div {
         grid-column: 7/17;
+        /* IE11 support */
+        flex: 2;
     }
 
     .cs-wrapper {

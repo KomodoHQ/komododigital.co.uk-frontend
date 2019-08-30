@@ -44,15 +44,34 @@
 
     .legal-footer  div.company {
         grid-column: 2 / 10;
+        /* IE11 support */
+        width: calc(45vw - 20px);
+        margin-left: 5vw;
+        margin-right: 20px;
+        @supports (display: grid) {
+          width: auto;
+          margin-left: 0vw;
+          margin-right: 0vw;
+        }
     }
 
     .legal-footer  div.contact {
         grid-column: 10 / 16;
-        display: grid;
-        justify-content: flex-end;
-        width: 100%;
+        /* IE11 support */
+        width: calc(45vw - 20px);
+        margin-left: 20px;
+        margin-right: 5vw;
+        display: flex;
+        flex-direction: row-reverse;
+        @supports (display: grid) {
+          width: 100%;
+          margin-left: 0vw;
+          margin-right: 0vw;
+          display: grid;
+          justify-content: flex-end;
+        }
     }
-    
+
 }
 
 @media (--tablet-viewport) {

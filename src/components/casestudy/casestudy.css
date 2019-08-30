@@ -72,6 +72,15 @@ a:hover .case-study-link > div.content span.linktext {
 @media (--tablet-viewport) {
     .case-study-link {
         flex-direction: row;
+        /* IE11 support */
+        width: 80vw;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        @supports (display: grid) {
+          width: auto;
+          margin-left: 0vw;
+          margin-right: 0vw;
+        }
     }
     .case-study-link > div.content {
         padding: 32px;

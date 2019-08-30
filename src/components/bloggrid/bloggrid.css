@@ -2,10 +2,26 @@
 
 .BlogGrid {
     padding-bottom: 60px;
+    /* IE11 support */
+    width: 80vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    @supports (display: grid) {
+      width: auto;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
 }
 
 .BlogGrid > a {
     grid-column: 2 / 16;
+    margin-left: 20px;
+    margin-right: 20px;
+    @supports (display: grid) {
+      width: auto;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
 }
 
 
@@ -13,40 +29,49 @@
 
     .BlogGrid {
         grid-template-columns: 38px repeat(3, 1fr) 38px;
-        display: grid;
+        /* IE11 support */
+        display: flex;
+        @supports (display: grid) {
+          display: grid;
+        }
     }
 
     .BlogGrid > a:nth-of-type(3n+1) {
         grid-column: 2 / 3;
+        /* IE11 support */
+        flex: 1;
     }
-    
+
     .BlogGrid > a:nth-of-type(3n+2) {
         grid-column: 3 / 4;
+        /* IE11 support */
+        flex: 1;
     }
-    
+
     .BlogGrid > a:nth-of-type(3n) {
         grid-column: 4 / 5;
+        /* IE11 support */
+        flex: 1;
     }
-    
+
 }
 
 @media (--desktop-viewport) {
 
     .BlogGrid {
-        display: grid;
         grid-template-columns: 1fr repeat(14, 70px) 1fr;
     }
 
     .BlogGrid > a:nth-of-type(3n+1) {
         grid-column: 3 / 7;
     }
-    
+
     .BlogGrid > a:nth-of-type(3n+2) {
         grid-column: 7 / 11;
     }
-    
+
     .BlogGrid > a:nth-of-type(3n) {
         grid-column: 11 / 15;
     }
-    
+
 }

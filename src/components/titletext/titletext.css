@@ -140,27 +140,27 @@
     .title-wrapper.topPaddingLarge {
         padding-top: 180px;
     }
-    
+
     .title-wrapper.topPaddingMedium {
         padding-top: 120px;
     }
-    
+
     .title-wrapper.topPaddingSmall {
         padding-top: 60px;
     }
-    
+
     .title-wrapper.bottomPaddingLarge {
         padding-bottom: 180px;
     }
-    
+
     .title-wrapper.bottomPaddingMedium {
         padding-bottom: 120px;
     }
-    
+
     .title-wrapper.bottomPaddingSmall {
         padding-bottom: 60px;
     }
-    
+
 
 }
 
@@ -170,6 +170,15 @@
         grid-column: 2 / 14;
         overflow: hidden;
         padding: 1rem;
+        /* IE11 support */
+        width: 80vw;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        @supports (display: grid) {
+          width: auto;
+          margin-left: 0vw;
+          margin-right: 0vw;
+        }
     }
 
     .Title-Section.centered {
@@ -192,23 +201,23 @@
     .title-wrapper.topPaddingLarge {
         padding-top: 180px;
     }
-    
+
     .title-wrapper.topPaddingMedium {
         padding-top: 120px;
     }
-    
+
     .title-wrapper.topPaddingSmall {
         padding-top: 60px;
     }
-    
+
     .title-wrapper.bottomPaddingLarge {
         padding-bottom: 180px;
     }
-    
+
     .title-wrapper.bottomPaddingMedium {
         padding-bottom: 120px;
     }
-    
+
     .title-wrapper.bottomPaddingSmall {
         padding-bottom: 60px;
     }
@@ -220,6 +229,15 @@
         grid-column: 3 / 12;
         overflow: hidden;
         padding: 1rem;
+        /* IE11 support */
+        width: 65vw;
+        margin-left: 10vw;
+        margin-right: 25vw;
+        @supports (display: grid) {
+          width: auto;
+          margin-left: 0vw;
+          margin-right: 0vw;
+        }
     }
 
     .Title-Section.centered {

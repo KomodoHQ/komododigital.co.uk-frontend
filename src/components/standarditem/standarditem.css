@@ -1,8 +1,13 @@
 .StandardItem {
     min-height: 88px;
-    display: grid;
     align-items: center;
     justify-items: center;
     background-color: white;
     box-shadow: 0 1px 4px 0 rgba(0,0,0,0.2);
+    /* IE11 support */
+    display: flex;
+    justify-content: center;
+    @supports (display: grid) {
+      display: grid;
+    }
 }

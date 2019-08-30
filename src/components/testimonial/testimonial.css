@@ -7,6 +7,15 @@
 .Testimonial {
     grid-column: 3 / 15;
     color: white;
+    /* IE11 support */
+    width: 80vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    @supports (display: grid) {
+      width: auto;
+      margin-left: 0vw;
+      margin-right: 0vw;
+    }
 }
 
 .Testimonial > span {
@@ -62,6 +71,15 @@ q {
     .Testimonial {
         grid-column: 4 / 14;
         color: white;
+        /* IE11 support */
+        width: 70vw;
+        margin-left: 20vw;
+        margin-right: 20vw;
+        @supports (display: grid) {
+          width: auto;
+          margin-left: 0vw;
+          margin-right: 0vw;
+        }
     }
 
     q {

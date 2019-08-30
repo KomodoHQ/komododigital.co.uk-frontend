@@ -4,20 +4,36 @@
   & > div {
     grid-column: 2/16;
   }
+
+  /* IE11 support */
+  width: 80vw;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  @supports (display: grid) {
+    width: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 
 @media (--laptop-viewport) {
   .tripleSection {
     & > div:nth-of-type(1n) {
-      grid-column: 2/6
+      grid-column: 2/6;
+      /* IE11 support */
+      flex: 1;
     }
 
     & > div:nth-of-type(2n) {
-      grid-column: 7/11
+      grid-column: 7/11;
+      /* IE11 support */
+      flex: 1;
     }
 
     & > div:nth-of-type(3n) {
-      grid-column: 12/16
+      grid-column: 12/16;
+      /* IE11 support */
+      flex: 1;
     }
   }
 }

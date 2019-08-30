@@ -30,7 +30,7 @@
     .contactsection-wrapper {
         background-color: white;
     }
-    
+
     .contactsection {
         grid-column: 2 / 16;
     }
@@ -46,13 +46,29 @@
     .contactsection-wrapper {
         background-color: white;
     }
-    
+
     .contactsection {
         grid-column: 2 / 9;
+        /* IE11 support */
+        flex: 1;
+        margin-left: 10vw;
+        margin-right: 20px;
+        @supports (display: grid) {
+          margin-left: 0vw;
+          margin-right: 0vw;
+        }
     }
-    
+
     .form {
         grid-column: 9 / 16;
+        /* IE11 support */
+        flex: 1;
+        margin-left: 20px;
+        margin-right: 10vw;
+        @supports (display: grid) {
+          margin-left: 0vw;
+          margin-right: 0vw;
+        }
     }
 
 }
@@ -62,11 +78,11 @@
     .contactsection-wrapper {
         background-color: white;
     }
-    
+
     .contactsection {
         grid-column: 3 / 9;
     }
-    
+
     .form {
         grid-column: 9 / 15;
     }

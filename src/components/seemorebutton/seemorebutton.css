@@ -4,6 +4,9 @@
     justify-items: center;
     padding: 10px 0;
     margin-bottom: 140px;
+    /* IE11 support */
+    width: 100vw;
+    justify-content: center;
 }
 
 .seemorebutton-wrapper > a {
