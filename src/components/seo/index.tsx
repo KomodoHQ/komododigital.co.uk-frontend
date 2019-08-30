@@ -2,6 +2,8 @@ import React, { ReactNode } from 'react';
 import Meta from './meta';
 import Twitter from './twitter';
 import Facebook from './facebook';
+import SchemaData from './schemaData';
+import { PageMeta, SchemaDataType } from './seo/types';
 
 interface Props {
   title?: string;
@@ -16,6 +18,7 @@ interface Props {
   children?: ReactNode;
   siteName: string;
   noindex?: boolean;
+  schemaData?: SchemaDataType;
 }
 
 const SEO: React.SFC<Props> = ({
@@ -26,7 +29,8 @@ const SEO: React.SFC<Props> = ({
   url,
   children,
   siteName,
-  noindex = false
+  noindex = false,
+  schemaData,
 }) => {
   return (
     <>
@@ -53,6 +57,7 @@ const SEO: React.SFC<Props> = ({
         url={url}
         key="seo.facebook"
       />
+      <SchemaData schemaData={schemaData} />
     </>
   );
 };

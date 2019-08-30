@@ -6,7 +6,7 @@ import LegalFooter from './legalfooter';
 import '../assets/css/cookies.css';
 import './layout.css';
 import Img from 'gatsby-image';
-import { PageMeta } from './seo/types';
+import { PageMeta, SchemaDataType } from './seo/types';
 
 interface Props {
   children?: ReactNode;
@@ -15,6 +15,7 @@ interface Props {
   background?: string;
   inverted?: boolean;
   noindex?: boolean;
+  schemaData?: SchemaDataType;
 }
 
 const Layout: React.SFC<Props> = ({
@@ -23,7 +24,8 @@ const Layout: React.SFC<Props> = ({
   children,
   background = '',
   inverted = false,
-  noindex = false
+  noindex = false,
+  schemaData,
 }) => {
   const logo = !inverted ? data.logo.childImageSharp : data.logo_inverted.childImageSharp;
 
@@ -37,6 +39,7 @@ const Layout: React.SFC<Props> = ({
         siteName={data.site.siteMetadata.name}
         description={description}
         noindex={noindex}
+        schemaData={schemaData}
         // TODO: fix
         url="http://test"
         title={title}

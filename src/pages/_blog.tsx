@@ -10,6 +10,7 @@ import CleanSourceURL from '../utils/clean-source-url';
 import Placeholder from '../assets/images/placeholder.png';
 import Blog from '../templates/blog';
 import { findNode } from '../utils/nodes';
+import { getSchemaData } from '../components/seo/schemaData.tsx';
 
 export default (props) => {
   const post = props.data.allWordpressPost.edges[0].node;
@@ -34,16 +35,21 @@ export default (props) => {
 
   const html = CleanSourceURL(post.content);
 
+  const schemaData = getSchemaData({ ...post, html });
+
+  console.log(schemaData);
+
   const hocProps = {
     html,
     imageSource,
     insights,
-    insightsIntro: (insightsIntro) ? insightsIntro.htmlAst : '',
+    insightsIntro: insightsIntro ? insightsIntro.htmlAst : '',
     title: post.title,
     pageMeta: {
       title: post.yoast.title || post.title,
       description: post.yoast.metadesc || '',
     },
+    schemaData,
     ...props,
   };
 
