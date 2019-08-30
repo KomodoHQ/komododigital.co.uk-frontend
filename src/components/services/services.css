@@ -2,6 +2,18 @@
 
 .services {
     padding: 10px 0;
+
+    /* IE11 support */
+    display: flex;
+    width: 80vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    @supports (display: grid) {
+      display: grid;
+      width: auto;
+      margin-left: 0vw;
+      margin-right: 0vw;
+    }
 }
 
 .services > ul {
@@ -35,6 +47,15 @@
         padding: 10px 0;
     }
 
+    .services > ul {
+        /* IE11 support */
+        flex: 1;
+        margin: 16px 15px;
+        @supports (display: grid) {
+          margin: 16px 0px;
+        }
+    }
+
     .services > ul:nth-of-type(3n+1) {
         grid-column: 3 / 7;
     }
@@ -44,7 +65,7 @@
     .services > ul:nth-of-type(3n) {
         grid-column: 11 / 15;
     }
-    
+
 }
 
 @media (--laptop-viewport) {

@@ -2,6 +2,11 @@
 
 .two-column-wrapper {
     padding: 0;
+    display: flex;
+    @supports (display: grid) {
+      display: grid;
+    }
+    flex-wrap: wrap;
 }
 
 .two-column-wrapper > .gatsby-image-wrapper {
@@ -105,27 +110,27 @@
     .two-column-wrapper.topPaddingLarge {
         padding-top: 180px;
     }
-    
+
     .two-column-wrapper.topPaddingMedium {
         padding-top: 120px;
     }
-    
+
     .two-column-wrapper.topPaddingSmall {
         padding-top: 60px;
     }
-    
+
     .two-column-wrapper.bottomPaddingLarge {
         padding-bottom: 180px;
     }
-    
+
     .two-column-wrapper.bottomPaddingMedium {
         padding-bottom: 120px;
     }
-    
+
     .two-column-wrapper.bottomPaddingSmall {
         padding-bottom: 60px;
     }
-    
+
 
 }
 
@@ -133,22 +138,42 @@
 
     .Two-Column {
         grid-column: 2 / 16;
-        display: grid;
 
         grid-template-columns: 1fr repeat(14, 50px) 1fr;
+        /* IE11 support */
+        width: 80vw;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        display: flex;
+        flex-wrap: wrap;
+        @supports (display: grid) {
+          display: grid;
+          width: auto;
+          margin-left: 0px;
+          margin-right: 0px;
+        }
     }
 
     .Two-Column > span {
         margin: 0 1rem;
+        /* IE11 support */
+        width: 100%;
+        @supports (display: grid) {
+          width: auto;
+        }
     }
 
     .Two-Column > h2 {
         grid-column: 1/8;
         padding: 1rem;
+        /* IE11 support */
+        flex: 2;
     }
 
     .Two-Column > div {
         grid-column: 8/17;
+        /* IE11 support */
+        flex: 3;
     }
 
     .two-column-wrapper {
@@ -158,29 +183,41 @@
     .two-column-wrapper.topPaddingLarge {
         padding-top: 180px;
     }
-    
+
     .two-column-wrapper.topPaddingMedium {
         padding-top: 120px;
     }
-    
+
     .two-column-wrapper.topPaddingSmall {
         padding-top: 60px;
     }
-    
+
     .two-column-wrapper.bottomPaddingLarge {
         padding-bottom: 180px;
     }
-    
+
     .two-column-wrapper.bottomPaddingMedium {
         padding-bottom: 120px;
     }
-    
+
     .two-column-wrapper.bottomPaddingSmall {
         padding-bottom: 60px;
     }
 
     .Two-Column-Divider {
         grid-column: 2 / 16;
+        /* IE11 support */
+        height: 0px;
+        width: 80vw;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        display: flex;
+        @supports (display: grid) {
+          display: grid;
+          width: auto;
+          margin-left: 0px;
+          margin-right: 0px;
+        }
     }
 }
 
@@ -192,10 +229,14 @@
 
     .Two-Column > h2 {
         grid-column: 1/6;
+        /* IE11 support */
+        flex: 1;
     }
 
     .Two-Column > div {
         grid-column: 7/17;
+        /* IE11 support */
+        flex: 2;
     }
 
     .two-column-wrapper {

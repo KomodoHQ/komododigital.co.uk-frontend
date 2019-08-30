@@ -21,6 +21,13 @@
     letter-spacing: 3px;
     text-transform: uppercase;
     margin-top: 20px;
+    /* IE11 support */
+    width: 100%;
+    padding: 15px;
+    @supports (display: grid) {
+      width: auto;
+      padding: 0px;
+    }
 }
 
 .PortfolioGrid > div {

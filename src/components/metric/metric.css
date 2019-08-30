@@ -4,6 +4,10 @@
     padding: 20px;
     border: 1px solid #dddddd;
     background-color: #ffffff;
+    margin: 15px;
+    @supports (display: grid) {
+      margin: 0;
+    }
 }
 
 .Metric > span.number {
@@ -63,7 +67,7 @@
         font-size: 70px;
         line-height: 86px;
     }
-        
+
     .Metric > span {
         font-size: 28px;
         line-height: 34px;
