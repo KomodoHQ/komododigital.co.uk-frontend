@@ -50,14 +50,14 @@ class NavigationBar extends React.Component<Props> {
         return;
       }
 
-      if (window.scrollY > 100 && !this.navbarRef.current.classList.contains('small')) {
+      if (window.pageYOffset > 100 && !this.navbarRef.current.classList.contains('small')) {
         this.navbarRef.current.classList.add('small');
         this.navbarRef.current.style['background-color'] = this.props.background
           ? this.props.background
           : this.props.inverted
           ? 'rgba(234,234,234,1)'
           : 'rgba(0,0,0,1)';
-      } else if (window.scrollY < 100 && this.navbarRef.current.classList.contains('small')) {
+      } else if (window.pageYOffset < 100 && this.navbarRef.current.classList.contains('small')) {
         this.navbarRef.current.classList.remove('small');
         this.navbarRef.current.style['background-color'] = this.props.background
           ? this.props.background
