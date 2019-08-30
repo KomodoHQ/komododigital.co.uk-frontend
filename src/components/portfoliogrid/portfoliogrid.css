@@ -2,11 +2,11 @@
 
 .PortfolioGrid {
     padding: 30px 0;
-    flex-wrap: wrap;
     /* IE11 support */
     width: 80vw;
     margin-left: 10vw;
     margin-right: 10vw;
+    flex-wrap: wrap;
     @supports (display: grid) {
       width: auto;
       margin-left: 0vw;
@@ -32,6 +32,7 @@
 
 .PortfolioGrid > div {
     grid-column: 2 / 16;
+    /* IE11 support */
     margin: 15px;
     @supports (display: grid) {
       margin: 0;

@@ -2,11 +2,12 @@
 
 .two-column-wrapper {
     padding: 0;
+    /* IE11 support */
     display: flex;
+    flex-wrap: wrap;
     @supports (display: grid) {
       display: grid;
     }
-    flex-wrap: wrap;
 }
 
 .two-column-wrapper > .gatsby-image-wrapper {

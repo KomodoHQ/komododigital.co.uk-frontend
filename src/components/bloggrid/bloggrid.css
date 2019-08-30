@@ -15,6 +15,7 @@
 
 .BlogGrid > a {
     grid-column: 2 / 16;
+    /* IE11 support */
     margin: 20px;
     @supports (display: grid) {
       width: auto;
