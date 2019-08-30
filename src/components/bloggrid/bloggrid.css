@@ -15,12 +15,10 @@
 
 .BlogGrid > a {
     grid-column: 2 / 16;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 20px;
     @supports (display: grid) {
       width: auto;
-      margin-left: 0px;
-      margin-right: 0px;
+      margin: 0px;
     }
 }
 
@@ -31,27 +29,30 @@
         grid-template-columns: 38px repeat(3, 1fr) 38px;
         /* IE11 support */
         display: flex;
+        flex-wrap: wrap;
         @supports (display: grid) {
           display: grid;
         }
     }
 
+    .BlogGrid > a {
+      /* IE11 support */
+      width: calc(33% - 40px);
+      @supports (display: grid) {
+        width: auto;
+      }
+    }
+
     .BlogGrid > a:nth-of-type(3n+1) {
         grid-column: 2 / 3;
-        /* IE11 support */
-        flex: 1;
     }
 
     .BlogGrid > a:nth-of-type(3n+2) {
         grid-column: 3 / 4;
-        /* IE11 support */
-        flex: 1;
     }
 
     .BlogGrid > a:nth-of-type(3n) {
         grid-column: 4 / 5;
-        /* IE11 support */
-        flex: 1;
     }
 
 }

@@ -34,13 +34,15 @@ class ContactJobs extends React.Component<Props, State> {
   }
 
   getCareerData() {
-    fetch('https://hire.withgoogle.com/v2/api/t/komododigitalcouk/public/jobs')
-      .then((results) => {
-        return results.json();
-      })
-      .then((data) => {
-        this.setState({ jobs: data });
-      });
+    if (typeof fetch !== 'undefined') {
+      fetch('https://hire.withgoogle.com/v2/api/t/komododigitalcouk/public/jobs')
+        .then((results) => {
+          return results.json();
+        })
+        .then((data) => {
+          this.setState({ jobs: data });
+        });
+    }
   }
 
   render() {
