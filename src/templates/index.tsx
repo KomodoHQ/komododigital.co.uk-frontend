@@ -15,6 +15,7 @@ import TripleSection from '../components/triplesection';
 import TripleFeature from '../components/triplefeature';
 import Testimonial from '../components/testimonial';
 import { PageMeta } from '../components/seo/types';
+import sanitizeHtml from 'sanitize-html';
 
 const renderAst = new rehypeReact({
   createElement: React.createElement,
@@ -134,12 +135,20 @@ export default (props: IndexPageProps) => {
       </ContentSection>
       <BlogGrid>
         {props.insights.map((insight) => {
+          // Strip HTML tags so they are not included in the word count
+          const content = sanitizeHtml(insight.node.content, { allowedTags: [] });
+          // Get an approximate word count
+          const contentLength = content.replace('\n', ' ').split(' ').length;
+          // Average reading speed is 200 words per minute
+          const readingTime = Math.ceil(contentLength / 200);
+
           return (
             <BlogPost
               key={insight.node.title}
               slug={insight.node.slug}
               title={insight.node.title}
               image={insight.node.imageSource}
+              readingtime={readingTime}
             />
           );
         })}

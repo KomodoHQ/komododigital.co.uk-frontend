@@ -32,7 +32,6 @@
     margin: 0 0.5rem;
 }
 
-
 @media (--mobile-viewport) {
 
     .legal-footer {
@@ -54,6 +53,18 @@
         width: 100%;
     }
     
+}
+
+@media (--tablet-viewport) {
+
+    .legal-footer  div.company {
+        grid-column: 2 / 8;
+    }
+
+    .legal-footer  div.contact {
+        grid-column: 8 / 16;
+    }
+
 }
 
 @media (--desktop-viewport) {

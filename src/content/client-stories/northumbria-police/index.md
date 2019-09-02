@@ -11,8 +11,8 @@ navBackground: '#171717'
 background: 'linear-gradient(0deg, #171717 0%, #171717 100%)'
 invert: true
 excerpt: 'Police E-Box is a multi-phased project that sees the integration of mobile technology into police officers day to day workflow, streamlining access to information and reducing load on resource control and radio...'
-# metaTitle: '' # TODO: Review meta title - will use value of 'title' if not set
-# metaDescription: '' # TODO: Review meta description - will use value of 'excerpt' if not set
+metaTitle: 'Transforming Policing Through Intuative & Secure Mobile Working'
+metaDescription: 'Integration of mobile technology into the day-to-day workflow of police officers to increase productivity and reduce cost.'
 ---
 
 Police E-Box is a multi-phased project that sees the integration of mobile technology into police officers day to day workflow, streamlining access to information and reducing load on resource control and radio channels via smartphone technology.

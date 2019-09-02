@@ -75,7 +75,7 @@ export default (props) => {
           <p>{props.caseStudy.excerpt}</p>
         </div>
       </CaseStudy>
-      <SeeMoreButton title="See More Work" />
+      <SeeMoreButton title="See More Work" link={'/client-stories'} />
       <ContactSection background="#fff" className="topPaddingLarge">
         {renderAst(props.contactsIntro)}
         <VCard person="Armin" avatars={props.data} />
