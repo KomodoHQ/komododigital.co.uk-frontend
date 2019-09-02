@@ -1,6 +1,5 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import jsdom from 'jsdom';
 
 import { SchemaDataType } from './types';
 
@@ -33,6 +32,10 @@ export const getSchemaData = (post: any): SchemaDataType => {
     ? 'https://blog.komododigital.co.uk' + post.featured_media.source_url
     : null;
 
+  // This will only return false in nodeJS as all modern browsers have a window
+  const url =
+    typeof window === 'undefined' ? 'https://www.komododigital.co.uk' : window.location.href;
+
   return {
     title: post.title,
     headline: post.title,
@@ -40,7 +43,7 @@ export const getSchemaData = (post: any): SchemaDataType => {
     author,
     imageURL,
     body: cleanBody(post.html),
-    url: window.location.href,
+    url,
   };
 };
 
@@ -52,6 +55,10 @@ const SchemaData: React.SFC<Props> = ({ schemaData }) => {
   if (!schemaData) {
     return null;
   }
+
+  // This will only return false in nodeJS as all modern browsers have a window
+  const url =
+    typeof window === 'undefined' ? 'https://www.komododigital.co.uk' : window.location.href;
 
   // If no image just use the Komodo Logo
   const image = schemaData.imageURL
@@ -80,7 +87,7 @@ const SchemaData: React.SFC<Props> = ({ schemaData }) => {
       "@type" : "Article",
       "mainEntityOfPage": {
          "@type": "WebPage",
-         "@id": "${window.location.href}"
+         "@id": "${url}"
       },
       "name" : "${schemaData.title}",${authorString}
       "headline" : "${schemaData.title}",
