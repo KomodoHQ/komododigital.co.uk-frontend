@@ -13,8 +13,10 @@ export default (props) => {
     createElement: React.createElement,
   }).Compiler;
 
+  const schemaData = { ...props.schemaData, logo: props.data.logo.childImageSharp.fixed.src };
+
   return (
-    <Layout data={props.data} pageMeta={props.pageMeta} schemaData={props.schemaData}>
+    <Layout data={props.data} pageMeta={props.pageMeta} schemaData={schemaData}>
       <TitleText
         title={props.title}
         subtitle={`Insights`}

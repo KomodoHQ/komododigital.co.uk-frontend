@@ -37,8 +37,6 @@ export default (props) => {
 
   const schemaData = getSchemaData({ ...post, html });
 
-  console.log(schemaData);
-
   const hocProps = {
     html,
     imageSource,

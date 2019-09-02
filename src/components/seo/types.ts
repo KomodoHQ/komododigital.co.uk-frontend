@@ -5,9 +5,11 @@ export interface PageMeta {
 
 export interface SchemaDataType {
   title: string;
+  headline: string;
   author?: string;
   date: string;
   body: string;
   imageURL?: string;
   url: string;
+  logo?: string;
 }
