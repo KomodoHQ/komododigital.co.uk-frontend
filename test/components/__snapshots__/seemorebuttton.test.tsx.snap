@@ -2,13 +2,15 @@
 
 exports[`SeeMoreButton element is rendered 1`] = `
 <div
-  className="komodoGridWrapper seemorebutton-wrapper"
+  className="komodoGridWrapper seemorebutton-wrapper undefined"
 >
   <a
-    href="/About"
+    href="/about"
     onClick={[Function]}
   >
-    <button>
+    <button
+      disabled={false}
+    >
       test
     </button>
   </a>

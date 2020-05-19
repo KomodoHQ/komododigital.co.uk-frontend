@@ -12,19 +12,16 @@ exports[`Testimonial element is rendered 1`] = `
   <div
     className="Testimonial"
   >
-    <span
-      className="name"
-    >
-      :
-    </span>
     <q />
     <hr />
     <span
-      className="job"
+      className="name"
     />
     <span
-      className="company"
-    />
+      className="job"
+    >
+      , 
+    </span>
   </div>
 </article>
 `;

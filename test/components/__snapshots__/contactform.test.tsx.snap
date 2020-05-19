@@ -11,7 +11,7 @@ exports[`ContactForm element is rendered 1`] = `
     <label
       htmlFor="form-name"
     >
-      Your Name
+      Name
       <input
         id="form-name"
         name="name"
@@ -22,7 +22,7 @@ exports[`ContactForm element is rendered 1`] = `
     <label
       htmlFor="form-email"
     >
-      Your Email
+      Email
       <input
         id="form-email"
         name="email"
@@ -31,87 +31,21 @@ exports[`ContactForm element is rendered 1`] = `
       />
     </label>
     <label
-      htmlFor="form-service"
-    >
-      Service
-      <select
-        id="form-service"
-        name="service"
-      >
-        <option>
-          Choose Service
-        </option>
-        <option
-          value="Discovery"
-        >
-          Discovery
-        </option>
-        <option
-          value="Design"
-        >
-          Design
-        </option>
-        <option
-          value="Development"
-        >
-          Development
-        </option>
-        <option
-          value="Delivery"
-        >
-          Delivery
-        </option>
-      </select>
-    </label>
-    <label
-      htmlFor="form-sector"
-    >
-      Sector
-      <select
-        id="form-sector"
-        name="sector"
-      >
-        <option>
-          Choose Sector
-        </option>
-        <option
-          value="Education"
-        >
-          Education
-        </option>
-        <option
-          value="Law Enforcement"
-        >
-          Law Enforcement
-        </option>
-        <option
-          value="Startups"
-        >
-          Startups
-        </option>
-        <option
-          value="Social Housing"
-        >
-          Social Housing
-        </option>
-      </select>
-    </label>
-    <label
       htmlFor="form-message"
     >
-      Your Message
+      Message
       <textarea
         cols={30}
         id="form-message"
         name="message"
-        placeholder="Your message"
+        placeholder="Message"
         rows={10}
       />
     </label>
     <div>
       <input
         type="submit"
-        value="Send"
+        value="Submit"
       />
     </div>
   </form>

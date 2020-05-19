@@ -2,14 +2,15 @@
 
 exports[`Footer element is rendered 1`] = `
 <footer
-  className="komodoGridWrapper"
+  className="komodoGridWrapper main-footer"
 >
   <div
     className="komodo"
   >
     <img
       alt="Komodo - People Friendly Software"
-      src={Object {}}
+      className="logo"
+      src=""
     />
   </div>
   <div
@@ -19,13 +20,21 @@ exports[`Footer element is rendered 1`] = `
       Address
     </span>
     <address>
-      Komodo Digital,
+      Komodo Digital, 63 Westgate Rd,
       <br />
-      63 Westgate Rd,
+      Newcastle upon Tyne, NE1 1SG,
       <br />
-      Newcastle upon Tyne,
+      <a
+        href="mailto:hello@komododigital.co.uk"
+      >
+        hello@komododigital.co.uk
+      </a>
       <br />
-      NE1 1SG
+      <a
+        href="tel:+441912286555"
+      >
+        0191 228 6555
+      </a>
     </address>
   </div>
   <div
@@ -46,17 +55,33 @@ exports[`Footer element is rendered 1`] = `
       </li>
       <li>
         <a
-          aria-current="page"
-          href="/"
+          href="/about"
           onClick={[Function]}
         >
-          Case Studies
+          About
         </a>
       </li>
       <li>
         <a
-          aria-current="page"
-          href="/"
+          href="/services"
+          onClick={[Function]}
+        >
+          Services
+        </a>
+      </li>
+      <li>
+        <a
+          href="/client-stories"
+          onClick={[Function]}
+        >
+          Client Stories
+        </a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a
+          href="/insights"
           onClick={[Function]}
         >
           Insights
@@ -64,43 +89,17 @@ exports[`Footer element is rendered 1`] = `
       </li>
       <li>
         <a
-          aria-current="page"
-          href="/"
-          onClick={[Function]}
+          href="https://hire.withgoogle.com/public/jobs/komododigitalcouk"
         >
           Careers
         </a>
       </li>
-    </ul>
-    <ul>
       <li>
         <a
-          aria-current="page"
-          href="/"
+          href="/contact"
           onClick={[Function]}
         >
           Contact
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://twitter.com/komodohq"
-        >
-          Twitter
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://facebook.com/komodohq"
-        >
-          Facebook
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://linkedin.com/komodohq"
-        >
-          LinkedIn
         </a>
       </li>
     </ul>
